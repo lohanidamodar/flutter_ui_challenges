@@ -5,16 +5,27 @@ class ProfileOnePage extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
       return Scaffold(
+        // backgroundColor: Colors.deepOrange,
         appBar: AppBar(
           title: Text("View Profile"),
-          backgroundColor: Colors.deepOrange,
+          backgroundColor: Colors.red,
           elevation: 0,
         ),
         body: ListView(
           children: <Widget>[
             Container(
               height: 200,
-              color: Colors.deepOrange,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  stops: [0.5, 0.9],
+                  colors: [
+                    Colors.red,
+                    Colors.deepOrange.shade300
+                  ]
+                )
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,7 +64,7 @@ class ProfileOnePage extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: Container(
-                      color: Colors.orange.shade500,
+                      color: Colors.deepOrange.shade300,
                       child: ListTile(
                         title: Text("50895",textAlign: TextAlign.center, style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0
@@ -64,7 +75,7 @@ class ProfileOnePage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Container(
-                      color: Colors.orange.shade700,
+                      color: Colors.red,
                       child: ListTile(
                         title: Text("34524",textAlign: TextAlign.center, style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0
