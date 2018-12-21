@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //pages
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
 import '../pages/ecommerce/ecommerce1.dart';
 import '../pages/profile/profile1.dart';
 
@@ -42,6 +43,11 @@ class HomePage extends StatelessWidget {
             ListTile(
               title: Text('Login One'),
               onTap: () => _openPage(LoginOnePage(), context),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Login Two'),
+              onTap: () => _openPage(LoginTwoPage(), context),
             ),
             Divider(),
             ListTile(
