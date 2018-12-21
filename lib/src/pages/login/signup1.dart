@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/graphics/background_clipper_one.dart';
-import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 
-class LoginTwoPage extends StatelessWidget {
+class SignupOnePage extends StatelessWidget {
 
   Widget _buildPageContent(BuildContext context) {
     return Container(
@@ -14,15 +13,15 @@ class LoginTwoPage extends StatelessWidget {
           SizedBox(height: 20.0,),
           _buildLoginForm(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              FlatButton(
+              FloatingActionButton(
+                mini: true,
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (BuildContext context) => SignupOnePage()
-                  ));
+                  Navigator.pop(context);
                 },
-                child: Text("Sign Up", style: TextStyle(color: Colors.blue, fontSize: 18.0)),
+                backgroundColor: Colors.blue,
+                child: Icon(Icons.arrow_back),
               )
             ],
           )
@@ -75,6 +74,19 @@ class LoginTwoPage extends StatelessWidget {
                         )
                       ),
                       Container(child: Divider(color: Colors.blue.shade400,), padding: EdgeInsets.only(left: 20.0,right: 20.0, bottom: 10.0),),
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 20.0),
+                        child: TextField(
+                          style: TextStyle(color: Colors.blue),
+                          decoration: InputDecoration(
+                            hintText: "Confirm password",
+                            hintStyle: TextStyle(color: Colors.blue.shade200),
+                            border: InputBorder.none,
+                            icon: Icon(Icons.lock, color: Colors.blue,)
+                          ),
+                        )
+                      ),
+                      Container(child: Divider(color: Colors.blue.shade400,), padding: EdgeInsets.only(left: 20.0,right: 20.0, bottom: 10.0),),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
@@ -108,7 +120,7 @@ class LoginTwoPage extends StatelessWidget {
                   child: RaisedButton(
                     onPressed: (){},
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-                    child: Text("Login", style: TextStyle(color: Colors.white70)),
+                    child: Text("Sign Up", style: TextStyle(color: Colors.white70)),
                     color: Colors.blue,
                   ),
                 ),
