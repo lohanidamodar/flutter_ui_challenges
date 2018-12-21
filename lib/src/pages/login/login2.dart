@@ -52,7 +52,7 @@ class LoginTwoPage extends StatelessWidget {
                             hintText: "Email address",
                             hintStyle: TextStyle(color: Colors.blue.shade200),
                             border: InputBorder.none,
-                            icon: Icon(Icons.lock, color: Colors.blue,)
+                            icon: Icon(Icons.email, color: Colors.blue,)
                           ),
                         )
                       ),
