@@ -63,12 +63,7 @@ class LoginTwoPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 10.0,),
-                      RaisedButton(
-                        onPressed: (){},
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-                        child: Text("Login"),
-                        color: Colors.blue,
-                      )
+                      
                     ],
                   ),
                 ),
@@ -87,11 +82,22 @@ class LoginTwoPage extends StatelessWidget {
                       child: Icon(Icons.person),
                     ),
                   ],
+                ),
+                Container(
+                  height: 420,
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: RaisedButton(
+                      onPressed: (){},
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
+                      child: Text("Login", style: TextStyle(color: Colors.white70)),
+                      color: Colors.blue,
+                    ),
+                  ),
                 )
               ],
             ),
           ),
-          SizedBox(height: 20.0,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
