@@ -94,63 +94,63 @@ class EcommerceTwoPage extends StatelessWidget {
       ),
     );
     Map item = items[index-1];
-    return Column(
-      children: <Widget>[
-        Container(
-          padding: EdgeInsets.only(left: 10.0, right: 10.0),
-          height: 300,
-          child: Row(
-            children: <Widget>[
-              Expanded(child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage(item["image"]), fit: BoxFit.cover),
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  boxShadow: [
-                    BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)
-                  ]
-                ),
-              )),
-              Expanded(child: Container(
-                padding: EdgeInsets.all(20.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(item["title"],style: TextStyle(
-                      fontSize: 22.0,
-                      fontWeight: FontWeight.w700
-                    ),),
-                    SizedBox(height: 10.0,),
-                    Text(item["category"], style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 18.0
-                    )),
-                    SizedBox(height: 20.0,),
-                    Text("\$${item["price"].toString()}", style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 30.0,
-                    )),
-                    SizedBox(height: 20.0,),
-                    Text(item["tags"], style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.grey,
-                      height: 1.5
-                    ))
-                  ],
-                ),
-                margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(bottomRight: Radius.circular(10.0), topRight: Radius.circular(10.0)),
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)
-                  ]
-                ),
-              ),)
-            ],
-          ),
+    return _buildShopItem(item);
+  }
+
+  Widget _buildShopItem(Map item) {
+    return Container(
+        padding: EdgeInsets.only(left: 10.0, right: 10.0),
+        margin: EdgeInsets.only(bottom: 20.0),
+        height: 300,
+        child: Row(
+          children: <Widget>[
+            Expanded(child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage(item["image"]), fit: BoxFit.cover),
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                boxShadow: [
+                  BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)
+                ]
+              ),
+            )),
+            Expanded(child: Container(
+              padding: EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(item["title"],style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.w700
+                  ),),
+                  SizedBox(height: 10.0,),
+                  Text(item["category"], style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 18.0
+                  )),
+                  SizedBox(height: 20.0,),
+                  Text("\$${item["price"].toString()}", style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 30.0,
+                  )),
+                  SizedBox(height: 20.0,),
+                  Text(item["tags"], style: TextStyle(
+                    fontSize: 18.0,
+                    color: Colors.grey,
+                    height: 1.5
+                  ))
+                ],
+              ),
+              margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(10.0), topRight: Radius.circular(10.0)),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)
+                ]
+              ),
+            ),)
+          ],
         ),
-        SizedBox(height: 20,)
-      ],
-    );
+      );
   }
 }
