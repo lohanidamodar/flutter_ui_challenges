@@ -87,16 +87,6 @@ class SignupOnePage extends StatelessWidget {
                         )
                       ),
                       Container(child: Divider(color: Colors.blue.shade400,), padding: EdgeInsets.only(left: 20.0,right: 20.0, bottom: 10.0),),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          Container(padding: EdgeInsets.only(right: 20.0),
-                            child: Text("Forget Password",
-                              style: TextStyle(color: Colors.black45),
-                            )
-                          )
-                        ],
-                      ),
                       SizedBox(height: 10.0,),
                       
                     ],
