@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 import '../pages/ecommerce/ecommerce1.dart';
+import '../pages/ecommerce/ecommerce2.dart';
 import '../pages/profile/profile1.dart';
 
 class HomePage extends StatelessWidget {
@@ -59,6 +60,11 @@ class HomePage extends StatelessWidget {
             ListTile(
               title: Text('Ecommerce One'),
               onTap: () => _openPage(EcommerceOnePage(), context),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Ecommerce Two'),
+              onTap: () => _openPage(EcommerceTwoPage(), context),
             ),
             Divider(),
             ListTile(
