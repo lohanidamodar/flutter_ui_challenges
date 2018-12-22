@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class EcommerceTwoPage extends StatelessWidget {
   final List<Map> items = [
@@ -39,20 +40,24 @@ class EcommerceTwoPage extends StatelessWidget {
             itemCount: items.length + 1,
           )
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.category), title: Text("")),
-            BottomNavigationBarItem(icon: Icon(Icons.favorite_border), title: Text("")),
-            BottomNavigationBarItem(icon: Icon(Icons.notifications), title: Text("")),
-            BottomNavigationBarItem(icon: Icon(Icons.location_on), title: Text("")),
-            BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("")),
-          ],
-          currentIndex: 0,
-          type: BottomNavigationBarType.fixed,
-          fixedColor: Colors.red,
-        ),
+        bottomNavigationBar: _buildBottomNavigationBar(),
       );
     }
+
+  Widget _buildBottomNavigationBar() {
+    return BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.category), title: Text("Shop")),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), title: Text("Favorites")),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications), title: Text("Notifications")),
+          BottomNavigationBarItem(icon: Icon(Icons.location_on), title: Text("Near me")),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("Settings")),
+        ],
+        currentIndex: 0,
+        type: BottomNavigationBarType.fixed,
+        fixedColor: Colors.red,
+      );
+  }
 
   PreferredSize _buildBottomBar() {
     return PreferredSize(
