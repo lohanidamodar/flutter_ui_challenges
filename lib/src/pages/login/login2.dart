@@ -79,7 +79,7 @@ class LoginTwoPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
                           Container(padding: EdgeInsets.only(right: 20.0),
-                            child: Text("Forget Password",
+                            child: Text("Forgot Password",
                               style: TextStyle(color: Colors.black45),
                             )
                           )
