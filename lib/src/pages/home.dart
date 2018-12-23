@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
     child: SafeArea(
       child: Container(
         padding: EdgeInsets.all(20.0),
-        child: Column(
+        child: ListView(
           children: <Widget>[
             ListTile(
               title: Text('Login One'),
