@@ -5,15 +5,39 @@ class GrocessaryHomePage extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white70,
-          title: TextField(),
-          leading: Icon(Icons.school, color: Colors.grey.shade800,),
-        ),
+        appBar: _buildAppBar(),
         body: _buildPageContent(),
         bottomNavigationBar: _buildBottomNavigationBar(),
       );
     }
+
+  Widget _buildAppBar() {
+    return PreferredSize(
+        preferredSize: Size.fromHeight(90.0),
+        child: Container(
+          margin: EdgeInsets.only(top: 20.0),
+          child: AppBar(
+            elevation: 0,
+            backgroundColor: Colors.transparent,
+            title: Container(
+              child: Card(
+                child: Container(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+                      hintText: "Search products",
+                      border: InputBorder.none,
+                      suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.search))
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            leading: Icon(Icons.school, color: Colors.grey.shade800,),
+          ),
+        ),
+      );
+  }
 
   BottomNavigationBar _buildBottomNavigationBar() {
     return BottomNavigationBar(
