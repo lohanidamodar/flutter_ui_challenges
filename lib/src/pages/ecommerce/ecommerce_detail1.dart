@@ -6,7 +6,13 @@ class EcommerceDetailOnePage extends StatelessWidget {
     Widget build(BuildContext context) {
       return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white70,
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.search, color: Colors.grey,), onPressed: (){},),
+            IconButton(icon: Icon(Icons.shopping_basket, color: Colors.grey,), onPressed: (){},),
+          ],
+          leading: IconButton(icon: Icon(Icons.arrow_back_ios, color: Colors.grey,), onPressed: (){Navigator.pop(context);},),
+          title: Text("Woman Apperals", style: TextStyle(color: Colors.grey.shade800),),
+          backgroundColor: Colors.transparent,
           elevation: 0,
         ),
         body: _buildPageContent(),
@@ -15,13 +21,14 @@ class EcommerceDetailOnePage extends StatelessWidget {
 
   Widget _buildPageContent() {
     return Container(
-      child: Column(
+      child: Stack(
         children: <Widget>[
-          Expanded(
+          Container(
+            height: double.infinity,
             child: ListView(
               padding: EdgeInsets.all(20.0),
               children: <Widget>[
-                Container(height: 300,
+                Container(height: 320,
                   decoration: BoxDecoration(
                     image: DecorationImage(image: AssetImage('assets/img/2.jpg'), fit: BoxFit.cover)
                   ),
@@ -30,13 +37,18 @@ class EcommerceDetailOnePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("\$500")
+                    Text("\$500", style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.w600
+                    ),)
                   ],
                 ),
                 SizedBox(height: 20.0,),
                 Text("Womens Casual Purse", textAlign: TextAlign.center, style: TextStyle(
                   fontSize: 28.0,
                 ),),
+                SizedBox(height: 10.0,),
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim erat in accumsan tempus. Mauris congue luctus neque, in semper purus maximus iaculis. Donec et eleifend quam, a sollicitudin magna.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -45,8 +57,9 @@ class EcommerceDetailOnePage extends StatelessWidget {
                 ),
 
                 Container(
+                  margin: EdgeInsets.only(top: 10.0),
                   padding: EdgeInsets.all(10.0),
-                  height: 100,
+                  height: 150,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
@@ -61,20 +74,25 @@ class EcommerceDetailOnePage extends StatelessWidget {
               ],
             ),
           ),
-          Row(
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Expanded(
-                child: Container(
-                  color: Colors.transparent,
-                  padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 10.0),
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-                    onPressed: (){},
-                    child: Text("Add to Cart"),
-                    color: Colors.orange,
-                    textColor: Colors.white,
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      color: Colors.transparent,
+                      padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 10.0),
+                      child: RaisedButton(
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
+                        onPressed: (){},
+                        child: Text("Add to Cart"),
+                        color: Colors.orange,
+                        textColor: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
             ],
           )
