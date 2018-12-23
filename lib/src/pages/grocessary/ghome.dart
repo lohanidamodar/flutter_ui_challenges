@@ -39,10 +39,45 @@ class GrocessaryHomePage extends StatelessWidget {
   Widget _buildPageContent() {
     return ListView(
       children: <Widget>[
-        _buildCategories()
-
+        _buildCategories(),
+        SizedBox(height: 10.0,),
+        _buildListHeader("NEW ARRIVALS","SEE ALL"),
+        SizedBox(height: 10.0,),
+        _buildListHeader("DAILY NEEDS","SEE ALL"),
       ],
     );
+  }
+
+  Widget _buildListHeader(String left, String right) {
+    return Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.only(left: 10),
+              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+              color: Colors.red,
+              child: Text(left,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 10.0),
+              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+              child: InkWell(
+                onTap: (){},
+                child: Text(right,
+                  style: TextStyle(
+                    color: Colors.red,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        )
+      );
   }
 
   Widget _buildCategories() {
