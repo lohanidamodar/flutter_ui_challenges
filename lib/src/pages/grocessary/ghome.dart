@@ -11,8 +11,30 @@ class GrocessaryHomePage extends StatelessWidget {
           leading: Icon(Icons.school, color: Colors.grey.shade800,),
         ),
         body: _buildPageContent(),
+        bottomNavigationBar: _buildBottomNavigationBar(),
       );
     }
+
+  BottomNavigationBar _buildBottomNavigationBar() {
+    return BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text("Home")),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            title: Text("Cart")),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_border),
+            title: Text("Wishlist")),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            title: Text("You")),
+        ],
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+      );
+  }
 
   Widget _buildPageContent() {
     return ListView(
