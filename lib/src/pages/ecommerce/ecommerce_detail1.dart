@@ -56,49 +56,57 @@ class EcommerceDetailOnePage extends StatelessWidget {
                   ),
                 ),
 
-                Container(
-                  margin: EdgeInsets.only(top: 10.0),
-                  padding: EdgeInsets.all(10.0),
-                  height: 150,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      Image.asset('assets/img/1.jpg',height: 80,),
-                      SizedBox(width: 20.0,),
-                      Image.asset('assets/img/3.jpg',height: 80,),
-                      SizedBox(width: 20.0,),
-                      Image.asset('assets/img/4.jpg',height: 80,),
-                    ],
-                  ),
-                )
+                _buildImagesGrid()
               ],
             ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      color: Colors.transparent,
-                      padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 10.0),
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-                        onPressed: (){},
-                        child: Text("Add to Cart"),
-                        color: Colors.orange,
-                        textColor: Colors.white,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              _buildAddToCartButton(),
             ],
           )
 
         ],
       ),
+    );
+  }
+
+  Widget _buildImagesGrid() {
+    return Container(
+      margin: EdgeInsets.only(top: 10.0),
+      padding: EdgeInsets.all(10.0),
+      height: 150,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          Image.asset('assets/img/1.jpg',height: 80,),
+          SizedBox(width: 20.0,),
+          Image.asset('assets/img/3.jpg',height: 80,),
+          SizedBox(width: 20.0,),
+          Image.asset('assets/img/4.jpg',height: 80,),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAddToCartButton() {
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: Container(
+            color: Colors.transparent,
+            padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 10.0),
+            child: RaisedButton(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
+              onPressed: (){},
+              child: Text("Add to Cart"),
+              color: Colors.orange,
+              textColor: Colors.white,
+            ),
+          ),
+        ),
+      ],
     );
   }
 
