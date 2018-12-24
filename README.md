@@ -8,3 +8,7 @@ My Flutter App             |  Original Daraz App
 
 ## Other Completed Screens
 <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> 
+
+## Grocessary App UI Kit
+(design credit: https://www.uplabs.com/posts/grocery-app-kit)
+<img height="480px" src="screenshots/grocessary_home.png">
