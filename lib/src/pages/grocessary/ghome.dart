@@ -33,7 +33,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            leading: Icon(Icons.school, color: Colors.grey.shade800,),
+            leading: Image.asset('assets/grocessary/delivery.png'),
           ),
         ),
       );
@@ -302,7 +302,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 width: 100,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/grocessary/vegetables.png'),
+                    Image.asset('assets/grocessary/fruit.png'),
                     Text("Fruits")
                   ],
                 ),

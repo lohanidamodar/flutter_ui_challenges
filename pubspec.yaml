@@ -52,6 +52,8 @@ flutter:
     - assets/grocessary/cabbage.png
     - assets/grocessary/capsicum.png
     - assets/grocessary/cart_icon.png
+    - assets/grocessary/delivery.png
+    - assets/grocessary/fruit.png
     - assets/grocessary/home_icon.png
     - assets/grocessary/mango_slice.png
     - assets/grocessary/mango.png
