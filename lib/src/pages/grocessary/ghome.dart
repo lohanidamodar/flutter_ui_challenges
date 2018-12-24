@@ -66,6 +66,117 @@ class GrocessaryHomePage extends StatelessWidget {
         _buildCategories(),
         SizedBox(height: 10.0,),
         _buildListHeader("NEW ARRIVALS","SEE ALL"),
+        Container(
+          padding: EdgeInsets.all(10.0),
+          height: 290.0,
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(5.0), topRight: Radius.circular(5.0)),
+                    boxShadow: [
+                      BoxShadow(blurRadius: 10.0,color: Colors.grey.shade200,spreadRadius: 2.0)
+                    ]
+                  ),
+                  margin: EdgeInsets.all(10.0),
+                  child: Column(
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Center(child: Image.asset('assets/grocessary/mango.png', height: 150.0,)),
+                              Text("Local Mango", style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 18.0
+                              ),),
+                              Text("1 kg", style: TextStyle(
+                                color: Colors.grey
+                              )),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: (){},
+                              child: Container(
+                                padding: EdgeInsets.all(10.0),
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5.0), bottomRight: Radius.circular(5.0))
+                                ),
+                                child: Text("Add to Cart", textAlign: TextAlign.center,),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(5.0), topRight: Radius.circular(5.0)),
+                    boxShadow: [
+                      BoxShadow(blurRadius: 10.0,color: Colors.grey.shade200,spreadRadius: 2.0)
+                    ]
+                  ),
+                  margin: EdgeInsets.all(10.0),
+                  child: Column(
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Center(child: Image.asset('assets/grocessary/brocoli.png', height: 150.0,)),
+                              Text("Broccoli", style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 18.0
+                              ),),
+                              Text("5 in a pack", style: TextStyle(
+                                color: Colors.grey
+                              )),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: (){},
+                              child: Container(
+                                padding: EdgeInsets.all(10.0),
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5.0), bottomRight: Radius.circular(5.0))
+                                ),
+                                child: Text("Add to Cart", textAlign: TextAlign.center,),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              
+            ],
+          ),
+        ),
         SizedBox(height: 10.0,),
         _buildListHeader("DAILY NEEDS","SEE ALL"),
       ],
