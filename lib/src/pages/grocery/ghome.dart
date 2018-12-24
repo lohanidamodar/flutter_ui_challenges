@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class GrocessaryHomePage extends StatelessWidget {
+class GroceryHomePage extends StatelessWidget {
 
   @override
     Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            leading: Image.asset('assets/grocessary/delivery.png'),
+            leading: Image.asset('assets/grocery/delivery.png'),
           ),
         ),
       );
@@ -72,17 +72,17 @@ class GrocessaryHomePage extends StatelessWidget {
         SizedBox(height: 10.0,),
         _buildDailyNeedsListItem(
           title: "Cabbage",
-          image: "assets/grocessary/cabbage.png",
+          image: "assets/grocery/cabbage.png",
           subtitle: "1 kg"
         ),
         _buildDailyNeedsListItem(
           title: "Red/yellow Capsicum",
-          image: "assets/grocessary/capsicum.png",
+          image: "assets/grocery/capsicum.png",
           subtitle: "1 kg"
         ),
         _buildDailyNeedsListItem(
           title: "Pineapple",
-          image: "assets/grocessary/pineapple.png",
+          image: "assets/grocery/pineapple.png",
           subtitle: "4 in a pack"
         ),
       ],
@@ -140,7 +140,7 @@ class GrocessaryHomePage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Center(child: Image.asset('assets/grocessary/mango.png', height: 150.0,)),
+                            Center(child: Image.asset('assets/grocery/mango.png', height: 150.0,)),
                             _buildListItemTitle("Local Mango"),
                             _buildListItemSubtitle("1 kg"),
                           ],
@@ -186,7 +186,7 @@ class GrocessaryHomePage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Center(child: Image.asset('assets/grocessary/brocoli.png', height: 150.0,)),
+                            Center(child: Image.asset('assets/grocery/brocoli.png', height: 150.0,)),
                             _buildListItemTitle("Broccoli"),
                             _buildListItemSubtitle("5 in a pack")
                           ],
@@ -283,7 +283,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 width: 100,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/grocessary/vegetables.png'),
+                    Image.asset('assets/grocery/vegetables.png'),
                     Text("Vegetables")
                   ],
                 ),
@@ -302,7 +302,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 width: 100,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/grocessary/fruit.png'),
+                    Image.asset('assets/grocery/fruit.png'),
                     Text("Fruits")
                   ],
                 ),
@@ -321,7 +321,7 @@ class GrocessaryHomePage extends StatelessWidget {
                 width: 100,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/grocessary/mortar.png'),
+                    Image.asset('assets/grocery/mortar.png'),
                     Text("Masala")
                   ],
                 ),

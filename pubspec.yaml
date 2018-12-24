@@ -48,18 +48,18 @@ flutter:
     - assets/img/b3.jpg
     - assets/img/rocket.png
     - assets/img/origami.png
-    - assets/grocessary/brocoli.png
-    - assets/grocessary/cabbage.png
-    - assets/grocessary/capsicum.png
-    - assets/grocessary/cart_icon.png
-    - assets/grocessary/delivery.png
-    - assets/grocessary/fruit.png
-    - assets/grocessary/home_icon.png
-    - assets/grocessary/mango_slice.png
-    - assets/grocessary/mango.png
-    - assets/grocessary/mortar.png
-    - assets/grocessary/pineapple.png
-    - assets/grocessary/vegetables.png
+    - assets/grocery/brocoli.png
+    - assets/grocery/cabbage.png
+    - assets/grocery/capsicum.png
+    - assets/grocery/cart_icon.png
+    - assets/grocery/delivery.png
+    - assets/grocery/fruit.png
+    - assets/grocery/home_icon.png
+    - assets/grocery/mango_slice.png
+    - assets/grocery/mango.png
+    - assets/grocery/mortar.png
+    - assets/grocery/pineapple.png
+    - assets/grocery/vegetables.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 

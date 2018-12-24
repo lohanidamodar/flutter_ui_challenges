@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
-import 'package:flutter_ui_challenges/src/pages/grocessary/ghome.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 
 //pages
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
@@ -75,8 +75,8 @@ class HomePage extends StatelessWidget {
             ),
             Divider(),
             ListTile(
-              title: Text('Grocessary UI Kit'),
-              onTap: () => _openPage(GrocessaryHomePage(), context),
+              title: Text('Grocery UI Kit'),
+              onTap: () => _openPage(GroceryHomePage(), context),
             ),
             Divider(),
             ListTile(
