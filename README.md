@@ -12,4 +12,4 @@ My Flutter App             |  Original Daraz App
 ## grocery App UI Kit
 (design credit: https://www.uplabs.com/posts/grocery-app-kit)
 
-<img height="480px" src="screenshots/grocery_home.png">
+<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> 
