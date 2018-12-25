@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/gdetails.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gcategory.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem1.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem2.dart';
 
 class GroceryHomePage extends StatelessWidget {
 
@@ -6,7 +10,7 @@ class GroceryHomePage extends StatelessWidget {
     Widget build(BuildContext context) {
       return Scaffold(
         appBar: _buildAppBar(),
-        body: _buildPageContent(),
+        body: _buildPageContent(context),
         bottomNavigationBar: _buildBottomNavigationBar(),
       );
     }
@@ -60,157 +64,52 @@ class GroceryHomePage extends StatelessWidget {
       );
   }
 
-  Widget _buildPageContent() {
+  Widget _buildPageContent(BuildContext context) {
     return ListView(
       children: <Widget>[
         _buildCategories(),
         SizedBox(height: 10.0,),
         _buildListHeader("NEW ARRIVALS","SEE ALL"),
-        _buildNewArrivalsRow(),
+        _buildNewArrivalsRow(context),
         SizedBox(height: 10.0,),
         _buildListHeader("DAILY NEEDS","SEE ALL"),
         SizedBox(height: 10.0,),
-        _buildDailyNeedsListItem(
-          title: "Cabbage",
-          image: "assets/grocery/cabbage.png",
-          subtitle: "1 kg"
-        ),
-        _buildDailyNeedsListItem(
-          title: "Red/yellow Capsicum",
-          image: "assets/grocery/capsicum.png",
-          subtitle: "1 kg"
-        ),
-        _buildDailyNeedsListItem(
-          title: "Pineapple",
-          image: "assets/grocery/pineapple.png",
-          subtitle: "4 in a pack"
-        ),
+        InkWell(
+          onTap: ()=> _openDetailPage(context),
+          child: GroceryListItemTwo(title: "Cabbage", image: "assets/grocery/cabbage.png", subtitle: "1 kg")),
+        InkWell(
+          onTap: ()=> _openDetailPage(context),
+          child: GroceryListItemTwo(title: "Red/yellow Capsicum", image: "assets/grocery/capsicum.png", subtitle: "1 kg")),
+        InkWell(
+          onTap: ()=> _openDetailPage(context),
+          child: GroceryListItemTwo(title: "Pineapple", image: "assets/grocery/pineapple.png", subtitle: "4 in a pack")),
       ],
     );
   }
 
-  Card _buildDailyNeedsListItem({String title, String subtitle,String image}) {
-    return Card(
-        child: ListTile(
-          leading: Container(
-            height: 80.0,
-            child: Image.asset(image, height: 80.0,)),
-          title: Container(
-            height: 100.0,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                _buildListItemTitle(title),
-                _buildListItemSubtitle(subtitle)
-              ],
-            ),
-          ),
-          trailing: Column(
-            children: <Widget>[
-              IconButton(icon: Icon(Icons.favorite_border), onPressed: (){},),
-              IconButton(icon: Icon(Icons.add,), color: Colors.green, onPressed: (){},)
-            ],
-          ),
-        ),
-      );
-  }
-
-  Widget _buildNewArrivalsRow() {
+  Widget _buildNewArrivalsRow(BuildContext context) {
     return Container(
         padding: EdgeInsets.all(10.0),
         height: 290.0,
         child: Row(
           children: <Widget>[
             Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5.0), topRight: Radius.circular(5.0)),
-                  boxShadow: [
-                    BoxShadow(blurRadius: 10.0,color: Colors.grey.shade200,spreadRadius: 2.0)
-                  ]
-                ),
-                margin: EdgeInsets.all(10.0),
-                child: Column(
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        padding: EdgeInsets.all(10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Center(child: Image.asset('assets/grocery/mango.png', height: 150.0,)),
-                            _buildListItemTitle("Local Mango"),
-                            _buildListItemSubtitle("1 kg"),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Expanded(
-                          child: InkWell(
-                            onTap: (){},
-                            child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5.0), bottomRight: Radius.circular(5.0))
-                              ),
-                              child: Text("Add to Cart", textAlign: TextAlign.center,),
-                            ),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
+              child: InkWell(
+                onTap: () => _openDetailPage(context),
+                child: GroceryListItemOne(
+                  image: "assets/grocery/mango.png",
+                  subtitle: "1 kg",
+                  title: "Local Mango",
                 ),
               ),
             ),
             Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(5.0), topRight: Radius.circular(5.0)),
-                  boxShadow: [
-                    BoxShadow(blurRadius: 10.0,color: Colors.grey.shade200,spreadRadius: 2.0)
-                  ]
-                ),
-                margin: EdgeInsets.all(10.0),
-                child: Column(
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        padding: EdgeInsets.all(10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Center(child: Image.asset('assets/grocery/brocoli.png', height: 150.0,)),
-                            _buildListItemTitle("Broccoli"),
-                            _buildListItemSubtitle("5 in a pack")
-                          ],
-                        ),
-                      ),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Expanded(
-                          child: InkWell(
-                            onTap: (){},
-                            child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5.0), bottomRight: Radius.circular(5.0))
-                              ),
-                              child: Text("Add to Cart", textAlign: TextAlign.center,),
-                            ),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
+              child: InkWell(
+                onTap: ()=> _openDetailPage(context),
+                child: GroceryListItemOne(
+                  image: "assets/grocery/brocoli.png",
+                  subtitle: "6 in a pack",
+                  title: "Broccoli",
                 ),
               ),
             ),
@@ -220,17 +119,10 @@ class GroceryHomePage extends StatelessWidget {
       );
   }
 
-  Text _buildListItemSubtitle(String text) {
-    return Text(text, style: TextStyle(
-      color: Colors.grey
+  void _openDetailPage(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(
+      builder: (BuildContext context) => GroceryDetailsPage()
     ));
-  }
-
-  Text _buildListItemTitle(String text) {
-    return Text(text, style: TextStyle(
-      fontWeight: FontWeight.w700,
-      fontSize: 18.0
-    ),);
   }
 
   Widget _buildListHeader(String left, String right) {
@@ -271,65 +163,29 @@ class GroceryHomePage extends StatelessWidget {
         child: Row(
           children: <Widget>[
             SizedBox(width: 10.0,),
-            InkWell(
-              onTap: (){},
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(11, 200, 0, 0.15),
-                  borderRadius: BorderRadius.all(Radius.circular(5.0))
-                ),
-                margin: EdgeInsets.symmetric(vertical: 10.0),
-                padding: EdgeInsets.all(10.0),
-                width: 100,
-                child: Column(
-                  children: <Widget>[
-                    Image.asset('assets/grocery/vegetables.png'),
-                    Text("Vegetables")
-                  ],
-                ),
-              ),
+            GroceryCategory(
+              backgroundColor: Color.fromRGBO(11, 200, 0, 0.15),
+              image: 'assets/grocery/vegetables.png',
+              title: "Vegetables",
             ),
             SizedBox(width: 10.0,),
-            InkWell(
-              onTap: (){},
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(200, 0, 11, 0.15),
-                  borderRadius: BorderRadius.all(Radius.circular(5.0))
-                ),
-                margin: EdgeInsets.symmetric(vertical: 10.0),
-                padding: EdgeInsets.all(10.0),
-                width: 100,
-                child: Column(
-                  children: <Widget>[
-                    Image.asset('assets/grocery/fruit.png'),
-                    Text("Fruits")
-                  ],
-                ),
-              ),
+            GroceryCategory(
+              backgroundColor: Color.fromRGBO(200, 0, 11, 0.15),
+              title: "Fruite",
+              image: "assets/grocery/fruit.png",
             ),
             SizedBox(width: 10.0,),
-            InkWell(
-              onTap: (){},
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(20, 20, 15, 0.15),
-                  borderRadius: BorderRadius.all(Radius.circular(5.0))
-                ),
-                margin: EdgeInsets.symmetric(vertical: 10.0),
-                padding: EdgeInsets.all(10.0),
-                width: 100,
-                child: Column(
-                  children: <Widget>[
-                    Image.asset('assets/grocery/mortar.png'),
-                    Text("Masala")
-                  ],
-                ),
-              ),
-            ),
+            GroceryCategory(
+              image: "assets/grocery/mortar.png",
+              backgroundColor: Color.fromRGBO(20, 20, 15, 0.15),
+              title: "Masala",
+            )
           ],
         ),
       );
   }
 
 }
+
+
+
