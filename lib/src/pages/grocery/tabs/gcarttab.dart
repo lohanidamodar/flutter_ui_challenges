@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/clipoval.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem3.dart';
 
 
@@ -24,10 +25,24 @@ class GroceryCartTabView extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            height: 170,
-            color: Colors.black12,
-            padding: EdgeInsets.all(20.0),
+          SizedBox(height: 10.0,),
+          _buildTotals()
+        ],
+      );
+    }
+
+  Widget _buildTotals() {
+    return ClipOval(
+      clipper: CircularBorderClipper(),
+      child: Container(
+            height: 180,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(blurRadius: 5.0,color: Colors.grey.shade700,spreadRadius: 80.0),
+              ],
+              color: Colors.white,
+            ),
+            padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
             child: Column(
               children: <Widget>[
                 Row(
@@ -67,8 +82,7 @@ class GroceryCartTabView extends StatelessWidget {
                 )
               ],
             ),
-          )
-        ],
-      );
-    }
+          ),
+    );
+  }
 }
