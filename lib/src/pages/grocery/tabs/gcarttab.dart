@@ -9,6 +9,7 @@ class GroceryCartTabView extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: ListView(
+              padding: EdgeInsets.all(10.0),
               children: <Widget>[
                 GroceryListItemThree(
                   image: "assets/grocery/pineapple.png",
