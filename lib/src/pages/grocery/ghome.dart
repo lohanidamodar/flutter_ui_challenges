@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gcarttab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/ghometab.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gprofiletab.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gwishlisttab.dart';
 
 class GroceryHomePage extends StatefulWidget {
 
@@ -16,6 +19,9 @@ class GroceryHomePageState extends State<GroceryHomePage> {
   @override
     void initState() {
       _children.add(GroceryHomeTabView());
+      _children.add(GroceryCartTabView());
+      _children.add(GroceryWishlistTabView());
+      _children.add(GroceryProfileTabView());
       super.initState();
     }
 
