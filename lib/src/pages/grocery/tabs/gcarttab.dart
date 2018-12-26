@@ -75,8 +75,8 @@ class GroceryCartTabView extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      Text("Continue to Checkout"),
-                      Text("Rs. 1600")
+                      Text("Continue to Checkout", style: TextStyle(color: Colors.white)),
+                      Text("Rs. 1600", style: TextStyle(color: Colors.white)),
                     ],
                   ),
                 )
