@@ -12,4 +12,10 @@ My Flutter App             |  Original Daraz App
 ## grocery App UI Kit
 (design credit: https://www.uplabs.com/posts/grocery-app-kit)
 
-<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> 
+### Whats implemented
+ - Working bottom navigator to show different pages
+ - Navigation push/pop to show details page
+ - Stateless & Stateful Widgets
+ - Custom widgets for list items, category items etc.
+ 
+<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png">  <img height="480px" src="screenshots/grocery_cart.png"> 
