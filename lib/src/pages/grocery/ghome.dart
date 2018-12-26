@@ -15,6 +15,7 @@ class GroceryHomePage extends StatefulWidget {
 class GroceryHomePageState extends State<GroceryHomePage> {
   int _currentIndex = 0;
   List<Widget> _children = [];
+  List<Widget> _appBars = [];
 
   @override
     void initState() {
@@ -22,13 +23,18 @@ class GroceryHomePageState extends State<GroceryHomePage> {
       _children.add(GroceryCartTabView());
       _children.add(GroceryWishlistTabView());
       _children.add(GroceryProfileTabView());
+
+      _appBars.add(_buildAppBar());
+      _appBars.add(_buildAppBarOne("Your Cart"));
+      _appBars.add(_buildAppBarOne("Your Wishlist"));
+      _appBars.add(_buildAppBarOne("You"));
       super.initState();
     }
 
   @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: _buildAppBar(),
+        appBar: _appBars[_currentIndex],
         body: _children[_currentIndex],
         bottomNavigationBar: _buildBottomNavigationBar(),
       );
@@ -61,6 +67,15 @@ class GroceryHomePageState extends State<GroceryHomePage> {
         ),
       );
   }
+  Widget _buildAppBarOne(String title) {
+    return AppBar(
+      automaticallyImplyLeading: false,
+      backgroundColor: Colors.white,
+      elevation: 0,
+      title: Text(title, style: TextStyle(color: Colors.black)),
+    );
+  }
+
 
   BottomNavigationBar _buildBottomNavigationBar() {
     return BottomNavigationBar(
