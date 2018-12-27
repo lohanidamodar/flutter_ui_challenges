@@ -11,7 +11,11 @@ My Flutter App             |  Original Daraz App
 ![](screenshots/my-app.png)  |  ![](screenshots/original.PNG)
 
 ## Other Completed Screens
-<img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> 
+<img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png">
+
+## miscellaneous widgets
+<img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif">
+
 
 ## grocery App UI Kit
 (design credit: https://www.uplabs.com/posts/grocery-app-kit)
