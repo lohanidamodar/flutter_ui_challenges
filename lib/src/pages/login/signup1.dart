@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/graphics/background_clipper_one.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class SignupOnePage extends StatelessWidget {
 
@@ -36,7 +36,7 @@ class SignupOnePage extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               ClipPath(
-                clipper: BackgroundClipperOne(),
+                clipper: RoundedDiagonalPathClipper(),
                 child: Container(
                   height: 400,
                   padding: EdgeInsets.all(10.0),
