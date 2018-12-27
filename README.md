@@ -1,6 +1,10 @@
 # Flutter UI Challenges
 My effort on replicating various apps UI on flutter.
 
+## Packages Used
+- Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
+- Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
+
 ## Daraz app UI
 My Flutter App             |  Original Daraz App
 :-------------------------:|:-------------------------:
