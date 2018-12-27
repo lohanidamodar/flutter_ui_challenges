@@ -18,4 +18,4 @@ My Flutter App             |  Original Daraz App
  - Stateless & Stateful Widgets
  - Custom widgets for list items, category items etc.
  
-<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png">  <img height="480px" src="screenshots/grocery_cart.png"> 
+<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png">  <img height="480px" src="screenshots/grocery_cart.png">  <img height="480px" src="screenshots/grocery_wishlist.png">  <img height="480px" src="screenshots/grocery_options.png"> 
