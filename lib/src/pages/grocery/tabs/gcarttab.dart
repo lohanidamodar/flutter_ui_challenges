@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/pages/grocery/clipoval.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem3.dart';
 
 
@@ -33,7 +33,7 @@ class GroceryCartTabView extends StatelessWidget {
 
   Widget _buildTotals() {
     return ClipOval(
-      clipper: CircularBorderClipper(),
+      clipper: OvalTopBorderClipper(),
       child: Container(
             height: 180,
             decoration: BoxDecoration(

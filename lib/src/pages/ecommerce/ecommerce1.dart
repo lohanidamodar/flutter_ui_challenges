@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import '../../graphics/background_clipper.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class EcommerceOnePage extends StatelessWidget {
   final List<String> categories = ['DarazMall', 'Flash Sales', 'Collection', 'Vouchers', 'Categories'];
@@ -197,7 +197,7 @@ class EcommerceOnePage extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           ClipPath(
-            clipper: BackgroundClipper(),
+            clipper: DiagonalPathClipperOne(),
             child: Container(
               height: 110,
               color: Colors.deepPurple,

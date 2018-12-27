@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/pages/grocery/clippath.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem2.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
 
@@ -54,9 +53,6 @@ class GroceryDetailsPage extends StatelessWidget {
   Widget _buildItemCard(context) {
     return Stack(
       children: <Widget>[
-        ClipPath(
-          clipper: ArcClipper(),
-          child: Container(height: 100, color: Colors.green)),
         Card(
           margin: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
           child: Container(
