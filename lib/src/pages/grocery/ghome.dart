@@ -69,6 +69,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
   }
   Widget _buildAppBarOne(String title) {
     return AppBar(
+      bottom: PreferredSize(child: Container(color: Colors.grey.shade200, height: 1.0,), preferredSize: Size.fromHeight(1.0)),
       automaticallyImplyLeading: false,
       backgroundColor: Colors.white,
       elevation: 0,
