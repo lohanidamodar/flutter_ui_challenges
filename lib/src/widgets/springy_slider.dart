@@ -17,66 +17,95 @@ class SpringySlider extends StatefulWidget {
 
 class _SpringySliderState extends State<SpringySlider> {
   final double paddingTop = 50.0, paddingBottom = 50.0;
-  final double sliderPercent = 0.75;
+  
+  double sliderPercent = 0.75;
+  double startDragY;
+  double startDragPercent;
+
+
+
+  void _onPanStart(DragStartDetails details) {
+    startDragY = details.globalPosition.dy;
+    startDragPercent = sliderPercent;  
+  }
+  void _onPanUpdate(DragUpdateDetails details) {
+    final dragDistance = startDragY - details.globalPosition.dy;
+    final sliderHeight = context.size.height;
+    final dragPercent = dragDistance / sliderHeight;
+    setState(() {
+          sliderPercent = startDragPercent + dragPercent;
+        });
+  }
+  void _onPanEnd(DragEndDetails details) {
+    setState(() {
+          startDragPercent = null;
+          startDragY = null;
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        SliderMarks(
-          markCount: widget.markCount,
-          color: widget.positiveColor,
-          paddingTop: paddingTop,
-          paddingBottom: paddingBottom,
-          paddingRight: 20.0,
-        ),
-        ClipPath(
-          clipper: SliderClipper(),
-          child: Stack(
-            children: <Widget>[
-              Container(
-                color: widget.positiveColor,
-              ),
-              SliderMarks(
-                markCount: widget.markCount,
-                color: widget.negativeColor,
-                paddingBottom: paddingBottom,
-                paddingRight: 20.0,
-                paddingTop: paddingTop,
-              ),
-            ],
+    return GestureDetector(
+      onPanStart: _onPanStart,
+      onPanUpdate: _onPanUpdate,
+      onPanEnd: _onPanEnd,
+      child: Stack(
+        children: <Widget>[
+          SliderMarks(
+            markCount: widget.markCount,
+            color: widget.positiveColor,
+            paddingTop: paddingTop,
+            paddingBottom: paddingBottom,
+            paddingRight: 20.0,
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
-          child: LayoutBuilder(
-            builder: (BuildContext context, BoxConstraints constraints){
-              final height = constraints.maxHeight;
-              final sliderY = height  * (1.0 - sliderPercent);
-              final pointsYouNeed = (100*(1.0-sliderPercent)).round();
-              final pointsYouHave = 100-pointsYouNeed;
+          ClipPath(
+            clipper: SliderClipper(sliderPercent: sliderPercent, paddingTop: paddingTop, paddingBottom: paddingBottom),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  color: widget.positiveColor,
+                ),
+                SliderMarks(
+                  markCount: widget.markCount,
+                  color: widget.negativeColor,
+                  paddingBottom: paddingBottom,
+                  paddingRight: 20.0,
+                  paddingTop: paddingTop,
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints){
+                final height = constraints.maxHeight;
+                final sliderY = height  * (1.0 - sliderPercent);
+                final pointsYouNeed = (100*(1.0-sliderPercent)).round();
+                final pointsYouHave = 100-pointsYouNeed;
 
-              return Stack(
-                children: <Widget>[
-                  Positioned(
-                    left: 30,
-                    top: sliderY - 50,
-                    child: FractionalTranslation(
-                      translation: Offset(0.0,-1.0),
-                      child: Points(color: widget.positiveColor,isAboveSlider: true,isPointsYouNeed: true,points: pointsYouNeed,)
+                return Stack(
+                  children: <Widget>[
+                    Positioned(
+                      left: 30,
+                      top: sliderY - 50,
+                      child: FractionalTranslation(
+                        translation: Offset(0.0,-1.0),
+                        child: Points(color: widget.positiveColor,isAboveSlider: true,isPointsYouNeed: true,points: pointsYouNeed,)
+                      ),
                     ),
-                  ),
-                  Positioned(
-                    left: 30,
-                    top: sliderY + 50,
-                    child: Points(color: widget.negativeColor,isAboveSlider: false,isPointsYouNeed: true,points: pointsYouHave,),
-                  )
-                ],
-              );
-            },
-          ),
-        )
-      ],
+                    Positioned(
+                      left: 30,
+                      top: sliderY + 50,
+                      child: Points(color: widget.negativeColor,isAboveSlider: false,isPointsYouNeed: true,points: pointsYouHave,),
+                    )
+                  ],
+                );
+              },
+            ),
+          )
+        ],
+      ),
     );
   }
 }
@@ -143,17 +172,26 @@ class SliderMarksPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    return null;
+    return true;
   }
   
 }
 
 class SliderClipper extends CustomClipper<Path> {
+  final double sliderPercent, paddingTop, paddingBottom;
+
+  SliderClipper({this.sliderPercent, this.paddingTop, this.paddingBottom});
+  
+
   @override
   Path getClip(Size size) {
+    final top = paddingTop;
+    final bottom = size.height;
+    final height = bottom - paddingBottom - top;
+    final percentFromBottom = 1.0 - sliderPercent;
+
     Path rect = Path()
-      ..addRect(Rect.fromLTWH(0.0, size.height/2, size.width, size.height/2));
+      ..addRect(Rect.fromLTRB(0.0, top + percentFromBottom * height, size.width, bottom));
     return rect;
   }
 
