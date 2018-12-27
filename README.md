@@ -5,6 +5,9 @@ My effort on replicating various apps UI on flutter.
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
 
+## Credits
+The code for Springy Widget is taken and refactored from (https://github.com/matthew-carroll/flutter_ui_challenge_springy_slider)
+
 ## Daraz app UI
 My Flutter App             |  Original Daraz App
 :-------------------------:|:-------------------------:
