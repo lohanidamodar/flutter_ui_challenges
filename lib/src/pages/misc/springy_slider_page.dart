@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/widgets/springy_slider.dart';
+import 'package:flutter_ui_challenges/src/widgets/springy_slider/springy_slider.dart';
 
 class SpringySliderPage extends StatelessWidget {
 
