@@ -6,6 +6,7 @@ import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
 
@@ -24,6 +25,9 @@ class DrawerMenu extends StatelessWidget {
     ]),
     MenuItem(title: "Navigation", items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
+    ]),
+    MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Springy Slider", SpringySliderPage()),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage())
 
