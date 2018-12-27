@@ -27,16 +27,32 @@ class DrawerMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Drawer(
-    child: SafeArea(
-      child: Container(
-        padding: EdgeInsets.all(20.0),
-        child: ListView.builder(
-          itemBuilder: (BuildContext context,int index){
-            dynamic page = pages[index];
-            return page is MenuItem ? _buildExpandableMenu(page, context) : _buildSubMenu(page, context);
-          },
-          itemCount: pages.length,
-        )
+    child: Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(100),
+        child: Container(
+          padding: EdgeInsets.only(top: 30.0),
+          height: 100,
+          color: Colors.deepPurple,
+          child: ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Icon(Icons.toys),
+            ),
+            title: Text("Flutter UIs", style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 18.0
+            )),
+          ),
+        ),
+      ),
+      body: ListView.builder(
+        itemBuilder: (BuildContext context,int index){
+          dynamic page = pages[index];
+          return page is MenuItem ? _buildExpandableMenu(page, context) : _buildSubMenu(page, context);
+        },
+        itemCount: pages.length,
       ),
     ),
   );
