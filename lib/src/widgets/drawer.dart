@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
@@ -22,6 +23,7 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
+      SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
     ]),
     MenuItem(title: "Navigation", items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
