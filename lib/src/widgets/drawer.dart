@@ -11,6 +11,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
 
 class DrawerMenu extends StatelessWidget {
@@ -29,6 +30,9 @@ class DrawerMenu extends StatelessWidget {
     ]),
     MenuItem(title: "Navigation", items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
+    ]),
+    MenuItem(title: "Onboarding", items: [
+      SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
     MenuItem(title: "Miscllaneous", items: [
       SubMenuItem("Springy Slider", SpringySliderPage()),
