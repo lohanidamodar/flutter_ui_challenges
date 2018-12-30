@@ -64,6 +64,11 @@ flutter:
     - assets/grocery/mortar.png
     - assets/grocery/pineapple.png
     - assets/grocery/vegetables.png
+    - assets/smwallet/logo.png
+    - assets/smwallet/swipe-right.png
+    - assets/smwallet/wallet1.png
+    - assets/smwallet/wallet2.png
+    - assets/smwallet/wallet3.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
