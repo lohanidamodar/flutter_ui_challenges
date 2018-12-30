@@ -14,6 +14,10 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## User Flow Screens
 <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> 
 
+## Onboarding Screens
+(1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
+
+<img height="480px" src="screenshots/onboarding1.gif"> 
 
 ## miscellaneous widgets
 <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif">
