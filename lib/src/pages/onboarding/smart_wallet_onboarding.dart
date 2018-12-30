@@ -6,10 +6,8 @@ class SmartWalletOnboardingPage extends StatelessWidget {
   final pages = [
     PageViewModel(
       pageColor: Color(0xF6F6F7FF),
-        // iconImageAssetPath: 'assets/smwallet/logo.png',
-        iconColor: null,
         bubbleBackgroundColor: Colors.indigo,
-        title: Center(child:Image.asset('assets/smwallet/logo.png')),
+        title: Container(),
         body: Column(
           children: <Widget>[
             Text('Welcome to Smart Wallet'),
