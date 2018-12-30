@@ -16,7 +16,7 @@ class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMix
     super.initState();
     controller = AnimationController(
       vsync: this,
-      duration: Duration(microseconds: 1200));
+      duration: Duration(milliseconds: 1200));
     animation = CurvedAnimation(parent: controller, curve: Curves.elasticOut);
     animation.addListener((){
       setState(() {
