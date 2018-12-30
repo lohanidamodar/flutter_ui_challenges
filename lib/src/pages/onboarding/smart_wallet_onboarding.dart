@@ -8,7 +8,7 @@ class SmartWalletOnboardingPage extends StatelessWidget {
       pageColor: Color(0xF6F6F7FF),
         // iconImageAssetPath: 'assets/smwallet/logo.png',
         iconColor: null,
-        bubbleBackgroundColor: Colors.blue,
+        bubbleBackgroundColor: Colors.indigo,
         title: Center(child:Image.asset('assets/smwallet/logo.png')),
         body: Column(
           children: <Widget>[
@@ -32,7 +32,7 @@ class SmartWalletOnboardingPage extends StatelessWidget {
     PageViewModel(
       pageColor: Color(0xF6F6F7FF),
         iconColor: null,
-        bubbleBackgroundColor: Colors.blue,
+        bubbleBackgroundColor: Colors.indigo,
         title: Container(),
         body: Column(
           children: <Widget>[
@@ -56,7 +56,7 @@ class SmartWalletOnboardingPage extends StatelessWidget {
     PageViewModel(
       pageColor: Color(0xF6F6F7FF),
         iconColor: null,
-        bubbleBackgroundColor: Colors.blue,
+        bubbleBackgroundColor: Colors.indigo,
         title: Container(),
         body: Column(
           children: <Widget>[
@@ -82,18 +82,30 @@ class SmartWalletOnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IntroViewsFlutter(
-        pages,
-        onTapDoneButton: (){
-          Navigator.pop(context);
-        },
-        showSkipButton: false,
-        doneText: Icon(Icons.arrow_forward_ios, color: Colors.blue),
-        pageButtonTextStyles: new TextStyle(
-            color: Colors.blue,
-            fontSize: 18.0,
-            fontFamily: "Regular",
-          ),
+      body: SafeArea(
+        child: Stack(
+          children: <Widget>[
+            IntroViewsFlutter(
+              pages,
+              onTapDoneButton: (){
+                Navigator.pop(context);
+              },
+              showSkipButton: false,
+              doneText: Text("Get Started",),
+              pageButtonsColor: Colors.indigo,
+              pageButtonTextStyles: new TextStyle(
+                  // color: Colors.indigo,
+                  fontSize: 16.0,
+                  fontFamily: "Regular",
+              ),
+            ),
+            Positioned(
+              top: 20.0,
+              left: MediaQuery.of(context).size.width/2 - 50,
+              child: Image.asset('assets/smwallet/logo.png', width: 100,)
+            )
+          ],
+        ),
       ),
     );
   }
