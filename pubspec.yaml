@@ -22,6 +22,7 @@ dependencies:
   flutter_swiper: ^1.1.4
   flutter_custom_clippers: ^0.1.1
   intro_views_flutter:
+  wave:
   
 dev_dependencies:
   flutter_test:

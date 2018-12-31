@@ -6,6 +6,7 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart
 import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
@@ -19,6 +20,7 @@ class DrawerMenu extends StatelessWidget {
     MenuItem(title: "User flow", items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
+      SubMenuItem("Login Three", LoginThreePage()),
       SubMenuItem("Signup One", SignupOnePage()),
       SubMenuItem("Profile One", ProfileOnePage()),
     ]),
