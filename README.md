@@ -22,6 +22,8 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## miscellaneous widgets
 <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif">
 
+## Recipe App
+<img height="480px" src="screenshots/recipe_details1.png"> 
 
 ## grocery App UI Kit
 (design credit: https://www.uplabs.com/posts/grocery-app-kit)
