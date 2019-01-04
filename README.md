@@ -25,6 +25,10 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Recipe App
 <img height="480px" src="screenshots/recipe_details1.png"> 
 
+## Travel App
+<img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> 
+
+
 ## grocery App UI Kit
 (design credit: https://www.uplabs.com/posts/grocery-app-kit)
 
