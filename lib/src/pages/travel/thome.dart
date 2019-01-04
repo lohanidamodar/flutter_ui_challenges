@@ -48,7 +48,9 @@ class TravelHomePage extends StatelessWidget {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
                 child: Stack(
                   children: <Widget>[
-                    Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover,),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover,)),
                     Positioned(
                       bottom: 20.0,
                       child: Container(
@@ -81,7 +83,9 @@ class TravelHomePage extends StatelessWidget {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
                 child: Stack(
                   children: <Widget>[
-                    Image.asset('assets/travel/fewalake.jpg', fit: BoxFit.cover,),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover,)),
                     Positioned(
                       bottom: 20.0,
                       child: Container(
