@@ -41,118 +41,76 @@ class TravelHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(left:16.0, top: 8.0, right: 16.0, bottom: 16.0),
-              child: Material(
-                elevation: 5.0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                child: Stack(
-                  children: <Widget>[
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(5.0),
-                      child: Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover,)),
-                    Positioned(
-                      bottom: 20.0,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal:16.0,vertical: 8.0),
-                        color: Colors.black.withOpacity(0.7),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: <Widget>[
-                            Text("Kathmandu", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold
-                            )),
-                            Text("90 places worth to visit", style: TextStyle(
-                              color: Colors.white
-                            ))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.only(left:16.0, top: 8.0, right: 16.0, bottom: 16.0),
-              child: Material(
-                elevation: 5.0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                child: Stack(
-                  children: <Widget>[
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(5.0),
-                      child: Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover,)),
-                    Positioned(
-                      bottom: 20.0,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal:16.0,vertical: 8.0),
-                        color: Colors.black.withOpacity(0.7),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: <Widget>[
-                            Text("Pokhara", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold
-                            )),
-                            Text("40 places worth to visit", style: TextStyle(
-                              color: Colors.white
-                            ))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
-              child: Material(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                elevation: 5.0,
-                child: Container(
-                  padding: EdgeInsets.all(16.0),
-                  child: Text("Palpa", style: TextStyle(
-                    fontSize: 20.0,
-                  )),
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
-              child: Material(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                elevation: 5.0,
-                child: Container(
-                  padding: EdgeInsets.all(16.0),
-                  child: Text("Jomsom", style: TextStyle(
-                    fontSize: 20.0,
-                  )),
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
-              child: Material(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                elevation: 5.0,
-                child: Container(
-                  padding: EdgeInsets.all(16.0),
-                  child: Text("Namche", style: TextStyle(
-                    fontSize: 20.0,
-                  )),
-                ),
-              ),
-            ),
+            _buildFeaturedItem(image: 'assets/travel/kathmandu1.jpg', title: "Kathmandu", subtitle: "90 places worth to visit"),
+            _buildFeaturedItem(image: 'assets/travel/fewalake.jpg',title: "Pokhara", subtitle: "40 places worth to visit"),
+            _buildItem(title: "Jomsom"),
+            _buildItem(title: "Palpa"),
+            _buildItem(title: "Namche"),
           ],
         ),
       ),
     );
+  }
+
+  Widget _buildItem({String title}) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
+      child: Material(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        elevation: 5.0,
+        child: Container(
+          padding: EdgeInsets.all(16.0),
+          child: Text(title, style: TextStyle(
+            fontSize: 20.0,
+          )),
+        ),
+      ),
+    );
+  }
+
+  Container _buildFeaturedItem({String image, String title, String subtitle}) {
+    return Container(
+            padding: EdgeInsets.only(left:16.0, top: 8.0, right: 16.0, bottom: 16.0),
+            child: Material(
+              elevation: 5.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+              child: Stack(
+                children: <Widget>[
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(5.0),
+                    child: Image.asset(image, fit: BoxFit.cover,)),
+                  Positioned(
+                    right: 10.0,
+                    top: 10.0,
+                    child: IconButton(
+                      onPressed: (){},
+                      icon: Icon(Icons.favorite_border, color: Colors.white),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 20.0,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal:16.0,vertical: 8.0),
+                      color: Colors.black.withOpacity(0.7),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text(title, style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold
+                          )),
+                          Text(subtitle, style: TextStyle(
+                            color: Colors.white
+                          ))
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
   }
 }
