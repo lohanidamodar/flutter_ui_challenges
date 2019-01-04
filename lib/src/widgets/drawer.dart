@@ -15,6 +15,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 
 class DrawerMenu extends StatelessWidget {
   final List<dynamic> pages = [
@@ -33,6 +34,9 @@ class DrawerMenu extends StatelessWidget {
     ]),
     MenuItem(title: "Foob", items: [
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
+    ]),
+    MenuItem(title: "Travel", items: [
+      SubMenuItem("Travel Home", TravelHomePage()),
     ]),
     MenuItem(title: "Navigation", items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
