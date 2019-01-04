@@ -43,13 +43,11 @@ class TravelHomePage extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (_) => DestinationPage()
-                ));
-              },
+              onTap: ()=>_openDestinationPage(context),
               child: _buildFeaturedItem(image: 'assets/travel/kathmandu1.jpg', title: "Kathmandu", subtitle: "90 places worth to visit")),
-            _buildFeaturedItem(image: 'assets/travel/fewalake.jpg',title: "Pokhara", subtitle: "40 places worth to visit"),
+            GestureDetector(
+              onTap: ()=>_openDestinationPage(context),
+              child: _buildFeaturedItem(image: 'assets/travel/fewalake.jpg',title: "Pokhara", subtitle: "40 places worth to visit")),
             _buildItem(title: "Jomsom"),
             _buildItem(title: "Palpa"),
             _buildItem(title: "Namche"),
@@ -137,5 +135,11 @@ class TravelHomePage extends StatelessWidget {
               ),
             ),
           );
+  }
+
+  _openDestinationPage(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(
+      builder: (_) => DestinationPage()
+    ));
   }
 }

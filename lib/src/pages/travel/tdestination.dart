@@ -19,6 +19,7 @@ class DestinationPage extends StatelessWidget {
               Container(
                 padding: EdgeInsets.only(top: 200, left: 40),
                 child: Card(
+                  elevation: 5.0,
                   child: Container(
                     child: Column(
                       children: <Widget>[
@@ -66,7 +67,42 @@ class DestinationPage extends StatelessWidget {
                     _buildPlaceToVisit(image: 'assets/travel/kathmandu2.jpg',title: "Swoyambhunath"),
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 250,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(child: ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Image.asset('assets/travel/kathmandu2.jpg', height: 180, fit: BoxFit.cover))),
+                    SizedBox(width: 20.0,),
+                    Expanded(
+                      child: GridView(
+                        shrinkWrap: true,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 10.0,
+                          mainAxisSpacing: 10.0
+                        ),
+                        children: <Widget>[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: Image.asset('assets/travel/kathmandu1.jpg',fit: BoxFit.cover)),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: Image.asset('assets/travel/pashupatinath.jpg',fit: BoxFit.cover)),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: Image.asset('assets/travel/pashupatinath.jpg',fit: BoxFit.cover)),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: Image.asset('assets/travel/kathmandu1.jpg',fit: BoxFit.cover)),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ],
