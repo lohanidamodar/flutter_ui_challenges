@@ -49,6 +49,24 @@ class TravelHomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.red,
+        currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.location_searching),
+            title: Text("Discover")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.location_on),
+            title: Text("Popular")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            title: Text("Settings")
+          ),
+        ],
+      ),
     );
   }
 
