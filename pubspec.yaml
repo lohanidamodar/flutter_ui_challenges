@@ -71,6 +71,12 @@ flutter:
     - assets/smwallet/wallet1.png
     - assets/smwallet/wallet2.png
     - assets/smwallet/wallet3.png
+    - assets/travel/fewalake.jpg
+    - assets/travel/fishtail.jpg
+    - assets/travel/kathmandu1.jpg
+    - assets/travel/kathmandu2.jpg
+    - assets/travel/tokyo.jpg
+    - assets/travel/pashupatinath.jpg
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
