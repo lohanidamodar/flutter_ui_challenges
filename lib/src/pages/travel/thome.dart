@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
 
 class TravelHomePage extends StatelessWidget {
   @override
@@ -41,7 +42,13 @@ class TravelHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            _buildFeaturedItem(image: 'assets/travel/kathmandu1.jpg', title: "Kathmandu", subtitle: "90 places worth to visit"),
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (_) => DestinationPage()
+                ));
+              },
+              child: _buildFeaturedItem(image: 'assets/travel/kathmandu1.jpg', title: "Kathmandu", subtitle: "90 places worth to visit")),
             _buildFeaturedItem(image: 'assets/travel/fewalake.jpg',title: "Pokhara", subtitle: "40 places worth to visit"),
             _buildItem(title: "Jomsom"),
             _buildItem(title: "Palpa"),
