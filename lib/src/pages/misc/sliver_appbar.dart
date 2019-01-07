@@ -57,7 +57,7 @@ class SliverAppbarPage extends StatelessWidget {
               ),
               delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
-                  return _buildItems(index);
+                  return _buildItems(index, context);
                 },
                 childCount: images.length,
               ),
@@ -128,17 +128,20 @@ class SliverAppbarPage extends StatelessWidget {
     );
   }
 
-  Widget _buildItems(int index) {
+  Widget _buildItems(int index, BuildContext context) {
     return Container(
       height: 200,
-      child: Column(
-        children: <Widget>[
-          Expanded(child: Image.asset(images[index%images.length], fit: BoxFit.cover)),
-          SizedBox(height: 10.0,),
-          Text('Top Quality fashion item', softWrap: true,),
-          SizedBox(height: 10.0,),
-          Text('Rs.1,254', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),)
-        ],
+      child: GestureDetector(
+        onTap: () => _onTapItem(context,index),
+        child: Column(
+          children: <Widget>[
+            Expanded(child: Hero(tag:"item$index",child: Image.asset(images[index%images.length], fit: BoxFit.cover))),
+            SizedBox(height: 10.0,),
+            Text('Top Quality fashion item', softWrap: true,),
+            SizedBox(height: 10.0,),
+            Text('Rs.1,254', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),)
+          ],
+        ),
       ),
     );
   }
@@ -158,5 +161,39 @@ class SliverAppbarPage extends StatelessWidget {
         ),
       )
     );
+  }
+
+  _onTapItem(BuildContext pcontext, int index) {
+    Navigator.of(pcontext).push(MaterialPageRoute<void>(
+      builder: (BuildContext context) {
+        return Scaffold(
+          appBar: AppBar(
+            title: const Text('Top quality fashion item'),
+          ),
+          body: Material(
+            child: Container(
+              // The blue background emphasizes that it's a new route.
+              color: Colors.white,
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(child: Hero(
+                      tag:"item$index",
+                      child: Image.asset(images[index%images.length], fit: BoxFit.cover))),
+                    SizedBox(height: 10.0,),
+                    Text('Top Quality fashion item', softWrap: true,),
+                    SizedBox(height: 10.0,),
+                    Text('Rs.1,254', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),)
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      }
+    ));
   }
 }
