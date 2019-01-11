@@ -17,6 +17,7 @@ import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
 class DrawerMenu extends StatelessWidget {
   final List<dynamic> pages = [
@@ -38,6 +39,7 @@ class DrawerMenu extends StatelessWidget {
     ]),
     MenuItem(title: "Travel", items: [
       SubMenuItem("Travel Home", TravelHomePage()),
+      SubMenuItem("Travel Nepal", TravelNepalPage()),
     ]),
     MenuItem(title: "Hotel", items: [
       SubMenuItem("Hotel Home", HotelHomePage()),
