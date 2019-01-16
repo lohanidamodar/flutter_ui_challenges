@@ -3,6 +3,7 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
+import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 import 'package:flutter_ui_challenges/src/pages/hotel/hhome.dart';
@@ -34,8 +35,9 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
     ]),
-    MenuItem(title: "Foob", items: [
+    MenuItem(title: "Food", items: [
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
+      SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
     MenuItem(title: "Travel", items: [
       SubMenuItem("Travel Home", TravelHomePage()),

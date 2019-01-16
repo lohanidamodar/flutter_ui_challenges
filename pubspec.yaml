@@ -82,6 +82,16 @@ flutter:
     - assets/hotel/room2.jpg
     - assets/hotel/room3.jpg
     - assets/hotel/room4.jpg
+    - assets/food/breakfast.jpg
+    - assets/food/burger.jpg
+    - assets/food/burger1.jpg
+    - assets/food/burger2.jpg
+    - assets/food/cherry.jpg
+    - assets/food/cupcake.jpg
+    - assets/food/french-fries.jpg
+    - assets/food/fries.jpg
+    - assets/food/meal.jpg
+    - assets/food/pancake.jpg
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
