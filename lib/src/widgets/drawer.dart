@@ -17,6 +17,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
@@ -28,6 +29,7 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Login Three", LoginThreePage()),
       SubMenuItem("Signup One", SignupOnePage()),
       SubMenuItem("Profile One", ProfileOnePage()),
+      SubMenuItem("Profile Two", ProfileTwoPage()),
     ]),
     MenuItem(title: "Ecommerce", items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
