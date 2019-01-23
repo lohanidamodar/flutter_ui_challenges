@@ -10,6 +10,7 @@ import 'package:flutter_ui_challenges/src/pages/hotel/hhome.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login4.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
@@ -27,6 +28,7 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
+      SubMenuItem("Login Four", LoginFourPage()),
       SubMenuItem("Signup One", SignupOnePage()),
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
