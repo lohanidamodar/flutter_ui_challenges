@@ -9,7 +9,7 @@ My effort on replicating various apps UI on flutter.
 The code for Springy Widget is taken and refactored from (https://github.com/matthew-carroll/flutter_ui_challenge_springy_slider)
 
 ## Ecommerce
-<img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
+<img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
 ## User Flow Screens
 <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/profile2.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> 
