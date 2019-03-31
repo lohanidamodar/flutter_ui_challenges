@@ -26,9 +26,9 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
-class DrawerMenu extends StatelessWidget {
+class MainMenu extends StatelessWidget {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow", items: [
+    MenuItem(title: "User flow (7 layouts)", items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -37,7 +37,7 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
     ]),
-    MenuItem(title: "Ecommerce", items: [
+    MenuItem(title: "Ecommerce (6 layouts)", items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Confirm Order", ConfirmOrderPage()),
@@ -45,33 +45,33 @@ class DrawerMenu extends StatelessWidget {
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
     ]),
-    MenuItem(title: "Blog", items: [
+    MenuItem(title: "Blog (2 layouts)", items: [
       SubMenuItem("Article One", ArticleOnePage()),
       SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
-    MenuItem(title: "Food", items: [
+    MenuItem(title: "Food (2 layouts)", items: [
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
-    MenuItem(title: "Travel", items: [
+    MenuItem(title: "Travel (2 layouts)", items: [
       SubMenuItem("Travel Home", TravelHomePage()),
       SubMenuItem("Travel Nepal", TravelNepalPage()),
     ]),
-    MenuItem(title: "Hotel", items: [
+    MenuItem(title: "Hotel (1 layout)", items: [
       SubMenuItem("Hotel Home", HotelHomePage()),
     ]),
-    MenuItem(title: "Navigation", items: [
+    MenuItem(title: "Navigation (1 layout)", items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
     ]),
-    MenuItem(title: "Onboarding", items: [
+    MenuItem(title: "Onboarding (1 layout)", items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
-    MenuItem(title: "Miscllaneous", items: [
+    MenuItem(title: "Miscllaneous (3 layouts)", items: [
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
     ]),
-    SubMenuItem("Grocery UI Kit", GroceryHomePage())
+    SubMenuItem("Grocery UI Kit (5 layouts)", GroceryHomePage())
 
   ];
 
