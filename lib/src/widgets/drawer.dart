@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
@@ -46,6 +47,7 @@ class DrawerMenu extends StatelessWidget {
     ]),
     MenuItem(title: "Blog", items: [
       SubMenuItem("Article One", ArticleOnePage()),
+      SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
     MenuItem(title: "Food", items: [
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
