@@ -1,4 +1,4 @@
-package com.example.flutterecommerce;
+package com.popupbits.flutteruichallenges;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
