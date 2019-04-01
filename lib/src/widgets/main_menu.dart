@@ -29,7 +29,7 @@ import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
 class MainMenu extends StatelessWidget {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow (8 layouts)", items: [
+    MenuItem(title: "User flow (8 layouts)", icon: Icons.person, items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -39,7 +39,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
     ]),
-    MenuItem(title: "Ecommerce (6 layouts)", items: [
+    MenuItem(title: "Ecommerce (6 layouts)", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Confirm Order", ConfirmOrderPage()),
@@ -47,25 +47,25 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
     ]),
-    MenuItem(title: "Blog (2 layouts)", items: [
+    MenuItem(title: "Blog (2 layouts)", icon: Icons.pages, items: [
       SubMenuItem("Article One", ArticleOnePage()),
       SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
-    MenuItem(title: "Food (2 layouts)", items: [
+    MenuItem(title: "Food (2 layouts)", icon: Icons.fastfood, items: [
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
-    MenuItem(title: "Travel (2 layouts)", items: [
+    MenuItem(title: "Travel (2 layouts)", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage()),
       SubMenuItem("Travel Nepal", TravelNepalPage()),
     ]),
-    MenuItem(title: "Hotel (1 layout)", items: [
+    MenuItem(title: "Hotel (1 layout)", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage()),
     ]),
-    MenuItem(title: "Navigation (1 layout)", items: [
+    MenuItem(title: "Navigation (1 layout)", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
     ]),
-    MenuItem(title: "Onboarding (1 layout)", items: [
+    MenuItem(title: "Onboarding (1 layout)", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
     MenuItem(title: "Miscllaneous (3 layouts)", items: [
@@ -73,7 +73,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
     ]),
-    SubMenuItem("Grocery UI Kit (5 layouts)", GroceryHomePage())
+    SubMenuItem("Grocery UI Kit (4 layouts)", GroceryHomePage())
 
   ];
 
@@ -111,7 +111,8 @@ class MainMenu extends StatelessWidget {
 
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
     return ExpansionTile(
-      title: Text(page.title),
+      leading: Icon(page.icon),
+      title: Text(page.title, style: TextStyle(fontWeight: FontWeight.bold),),
       children: _buildSubMenus(page.items, context),
     );
   }
@@ -123,13 +124,17 @@ class MainMenu extends StatelessWidget {
   }
 
   Widget _buildSubMenu(SubMenuItem item, BuildContext context) {
-    return Column(children: <Widget>[
-      ListTile(
+    return Padding(
+      padding: const EdgeInsets.only(left: 32.0),
+      child: ListTile(
+        leading: Icon(Icons.arrow_right, color: Colors.deepOrange),
+        contentPadding: EdgeInsets.all(0),
+        dense: false,
+        isThreeLine: false,
         title: Text(item.title),
         onTap: () => _openPage(item.page, context),
       ),
-      Divider(),
-    ],);
+    );
   }
 
   void _openPage(Object page, BuildContext context) {
@@ -144,16 +149,18 @@ class MainMenu extends StatelessWidget {
 class MenuItem {
   final String title;
   final List<SubMenuItem> items;
+  final IconData icon;
 
 
-  MenuItem({Key key, @required this.title, this.items});
+  MenuItem({Key key, @required this.title, this.items, this.icon=Icons.label_important});
 
 
 }
 class SubMenuItem {
   final String title;
   final Widget page;
+  final IconData icon;
 
-  SubMenuItem(this.title, this.page);
+  SubMenuItem(this.title, this.page, {this.icon = Icons.block});
 
 }
