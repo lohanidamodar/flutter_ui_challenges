@@ -1,6 +1,8 @@
 # Flutter UI Challenges
 My effort on replicating various apps UI on flutter.
 
+[<img src="screenshots/play-store-logo.png" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges)
+
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
