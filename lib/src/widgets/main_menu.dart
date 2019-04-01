@@ -23,12 +23,13 @@ import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
 class MainMenu extends StatelessWidget {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow (7 layouts)", items: [
+    MenuItem(title: "User flow (8 layouts)", items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -36,6 +37,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Signup One", SignupOnePage()),
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
+      SubMenuItem("Profile Three", ProfileThreePage()),
     ]),
     MenuItem(title: "Ecommerce (6 layouts)", items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
