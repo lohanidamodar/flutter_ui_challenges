@@ -39,9 +39,10 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
     ]),
-    MenuItem(title: "Ecommerce (6 layouts)", icon: Icons.shopping_basket, items: [
+    MenuItem(title: "Ecommerce (7 layouts)", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
+      SubMenuItem("Ecommerce Three", SliverAppbarPage()),
       SubMenuItem("Confirm Order", ConfirmOrderPage()),
       SubMenuItem("Ecommerce Cart One", CartOnePage()),
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
@@ -73,7 +74,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
     ]),
-    SubMenuItem("Grocery UI Kit (4 layouts)", GroceryHomePage())
+    SubMenuItem("Grocery UI Kit (5 layouts)", GroceryHomePage())
 
   ];
 
@@ -85,11 +86,11 @@ class MainMenu extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.only(top: 30.0),
           height: 100,
-          color: Colors.deepPurple,
+          color: Colors.deepOrange,
           child: ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.white,
-              child: Icon(Icons.toys),
+              child: Image.asset('assets/icon/icon.png',width: 20,),
             ),
             title: Text("Flutter UIs", style: TextStyle(
               color: Colors.white,
@@ -100,6 +101,7 @@ class MainMenu extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
+        physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context,int index){
           dynamic page = pages[index];
           return page is MenuItem ? _buildExpandableMenu(page, context) : _buildSubMenu(page, context);

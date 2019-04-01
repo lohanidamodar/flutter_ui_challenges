@@ -53,6 +53,7 @@ flutter:
     - assets/travel/
     - assets/hotel/
     - assets/food/
+    - assets/icon/
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
