@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
+import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
@@ -70,6 +71,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
     MenuItem(title: "Miscllaneous (3 layouts)", items: [
+      SubMenuItem("Alert Dialogs", DialogsPage()),
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
