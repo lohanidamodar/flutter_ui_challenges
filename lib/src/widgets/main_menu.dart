@@ -70,8 +70,8 @@ class MainMenu extends StatelessWidget {
     MenuItem(title: "Onboarding (1 layout)", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
-    MenuItem(title: "Miscllaneous (3 layouts)", items: [
-      SubMenuItem("Alert Dialogs", DialogsPage()),
+    MenuItem(title: "Miscllaneous (3 layouts)", hasChanges: true, items: [
+      SubMenuItem("Alert Dialogs", DialogsPage(),hasChanges: true),
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
@@ -116,7 +116,7 @@ class MainMenu extends StatelessWidget {
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
     return ExpansionTile(
       leading: Icon(page.icon),
-      title: Text(page.title, style: TextStyle(fontWeight: FontWeight.bold),),
+      title: Text(page.title, style: TextStyle(fontWeight: FontWeight.bold, color: page.hasChanges ? Colors.deepOrange: Colors.black87),),
       children: _buildSubMenus(page.items, context),
     );
   }
@@ -135,7 +135,7 @@ class MainMenu extends StatelessWidget {
         contentPadding: EdgeInsets.all(0),
         dense: false,
         isThreeLine: false,
-        title: Text(item.title),
+        title: Text(item.title, style: Theme.of(context).textTheme.subhead.copyWith(color: item.hasChanges ? Colors.deepOrange : Colors.black87),),
         onTap: () => _openPage(item.page, context),
       ),
     );
@@ -154,9 +154,10 @@ class MenuItem {
   final String title;
   final List<SubMenuItem> items;
   final IconData icon;
+  final bool hasChanges;
 
 
-  MenuItem({Key key, @required this.title, this.items, this.icon=Icons.label_important});
+  MenuItem({Key key, @required this.title, this.items, this.icon=Icons.label_important, this.hasChanges=false});
 
 
 }
@@ -164,7 +165,8 @@ class SubMenuItem {
   final String title;
   final Widget page;
   final IconData icon;
+  final bool hasChanges;
 
-  SubMenuItem(this.title, this.page, {this.icon = Icons.block});
+  SubMenuItem(this.title, this.page, {this.icon = Icons.block, this.hasChanges = false});
 
 }
