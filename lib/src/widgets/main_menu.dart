@@ -18,6 +18,7 @@ import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login4.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/sliders.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
@@ -70,7 +71,8 @@ class MainMenu extends StatelessWidget {
     MenuItem(title: "Onboarding (1 layout)", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
-    MenuItem(title: "Miscllaneous (3 layouts)", hasChanges: true, items: [
+    MenuItem(title: "Miscllaneous (5 layouts)", hasChanges: true, items: [
+      SubMenuItem("Sliders", SlidersPage(),hasChanges: true),
       SubMenuItem("Alert Dialogs", DialogsPage(),hasChanges: true),
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
