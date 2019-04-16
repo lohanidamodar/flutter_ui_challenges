@@ -8,6 +8,7 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
+import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
@@ -54,7 +55,8 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Article One", ArticleOnePage()),
       SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
-    MenuItem(title: "Food (2 layouts)", icon: Icons.fastfood, items: [
+    MenuItem(title: "Food (3 layouts)", hasChanges: true, icon: Icons.fastfood, items: [
+      SubMenuItem("Cake Details", CakePage(),hasChanges: true),
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),

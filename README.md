@@ -29,7 +29,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/article1.png" >
 
 ## Food Delivery App
-<img height="480px" src="screenshots/fdhome.png"> 
+<img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png"> 
 
 
 ## Hotel App
