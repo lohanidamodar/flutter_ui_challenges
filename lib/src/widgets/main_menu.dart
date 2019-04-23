@@ -32,7 +32,7 @@ import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
 class MainMenu extends StatelessWidget {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow (8 layouts)", icon: Icons.person, items: [
+    MenuItem(title: "User flow", icon: Icons.person, items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -42,7 +42,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
     ]),
-    MenuItem(title: "Ecommerce (7 layouts)", icon: Icons.shopping_basket, items: [
+    MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Ecommerce Three", SliverAppbarPage()),
@@ -51,36 +51,36 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
     ]),
-    MenuItem(title: "Blog (2 layouts)", icon: Icons.pages, items: [
+    MenuItem(title: "Blog", icon: Icons.pages, items: [
       SubMenuItem("Article One", ArticleOnePage()),
       SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
-    MenuItem(title: "Food (3 layouts)", hasChanges: true, icon: Icons.fastfood, items: [
+    MenuItem(title: "Food", hasChanges: true, icon: Icons.fastfood, items: [
       SubMenuItem("Cake Details", CakePage(),hasChanges: true),
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
-    MenuItem(title: "Travel (2 layouts)", icon: Icons.airplanemode_active, items: [
+    MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage()),
       SubMenuItem("Travel Nepal", TravelNepalPage()),
     ]),
-    MenuItem(title: "Hotel (1 layout)", icon: Icons.hotel, items: [
+    MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage()),
     ]),
-    MenuItem(title: "Navigation (1 layout)", icon: Icons.menu, items: [
+    MenuItem(title: "Navigation", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
     ]),
-    MenuItem(title: "Onboarding (1 layout)", icon: Icons.info, items: [
+    MenuItem(title: "Onboarding", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
-    MenuItem(title: "Miscllaneous (5 layouts)", hasChanges: true, items: [
+    MenuItem(title: "Miscllaneous", hasChanges: true, items: [
       SubMenuItem("Sliders", SlidersPage(),hasChanges: true),
       SubMenuItem("Alert Dialogs", DialogsPage(),hasChanges: true),
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
     ]),
-    SubMenuItem("Grocery UI Kit (5 layouts)", GroceryHomePage())
+    SubMenuItem("Grocery UI Kit", GroceryHomePage())
 
   ];
 
@@ -120,7 +120,7 @@ class MainMenu extends StatelessWidget {
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
     return ExpansionTile(
       leading: Icon(page.icon),
-      title: Text(page.title, style: TextStyle(fontWeight: FontWeight.bold, color: page.hasChanges ? Colors.deepOrange: Colors.black87),),
+      title: Text("${page.title} (${page.items.length} layouts)", style: TextStyle(fontWeight: FontWeight.bold, color: page.hasChanges ? Colors.deepOrange: Colors.black87),),
       children: _buildSubMenus(page.items, context),
     );
   }
