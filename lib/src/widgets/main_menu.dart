@@ -6,8 +6,10 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
@@ -43,14 +45,16 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
     ]),
-    MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
+    MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, hasChanges: true, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Ecommerce Three", SliverAppbarPage()),
+      SubMenuItem("Ecommerce Four", EcommerceFourPage()),
       SubMenuItem("Confirm Order", ConfirmOrderPage()),
       SubMenuItem("Ecommerce Cart One", CartOnePage()),
       SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
+      SubMenuItem("Ecommerce Details Three", EcommerceDetailThreePage()),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
       SubMenuItem("Article One", ArticleOnePage()),
