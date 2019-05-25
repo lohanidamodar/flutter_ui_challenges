@@ -30,12 +30,13 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboardi
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
 class MainMenu extends StatelessWidget {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow", icon: Icons.person, items: [
+    MenuItem(title: "User flow", hasChanges: true, icon: Icons.person, items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -44,6 +45,7 @@ class MainMenu extends StatelessWidget {
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
+      SubMenuItem("Profile Four", ProfileFourPage(), hasChanges: true),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, hasChanges: true, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
