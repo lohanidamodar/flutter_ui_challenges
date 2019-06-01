@@ -43,7 +43,7 @@ class MainMenu extends StatefulWidget {
 
 class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
-    MenuItem(title: "User flow", hasChanges: true, icon: Icons.person, items: [
+    MenuItem(title: "User flow", icon: Icons.person, items: [
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
@@ -52,9 +52,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
-      SubMenuItem("Profile Four", ProfileFourPage(), hasChanges: true),
+      SubMenuItem("Profile Four", ProfileFourPage()),
     ]),
-    MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, hasChanges: true, items: [
+    MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
       SubMenuItem("Ecommerce Three", SliverAppbarPage()),
@@ -69,8 +69,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Article One", ArticleOnePage()),
       SubMenuItem("Article Two", ArticleTwoPage()),
     ]),
-    MenuItem(title: "Food", hasChanges: true, icon: Icons.fastfood, items: [
-      SubMenuItem("Cake Details", CakePage(),hasChanges: true),
+    MenuItem(title: "Food", icon: Icons.fastfood, items: [
+      SubMenuItem("Cake Details", CakePage()),
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
@@ -87,10 +87,10 @@ class _MainMenuState extends State<MainMenu> {
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
     ]),
-    MenuItem(title: "Miscllaneous", hasChanges: true, items: [
-      SubMenuItem("Form Elements", FormElementPage(),hasChanges: true),
-      SubMenuItem("Sliders", SlidersPage(),hasChanges: true),
-      SubMenuItem("Alert Dialogs", DialogsPage(),hasChanges: true),
+    MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Form Elements", FormElementPage()),
+      SubMenuItem("Sliders", SlidersPage()),
+      SubMenuItem("Alert Dialogs", DialogsPage()),
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
@@ -205,10 +205,9 @@ class MenuItem {
   final String title;
   final List<SubMenuItem> items;
   final IconData icon;
-  final bool hasChanges;
 
 
-  MenuItem({Key key, @required this.title, this.items, this.icon=Icons.label_important, this.hasChanges=false});
+  MenuItem({Key key, @required this.title, this.items, this.icon=Icons.label_important});
 
 
 }
@@ -216,8 +215,7 @@ class SubMenuItem {
   final String title;
   final Widget page;
   final IconData icon;
-  final bool hasChanges;
 
-  SubMenuItem(this.title, this.page, {this.icon = Icons.block, this.hasChanges = false});
+  SubMenuItem(this.title, this.page, {this.icon = Icons.block});
 
 }
