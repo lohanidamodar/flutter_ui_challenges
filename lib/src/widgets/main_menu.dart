@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:convert';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
 import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
@@ -34,7 +36,12 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
 
-class MainMenu extends StatelessWidget {
+class MainMenu extends StatefulWidget {
+  @override
+  _MainMenuState createState() => _MainMenuState();
+}
+
+class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
     MenuItem(title: "User flow", hasChanges: true, icon: Icons.person, items: [
       SubMenuItem("Login One", LoginOnePage()),
@@ -92,6 +99,27 @@ class MainMenu extends StatelessWidget {
 
   ];
 
+  Map<String,bool> viewData = <String,bool>{};
+
+  @override
+  void initState() { 
+    super.initState();
+    _getViewData();
+  }
+
+  _getViewData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      viewData = Map<String,bool>.from(json.decode(prefs.getString('page_view_data') != null ? prefs.getString('page_view_data') : "{}"));
+    });
+    return;
+  }
+
+  _writeViewData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString("page_view_data", json.encode(viewData));
+  }
+
   @override
   Widget build(BuildContext context) => Drawer(
     child: Scaffold(
@@ -126,9 +154,16 @@ class MainMenu extends StatelessWidget {
   );
 
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
+    bool hasChanges = false;
+    page.items.forEach((item) {
+      if(viewData[item.title] != true) {
+        hasChanges = true;
+        return;
+      }
+    });
     return ExpansionTile(
       leading: Icon(page.icon),
-      title: Text("${page.title} (${page.items.length} layouts)", style: TextStyle(fontWeight: FontWeight.bold, color: page.hasChanges ? Colors.deepOrange: Colors.black87),),
+      title: Text("${page.title} (${page.items.length} layouts)", style: TextStyle(fontWeight: FontWeight.bold, color: hasChanges ? Colors.deepOrange: Colors.black87),),
       children: _buildSubMenus(page.items, context),
     );
   }
@@ -147,13 +182,17 @@ class MainMenu extends StatelessWidget {
         contentPadding: EdgeInsets.all(0),
         dense: false,
         isThreeLine: false,
-        title: Text(item.title, style: Theme.of(context).textTheme.subhead.copyWith(color: item.hasChanges ? Colors.deepOrange : Colors.black87),),
-        onTap: () => _openPage(item.page, context),
+        title: Text(item.title, style: Theme.of(context).textTheme.subhead.copyWith(color: viewData[item.title] != true ? Colors.deepOrange : Colors.black87),),
+        onTap: () => _openPage(item.title,item.page, context),
       ),
     );
   }
 
-  void _openPage(Object page, BuildContext context) {
+  void _openPage(String title, Object page, BuildContext context) {
+    setState(() {
+      viewData[title] = true;
+    });
+    _writeViewData();
     Navigator.push(context, 
       MaterialPageRoute(
         builder: (context) => page

@@ -25,6 +25,7 @@ dependencies:
   wave:
   font_awesome_flutter: ^8.4.0
   url_launcher: ^5.0.2
+  shared_preferences: ^0.5.3
   
 dev_dependencies:
   flutter_test:
