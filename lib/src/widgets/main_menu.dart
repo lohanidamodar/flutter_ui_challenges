@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
@@ -44,6 +45,7 @@ class MainMenu extends StatefulWidget {
 class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
     MenuItem(title: "User flow", icon: Icons.person, items: [
+      SubMenuItem("Auth One", AuthOnePage()),
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
