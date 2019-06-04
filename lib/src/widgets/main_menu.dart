@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
@@ -75,6 +81,12 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Cake Details", CakePage()),
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
+    ]),
+    MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
+      SubMenuItem("Quiz Home", QuizHomePage()),
+      SubMenuItem("Quiz Page", QuizPage(questions: demoQuestions, category: categories[9],)),
+      SubMenuItem("Quiz Result", QuizFinishedPage(questions: demoQuestions, answers: demoAnswers,)),
+      SubMenuItem("Check Answers", CheckAnswersPage(questions: demoQuestions, answers: demoAnswers,)),
     ]),
     MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage()),
