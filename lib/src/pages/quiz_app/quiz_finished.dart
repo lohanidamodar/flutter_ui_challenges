@@ -39,8 +39,8 @@ class QuizFinishedPage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Theme.of(context).primaryColor,
-              Theme.of(context).accentColor
+              Colors.deepPurple,
+              Colors.pink
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter
