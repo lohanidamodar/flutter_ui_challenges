@@ -3,6 +3,8 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges)
 
+- [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA)
+- [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
@@ -27,8 +29,8 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Blog
 <img height="480px" src="screenshots/article2.png" > <img height="480px" src="screenshots/article1.png" >
 
-## Food Delivery App
-<img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png"> 
+## Food App
+<img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png"> 
 
 ## Quiz App
 <img height="480px" src="screenshots/quiz1.png"> <img height="480px" src="screenshots/quiz2.png"> <img height="480px" src="screenshots/quiz3.png"> <img height="480px" src="screenshots/quiz5.png"> <img height="480px" src="screenshots/quiz6.png"> 
