@@ -3,8 +3,11 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges)
 
+## Speed codes [Youtube](https://youtube.com/c/reactbits)
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA)
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
+- [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
+
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
