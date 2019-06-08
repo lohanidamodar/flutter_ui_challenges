@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
@@ -57,6 +58,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
       SubMenuItem("Login Four", LoginFourPage()),
+      SubMenuItem("Login Five", LoginFivePage()),
       SubMenuItem("Signup One", SignupOnePage()),
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
