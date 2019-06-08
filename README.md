@@ -7,6 +7,7 @@ My effort on replicating various apps UI on flutter.
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA)
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
+- [Login UI](https://youtu.be/3JDriYMYiu8)
 
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
