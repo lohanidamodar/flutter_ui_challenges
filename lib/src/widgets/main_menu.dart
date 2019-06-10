@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
@@ -64,6 +65,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
       SubMenuItem("Profile Four", ProfileFourPage()),
+      SubMenuItem("Profile Five", ProfileFivePage()),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage()),
