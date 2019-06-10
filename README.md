@@ -8,6 +8,7 @@ My effort on replicating various apps UI on flutter.
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
 - [Login UI](https://youtu.be/3JDriYMYiu8)
+- [Dating app profile UI](https://youtu.be/UHw5fMCyRfQ)
 
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
@@ -20,7 +21,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
 ## User Flow Screens
-<img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/profile2.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> 
+<img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/profile2.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> 
 
 ## Onboarding Screens
 (1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
