@@ -3,6 +3,7 @@ import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
@@ -105,6 +106,7 @@ class _MainMenuState extends State<MainMenu> {
     MenuItem(title: "Navigation", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
       SubMenuItem("Dark Drawer Menu", DarkDrawerPage()),
+      SubMenuItem("Light Drawer Menu", LightDrawerPage()),
     ]),
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
