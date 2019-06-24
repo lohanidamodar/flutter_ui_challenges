@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
+import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
@@ -87,6 +88,7 @@ class _MainMenuState extends State<MainMenu> {
     MenuItem(title: "Food", icon: Icons.fastfood, items: [
       SubMenuItem("Fruits Add to Cart", AvocadoPage() ),
       SubMenuItem("Cake Details", CakePage()),
+      SubMenuItem("Recipe List", RecipeListPage()),
       SubMenuItem("Recipe Details", RecipeDetailsPage()),
       SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
     ]),
