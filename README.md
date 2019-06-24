@@ -9,6 +9,7 @@ My effort on replicating various apps UI on flutter.
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
 - [Login UI](https://youtu.be/3JDriYMYiu8)
 - [Dating app profile UI](https://youtu.be/UHw5fMCyRfQ)
+- [Recipe List](https://youtu.be/rKBmwVW3KeI)
 
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
