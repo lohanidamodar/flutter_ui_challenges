@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 
 class RecipeListPage extends StatelessWidget {
   final Color color1 = Color(0xffB5192F);
@@ -107,32 +108,39 @@ class RecipeListPage extends StatelessWidget {
   }
 
   Widget _buildItem(BuildContext context, index, {bool large = false}) {
-    return Container(
-      margin: EdgeInsets.only(right: 20),
-      width: large ? 150 : 120,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.0),
-                image: DecorationImage(
-                  image: AssetImage(
-                    images[index % images.length],
-                  ),
-                  fit: BoxFit.cover,
-                )),
-            height: large ? 180 : 150,
-          ),
-          SizedBox(height: 10.0),
-          Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Text(
-              "French\nToast".toUpperCase(),
-              style: TextStyle(color: Colors.white, fontSize: 14.0),
+    return GestureDetector(
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(
+          builder: (_) => RecipeSinglePage()
+        ));
+      },
+      child: Container(
+        margin: EdgeInsets.only(right: 20),
+        width: large ? 150 : 120,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  image: DecorationImage(
+                    image: AssetImage(
+                      images[index % images.length],
+                    ),
+                    fit: BoxFit.cover,
+                  )),
+              height: large ? 180 : 150,
             ),
-          )
-        ],
+            SizedBox(height: 10.0),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Text(
+                "French\nToast".toUpperCase(),
+                style: TextStyle(color: Colors.white, fontSize: 14.0),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

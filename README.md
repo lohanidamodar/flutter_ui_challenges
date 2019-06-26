@@ -10,6 +10,7 @@ My effort on replicating various apps UI on flutter.
 - [Login UI](https://youtu.be/3JDriYMYiu8)
 - [Dating app profile UI](https://youtu.be/UHw5fMCyRfQ)
 - [Recipe List](https://youtu.be/rKBmwVW3KeI)
+- [Recipe Single]()
 
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
@@ -39,7 +40,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/article2.png" > <img height="480px" src="screenshots/article1.png" >
 
 ## Food App
-<img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png"> 
+<img height="480px" src="screenshots/recipe-single.png"> <img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png"> 
 
 ## Quiz App
 <img height="480px" src="screenshots/quiz1.png"> <img height="480px" src="screenshots/quiz2.png"> <img height="480px" src="screenshots/quiz3.png"> <img height="480px" src="screenshots/quiz5.png"> <img height="480px" src="screenshots/quiz6.png"> 
