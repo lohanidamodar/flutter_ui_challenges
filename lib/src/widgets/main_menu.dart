@@ -12,6 +12,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todoHome1.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -99,6 +100,9 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Quiz Page", QuizPage(questions: demoQuestions, category: categories[9],)),
       SubMenuItem("Quiz Result", QuizFinishedPage(questions: demoQuestions, answers: demoAnswers,)),
       SubMenuItem("Check Answers", CheckAnswersPage(questions: demoQuestions, answers: demoAnswers,)),
+    ]),
+    MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
+      SubMenuItem("Todo Home One", TodoHomeOnePage()),
     ]),
     MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage()),
