@@ -28,36 +28,32 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
   Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
-      body: Stack(
+      body: Column(
         children: <Widget>[
-          Column(
-            children: <Widget>[
-              Expanded(child: Swiper(
-                index: _currentIndex,
-                controller: _swiperController,
-                itemCount: _pageCount,
-                onIndexChanged: (index) {
-                  setState(() {
-                    _currentIndex = index;
-                  });
-                },
-                loop: false,
-                itemBuilder: (context, index){
-                  return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg", pageBg: pageBgs[index]);
-                },
-                pagination: SwiperPagination(
-                  builder: CustomPaginationBuilder(
-                    activeColor: Colors.white,
-                    activeSize: Size(10.0, 20.0),
-                    size: Size(10.0, 15.0),
-                    color: Colors.grey.shade600
-                  )
-                ),
-              )),
-              SizedBox(height: 10.0),
-              _buildButtons(),
-            ],
-          ),
+          Expanded(child: Swiper(
+            index: _currentIndex,
+            controller: _swiperController,
+            itemCount: _pageCount,
+            onIndexChanged: (index) {
+              setState(() {
+                _currentIndex = index;
+              });
+            },
+            loop: false,
+            itemBuilder: (context, index){
+              return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg", pageBg: pageBgs[index]);
+            },
+            pagination: SwiperPagination(
+              builder: CustomPaginationBuilder(
+                activeColor: Colors.white,
+                activeSize: Size(10.0, 20.0),
+                size: Size(10.0, 15.0),
+                color: Colors.grey.shade600
+              )
+            ),
+          )),
+          SizedBox(height: 10.0),
+          _buildButtons(),
         ],
       ),
     );
