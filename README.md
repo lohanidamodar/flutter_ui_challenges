@@ -32,7 +32,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Onboarding Screens
 (1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
 
-<img height="480px" src="screenshots/onboarding1.gif"> <img height="480px" src="screenshots/onboard2.gif"> 
+ <img height="480px" src="screenshots/onboard3.gif">  <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif">
 
 ## miscellaneous widgets
 <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif"> 
