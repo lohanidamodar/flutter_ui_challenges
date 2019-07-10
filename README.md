@@ -20,6 +20,9 @@ My effort on replicating various apps UI on flutter.
 ## Credits
 The code for Springy Widget is taken and refactored from (https://github.com/matthew-carroll/flutter_ui_challenge_springy_slider)
 
+## Animations
+<img src="screenshots/animation1.gif" height="480px" >
+
 ## Ecommerce
 <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png">  <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
