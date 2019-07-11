@@ -125,13 +125,13 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Light Drawer Menu", LightDrawerPage()),
     ]),
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
+      SubMenuItem("Landing Page", LandingOnePage()),
+      SubMenuItem("Onboarding 4", IntroFourPage()),
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
       SubMenuItem("Onboarding 2", IntroTwoPage()),
       SubMenuItem("Onboarding 3", IntroThreePage()),
-      SubMenuItem("Onboarding 4", IntroFourPage()),
     ]),
     MenuItem(title: "Miscllaneous", items: [
-      SubMenuItem("Landing Page", LandingOnePage()),
       SubMenuItem("Form Elements", FormElementPage()),
       SubMenuItem("Sliders", SlidersPage()),
       SubMenuItem("Alert Dialogs", DialogsPage()),
