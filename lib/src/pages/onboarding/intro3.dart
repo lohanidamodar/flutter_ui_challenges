@@ -14,9 +14,9 @@ class _IntroThreePageState extends State<IntroThreePage> {
   final int _pageCount = 3;
   int _currentIndex = 0;
   final List<String> titles = [
-    "More than 700 clubs \n accross the United States \n and Canada.",
-    "In an industry often \n equated with fad and \n fashion.",
-    "This helps you stay \n connected to LA Fitness \n no matter where you are."
+    "Lorem ipsum dolor \nsit amet, consectetur adipiscing \n elit placerat. ",
+    "Aliquam eget justo \n nec arcu ultricies elementum \n id at metus. ",
+    "Nulla facilisi. \nFusce non tempus risus.\n Sed ultrices scelerisque sem,"
   ];
   final List<Color> pageBgs = [
     Colors.blue.shade300,
@@ -39,6 +39,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
             ),
           ),),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(child: Swiper(
                 index: _currentIndex,
@@ -117,6 +118,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
         color: pageBg
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           SizedBox(height: 20.0),
           Text(title, textAlign: TextAlign.center, style: titleStyle,),
