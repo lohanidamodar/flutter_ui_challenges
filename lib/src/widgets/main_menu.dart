@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/onboarding.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro2.dart';
@@ -128,6 +129,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 3", IntroThreePage()),
     ]),
     MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Landing Page", LandingOnePage()),
       SubMenuItem("Form Elements", FormElementPage()),
       SubMenuItem("Sliders", SlidersPage()),
       SubMenuItem("Alert Dialogs", DialogsPage()),
