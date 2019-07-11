@@ -12,6 +12,7 @@ My effort on replicating various apps UI on flutter.
 - [Recipe List](https://youtu.be/rKBmwVW3KeI)
 - [Recipe Single](https://youtu.be/iq0tvM3DOaU)
 - [Todo Home](https://youtu.be/k4veahELtck)
+- [Landing Page](https://youtu.be/LsfGjRuLQR0)
 
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
