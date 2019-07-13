@@ -208,6 +208,13 @@ class _MainMenuState extends State<MainMenu> {
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0)),
+                trailing: IconButton(
+                  color: Colors.white,
+                  icon: Icon(FontAwesomeIcons.infoCircle),
+                  onPressed: (){
+                    Navigator.pushNamed(context, "about");
+                  },
+                ),
               ),
             ),
           ),
