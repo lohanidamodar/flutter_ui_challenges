@@ -14,6 +14,10 @@ My effort on replicating various apps UI on flutter.
 - [Todo Home](https://youtu.be/k4veahELtck)
 - [Landing Page](https://youtu.be/LsfGjRuLQR0)
 
+## Contributors
+1. [Damodar Lohani](https://github.com/lohanidamodar)
+2. [Siddhartha Joshi](https://github.com/cimplesid)
+
 ## Packages Used
 - Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
