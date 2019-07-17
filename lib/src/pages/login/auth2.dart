@@ -26,7 +26,7 @@ class AuthTwoPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0)
                 ),
                 child: BackdropFilter(
-                  filter: ImageFilter.blur(),
+                  filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0,),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
