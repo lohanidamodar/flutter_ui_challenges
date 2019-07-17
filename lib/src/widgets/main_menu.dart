@@ -4,6 +4,7 @@ import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
@@ -78,6 +79,7 @@ class _MainMenuState extends State<MainMenu> {
     ]),
     MenuItem(title: "Autnentication", icon: Icons.lock, items: [
       SubMenuItem("Auth One", AuthOnePage()),
+      SubMenuItem("Auth Two", AuthTwoPage()),
       SubMenuItem("Login One", LoginOnePage()),
       SubMenuItem("Login Two", LoginTwoPage()),
       SubMenuItem("Login Three", LoginThreePage()),
