@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
@@ -68,6 +69,7 @@ class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
     MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
       SubMenuItem("Hero Animation", AnimationOnePage()),
+      SubMenuItem("Bottom Reveal Animation", AnimationTwoPage()),
     ]),
     MenuItem(title: "Profile",icon: Icons.person, items: [
       SubMenuItem("Profile One", ProfileOnePage()),
