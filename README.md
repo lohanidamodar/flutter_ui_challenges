@@ -14,6 +14,21 @@ My effort on replicating various apps UI on flutter.
 - [Todo Home](https://youtu.be/k4veahELtck)
 - [Landing Page](https://youtu.be/LsfGjRuLQR0)
 
+## More on Flutter
+These are some of my other flutter related projects, that might interest you
+- [Flutter Automation](https://pub.dev/packages/flutter_automation)
+    A flutter package that helps you setup firebase auth, android signing, firestore CRUD, google maps automatically with just a command.
+- [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)
+    A bunch of custom clippers to help you clip your widgets into different shapes
+- [Quiz App](https://github.com/lohanidamodar/flutter_opentrivia)
+    A trivia app made with flutter using opentdb.com api
+- [Audio Book App](https://github.com/lohanidamodar/flutter_audiobooks_app)
+    An audio books listening app (works on background), where you can listen to audio books from librivox.org
+- [Bottom Reveal Widget](https://pub.dev/packages/bottomreveal)
+    A flutter package that provides an animated bottom reveal widget, the example is in the Animations section below.
+- [Khalti Clone](https://github.com/lohanidamodar/khalticlone)
+    An effort to clone Khalti (A nepal based mobile payment app) app's UI
+
 ## Contributors
 1. [Damodar Lohani](https://github.com/lohanidamodar)
 2. [Siddhartha Joshi](https://github.com/cimplesid)
