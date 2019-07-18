@@ -141,9 +141,13 @@ class _AnimationOnePageState extends State<AnimationOnePage>
             tag: "title$index",
             child: Material(
               type: MaterialType.transparency,
-              child: Text(
-                dummy[index]["title"],
-                style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 18.0, fontWeight: FontWeight.bold),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: Text(
+                  dummy[index]["title"],
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 18.0, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
           ),
@@ -152,10 +156,13 @@ class _AnimationOnePageState extends State<AnimationOnePage>
             tag: "price$index",
             child: Material(
               type: MaterialType.transparency,
-              child: Text(
-                dummy[index]["price"],
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: Text(
+                  dummy[index]["price"],
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
           ),
