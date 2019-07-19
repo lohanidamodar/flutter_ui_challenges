@@ -37,6 +37,7 @@ flutter_icons:
   android: true 
   ios: true
   image_path: "assets/icon/icon.png"
+  image_path_ios: "assets/icon/app-store-logo.jpg"
   
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
