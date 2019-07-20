@@ -30,6 +30,35 @@ class AboutPage extends StatelessWidget {
                     child: Text("Flutter UI Challenges is our effort to replicate various UIs in flutter and share it with you for free."),
                   ),
                   SizedBox(height: 20.0),
+                  MaterialButton(
+                    color: Colors.grey.shade200,
+                    padding: const EdgeInsets.all(16.0),
+                    onPressed: () async {
+                      if(await canLaunch("https://youtube.com/c/reactbits"))
+                        launch("https://youtube.com/c/reactbits");
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Icon(FontAwesomeIcons.youtube, color: Colors.red,),
+                            const SizedBox(width: 10.0),
+                            Text("Youtube", style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold
+                            ),),
+                          ],
+                        ),
+                        const SizedBox(height: 10.0),
+                        Text("Subscribe our youtube channel to see us build some of these UIs as well as other flutter tutorials and resources."),
+                      ],
+                    ),
+                  ),
+                  
+                  SizedBox(height: 20.0),
                   Text("Contributors", style: TextStyle(
                     color: Theme.of(context).primaryColor,
                     fontSize: 20.0,
