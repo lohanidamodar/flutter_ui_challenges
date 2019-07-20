@@ -7,6 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
@@ -71,7 +72,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Hero Animation", AnimationOnePage()),
       SubMenuItem("Bottom Reveal Animation", AnimationTwoPage()),
     ]),
-    MenuItem(title: "Profile",icon: Icons.person, items: [
+    MenuItem(title: "Profile", icon: Icons.person, items: [
       SubMenuItem("Profile One", ProfileOnePage()),
       SubMenuItem("Profile Two", ProfileTwoPage()),
       SubMenuItem("Profile Three", ProfileThreePage()),
@@ -162,12 +163,12 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
+      SubMenuItem("Fancy Bottom Navigation ", NewPageFancy()),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage())
   ];
 
   Map<String, bool> viewData = <String, bool>{};
-
   @override
   void initState() {
     super.initState();
@@ -215,7 +216,7 @@ class _MainMenuState extends State<MainMenu> {
                 trailing: IconButton(
                   color: Colors.white,
                   icon: Icon(FontAwesomeIcons.infoCircle),
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.pushNamed(context, "about");
                   },
                 ),
