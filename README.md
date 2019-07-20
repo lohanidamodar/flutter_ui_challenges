@@ -50,7 +50,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/profile2.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png"> <img height="480px" src="screenshots/profile1.png"> 
 
 ## Navigations
-<img height="480px" src="screenshots/drawer2.png">  <img height="480px" src="screenshots/dark_drawer_nav.png">  <img height="480px" src="screenshots/hidden_menu1.gif"> 
+<img height="480px" src="screenshots/bottom.png"> <img height="480px" src="screenshots/drawer2.png">  <img height="480px" src="screenshots/dark_drawer_nav.png">  <img height="480px" src="screenshots/hidden_menu1.gif"> 
 
 ## Onboarding Screens
 (1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
@@ -58,7 +58,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
  <img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif">
 
 ## miscellaneous widgets
-<img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif"> <img height="480px" src="screenshots/bottom.png"> 
+<img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif">
 
 ## Blog
 <img height="480px" src="screenshots/article2.png" > <img height="480px" src="screenshots/article1.png" >

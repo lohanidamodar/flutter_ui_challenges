@@ -148,6 +148,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Hidden Menu", HiddenMenuPage()),
       SubMenuItem("Dark Drawer Menu", DarkDrawerPage()),
       SubMenuItem("Light Drawer Menu", LightDrawerPage()),
+      SubMenuItem("Fancy Bottom Navigation ", NewPageFancy()),
     ]),
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
       SubMenuItem("Landing Page", LandingOnePage()),
@@ -163,7 +164,6 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Springy Slider", SpringySliderPage()),
       SubMenuItem("Sliver App Bar", SliverAppbarPage()),
       SubMenuItem("Loaders", LoadersPage()),
-      SubMenuItem("Fancy Bottom Navigation ", NewPageFancy()),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage())
   ];
