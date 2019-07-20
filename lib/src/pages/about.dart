@@ -29,6 +29,34 @@ class AboutPage extends StatelessWidget {
                     ),
                     child: Text("Flutter UI Challenges is our effort to replicate various UIs in flutter and share it with you for free."),
                   ),
+                  const SizedBox(height: 20.0),
+                  MaterialButton(
+                    color: Colors.grey.shade200,
+                    padding: const EdgeInsets.all(16.0),
+                    onPressed: () async {
+                      if(await canLaunch("https://github.com/lohanidamodar/flutter_ui_challenges"))
+                        launch("https://github.com/lohanidamodar/flutter_ui_challenges");
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Icon(FontAwesomeIcons.github, color: Colors.red,),
+                            const SizedBox(width: 10.0),
+                            Text("Github", style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold
+                            ),),
+                          ],
+                        ),
+                        const SizedBox(height: 10.0),
+                        Text("Find codes to all the UIs in our github repository."),
+                      ],
+                    ),
+                  ),
                   SizedBox(height: 20.0),
                   MaterialButton(
                     color: Colors.grey.shade200,
