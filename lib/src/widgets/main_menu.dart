@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
@@ -69,6 +70,7 @@ class MainMenu extends StatefulWidget {
 class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
     MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
+      SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation()),
       SubMenuItem("Hero Animation", AnimationOnePage()),
       SubMenuItem("Bottom Reveal Animation", AnimationTwoPage()),
     ]),
