@@ -1,3 +1,5 @@
+import 'dart:io';
+
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -157,7 +159,7 @@ class RecipeListPage extends StatelessWidget {
         IconButton(
           color: Colors.white,
           iconSize: 40.0,
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
