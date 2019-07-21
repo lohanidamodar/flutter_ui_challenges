@@ -34,8 +34,8 @@ class AboutPage extends StatelessWidget {
                     color: Colors.grey.shade200,
                     padding: const EdgeInsets.all(16.0),
                     onPressed: () async {
-                      if(await canLaunch("https://github.com/lohanidamodar/flutter_ui_challenges"))
-                        launch("https://github.com/lohanidamodar/flutter_ui_challenges");
+                      if(await canLaunch(githubRepo))
+                        launch(githubRepo);
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,8 +62,8 @@ class AboutPage extends StatelessWidget {
                     color: Colors.grey.shade200,
                     padding: const EdgeInsets.all(16.0),
                     onPressed: () async {
-                      if(await canLaunch("https://youtube.com/c/reactbits"))
-                        launch("https://youtube.com/c/reactbits");
+                      if(await canLaunch(youtubeChannel))
+                        launch(youtubeChannel);
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

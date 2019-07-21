@@ -5,6 +5,7 @@ import 'package:clipboard_manager/clipboard_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/src/utils/code_highlighter.dart';
+import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
 class MyCodeView extends StatefulWidget {
@@ -12,7 +13,7 @@ class MyCodeView extends StatefulWidget {
 
   MyCodeView({@required this.filePath});
 
-  String get githubPath => 'https://github.com/lohanidamodar/blob/master/${this.filePath}';
+  String get githubPath => '$githubRepo/blob/master/${this.filePath}';
 
   @override
   MyCodeViewState createState() {
@@ -52,6 +53,7 @@ class MyCodeViewState extends State<MyCodeView> {
   List<Widget> _buildFloatingButtons() {
     return <Widget>[
       FloatingActionButton(
+        heroTag: "copy",
         child: Icon(Icons.content_copy),
         tooltip: 'Copy code link to clipboard',
         onPressed: () {
@@ -62,11 +64,13 @@ class MyCodeViewState extends State<MyCodeView> {
         },
       ),
       FloatingActionButton(
+        heroTag: "open",
         child: Icon(Icons.open_in_new),
         tooltip: 'View code on github',
         onPressed: () => url_launcher.launch(this.widget.githubPath),
       ),
       FloatingActionButton(
+        heroTag: "zoom_out",
         child: Icon(Icons.zoom_out),
         tooltip: 'Zoom out',
         onPressed: () => setState(() {
@@ -74,6 +78,7 @@ class MyCodeViewState extends State<MyCodeView> {
         }),
       ),
       FloatingActionButton(
+        heroTag: "zoom_in",
         child: Icon(Icons.zoom_in),
         tooltip: 'Zoom in',
         onPressed: () => setState(() {
@@ -97,7 +102,7 @@ class MyCodeViewState extends State<MyCodeView> {
             ),
             floatingActionButton: AnimatedFloatingActionButton(
               fabButtons: _buildFloatingButtons(),
-              colorStartAnimation: Colors.blue,
+              colorStartAnimation: Colors.indigo,
               colorEndAnimation: Colors.red,
               animatedIconData: AnimatedIcons.menu_close,
             ),

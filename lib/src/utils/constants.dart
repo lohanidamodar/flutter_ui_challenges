@@ -1,6 +1,9 @@
 import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
 import 'package:flutter_ui_challenges/src/utils/models/developer.dart';
 
+const String githubRepo = "https://github.com/lohanidamodar/flutter_ui_challenges";
+const String youtubeChannel = "https://youtube.com/c/reactbits";
+
 const List<Developer> DEVELOPERS = [
   Developer(
       name: "Damodar Lohani",
