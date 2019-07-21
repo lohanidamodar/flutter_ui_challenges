@@ -1,3 +1,5 @@
+import 'dart:io';
+
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -65,7 +67,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
           Align(
             alignment: Alignment.topLeft,
             child: IconButton(
-              icon: Icon(Icons.arrow_back),
+              icon: Icon(Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
               onPressed: () => Navigator.pop(context),
             ),
           ),

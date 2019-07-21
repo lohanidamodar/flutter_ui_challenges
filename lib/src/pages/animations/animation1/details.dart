@@ -1,3 +1,5 @@
+import 'dart:io';
+
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -31,7 +33,7 @@ class AnimationOneDetails extends StatelessWidget {
                 SizedBox(height: 20.0),
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(Icons.arrow_back),
+                  icon: Icon(Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
                   onPressed: () => Navigator.pop(context),
                 ),
                 Spacer(),
