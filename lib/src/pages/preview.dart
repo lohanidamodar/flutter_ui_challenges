@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/code_view.dart';
 import 'package:flutter_ui_challenges/src/widgets/keep_alive.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const _TABS = <Widget>[
   Tab(
@@ -53,6 +54,17 @@ class DesignPreviewsPage extends StatelessWidget {
       child: Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(FontAwesomeIcons.solidEye),
+            tooltip: "Open full preview",
+            onPressed: (){
+              Navigator.push(context,MaterialPageRoute(
+                builder: (_) => page
+              ));
+            },
+          )
+        ],
         bottom: TabBar(
           tabs: _TABS,
         ),

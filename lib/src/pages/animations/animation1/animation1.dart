@@ -61,7 +61,14 @@ class _AnimationOnePageState extends State<AnimationOnePage>
     return Scaffold(
       body: Column(
         children: <Widget>[
-          SizedBox(height: 40),
+          SizedBox(height: 20),
+          Align(
+            alignment: Alignment.topLeft,
+            child: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () => Navigator.pop(context),
+            ),
+          ),
           Text.rich(TextSpan(children: [
             TextSpan(
                 text: "Best items",
