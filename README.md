@@ -37,6 +37,7 @@ These are some of my other flutter related projects, that might interest you
 
 1. [Damodar Lohani](https://github.com/lohanidamodar)
 2. [Siddhartha Joshi](https://github.com/cimplesid)
+3. [Sudip Thapa](https://github.com/sudeepthapa)
 
 ## Packages Used
 
