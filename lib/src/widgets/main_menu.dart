@@ -14,6 +14,7 @@ import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login_page1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
@@ -105,7 +106,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Login Three", LoginThreePage(), path: LoginThreePage.path),
       SubMenuItem("Login Four", LoginFourPage(), path: LoginFourPage.path),
       SubMenuItem("Login Five", LoginFivePage(), path: LoginFivePage.path),
-      SubMenuItem("Login Six", LoginPage1(), path: LoginPage1.path),
+      SubMenuItem("Login Six", LoginSixPage(), path: LoginSixPage.path),
+      SubMenuItem("Login Seven", LoginSevenPage(), path: LoginSevenPage.path),
       SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
