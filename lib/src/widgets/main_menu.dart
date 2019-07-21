@@ -15,6 +15,7 @@ import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro2.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro3.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro4.dart';
+import 'package:flutter_ui_challenges/src/pages/preview.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
@@ -289,7 +290,7 @@ class _MainMenuState extends State<MainMenu> {
       viewData[title] = true;
     });
     _writeViewData();
-    Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => DesignPreviewsPage(code: "",page: page, title: title,)));
   }
 }
 

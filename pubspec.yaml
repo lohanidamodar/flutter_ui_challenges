@@ -27,6 +27,8 @@ dependencies:
   url_launcher: ^5.0.2
   shared_preferences: ^0.5.3
   bottomreveal: ^1.0.0
+  clipboard_manager: ^0.0.4
+  animated_floatactionbuttons: ^0.1.0
   
 dev_dependencies:
   flutter_test:
@@ -59,6 +61,23 @@ flutter:
     - assets/hotel/
     - assets/food/
     - assets/icon/
+    - lib/src/pages/animations/
+    - lib/src/pages/animations/animation1/
+    - lib/src/pages/blog/
+    - lib/src/pages/dialogs/
+    - lib/src/pages/ecommerce/
+    - lib/src/pages/food/
+    - lib/src/pages/grocery/
+    - lib/src/pages/hotel/
+    - lib/src/pages/login/
+    - lib/src/pages/misc/
+    - lib/src/pages/navigation/
+    - lib/src/pages/onboarding/
+    - lib/src/pages/profile/
+    - lib/src/pages/quiz_app/
+    - lib/src/pages/todo/
+    - lib/src/pages/travel/
+
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
