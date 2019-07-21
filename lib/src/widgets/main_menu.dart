@@ -13,7 +13,7 @@ import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login_page1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';

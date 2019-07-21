@@ -4,13 +4,13 @@
   */
 import 'package:flutter/material.dart';
 
-class LoginPage1 extends StatefulWidget {
+class LoginSevenPage extends StatefulWidget {
     static final String path = "lib/src/pages/login/login_page1.dart";
   @override
-  _LoginPage1State createState() => _LoginPage1State();
+  _LoginSevenPageState createState() => _LoginSevenPageState();
 }
 
-class _LoginPage1State extends State<LoginPage1> {
+class _LoginSevenPageState extends State<LoginSevenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
