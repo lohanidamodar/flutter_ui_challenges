@@ -1,11 +1,11 @@
-import 'dart:math';
-
-import 'package:animated_floatactionbuttons/animated_floatactionbuttons.dart';
-import 'package:clipboard_manager/clipboard_manager.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
+import 'dart:math';
+
+import 'package:animated_floatactionbuttons/animated_floatactionbuttons.dart';
+import 'package:clipboard_manager/clipboard_manager.dart';
   
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +18,7 @@ class MyCodeView extends StatefulWidget {
 
   MyCodeView({@required this.filePath});
 
-  String get githubPath => '$githubRepo/blob/master/${this.filePath}';
+  String get githubPath => '$githubRepo/blob/master/$filePath';
 
   @override
   MyCodeViewState createState() {

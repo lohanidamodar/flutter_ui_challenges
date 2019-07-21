@@ -4,28 +4,14 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:flutter_ui_challenges/src/widgets/code_view.dart';
 import 'package:flutter_ui_challenges/src/widgets/keep_alive.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
 
 const _TABS = <Widget>[
   Tab(
-    // text: 'Preview',
-    // icon: Icon(Icons.phone_android),
-    child: ListTile(
-      leading: Icon(
-        Icons.phone_android,
-        color: Colors.white,
-      ),
-      title: Text(
-        'Preview',
-        style: TextStyle(color: Colors.white),
-      ),
-    ),
-  ),
-  Tab(
-    // text: 'Code',
-    // icon: Icon(Icons.code),
     child: ListTile(
       leading: Icon(
         Icons.code,
@@ -37,14 +23,25 @@ const _TABS = <Widget>[
       ),
     ),
   ),
+  Tab(
+    child: ListTile(
+      leading: Icon(
+        Icons.phone_android,
+        color: Colors.white,
+      ),
+      title: Text(
+        'Preview',
+        style: TextStyle(color: Colors.white),
+      ),
+    ),
+  ),
 ];
 class DesignPreviewsPage extends StatelessWidget {
   final String title;
   final Widget page;
-  final String code;
   final String path;
 
-  const DesignPreviewsPage({Key key, @required this.title, @required this.page, @required this.code, @required this.path}) : super(key: key);
+  const DesignPreviewsPage({Key key, @required this.title, @required this.page, @required this.path}) : super(key: key);
 
 
   @override
@@ -56,12 +53,10 @@ class DesignPreviewsPage extends StatelessWidget {
         title: Text(title),
         actions: <Widget>[
           IconButton(
-            icon: Icon(FontAwesomeIcons.solidEye),
+            icon: Icon(FontAwesomeIcons.shareSquare),
             tooltip: "Open full preview",
             onPressed: (){
-              Navigator.push(context,MaterialPageRoute(
-                builder: (_) => page
-              ));
+              Share.share('$githubRepo/blob/master/$path');
             },
           )
         ],
@@ -71,8 +66,8 @@ class DesignPreviewsPage extends StatelessWidget {
       ),
       body: TabBarView(
           children: <Widget>[
+            AlwaysAliveWidget(child: MyCodeView(filePath: path,)),
             AlwaysAliveWidget(child: page,),
-            AlwaysAliveWidget(child: MyCodeView(filePath: path,))
           ],
         ),
       ),
