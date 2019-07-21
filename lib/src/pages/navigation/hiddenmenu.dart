@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HiddenMenuPage extends StatefulWidget {
+  static final String path = "lib/src/pages/navigation/hiddenmenu.dart";
   _HiddenMenuPageState createState() => _HiddenMenuPageState();
 }
 

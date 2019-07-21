@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileOnePage extends StatelessWidget {
-
+  static final String path = "lib/src/pages/profile/profile1.dart";
   @override
     Widget build(BuildContext context) {
       return Scaffold(

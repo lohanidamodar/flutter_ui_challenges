@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 class CakePage extends StatelessWidget {
+  static final String path = "lib/src/pages/food/cake.dart";
   @override
   Widget build(BuildContext context){
     final Color primary = Color(0xff7b7517);

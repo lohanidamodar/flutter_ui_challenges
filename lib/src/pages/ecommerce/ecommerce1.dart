@@ -3,6 +3,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class EcommerceOnePage extends StatelessWidget {
+  static final String path = "lib/src/pages/ecommerce/ecommerce1.dart";
   final List<String> categories = ['DarazMall', 'Flash Sales', 'Collection', 'Vouchers', 'Categories'];
   final List<String> images = ['assets/img/1.jpg','assets/img/3.jpg','assets/img/2.jpg', 'assets/img/4.jpg'];
   final List<String> flashSaleImages = ['assets/img/b1.jpg','assets/img/b3.jpg','assets/img/b2.jpg'];
@@ -256,6 +257,7 @@ class EcommerceOnePage extends StatelessWidget {
     Widget build(BuildContext context) {
       return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
           title: Text('Flutter UIs'),
           elevation: 0,
         ),

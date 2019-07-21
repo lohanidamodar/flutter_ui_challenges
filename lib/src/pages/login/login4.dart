@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginFourPage extends StatelessWidget {
+  static final String path = "lib/src/pages/login/login4.dart";
   final String background = 'assets/img/login-back.jpg';
   @override
   Widget build(BuildContext context) {

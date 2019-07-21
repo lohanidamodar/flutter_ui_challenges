@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FancyAppbarAnimation extends StatefulWidget {
+  static final String path = "lib/src/pages/animations/anim3.dart";
   @override
   _FancyAppbarAnimationState createState() => _FancyAppbarAnimationState();
 }

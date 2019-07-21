@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
+  static final String path = "lib/src/pages/food/recipe_details.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

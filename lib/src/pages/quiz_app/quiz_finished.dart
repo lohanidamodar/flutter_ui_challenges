@@ -3,6 +3,7 @@ import 'question.dart';
 import 'check_answers.dart';
 
 class QuizFinishedPage extends StatelessWidget {
+  static final String path = "lib/src/pages/quiz_app/quiz_finished.dart";
   final List<Question> questions;
   final Map<int, dynamic> answers;
   
@@ -30,6 +31,7 @@ class QuizFinishedPage extends StatelessWidget {
     
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text('Result'),
         elevation: 0,
       ),

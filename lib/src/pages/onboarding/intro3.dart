@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IntroThreePage extends StatefulWidget {
+  static final String path = "lib/src/pages/onboarding/intro3.dart";
   @override
   _IntroThreePageState createState() => _IntroThreePageState();
 }
@@ -123,16 +124,19 @@ class _IntroThreePageState extends State<IntroThreePage> {
           SizedBox(height: 20.0),
           Text(title, textAlign: TextAlign.center, style: titleStyle,),
           SizedBox(height: 30.0),
-          ClipOval(child: Container(
-            height: 300,
-            width: 300,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(icon),
-                fit: BoxFit.cover
-              )
-            ),  
-          )),
+          Expanded(
+            child:ClipOval(child: Container(
+              height: 300,
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(icon),
+                  fit: BoxFit.cover
+                )
+              ),  
+            )) ,
+          ),
+          
           SizedBox(height: 50.0),
         ],
       ),

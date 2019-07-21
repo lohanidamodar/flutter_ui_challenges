@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class EcommerceDetailOnePage extends StatelessWidget {
-
+  static final String path = "lib/src/pages/ecommerce/ecommerce_detail1.dart";
   @override
     Widget build(BuildContext context) {
       return Scaffold(

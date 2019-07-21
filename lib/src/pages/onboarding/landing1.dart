@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LandingOnePage extends StatelessWidget {
+  static final String path = "lib/src/pages/onboarding/landing1.dart";
   final String bgImage = "assets/img/photographer.jpg";
   final String image = "assets/img/ledge.jpg";
 

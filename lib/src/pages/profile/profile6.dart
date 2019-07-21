@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class ProfileSixPage extends StatelessWidget {
+  static final String path = "lib/src/pages/profile/profile6.dart";
   ProfileSixPage(this.dev);
 
   final DEV dev;

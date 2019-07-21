@@ -6,6 +6,7 @@ import 'question.dart';
 import 'quiz_page.dart';
 
 class QuizOptionsDialog extends StatefulWidget {
+  static final String path = "lib/src/pages/quiz_app/quiz_options.dart";
   final Category category;
 
   const QuizOptionsDialog({Key key, this.category}) : super(key: key);

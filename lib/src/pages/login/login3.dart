@@ -3,6 +3,7 @@ import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 
 class LoginThreePage extends StatelessWidget {
+  static final String path = "lib/src/pages/login/login3.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

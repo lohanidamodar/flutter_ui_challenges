@@ -5,6 +5,7 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'quiz_finished.dart';
 
 class QuizPage extends StatefulWidget {
+  static final String path = "lib/src/pages/quiz_app/quiz_page.dart";
   final List<Question> questions;
   final Category category;
 
@@ -40,6 +41,7 @@ class _QuizPageState extends State<QuizPage> {
       child: Scaffold(
         key: _key,
         appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
           title: Text(widget.category.name),
           elevation: 0,
         ),

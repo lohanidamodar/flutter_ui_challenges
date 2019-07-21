@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ArticleTwoPage extends StatelessWidget {
+  static final String path = "lib/src/pages/blog/article2.dart";
   @override
   Widget build(BuildContext context){
     String image = "assets/img/2.jpg";

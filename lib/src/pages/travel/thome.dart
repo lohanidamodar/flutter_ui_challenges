@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
 
 class TravelHomePage extends StatelessWidget {
+  static final String path = "lib/src/pages/travel/thome.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

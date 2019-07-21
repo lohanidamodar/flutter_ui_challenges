@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 class EcommerceTwoPage extends StatelessWidget {
+  static final String path = "lib/src/pages/ecommerce/ecommerce2.dart";
   final List<Map> items = [
     {"title":"Kappa Velour", "category":"Bucket", "price": 5500, "tags":"#Cotton #polyster #Branded design","image":"assets/img/1.jpg"},
     {"title":"North Salty", "category":"Bucket", "price": 67000, "tags":"#Cotton #polyster #Branded design","image":"assets/img/2.jpg"},

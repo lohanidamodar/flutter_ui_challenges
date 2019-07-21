@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/springy_slider.dart';
 
 class SpringySliderPage extends StatelessWidget {
-
+  static final String path = "lib/src/pages/misc/springy_slider_page.dart";
   _buildTextButton(String title, bool isOnLight) {
     return FlatButton(
       padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),

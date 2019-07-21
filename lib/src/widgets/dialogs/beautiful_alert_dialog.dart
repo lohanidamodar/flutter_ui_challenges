@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class BeautifulAlertDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

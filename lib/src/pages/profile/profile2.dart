@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileTwoPage extends StatelessWidget {
+  static final String path = "lib/src/pages/profile/profile2.dart";
   final List<Map> collections = [
     {
       "title":"Food joint",

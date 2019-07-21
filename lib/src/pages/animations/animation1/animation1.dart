@@ -23,6 +23,8 @@ const List<Map> dummy = [
   },
 ];
 class AnimationOnePage extends StatefulWidget {
+  static final String path = "lib/src/pages/animations/animation1/animation1.dart";
+  
   @override
   _AnimationOnePageState createState() => _AnimationOnePageState();
 }

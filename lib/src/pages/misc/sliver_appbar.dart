@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class SliverAppbarPage extends StatelessWidget {
+  static final String path = "lib/src/pages/misc/sliver_appbar.dart";
   final List<String> images = ['assets/img/1.jpg','assets/img/b1.jpg','assets/img/3.jpg','assets/img/2.jpg', 'assets/img/4.jpg','assets/img/5.jpg','assets/img/b2.jpg','assets/img/6.jpg'];
 
 

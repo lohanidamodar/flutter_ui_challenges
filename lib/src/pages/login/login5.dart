@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginFivePage extends StatelessWidget {
+  static final String path = "lib/src/pages/login/login5.dart";
   final String logo = 'assets/food/logo.png';
   @override
   Widget build(BuildContext context){

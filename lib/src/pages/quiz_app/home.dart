@@ -5,6 +5,7 @@ import 'demo_values.dart';
 import 'quiz_options.dart';
 
 class QuizHomePage extends StatelessWidget {
+  static final String path = "lib/src/pages/quiz_app/home.dart";
   final List<Color> tileColors = [
     Colors.green,
     Colors.blue,
@@ -22,6 +23,7 @@ class QuizHomePage extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text('OpenTrivia'),
         elevation: 0,
       ),
@@ -31,7 +33,7 @@ class QuizHomePage extends StatelessWidget {
             clipper: WaveClipperTwo(),
             child: Container(
               decoration: BoxDecoration(
-                color: Theme.of(context).primaryColor
+                color: Colors.deepPurple
               ),
               height: 200,
             ),

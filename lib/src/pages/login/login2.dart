@@ -3,7 +3,7 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 
 class LoginTwoPage extends StatelessWidget {
-
+  static final String path = "lib/src/pages/login/login2.dart";
   Widget _buildPageContent(BuildContext context) {
     return Container(
       color: Colors.blue.shade100,

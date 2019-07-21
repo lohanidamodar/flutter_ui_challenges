@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
 class IntroTwoPage extends StatefulWidget {
+  static final String path = "lib/src/pages/onboarding/intro2.dart";
   @override
   _IntroTwoPageState createState() => _IntroTwoPageState();
 }
@@ -18,16 +19,11 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
     "Aliquam eget justo \n nec arcu ultricies elementum \n id at metus. ",
     "Nulla facilisi. \nFusce non tempus risus.\n Sed ultrices scelerisque sem,"
   ];
-  final List<Color> pageBgs = [
-    Color(0xffeaedff),
-    Color(0xffffffea),
-    Color(0xfff3eaff)
-  ];
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Colors.deepPurple,
       body: Column(
         children: <Widget>[
           Expanded(child: Swiper(
@@ -41,7 +37,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             },
             loop: false,
             itemBuilder: (context, index){
-              return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg", pageBg: pageBgs[index]);
+              return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg");
             },
             pagination: SwiperPagination(
               builder: CustomPaginationBuilder(
@@ -92,7 +88,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
     );
   }
 
-  Widget _buildPage({String title, String icon, Color pageBg}) {
+  Widget _buildPage({String title, String icon}) {
     final TextStyle titleStyle = TextStyle(
       fontWeight: FontWeight.w500,
       fontSize: 20.0
@@ -103,7 +99,6 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.0),
-        color: pageBg,
         image: DecorationImage(
           image: AssetImage(icon),
           fit: BoxFit.cover,

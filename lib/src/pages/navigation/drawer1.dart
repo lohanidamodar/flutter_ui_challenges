@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
 
 class DarkDrawerPage extends StatelessWidget {
+  static final String path = "lib/src/pages/navigation/drawer1.dart";
   final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
   final Color primary = Color(0xff291747);
   final Color active = Color(0xff6C48AB);
@@ -74,51 +75,53 @@ class DarkDrawerPage extends StatelessWidget {
         width: 300,
 
         child: SafeArea(
-          child: Column(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.centerRight,
-                child: IconButton(
-                  icon: Icon(Icons.power_settings_new, color: active,),
-                  onPressed: () {},
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Container(
+                  alignment: Alignment.centerRight,
+                  child: IconButton(
+                    icon: Icon(Icons.power_settings_new, color: active,),
+                    onPressed: () {},
+                  ),
                 ),
-              ),
-              Container(
-                height: 90,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient:
-                        LinearGradient(colors: [Colors.pink, Colors.deepPurple])),
-                child: CircleAvatar(
-                  radius: 40,
-                  backgroundImage: AssetImage(image),
+                Container(
+                  height: 90,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient:
+                          LinearGradient(colors: [Colors.pink, Colors.deepPurple])),
+                  child: CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage(image),
+                  ),
                 ),
-              ),
-              SizedBox(height: 5.0),
-              Text(
-                "erika costell",
-                style: TextStyle(color: Colors.white, fontSize: 18.0),
-              ),
-              Text(
-                "@erika07",
-                style: TextStyle(
-                  color: active,
-                  fontSize: 16.0
+                SizedBox(height: 5.0),
+                Text(
+                  "erika costell",
+                  style: TextStyle(color: Colors.white, fontSize: 18.0),
                 ),
-              ),
-              SizedBox(height: 30.0),
-              _buildRow(Icons.home, "Home"),
-              _buildDivider(),
-              _buildRow(Icons.person_pin, "Your profile"),
-              _buildDivider(),
-              _buildRow(Icons.settings, "Settings"),
-              _buildDivider(),
-              _buildRow(Icons.email, "Contact us"),
-              _buildDivider(),
-              _buildRow(Icons.info_outline, "Help"),
-              _buildDivider(),
-            ],
+                Text(
+                  "@erika07",
+                  style: TextStyle(
+                    color: active,
+                    fontSize: 16.0
+                  ),
+                ),
+                SizedBox(height: 30.0),
+                _buildRow(Icons.home, "Home"),
+                _buildDivider(),
+                _buildRow(Icons.person_pin, "Your profile"),
+                _buildDivider(),
+                _buildRow(Icons.settings, "Settings"),
+                _buildDivider(),
+                _buildRow(Icons.email, "Contact us"),
+                _buildDivider(),
+                _buildRow(Icons.info_outline, "Help"),
+                _buildDivider(),
+              ],
+            ),
           ),
         ),
       ),

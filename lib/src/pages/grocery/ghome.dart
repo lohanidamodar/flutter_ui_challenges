@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gprofiletab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gwishlisttab.dart';
 
 class GroceryHomePage extends StatefulWidget {
+  static final String path = "lib/src/pages/grocery/ghome.dart";
 
   @override
   GroceryHomePageState createState() {

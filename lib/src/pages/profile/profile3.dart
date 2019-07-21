@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 class ProfileThreePage extends StatelessWidget {
+  static final String path = "lib/src/pages/profile/profile3.dart";
   final image = 'assets/img/2.jpg';
   @override
   Widget build(BuildContext context){

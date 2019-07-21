@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DestinationPage extends StatelessWidget {
+  static final String path = "lib/src/pages/travel/tdestination.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

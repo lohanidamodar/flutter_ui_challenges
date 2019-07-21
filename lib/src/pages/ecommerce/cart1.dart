@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CartOnePage extends StatelessWidget {
+  static final String path = "lib/src/pages/ecommerce/cart1.dart";
   final List<Map> items = [
     {
       "image":"assets/food/breakfast.jpg",

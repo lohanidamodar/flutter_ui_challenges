@@ -3,6 +3,7 @@ import 'package:flutter_ui_challenges/src/widgets/loaders/loader2.dart';
 import '../../widgets/loaders/loader1.dart';
 
 class LoadersPage extends StatelessWidget {
+  static final String path = "lib/src/pages/misc/loaders.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

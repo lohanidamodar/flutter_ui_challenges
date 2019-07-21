@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/forms/checkbox.dart';
 
 class FormElementPage extends StatefulWidget {
+  static final String path = "lib/src/pages/misc/form_elements.dart";
   @override
   _FormElementPageState createState() => _FormElementPageState();
 }

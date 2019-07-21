@@ -24,6 +24,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
 import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
@@ -71,104 +72,105 @@ class MainMenu extends StatefulWidget {
 class _MainMenuState extends State<MainMenu> {
   final List<dynamic> pages = [
     MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
-      SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation()),
-      SubMenuItem("Hero Animation", AnimationOnePage()),
-      SubMenuItem("Bottom Reveal Animation", AnimationTwoPage()),
+      SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(), path: FancyAppbarAnimation.path),
+      SubMenuItem("Hero Animation", AnimationOnePage(),path: AnimationOnePage.path),
+      SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(), path: AnimationTwoPage.path),
     ]),
     MenuItem(title: "Profile", icon: Icons.person, items: [
-      SubMenuItem("Profile One", ProfileOnePage()),
-      SubMenuItem("Profile Two", ProfileTwoPage()),
-      SubMenuItem("Profile Three", ProfileThreePage()),
-      SubMenuItem("Profile Four", ProfileFourPage()),
-      SubMenuItem("Profile Five", ProfileFivePage()),
-      SubMenuItem("Profile six", ProfileSixPage(sid)),
+      SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
+      SubMenuItem("Profile Two", ProfileTwoPage(),path: ProfileTwoPage.path),
+      SubMenuItem("Profile Three", ProfileThreePage(), path: ProfileThreePage.path),
+      SubMenuItem("Profile Four", ProfileFourPage(),path: ProfileFourPage.path),
+      SubMenuItem("Profile Five", ProfileFivePage(),path: ProfileFivePage.path),
+      SubMenuItem("Profile six", ProfileSixPage(sid), path: ProfileSixPage.path),
     ]),
     MenuItem(title: "Autnentication", icon: Icons.lock, items: [
-      SubMenuItem("Auth One", AuthOnePage()),
-      SubMenuItem("Auth Two", AuthTwoPage()),
-      SubMenuItem("Login One", LoginOnePage()),
-      SubMenuItem("Login Two", LoginTwoPage()),
-      SubMenuItem("Login Three", LoginThreePage()),
-      SubMenuItem("Login Four", LoginFourPage()),
-      SubMenuItem("Login Five", LoginFivePage()),
-      SubMenuItem("Signup One", SignupOnePage()),
+      SubMenuItem("Auth One", AuthOnePage(),path: AuthOnePage.path),
+      SubMenuItem("Auth Two", AuthTwoPage(),path: AuthTwoPage.path),
+      SubMenuItem("Login One", LoginOnePage(),path: LoginOnePage.path),
+      SubMenuItem("Login Two", LoginTwoPage(),path: LoginTwoPage.path),
+      SubMenuItem("Login Three", LoginThreePage(),path: LoginThreePage.path),
+      SubMenuItem("Login Four", LoginFourPage(),path: LoginFourPage.path),
+      SubMenuItem("Login Five", LoginFivePage(),path: LoginFivePage.path),
+      SubMenuItem("Signup One", SignupOnePage(),path: SignupOnePage.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
-      SubMenuItem("Ecommerce One", EcommerceOnePage()),
-      SubMenuItem("Ecommerce Two", EcommerceTwoPage()),
-      SubMenuItem("Ecommerce Three", SliverAppbarPage()),
-      SubMenuItem("Ecommerce Four", EcommerceFourPage()),
-      SubMenuItem("Confirm Order", ConfirmOrderPage()),
-      SubMenuItem("Ecommerce Cart One", CartOnePage()),
-      SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage()),
-      SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage()),
-      SubMenuItem("Ecommerce Details Three", EcommerceDetailThreePage()),
+      SubMenuItem("Ecommerce One", EcommerceOnePage(),path: EcommerceOnePage.path),
+      SubMenuItem("Ecommerce Two", EcommerceTwoPage(),path: EcommerceTwoPage.path),
+      SubMenuItem("Ecommerce Three", SliverAppbarPage(),path: SliverAppbarPage.path),
+      SubMenuItem("Ecommerce Four", EcommerceFourPage(),path: EcommerceFourPage.path),
+      SubMenuItem("Confirm Order", ConfirmOrderPage(),path: ConfirmOrderPage.path),
+      SubMenuItem("Ecommerce Cart One", CartOnePage(),path: CartOnePage.path),
+      SubMenuItem("Ecommerce Details One", EcommerceDetailOnePage(),path: EcommerceDetailOnePage.path),
+      SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage(),path: EcommerceDetailTwoPage.path),
+      SubMenuItem("Ecommerce Details Three", EcommerceDetailThreePage(),path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
-      SubMenuItem("Article One", ArticleOnePage()),
-      SubMenuItem("Article Two", ArticleTwoPage()),
+      SubMenuItem("Article One", ArticleOnePage(),path: ArticleOnePage.path),
+      SubMenuItem("Article Two", ArticleTwoPage(),path: ArticleTwoPage.path),
     ]),
     MenuItem(title: "Food", icon: Icons.fastfood, items: [
-      SubMenuItem("Fruits Add to Cart", AvocadoPage()),
-      SubMenuItem("Cake Details", CakePage()),
-      SubMenuItem("Recipe List", RecipeListPage()),
-      SubMenuItem("Recipe Single", RecipeSinglePage()),
-      SubMenuItem("Recipe Details", RecipeDetailsPage()),
-      SubMenuItem("Food Delivery", FoodDeliveryHomePage()),
+      SubMenuItem("Fruits Add to Cart", AvocadoPage(),path: AvocadoPage.path),
+      SubMenuItem("Cake Details", CakePage(),path: CakePage.path),
+      SubMenuItem("Recipe List", RecipeListPage(),path: RecipeListPage.path),
+      SubMenuItem("Recipe Single", RecipeSinglePage(),path: RecipeSinglePage.path),
+      SubMenuItem("Recipe Details", RecipeDetailsPage(),path: RecipeDetailsPage.path),
+      SubMenuItem("Food Delivery", FoodDeliveryHomePage(),path: FoodDeliveryHomePage.path),
     ]),
     MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
-      SubMenuItem("Quiz Home", QuizHomePage()),
+      SubMenuItem("Quiz Home", QuizHomePage(),path: QuizHomePage.path),
       SubMenuItem(
           "Quiz Page",
           QuizPage(
             questions: demoQuestions,
             category: categories[9],
-          )),
+          ),path: QuizPage.path),
       SubMenuItem(
           "Quiz Result",
           QuizFinishedPage(
             questions: demoQuestions,
             answers: demoAnswers,
-          )),
+          ),path: QuizFinishedPage.path),
       SubMenuItem(
           "Check Answers",
           CheckAnswersPage(
             questions: demoQuestions,
             answers: demoAnswers,
-          )),
+          ),path: CheckAnswersPage.path),
     ]),
     MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
-      SubMenuItem("Todo Home One", TodoHomeOnePage()),
+      SubMenuItem("Todo Home One", TodoHomeOnePage(),path: TodoHomeOnePage.path),
     ]),
     MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
-      SubMenuItem("Travel Home", TravelHomePage()),
-      SubMenuItem("Travel Nepal", TravelNepalPage()),
+      SubMenuItem("Travel Home", TravelHomePage(),path: TravelHomePage.path),
+      SubMenuItem("Travel Nepal", TravelNepalPage(),path: TravelNepalPage.path),
+      SubMenuItem("Travel Destination Detail", DestinationPage(),path: DestinationPage.path),
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
-      SubMenuItem("Hotel Home", HotelHomePage()),
+      SubMenuItem("Hotel Home", HotelHomePage(),path: HotelHomePage.path),
     ]),
     MenuItem(title: "Navigation", icon: Icons.menu, items: [
-      SubMenuItem("Hidden Menu", HiddenMenuPage()),
-      SubMenuItem("Dark Drawer Menu", DarkDrawerPage()),
-      SubMenuItem("Light Drawer Menu", LightDrawerPage()),
-      SubMenuItem("Fancy Bottom Navigation ", NewPageFancy()),
+      SubMenuItem("Hidden Menu", HiddenMenuPage(),path: HiddenMenuPage.path),
+      SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),path: DarkDrawerPage.path),
+      SubMenuItem("Light Drawer Menu", LightDrawerPage(),path: LightDrawerPage.path),
+      SubMenuItem("Fancy Bottom Navigation ", FancyBottomBarPage(),path: FancyBottomBarPage.path),
     ]),
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
-      SubMenuItem("Landing Page", LandingOnePage()),
-      SubMenuItem("Onboarding 4", IntroFourPage()),
-      SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage()),
-      SubMenuItem("Onboarding 2", IntroTwoPage()),
-      SubMenuItem("Onboarding 3", IntroThreePage()),
+      SubMenuItem("Landing Page", LandingOnePage(),path: LandingOnePage.path),
+      SubMenuItem("Onboarding 4", IntroFourPage(),path: IntroFourPage.path),
+      SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage(),path: SmartWalletOnboardingPage.path),
+      SubMenuItem("Onboarding 2", IntroTwoPage(),path: IntroTwoPage.path),
+      SubMenuItem("Onboarding 3", IntroThreePage(),path: IntroThreePage.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
-      SubMenuItem("Form Elements", FormElementPage()),
-      SubMenuItem("Sliders", SlidersPage()),
-      SubMenuItem("Alert Dialogs", DialogsPage()),
-      SubMenuItem("Springy Slider", SpringySliderPage()),
-      SubMenuItem("Sliver App Bar", SliverAppbarPage()),
-      SubMenuItem("Loaders", LoadersPage()),
+      SubMenuItem("Form Elements", FormElementPage(),path: FormElementPage.path),
+      SubMenuItem("Sliders", SlidersPage(),path: SlidersPage.path),
+      SubMenuItem("Alert Dialogs", DialogsPage(),path: DialogsPage.path),
+      SubMenuItem("Springy Slider", SpringySliderPage(),path: SpringySliderPage.path),
+      SubMenuItem("Sliver App Bar", SliverAppbarPage(),path: SliverAppbarPage.path),
+      SubMenuItem("Loaders", LoadersPage(),path: LoadersPage.path),
     ]),
-    SubMenuItem("Grocery UI Kit", GroceryHomePage())
+    SubMenuItem("Grocery UI Kit", GroceryHomePage(),path: GroceryHomePage.path)
   ];
 
   Map<String, bool> viewData = <String, bool>{};
@@ -280,17 +282,17 @@ class _MainMenuState extends State<MainMenu> {
                   ? Colors.deepOrange
                   : Colors.black87),
         ),
-        onTap: () => _openPage(item.title, item.page, context),
+        onTap: () => _openPage(item.title, item.page, item.path, context),
       ),
     );
   }
 
-  void _openPage(String title, Object page, BuildContext context) {
+  void _openPage(String title, Object page, String path, BuildContext context) {
     setState(() {
       viewData[title] = true;
     });
     _writeViewData();
-    Navigator.push(context, MaterialPageRoute(builder: (context) => DesignPreviewsPage(code: "",page: page, title: title,)));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => DesignPreviewsPage(code: "",page: page, title: title, path: path)));
   }
 }
 
@@ -310,6 +312,7 @@ class SubMenuItem {
   final String title;
   final Widget page;
   final IconData icon;
+  final String path;
 
-  SubMenuItem(this.title, this.page, {this.icon = Icons.block});
+  SubMenuItem(this.title, this.page, {this.icon = Icons.block, this.path});
 }

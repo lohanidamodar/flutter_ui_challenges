@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
 class IntroFourPage extends StatefulWidget {
+  static final String path = "lib/src/pages/onboarding/intro4.dart";
   @override
   _IntroFourPageState createState() => _IntroFourPageState();
 }

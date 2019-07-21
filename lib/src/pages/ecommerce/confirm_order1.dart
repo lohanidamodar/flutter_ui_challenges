@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ConfirmOrderPage extends StatelessWidget{
+  static final String path = "lib/src/pages/ecommerce/confirm_order1.dart";
   final String address = "Chabahil, Kathmandu";
   final String phone="9818522122";
   final double total = 500;

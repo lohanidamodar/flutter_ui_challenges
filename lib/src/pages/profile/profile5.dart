@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class ProfileFivePage extends StatelessWidget {
+  static final String path = "lib/src/pages/profile/profile5.dart";
   @override
   Widget build(BuildContext context){
     final Color color1 = Color(0xffFC5CF0);

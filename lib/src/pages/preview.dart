@@ -36,8 +36,9 @@ class DesignPreviewsPage extends StatelessWidget {
   final String title;
   final Widget page;
   final String code;
+  final String path;
 
-  const DesignPreviewsPage({Key key, @required this.title, @required this.page, @required this.code}) : super(key: key);
+  const DesignPreviewsPage({Key key, @required this.title, @required this.page, @required this.code, @required this.path}) : super(key: key);
 
 
   @override
@@ -54,7 +55,7 @@ class DesignPreviewsPage extends StatelessWidget {
       body: TabBarView(
           children: <Widget>[
             AlwaysAliveWidget(child: page,),
-            AlwaysAliveWidget(child: MyCodeView(filePath: "lib/src/pages/animations/anim2.dart",))
+            AlwaysAliveWidget(child: MyCodeView(filePath: path,))
           ],
         ),
       ),

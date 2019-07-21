@@ -2,12 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class NewPageFancy extends StatefulWidget {
+class FancyBottomBarPage extends StatefulWidget {
+  static final String path = "lib/src/pages/misc/navybar.dart";
   @override
-  _NewPageFancyState createState() => _NewPageFancyState();
+  _FancyBottomBarPageState createState() => _FancyBottomBarPageState();
 }
 
-class _NewPageFancyState extends State<NewPageFancy> {
+class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
   @override
   void dispose() {
     indexcontroller.close();

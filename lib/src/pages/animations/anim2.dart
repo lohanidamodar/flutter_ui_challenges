@@ -3,6 +3,7 @@ import 'package:bottomreveal/bottomreveal.dart';
 
 
 class AnimationTwoPage extends StatefulWidget {
+  static final String path = "lib/src/pages/animations/anim2.dart";
   @override
   _AnimationTwoPageState createState() => _AnimationTwoPageState();
 }

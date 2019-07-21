@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AvocadoPage extends StatelessWidget {
+  static final String path = "lib/src/pages/food/avocado.dart";
   final String image = "assets/food/avocado-f.jpg";
 
 

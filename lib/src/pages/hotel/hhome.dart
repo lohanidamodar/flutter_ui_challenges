@@ -19,6 +19,7 @@ final List rooms = [
   },
 ];
 class HotelHomePage extends StatelessWidget {
+  static final String path = "lib/src/pages/hotel/hhome.dart";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

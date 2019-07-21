@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class AuthTwoPage extends StatelessWidget {
+  static final String path = "lib/src/pages/login/auth2.dart";
   final String backImg = "assets/food/meal.jpg";
   @override
   Widget build(BuildContext context){

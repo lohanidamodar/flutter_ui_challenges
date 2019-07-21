@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AuthOnePage extends StatelessWidget {
+  static final String path = "lib/src/pages/login/auth1.dart";
   @override
   Widget build(BuildContext context){
     return Scaffold(

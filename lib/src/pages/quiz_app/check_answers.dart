@@ -4,6 +4,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
 import 'question.dart';
 
 class CheckAnswersPage extends StatelessWidget {
+  static final String path = "lib/src/pages/quiz_app/check_answers.dart";
   final List<Question> questions;
   final Map<int,dynamic> answers;
 
@@ -13,6 +14,7 @@ class CheckAnswersPage extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text('Check Answers'),
         elevation: 0,
       ),
@@ -22,7 +24,7 @@ class CheckAnswersPage extends StatelessWidget {
             clipper: WaveClipperTwo(),
             child: Container(
               decoration: BoxDecoration(
-                color: Theme.of(context).primaryColor
+                color: Colors.deepPurple
               ),
               height: 200,
             ),
