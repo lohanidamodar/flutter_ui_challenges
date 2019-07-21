@@ -1,6 +1,10 @@
-import 'dart:async';
-
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
+  
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 class FancyBottomBarPage extends StatefulWidget {
   static final String path = "lib/src/pages/misc/navybar.dart";

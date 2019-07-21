@@ -1,3 +1,8 @@
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
+  
 import 'package:flutter/material.dart';
 class ProfileThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile3.dart";

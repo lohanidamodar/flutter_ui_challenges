@@ -1,8 +1,13 @@
+
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 import 'dart:ui' as ui;
 
 import 'package:flutter_ui_challenges/src/widgets/main_menu.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+  
 import 'package:flutter/material.dart';
 
 class ProfileSixPage extends StatelessWidget {

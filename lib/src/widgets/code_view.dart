@@ -2,6 +2,11 @@ import 'dart:math';
 
 import 'package:animated_floatactionbuttons/animated_floatactionbuttons.dart';
 import 'package:clipboard_manager/clipboard_manager.dart';
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
+  
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/src/utils/code_highlighter.dart';

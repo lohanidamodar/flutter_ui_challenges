@@ -1,3 +1,8 @@
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
+  
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

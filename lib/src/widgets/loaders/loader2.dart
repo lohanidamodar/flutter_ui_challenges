@@ -1,5 +1,10 @@
 import 'dart:math';
 
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
+  
 import 'package:flutter/material.dart';
 
 class LoaderTwo extends StatefulWidget {
