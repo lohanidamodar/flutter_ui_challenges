@@ -1,7 +1,8 @@
 import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
 import 'package:flutter_ui_challenges/src/utils/models/developer.dart';
 
-const String githubRepo = "https://github.com/lohanidamodar/flutter_ui_challenges";
+const String githubRepo =
+    "https://github.com/lohanidamodar/flutter_ui_challenges";
 const String youtubeChannel = "https://youtube.com/c/reactbits";
 
 const List<Developer> DEVELOPERS = [
@@ -19,6 +20,13 @@ const List<Developer> DEVELOPERS = [
       github: "https://github.com/cimplesid",
       imageUrl:
           "https://scontent.fktm9-1.fna.fbcdn.net/v/t1.0-1/48398066_683680278695428_3349519203148234752_o.jpg?_nc_cat=102&_nc_oc=AQnu94xPppLqV5Oim60M33MOShmqliFpt2F6qv49xEmPwJuBOrlo4sXHSjovFRpfRS4&_nc_ht=scontent.fktm9-1.fna&oh=5afbeece6d01f6d9494daeaf8ab747cb&oe=5DBAB9A3"),
+  Developer(
+      name: "Sudip Thapa",
+      profession: "Flutter & React Developer",
+      address: "Kathmandu, Nepal",
+      github: "https://github.com/sudeepthapa",
+      imageUrl: 
+          "https://scontent.fktm8-1.fna.fbcdn.net/v/t1.0-1/p160x160/30709136_2083256138584985_5657892009363185993_n.jpg?_nc_cat=108&_nc_oc=AQnXYXC2h900nUhKZFyxMm_7-6HPUeeA8BWs-EK7XmtbzHyCLAS9phc3KQsvxQVZNmQ&_nc_ht=scontent.fktm8-1.fna&oh=b7ac0485b8f6e26b5514e49c71e25665&oe=5DE3F055"),
 ];
 
 final DEV sid = DEV(
