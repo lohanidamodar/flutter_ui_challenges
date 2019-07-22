@@ -48,7 +48,7 @@ These are some of my flutter plugins, that might help you in your flutter develo
 1. [Flutter Automation](https://pub.dev/packages/flutter_automation)<br>
   A flutter package that helps you setup firebase auth, android signing, firestore CRUD, google maps automatically with just a command.
 
-2. [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)><br>
+2. [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)<br>
   A bunch of custom clippers to help you clip your widgets into different shapes
 
 3. [Bottom Reveal Widget](https://pub.dev/packages/bottomreveal)<br>
