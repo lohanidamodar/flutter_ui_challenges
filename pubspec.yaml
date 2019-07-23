@@ -58,6 +58,7 @@ flutter:
     - assets/grocery/
     - assets/smwallet/
     - assets/travel/
+    - assets/images/
     - assets/hotel/
     - assets/food/
     - assets/icon/
