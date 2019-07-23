@@ -4,9 +4,30 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges)
 
+### Table of contents
+- **[Youtube Speed Codes](#speed-codes-youtube)**
+- **[My flutter plugins](#my-flutter-plugins)**
+- **[Complete App Examples](#complete-app-examples)**
+- **[Code Examples](#code-examples)**
+- **[Animation Examples UI](#animations)**
+- **[Ecommerce UIs](#ecommerce)**
+- **[Login/signup UIs](#user-flow-screens)**
+- **[Profile UIs](#profile-screens)**
+- **[Navigation UIs](#navigations)**
+- **[Onboarding UIs](#onboarding-screens)**
+- **[Miscellaneous UIs](#miscellaneous-widgets)**
+- **[Blog UIs](#blog)**
+- **[Food App UIs](#food-app)**
+- **[Quiz App UIs](#quiz-app)**
+- **[Todo App UIs](#todo-app)**
+- **[Hotel App UIs](#hotel-app)**
+- **[Travel App UIs](#travel-app)**
+- **[Grocery App UI Kit](#grocery-app-ui-kit)**
+
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
-- [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA)
+- [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
+- [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI) :star2: Latest
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
 - [Login UI](https://youtu.be/3JDriYMYiu8)
@@ -16,22 +37,70 @@ My effort on replicating various apps UI on flutter.
 - [Todo Home](https://youtu.be/k4veahELtck)
 - [Landing Page](https://youtu.be/LsfGjRuLQR0)
 
-## More on Flutter
 
-These are some of my other flutter related projects, that might interest you
+__________________
 
-- [Flutter Automation](https://pub.dev/packages/flutter_automation)
+## My Flutter Plugins
+
+These are some of my flutter plugins, that might help you in your flutter development journey.
+
+
+1. [Flutter Automation](https://pub.dev/packages/flutter_automation)<br>
   A flutter package that helps you setup firebase auth, android signing, firestore CRUD, google maps automatically with just a command.
-- [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)
+
+2. [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)<br>
   A bunch of custom clippers to help you clip your widgets into different shapes
-- [Quiz App](https://github.com/lohanidamodar/flutter_opentrivia)
-  A trivia app made with flutter using opentdb.com api
-- [Audio Book App](https://github.com/lohanidamodar/flutter_audiobooks_app)
-  An audio books listening app (works on background), where you can listen to audio books from librivox.org
-- [Bottom Reveal Widget](https://pub.dev/packages/bottomreveal)
+
+3. [Bottom Reveal Widget](https://pub.dev/packages/bottomreveal)<br>
   A flutter package that provides an animated bottom reveal widget, the example is in the Animations section below.
-- [Khalti Clone](https://github.com/lohanidamodar/khalticlone)
+
+_______________
+
+## Complete app examples
+
+1. [Audio Book App](https://github.com/lohanidamodar/flutter_audiobooks_app)<br>
+  An audio books listening app (works on background), where you can listen to audio books from librivox.org
+
+2. [Quiz App](https://github.com/lohanidamodar/flutter_opentrivia)<br>
+  A trivia app made with flutter using opentdb.com api
+
+3. [Khalti Clone](https://github.com/lohanidamodar/khalticlone)<br>
   An effort to clone Khalti (A nepal based mobile payment app) app's UI
+
+4. [Android Launcher](https://github.com/lohanidamodar/flutter_launcher)<br>
+    A simple android launcher app made with flutter
+5. [Iremember](https://github.com/lohanidamodar/flutter_iremember)<br>
+A simple app, that helps you remember where you kept your items by taking pictures. Demonstrates the use of **SQLite Database** and **Image picker plugin**
+
+## Code Examples
+1. [Flutter Crypto List](https://github.com/lohanidamodar/flutter-4-crypto-list)<br>
+Flutter crypto tracker using [coinmarketcap.com](https://coinmarketcap.com) api. Demonstrate using http library to perform simple http request and displaying the result
+
+2. [Simple BLOC pattern example](https://github.com/lohanidamodar/flutter_5_bloc_pattern)<br>
+Simple Example demonstrating state management in flutter using Streams (BLoC pattern) / RxDart
+
+3. [Hangman](https://github.com/lohanidamodar/flutter_7_hangman)<br>
+Simple hangman game example in flutter
+
+4. [Firebase Login](https://github.com/lohanidamodar/flutter_fire_login)<br>
+Very simple flutter authentication example using **Firebase auth**
+
+5. [Http requests](https://github.com/lohanidamodar/flutter_http_requests)<br>
+Simple http request example with Future, json decode, async/await and FutureBuilder widget
+
+6. [Flutter Lessons](https://github.com/lohanidamodar/flutter_lessons)<br>
+Basic to intermediate flutter code examples, projects I made while teaching flutter
+
+7. [Flutter Flavors](https://github.com/lohanidamodar/flutter_flavors)<br>
+Setting up flavors in flutter app, using multiple firebase config based on flavors. [Companion Youtube Tutorials](https://www.youtube.com/watch?v=DgGUtTUatDQ&list=PLUiueC0kTFqLdkuj4j8FNy1qlzcI0nyCu)
+
+8. [Google Map Experiments](https://github.com/lohanidamodar/flutterMapExperiments)<br>
+Learning different aspects of integrating google maps in flutter app.
+
+9. [Animation Experiments](https://github.com/lohanidamodar/flutter_animation_experiments)<br>
+Simple to advance animation examples in flutter
+
+
 
 ## Contributors
 
@@ -58,11 +127,11 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## User Flow Screens
 
-<img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/profile2.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
+<img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile1.png">
+<img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png"> 
 
 ## Lists UIs
 
@@ -88,7 +157,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Food App
 
-<img height="480px" src="screenshots/recipe-single.png"> <img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png">
+<img height="480px" src="screenshots/recipe-single.png"> <img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/recipe_details1.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png">
 
 ## Quiz App
 
@@ -101,10 +170,6 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Hotel App
 
 <img height="480px" src="screenshots/hotel-home.png">
-
-## Recipe App
-
-<img height="480px" src="screenshots/recipe_details1.png">
 
 ## Travel App
 

@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 
 class LoginSevenPage extends StatefulWidget {
-    static final String path = "lib/src/pages/login/login_page1.dart";
+    static final String path = "lib/src/pages/login/login7.dart";
   @override
   _LoginSevenPageState createState() => _LoginSevenPageState();
 }
