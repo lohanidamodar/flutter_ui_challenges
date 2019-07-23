@@ -81,7 +81,7 @@ class Lists extends StatelessWidget {
         place: "Singapore",
         ratings: "4.5/90",
         discount: "12 %",
-        image: "images/rain.jpg"),
+        image: "assets/images/rain.jpg"),
   ];
 
   @override
