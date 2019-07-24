@@ -58,7 +58,6 @@ flutter:
     - assets/grocery/
     - assets/smwallet/
     - assets/travel/
-    - assets/images/
     - assets/hotel/
     - assets/food/
     - assets/icon/
@@ -71,6 +70,7 @@ flutter:
     - lib/src/pages/grocery/
     - lib/src/pages/hotel/
     - lib/src/pages/login/
+    - lib/src/pages/lists/
     - lib/src/pages/misc/
     - lib/src/pages/navigation/
     - lib/src/pages/onboarding/

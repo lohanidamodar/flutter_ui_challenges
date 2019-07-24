@@ -46,42 +46,42 @@ class Item {
 }
 
 class Lists extends StatelessWidget {
-  List<Item> _data = [
+  final List<Item> _data = [
     Item(
         title: 'Gardens By the Bay',
         catagory: "Gardens",
         place: "Singapore",
         ratings: "5.0/80",
         discount: "10 %",
-        image: "assets/images/butterfly.jpg"),
+        image: "https://images.pexels.com/photos/672142/pexels-photo-672142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
     Item(
         title: 'Singapore Zoo',
         catagory: "Parks",
         place: "Singapore",
         ratings: "4.5/90",
         discount: null,
-        image: "assets/images/compass.jpg"),
+        image: "https://images.pexels.com/photos/1736222/pexels-photo-1736222.jpeg?cs=srgb&dl=adult-adventure-backpacker-1736222.jpg&fm=jpg"),
     Item(
         title: 'National Orchid Garden',
         catagory: "Parks",
         place: "Singapore",
         ratings: "4.5/90",
         discount: "12 %",
-        image: "assets/images/coffee.jpg"),
+        image: "https://images.pexels.com/photos/62403/pexels-photo-62403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
     Item(
         title: 'Godabari',
         catagory: "Parks",
         place: "Singapore",
         ratings: "4.5/90",
         discount: "15 %",
-        image: "assets/images/hotel.jpg"),
+        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
     Item(
         title: 'Rara National Park',
         catagory: "Parks",
         place: "Singapore",
         ratings: "4.5/90",
         discount: "12 %",
-        image: "assets/images/rain.jpg"),
+        image: "https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
   ];
 
   @override
@@ -102,7 +102,7 @@ class Lists extends StatelessWidget {
                     EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage(item.image),
+                        image: NetworkImage(item.image),
                         fit: BoxFit.cover)),
                 child:item.discount==null?Container(): Container(
                   color: Colors.deepOrange,
