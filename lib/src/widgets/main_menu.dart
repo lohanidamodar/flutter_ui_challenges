@@ -17,6 +17,7 @@ import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/home_screen1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
@@ -27,6 +28,7 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/intro4.dart';
 import 'package:flutter_ui_challenges/src/pages/preview.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile7.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
@@ -99,6 +101,8 @@ class _MainMenuState extends State<MainMenu> {
           path: ProfileFivePage.path),
       SubMenuItem("Profile six", ProfileSixPage(sid),
           path: ProfileSixPage.path),
+      SubMenuItem("Profile Seven", ProfileSevenPage(),
+          path: ProfileSevenPage.path),
     ]),
     MenuItem(title: "Autnentication", icon: Icons.lock, items: [
       SubMenuItem("Auth One", AuthOnePage(), path: AuthOnePage.path),
@@ -206,6 +210,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Home Screen", HomeScreen1(),
+          path: HomeScreen1.path),
       SubMenuItem("Form Elements", FormElementPage(),
           path: FormElementPage.path),
       SubMenuItem("Sliders", SlidersPage(), path: SlidersPage.path),
