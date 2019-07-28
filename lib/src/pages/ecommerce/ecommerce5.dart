@@ -1,14 +1,16 @@
-
 /**
  * Author: Sudip Thapa  
  * profile: https://github.com/sudeepthapa
+ * 
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
   */
 
 import 'package:flutter/material.dart';
 
-class HomeScreen1 extends StatelessWidget {
-  const HomeScreen1({Key key}) : super(key: key);
-  static final String path = "lib/src/pages/misc/home_screen1.dart";
+class EcommerceFivePage extends StatelessWidget {
+  const EcommerceFivePage({Key key}) : super(key: key);
+  static final String path = "lib/src/pages/ecommerce/ecommerce5.dart";
 
   Widget cards(image, title, price) {
     return Container(
@@ -77,36 +79,37 @@ class HomeScreen1 extends StatelessWidget {
         ),
         backgroundColor: Colors.white70.withOpacity(0.9),
         body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                Stack(
-                  children: <Widget>[
-                    Container(
-                      height: 300,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(30),
-                            bottomRight: Radius.circular(30)),
-                        color: Colors.orangeAccent.shade700,
-                      ),
-                      width: double.infinity,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 90, bottom: 20),
-                      width: 299,
-                      height: 279,
-                      decoration: BoxDecoration(
-                          color: Colors.orangeAccent.shade400,
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(160),
-                              bottomLeft: Radius.circular(290),
-                              bottomRight: Radius.circular(160),
-                              topRight: Radius.circular(10))),
-                    ),
-                    Padding(
+          child: Stack(
+            children: <Widget>[
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30)),
+                  color: Colors.orangeAccent.shade700,
+                ),
+                width: double.infinity,
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 90, bottom: 20),
+                width: 299,
+                height: 279,
+                decoration: BoxDecoration(
+                    color: Colors.orangeAccent.shade400,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(160),
+                        bottomLeft: Radius.circular(290),
+                        bottomRight: Radius.circular(160),
+                        topRight: Radius.circular(10))),
+              ),
+              CustomScrollView(
+                slivers: <Widget>[
+                  SliverToBoxAdapter(
+                    child: Padding(
                       padding: const EdgeInsets.all(26.0),
                       child: Column(
+                        mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text("Good Morning",
@@ -143,33 +146,28 @@ class HomeScreen1 extends StatelessWidget {
                                       horizontal: 25, vertical: 13)),
                             ),
                           ),
-                          Container(
-                            width: double.infinity,
-                            height: 330,
-                            margin: EdgeInsets.only(top: 30),
-                            child: GridView.count(
-                              crossAxisCount: 2,
-                              mainAxisSpacing: 10,
-                              crossAxisSpacing: 10,
-                              children: <Widget>[
-                                cards('assets/grocery/brocoli.png', 'Brocoli',
-                                    '30'),
-                                cards('assets/grocery/cabbage.png', 'Cabbage',
-                                    '37'),
-                                cards(
-                                    'assets/grocery/mango.png', 'Mango', '22'),
-                                cards('assets/grocery/pineapple.png',
-                                    'Pineapple', '90'),
-                              ],
-                            ),
-                          ),
                         ],
                       ),
                     ),
-                  ],
-                ),
-              ],
-            ),
+                  ),
+                  SliverPadding(
+                    padding: const EdgeInsets.all(26.0),
+                    sliver: SliverGrid.count(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 10,
+                      crossAxisSpacing: 10,
+                      children: <Widget>[
+                        cards('assets/grocery/brocoli.png', 'Brocoli', '30'),
+                        cards('assets/grocery/cabbage.png', 'Cabbage', '37'),
+                        cards('assets/grocery/mango.png', 'Mango', '22'),
+                        cards(
+                            'assets/grocery/pineapple.png', 'Pineapple', '90'),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ));
   }
