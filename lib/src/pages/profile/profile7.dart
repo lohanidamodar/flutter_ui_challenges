@@ -1,3 +1,5 @@
+import 'dart:io';
+
 /**
  * Author: Sudip Thapa  
  * profile: https://github.com/sudeepthapa
@@ -6,13 +8,13 @@
 import 'package:flutter/material.dart';
 
 class ProfileSevenPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile7.dart.dart";
+  static final String path = "lib/src/pages/profile/profile7.dart";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.arrow_back),
+          child: Icon(Platform.isIOS?Icons.arrow_back_ios : Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },

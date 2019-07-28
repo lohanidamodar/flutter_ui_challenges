@@ -17,7 +17,7 @@ import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/home_screen1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
@@ -127,6 +127,8 @@ class _MainMenuState extends State<MainMenu> {
           path: EcommerceTwoPage.path),
       SubMenuItem("Ecommerce Three", SliverAppbarPage(),
           path: SliverAppbarPage.path),
+      SubMenuItem("Ecommerce Grocery", EcommerceFivePage(),
+          path: EcommerceFivePage.path),
       // SubMenuItem("Ecommerce Four", EcommerceFourPage(),
       //     path: EcommerceFourPage.path),
       SubMenuItem("Confirm Order", ConfirmOrderPage(),
@@ -210,8 +212,6 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
-      SubMenuItem("Home Screen", HomeScreen1(),
-          path: HomeScreen1.path),
       SubMenuItem("Form Elements", FormElementPage(),
           path: FormElementPage.path),
       SubMenuItem("Sliders", SlidersPage(), path: SlidersPage.path),
