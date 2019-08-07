@@ -46,11 +46,11 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+        // release {
+        //     // keyAlias keystoreProperties['keyAlias']
+        //     // keyPassword keystoreProperties['keyPassword']
+        //     // storeFile file(keystoreProperties['storeFile'])
+        //     // storePassword keystoreProperties['storePassword']
         }
     }
     buildTypes {
