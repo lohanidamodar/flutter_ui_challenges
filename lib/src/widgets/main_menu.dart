@@ -19,6 +19,8 @@ import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart' as prefix0;
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
@@ -48,10 +50,8 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
@@ -182,8 +182,7 @@ class _MainMenuState extends State<MainMenu> {
           path: CheckAnswersPage.path),
     ]),
     MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
-      SubMenuItem("Todo Week View", TodoTwoPage(),
-          path: TodoTwoPage.path),
+      SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
       SubMenuItem("Todo Home One", TodoHomeOnePage(),
           path: TodoHomeOnePage.path),
     ]),
@@ -213,6 +212,7 @@ class _MainMenuState extends State<MainMenu> {
           path: SmartWalletOnboardingPage.path),
       SubMenuItem("Onboarding 2", IntroTwoPage(), path: IntroTwoPage.path),
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
+      SubMenuItem("Onboarding 5", Intro5(),path: prefix0.Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
       SubMenuItem("Form Elements", FormElementPage(),
