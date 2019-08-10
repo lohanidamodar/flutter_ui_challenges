@@ -20,8 +20,6 @@ import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart'
-    as prefix0;
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
@@ -215,7 +213,7 @@ class _MainMenuState extends State<MainMenu> {
           path: SmartWalletOnboardingPage.path),
       SubMenuItem("Onboarding 2", IntroTwoPage(), path: IntroTwoPage.path),
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
-      SubMenuItem("Onboarding 5", Intro5(), path: prefix0.Intro5.path),
+      SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
       SubMenuItem("Form Elements", FormElementPage(),
