@@ -1,0 +1,3 @@
+git remote add upstream https://github.com/lohanidamodar/flutter_ui_challenges.git
+git pull upstream master
+git remote remove upstream
