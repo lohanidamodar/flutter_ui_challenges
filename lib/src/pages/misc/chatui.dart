@@ -1,3 +1,8 @@
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
+
 import 'package:flutter/material.dart';
 
 class ChatUi extends StatelessWidget {

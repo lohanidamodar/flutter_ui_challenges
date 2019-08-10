@@ -1,3 +1,7 @@
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 

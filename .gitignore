@@ -56,7 +56,8 @@ build/
 **/ios/.generated/
 **/ios/Flutter/App.framework
 **/ios/Flutter/Flutter.framework
-**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/flutter_export_environment.sh
 **/ios/Flutter/app.flx
 **/ios/Flutter/app.zip
 **/ios/Flutter/flutter_assets/
@@ -73,4 +74,4 @@ build/
 # keys
 *keys/
 **key.properties
-ui
+.ui
