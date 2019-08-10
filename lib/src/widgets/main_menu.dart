@@ -20,7 +20,8 @@ import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart' as prefix0;
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart'
+    as prefix0;
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
@@ -39,6 +40,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
 import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
@@ -192,6 +194,7 @@ class _MainMenuState extends State<MainMenu> {
           path: TravelNepalPage.path),
       SubMenuItem("Travel Destination Detail", DestinationPage(),
           path: DestinationPage.path),
+      SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
@@ -212,7 +215,7 @@ class _MainMenuState extends State<MainMenu> {
           path: SmartWalletOnboardingPage.path),
       SubMenuItem("Onboarding 2", IntroTwoPage(), path: IntroTwoPage.path),
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
-      SubMenuItem("Onboarding 5", Intro5(),path: prefix0.Intro5.path),
+      SubMenuItem("Onboarding 5", Intro5(), path: prefix0.Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
       SubMenuItem("Form Elements", FormElementPage(),
