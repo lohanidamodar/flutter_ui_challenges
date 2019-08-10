@@ -39,6 +39,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
 import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
@@ -192,6 +193,7 @@ class _MainMenuState extends State<MainMenu> {
           path: TravelNepalPage.path),
       SubMenuItem("Travel Destination Detail", DestinationPage(),
           path: DestinationPage.path),
+      SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
