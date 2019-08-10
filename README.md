@@ -5,6 +5,7 @@ My effort on replicating various apps UI on flutter.
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
 ### Table of contents
+
 - **[Youtube Speed Codes](#speed-codes-youtube)**
 - **[My flutter plugins](#my-flutter-plugins)**
 - **[Complete App Examples](#complete-app-examples)**
@@ -38,70 +39,67 @@ My effort on replicating various apps UI on flutter.
 - [Todo Home](https://youtu.be/k4veahELtck)
 - [Landing Page](https://youtu.be/LsfGjRuLQR0)
 
-
-__________________
+---
 
 ## My Flutter Plugins
 
 These are some of my flutter plugins, that might help you in your flutter development journey.
 
-
 1. [Flutter Automation](https://pub.dev/packages/flutter_automation)<br>
-  A flutter package that helps you setup firebase auth, android signing, firestore CRUD, google maps automatically with just a command.
+   A flutter package that helps you setup firebase auth, android signing, firestore CRUD, google maps automatically with just a command.
 
 2. [Custom Clippers](https://pub.dev/packages/flutter_custom_clippers)<br>
-  A bunch of custom clippers to help you clip your widgets into different shapes
+   A bunch of custom clippers to help you clip your widgets into different shapes
 
 3. [Bottom Reveal Widget](https://pub.dev/packages/bottomreveal)<br>
-  A flutter package that provides an animated bottom reveal widget, the example is in the Animations section below.
+   A flutter package that provides an animated bottom reveal widget, the example is in the Animations section below.
 
-_______________
+---
 
 ## Complete app examples
 
 1. [Audio Book App](https://github.com/lohanidamodar/flutter_audiobooks_app)<br>
-  An audio books listening app (works on background), where you can listen to audio books from librivox.org
+   An audio books listening app (works on background), where you can listen to audio books from librivox.org
 
 2. [Quiz App](https://github.com/lohanidamodar/flutter_opentrivia)<br>
-  A trivia app made with flutter using opentdb.com api
+   A trivia app made with flutter using opentdb.com api
 
 3. [Khalti Clone](https://github.com/lohanidamodar/khalticlone)<br>
-  An effort to clone Khalti (A nepal based mobile payment app) app's UI
+   An effort to clone Khalti (A nepal based mobile payment app) app's UI
 
 4. [Android Launcher](https://github.com/lohanidamodar/flutter_launcher)<br>
-    A simple android launcher app made with flutter
+   A simple android launcher app made with flutter
 5. [Iremember](https://github.com/lohanidamodar/flutter_iremember)<br>
-A simple app, that helps you remember where you kept your items by taking pictures. Demonstrates the use of **SQLite Database** and **Image picker plugin**
+   A simple app, that helps you remember where you kept your items by taking pictures. Demonstrates the use of **SQLite Database** and **Image picker plugin**
 
 ## Code Examples
+
 1. [Flutter Crypto List](https://github.com/lohanidamodar/flutter-4-crypto-list)<br>
-Flutter crypto tracker using [coinmarketcap.com](https://coinmarketcap.com) api. Demonstrate using http library to perform simple http request and displaying the result
+   Flutter crypto tracker using [coinmarketcap.com](https://coinmarketcap.com) api. Demonstrate using http library to perform simple http request and displaying the result
 
 2. [Simple BLOC pattern example](https://github.com/lohanidamodar/flutter_5_bloc_pattern)<br>
-Simple Example demonstrating state management in flutter using Streams (BLoC pattern) / RxDart
+   Simple Example demonstrating state management in flutter using Streams (BLoC pattern) / RxDart
 
 3. [Hangman](https://github.com/lohanidamodar/flutter_7_hangman)<br>
-Simple hangman game example in flutter
+   Simple hangman game example in flutter
 
 4. [Firebase Login](https://github.com/lohanidamodar/flutter_fire_login)<br>
-Very simple flutter authentication example using **Firebase auth**
+   Very simple flutter authentication example using **Firebase auth**
 
 5. [Http requests](https://github.com/lohanidamodar/flutter_http_requests)<br>
-Simple http request example with Future, json decode, async/await and FutureBuilder widget
+   Simple http request example with Future, json decode, async/await and FutureBuilder widget
 
 6. [Flutter Lessons](https://github.com/lohanidamodar/flutter_lessons)<br>
-Basic to intermediate flutter code examples, projects I made while teaching flutter
+   Basic to intermediate flutter code examples, projects I made while teaching flutter
 
 7. [Flutter Flavors](https://github.com/lohanidamodar/flutter_flavors)<br>
-Setting up flavors in flutter app, using multiple firebase config based on flavors. [Companion Youtube Tutorials](https://www.youtube.com/watch?v=DgGUtTUatDQ&list=PLUiueC0kTFqLdkuj4j8FNy1qlzcI0nyCu)
+   Setting up flavors in flutter app, using multiple firebase config based on flavors. [Companion Youtube Tutorials](https://www.youtube.com/watch?v=DgGUtTUatDQ&list=PLUiueC0kTFqLdkuj4j8FNy1qlzcI0nyCu)
 
 8. [Google Map Experiments](https://github.com/lohanidamodar/flutterMapExperiments)<br>
-Learning different aspects of integrating google maps in flutter app.
+   Learning different aspects of integrating google maps in flutter app.
 
 9. [Animation Experiments](https://github.com/lohanidamodar/flutter_animation_experiments)<br>
-Simple to advance animation examples in flutter
-
-
+   Simple to advance animation examples in flutter
 
 ## Contributors
 
@@ -132,7 +130,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png"> 
+<img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
 
 ## Lists UIs
 
@@ -146,7 +144,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 (1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
 
-<img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif"> 
+<img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
 
 ## miscellaneous widgets
 
@@ -174,7 +172,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Travel App
 
-<img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
+<img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
 
 ## grocery App UI Kit
 
