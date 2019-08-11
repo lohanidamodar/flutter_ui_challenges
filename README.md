@@ -29,7 +29,7 @@ My effort on replicating various apps UI on flutter.
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
-- [Ecommerce Details](https://youtu.be/fitwzVmerCY) :star2: Latest
+- [Ecommerce Details](https://youtu.be/I_JEvLSaJv0) :star2: Latest
 - [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI)
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
