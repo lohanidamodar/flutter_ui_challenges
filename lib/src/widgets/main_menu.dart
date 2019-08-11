@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
@@ -140,8 +141,8 @@ class _MainMenuState extends State<MainMenu> {
           path: EcommerceDetailOnePage.path),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage(),
           path: EcommerceDetailTwoPage.path),
-      // SubMenuItem("Ecommerce Details Three", EcommerceDetailThreePage(),
-      //     path: EcommerceDetailThreePage.path),
+      SubMenuItem("Rounded Details Page", EcommerceDetailThreePage(),
+          path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),

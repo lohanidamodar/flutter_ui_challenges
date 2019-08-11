@@ -29,7 +29,8 @@ My effort on replicating various apps UI on flutter.
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
-- [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI) :star2: Latest
+- [Ecommerce Details](https://youtu.be/fitwzVmerCY) :star2: Latest
+- [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI)
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
 - [Login UI](https://youtu.be/3JDriYMYiu8)
@@ -122,7 +123,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Ecommerce
 
-<img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
+<img height="480px" src="screenshots/ecommerce_details3.png"> <img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
 ## User Flow Screens
 
