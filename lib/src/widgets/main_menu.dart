@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
@@ -18,7 +19,9 @@ import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
@@ -37,6 +40,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
 import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
@@ -48,10 +52,8 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
@@ -139,8 +141,8 @@ class _MainMenuState extends State<MainMenu> {
           path: EcommerceDetailOnePage.path),
       SubMenuItem("Ecommerce Details Two", EcommerceDetailTwoPage(),
           path: EcommerceDetailTwoPage.path),
-      // SubMenuItem("Ecommerce Details Three", EcommerceDetailThreePage(),
-      //     path: EcommerceDetailThreePage.path),
+      SubMenuItem("Rounded Details Page", EcommerceDetailThreePage(),
+          path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),
@@ -182,8 +184,7 @@ class _MainMenuState extends State<MainMenu> {
           path: CheckAnswersPage.path),
     ]),
     MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
-      SubMenuItem("Todo Week View", TodoTwoPage(),
-          path: TodoTwoPage.path),
+      SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
       SubMenuItem("Todo Home One", TodoHomeOnePage(),
           path: TodoHomeOnePage.path),
     ]),
@@ -193,6 +194,7 @@ class _MainMenuState extends State<MainMenu> {
           path: TravelNepalPage.path),
       SubMenuItem("Travel Destination Detail", DestinationPage(),
           path: DestinationPage.path),
+      SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
@@ -213,6 +215,7 @@ class _MainMenuState extends State<MainMenu> {
           path: SmartWalletOnboardingPage.path),
       SubMenuItem("Onboarding 2", IntroTwoPage(), path: IntroTwoPage.path),
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
+      SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
       SubMenuItem("Form Elements", FormElementPage(),
@@ -224,6 +227,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Sliver App Bar", SliverAppbarPage(),
           path: SliverAppbarPage.path),
       SubMenuItem("Loaders", LoadersPage(), path: LoadersPage.path),
+      SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];

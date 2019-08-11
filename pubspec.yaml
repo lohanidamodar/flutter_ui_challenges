@@ -29,6 +29,11 @@ dependencies:
   bottomreveal: ^1.0.0
   animated_floatactionbuttons: ^0.1.0
   share: ^0.6.2
+  flare_flutter:
+    git:
+      url: git://github.com/2d-inc/Flare-Flutter.git
+      ref: 6606b73bf4f7b87105a6febfbb5f2167cf8b8977
+      path: flare_flutter
   
 dev_dependencies:
   flutter_test:
@@ -61,6 +66,7 @@ flutter:
     - assets/hotel/
     - assets/food/
     - assets/icon/
+    - assets/flare/
     - lib/src/pages/animations/
     - lib/src/pages/animations/animation1/
     - lib/src/pages/blog/
