@@ -11,6 +11,7 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart
 import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
+import 'package:flutter_ui_challenges/src/pages/hotel/details.dart';
 import 'package:flutter_ui_challenges/src/pages/lists/list1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
@@ -203,6 +204,7 @@ class _MainMenuState extends State<MainMenu> {
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
+      SubMenuItem("Room Details", HotelDetailsPage(), path: HotelDetailsPage.path),
     ]),
     MenuItem(title: "Navigation", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),

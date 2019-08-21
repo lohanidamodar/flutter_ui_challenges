@@ -168,7 +168,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Hotel App
 
-<img height="480px" src="screenshots/hotel-home.png">
+<img height="480px" src="screenshots/room-details.png"> <img height="480px" src="screenshots/hotel-home.png">
 
 ## Travel App
 
