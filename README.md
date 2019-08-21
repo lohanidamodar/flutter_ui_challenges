@@ -164,7 +164,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Todo App
 
-<img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
+<img height="480px" src="screenshots/todo_home2.png"> <img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
 
 ## Hotel App
 

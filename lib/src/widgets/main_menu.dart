@@ -41,6 +41,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todo_home2.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
 import 'package:flutter_ui_challenges/src/utils/constants.dart';
@@ -189,6 +190,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
       SubMenuItem("Todo Home One", TodoHomeOnePage(),
           path: TodoHomeOnePage.path),
+      SubMenuItem("Todo Home Two", TodoHomeTwoPage(),
+          path: TodoHomeTwoPage.path),
     ]),
     MenuItem(title: "Travel", icon: Icons.airplanemode_active, items: [
       SubMenuItem("Travel Home", TravelHomePage(), path: TravelHomePage.path),
