@@ -29,6 +29,7 @@ My effort on replicating various apps UI on flutter.
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
+- [Blog App List UI](https://youtu.be/pIWHFwrhbIo) :star2: Latest
 - [Hotel Booking](https://www.youtube.com/watch?v=2G_PquLyiv0) :star2: Latest
 - [Ecommerce Details](https://youtu.be/I_JEvLSaJv0)
 - [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI)
