@@ -28,8 +28,11 @@ dependencies:
   url_launcher: ^5.0.2
   shared_preferences: ^0.5.3
   bottomreveal: ^1.0.0
+  charts_flutter: ^0.6.0
   animated_floatactionbuttons: ^0.1.0
   share: ^0.6.2
+  intl: ^0.15.8
+
   flare_flutter:
     git:
       url: git://github.com/2d-inc/Flare-Flutter.git

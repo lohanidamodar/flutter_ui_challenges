@@ -29,7 +29,10 @@ My effort on replicating various apps UI on flutter.
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
-- [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI) :star2: Latest
+- [Blog App List UI](https://youtu.be/pIWHFwrhbIo) :star2: Latest
+- [Hotel Booking](https://www.youtube.com/watch?v=2G_PquLyiv0) :star2: Latest
+- [Ecommerce Details](https://youtu.be/I_JEvLSaJv0)
+- [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI)
 - [Resume UI](https://www.youtube.com/watch?v=ERUvJbtaGMI)
 - [Fruit Add To Cart UI](https://youtu.be/96o6_arX69U)
 - [Login UI](https://youtu.be/3JDriYMYiu8)
@@ -122,7 +125,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Ecommerce
 
-<img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
+<img height="480px" src="screenshots/ecommerce_details3.png"> <img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
 ## User Flow Screens
 
@@ -144,15 +147,14 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 (1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
 
-<img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
+<img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif"> 
 
 ## miscellaneous widgets
-
-<img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif">
+<img height="480px" src="screenshots/chat2.png"> <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/chatui.png"> <img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif">
 
 ## Blog
 
-<img height="480px" src="screenshots/article2.png" > <img height="480px" src="screenshots/article1.png" >
+<img height="480px" src="screenshots/blog-home1.png" > <img height="480px" src="screenshots/article2.png" > <img height="480px" src="screenshots/article1.png" >
 
 ## Food App
 
@@ -164,11 +166,11 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Todo App
 
-<img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
+<img height="480px" src="screenshots/todo_home2.png"> <img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
 
 ## Hotel App
 
-<img height="480px" src="screenshots/hotel-home.png">
+<img height="480px" src="screenshots/room-details.png"> <img height="480px" src="screenshots/hotel-home.png">
 
 ## Travel App
 
