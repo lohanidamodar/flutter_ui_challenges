@@ -1,3 +1,8 @@
+/**
+ * Author: Sudip Thapa  
+ * profile: https://github.com/sudeepthapa
+  */
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_ui_challenges/src/utils/models/car.dart';
@@ -5,6 +10,8 @@ import 'package:flutter_ui_challenges/src/utils/models/car.dart';
 var currentCar = carList.cars[0];
 
 class CarApp extends StatelessWidget {
+  static final String path = "lib/src/pages/misc/car_app.dart";
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 double iconSize = 30;
 CarList carList = CarList(cars: [
   Car(companyName: "Chevrolet", carName: "Corvette", price: 2100, imgList: [
-    "cars/corvette_front.png",
-    "cars/corvette_back.png",
-    "cars/interior1.PNG",
-    "cars/interior2.PNG",
-    "cars/corvette_front2.png",
+    "assets/cars/corvette_front.png",
+    "assets/cars/corvette_back.png",
+    "assets/cars/interior1.PNG",
+    "assets/cars/interior2.PNG",
+    "assets/cars/corvette_front2.png",
   ], offerDetails: [
     {Icon(Icons.bluetooth, size: iconSize): "Automatic"},
     {Icon(Icons.airline_seat_individual_suite, size: iconSize): "4 seats"},
@@ -40,9 +40,9 @@ CarList carList = CarList(cars: [
     {Icon(Icons.ac_unit, size: iconSize): "AC"},
   ]),
   Car(companyName: "Lamborghini", carName: "Aventador", price: 3000, imgList: [
-    "cars/lambo_front.png",
-    "cars/interior_lambo.png",
-    "cars/lambo_back.png",
+    "assets/cars/lambo_front.png",
+    "assets/cars/interior_lambo.png",
+    "assets/cars/lambo_back.png",
   ], offerDetails: [
     {Icon(Icons.bluetooth, size: iconSize): "Automatic"},
     {Icon(Icons.bluetooth, size: iconSize): "4 seats"},
