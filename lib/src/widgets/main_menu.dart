@@ -14,6 +14,7 @@ import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 import 'package:flutter_ui_challenges/src/pages/hotel/details.dart';
 import 'package:flutter_ui_challenges/src/pages/lists/list1.dart';
+import 'package:flutter_ui_challenges/src/pages/lists/list2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
@@ -128,6 +129,7 @@ class _MainMenuState extends State<MainMenu> {
     ]),
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
+      SubMenuItem("List Two", SchoolList(), path: SchoolList.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage(),
@@ -151,7 +153,8 @@ class _MainMenuState extends State<MainMenu> {
           path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
-      SubMenuItem("Blog Home One", BlogHomeOnePage(), path: BlogHomeOnePage.path),
+      SubMenuItem("Blog Home One", BlogHomeOnePage(),
+          path: BlogHomeOnePage.path),
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),
       SubMenuItem("Article Two", ArticleTwoPage(), path: ArticleTwoPage.path),
     ]),
@@ -207,7 +210,8 @@ class _MainMenuState extends State<MainMenu> {
     ]),
     MenuItem(title: "Hotel", icon: Icons.hotel, items: [
       SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
-      SubMenuItem("Room Details", HotelDetailsPage(), path: HotelDetailsPage.path),
+      SubMenuItem("Room Details", HotelDetailsPage(),
+          path: HotelDetailsPage.path),
     ]),
     MenuItem(title: "Navigation", icon: Icons.menu, items: [
       SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
@@ -228,8 +232,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
-      SubMenuItem("Chat Messaages", ChatTwoPage(),
-          path: ChatTwoPage.path),
+      SubMenuItem("Chat Messaages", ChatTwoPage(), path: ChatTwoPage.path),
       SubMenuItem("Dashboard One", DashboardOnePage(),
           path: DashboardOnePage.path),
       SubMenuItem("Form Elements", FormElementPage(),
