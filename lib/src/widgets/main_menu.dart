@@ -22,7 +22,6 @@ import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/car_app.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash1.dart';
@@ -245,7 +244,6 @@ class _MainMenuState extends State<MainMenu> {
           path: SliverAppbarPage.path),
       SubMenuItem("Loaders", LoadersPage(), path: LoadersPage.path),
       SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
-      SubMenuItem("Car App", CarApp(), path: CarApp.path),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];
