@@ -137,7 +137,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Lists UIs
 
-<img height="480px" src="screenshots/place list.png"> <img height="480px" src="screenshots/schoolList.png">
+<img height="480px" src="screenshots/schoolList.png"> <img height="480px" src="screenshots/place list.png">
 
 ## Navigations
 
