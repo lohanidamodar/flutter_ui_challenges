@@ -26,6 +26,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
@@ -232,6 +233,8 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Dashboard Three", DashboardThreePage(),
+          path: DashboardThreePage.path),
       SubMenuItem("Chat Messaages", ChatTwoPage(), path: ChatTwoPage.path),
       SubMenuItem("Dashboard One", DashboardOnePage(),
           path: DashboardOnePage.path),
