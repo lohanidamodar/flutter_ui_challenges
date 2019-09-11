@@ -3,88 +3,90 @@
  * profile: https://github.com/lohanidamodar
   */
 
+import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/bhome1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
-import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
-import 'package:flutter_ui_challenges/src/pages/hotel/details.dart';
-import 'package:flutter_ui_challenges/src/pages/lists/list1.dart';
-import 'package:flutter_ui_challenges/src/pages/lists/list2.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_ui_challenges/src/pages/preview.dart';
+import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_ui_challenges/src/utils/constants.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/dash2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/dash1.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
+import 'package:flutter_ui_challenges/src/pages/lists/list2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
+import 'package:flutter_ui_challenges/src/pages/lists/list1.dart';
+import 'package:flutter_ui_challenges/src/pages/hotel/hhome.dart';
+import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/bhome1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/sliders.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login4.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
+import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
+import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash1.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
+import 'package:flutter_ui_challenges/src/pages/hotel/details.dart';
+import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
+import 'package:flutter_ui_challenges/src/widgets/bottomsheet.dart';
+import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todo_home2.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile7.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
+import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro2.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro3.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro4.dart';
-import 'package:flutter_ui_challenges/src/pages/preview.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile7.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
 import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo_home2.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
-import 'package:flutter_ui_challenges/src/utils/constants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
-import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
-import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
-import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
-import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
-import 'package:flutter_ui_challenges/src/pages/hotel/hhome.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login4.dart';
-import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/form_elements.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/sliders.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
+import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/form_elements.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
+import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
+import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
+
 
 class MainMenu extends StatefulWidget {
   @override
@@ -115,7 +117,7 @@ class _MainMenuState extends State<MainMenu> {
       SubMenuItem("Profile Seven", ProfileSevenPage(),
           path: ProfileSevenPage.path),
     ]),
-    MenuItem(title: "Autnentication", icon: Icons.lock, items: [
+    MenuItem(title: "Authentication", icon: Icons.lock, items: [
       SubMenuItem("Auth One", AuthOnePage(), path: AuthOnePage.path),
       SubMenuItem("Auth Two", AuthTwoPage(), path: AuthTwoPage.path),
       SubMenuItem("Login One", LoginOnePage(), path: LoginOnePage.path),
@@ -250,6 +252,8 @@ class _MainMenuState extends State<MainMenu> {
           path: SliverAppbarPage.path),
       SubMenuItem("Loaders", LoadersPage(), path: LoadersPage.path),
       SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
+      SubMenuItem('Bottomsheet', BottomSheetAwesome(),
+          path: BottomSheetAwesome.path)
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];
