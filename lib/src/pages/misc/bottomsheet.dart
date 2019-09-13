@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 
 class BottomSheetAwesome extends StatefulWidget {
-  static final String path = "lib\src\widgets\bottomsheet.dart";
+  static final String path = "lib/src/pages/misc/bottomsheet.dart";
   @override
   _BottomSheetAwesomeState createState() => _BottomSheetAwesomeState();
 }
@@ -55,15 +55,28 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'This layout can be used in many cases a good example is quiz app. The button on action of appbar shows the bottom sheet which contains the list of index of pages in the page and change color upon selecting the page by using select button in the page itself and clicking again disselect the page. ',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
                 RaisedButton(
                   color: Theme.of(context).primaryColor,
                   onPressed: () {
-                    setState(() {
-                      progress[index] = index;
-                    });
+                    if (progress.containsKey(progress[index]))
+                      progress.remove(progress[index]);
+                    else
+                      setState(() {
+                        progress[index] = index;
+                      });
                   },
                   child: Text(
-                    'Tap here to make page selected',
+                    'Tap here select/unselect the page',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -79,8 +92,11 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                           color: Theme.of(context).primaryColor,
                           onPressed: () {
-                            _pageController
-                                .jumpToPage(_pageController.page.ceil() - 1);
+                            _pageController.animateToPage(
+                                _pageController.page.ceil() - 1,
+                                duration: Duration(seconds: 1),
+                                curve: Curves.easeInBack);
+                            // .jumpToPage(_pageController.page.ceil() - 1);
                           },
                         ),
                         SizedBox(
@@ -107,8 +123,11 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                           color: Theme.of(context).primaryColor,
                           onPressed: () {
-                            _pageController
-                                .jumpToPage(_pageController.page.ceil() + 1);
+                            _pageController.animateToPage(
+                                _pageController.page.ceil() + 1,
+                                duration: Duration(seconds: 1),
+                                curve: Curves.easeIn);
+                            // .jumpToPage(_pageController.page.ceil() + 1);
                           },
                         ),
                       ],
