@@ -23,13 +23,13 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
         key: _scaffoldKey,
         appBar: AppBar(
           actions: <Widget>[
-            GestureDetector(
+            InkWell(
               onTap: showaAwesomeSheet,
               child: Container(
-                constraints: BoxConstraints(maxHeight: 10),
+                alignment: Alignment.center,
                 height: 10,
-                margin: EdgeInsets.only(right: 10),
-                padding: EdgeInsets.fromLTRB(15, 15, 10, 0),
+                margin: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 decoration: BoxDecoration(
                   border: Border.all(width: 1, color: Colors.white),
                   borderRadius: BorderRadius.circular(10),
@@ -56,7 +56,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Text(
                     'This layout can be used in many cases a good example is quiz app. The button on action of appbar shows the bottom sheet which contains the list of index of pages in the page and change color upon selecting the page by using select button in the page itself and clicking again disselect the page. ',
                     textAlign: TextAlign.justify,
@@ -66,17 +66,19 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                   ),
                 ),
                 RaisedButton(
-                  color: Theme.of(context).primaryColor,
+                  color: progress.containsKey(progress[index]) ? Theme.of(context).primaryColor : Colors.grey.shade800,
                   onPressed: () {
                     if (progress.containsKey(progress[index]))
-                      progress.remove(progress[index]);
+                      setState(() {
+                        progress.remove(progress[index]);
+                      });
                     else
                       setState(() {
                         progress[index] = index;
                       });
                   },
-                  child: Text(
-                    'Tap here select/unselect the page',
+                  child: Text(progress.containsKey(progress[index]) ?
+                    'Unselect Page ${currentIndex +1}' : 'Select Page ${currentIndex +1}' ,
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
