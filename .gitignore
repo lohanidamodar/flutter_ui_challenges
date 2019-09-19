@@ -76,3 +76,4 @@ build/
 *keys/
 **key.properties
 .ui
+**/google-services.json

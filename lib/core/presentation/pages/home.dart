@@ -4,7 +4,8 @@
   */
   
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/widgets/main_menu.dart';
+
+import 'main_menu.dart';
 
 class HomePage extends StatelessWidget {
   

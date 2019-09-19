@@ -5,7 +5,6 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:flutter_ui_challenges/src/pages/home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
@@ -70,9 +69,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             textColor: Colors.white70,
             child: Text("Skip"),
             onPressed: (){
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_)=>HomePage())
-              );
+              Navigator.of(context).pushReplacementNamed('home');
             },
           ),
           IconButton(
@@ -82,9 +79,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (_) => HomePage()
-                ));
+                Navigator.of(context).pushReplacementNamed('home');
               }
             },
           )

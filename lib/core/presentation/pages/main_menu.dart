@@ -5,12 +5,11 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_ui_challenges/src/pages/preview.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_ui_challenges/src/utils/constants.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash2.dart';
@@ -302,12 +301,24 @@ class _MainMenuState extends State<MainMenu> {
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0)),
-                trailing: IconButton(
-                  color: Colors.white,
-                  icon: Icon(FontAwesomeIcons.infoCircle),
-                  onPressed: () {
-                    Navigator.pushNamed(context, "about");
-                  },
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    IconButton(
+                      color: Colors.white,
+                      icon: Icon(FontAwesomeIcons.infoCircle),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "about");
+                      },
+                    ),
+                    IconButton(
+                      color: Colors.white,
+                      icon: Icon(FontAwesomeIcons.user),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "profile");
+                      },
+                    ),
+                  ],
                 ),
               ),
             ),

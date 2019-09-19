@@ -4,11 +4,12 @@
   */
   
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/utils/constants.dart';
-import 'package:flutter_ui_challenges/src/widgets/code_view.dart';
-import 'package:flutter_ui_challenges/src/widgets/keep_alive.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
+
+import '../../constants.dart';
+import 'code_view.dart';
+import 'keep_alive.dart';
 
 const _TABS = <Widget>[
   Tab(

@@ -4,10 +4,11 @@
   */
   
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/utils/constants.dart';
-import 'package:flutter_ui_challenges/src/utils/models/developer.dart';
+import 'package:flutter_ui_challenges/core/data/models/developer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../constants.dart';
 
 class AboutPage extends StatelessWidget {
   @override

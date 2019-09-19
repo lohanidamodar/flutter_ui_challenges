@@ -31,17 +31,20 @@ dependencies:
   animated_floatactionbuttons: ^0.1.0
   share: ^0.6.2
   intl: ^0.15.8
-
   flare_flutter:
     git:
       url: git://github.com/2d-inc/Flare-Flutter.git
       ref: 6606b73bf4f7b87105a6febfbb5f2167cf8b8977
       path: flare_flutter
-
+  firebase_auth: ^0.14.0+5
+  provider: ^3.1.0
+  google_sign_in: ^4.0.7
+  cloud_firestore: ^0.12.9+4
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.7.0
+  flutter_automation:
 
 flutter_icons:
   android: true
