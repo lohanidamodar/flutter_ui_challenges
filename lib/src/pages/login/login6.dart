@@ -129,7 +129,7 @@ class LoginSixPage extends StatelessWidget {
                     FontAwesomeIcons.facebookF,
                     size: 18.0,
                   ),
-                  label: Text("Google"),
+                  label: Text("Facebook"),
                   onPressed: () {},
                 ),
               ],
