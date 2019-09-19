@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          body: _pageIndex == 0 ? MainMenu() : FavoritesTab(),
+          body: Provider.of<UserRepository>(context).user != null ? _pageIndex == 0 ? MainMenu() : FavoritesTab() : MainMenu(),
           bottomNavigationBar: Provider.of<UserRepository>(context).user == null ? null : BottomNavigationBar(
             selectedItemColor: Theme.of(context).primaryColor,
             showUnselectedLabels: false,
