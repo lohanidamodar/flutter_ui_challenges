@@ -3,6 +3,7 @@ import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../res/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -94,6 +95,22 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(height: 20.0),
                       if (user.status == Status.Authenticating)
                         Center(child: CircularProgressIndicator()),
+                      Text.rich(TextSpan(
+                        children: [
+                          TextSpan(text: 'By signing in you agree to our '),
+                          WidgetSpan(
+                            child: InkWell(
+                              child: Text("Privacy Policy",style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                              onTap: (){
+                                launch('https://popupbits.com/contact/flutter-ui-challenges-privacy-policy/');
+                              },
+                            ),
+                          ),
+                        ]
+                      )),
                       if (user.status != Status.Authenticating) ...[
                         Center(
                           child: MaterialButton(

@@ -29,3 +29,5 @@ const List<Developer> DEVELOPERS = [
     imageUrl: devSid,
   ),
 ];
+
+const String privacyUrl = "https://popupbits.com/contact/flutter-ui-challenges-privacy-policy/";
