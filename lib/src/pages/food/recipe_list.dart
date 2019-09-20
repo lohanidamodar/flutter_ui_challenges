@@ -6,6 +6,7 @@ import 'dart:io';
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 
 class RecipeListPage extends StatelessWidget {
@@ -15,13 +16,13 @@ class RecipeListPage extends StatelessWidget {
   final Color color3 = Color(0xffFE1949);
   final Color color4 = Color(0xffF0631C);
   final List<String> images = [
-    'assets/food/breakfast.jpg',
-    'assets/food/burger.jpg',
-    'assets/food/cupcake.jpg',
-    'assets/food/french-fries.jpg',
-    'assets/food/fries.jpg',
-    'assets/food/meal.jpg',
-    'assets/food/pancake.jpg',
+    breakfast,
+    burger,
+    cupcake,
+    frenchFries,
+    fries,
+    meal,
+    pancake,
   ];
   @override
   Widget build(BuildContext context) {
@@ -132,7 +133,7 @@ class RecipeListPage extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15.0),
                   image: DecorationImage(
-                    image: AssetImage(
+                    image: NetworkImage(
                       images[index % images.length],
                     ),
                     fit: BoxFit.cover,

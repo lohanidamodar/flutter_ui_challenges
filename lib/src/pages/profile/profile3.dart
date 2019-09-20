@@ -4,9 +4,10 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class ProfileThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile3.dart";
-  final image = 'assets/img/2.jpg';
+  final image = avatars[1];
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -17,7 +18,7 @@ class ProfileThreePage extends StatelessWidget {
             SizedBox(
               height: 250,
               width: double.infinity,
-              child: Image.asset(image, fit: BoxFit.cover,),
+              child: Image.network(image, fit: BoxFit.cover,),
             ),
             Container(
               margin: EdgeInsets.fromLTRB(16.0, 200.0, 16.0, 16.0),
@@ -81,7 +82,7 @@ class ProfileThreePage extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
-                            image: AssetImage(image),
+                            image: NetworkImage(image),
                             fit: BoxFit.cover
                           )
                         ),

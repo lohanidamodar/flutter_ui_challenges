@@ -4,11 +4,12 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LandingOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/onboarding/landing1.dart";
-  final String bgImage = "assets/img/photographer.jpg";
-  final String image = "assets/img/ledge.jpg";
+  final String bgImage = photographer;
+  final String image = ledge;
 
   @override
   Widget build(BuildContext context){
@@ -17,7 +18,7 @@ class LandingOnePage extends StatelessWidget {
         children: <Widget>[
           Container(
             alignment: Alignment.center,
-            child: Image.asset(bgImage, fit: BoxFit.contain,)),
+            child: Image.network(bgImage, fit: BoxFit.contain,)),
           Column(
             children: <Widget>[
               SizedBox(height: 30.0),
@@ -37,7 +38,7 @@ class LandingOnePage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(image),
+                              image: NetworkImage(image),
                               fit: BoxFit.cover
                             ),
                             borderRadius: BorderRadius.only(

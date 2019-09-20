@@ -30,7 +30,7 @@ class GroceryCategory extends StatelessWidget {
         width: 100,
         child: Column(
           children: <Widget>[
-            Image.asset(image),
+            Image.network(image),
             Text(title)
           ],
         ),

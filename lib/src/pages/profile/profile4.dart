@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -191,7 +192,7 @@ class ProfileFourPage extends StatelessWidget {
           backgroundColor: Colors.grey,
           child: CircleAvatar(
             radius: 35.0,
-            backgroundImage: AssetImage('assets/img/7.jpg')))),
+            backgroundImage: NetworkImage(avatars[4])))),
       SizedBox(width: 20.0),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,

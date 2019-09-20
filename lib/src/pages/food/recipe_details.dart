@@ -6,6 +6,7 @@ import 'dart:io';
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
   static final String path = "lib/src/pages/food/recipe_details.dart";
@@ -107,50 +108,15 @@ class RecipeDetailsPage extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  Container(
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(image: AssetImage('assets/img/1.jpg'),fit:BoxFit.cover)
-
-                    ),
-                  ),
+                  _buildBottomImage(breakfast),
+                  SizedBox(width: 10.0,),                  
+                  _buildBottomImage(meal),
                   SizedBox(width: 10.0,),
-                  Container(
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(image: AssetImage('assets/img/2.jpg'),fit:BoxFit.cover)
-
-                    ),
-                  ),
+                  _buildBottomImage(burger),
                   SizedBox(width: 10.0,),
-                  Container(
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(image: AssetImage('assets/img/3.jpg'),fit:BoxFit.cover)
-
-                    ),
-                  ),
+                  _buildBottomImage(frenchFries),
                   SizedBox(width: 10.0,),
-                  Container(
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(image: AssetImage('assets/img/4.jpg'),fit:BoxFit.cover)
-
-                    ),
-                  ),
-                  SizedBox(width: 10.0,),
-                  Container(
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(image: AssetImage('assets/img/5.jpg'),fit:BoxFit.cover)
-
-                    ),
-                  ),
+                  _buildBottomImage(fries),
                 ],
               ),
             ),
@@ -158,6 +124,17 @@ class RecipeDetailsPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Container _buildBottomImage(String image) {
+    return Container(
+                  width: 80,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    image: DecorationImage(image: NetworkImage(image),fit:BoxFit.cover)
+
+                  ),
+                );
   }
 
   Widget _buildStep({String leadingTitle, String title, String content}) {

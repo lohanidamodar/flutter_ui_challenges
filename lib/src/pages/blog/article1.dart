@@ -4,12 +4,13 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ArticleOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/blog/article1.dart";
   @override
   Widget build(BuildContext context){
-    String image = "assets/img/2.jpg";
+    String image = images[1];
     return Scaffold(
       appBar: AppBar(
         title: Text('Article One'),
@@ -22,7 +23,7 @@ class ArticleOnePage extends StatelessWidget {
                 Container(
                   height: 300,
                   width: double.infinity,
-                  child: Image.asset(image,fit: BoxFit.cover,)),
+                  child: Image.network(image,fit: BoxFit.cover,)),
                 Positioned(
                   bottom: 20.0,
                   left: 20.0,

@@ -5,13 +5,14 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceTwoPage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce2.dart";
   final List<Map> items = [
-    {"title":"Kappa Velour", "category":"Bucket", "price": 5500, "tags":"#Cotton #polyster #Branded design","image":"assets/img/1.jpg"},
-    {"title":"North Salty", "category":"Bucket", "price": 67000, "tags":"#Cotton #polyster #Branded design","image":"assets/img/2.jpg"},
-    {"title":"Mest Takel", "category":"Bucket", "price": 67000, "tags":"#Cotton #polyster #Branded design","image":"assets/img/3.jpg"},
+    {"title":"Kappa Velour", "category":"Bucket", "price": 5500, "tags":"#Cotton #polyster #Branded design","image":images[0]},
+    {"title":"North Salty", "category":"Bucket", "price": 67000, "tags":"#Cotton #polyster #Branded design","image":images[1]},
+    {"title":"Mest Takel", "category":"Bucket", "price": 67000, "tags":"#Cotton #polyster #Branded design","image":images[2]},
   ];
 
 
@@ -112,7 +113,7 @@ class EcommerceTwoPage extends StatelessWidget {
           children: <Widget>[
             Expanded(child: Container(
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage(item["image"]), fit: BoxFit.cover),
+                image: DecorationImage(image: NetworkImage(item["image"]), fit: BoxFit.cover),
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 boxShadow: [
                   BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)

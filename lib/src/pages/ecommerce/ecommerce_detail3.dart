@@ -4,11 +4,12 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceDetailThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce_detail3.dart";
 
-  final String image = "assets/img/2.jpg";
+  final String image = images[1];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +17,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
         children: <Widget>[
           Container(
               height: double.infinity,
-              child: Image.asset(
+              child: Image.network(
                 image,
                 fit: BoxFit.cover,
               )),

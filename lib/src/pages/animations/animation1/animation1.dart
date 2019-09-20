@@ -7,12 +7,13 @@ import 'dart:io';
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
 import './details.dart';
 
-const List<String> images = [
-  "assets/img/1.jpg",
-  "assets/img/2.jpg",
-  "assets/img/3.jpg",
+List<String> images = [
+  assets.images[0],
+  assets.images[1],
+  assets.images[2],
 ];
 
 const List<Map> dummy = [
@@ -109,7 +110,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                           tag: "image$index",
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
-                            child: Image.asset(
+                            child: Image.network(
                               images[index],
                               fit: BoxFit.cover,
                             ),

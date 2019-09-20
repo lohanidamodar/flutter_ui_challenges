@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
@@ -41,7 +42,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             },
             loop: false,
             itemBuilder: (context, index){
-              return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg");
+              return _buildPage(title: titles[index], icon: images[index]);
             },
             pagination: SwiperPagination(
               builder: CustomPaginationBuilder(
@@ -100,7 +101,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.0),
         image: DecorationImage(
-          image: AssetImage(icon),
+          image: NetworkImage(icon),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(Colors.black38, BlendMode.multiply)
         )

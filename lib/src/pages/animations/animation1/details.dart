@@ -22,7 +22,7 @@ class AnimationOneDetails extends StatelessWidget {
         children: <Widget>[
           Hero(
             tag: "image$index",
-            child: Image.asset(images[index], fit: BoxFit.cover)),
+            child: Image.network(images[index], fit: BoxFit.cover)),
           Container(
             padding: const EdgeInsets.all(16.0),
             width: double.infinity,

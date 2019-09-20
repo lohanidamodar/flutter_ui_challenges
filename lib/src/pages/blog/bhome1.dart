@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 final List<Map> articles = [
@@ -178,7 +179,7 @@ class BlogHomeOnePage extends StatelessWidget {
 
   Widget _buildArticleItem(int index) {
     Map article = articles[index];
-    final String sample = "assets/img/2.jpg";
+    final String sample = images[2];
     return Container(
       color: Colors.white,
       child: Stack(
@@ -198,7 +199,7 @@ class BlogHomeOnePage extends StatelessWidget {
                   height: 100,
                   color: Colors.blue,
                   width: 80.0,
-                  child: Image.asset(
+                  child: Image.network(
                     sample,
                     fit: BoxFit.cover,
                   ),

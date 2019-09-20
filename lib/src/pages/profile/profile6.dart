@@ -4,6 +4,7 @@
  * profile: https://github.com/cimplesid
   */
 import 'dart:ui' as ui;
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:url_launcher/url_launcher.dart';
   
 import 'package:flutter/material.dart';
@@ -60,7 +61,7 @@ class ProfileSixPage extends StatelessWidget {
       margin: const EdgeInsets.only(top: 32.0, left: 16.0),
       padding: const EdgeInsets.all(3.0),
       child: ClipOval(
-        child: Image.asset(dev.avatar),
+        child: Image.network(dev.avatar),
       ),
     );
   }
@@ -137,7 +138,7 @@ class ProfileSixPage extends StatelessWidget {
             ),
             onPressed: () => Navigator.pop(context),
           ),
-          Image.asset(dev.backdropPhoto, fit: BoxFit.cover),
+          Image.network(dev.backdropPhoto, fit: BoxFit.cover),
           BackdropFilter(
             filter: ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
             child: Container(
@@ -175,7 +176,7 @@ class VideoCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(8.0),
       child: Stack(
         children: <Widget>[
-          Image.asset(video.thumbnail),
+          Image.network(video.thumbnail),
           Positioned(
             bottom: 12.0,
             right: 12.0,
@@ -280,8 +281,8 @@ class Video {
 final DEV sid = DEV(
   firstName: 'Cimple',
   lastName: 'Sid',
-  avatar: 'assets/img/avatar.png',
-  backdropPhoto: 'assets/img/backdrop.png',
+  avatar: devSid,
+  backdropPhoto: backdrop,
   location: 'Mahendranagar, Nepal',
   biography: 'Siddhartha  Joshi is a Flutter dev  '
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.  '
@@ -289,22 +290,22 @@ final DEV sid = DEV(
   videos: <Video>[
     Video(
       title: 'WIFI hacking part 1',
-      thumbnail: 'assets/img/video1_thumb.png',
+      thumbnail: sidVideoThumbs[0],
       url: 'https://www.youtube.com/watch?v=06qoTsKYWKE',
     ),
     Video(
       title: 'WIFI hacking part 2',
-      thumbnail: 'assets/img/video2_thumb.png',
+      thumbnail: sidVideoThumbs[1],
       url: 'https://www.youtube.com/watch?v=3XG4c5_mGCM',
     ),
     Video(
       title: 'WIFI hacking part 3',
-      thumbnail: 'assets/img/video3_thumb.png',
+      thumbnail: sidVideoThumbs[2],
       url: 'https://www.youtube.com/watch?v=C29QstsxWQE',
     ),
     Video(
       title: 'Find facebook users location',
-      thumbnail: 'assets/img/video4_thumb.png',
+      thumbnail: sidVideoThumbs[3],
       url: 'https://www.youtube.com/watch?v=J9zhKtL_gH0',
     ),
   ],

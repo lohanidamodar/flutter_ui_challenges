@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ChatUi extends StatelessWidget {
   static final String path = "lib/src/pages/misc/chatui.dart";
@@ -28,7 +29,7 @@ class ChatUi extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       image: DecorationImage(
-                        image: AssetImage(friend.image),
+                        image: NetworkImage(friend.image),
                         fit: BoxFit.cover
                       ),
                       borderRadius: BorderRadius.circular(50.0),
@@ -291,10 +292,10 @@ class Friend {
 }
 
 final List<Friend> friends = [
-  Friend('John', 'assets/img/1.jpg', 'Hello, how are you?', '1 hr.'),
-  Friend('RIna', 'assets/img/4.jpg', 'Hello, how are you?', '1 hr.'),
-  Friend('Brad', 'assets/img/5.jpg', 'Hello, how are you?', '1 hr.'),
-  Friend('Don', 'assets/img/7.jpg', 'Hello, how are you?', '1 hr.'),
-  Friend('Mukambo', 'assets/img/6.jpg', 'Hello, how are you?', '1 hr.'),
-  Friend('Sid', 'assets/img/avatar.png', 'Hello, how are you?', '1 hr.'),
+  Friend('John', avatars[0], 'Hello, how are you?', '1 hr.'),
+  Friend('RIna', avatars[1], 'Hello, how are you?', '1 hr.'),
+  Friend('Brad', avatars[2], 'Hello, how are you?', '1 hr.'),
+  Friend('Don', avatars[3], 'Hello, how are you?', '1 hr.'),
+  Friend('Mukambo', avatars[4], 'Hello, how are you?', '1 hr.'),
+  Friend('Sid', avatars[6], 'Hello, how are you?', '1 hr.'),
 ];

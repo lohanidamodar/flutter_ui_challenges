@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class ProfileFivePage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile5.dart";
@@ -11,7 +12,7 @@ class ProfileFivePage extends StatelessWidget {
   Widget build(BuildContext context){
     final Color color1 = Color(0xffFC5CF0);
     final Color color2 = Color(0xffFE8852);
-    final String image = "assets/img/1.jpg";
+    final String image = avatars[0];
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -44,7 +45,7 @@ class ProfileFivePage extends StatelessWidget {
                         margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 10.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(30.0),
-                          child: Image.asset(image,fit: BoxFit.cover,)),
+                          child: Image.network(image,fit: BoxFit.cover,)),
                       ),
                       Container(
                         alignment: Alignment.topCenter,

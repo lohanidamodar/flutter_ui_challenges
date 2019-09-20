@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceDetailTwoPage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce_detail2.dart";
@@ -15,7 +16,7 @@ class EcommerceDetailTwoPage extends StatelessWidget {
         children: <Widget>[
           ListView(
             children: <Widget>[
-              Image.asset('assets/img/5.jpg'),
+              Image.network(images[4]),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                 child: Row(

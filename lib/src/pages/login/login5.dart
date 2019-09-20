@@ -4,10 +4,10 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginFivePage extends StatelessWidget {
   static final String path = "lib/src/pages/login/login5.dart";
-  final String logo = 'assets/food/logo.png';
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -27,7 +27,7 @@ class LoginFivePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 40.0,bottom: 20.0),
               height: 80,
-              child: Image.asset(logo)),
+              child: Image.network(foodLogo)),
             Text("Good In Food".toUpperCase(), style: TextStyle(
               color: Colors.white70,
               fontSize: 24.0,

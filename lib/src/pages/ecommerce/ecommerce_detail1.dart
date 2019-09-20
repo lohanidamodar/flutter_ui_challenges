@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceDetailOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce_detail1.dart";
@@ -35,7 +36,7 @@ class EcommerceDetailOnePage extends StatelessWidget {
               children: <Widget>[
                 Container(height: 320,
                   decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage('assets/img/2.jpg'), fit: BoxFit.cover)
+                    image: DecorationImage(image: NetworkImage(images[1]), fit: BoxFit.cover)
                   ),
                 ),
                 SizedBox(height: 20.0,),
@@ -85,11 +86,11 @@ class EcommerceDetailOnePage extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          Image.asset('assets/img/1.jpg',height: 80,),
+          Image.network(images[0],height: 80,),
           SizedBox(width: 20.0,),
-          Image.asset('assets/img/3.jpg',height: 80,),
+          Image.network(images[1],height: 80,),
           SizedBox(width: 20.0,),
-          Image.asset('assets/img/4.jpg',height: 80,),
+          Image.network(images[3],height: 80,),
         ],
       ),
     );

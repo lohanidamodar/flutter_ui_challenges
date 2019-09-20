@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class TravelNepalPage extends StatelessWidget {
   static final String path = "lib/src/pages/travel/travel_nepal.dart";
@@ -16,7 +17,7 @@ class TravelNepalPage extends StatelessWidget {
           Container(
             height: 300,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/travel/mount_everest.jpg'), fit: BoxFit.cover)
+              image: DecorationImage(image: NetworkImage(mountEverest), fit: BoxFit.cover)
             ),
           ),
           Container(
@@ -68,31 +69,31 @@ class TravelNepalPage extends StatelessWidget {
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.asset('assets/travel/fewalake.jpg', fit: BoxFit.cover))
+                                  child: Image.network(fewalake, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.asset('assets/travel/kathmandu1.jpg', fit: BoxFit.cover))
+                                  child: Image.network(kathmandu1, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.asset('assets/travel/fishtail.jpg', fit: BoxFit.cover))
+                                  child: Image.network(fishtail, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.asset('assets/travel/mount_everest.jpg', fit: BoxFit.cover))
+                                  child: Image.network(mountEverest, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.asset('assets/travel/kathmandu2.jpg', fit: BoxFit.cover))
+                                  child: Image.network(kathmandu2, fit: BoxFit.cover))
                               ),
                             ],
                           ),

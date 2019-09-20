@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
 
 class LoginTwoPage extends StatelessWidget {
@@ -15,7 +16,7 @@ class LoginTwoPage extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           SizedBox(height: 30.0,),
-          CircleAvatar(child: Image.asset('assets/img/origami.png'), maxRadius: 50, backgroundColor: Colors.transparent,),
+          CircleAvatar(child: Image.network(origami), maxRadius: 50, backgroundColor: Colors.transparent,),
           SizedBox(height: 20.0,),
           _buildLoginForm(),
           Row(

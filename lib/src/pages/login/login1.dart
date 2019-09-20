@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/login/login1.dart";
@@ -16,7 +17,7 @@ class LoginOnePage extends StatelessWidget {
           Column(
             children: <Widget>[
               SizedBox(height: 50,),
-              Container(width: 200, child: Image.asset('assets/img/rocket.png'),),
+              Container(width: 200, child: Image.network(rocket),),
               SizedBox(height: 50,),
               ListTile(
                 title: TextField(

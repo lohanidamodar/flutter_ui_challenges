@@ -35,7 +35,7 @@ class GroceryListItemOne extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Center(child: Image.asset(image, height: 150.0,)),
+                  Center(child: Image.network(image, height: 150.0,)),
                   new GroceryTitle(text: title),
                   new GrocerySubtitle(text: subtitle),
                 ],

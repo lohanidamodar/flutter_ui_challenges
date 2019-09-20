@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -57,7 +58,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
                 },
                 loop: false,
                 itemBuilder: (context, index){
-                  return _buildPage(title: titles[index], icon: "assets/img/${index+3}.jpg", pageBg: pageBgs[index]);
+                  return _buildPage(title: titles[index], icon: images[index+2], pageBg: pageBgs[index]);
                 },
                 pagination: SwiperPagination(
                   builder: CustomPaginationBuilder(
@@ -130,7 +131,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
               width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(icon),
+                  image: NetworkImage(icon),
                   fit: BoxFit.cover
                 )
               ),  

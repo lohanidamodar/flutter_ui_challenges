@@ -7,6 +7,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceFivePage extends StatelessWidget {
   const EcommerceFivePage({Key key}) : super(key: key);
@@ -30,7 +31,7 @@ class EcommerceFivePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset(
+            Image.network(
               image,
               height: 80,
             ),
@@ -157,11 +158,11 @@ class EcommerceFivePage extends StatelessWidget {
                       mainAxisSpacing: 10,
                       crossAxisSpacing: 10,
                       children: <Widget>[
-                        cards('assets/grocery/brocoli.png', 'Brocoli', '30'),
-                        cards('assets/grocery/cabbage.png', 'Cabbage', '37'),
-                        cards('assets/grocery/mango.png', 'Mango', '22'),
+                        cards(brocoli, 'Brocoli', '30'),
+                        cards(cabbage, 'Cabbage', '37'),
+                        cards(mango, 'Mango', '22'),
                         cards(
-                            'assets/grocery/pineapple.png', 'Pineapple', '90'),
+                            pineapple, 'Pineapple', '90'),
                       ],
                     ),
                   ),

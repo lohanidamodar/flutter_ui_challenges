@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AuthOnePage extends StatelessWidget {
@@ -21,7 +22,7 @@ class AuthOnePage extends StatelessWidget {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.pink,
-                      image: DecorationImage(image: AssetImage("assets/img/b3.jpg"), fit: BoxFit.cover),
+                      image: DecorationImage(image: NetworkImage(backgroundImages[2]), fit: BoxFit.cover),
                     ),
                     foregroundDecoration: BoxDecoration(
                       color: Colors.pink.withAlpha(100)

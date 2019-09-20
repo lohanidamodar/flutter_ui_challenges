@@ -6,6 +6,7 @@ import 'dart:io';
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class DestinationPage extends StatelessWidget {
   static final String path = "lib/src/pages/travel/tdestination.dart";
@@ -18,7 +19,7 @@ class DestinationPage extends StatelessWidget {
             height: 300,
             decoration: BoxDecoration(
               // color: Colors.blue,
-              image: DecorationImage(image: AssetImage('assets/travel/kathmandu1.jpg'), fit: BoxFit.cover)
+              image: DecorationImage(image: NetworkImage(kathmandu1), fit: BoxFit.cover)
             ),
           ),
           ListView(
@@ -64,15 +65,15 @@ class DestinationPage extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    _buildPlaceToVisit(image: 'assets/travel/pashupatinath.jpg',title: "Pashupatinath"),
+                    _buildPlaceToVisit(image: pashupatinath,title: "Pashupatinath"),
                     SizedBox(width: 20.0,),
-                    _buildPlaceToVisit(image: 'assets/travel/kathmandu2.jpg',title: "Swoyambhunath"),
+                    _buildPlaceToVisit(image: kathmandu2,title: "Swoyambhunath"),
                     SizedBox(width: 20.0,),
-                    _buildPlaceToVisit(image: 'assets/travel/kathmandu1.jpg',title: "Durbar Square"),
+                    _buildPlaceToVisit(image: kathmandu1,title: "Durbar Square"),
                     SizedBox(width: 20.0,),
-                    _buildPlaceToVisit(image: 'assets/travel/pashupatinath.jpg',title: "Pashupatinath"),
+                    _buildPlaceToVisit(image: pashupatinath,title: "Pashupatinath"),
                     SizedBox(width: 20.0,),
-                    _buildPlaceToVisit(image: 'assets/travel/kathmandu2.jpg',title: "Swoyambhunath"),
+                    _buildPlaceToVisit(image: kathmandu2,title: "Swoyambhunath"),
                   ],
                 ),
               ),
@@ -82,7 +83,7 @@ class DestinationPage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(child: ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Image.asset('assets/travel/kathmandu2.jpg', height: 180, fit: BoxFit.cover))),
+                      child: Image.network(kathmandu2, height: 180, fit: BoxFit.cover))),
                     SizedBox(width: 20.0,),
                     Expanded(
                       child: GridView(
@@ -95,16 +96,16 @@ class DestinationPage extends StatelessWidget {
                         children: <Widget>[
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.asset('assets/travel/kathmandu1.jpg',fit: BoxFit.cover)),
+                            child: Image.network(kathmandu1,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.asset('assets/travel/pashupatinath.jpg',fit: BoxFit.cover)),
+                            child: Image.network(pashupatinath,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.asset('assets/travel/pashupatinath.jpg',fit: BoxFit.cover)),
+                            child: Image.network(pashupatinath,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.asset('assets/travel/kathmandu1.jpg',fit: BoxFit.cover)),
+                            child: Image.network(kathmandu1,fit: BoxFit.cover)),
                         ],
                       ),
                     ),
@@ -124,7 +125,7 @@ class DestinationPage extends StatelessWidget {
       children: <Widget>[
         ClipRRect(
           borderRadius: BorderRadius.circular(5.0),
-          child: Image.asset(image, height: 80,fit: BoxFit.cover,),
+          child: Image.network(image, height: 80,fit: BoxFit.cover,),
         ),
         SizedBox(height: 5.0,),
         Text(title)

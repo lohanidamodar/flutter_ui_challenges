@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gcarttab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/ghometab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gprofiletab.dart';
@@ -68,7 +69,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
                 ),
               ),
             ),
-            leading: Image.asset('assets/grocery/delivery.png'),
+            leading: Image.network(deliveryIcon),
           ),
         ),
       );

@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class DialogsPage extends StatelessWidget {
   static final String path = "lib/src/pages/dialogs/dialogs.dart";
@@ -72,7 +73,7 @@ class BeautifulAlertDialog extends StatelessWidget {
           child: Row(
             children: <Widget>[
               SizedBox(width: 20.0),
-              CircleAvatar(radius: 55, backgroundColor: Colors.grey.shade200, child: Image.asset('assets/img/info-icon.png', width: 60,),),
+              CircleAvatar(radius: 55, backgroundColor: Colors.grey.shade200, child: Image.network(infoIcon, width: 60,),),
               SizedBox(width: 20.0),
               Expanded(
                 child: Column(
@@ -119,7 +120,7 @@ class BeautifulAlertDialog extends StatelessWidget {
 }
 
 class PaymentSuccessDialog extends StatelessWidget {
-  final image = 'assets/img/3.jpg';
+  final image = images[2];
   final TextStyle subtitle = TextStyle(fontSize: 12.0, color: Colors.grey);
   final TextStyle label = TextStyle(fontSize: 14.0, color: Colors.grey);
   @override
