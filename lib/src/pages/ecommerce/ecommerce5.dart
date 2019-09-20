@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceFivePage extends StatelessWidget {
   const EcommerceFivePage({Key key}) : super(key: key);
@@ -31,7 +32,7 @@ class EcommerceFivePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.network(
+            PNetworkImage(
               image,
               height: 80,
             ),

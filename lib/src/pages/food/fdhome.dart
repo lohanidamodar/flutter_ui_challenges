@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class FoodDeliveryHomePage extends StatelessWidget {
   static final String path = "lib/src/pages/food/fdhome.dart";
@@ -68,7 +69,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                   autoplay: true,
                   curve: Curves.easeIn,
                   itemBuilder: (BuildContext context, int index){
-                    return Image.network(sliderItems[index], fit: BoxFit.cover);
+                    return PNetworkImage(sliderItems[index], fit: BoxFit.cover);
                   },
                 ),
               ),
@@ -149,7 +150,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                     Container(
                       height: 130.0,
                       width: double.infinity,
-                      child: Image.network(restaurants[index]["image"], fit: BoxFit.cover )),
+                      child: PNetworkImage(restaurants[index]["image"], fit: BoxFit.cover )),
                     SizedBox(height: 10.0,),
                     Text(restaurants[index]["name"], style: Theme.of(context).textTheme.title.merge(TextStyle(
                       fontSize: 14.0
@@ -178,7 +179,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                     Container(
                       height: 150.0,
                       width: double.infinity,
-                      child: Image.network(sliderItems[index], fit: BoxFit.cover )),
+                      child: PNetworkImage(sliderItems[index], fit: BoxFit.cover )),
                     SizedBox(height: 10.0,),
 
                     Row(

@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class DashboardThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/dash3.dart";
@@ -232,7 +233,7 @@ class DashboardThreePage extends StatelessWidget {
             ),
             trailing: CircleAvatar(
               radius: 25.0,
-              backgroundImage: NetworkImage(avatar),
+              backgroundImage: CachedNetworkImageProvider(avatar),
             ),
           ),
           const SizedBox(height: 10.0),

@@ -7,6 +7,8 @@ import 'dart:io';
   
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class DestinationPage extends StatelessWidget {
   static final String path = "lib/src/pages/travel/tdestination.dart";
@@ -19,7 +21,7 @@ class DestinationPage extends StatelessWidget {
             height: 300,
             decoration: BoxDecoration(
               // color: Colors.blue,
-              image: DecorationImage(image: NetworkImage(kathmandu1), fit: BoxFit.cover)
+              image: DecorationImage(image: CachedNetworkImageProvider(kathmandu1), fit: BoxFit.cover)
             ),
           ),
           ListView(
@@ -83,7 +85,7 @@ class DestinationPage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(child: ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Image.network(kathmandu2, height: 180, fit: BoxFit.cover))),
+                      child: PNetworkImage(kathmandu2, height: 180, fit: BoxFit.cover))),
                     SizedBox(width: 20.0,),
                     Expanded(
                       child: GridView(
@@ -96,16 +98,16 @@ class DestinationPage extends StatelessWidget {
                         children: <Widget>[
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.network(kathmandu1,fit: BoxFit.cover)),
+                            child: PNetworkImage(kathmandu1,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.network(pashupatinath,fit: BoxFit.cover)),
+                            child: PNetworkImage(pashupatinath,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.network(pashupatinath,fit: BoxFit.cover)),
+                            child: PNetworkImage(pashupatinath,fit: BoxFit.cover)),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(5.0),
-                            child: Image.network(kathmandu1,fit: BoxFit.cover)),
+                            child: PNetworkImage(kathmandu1,fit: BoxFit.cover)),
                         ],
                       ),
                     ),
@@ -125,7 +127,7 @@ class DestinationPage extends StatelessWidget {
       children: <Widget>[
         ClipRRect(
           borderRadius: BorderRadius.circular(5.0),
-          child: Image.network(image, height: 80,fit: BoxFit.cover,),
+          child: PNetworkImage(image, height: 80,fit: BoxFit.cover,),
         ),
         SizedBox(height: 5.0,),
         Text(title)

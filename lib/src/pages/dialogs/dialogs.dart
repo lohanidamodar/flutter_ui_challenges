@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class DialogsPage extends StatelessWidget {
   static final String path = "lib/src/pages/dialogs/dialogs.dart";
@@ -73,7 +74,7 @@ class BeautifulAlertDialog extends StatelessWidget {
           child: Row(
             children: <Widget>[
               SizedBox(width: 20.0),
-              CircleAvatar(radius: 55, backgroundColor: Colors.grey.shade200, child: Image.network(infoIcon, width: 60,),),
+              CircleAvatar(radius: 55, backgroundColor: Colors.grey.shade200, child: PNetworkImage(infoIcon, width: 60,),),
               SizedBox(width: 20.0),
               Expanded(
                 child: Column(

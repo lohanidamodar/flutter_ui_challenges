@@ -7,6 +7,7 @@ import 'dart:io';
   
 import 'package:flutter/material.dart';
 import './animation1.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class AnimationOneDetails extends StatelessWidget {
   static final String path = "lib/src/pages/animations/animation1/details.dart";
@@ -22,7 +23,7 @@ class AnimationOneDetails extends StatelessWidget {
         children: <Widget>[
           Hero(
             tag: "image$index",
-            child: Image.network(images[index], fit: BoxFit.cover)),
+            child: PNetworkImage(images[index], fit: BoxFit.cover)),
           Container(
             padding: const EdgeInsets.all(16.0),
             width: double.infinity,

@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceTwoPage extends StatelessWidget {
@@ -113,7 +114,7 @@ class EcommerceTwoPage extends StatelessWidget {
           children: <Widget>[
             Expanded(child: Container(
               decoration: BoxDecoration(
-                image: DecorationImage(image: NetworkImage(item["image"]), fit: BoxFit.cover),
+                image: DecorationImage(image: CachedNetworkImageProvider(item["image"]), fit: BoxFit.cover),
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 boxShadow: [
                   BoxShadow(color: Colors.grey,offset: Offset(5.0,5.0), blurRadius: 10.0)

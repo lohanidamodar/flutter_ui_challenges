@@ -9,6 +9,7 @@ import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gcarttab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/ghometab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gprofiletab.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/tabs/gwishlisttab.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryHomePage extends StatefulWidget {
   static final String path = "lib/src/pages/grocery/ghome.dart";
@@ -69,7 +70,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
                 ),
               ),
             ),
-            leading: Image.network(deliveryIcon),
+            leading: PNetworkImage(deliveryIcon),
           ),
         ),
       );

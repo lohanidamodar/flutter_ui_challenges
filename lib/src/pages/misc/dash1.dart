@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
@@ -204,7 +205,7 @@ class DashboardOnePage extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(image), fit: BoxFit.cover),
+                      image: CachedNetworkImageProvider(image), fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(20.0)),
               height: 200,
               foregroundDecoration: BoxDecoration(
@@ -263,7 +264,7 @@ class DashboardOnePage extends StatelessWidget {
       padding: EdgeInsets.all(0),
       icon: CircleAvatar(
         backgroundColor: Colors.grey.shade300,
-        child: CircleAvatar(radius: 16, backgroundImage: NetworkImage(image)),
+        child: CircleAvatar(radius: 16, backgroundImage: CachedNetworkImageProvider(image)),
       ),
       onPressed: () {},
     );

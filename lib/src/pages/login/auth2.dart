@@ -1,11 +1,11 @@
-import 'dart:ui';
-
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
   
 import 'package:flutter/material.dart';
+import 'dart:ui';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class AuthTwoPage extends StatelessWidget {
@@ -18,7 +18,7 @@ class AuthTwoPage extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage(backImg),
+            image: CachedNetworkImageProvider(backImg),
             fit: BoxFit.cover
           )
         ),

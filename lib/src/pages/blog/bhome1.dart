@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 final List<Map> articles = [
@@ -199,7 +200,7 @@ class BlogHomeOnePage extends StatelessWidget {
                   height: 100,
                   color: Colors.blue,
                   width: 80.0,
-                  child: Image.network(
+                  child: PNetworkImage(
                     sample,
                     fit: BoxFit.cover,
                   ),

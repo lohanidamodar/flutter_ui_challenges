@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class PlaceList1 extends StatelessWidget {
       static final String path = "lib/src/pages/lists/list1.dart";
@@ -102,7 +103,7 @@ class Lists extends StatelessWidget {
                     EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: NetworkImage(item.image),
+                        image: CachedNetworkImageProvider(item.image),
                         fit: BoxFit.cover)),
                 child:item.discount==null?Container(): Container(
                   color: Colors.deepOrange,

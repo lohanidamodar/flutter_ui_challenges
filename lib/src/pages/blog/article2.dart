@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ArticleTwoPage extends StatelessWidget {
   static final String path = "lib/src/pages/blog/article2.dart";
@@ -25,7 +26,7 @@ class ArticleTwoPage extends StatelessWidget {
               Container(
                 height: 300,
                 width: double.infinity,
-                child: Image.network(image,fit: BoxFit.cover,)),
+                child: PNetworkImage(image,fit: BoxFit.cover,)),
               Container(
                 margin: EdgeInsets.fromLTRB(16.0, 250.0,16.0,16.0),
                 decoration: BoxDecoration(

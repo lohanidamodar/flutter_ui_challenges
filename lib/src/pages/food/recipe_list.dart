@@ -1,11 +1,12 @@
-import 'dart:io';
-
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
   
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 
@@ -133,7 +134,7 @@ class RecipeListPage extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15.0),
                   image: DecorationImage(
-                    image: NetworkImage(
+                    image: CachedNetworkImageProvider(
                       images[index % images.length],
                     ),
                     fit: BoxFit.cover,

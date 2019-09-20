@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class CartOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/cart1.dart";
@@ -54,7 +55,7 @@ class CartOnePage extends StatelessWidget {
                             children: <Widget>[
                               Container(
                                 height: 80,
-                                child: Image.network(items[index]["image"]),
+                                child: PNetworkImage(items[index]["image"]),
                               ),
                               SizedBox(width: 10.0,),
                               Expanded(

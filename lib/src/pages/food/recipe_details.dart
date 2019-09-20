@@ -1,4 +1,3 @@
-import 'dart:io';
 
 /**
  * Author: Damodar Lohani
@@ -6,7 +5,9 @@ import 'dart:io';
   */
   
 import 'package:flutter/material.dart';
+import 'dart:io';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
   static final String path = "lib/src/pages/food/recipe_details.dart";
@@ -131,7 +132,7 @@ class RecipeDetailsPage extends StatelessWidget {
                   width: 80,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
-                    image: DecorationImage(image: NetworkImage(image),fit:BoxFit.cover)
+                    image: DecorationImage(image: CachedNetworkImageProvider(image),fit:BoxFit.cover)
 
                   ),
                 );

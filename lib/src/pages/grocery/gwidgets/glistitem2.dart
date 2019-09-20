@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemTwo extends StatelessWidget {
   const GroceryListItemTwo({
@@ -30,7 +31,7 @@ class GroceryListItemTwo extends StatelessWidget {
           const SizedBox(width: 10.0),
           Container(
               height: 80.0,
-              child: Image.network(
+              child: PNetworkImage(
                 image,
                 height: 80.0,
               )),

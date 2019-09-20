@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/developer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import '../../constants.dart';
 
@@ -127,7 +128,7 @@ class AboutPage extends StatelessWidget {
               backgroundColor: Colors.grey,
               child: CircleAvatar(
                 radius: 35.0,
-                backgroundImage: NetworkImage(developer.imageUrl)))),
+                backgroundImage: CachedNetworkImageProvider(developer.imageUrl)))),
           SizedBox(width: 20.0),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

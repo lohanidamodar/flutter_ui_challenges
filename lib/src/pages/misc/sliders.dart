@@ -4,8 +4,10 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SlidersPage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/sliders.dart";
@@ -40,7 +42,7 @@ class SlidersPage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
-                    child: Image.network(
+                    child: PNetworkImage(
                       images[index],
                       fit: BoxFit.cover,
                     ),
@@ -61,7 +63,7 @@ class SlidersPage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
-                    child: Image.network(
+                    child: PNetworkImage(
                       images[index],
                       fit: BoxFit.cover,
                     ),
@@ -88,7 +90,7 @@ class SlidersPage extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0)),
                           image: DecorationImage(
-                            image: NetworkImage(images[index]),
+                            image: CachedNetworkImageProvider(images[index]),
                             fit: BoxFit.cover
                           )
                         ),

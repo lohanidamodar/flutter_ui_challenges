@@ -1,12 +1,13 @@
-import 'dart:io';
 
 /**
  * Author: Sudip Thapa  
  * profile: https://github.com/sudeepthapa
   */
 
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ProfileSevenPage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile7.dart";
@@ -47,7 +48,7 @@ class ProfileSevenPage extends StatelessWidget {
                         child: CircleAvatar(
                           radius: 50,
                           backgroundColor: Colors.white,
-                          child: Image.network(rocket),
+                          child: PNetworkImage(rocket),
                         )
                       ),
                       Padding(

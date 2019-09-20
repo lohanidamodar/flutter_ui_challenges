@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
 import './details.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 List<String> images = [
   assets.images[0],
@@ -110,7 +111,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                           tag: "image$index",
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
-                            child: Image.network(
+                            child: PNetworkImage(
                               images[index],
                               fit: BoxFit.cover,
                             ),

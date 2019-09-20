@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem2.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryDetailsPage extends StatelessWidget {
   static final String path = "lib/src/pages/grocery/gdetails.dart";
@@ -77,7 +78,7 @@ class GroceryDetailsPage extends StatelessWidget {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  child: Image.network(cabbage, height: 200,),
+                  child: PNetworkImage(cabbage, height: 200,),
                 ),
                 SizedBox(height: 10.0,),
                 GroceryTitle(text:"Local Cabbage"),

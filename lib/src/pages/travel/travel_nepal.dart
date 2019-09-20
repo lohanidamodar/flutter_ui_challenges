@@ -6,6 +6,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelNepalPage extends StatelessWidget {
   static final String path = "lib/src/pages/travel/travel_nepal.dart";
@@ -17,7 +19,7 @@ class TravelNepalPage extends StatelessWidget {
           Container(
             height: 300,
             decoration: BoxDecoration(
-              image: DecorationImage(image: NetworkImage(mountEverest), fit: BoxFit.cover)
+              image: DecorationImage(image: CachedNetworkImageProvider(mountEverest), fit: BoxFit.cover)
             ),
           ),
           Container(
@@ -69,31 +71,31 @@ class TravelNepalPage extends StatelessWidget {
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.network(fewalake, fit: BoxFit.cover))
+                                  child: PNetworkImage(fewalake, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.network(kathmandu1, fit: BoxFit.cover))
+                                  child: PNetworkImage(kathmandu1, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.network(fishtail, fit: BoxFit.cover))
+                                  child: PNetworkImage(fishtail, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.network(mountEverest, fit: BoxFit.cover))
+                                  child: PNetworkImage(mountEverest, fit: BoxFit.cover))
                               ),
                               Container(
                                 margin: EdgeInsets.only(right: 50.0, bottom: 20.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(5.0),
-                                  child: Image.network(kathmandu2, fit: BoxFit.cover))
+                                  child: PNetworkImage(kathmandu2, fit: BoxFit.cover))
                               ),
                             ],
                           ),

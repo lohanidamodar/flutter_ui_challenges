@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
 
@@ -95,7 +96,7 @@ class LightDrawerPage extends StatelessWidget {
                             colors: [Colors.orange, Colors.deepOrange])),
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: NetworkImage(image),
+                      backgroundImage: CachedNetworkImageProvider(image),
                     ),
                   ),
                   SizedBox(height: 5.0),

@@ -3,8 +3,10 @@
  * profile: https://github.com/lohanidamodar
   */
   
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ProfileTwoPage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile2.dart";
@@ -68,7 +70,7 @@ class ProfileTwoPage extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(5.0),
-        child: Image.network(images[2], fit: BoxFit.cover),
+        child: PNetworkImage(images[2], fit: BoxFit.cover),
       ),
     );
   }
@@ -110,7 +112,7 @@ class ProfileTwoPage extends StatelessWidget {
                 Expanded(
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(5.0),
-                    child: Image.network(collections[index]['image'], fit: BoxFit.cover))
+                    child: PNetworkImage(collections[index]['image'], fit: BoxFit.cover))
                 ),
                 SizedBox(height: 5.0,),
                 Text(collections[index]['title'], style: Theme.of(context).textTheme.subhead.merge(TextStyle(color: Colors.grey.shade600)))
@@ -192,7 +194,7 @@ class ProfileTwoPage extends StatelessWidget {
                 shape: CircleBorder(),
                 child: CircleAvatar(
                   radius: 40.0,
-                  backgroundImage: NetworkImage(avatars[0]),),
+                  backgroundImage: CachedNetworkImageProvider(avatars[0]),),
               ),
             ],
           ),

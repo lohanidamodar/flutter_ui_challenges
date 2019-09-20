@@ -5,6 +5,7 @@
   */
 import 'dart:ui' as ui;
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:url_launcher/url_launcher.dart';
   
 import 'package:flutter/material.dart';
@@ -61,7 +62,7 @@ class ProfileSixPage extends StatelessWidget {
       margin: const EdgeInsets.only(top: 32.0, left: 16.0),
       padding: const EdgeInsets.all(3.0),
       child: ClipOval(
-        child: Image.network(dev.avatar),
+        child: PNetworkImage(dev.avatar),
       ),
     );
   }
@@ -138,7 +139,7 @@ class ProfileSixPage extends StatelessWidget {
             ),
             onPressed: () => Navigator.pop(context),
           ),
-          Image.network(dev.backdropPhoto, fit: BoxFit.cover),
+          PNetworkImage(dev.backdropPhoto, fit: BoxFit.cover),
           BackdropFilter(
             filter: ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
             child: Container(
@@ -176,7 +177,7 @@ class VideoCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(8.0),
       child: Stack(
         children: <Widget>[
-          Image.network(video.thumbnail),
+          PNetworkImage(video.thumbnail),
           Positioned(
             bottom: 12.0,
             right: 12.0,

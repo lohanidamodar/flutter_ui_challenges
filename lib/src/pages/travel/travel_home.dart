@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelHome extends StatelessWidget {
   static final String path = "lib/src/pages/travel/travel_home.dart";
@@ -309,7 +310,7 @@ class CityCard extends StatelessWidget {
             Container(
               width: 160,
               height: 210,
-              child: Image.network(
+              child: PNetworkImage(
                 imagePath,
                 fit: BoxFit.cover,
               ),

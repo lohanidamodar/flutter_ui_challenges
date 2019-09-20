@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceDetailThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce_detail3.dart";
@@ -17,7 +18,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
         children: <Widget>[
           Container(
               height: double.infinity,
-              child: Image.network(
+              child: PNetworkImage(
                 image,
                 fit: BoxFit.cover,
               )),

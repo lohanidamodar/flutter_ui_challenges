@@ -4,7 +4,9 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class LandingOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/onboarding/landing1.dart";
@@ -18,7 +20,7 @@ class LandingOnePage extends StatelessWidget {
         children: <Widget>[
           Container(
             alignment: Alignment.center,
-            child: Image.network(bgImage, fit: BoxFit.contain,)),
+            child: PNetworkImage(bgImage, fit: BoxFit.contain,)),
           Column(
             children: <Widget>[
               SizedBox(height: 30.0),
@@ -38,7 +40,7 @@ class LandingOnePage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: NetworkImage(image),
+                              image: CachedNetworkImageProvider(image),
                               fit: BoxFit.cover
                             ),
                             borderRadius: BorderRadius.only(

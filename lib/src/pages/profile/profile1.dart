@@ -3,6 +3,7 @@
  * profile: https://github.com/lohanidamodar
   */
   
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
@@ -47,7 +48,7 @@ class ProfileOnePage extends StatelessWidget {
                         minRadius: 60,
                         backgroundColor: Colors.deepOrange.shade300,
                         child: CircleAvatar(
-                          backgroundImage: NetworkImage(images[0]),
+                          backgroundImage: CachedNetworkImageProvider(images[0]),
                           minRadius: 50,
 
                         ),

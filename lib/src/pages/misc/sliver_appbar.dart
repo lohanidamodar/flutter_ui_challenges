@@ -5,7 +5,9 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SliverAppbarPage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/sliver_appbar.dart";
@@ -22,7 +24,7 @@ class SliverAppbarPage extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text('Welcome To Shop'),
-              background: Image.network(assets.images[1], fit: BoxFit.cover),
+              background: PNetworkImage(assets.images[1], fit: BoxFit.cover),
             ),
             actions: <Widget>[
               IconButton(
@@ -126,7 +128,7 @@ class SliverAppbarPage extends StatelessWidget {
         child: Swiper(
           autoplay: true,
           itemBuilder: (BuildContext context,int index){
-            return new Image.network(images[index],fit: BoxFit.cover,);
+            return new PNetworkImage(images[index],fit: BoxFit.cover,);
           },
           itemCount: 4,
           pagination: new SwiperPagination(),
@@ -142,7 +144,7 @@ class SliverAppbarPage extends StatelessWidget {
         onTap: () => _onTapItem(context,index),
         child: Column(
           children: <Widget>[
-            Expanded(child: Hero(tag:"item$index",child: Image.network(images[index%images.length], fit: BoxFit.cover))),
+            Expanded(child: Hero(tag:"item$index",child: PNetworkImage(images[index%images.length], fit: BoxFit.cover))),
             SizedBox(height: 10.0,),
             Text('Top Quality fashion item', softWrap: true,),
             SizedBox(height: 10.0,),
@@ -160,7 +162,7 @@ class SliverAppbarPage extends StatelessWidget {
           child: ListTile(
             leading: CircleAvatar(
               radius: 40,
-              backgroundImage: NetworkImage(images[index%images.length]),
+              backgroundImage: CachedNetworkImageProvider(images[index%images.length]),
             ),
             title: Text('Top Quality fashion item', softWrap: true,),
             subtitle: Text('Rs.1,254', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.red),),
@@ -189,7 +191,7 @@ class SliverAppbarPage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(child: Hero(
                       tag:"item$index",
-                      child: Image.network(images[index%images.length], fit: BoxFit.cover))),
+                      child: PNetworkImage(images[index%images.length], fit: BoxFit.cover))),
                     SizedBox(height: 10.0,),
                     Text('Top Quality fashion item', softWrap: true,),
                     SizedBox(height: 10.0,),
