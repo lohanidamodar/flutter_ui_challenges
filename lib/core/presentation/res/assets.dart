@@ -1,3 +1,4 @@
+const String appLogo = 'assets/icon/icon.png';
 const String fishtail =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/travel%2Ffishtail.jpg?alt=media';
 const String mountEverest =
