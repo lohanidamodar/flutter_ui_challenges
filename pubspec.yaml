@@ -40,6 +40,7 @@ dependencies:
   provider: ^3.1.0
   google_sign_in: ^4.0.7
   cloud_firestore: ^0.12.9+4
+  cached_network_image: ^1.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
