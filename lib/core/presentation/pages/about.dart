@@ -100,7 +100,15 @@ class AboutPage extends StatelessWidget {
                     fontWeight: FontWeight.bold
                   ),),
                   SizedBox(height: 10.0),
-                  ...DEVELOPERS.map((dev) => _buildHeader(dev)).toList()
+                  ...DEVELOPERS.map((dev) => _buildHeader(dev)).toList(),
+                  const SizedBox(height: 10.0),
+                  MaterialButton(
+                    color: Colors.grey.shade200,
+                    onPressed: (){
+                      launch(privacyUrl);
+                    },
+                    child: Text("Privacy Policy"),
+                  )
                 ],
               ),
             ),

@@ -1,3 +1,4 @@
+import 'package:flutter_ui_challenges/core/constants.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/text_styles.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
@@ -110,7 +111,7 @@ class _SignupPageState extends State<SignupPage> {
                                 fontWeight: FontWeight.bold,
                               ),),
                               onTap: (){
-                                launch('https://popupbits.com/contact/flutter-ui-challenges-privacy-policy/');
+                                launch(privacyUrl);
                               },
                             ),
                           ),
