@@ -77,3 +77,4 @@ build/
 **key.properties
 .ui
 **/google-services.json
+**/GoogleService-Info.plist
