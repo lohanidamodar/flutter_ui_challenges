@@ -10,6 +10,7 @@ import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
+import 'package:package_info/package_info.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../routes.dart';
@@ -21,9 +22,17 @@ class MainMenu extends StatefulWidget {
 
 class _MainMenuState extends State<MainMenu> {
   Map<String, bool> viewData = <String, bool>{};
+  List<SubMenuItem> unseen;
+  bool viewDataLoaded;
+  bool dialogShowing;
+  bool showNewUiDialog;
   @override
   void initState() {
     super.initState();
+    unseen = [];
+    viewDataLoaded = false;
+    dialogShowing = false;
+    showNewUiDialog = false;
     _getViewData();
   }
 
@@ -34,6 +43,8 @@ class _MainMenuState extends State<MainMenu> {
           prefs.getString('page_view_data') != null
               ? prefs.getString('page_view_data')
               : "{}"));
+      viewDataLoaded = true;
+      showNewUiDialog = prefs.getBool('show_new_uis_dialog') ?? true;
     });
     return;
   }
@@ -47,6 +58,7 @@ class _MainMenuState extends State<MainMenu> {
   Widget build(BuildContext context) => _buildMenuPage();
 
   ListView _buildMenuPage() {
+    if (showNewUiDialog && viewDataLoaded) _checkToShowDialog(context);
     return ListView.builder(
       physics: BouncingScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {
@@ -57,6 +69,70 @@ class _MainMenuState extends State<MainMenu> {
       },
       itemCount: pages.length,
     );
+  }
+
+  void _checkToShowDialog(BuildContext context) {
+    unseen = [];
+    pages.forEach((page) {
+      if (page is SubMenuItem && viewData[page.title] != true) unseen.add(page);
+      if (page is MenuItem) {
+        page.items.forEach((item) {
+          if (viewData[item.title] != true) unseen.add(item);
+        });
+      }
+    });
+    if (unseen.length > 0 && !dialogShowing) _showNewUisDialog(context);
+  }
+
+  _showNewUisDialog(pcontext) async {
+    PackageInfo pkg = await PackageInfo.fromPlatform();
+    dialogShowing = true;
+    showDialog(
+        barrierDismissible: false,
+        context: pcontext,
+        builder: (context) => AlertDialog(
+              title: Text(
+                "Flutter UI Challenges v${pkg.version}",
+              ),
+              content: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text("New UIs you have now viewed", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  const SizedBox(height: 10.0),
+                  ...unseen.map(
+                    (item) => ListTile(
+                      title: Text(item.title),
+                      onTap: () => _openPage(context, item, OpenMode.PREVIEW),
+                      trailing: IconButton(
+                        icon: Icon(Icons.code),
+                        onPressed: () =>
+                            _openPage(context, item, OpenMode.CODE),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              actions: <Widget>[
+                FlatButton(
+                  textColor: Colors.pink,
+                  child: Text("Close & Never Display Again"),
+                  onPressed: () async {
+                    (await SharedPreferences.getInstance())
+                        .setBool('show_new_uis_dialog', false);
+                    Navigator.pop(context);
+                  },
+                ),
+                FlatButton(
+                  child: Text("Close"),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
+            ));
   }
 
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
@@ -96,11 +172,18 @@ class _MainMenuState extends State<MainMenu> {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            if(Provider.of<UserRepository>(context).user != null)
-            IconButton(
-              icon: Icon(isFavorited(context, item.title) ? Icons.favorite : Icons.favorite_border, color: isFavorited(context, item.title) ? Colors.red:Colors.black,),
-              onPressed: () => _addToFavorite(context, item.title),
-            ),
+            if (Provider.of<UserRepository>(context).user != null)
+              IconButton(
+                icon: Icon(
+                  isFavorited(context, item.title)
+                      ? Icons.favorite
+                      : Icons.favorite_border,
+                  color: isFavorited(context, item.title)
+                      ? Colors.red
+                      : Colors.black,
+                ),
+                onPressed: () => _addToFavorite(context, item.title),
+              ),
             IconButton(
               icon: Icon(Icons.code),
               onPressed: () => _openPage(context, item, OpenMode.CODE),
@@ -121,17 +204,18 @@ class _MainMenuState extends State<MainMenu> {
 
   void _addToFavorite(BuildContext context, String key) {
     User user = Provider.of<User>(context);
-    if(user != null) {
-      if(isFavorited(context, key)) {
-        FavoriteFirestoreService().removeFromFavorite(user.id,key);
-      }else{
+    if (user != null) {
+      if (isFavorited(context, key)) {
+        FavoriteFirestoreService().removeFromFavorite(user.id, key);
+      } else {
         FavoriteFirestoreService().addToFavorite(user.id, key);
       }
     }
   }
 
   bool isFavorited(BuildContext context, String key) {
-    return Provider.of<User>(context) != null && Provider.of<User>(context).favorites.contains(key);
+    return Provider.of<User>(context) != null &&
+        Provider.of<User>(context).favorites.contains(key);
   }
 
   void _openPage(BuildContext context, SubMenuItem item, OpenMode mode) {
