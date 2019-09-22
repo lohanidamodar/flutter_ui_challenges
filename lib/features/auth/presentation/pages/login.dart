@@ -47,13 +47,24 @@ class _LoginPageState extends State<LoginPage> {
                   height: 60,
                 ),
                 const SizedBox(height: 10.0),
-                Text(
-                  "Login",
-                  style: Theme.of(context).textTheme.display1.copyWith(
-                        color: Colors.grey[800],
-                        fontSize: 20.0,
-                      ),
-                ),
+                Text.rich(TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Login",
+                      style: Theme.of(context).textTheme.display1.copyWith(
+                            color: Colors.grey[800],
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                          ),
+                    ),
+                    TextSpan(
+                      text: " for more features",
+                      style: TextStyle(
+                        fontSize: 12.0
+                      )
+                    )
+                  ]
+                )),
                 const SizedBox(height: 20.0),
                 RoundedContainer(
                   child: Column(
