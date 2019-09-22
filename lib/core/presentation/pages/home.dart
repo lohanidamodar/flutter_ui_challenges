@@ -60,7 +60,8 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.white,
                       icon: Icon(FontAwesomeIcons.user),
                       onPressed: () {
-                        Navigator.pushNamed(context, "profile");
+                        (Provider.of<UserRepository>(context).user != null)
+                          ? Navigator.pushNamed(context, "profile") : Navigator.pushNamed(context, 'auth_home');
                       },
                     ),
                   ],

@@ -64,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () async {
                           SharedPreferences prefs = await SharedPreferences.getInstance();
                           await prefs.setBool('login_skipped', true);
-                          Navigator.pushReplacementNamed(context, 'home');
+                          Navigator.pushNamedAndRemoveUntil(context, 'home', ModalRoute.withName('home'),);
                         },
                       ),
                       TextFormField(
