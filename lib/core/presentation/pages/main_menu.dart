@@ -81,7 +81,8 @@ class _MainMenuState extends State<MainMenu> {
         });
       }
     });
-    if (unseen.length > 0 && !dialogShowing) _showNewUisDialog(context);
+    if (unseen.length > 0 && unseen.length < 8 && !dialogShowing)
+      _showNewUisDialog(context);
   }
 
   _showNewUisDialog(pcontext) async {
@@ -94,26 +95,31 @@ class _MainMenuState extends State<MainMenu> {
               title: Text(
                 "Flutter UI Challenges v${pkg.version}",
               ),
-              content: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Text("New UIs you have now viewed", style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  const SizedBox(height: 10.0),
-                  ...unseen.map(
-                    (item) => ListTile(
-                      title: Text(item.title),
-                      onTap: () => _openPage(context, item, OpenMode.PREVIEW),
-                      trailing: IconButton(
-                        icon: Icon(Icons.code),
-                        onPressed: () =>
-                            _openPage(context, item, OpenMode.CODE),
+              content: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Text(
+                      "New UIs you have not viewed",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 10.0),
+                    ...unseen.map(
+                      (item) => ListTile(
+                        title: Text(item.title),
+                        onTap: () => _openPage(context, item, OpenMode.PREVIEW),
+                        trailing: IconButton(
+                          icon: Icon(Icons.code),
+                          onPressed: () =>
+                              _openPage(context, item, OpenMode.CODE),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               actions: <Widget>[
                 FlatButton(
