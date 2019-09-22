@@ -4,6 +4,13 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
+## Building and running the code
+
+- From now on, you need to create your own firebase project and add the config files in order to build the project
+
+    In order to build the project before firebase services were added please checkout the branch [without-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/without-firebase)
+
+
 ### Table of contents
 
 - **[Youtube Speed Codes](#speed-codes-youtube)**
