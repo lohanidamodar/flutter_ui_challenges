@@ -5,6 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem3.dart';
 
 
@@ -18,12 +19,12 @@ class GroceryCartTabView extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               children: <Widget>[
                 GroceryListItemThree(
-                  image: "assets/grocery/pineapple.png",
+                  image: pineapple,
                   subtitle: "4 in a pack",
                   title: "Pineapple",
                 ),
                 GroceryListItemThree(
-                  image: "assets/grocery/cabbage.png",
+                  image: cabbage,
                   subtitle: "1 kg",
                   title: "cabbage",
                 ),

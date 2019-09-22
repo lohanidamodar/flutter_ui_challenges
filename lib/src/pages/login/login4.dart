@@ -4,10 +4,12 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginFourPage extends StatelessWidget {
   static final String path = "lib/src/pages/login/login4.dart";
-  final String background = 'assets/img/login-back.jpg';
+  final String background = loginBack;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +20,7 @@ class LoginFourPage extends StatelessWidget {
               padding: EdgeInsets.all(20.0),
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(background),
+                  image: CachedNetworkImageProvider(background),
                   fit: BoxFit.cover
                 )
               ),

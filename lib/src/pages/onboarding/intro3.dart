@@ -5,8 +5,9 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:flutter_ui_challenges/src/pages/home.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IntroThreePage extends StatefulWidget {
@@ -58,7 +59,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
                 },
                 loop: false,
                 itemBuilder: (context, index){
-                  return _buildPage(title: titles[index], icon: "assets/img/${index+3}.jpg", pageBg: pageBgs[index]);
+                  return _buildPage(title: titles[index], icon: images[index+2], pageBg: pageBgs[index]);
                 },
                 pagination: SwiperPagination(
                   builder: CustomPaginationBuilder(
@@ -87,9 +88,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
             textColor: Colors.grey.shade600,
             child: Text("Skip"),
             onPressed: (){
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_)=>HomePage())
-              );
+              Navigator.of(context).pushReplacementNamed('home');
             },
           ),
           IconButton(
@@ -98,9 +97,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (_) => HomePage()
-                ));
+                Navigator.of(context).pushReplacementNamed('home');
               }
             },
           )
@@ -135,7 +132,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
               width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(icon),
+                  image: CachedNetworkImageProvider(icon),
                   fit: BoxFit.cover
                 )
               ),  

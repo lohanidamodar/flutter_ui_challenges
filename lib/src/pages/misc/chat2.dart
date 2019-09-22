@@ -1,10 +1,12 @@
-import 'dart:math';
 
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
+import 'package:cached_network_image/cached_network_image.dart';
+import 'dart:math';
 
 class ChatTwoPage extends StatefulWidget {
   static final String path = "lib/src/pages/misc/chat2.dart";
@@ -16,8 +18,8 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
   String text;
   TextEditingController _controller;
   final List<String> avatars = [
-    "assets/img/1.jpg",
-    "assets/img/3.jpg",
+    assets.avatars[3],
+    assets.avatars[4],
   ];
   final List<Message> messages = [
     Message(0, "But I may not go if the weather is bad."),
@@ -126,7 +128,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
         SizedBox(width: current ? 30.0 : 20.0),
         if (!current) ...[
           CircleAvatar(
-            backgroundImage: AssetImage(
+            backgroundImage: CachedNetworkImageProvider(
               current ? avatars[0] : avatars[1],
             ),
             radius: 20.0,
@@ -150,7 +152,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
         if (current) ...[
           const SizedBox(width: 5.0),
           CircleAvatar(
-            backgroundImage: AssetImage(
+            backgroundImage: CachedNetworkImageProvider(
               current ? avatars[0] : avatars[1],
             ),
             radius: 10.0,

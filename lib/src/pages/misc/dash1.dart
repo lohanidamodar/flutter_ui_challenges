@@ -4,13 +4,15 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class DashboardOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/dash1.dart";
 
-  final String image = "assets/img/1.jpg";
+  final String image = images[0];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -203,7 +205,7 @@ class DashboardOnePage extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage(image), fit: BoxFit.cover),
+                      image: CachedNetworkImageProvider(image), fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(20.0)),
               height: 200,
               foregroundDecoration: BoxDecoration(
@@ -262,7 +264,7 @@ class DashboardOnePage extends StatelessWidget {
       padding: EdgeInsets.all(0),
       icon: CircleAvatar(
         backgroundColor: Colors.grey.shade300,
-        child: CircleAvatar(radius: 16, backgroundImage: AssetImage(image)),
+        child: CircleAvatar(radius: 16, backgroundImage: CachedNetworkImageProvider(image)),
       ),
       onPressed: () {},
     );
@@ -345,117 +347,6 @@ class LinearSales {
   LinearSales(this.month, this.sales);
 }
 
-/* class HomeTab extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return NestedScrollView(
-      headerSliverBuilder: (context, show) => [],
-      body: SingleChildScrollView(
-        child: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(16.0),
-          color: Theme.of(context).buttonColor,
-          child: Column(
-            children: <Widget>[
-              StreamBuilder(
-                  stream: ChildBlocProvider.of(context)
-                      .selectedChild(AuthBlocProvider.of(context).user.uid),
-                  builder: (context, snapshot) {
-                    if (!snapshot.hasData ||
-                        snapshot.hasError ||
-                        snapshot.data.documents.length < 1) return Container();
-                    Child child =
-                        Child.fromDocument(snapshot.data.documents[0]);
-                    return Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const SizedBox(height: 20),
-                        _buildTitledContainer("Charts", height: 250),
-                        const SizedBox(height: 20.0),
-                        _buildTitledContainer("Care team",
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                children: <Widget>[
-                                  _buildDocAvatar(),
-                                  const SizedBox(width: 20.0),
-                                  _buildDocAvatar(),
-                                  const SizedBox(width: 20.0),
-                                  _buildDocAvatar(),
-                                ],
-                              ),
-                            )),
-                        const SizedBox(height: 20.0),
-                        _buildTitledContainer("Activities",
-                            height: 400,
-                            child: Expanded(
-                              child: GridView.builder(
-                                physics: NeverScrollableScrollPhysics(),
-                                gridDelegate:
-                                    SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 3,
-                                  crossAxisSpacing: 10.0,
-                                  mainAxisSpacing: 10.0,
-                                ),
-                                itemCount: activities.length,
-                                itemBuilder: (context, index) {
-                                  Activity activity = activities[index];
-                                  return Column(
-                                    children: <Widget>[
-                                      CircleAvatar(
-                                        radius: 20,
-                                        backgroundColor:
-                                            Theme.of(context).buttonColor,
-                                        child: activity.icon != null
-                                            ? Image.asset(
-                                                'assets/icons/${activity.icon}.png',
-                                                height: 18,
-                                              )
-                                            : null,
-                                      ),
-                                      const SizedBox(height: 5.0),
-                                      Text(
-                                        activities[index].title,
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14.0),
-                                      ),
-                                    ],
-                                  );
-                                },
-                              ),
-                            )),
-                      ],
-                    );
-                  })
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Column _buildDocAvatar() {
-    return Column(
-      children: <Widget>[
-        CircleAvatar(
-          radius: 30,
-          backgroundImage: AssetImage("assets/img/doc.jpg"),
-        ),
-        const SizedBox(height: 10.0),
-        Text(
-          "Dr. Sthephen Strange",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 5.0),
-        Text("Physiologist")
-      ],
-    );
-  }
-
-  
- */
 class Activity {
   final String title;
   final IconData icon;

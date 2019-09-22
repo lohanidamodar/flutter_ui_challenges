@@ -5,7 +5,7 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:flutter_ui_challenges/src/pages/home.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
@@ -49,7 +49,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
                 },
                 loop: false,
                 itemBuilder: (context, index){
-                  return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg");
+                  return _buildPage(title: titles[index], icon: images[index]);
                 },
                 pagination: SwiperPagination(
                   builder: CustomPaginationBuilder(
@@ -78,9 +78,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
             textColor: Colors.grey.shade700,
             child: Text("Skip"),
             onPressed: (){
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_)=>HomePage())
-              );
+              Navigator.of(context).pushReplacementNamed('home');
             },
           ),
           IconButton(
@@ -89,9 +87,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (_) => HomePage()
-                ));
+                Navigator.of(context).pushReplacementNamed('home');
               }
             },
           )

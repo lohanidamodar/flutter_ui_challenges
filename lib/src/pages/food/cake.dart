@@ -4,6 +4,8 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class CakePage extends StatelessWidget {
   static final String path = "lib/src/pages/food/cake.dart";
   @override
@@ -108,7 +110,7 @@ class CakePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Expanded(
-                      child: Image.asset("assets/food/cake.png"),
+                      child: PNetworkImage(cake),
                     ),
                     Column(
                       children: <Widget>[
@@ -161,7 +163,7 @@ class CakePage extends StatelessWidget {
                     Expanded(child: Column(
                       children: <Widget>[
                         SizedBox(height: 20.0),
-                        Image.asset('assets/food/eggs.png'),
+                        PNetworkImage(eggs),
                         SizedBox(height: 10.0),
                         Text("4 Eggs", style: TextStyle(
                           color: Colors.white
@@ -172,7 +174,7 @@ class CakePage extends StatelessWidget {
                     Expanded(child: Column(
                       children: <Widget>[
                         SizedBox(height: 10.0),
-                        Image.asset('assets/food/vanilla.png'),
+                        PNetworkImage(vanilla),
                         SizedBox(height: 10.0),
                         Text("2 tsp vanilla", style: TextStyle(
                           color: Colors.white
@@ -183,7 +185,7 @@ class CakePage extends StatelessWidget {
                     Expanded(child: Column(
                       children: <Widget>[
                         SizedBox(height: 20.0),
-                        Image.asset('assets/food/sugar.png'),
+                        PNetworkImage(sugar),
                         SizedBox(height: 10.0),
                         Text("1 cup sugar", style: TextStyle(
                           color: Colors.white
@@ -198,7 +200,7 @@ class CakePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     SizedBox(width: 20.0),
-                    Image.asset("assets/food/map.png"),
+                    PNetworkImage(map),
                     SizedBox(width: 20.0),
                     Expanded(
                       child: Column(

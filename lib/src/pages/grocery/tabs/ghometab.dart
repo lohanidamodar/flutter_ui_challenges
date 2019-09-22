@@ -4,6 +4,7 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gdetails.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gcategory.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem1.dart';
@@ -24,13 +25,13 @@ class GroceryHomeTabView extends StatelessWidget {
         SizedBox(height: 10.0,),
         InkWell(
           onTap: ()=> _openDetailPage(context),
-          child: GroceryListItemTwo(title: "Cabbage", image: "assets/grocery/cabbage.png", subtitle: "1 kg")),
+          child: GroceryListItemTwo(title: "Cabbage", image: cabbage, subtitle: "1 kg")),
         InkWell(
           onTap: ()=> _openDetailPage(context),
-          child: GroceryListItemTwo(title: "Red/yellow Capsicum", image: "assets/grocery/capsicum.png", subtitle: "1 kg")),
+          child: GroceryListItemTwo(title: "Red/yellow Capsicum", image: capsicum, subtitle: "1 kg")),
         InkWell(
           onTap: ()=> _openDetailPage(context),
-          child: GroceryListItemTwo(title: "Pineapple", image: "assets/grocery/pineapple.png", subtitle: "4 in a pack")),
+          child: GroceryListItemTwo(title: "Pineapple", image: pineapple, subtitle: "4 in a pack")),
       ],
     );
   }
@@ -45,7 +46,7 @@ class GroceryHomeTabView extends StatelessWidget {
               child: InkWell(
                 onTap: () => _openDetailPage(context),
                 child: GroceryListItemOne(
-                  image: "assets/grocery/mango.png",
+                  image: mango,
                   subtitle: "1 kg",
                   title: "Local Mango",
                 ),
@@ -55,7 +56,7 @@ class GroceryHomeTabView extends StatelessWidget {
               child: InkWell(
                 onTap: ()=> _openDetailPage(context),
                 child: GroceryListItemOne(
-                  image: "assets/grocery/brocoli.png",
+                  image: brocoli,
                   subtitle: "6 in a pack",
                   title: "Broccoli",
                 ),
@@ -114,18 +115,18 @@ class GroceryHomeTabView extends StatelessWidget {
             SizedBox(width: 10.0,),
             GroceryCategory(
               backgroundColor: Color.fromRGBO(11, 200, 0, 0.15),
-              image: 'assets/grocery/vegetables.png',
+              image: vegetables,
               title: "Vegetables",
             ),
             SizedBox(width: 10.0,),
             GroceryCategory(
               backgroundColor: Color.fromRGBO(200, 0, 11, 0.15),
               title: "Fruite",
-              image: "assets/grocery/fruit.png",
+              image: fruit,
             ),
             SizedBox(width: 10.0,),
             GroceryCategory(
-              image: "assets/grocery/mortar.png",
+              image: mortar,
               backgroundColor: Color.fromRGBO(20, 20, 15, 0.15),
               title: "Masala",
             )

@@ -4,7 +4,9 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RecipeSinglePage extends StatelessWidget {
@@ -107,7 +109,7 @@ class RecipeSinglePage extends StatelessWidget {
               ),
               child: SizedBox(
                 height: 350,
-                child: Image.asset("assets/food/meal.jpg", fit: BoxFit.cover,),
+                child: PNetworkImage(meal, fit: BoxFit.cover,),
               ),
             ),
             Positioned(
