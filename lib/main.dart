@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       builder: (_) => UserRepository.instance(),
       child: Consumer<UserRepository>(
         builder: (_, user, __) => StreamProvider.value(
-          value: AuthFirestoreService().getUser(user.user?.uid),
+          value: user != null && user.user != null ? AuthFirestoreService().getUser(user.user?.uid):null,
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter UIs',
