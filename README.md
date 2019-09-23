@@ -4,6 +4,13 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
+## Building and running the code
+
+- From now on, you need to create your own firebase project and add the config files in order to build the project
+
+    In order to build the project before firebase services were added please checkout the branch [without-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/without-firebase)
+
+
 ### Table of contents
 
 - **[Youtube Speed Codes](#speed-codes-youtube)**
@@ -151,8 +158,9 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
 
 ## miscellaneous widgets
-
+<img height="480px" src="screenshots/invitation1.png"> 
 <img height="480px" src="screenshots/dash3.png"> <img height="480px" src="screenshots/dash2.png"> <img height="480px" src="screenshots/chat2.png"> <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/chatui.png"> <img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif">
+<img height="480px" src="screenshots/btm2.png">
 
 ## Blog
 
@@ -168,7 +176,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Todo App
 
-<img height="480px" src="screenshots/todo_home2.png"> <img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
+<img height="480px" src="screenshots/todo_home3.png"> <img height="480px" src="screenshots/todo_home2.png"> <img height="480px" src="screenshots/todo2.png"> <img height="480px" src="screenshots/todohome1.png">
 
 ## Hotel App
 

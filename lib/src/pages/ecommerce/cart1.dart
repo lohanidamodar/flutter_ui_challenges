@@ -4,17 +4,19 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class CartOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/cart1.dart";
   final List<Map> items = [
     {
-      "image":"assets/food/breakfast.jpg",
+      "image":breakfast,
       "title":"Breakfast Set",
       "price": 20
     },
     {
-      "image":"assets/food/burger.jpg",
+      "image":burger,
       "title":"Veg Burger",
       "price": 30
     },
@@ -53,7 +55,7 @@ class CartOnePage extends StatelessWidget {
                             children: <Widget>[
                               Container(
                                 height: 80,
-                                child: Image.asset(items[index]["image"]),
+                                child: PNetworkImage(items[index]["image"]),
                               ),
                               SizedBox(width: 10.0,),
                               Expanded(

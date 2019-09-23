@@ -4,8 +4,8 @@
  * profile: https://github.com/cimplesid
   */
 import 'dart:ui' as ui;
-
-import 'package:flutter_ui_challenges/src/widgets/main_menu.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:url_launcher/url_launcher.dart';
   
 import 'package:flutter/material.dart';
@@ -44,8 +44,7 @@ class ProfileSixPage extends StatelessWidget {
             style: TextStyle(color: Colors.white70),
           ),
           onPressed: () {
-            Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (_) => MainMenu()));
+            Navigator.pop(context);
           },
         ),
       ],
@@ -63,7 +62,7 @@ class ProfileSixPage extends StatelessWidget {
       margin: const EdgeInsets.only(top: 32.0, left: 16.0),
       padding: const EdgeInsets.all(3.0),
       child: ClipOval(
-        child: Image.asset(dev.avatar),
+        child: PNetworkImage(dev.avatar),
       ),
     );
   }
@@ -140,7 +139,7 @@ class ProfileSixPage extends StatelessWidget {
             ),
             onPressed: () => Navigator.pop(context),
           ),
-          Image.asset(dev.backdropPhoto, fit: BoxFit.cover),
+          PNetworkImage(dev.backdropPhoto, fit: BoxFit.cover),
           BackdropFilter(
             filter: ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
             child: Container(
@@ -178,7 +177,7 @@ class VideoCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(8.0),
       child: Stack(
         children: <Widget>[
-          Image.asset(video.thumbnail),
+          PNetworkImage(video.thumbnail),
           Positioned(
             bottom: 12.0,
             right: 12.0,
@@ -277,3 +276,38 @@ class Video {
 
   final String url;
 }
+
+
+
+final DEV sid = DEV(
+  firstName: 'Cimple',
+  lastName: 'Sid',
+  avatar: devSid,
+  backdropPhoto: backdrop,
+  location: 'Mahendranagar, Nepal',
+  biography: 'Siddhartha  Joshi is a Flutter dev  '
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.  '
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+  videos: <Video>[
+    Video(
+      title: 'WIFI hacking part 1',
+      thumbnail: sidVideoThumbs[0],
+      url: 'https://www.youtube.com/watch?v=06qoTsKYWKE',
+    ),
+    Video(
+      title: 'WIFI hacking part 2',
+      thumbnail: sidVideoThumbs[1],
+      url: 'https://www.youtube.com/watch?v=3XG4c5_mGCM',
+    ),
+    Video(
+      title: 'WIFI hacking part 3',
+      thumbnail: sidVideoThumbs[2],
+      url: 'https://www.youtube.com/watch?v=C29QstsxWQE',
+    ),
+    Video(
+      title: 'Find facebook users location',
+      thumbnail: sidVideoThumbs[3],
+      url: 'https://www.youtube.com/watch?v=J9zhKtL_gH0',
+    ),
+  ],
+);

@@ -5,7 +5,8 @@
   
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:flutter_ui_challenges/src/pages/home.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
@@ -42,7 +43,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             },
             loop: false,
             itemBuilder: (context, index){
-              return _buildPage(title: titles[index], icon: "assets/img/${index+1}.jpg");
+              return _buildPage(title: titles[index], icon: images[index]);
             },
             pagination: SwiperPagination(
               builder: CustomPaginationBuilder(
@@ -70,9 +71,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             textColor: Colors.white70,
             child: Text("Skip"),
             onPressed: (){
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_)=>HomePage())
-              );
+              Navigator.of(context).pushReplacementNamed('home');
             },
           ),
           IconButton(
@@ -82,9 +81,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (_) => HomePage()
-                ));
+                Navigator.of(context).pushReplacementNamed('home');
               }
             },
           )
@@ -105,7 +102,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.0),
         image: DecorationImage(
-          image: AssetImage(icon),
+          image: CachedNetworkImageProvider(icon),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(Colors.black38, BlendMode.multiply)
         )

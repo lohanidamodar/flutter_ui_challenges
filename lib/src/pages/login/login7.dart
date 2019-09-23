@@ -151,7 +151,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               )),
               SizedBox(height: 20,),
           Center(
-            child: Text("FORGET PASSWORD ?", style: TextStyle(color:Colors.red,fontSize: 12 ,fontWeight: FontWeight.w700),),
+            child: Text("FORGOT PASSWORD ?", style: TextStyle(color:Colors.red,fontSize: 12 ,fontWeight: FontWeight.w700),),
           ),
           SizedBox(height: 40,),
           Row(

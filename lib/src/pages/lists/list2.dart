@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class SchoolList extends StatefulWidget {
   SchoolList({Key key}) : super(key: key);
@@ -195,7 +196,7 @@ class _SchoolListState extends State<SchoolList> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(width: 3, color: secondary),
               image: DecorationImage(
-                  image: NetworkImage(schoolLists[index]['logoText']),
+                  image: CachedNetworkImageProvider(schoolLists[index]['logoText']),
                   fit: BoxFit.fill),
             ),
           ),

@@ -4,23 +4,26 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SlidersPage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/sliders.dart";
   final List<String> images= [
-    'assets/img/1.jpg',
-    'assets/food/breakfast.jpg',
-    'assets/travel/fishtail.jpg',
-    'assets/img/2.jpg',
-    'assets/food/pancake.jpg',
-    'assets/travel/fewalake.jpg',
-    'assets/img/3.jpg',
-    'assets/food/fries.jpg',
-    'assets/travel/kathmandu1.jpg',
-    'assets/img/4.jpg',
-    'assets/food/burger.jpg',
-    'assets/travel/pashupatinath.jpg',
+    avatars[0],
+    breakfast,
+    fishtail,
+    avatars[2],
+    pancake,
+    fewalake,
+    avatars[3],
+    fries,
+    kathmandu1,
+    avatars[1],
+    burger,
+    pashupatinath,
   ];
   @override
   Widget build(BuildContext context){
@@ -39,7 +42,7 @@ class SlidersPage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
-                    child: Image.asset(
+                    child: PNetworkImage(
                       images[index],
                       fit: BoxFit.cover,
                     ),
@@ -60,7 +63,7 @@ class SlidersPage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
-                    child: Image.asset(
+                    child: PNetworkImage(
                       images[index],
                       fit: BoxFit.cover,
                     ),
@@ -87,7 +90,7 @@ class SlidersPage extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0)),
                           image: DecorationImage(
-                            image: AssetImage(images[index]),
+                            image: CachedNetworkImageProvider(images[index]),
                             fit: BoxFit.cover
                           )
                         ),

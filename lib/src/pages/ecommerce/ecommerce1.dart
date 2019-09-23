@@ -4,14 +4,17 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/ecommerce/ecommerce1.dart";
   final List<String> categories = ['DarazMall', 'Flash Sales', 'Collection', 'Vouchers', 'Categories'];
-  final List<String> images = ['assets/img/1.jpg','assets/img/3.jpg','assets/img/2.jpg', 'assets/img/4.jpg'];
-  final List<String> flashSaleImages = ['assets/img/b1.jpg','assets/img/b3.jpg','assets/img/b2.jpg'];
+  final List<String> images = [assets.images[0],assets.images[2],assets.images[1], assets.images[3]];
+  final List<String> flashSaleImages = [assets.backgroundImages[0],assets.backgroundImages[2],assets.backgroundImages[1]];
 
   Widget _buildListView(_,index) {
     if(index==0) return _buildSlider();
@@ -26,7 +29,7 @@ class EcommerceOnePage extends StatelessWidget {
           Expanded(
             child: Column(
               children: <Widget>[
-                Image.asset(images[index%images.length]),
+                PNetworkImage(images[index%images.length]),
                 SizedBox(height: 10.0,),
                 Text('Top Quality fashion item', softWrap: true,),
                 SizedBox(height: 10.0,),
@@ -38,7 +41,7 @@ class EcommerceOnePage extends StatelessWidget {
           Expanded(
             child: Column(
               children: <Widget>[
-                Image.asset(images[(index - 1) %images.length]),
+                PNetworkImage(images[(index - 1) %images.length]),
                 SizedBox(height: 10.0,),
                 Text('Top Quality fashion item', softWrap: true,),
                 SizedBox(height: 10.0,),
@@ -96,7 +99,7 @@ class EcommerceOnePage extends StatelessWidget {
                     onTap: (){},
                     title: Text("Vehicles"),
                     subtitle: Text('120 people want this'),
-                    trailing: Container(width: 50, child: Image.asset('assets/img/b2.jpg', fit: BoxFit.cover,)),
+                    trailing: Container(width: 50, child: PNetworkImage(assets.backgroundImages[1], fit: BoxFit.cover,)),
                   ),
                 ),
               );
@@ -160,7 +163,7 @@ class EcommerceOnePage extends StatelessWidget {
                       height: 80,
                       // color: Colors.blue,
                       decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage(flashSaleImages[index]),fit: BoxFit.cover)
+                        image: DecorationImage(image: CachedNetworkImageProvider(flashSaleImages[index]),fit: BoxFit.cover)
                       ),
                     ),
                     SizedBox(height: 5.0,),
@@ -214,7 +217,7 @@ class EcommerceOnePage extends StatelessWidget {
             child: Swiper(
               autoplay: true,
               itemBuilder: (BuildContext context,int index){
-                return new Image.asset(images[index],fit: BoxFit.cover,);
+                return new PNetworkImage(images[index],fit: BoxFit.cover,);
               },
               itemCount: 4,
               pagination: new SwiperPagination(),

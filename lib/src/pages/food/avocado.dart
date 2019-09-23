@@ -3,12 +3,14 @@
  * profile: https://github.com/lohanidamodar
   */
   
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AvocadoPage extends StatelessWidget {
   static final String path = "lib/src/pages/food/avocado.dart";
-  final String image = "assets/food/avocado-f.jpg";
+  final String image = avocadoF;
 
 
   @override
@@ -19,7 +21,7 @@ class AvocadoPage extends StatelessWidget {
           Container(
             height: 450,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(image),fit: BoxFit.cover)
+              image: DecorationImage(image: CachedNetworkImageProvider(image),fit: BoxFit.cover)
             ),
           ),
           AppBar(

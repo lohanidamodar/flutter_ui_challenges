@@ -4,7 +4,10 @@
   */
   
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelHomePage extends StatelessWidget {
   static final String path = "lib/src/pages/travel/thome.dart";
@@ -31,7 +34,7 @@ class TravelHomePage extends StatelessWidget {
                       ),)
                     ],
                   ),
-                  CircleAvatar(backgroundImage: AssetImage('assets/img/7.jpg'), radius: 40,)
+                  CircleAvatar(backgroundImage: CachedNetworkImageProvider(avatars[3]), radius: 40,)
                 ],
               ),
             ),
@@ -50,10 +53,10 @@ class TravelHomePage extends StatelessWidget {
             ),
             GestureDetector(
               onTap: ()=>_openDestinationPage(context),
-              child: _buildFeaturedItem(image: 'assets/travel/kathmandu1.jpg', title: "Kathmandu", subtitle: "90 places worth to visit")),
+              child: _buildFeaturedItem(image: kathmandu1, title: "Kathmandu", subtitle: "90 places worth to visit")),
             GestureDetector(
               onTap: ()=>_openDestinationPage(context),
-              child: _buildFeaturedItem(image: 'assets/travel/fewalake.jpg',title: "Pokhara", subtitle: "40 places worth to visit")),
+              child: _buildFeaturedItem(image: fewalake,title: "Pokhara", subtitle: "40 places worth to visit")),
             _buildItem(title: "Jomsom"),
             _buildItem(title: "Palpa"),
             _buildItem(title: "Namche"),
@@ -107,7 +110,7 @@ class TravelHomePage extends StatelessWidget {
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(5.0),
-                    child: Image.asset(image, fit: BoxFit.cover,)),
+                    child: PNetworkImage(image, fit: BoxFit.cover,)),
                   Positioned(
                     right: 10.0,
                     top: 10.0,

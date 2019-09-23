@@ -1,15 +1,16 @@
-import 'dart:ui';
-
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
   
 import 'package:flutter/material.dart';
+import 'dart:ui';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class AuthTwoPage extends StatelessWidget {
   static final String path = "lib/src/pages/login/auth2.dart";
-  final String backImg = "assets/food/meal.jpg";
+  final String backImg = meal;
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -17,7 +18,7 @@ class AuthTwoPage extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(backImg),
+            image: CachedNetworkImageProvider(backImg),
             fit: BoxFit.cover
           )
         ),

@@ -3,10 +3,13 @@
  * profile: https://github.com/lohanidamodar
   */
   
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class ProfileThreePage extends StatelessWidget {
   static final String path = "lib/src/pages/profile/profile3.dart";
-  final image = 'assets/img/2.jpg';
+  final image = avatars[1];
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -17,7 +20,7 @@ class ProfileThreePage extends StatelessWidget {
             SizedBox(
               height: 250,
               width: double.infinity,
-              child: Image.asset(image, fit: BoxFit.cover,),
+              child: PNetworkImage(image, fit: BoxFit.cover,),
             ),
             Container(
               margin: EdgeInsets.fromLTRB(16.0, 200.0, 16.0, 16.0),
@@ -81,7 +84,7 @@ class ProfileThreePage extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
-                            image: AssetImage(image),
+                            image: CachedNetworkImageProvider(image),
                             fit: BoxFit.cover
                           )
                         ),

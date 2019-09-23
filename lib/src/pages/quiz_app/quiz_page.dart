@@ -56,7 +56,7 @@ class _QuizPageState extends State<QuizPage> {
               clipper: WaveClipperTwo(),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor
+                  color: Colors.deepPurple,
                 ),
                 height: 200,
               ),

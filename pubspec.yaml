@@ -7,7 +7,7 @@ description: Trying to replicate various app UIs in flutter
 # Both the version and the builder number may be overridden in flutter
 # build by specifying --build-name and --build-number, respectively.
 # Read more about versioning at semver.org.
-version: 2.0.0
+version: 3.0.0
 
 environment:
   sdk: ">=2.2.2 <3.0.0"
@@ -31,17 +31,23 @@ dependencies:
   animated_floatactionbuttons: ^0.1.0
   share: ^0.6.2
   intl: ^0.15.8
-
   flare_flutter:
     git:
       url: git://github.com/2d-inc/Flare-Flutter.git
       ref: 6606b73bf4f7b87105a6febfbb5f2167cf8b8977
       path: flare_flutter
-
+  firebase_auth: ^0.14.0+5
+  provider: ^3.1.0
+  google_sign_in: ^4.0.7
+  cloud_firestore: ^0.12.9+4
+  cached_network_image: ^1.1.1
+  package_info: ^0.4.0+6
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.7.0
+  flutter_automation:
 
 flutter_icons:
   android: true
@@ -61,12 +67,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/img/
-    - assets/grocery/
     - assets/smwallet/
-    - assets/travel/
     - assets/hotel/
-    - assets/food/
     - assets/icon/
     - assets/flare/
     - lib/src/pages/animations/

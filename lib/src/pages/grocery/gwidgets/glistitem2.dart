@@ -2,9 +2,10 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemTwo extends StatelessWidget {
   const GroceryListItemTwo({
@@ -21,12 +22,21 @@ class GroceryListItemTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        child: ListTile(
-          leading: Container(
-            height: 80.0,
-            child: Image.asset(image, height: 80.0,)),
-          title: Container(
-            height: 100.0,
+      margin: const EdgeInsets.symmetric(
+        vertical: 8.0,
+        horizontal: 16.0,
+      ),
+      child: Row(
+        children: <Widget>[
+          const SizedBox(width: 10.0),
+          Container(
+              height: 80.0,
+              child: PNetworkImage(
+                image,
+                height: 80.0,
+              )),
+          const SizedBox(width: 10.0),
+          Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,13 +46,25 @@ class GroceryListItemTwo extends StatelessWidget {
               ],
             ),
           ),
-          trailing: Column(
+          const SizedBox(width: 10.0),
+          Column(
             children: <Widget>[
-              IconButton(icon: Icon(Icons.favorite_border), onPressed: (){},),
-              IconButton(icon: Icon(Icons.add,), color: Colors.green, onPressed: (){},)
+              IconButton(
+                icon: Icon(Icons.favorite_border),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.add,
+                ),
+                color: Colors.green,
+                onPressed: () {},
+              )
             ],
           ),
-        ),
-      );
+          const SizedBox(width: 10.0),
+        ],
+      ),
+    );
   }
 }
