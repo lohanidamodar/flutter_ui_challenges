@@ -4,6 +4,7 @@ import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/invitation1.dart';
+import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
@@ -184,6 +185,7 @@ final List<dynamic> pages = [
           path: CheckAnswersPage.path),
     ]),
     MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
+      SubMenuItem("Todo Home Three", TodoHomeThreePage(), path: TodoHomeThreePage.path),
       SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
       SubMenuItem("Todo Home One", TodoHomeOnePage(),
           path: TodoHomeOnePage.path),
