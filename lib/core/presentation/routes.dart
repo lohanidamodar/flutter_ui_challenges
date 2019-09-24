@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/invitation1.dart';
@@ -144,6 +145,8 @@ final List<dynamic> pages = [
           path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
+      SubMenuItem("Sports News Home", SportsNewsOnePage(),
+          path: SportsNewsOnePage.path),
       SubMenuItem("Blog Home One", BlogHomeOnePage(),
           path: BlogHomeOnePage.path),
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),
