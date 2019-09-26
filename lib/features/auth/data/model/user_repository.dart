@@ -12,6 +12,7 @@ class UserRepository with ChangeNotifier {
   GoogleSignIn _googleSignIn;
   Status _status = Status.Uninitialized;
   bool loginSkipped = false;
+  String error = '';
 
   UserRepository.instance()
       : _auth = FirebaseAuth.instance,
@@ -37,6 +38,7 @@ class UserRepository with ChangeNotifier {
       return true;
     } catch (e) {
       _status = Status.Unauthenticated;
+      error = e.message;
       notifyListeners();
       return false;
     }
@@ -53,6 +55,7 @@ class UserRepository with ChangeNotifier {
       return true;
     } catch (e) {
       _status = Status.Unauthenticated;
+      error = e.message;
       notifyListeners();
       return false;
     }
@@ -75,6 +78,7 @@ class UserRepository with ChangeNotifier {
     } catch (e) {
       print(e);
       _status = Status.Unauthenticated;
+      error = e.message;
       notifyListeners();
       return false;
     }
