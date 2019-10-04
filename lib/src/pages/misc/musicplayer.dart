@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 
 class MusicPlayer extends StatefulWidget {
-  static final String path = "lib/src/pagesmisc/musicplayer.dart";
+  static final String path = "lib/src/pages/misc/musicplayer.dart";
 
   @override
   _PodcastPlayerState createState() => _PodcastPlayerState();
