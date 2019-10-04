@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/invitation1.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -247,7 +248,9 @@ final List<dynamic> pages = [
       SubMenuItem("Loaders", LoadersPage(), path: LoadersPage.path),
       SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
       SubMenuItem('Bottomsheet', BottomSheetAwesome(),
-          path: BottomSheetAwesome.path)
+          path: BottomSheetAwesome.path),
+          SubMenuItem('Music player', MusicPlayer(),
+          path: MusicPlayer.path)
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];
