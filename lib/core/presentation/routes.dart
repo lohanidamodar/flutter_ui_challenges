@@ -2,9 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
+import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
+import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
+import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -123,6 +125,11 @@ final List<dynamic> pages = [
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
       SubMenuItem("List Two", SchoolList(), path: SchoolList.path),
+    ]),
+    MenuItem(title: "Invitation", icon: Icons.list, items: [
+      SubMenuItem("Auth Page", InvitationAuthPage(), path: InvitationAuthPage.path),
+      SubMenuItem("Landing Page", InvitationLandingPage(), path: InvitationLandingPage.path),
+      SubMenuItem("Details Page", InvitationPageOne(), path: InvitationPageOne.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
       SubMenuItem("Ecommerce One", EcommerceOnePage(),

@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/colors.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class InvitationPageOne extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/invitation1.dart";
+  static final String path = "lib/src/pages/invitation/invitation1.dart";
   final Color primary = Color(0xffE20056);
   final Color border = Color(0xffE1DDDE);
   final Color bg = Color(0xfffefefe);

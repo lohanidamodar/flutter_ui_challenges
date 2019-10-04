@@ -84,6 +84,7 @@ flutter:
     - lib/src/pages/quiz_app/
     - lib/src/pages/todo/
     - lib/src/pages/travel/
+    - lib/src/pages/invitation/
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
