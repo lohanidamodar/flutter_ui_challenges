@@ -7,6 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -235,6 +236,8 @@ final List<dynamic> pages = [
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscllaneous", items: [
+      SubMenuItem("Image Popup", ImagePopupPage(),
+          path: ImagePopupPage.path),
       SubMenuItem("Event Invitation", InvitationPageOne(),
           path: InvitationPageOne.path),
       SubMenuItem("Dashboard Three", DashboardThreePage(),
