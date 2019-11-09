@@ -21,6 +21,7 @@ My effort on replicating various apps UI on flutter.
 - **[Ecommerce UIs](#ecommerce)**
 - **[Login/signup UIs](#user-flow-screens)**
 - **[Profile UIs](#profile-screens)**
+- **[Invitation App UIs](#inviation-app-ui)**
 - **[Lists UIs](#lists-uis)**
 - **[Navigation UIs](#navigations)**
 - **[Onboarding UIs](#onboarding-screens)**
