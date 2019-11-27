@@ -105,7 +105,7 @@ final List<dynamic> pages = [
           path: ProfileFourPage.path),
       SubMenuItem("Profile Five", ProfileFivePage(),
           path: ProfileFivePage.path),
-      SubMenuItem("Profile six", ProfileSixPage(sid),
+      SubMenuItem("Profile Six", ProfileSixPage(sid),
           path: ProfileSixPage.path),
       SubMenuItem("Profile Seven", ProfileSevenPage(),
           path: ProfileSevenPage.path),
