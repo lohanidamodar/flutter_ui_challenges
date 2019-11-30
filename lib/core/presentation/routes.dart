@@ -107,7 +107,7 @@ final List<dynamic> pages = [
           path: ProfileFourPage.path),
       SubMenuItem("Profile Five", ProfileFivePage(),
           path: ProfileFivePage.path),
-      SubMenuItem("Profile six", ProfileSixPage(sid),
+      SubMenuItem("Profile Six", ProfileSixPage(sid),
           path: ProfileSixPage.path),
       SubMenuItem("Profile Seven", ProfileSevenPage(),
           path: ProfileSevenPage.path),
@@ -241,7 +241,7 @@ final List<dynamic> pages = [
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
-    MenuItem(title: "Miscllaneous", items: [
+    MenuItem(title: "Miscellaneous", items: [
       SubMenuItem("Image Popup", ImagePopupPage(),
           path: ImagePopupPage.path),
       SubMenuItem("Event Invitation", InvitationPageOne(),
