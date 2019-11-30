@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
@@ -122,6 +124,10 @@ final List<dynamic> pages = [
       SubMenuItem("Login Seven", LoginSevenPage(), path: LoginSevenPage.path),
       SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
       SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
+    ]),
+    MenuItem(title: "Motorbike App", icon: Icons.list, items: [
+      SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
+      SubMenuItem("Bike Details Page", BikeDetailsPage(), path: BikeDetailsPage.path),
     ]),
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),

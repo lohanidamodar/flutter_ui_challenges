@@ -133,3 +133,5 @@ const String mangoSlice =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fmango_slice.png?alt=media';
 
 const INVITE_ILLUSTRATION = "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Finvite.png?alt=media";
+
+const String bike = "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/bike%2Fbike1.jpg?alt=media";

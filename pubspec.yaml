@@ -70,6 +70,7 @@ flutter:
     - assets/flare/
     - lib/src/pages/animations/
     - lib/src/pages/animations/animation1/
+    - lib/src/pages/bike/
     - lib/src/pages/blog/
     - lib/src/pages/dialogs/
     - lib/src/pages/ecommerce/
