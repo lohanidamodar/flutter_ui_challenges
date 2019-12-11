@@ -1,10 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
@@ -105,12 +108,13 @@ final List<dynamic> pages = [
           path: ProfileFourPage.path),
       SubMenuItem("Profile Five", ProfileFivePage(),
           path: ProfileFivePage.path),
-      SubMenuItem("Profile six", ProfileSixPage(sid),
+      SubMenuItem("Profile Six", ProfileSixPage(sid),
           path: ProfileSixPage.path),
       SubMenuItem("Profile Seven", ProfileSevenPage(),
           path: ProfileSevenPage.path),
     ]),
     MenuItem(title: "Authentication", icon: Icons.lock, items: [
+      SubMenuItem("Auth Three", AuthThreePage(), path: AuthThreePage.path),
       SubMenuItem("Auth One", AuthOnePage(), path: AuthOnePage.path),
       SubMenuItem("Auth Two", AuthTwoPage(), path: AuthTwoPage.path),
       SubMenuItem("Login One", LoginOnePage(), path: LoginOnePage.path),
@@ -122,6 +126,10 @@ final List<dynamic> pages = [
       SubMenuItem("Login Seven", LoginSevenPage(), path: LoginSevenPage.path),
       SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
       SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
+    ]),
+    MenuItem(title: "Motorbike App", icon: Icons.list, items: [
+      SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
+      SubMenuItem("Bike Details Page", BikeDetailsPage(), path: BikeDetailsPage.path),
     ]),
     MenuItem(title: "Lists", icon: Icons.list, items: [
       SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
@@ -235,7 +243,7 @@ final List<dynamic> pages = [
       SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
-    MenuItem(title: "Miscllaneous", items: [
+    MenuItem(title: "Miscellaneous", items: [
       SubMenuItem("Image Popup", ImagePopupPage(),
           path: ImagePopupPage.path),
       SubMenuItem("Event Invitation", InvitationPageOne(),
