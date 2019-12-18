@@ -1,3 +1,5 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -14,17 +16,23 @@ import 'core/presentation/pages/home.dart';
 import 'features/auth/data/model/user_repository.dart';
 import 'features/auth/data/service/firestore_service.dart';
 
-void main() => runApp(MyApp());
+FirebaseAnalytics analytics = FirebaseAnalytics();
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => UserRepository.instance(),
       child: Consumer<UserRepository>(
         builder: (_, user, __) => StreamProvider.value(
-          value: user != null && user.user != null ? AuthFirestoreService().getUser(user.user?.uid):null,
+          value: user != null && user.user != null
+              ? AuthFirestoreService().getUser(user.user?.uid)
+              : null,
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter UIs',
@@ -35,9 +43,12 @@ class MyApp extends StatelessWidget {
               "auth_home": (_) => AuthHomePage(),
               "home": (_) => HomePage(),
               "about": (_) => AboutPage(),
-              "signup": (_)=> SignupPage(), 
-              "profile": (_)=> ProfilePage(), 
+              "signup": (_) => SignupPage(),
+              "profile": (_) => ProfilePage(),
             },
+            navigatorObservers: [
+              FirebaseAnalyticsObserver(analytics: analytics),
+            ],
           ),
         ),
       ),
