@@ -12,7 +12,7 @@ class PNetworkImage extends StatelessWidget {
     return CachedNetworkImage(
       imageUrl: image,
       placeholder: (context, url) => Center(child: CircularProgressIndicator()),
-      errorWidget: (context, url, error) => Center(child: Icon(Icons.error)),
+      errorWidget: (context, url, error) => Image.asset('assets/placeholder.jpg',fit: BoxFit.cover,),
       fit: fit,
       width: width,
       height: height,

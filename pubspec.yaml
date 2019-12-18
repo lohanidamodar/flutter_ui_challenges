@@ -36,7 +36,7 @@ dependencies:
   provider: ^3.1.0
   google_sign_in: ^4.0.7
   cloud_firestore: ^0.12.9+4
-  cached_network_image: ^1.1.1
+  cached_network_image: ^2.0.0-rc
   package_info: ^0.4.0+6
   firebase_remote_config: ^0.3.0
   firebase_core: ^0.4.1+5
@@ -64,6 +64,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/smwallet/
     - assets/hotel/
     - assets/icon/
