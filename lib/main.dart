@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (_) => UserRepository.instance(),
+      create: (_) => UserRepository.instance(),
       child: Consumer<UserRepository>(
         builder: (_, user, __) => StreamProvider.value(
           value: user != null && user.user != null ? AuthFirestoreService().getUser(user.user?.uid):null,
