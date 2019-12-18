@@ -1,10 +1,10 @@
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
 
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/features/auth/presentation/pages/home.dart';
 import 'package:flutter_ui_challenges/features/auth/presentation/pages/profile_page.dart';
