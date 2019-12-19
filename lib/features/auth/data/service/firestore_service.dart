@@ -27,4 +27,15 @@ class AuthFirestoreService {
           (doc) => User.fromMap(doc.data, doc.documentID),
         );
   }
+
+  Future<User> getUserAsync(String id) async {
+    var fs = await FirestoreService().getDocumentAsync('users', id);
+    if(fs!=null)
+      return User.fromMap(fs.data,fs.documentID);
+    return null;
+  }
+
+  Future<void> updateUserData(String id, Map<String,dynamic> data) {
+    return FirestoreService().updateDocument('users', id, data,merge: true);
+  }
 }
