@@ -8,7 +8,9 @@ import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/favorite_firestore_service.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/core/data/models/survey.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
+import 'package:flutter_ui_challenges/core/presentation/widgets/survey_widget.dart';
 import 'package:flutter_ui_challenges/features/announcements/data/model/announcement.dart';
 import 'package:flutter_ui_challenges/features/announcements/widgets/announcement_slider.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
@@ -24,12 +26,14 @@ class MainMenu extends StatefulWidget {
 }
 
 class _MainMenuState extends State<MainMenu> {
+  RemoteConfig remoteConfig;
   Map<String, bool> viewData = <String, bool>{};
   List<SubMenuItem> unseen;
   bool viewDataLoaded;
   bool dialogShowing;
   bool showNewUiDialog;
   List<Announcement> announcements;
+  SurveyItem survey;
   @override
   void initState() {
     super.initState();
@@ -56,18 +60,22 @@ class _MainMenuState extends State<MainMenu> {
   }
 
   _getRemoteConfig() async {
-    final RemoteConfig remoteConfig = await RemoteConfig.instance;
+    if(remoteConfig == null)
+      remoteConfig = await RemoteConfig.instance;
     final Map<String, dynamic> defaults = {
       "news": "[]",
+      "survey":{},
     };
     await remoteConfig.setDefaults(defaults);
-    await remoteConfig.fetch(expiration: const Duration(hours: 1));
+    await remoteConfig.fetch(expiration: const Duration(hours: 12));
     await remoteConfig.activateFetched();
     final String value = remoteConfig.getString('news');
+    final String surval = remoteConfig.getString('survey');
     setState(() {
       announcements = List<Map<String, dynamic>>.from(json.decode(value))
           .map((data) => Announcement.fromMap(data))
           .toList();
+          survey = SurveyItem.fromMap(Map<String, dynamic>.from(json.decode(surval)));
     });
   }
 
@@ -80,11 +88,13 @@ class _MainMenuState extends State<MainMenu> {
   Widget build(BuildContext context) => _buildMenuPage();
 
   ListView _buildMenuPage() {
+    User user = Provider.of<User>(context);
     if (showNewUiDialog && viewDataLoaded) _checkToShowDialog(context);
     return ListView(
       physics: BouncingScrollPhysics(),
       children: <Widget>[
         if (announcements.length > 0) AnnouncementSlider(news: announcements),
+        if(survey != null && user != null && !user.surveys.contains(survey?.id)) SurveyWidget(survey: survey),
         ...pages.map((page) => page is MenuItem
             ? _buildExpandableMenu(page, context)
             : _buildSubMenu(page, context))

@@ -23,6 +23,13 @@ class FirestoreService {
       .snapshots();
   }
 
+  Future<DocumentSnapshot> getDocumentAsync(String path, String id) {
+    return _db
+      .collection(path)
+      .document(id)
+      .get();
+  }
+
   Future<void> updateDocument(String path, String id, Map<String,dynamic> data,{bool merge = true}) {
     return _db
       .collection(path)

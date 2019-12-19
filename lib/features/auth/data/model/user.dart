@@ -4,6 +4,7 @@ class User {
   final String email;
   final String photoUrl;
   final List<String> favorites;
+  final List<String> surveys;
 
   User({
     this.id,
@@ -11,6 +12,7 @@ class User {
     this.email,
     this.photoUrl,
     this.favorites,
+    this.surveys,
   });
 
   User.fromMap(Map<String, dynamic> data, String id)
@@ -18,5 +20,6 @@ class User {
         name = data['name'] ?? '',
         email = data['email'],
         favorites=List<String>.from(data['favorites'] ?? []),
+        surveys=List<String>.from(data['surveys'] ?? []),
         photoUrl = data['photo_url'];
 }
