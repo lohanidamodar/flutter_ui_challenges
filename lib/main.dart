@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/features/auth/presentation/pages/home.dart';
 import 'package:flutter_ui_challenges/features/auth/presentation/pages/profile_page.dart';
 import 'package:flutter_ui_challenges/features/auth/presentation/pages/signup.dart';
+import 'package:flutter_ui_challenges/features/home/presentation/pages/new_home.dart';
 import 'package:provider/provider.dart';
 
 import 'core/presentation/pages/about.dart';
@@ -37,11 +38,14 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Flutter UIs',
             theme: ThemeData(
-                primarySwatch: Colors.deepOrange, accentColor: Colors.indigo),
-            home: user.loginSkipped ? HomePage() : AuthHomePage(),
+              scaffoldBackgroundColor: Colors.grey.shade300,
+              primarySwatch: Colors.red,
+              accentColor: Colors.indigo,
+            ),
+            home: user.loginSkipped ? NewHomePage() : AuthHomePage(),
             routes: {
               "auth_home": (_) => AuthHomePage(),
-              "home": (_) => HomePage(),
+              "challenge_home": (_) => HomePage(),
               "about": (_) => AboutPage(),
               "signup": (_) => SignupPage(),
               "profile": (_) => ProfilePage(),

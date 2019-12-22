@@ -1,6 +1,7 @@
 import 'package:flutter_ui_challenges/core/presentation/pages/home.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/features/home/presentation/pages/new_home.dart';
 import 'package:provider/provider.dart';
 import './splash.dart';
 import './login.dart';
@@ -17,7 +18,7 @@ class AuthHomePage extends StatelessWidget {
             case Status.Authenticating:
               return LoginPage();
             case Status.Authenticated:
-              return HomePage();
+              return NewHomePage();
           }
         },
     );

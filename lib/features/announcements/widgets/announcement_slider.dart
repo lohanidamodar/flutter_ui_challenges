@@ -20,23 +20,25 @@ class AnnouncementSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 140,
-      color: Theme.of(context).primaryColor,
-      child: Card(
-        margin: const EdgeInsets.all(8.0),
-        child: Swiper(
-          itemHeight: 120,
-          itemCount: news.length,
-          itemBuilder: (context, index) {
-            Announcement newsItem = news[index];
-            return AnnouncementListItem(announcement: newsItem);
-          },
-          pagination: SwiperPagination(
-            builder: DotSwiperPaginationBuilder(
-              color: Colors.grey,
-            ),
-          ),
-        ),
+      height: 170,
+      // color: Theme.of(context).primaryColor,
+      child: Swiper(
+        viewportFraction: 0.8,
+        itemHeight: 120,
+        itemCount: news.length,
+        loop: false,
+        itemBuilder: (context, index) {
+          Announcement newsItem = news[index];
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)),
+                margin: const EdgeInsets.all(0),
+                child: AnnouncementListItem(announcement: newsItem)),
+          );
+        },
       ),
     );
   }
