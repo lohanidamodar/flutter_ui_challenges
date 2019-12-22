@@ -13,9 +13,10 @@ class SurveyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).primaryColor,
       child: Card(
-        margin: const EdgeInsets.all(8.0),
+        elevation: 0,
+        margin: const EdgeInsets.all(0),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
