@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
@@ -98,6 +99,8 @@ final List<dynamic> pages = [
           path: AnimationOnePage.path),
       SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
           path: AnimationTwoPage.path),
+      SubMenuItem("Animated Bottom Bar", AnimatedBottomBar(),
+          path: AnimatedBottomBar.path),
     ]),
     MenuItem(title: "Profile", icon: Icons.person, items: [
       SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
