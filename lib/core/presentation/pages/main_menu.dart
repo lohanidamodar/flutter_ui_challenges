@@ -4,13 +4,10 @@
   */
 
 import 'dart:convert';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/favorite_firestore_service.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
-import 'package:flutter_ui_challenges/features/announcements/data/model/announcement.dart';
-import 'package:flutter_ui_challenges/features/announcements/widgets/announcement_slider.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
 import 'package:package_info/package_info.dart';
@@ -25,11 +22,11 @@ class MainMenu extends StatefulWidget {
 
 class _MainMenuState extends State<MainMenu> {
   Map<String, bool> viewData = <String, bool>{};
-  List<SubMenuItem> unseen;
   bool viewDataLoaded;
+  List<SubMenuItem> unseen;
   bool dialogShowing;
   bool showNewUiDialog;
-  List<Announcement> announcements;
+  
   @override
   void initState() {
     super.initState();
@@ -37,9 +34,7 @@ class _MainMenuState extends State<MainMenu> {
     viewDataLoaded = false;
     dialogShowing = false;
     showNewUiDialog = false;
-    announcements = [];
     _getViewData();
-    _getRemoteConfig();
   }
 
   _getViewData() async {
@@ -55,22 +50,6 @@ class _MainMenuState extends State<MainMenu> {
     return;
   }
 
-  _getRemoteConfig() async {
-    final RemoteConfig remoteConfig = await RemoteConfig.instance;
-    final Map<String, dynamic> defaults = {
-      "news": "[]",
-    };
-    await remoteConfig.setDefaults(defaults);
-    await remoteConfig.fetch(expiration: const Duration(hours: 1));
-    await remoteConfig.activateFetched();
-    final String value = remoteConfig.getString('news');
-    setState(() {
-      announcements = List<Map<String, dynamic>>.from(json.decode(value))
-          .map((data) => Announcement.fromMap(data))
-          .toList();
-    });
-  }
-
   _writeViewData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString("page_view_data", json.encode(viewData));
@@ -84,7 +63,6 @@ class _MainMenuState extends State<MainMenu> {
     return ListView(
       physics: BouncingScrollPhysics(),
       children: <Widget>[
-        if (announcements.length > 0) AnnouncementSlider(news: announcements),
         ...pages.map((page) => page is MenuItem
             ? _buildExpandableMenu(page, context)
             : _buildSubMenu(page, context))

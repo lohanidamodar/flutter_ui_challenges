@@ -38,8 +38,9 @@ My effort on replicating various apps UI on flutter.
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
 - [Cake UI](https://www.youtube.com/watch?v=PNL5DxMO2AA) :star2: Popular
-- [Fitness App Dashboard](https://www.youtube.com/watch?v=fAfdT30UYlQ) :star2: Latest
-- [Blog App List UI](https://youtu.be/pIWHFwrhbIo) :star2: Latest
+- [Auth Screens (Login & Signup Popup)](https://www.youtube.com/watch?v=s4up1FeyzVY)
+- [Fitness App Dashboard](https://www.youtube.com/watch?v=fAfdT30UYlQ)
+- [Blog App List UI](https://youtu.be/pIWHFwrhbIo)
 - [Hotel Booking](https://www.youtube.com/watch?v=2G_PquLyiv0)
 - [Ecommerce Details](https://youtu.be/I_JEvLSaJv0)
 - [Minimal Login UI](https://www.youtube.com/watch?v=ZYMu3JYWOeI)
@@ -131,7 +132,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Animations
 
-<img src="screenshots/anim3.gif" height="480px" > <img src="screenshots/animation2.gif" height="480px" > <img src="screenshots/animation1.gif" height="480px" >
+<img src="screenshots/animated_bottom_nav.gif" height="480px" > <img src="screenshots/anim3.gif" height="480px" > <img src="screenshots/animation2.gif" height="480px" > <img src="screenshots/animation1.gif" height="480px" >
 
 ## Ecommerce
 
@@ -162,9 +163,9 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Onboarding Screens
 
-(1 - is inspired from https://www.uplabs.com/posts/smart-wallet-onboarding)
+(Smart walled onboarding is from https://www.uplabs.com/posts/smart-wallet-onboarding)
 
-<img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
+<img height="480px" src="screenshots/intro6.gif"> <img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
 
 ## miscellaneous widgets
 <img height="480px" src="screenshots/image-popup.png"> <img height="480px" src="screenshots/dash3.png"> <img height="480px" src="screenshots/dash2.png"> <img height="480px" src="screenshots/chat2.png"> <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/chatui.png"> <img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif">

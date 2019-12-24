@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
@@ -12,6 +13,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
+import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -98,6 +100,8 @@ final List<dynamic> pages = [
           path: AnimationOnePage.path),
       SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
           path: AnimationTwoPage.path),
+      SubMenuItem("Animated Bottom Bar", AnimatedBottomBar(),
+          path: AnimatedBottomBar.path),
     ]),
     MenuItem(title: "Profile", icon: Icons.person, items: [
       SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
@@ -235,6 +239,7 @@ final List<dynamic> pages = [
           path: FancyBottomBarPage.path),
     ]),
     MenuItem(title: "Onboarding", icon: Icons.info, items: [
+      SubMenuItem("Onboarding 6", IntroSixPage(), path: IntroSixPage.path),
       SubMenuItem("Landing Page", LandingOnePage(), path: LandingOnePage.path),
       SubMenuItem("Onboarding 4", IntroFourPage(), path: IntroFourPage.path),
       SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage(),

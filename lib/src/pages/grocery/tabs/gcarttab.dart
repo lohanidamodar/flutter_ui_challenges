@@ -38,7 +38,7 @@ class GroceryCartTabView extends StatelessWidget {
     }
 
   Widget _buildTotals() {
-    return ClipOval(
+    return ClipPath(
       clipper: OvalTopBorderClipper(),
       child: Container(
             height: 180,

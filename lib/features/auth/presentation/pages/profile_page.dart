@@ -66,7 +66,7 @@ class ProfileInfo extends StatelessWidget {
                 color: Theme.of(context).accentColor,
                 icon: Icon(Icons.exit_to_app),
                 onPressed: () {
-                  Navigator.pushNamedAndRemoveUntil(context, 'home', ModalRoute.withName('home'));
+                  Navigator.pushNamedAndRemoveUntil(context, '/', ModalRoute.withName('/'));
                   Provider.of<UserRepository>(context).signOut();
                 },
               )

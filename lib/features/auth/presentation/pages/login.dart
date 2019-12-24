@@ -73,8 +73,8 @@ class _LoginPageState extends State<LoginPage> {
                           await prefs.setBool('login_skipped', true);
                           Navigator.pushNamedAndRemoveUntil(
                             context,
-                            'home',
-                            ModalRoute.withName('home'),
+                            '/',
+                            ModalRoute.withName('/'),
                           );
                         },
                       ),
