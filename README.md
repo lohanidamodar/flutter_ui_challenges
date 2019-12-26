@@ -132,7 +132,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Animations
 
-<img src="screenshots/animated_bottom_nav.gif" height="480px" > <img src="screenshots/anim3.gif" height="480px" > <img src="screenshots/animation2.gif" height="480px" > <img src="screenshots/animation1.gif" height="480px" >
+<img src="screenshots/anim5.gif" height="480px" > <img src="screenshots/animated_bottom_nav.gif" height="480px" > <img src="screenshots/anim3.gif" height="480px" > <img src="screenshots/animation2.gif" height="480px" > <img src="screenshots/animation1.gif" height="480px" >
 
 ## Ecommerce
 
