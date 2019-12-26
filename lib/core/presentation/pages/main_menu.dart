@@ -27,7 +27,7 @@ class _MainMenuState extends State<MainMenu> {
   List<SubMenuItem> unseen;
   bool dialogShowing;
   bool showNewUiDialog;
-
+  Map<String,bool> _expandedData;
   @override
   void initState() {
     super.initState();
@@ -35,6 +35,7 @@ class _MainMenuState extends State<MainMenu> {
     viewDataLoaded = false;
     dialogShowing = false;
     showNewUiDialog = false;
+    _expandedData={};
     _getViewData();
   }
 
@@ -156,10 +157,15 @@ class _MainMenuState extends State<MainMenu> {
       }
     });
     return BorderedContainer(
-      margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+      margin: EdgeInsets.symmetric(horizontal: _expandedData[page.title] != null && _expandedData[page.title] ? 0 : 8.0, vertical: 4.0),
       padding: const EdgeInsets.all(0),
       elevation: 0,
       child: ExpansionTile(
+        onExpansionChanged: (val) {
+          setState(() {
+            _expandedData[page.title]  = val;
+          });
+        },
         leading: Icon(page.icon),
         title: Text(
           "${page.title} (${page.items.length} layouts)",
