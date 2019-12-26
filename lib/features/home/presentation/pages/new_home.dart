@@ -72,7 +72,13 @@ class _NewHomePageState extends State<NewHomePage>
       appBar: customAppBar(context: context),
       body: ListView(
         children: <Widget>[
-          const SizedBox(height: 16.0),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: CategoryItem(
+              title: "UI Challenges",
+              onPressed: () => Navigator.pushNamed(context, 'challenge_home'),
+            ),
+          ),
           if (announcements.length > 0) ...[
             AnnouncementSlider(news: announcements),
             const SizedBox(height: 16.0),
@@ -81,12 +87,6 @@ class _NewHomePageState extends State<NewHomePage>
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                CategoryItem(
-                  title: "UI Challenges",
-                  onPressed: () =>
-                      Navigator.pushNamed(context, 'challenge_home'),
-                ),
-                const SizedBox(height: 10.0),
                 CategoryItem(
                   icon: Icon(
                     FontAwesomeIcons.user,
