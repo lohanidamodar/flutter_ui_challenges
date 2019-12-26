@@ -10,6 +10,7 @@ import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
 import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:package_info/package_info.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -26,7 +27,7 @@ class _MainMenuState extends State<MainMenu> {
   List<SubMenuItem> unseen;
   bool dialogShowing;
   bool showNewUiDialog;
-  
+
   @override
   void initState() {
     super.initState();
@@ -65,7 +66,13 @@ class _MainMenuState extends State<MainMenu> {
       children: <Widget>[
         ...pages.map((page) => page is MenuItem
             ? _buildExpandableMenu(page, context)
-            : _buildSubMenu(page, context))
+            : BorderedContainer(
+                margin: const EdgeInsets.symmetric(
+                  vertical: 4.0,
+                  horizontal: 8.0,
+                ),
+                padding: const EdgeInsets.all(0),
+                child: _buildSubMenu(page, context)))
       ],
     );
   }
@@ -148,15 +155,20 @@ class _MainMenuState extends State<MainMenu> {
         return;
       }
     });
-    return ExpansionTile(
-      leading: Icon(page.icon),
-      title: Text(
-        "${page.title} (${page.items.length} layouts)",
-        style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: hasChanges ? Colors.deepOrange : Colors.black87),
+    return BorderedContainer(
+      margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+      padding: const EdgeInsets.all(0),
+      elevation: 0,
+      child: ExpansionTile(
+        leading: Icon(page.icon),
+        title: Text(
+          "${page.title} (${page.items.length} layouts)",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: hasChanges ? Colors.deepOrange : Colors.black87),
+        ),
+        children: _buildSubMenus(page.items, context),
       ),
-      children: _buildSubMenus(page.items, context),
     );
   }
 

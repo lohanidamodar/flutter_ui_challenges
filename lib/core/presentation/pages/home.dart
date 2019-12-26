@@ -31,6 +31,7 @@ class _HomePageState extends State<HomePage> {
         accentColor: Colors.indigo,
       ),
       child: Scaffold(
+        backgroundColor: Colors.grey.shade300,
         appBar: AppBar(
           title: Text("UI Challenges"),
         ),
