@@ -20,11 +20,9 @@ class AnnouncementSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 170,
-      // color: Theme.of(context).primaryColor,
+      height: 250,
       child: Swiper(
         viewportFraction: 0.8,
-        itemHeight: 120,
         itemCount: news.length,
         loop: false,
         itemBuilder: (context, index) {

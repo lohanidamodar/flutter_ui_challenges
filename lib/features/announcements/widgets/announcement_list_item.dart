@@ -30,33 +30,25 @@ class AnnouncementListItem extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Stack(
           children: <Widget>[
-            Row(
+            Column(
               children: <Widget>[
                 if (announcement.image != null) ...[
-                  PNetworkImage(
-                    announcement.image,
-                    width: 80.0,
+                  Expanded(
+                    child: PNetworkImage(
+                      announcement.image,
+                    ),
                   ),
-                  const SizedBox(width: 10.0),
                 ],
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        announcement.title,
-                        style: boldText,
-                      ),
-                      const SizedBox(height: 5.0),
-                    ],
-                  ),
+                const SizedBox(height: 10.0),
+                Text(
+                  announcement.title,
+                  style: boldText,
                 ),
+                const SizedBox(height: 10.0),
               ],
             ),
             Align(
-                alignment: Alignment.bottomRight,
-                child: Icon(Icons.open_in_new)),
+                alignment: Alignment.topRight, child: Icon(Icons.open_in_new)),
           ],
         ),
       ),
