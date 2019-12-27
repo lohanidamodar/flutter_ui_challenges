@@ -9,7 +9,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 
 class SettingsTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/settings/settings1.dart";
+  static final String path = "lib/src/pages/settings/settings2.dart";
   final TextStyle whiteText = TextStyle(
     color: Colors.white,
   );
