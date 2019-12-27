@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DashboardTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/dash2.dart";
+  static final String path = "lib/src/pages/dashboard/dash2.dart";
   final TextStyle whiteText = TextStyle(color: Colors.white);
   @override
   Widget build(BuildContext context) {

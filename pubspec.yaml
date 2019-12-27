@@ -75,6 +75,7 @@ flutter:
     - lib/src/pages/bike/
     - lib/src/pages/blog/
     - lib/src/pages/dialogs/
+    - lib/src/pages/dashboard/
     - lib/src/pages/ecommerce/
     - lib/src/pages/food/
     - lib/src/pages/grocery/

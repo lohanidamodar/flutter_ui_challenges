@@ -10,7 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class DashboardOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/dash1.dart";
+  static final String path = "lib/src/pages/dashboard/dash1.dart";
 
   final String image = images[0];
   @override

@@ -18,9 +18,9 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash3.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/dash1.dart';
+import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
+import 'package:flutter_ui_challenges/src/pages/dashboard/dash2.dart';
+import 'package:flutter_ui_challenges/src/pages/dashboard/dash1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
 import 'package:flutter_ui_challenges/src/pages/lists/list2.dart';
@@ -176,6 +176,14 @@ final List<dynamic> pages = [
       SubMenuItem("Article One", ArticleOnePage(), path: ArticleOnePage.path),
       SubMenuItem("Article Two", ArticleTwoPage(), path: ArticleTwoPage.path),
     ]),
+    MenuItem(title: "Dashboard",icon: Icons.dashboard,items: [
+      SubMenuItem("Dashboard One", DashboardOnePage(),
+          path: DashboardOnePage.path),
+      SubMenuItem("Dashboard Two", DashboardTwoPage(),
+          path: DashboardTwoPage.path),
+      SubMenuItem("Dashboard Three", DashboardThreePage(),
+          path: DashboardThreePage.path),
+    ]),
     MenuItem(title: "Food", icon: Icons.fastfood, items: [
       SubMenuItem("Fruits Add to Cart", AvocadoPage(), path: AvocadoPage.path),
       SubMenuItem("Cake Details", CakePage(), path: CakePage.path),
@@ -256,13 +264,7 @@ final List<dynamic> pages = [
           path: ImagePopupPage.path),
       SubMenuItem("Event Invitation", InvitationPageOne(),
           path: InvitationPageOne.path),
-      SubMenuItem("Dashboard Three", DashboardThreePage(),
-          path: DashboardThreePage.path),
       SubMenuItem("Chat Messaages", ChatTwoPage(), path: ChatTwoPage.path),
-      SubMenuItem("Dashboard One", DashboardOnePage(),
-          path: DashboardOnePage.path),
-      SubMenuItem("Dashboard Two", DashboardTwoPage(),
-          path: DashboardTwoPage.path),
       SubMenuItem("Form Elements", FormElementPage(),
           path: FormElementPage.path),
       SubMenuItem("Sliders", SlidersPage(), path: SlidersPage.path),

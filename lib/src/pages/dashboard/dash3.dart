@@ -8,7 +8,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class DashboardThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/dash3.dart";
+  static final String path = "lib/src/pages/dashboard/dash3.dart";
   final String avatar = avatars[0];
   final TextStyle whiteText = TextStyle(color: Colors.white);
   @override
