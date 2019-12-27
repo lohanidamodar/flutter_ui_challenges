@@ -20,6 +20,8 @@ My effort on replicating various apps UI on flutter.
 - **[Animation Examples UI](#animations)**
 - **[Ecommerce UIs](#ecommerce)**
 - **[Login/signup UIs](#user-flow-screens)**
+- **[Settings UIs](#settings-uis)**
+- **[Dashboard UIs](#dashboard-uis)**
 - **[Motorbike App UIs](#motorbike-app-uis)**
 - **[Profile UIs](#profile-screens)**
 - **[Invitation App UIs](#inviation-app-ui)**
@@ -143,8 +145,10 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/auth3-1.png"> <img height="480px" src="screenshots/auth3-2.png"> <img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
 
 ## Settings UIs
+<img height="480px" src="screenshots/settings1.png"> <img height="480px" src="screenshots/settings2.png">
 
-<img height="480px" src="screenshots/settings1.png">
+## Dashboard UIs
+<img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/dash2.png">  <img height="480px" src="screenshots/dash3.png">
 
 ## Motorbike App UIs
 <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
