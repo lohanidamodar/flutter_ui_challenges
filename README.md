@@ -142,6 +142,10 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 <img height="480px" src="screenshots/auth3-1.png"> <img height="480px" src="screenshots/auth3-2.png"> <img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
 
+## Settings UIs
+
+<img height="480px" src="screenshots/settings1.png">
+
 ## Motorbike App UIs
 <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
 

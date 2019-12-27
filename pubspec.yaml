@@ -88,6 +88,7 @@ flutter:
     - lib/src/pages/profile/
     - lib/src/pages/quiz_app/
     - lib/src/pages/todo/
+    - lib/src/pages/settings/
     - lib/src/pages/travel/
     - lib/src/pages/invitation/
   #  - images/a_dot_burr.jpeg

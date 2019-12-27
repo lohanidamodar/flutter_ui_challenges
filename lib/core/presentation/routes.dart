@@ -15,6 +15,7 @@ import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
+import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -133,6 +134,10 @@ final List<dynamic> pages = [
       SubMenuItem("Login Seven", LoginSevenPage(), path: LoginSevenPage.path),
       SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
       SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
+    ]),
+    MenuItem(title: "Settings",icon: Icons.dashboard,items: [
+      SubMenuItem("Settings One", SettingsOnePage(),
+          path: SettingsOnePage.path),
     ]),
     MenuItem(title: "Motorbike App", icon: Icons.list, items: [
       SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
