@@ -73,8 +73,8 @@ class _NewHomePageState extends State<NewHomePage>
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: CategoryItem(
+            padding: const EdgeInsets.fromLTRB(16.0,0,16.0,16.0),
+            child: FeaturedCategoryItem(
               title: "UI Challenges",
               onPressed: () => Navigator.pushNamed(context, 'challenge_home'),
             ),
@@ -159,6 +159,52 @@ class CategoryItem extends StatelessWidget {
         ],
       ),
       color: Colors.white,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+      onPressed: onPressed,
+    );
+  }
+}
+class FeaturedCategoryItem extends StatelessWidget {
+  final TextStyle buttonText = boldText.copyWith(
+    fontSize: 16.0,
+  );
+  final Function onPressed;
+  final String title;
+  final Widget icon;
+
+  FeaturedCategoryItem({
+    Key key,
+    this.onPressed,
+    this.title,
+    this.icon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+      colorBrightness: Brightness.dark,
+      highlightColor: Theme.of(context).primaryColor,
+      highlightElevation: 0,
+      elevation: 0,
+      padding: const EdgeInsets.symmetric(horizontal: 24.0,vertical: 32.0),
+      child: Row(
+        children: <Widget>[
+          if (icon != null) ...[
+            icon,
+            const SizedBox(width: 10.0),
+          ],
+          Text(
+            title,
+            style: buttonText.copyWith(
+              fontSize: 24.0,
+              fontWeight: FontWeight.w300
+            ),
+          ),
+          Spacer(),
+          Icon(Icons.keyboard_arrow_right),
+        ],
+      ),
+      color: Theme.of(context).primaryColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       onPressed: onPressed,
     );

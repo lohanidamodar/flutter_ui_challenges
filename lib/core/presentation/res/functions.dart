@@ -21,11 +21,6 @@ PreferredSize customAppBar({@required BuildContext context}) {
         ),
         title: Padding(
           padding: const EdgeInsets.only(top: 35.0, left: 16.0,),
-          child: Text("Flutter UIs",
-              style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0)),
         ),
       ),
     ),
