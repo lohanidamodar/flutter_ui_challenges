@@ -158,31 +158,31 @@ class ChatUi extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/1.jpg',
+                        personImagePath: avatars[0],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/backdrop.png',
+                        personImagePath: avatars[1],
                         actColor: Colors.yellowAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/avatar.png',
+                        personImagePath: avatars[2],
                         actColor: Colors.redAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/5.jpg',
+                        personImagePath: avatars[3],
                         actColor: Colors.yellowAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/6.jpg',
+                        personImagePath: avatars[4],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/7.jpg',
+                        personImagePath: avatars[5],
                         actColor: Colors.greenAccent,
                       ),
                       OnlinePersonAction(
-                        personImagePath: 'assets/img/1.jpg',
+                        personImagePath: avatars[6],
                         actColor: Colors.greenAccent,
                       ),
                     ],
@@ -258,7 +258,7 @@ class OnlinePersonAction extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50.0),
                 image: DecorationImage(
-                  image: AssetImage(personImagePath),
+                  image: CachedNetworkImageProvider(personImagePath),
                   fit: BoxFit.cover
                 ),
               ),
