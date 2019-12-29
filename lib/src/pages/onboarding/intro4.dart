@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -6,6 +7,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
+import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
@@ -25,8 +27,6 @@ class _IntroFourPageState extends State<IntroFourPage> {
     "Nulla facilisi. \nFusce non tempus risus.\n Sed ultrices scelerisque sem,"
   ];
 
-  final String bgImage = "assets/img/photographer.jpg";
-
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -34,7 +34,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
         children: <Widget>[
           Container(
             alignment: Alignment.center,
-            child: Image.asset(bgImage, fit: BoxFit.contain,),
+            child: PNetworkImage(photographer, fit: BoxFit.contain,),
           ),
           Column(
             children: <Widget>[
@@ -108,7 +108,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.0),
         image: DecorationImage(
-          image: AssetImage(icon),
+          image: CachedNetworkImageProvider(icon),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(Colors.black38, BlendMode.multiply)
         ),
