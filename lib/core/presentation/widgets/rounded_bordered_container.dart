@@ -10,6 +10,7 @@ class RoundedContainer extends StatelessWidget {
     this.color = Colors.white,
     this.padding = const EdgeInsets.all(16.0),
     this.margin,
+    this.borderRadius,
   }) : super(key: key);
   final Widget child;
   final double width;
@@ -17,6 +18,7 @@ class RoundedContainer extends StatelessWidget {
   final Color color;
   final EdgeInsets padding;
   final EdgeInsets margin;
+  final BorderRadius borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class RoundedContainer extends StatelessWidget {
       margin: margin,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: borderRadius ?? BorderRadius.circular(20.0),
         border: Border.all(
           color: borderColor,
           width: 0.5,
