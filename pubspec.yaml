@@ -36,7 +36,7 @@ dependencies:
   provider: ^3.2.0
   google_sign_in: ^4.1.1
   cloud_firestore: ^0.13.0+1
-  cached_network_image: ^2.0.0-rc
+  cached_network_image: ^2.0.0
   package_info: ^0.4.0+13
   firebase_remote_config: ^0.3.0+1
   firebase_core: ^0.4.3+1
