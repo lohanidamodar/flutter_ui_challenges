@@ -6,6 +6,7 @@ import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
@@ -159,6 +160,8 @@ final List<dynamic> pages = [
       SubMenuItem("Details Page", InvitationPageOne(), path: InvitationPageOne.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
+      SubMenuItem("Checkout One", CheckoutOnePage(),
+          path: CheckoutOnePage.path),
       SubMenuItem("Ecommerce One", EcommerceOnePage(),
           path: EcommerceOnePage.path),
       SubMenuItem("Ecommerce Two", EcommerceTwoPage(),
