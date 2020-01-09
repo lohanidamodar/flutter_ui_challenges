@@ -78,7 +78,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
             textColor: Colors.grey.shade700,
             child: Text("Skip"),
             onPressed: (){
-              Navigator.of(context).pushReplacementNamed('home');
+              Navigator.of(context).pushReplacementNamed('challenge_home');
             },
           ),
           IconButton(
@@ -87,7 +87,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                Navigator.of(context).pushReplacementNamed('home');
+                Navigator.of(context).pushReplacementNamed('challenge_home');
               }
             },
           )
