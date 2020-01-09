@@ -71,6 +71,7 @@ class _NewHomePageState extends State<NewHomePage>
   Widget build(BuildContext context) {
     User user = Provider.of<User>(context);
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: customAppBar(context: context),
       body: ListView(
         children: <Widget>[
