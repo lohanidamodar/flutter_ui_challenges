@@ -13,6 +13,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/gallery1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
@@ -275,7 +276,8 @@ final List<dynamic> pages = [
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscellaneous", items: [
-
+      SubMenuItem("Gallery One", GalleryPageOne(),
+          path: GalleryPageOne.path),
       SubMenuItem("Music Player Two", MusicPlayerTwoPage(),
           path: MusicPlayerTwoPage.path),
       SubMenuItem("Image Popup", ImagePopupPage(),
