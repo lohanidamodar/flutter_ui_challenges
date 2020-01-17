@@ -13,6 +13,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/crop.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/gallery1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
@@ -296,7 +297,8 @@ final List<dynamic> pages = [
       SubMenuItem('Bottomsheet', BottomSheetAwesome(),
           path: BottomSheetAwesome.path),
           SubMenuItem('Music player', MusicPlayer(),
-          path: MusicPlayer.path)
+          path: MusicPlayer.path),
+      SubMenuItem('Image/Widget Crop', CropPage(), path: CropPage.path, icon: Icons.crop),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];
