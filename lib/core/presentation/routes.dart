@@ -277,6 +277,7 @@ final List<dynamic> pages = [
       SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
     ]),
     MenuItem(title: "Miscellaneous", items: [
+      SubMenuItem('Image/Widget Crop', CropPage(), path: CropPage.path, icon: Icons.crop),
       SubMenuItem("Gallery One", GalleryPageOne(),
           path: GalleryPageOne.path),
       SubMenuItem("Music Player Two", MusicPlayerTwoPage(),
@@ -298,7 +299,6 @@ final List<dynamic> pages = [
           path: BottomSheetAwesome.path),
           SubMenuItem('Music player', MusicPlayer(),
           path: MusicPlayer.path),
-      SubMenuItem('Image/Widget Crop', CropPage(), path: CropPage.path, icon: Icons.crop),
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path)
   ];

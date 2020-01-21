@@ -51,7 +51,7 @@ class _NewHomePageState extends State<NewHomePage>
     if (remoteConfig == null) remoteConfig = await RemoteConfig.instance;
     final Map<String, dynamic> defaults = {
       "news": "[]",
-      "survey": {},
+      "survey": "",
     };
     await remoteConfig.setDefaults(defaults);
     await remoteConfig.fetch(expiration: const Duration(hours: 12));
@@ -62,6 +62,7 @@ class _NewHomePageState extends State<NewHomePage>
       announcements = List<Map<String, dynamic>>.from(json.decode(value))
           .map((data) => Announcement.fromMap(data))
           .toList();
+      if(surval.isNotEmpty)
       survey =
           SurveyItem.fromMap(Map<String, dynamic>.from(json.decode(surval)));
     });
