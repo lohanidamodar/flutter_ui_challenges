@@ -6,7 +6,9 @@ import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
@@ -163,6 +165,10 @@ final List<dynamic> pages = [
       SubMenuItem("Details Page", InvitationPageOne(), path: InvitationPageOne.path),
     ]),
     MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
+      SubMenuItem("Cart Two", CartTwoPage(),
+          path: CartTwoPage.path),
+      SubMenuItem("Ecommerce Four", EcommerceFourPage(),
+          path: EcommerceFourPage.path),
       SubMenuItem("Checkout One", CheckoutOnePage(),
           path: CheckoutOnePage.path),
       SubMenuItem("Ecommerce One", EcommerceOnePage(),
@@ -173,8 +179,6 @@ final List<dynamic> pages = [
           path: SliverAppbarPage.path),
       SubMenuItem("Ecommerce Grocery", EcommerceFivePage(),
           path: EcommerceFivePage.path),
-      // SubMenuItem("Ecommerce Four", EcommerceFourPage(),
-      //     path: EcommerceFourPage.path),
       SubMenuItem("Confirm Order", ConfirmOrderPage(),
           path: ConfirmOrderPage.path),
       SubMenuItem("Ecommerce Cart One", CartOnePage(), path: CartOnePage.path),

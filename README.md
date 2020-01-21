@@ -138,7 +138,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Ecommerce
 
-<img height="480px" src="screenshots/checkout1.png"> <img height="480px" src="screenshots/ecommerce_details3.png"> <img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
+<img height="480px" src="screenshots/cart2.png"> <img height="480px" src="screenshots/ecommerce4.png"> <img height="480px" src="screenshots/checkout1.png"> <img height="480px" src="screenshots/ecommerce_details3.png"> <img height="480px" src="screenshots/home_page1.png"> <img height="480px" src="screenshots/confirm_order1.png"> <img height="480px" src="screenshots/cart1.png"> <img height="480px" src="screenshots/ecommerce1.png"> <img height="480px" src="screenshots/ecommerce2.png"> <img height="480px" src="screenshots/ecommerce_detail1.png"> <img height="480px" src="screenshots/ecommerce_detail2.png">
 
 ## User Flow Screens
 
