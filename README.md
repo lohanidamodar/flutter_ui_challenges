@@ -36,6 +36,7 @@ My effort on replicating various apps UI on flutter.
 - **[Hotel App UIs](#hotel-app)**
 - **[Travel App UIs](#travel-app)**
 - **[Grocery App UI Kit](#grocery-app-ui-kit)**
+- **[Bank App Clone](#bank-app-clone)**
 
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
@@ -214,3 +215,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 - Custom widgets for list items, category items etc.
 
 <img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> <img height="480px" src="screenshots/grocery_cart.png"> <img height="480px" src="screenshots/grocery_wishlist.png"> <img height="480px" src="screenshots/grocery_options.png">
+
+## Bank App Clone
+Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
+<img height="480px" src="screenshots/nic1.png"> <img height="480px" src="screenshots/nic2.png"> <img height="480px" src="screenshots/nic3.png">
