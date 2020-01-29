@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/src/furniture_app/furniture_app.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
@@ -307,6 +308,7 @@ final List<dynamic> pages = [
     ]),
     SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path),
     SubMenuItem("Bank App Clone", NicAsiaApp(), path: NicAsiaApp.path),
+    SubMenuItem("Furniture App", FurnitureApp(), path: FurnitureApp.path),
   ];
 
   SubMenuItem getItemForKey(String key) {

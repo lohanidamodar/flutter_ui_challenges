@@ -17,6 +17,7 @@ My effort on replicating various apps UI on flutter.
 - **[My flutter plugins](#my-flutter-plugins)**
 - **[Complete App Examples](#complete-app-examples)**
 - **[Code Examples](#code-examples)**
+- **[Contributors](#contributors)**
 - **[Animation Examples UI](#animations)**
 - **[Ecommerce UIs](#ecommerce)**
 - **[Login/signup UIs](#user-flow-screens)**
@@ -37,6 +38,7 @@ My effort on replicating various apps UI on flutter.
 - **[Travel App UIs](#travel-app)**
 - **[Grocery App UI Kit](#grocery-app-ui-kit)**
 - **[Bank App Clone](#bank-app-clone)**
+- **[Furniture App UI](#furniture-app-ui)**
 
 ## Speed codes [Youtube](https://youtube.com/c/reactbits)
 
@@ -121,8 +123,10 @@ These are some of my flutter plugins, that might help you in your flutter develo
 ## Contributors
 
 1. [Damodar Lohani](https://github.com/lohanidamodar)
-2. [Siddhartha Joshi](https://github.com/cimplesid)
-3. [Sudip Thapa](https://github.com/sudeepthapa)
+2. [Sudip Thapa](https://github.com/sudeepthapa)
+3. [Shyam Adhikari (UI/UX Designer)](http://uilearner.com)
+4.  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
+5. [Siddhartha Joshi](https://github.com/cimplesid)
 
 ## Packages Used
 
@@ -219,3 +223,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Bank App Clone
 Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 <img height="480px" src="screenshots/nic1.png"> <img height="480px" src="screenshots/nic2.png"> <img height="480px" src="screenshots/nic3.png">
+
+## Furniture App UI 
+Furniture App by  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
+<img height="480px" src="screenshots/f1.png"> <img height="480px" src="screenshots/f2.gif"> 
