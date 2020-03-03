@@ -7,6 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
+import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
@@ -192,6 +193,8 @@ final List<dynamic> pages = [
           path: EcommerceDetailThreePage.path),
     ]),
     MenuItem(title: "Blog", icon: Icons.pages, items: [
+      SubMenuItem("News Home", NewsHomeOnePage(),
+          path: NewsHomeOnePage.path),
       SubMenuItem("Sports News Home", SportsNewsOnePage(),
           path: SportsNewsOnePage.path),
       SubMenuItem("Blog Home One", BlogHomeOnePage(),
