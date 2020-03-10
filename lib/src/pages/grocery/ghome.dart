@@ -1,6 +1,6 @@
 /**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
+ * Author: James Rosier
+ * profile: https://github.com/IamMYownPERSON
   */
   
 import 'package:flutter/material.dart';
