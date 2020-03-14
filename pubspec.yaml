@@ -96,6 +96,7 @@ flutter:
     - lib/src/nic_asia_clone/
     - lib/src/furniture_app/
     - assets/nicasiaassets/
+    - lib/src/khalti_clone/
   fonts:
     - family: icomoon
       fonts:

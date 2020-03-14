@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/src/furniture_app/furniture_app.dart';
+import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
@@ -280,6 +281,16 @@ final List<dynamic> pages = [
     SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
     SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
   ]),
+  MenuItem(
+      title: "UI Kits (Clones)",
+      items: [
+        SubMenuItem('Khalti App', KhaltiApp(), path: KhaltiApp.path),
+        SubMenuItem("Grocery UI Kit", GroceryHomePage(),
+            path: GroceryHomePage.path),
+        SubMenuItem("Bank App Clone", NicAsiaApp(), path: NicAsiaApp.path),
+        SubMenuItem("Furniture App", FurnitureApp(), path: FurnitureApp.path),
+      ],
+      icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
     SubMenuItem('Image/Widget Crop', CropPage(),
         path: CropPage.path, icon: Icons.crop),
@@ -301,9 +312,6 @@ final List<dynamic> pages = [
         path: BottomSheetAwesome.path),
     SubMenuItem('Music player', MusicPlayer(), path: MusicPlayer.path),
   ]),
-  SubMenuItem("Grocery UI Kit", GroceryHomePage(), path: GroceryHomePage.path),
-  SubMenuItem("Bank App Clone", NicAsiaApp(), path: NicAsiaApp.path),
-  SubMenuItem("Furniture App", FurnitureApp(), path: FurnitureApp.path),
 ];
 
 SubMenuItem getItemForKey(String key) {
