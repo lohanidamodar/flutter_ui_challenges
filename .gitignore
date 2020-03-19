@@ -83,3 +83,7 @@ build/
 android/**/.project
 android/**/.classpath
 android/**/.settings
+
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugin_registrant.h
+windows/flutter/GeneratedPlugins.props
