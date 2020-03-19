@@ -79,3 +79,7 @@ build/
 **/google-services.json
 **/GoogleService-Info.plist
 .flutter-plugins-dependencies
+
+android/**/.project
+android/**/.classpath
+android/**/.settings
