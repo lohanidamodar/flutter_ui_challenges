@@ -5,15 +5,15 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/data/favorite_firestore_service.dart';
+// import 'package:flutter_ui_challenges/core/data/favorite_firestore_service.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
-import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
-import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
+// import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
+// import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:package_info/package_info.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 import '../routes.dart';
 
 class MainMenu extends StatefulWidget {
@@ -36,26 +36,26 @@ class _MainMenuState extends State<MainMenu> {
     dialogShowing = false;
     showNewUiDialog = false;
     _expandedData={};
-    _getViewData();
+    // _getViewData();
   }
 
-  _getViewData() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      viewData = Map<String, bool>.from(json.decode(
-          prefs.getString('page_view_data') != null
-              ? prefs.getString('page_view_data')
-              : "{}"));
-      viewDataLoaded = true;
-      showNewUiDialog = prefs.getBool('show_new_uis_dialog') ?? true;
-    });
-    return;
-  }
+  // _getViewData() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   setState(() {
+  //     viewData = Map<String, bool>.from(json.decode(
+  //         prefs.getString('page_view_data') != null
+  //             ? prefs.getString('page_view_data')
+  //             : "{}"));
+  //     viewDataLoaded = true;
+  //     showNewUiDialog = prefs.getBool('show_new_uis_dialog') ?? true;
+  //   });
+  //   return;
+  // }
 
-  _writeViewData() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setString("page_view_data", json.encode(viewData));
-  }
+  // _writeViewData() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   await prefs.setString("page_view_data", json.encode(viewData));
+  // }
 
   @override
   Widget build(BuildContext context) => _buildMenuPage();
@@ -133,8 +133,8 @@ class _MainMenuState extends State<MainMenu> {
                   textColor: Colors.pink,
                   child: Text("Close & Never Display Again"),
                   onPressed: () async {
-                    (await SharedPreferences.getInstance())
-                        .setBool('show_new_uis_dialog', false);
+                    // (await SharedPreferences.getInstance())
+                    //     .setBool('show_new_uis_dialog', false);
                     Navigator.pop(context);
                   },
                 ),
@@ -195,18 +195,18 @@ class _MainMenuState extends State<MainMenu> {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            if (Provider.of<UserRepository>(context).user != null)
-              IconButton(
-                icon: Icon(
-                  isFavorited(context, item.title)
-                      ? Icons.favorite
-                      : Icons.favorite_border,
-                  color: isFavorited(context, item.title)
-                      ? Colors.red
-                      : Colors.black,
-                ),
-                onPressed: () => _addToFavorite(context, item.title),
-              ),
+            // if (Provider.of<UserRepository>(context).user != null)
+            //   IconButton(
+            //     icon: Icon(
+            //       isFavorited(context, item.title)
+            //           ? Icons.favorite
+            //           : Icons.favorite_border,
+            //       color: isFavorited(context, item.title)
+            //           ? Colors.red
+            //           : Colors.black,
+            //     ),
+            //     onPressed: () => _addToFavorite(context, item.title),
+            //   ),
             IconButton(
               icon: Icon(Icons.code),
               onPressed: () => _openPage(context, item, OpenMode.CODE),
@@ -225,27 +225,27 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-  void _addToFavorite(BuildContext context, String key) {
-    User user = Provider.of<User>(context);
-    if (user != null) {
-      if (isFavorited(context, key)) {
-        FavoriteFirestoreService().removeFromFavorite(user.id, key);
-      } else {
-        FavoriteFirestoreService().addToFavorite(user.id, key);
-      }
-    }
-  }
+  // void _addToFavorite(BuildContext context, String key) {
+  //   User user = Provider.of<User>(context);
+  //   if (user != null) {
+  //     if (isFavorited(context, key)) {
+  //       FavoriteFirestoreService().removeFromFavorite(user.id, key);
+  //     } else {
+  //       FavoriteFirestoreService().addToFavorite(user.id, key);
+  //     }
+  //   }
+  // }
 
-  bool isFavorited(BuildContext context, String key) {
-    return Provider.of<User>(context) != null &&
-        Provider.of<User>(context).favorites.contains(key);
-  }
+  // bool isFavorited(BuildContext context, String key) {
+  //   return Provider.of<User>(context) != null &&
+  //       Provider.of<User>(context).favorites.contains(key);
+  // }
 
   void _openPage(BuildContext context, SubMenuItem item, OpenMode mode) {
     setState(() {
       viewData[item.title] = true;
     });
-    _writeViewData();
+    // _writeViewData();
 
     Navigator.push(
         context,

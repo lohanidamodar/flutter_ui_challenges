@@ -84,6 +84,7 @@ android/**/.project
 android/**/.classpath
 android/**/.settings
 
+**/generated_plugin_registrant.dart
 **/generated_plugin_registrant.cc
 **/generated_plugin_registrant.h
 **/GeneratedPlugins.props
