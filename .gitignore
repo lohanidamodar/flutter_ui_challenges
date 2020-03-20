@@ -84,6 +84,8 @@ android/**/.project
 android/**/.classpath
 android/**/.settings
 
-windows/flutter/generated_plugin_registrant.cc
-windows/flutter/generated_plugin_registrant.h
-windows/flutter/GeneratedPlugins.props
+**/generated_plugin_registrant.cc
+**/generated_plugin_registrant.h
+**/GeneratedPlugins.props
+**/generated_plugins.mk
+**/GeneratedPluginRegistrant.swift
