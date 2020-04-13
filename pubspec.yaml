@@ -21,7 +21,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_swiper: ^1.1.6
   flutter_custom_clippers: ^1.1.0
-  intro_views_flutter: ^2.8.0
+  intro_views_flutter: ^2.8.1
   wave: ^0.0.8
   font_awesome_flutter: ^8.5.0
   url_launcher: ^5.4.1
