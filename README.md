@@ -2,7 +2,7 @@
 
 My effort on replicating various apps UI on flutter.
 
-[<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
+[<img src="https://raw.githubusercontent.com/lohanidamodar/flutter_ui_challenges/master/screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="https://raw.githubusercontent.com/lohanidamodar/flutter_ui_challenges/master/screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
 ## Building and running the code [ **Updated** ]
 
