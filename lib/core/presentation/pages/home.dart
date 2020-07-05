@@ -4,9 +4,6 @@
   */
 
 import 'package:flutter/material.dart';
-// import 'package:flutter_ui_challenges/core/presentation/pages/favorites.dart';
-// import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
-import 'package:provider/provider.dart';
 
 import 'main_menu.dart';
 

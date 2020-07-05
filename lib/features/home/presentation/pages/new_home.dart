@@ -1,19 +1,10 @@
-import 'dart:convert';
-// import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_ui_challenges/core/data/models/survey.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/functions.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/text_styles.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
-// import 'package:flutter_ui_challenges/core/presentation/widgets/survey_widget.dart';
-// import 'package:flutter_ui_challenges/features/announcements/data/model/announcement.dart';
-// import 'package:flutter_ui_challenges/features/announcements/widgets/announcement_slider.dart';
-// import 'package:flutter_ui_challenges/features/auth/data/model/user.dart';
-// import 'package:flutter_ui_challenges/features/auth/data/model/user_repository.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 
 class NewHomePage extends StatefulWidget {
   @override
