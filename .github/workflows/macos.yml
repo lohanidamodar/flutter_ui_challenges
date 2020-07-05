@@ -1,0 +1,61 @@
+name: MacOS-CI
+
+on:
+  push:
+    branches:
+      - isomorphic
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Branch name
+        id: branch_name
+        run: |
+          echo ::set-output name=SOURCE_NAME::${GITHUB_REF#refs/*/}
+          echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
+          echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: "8.x"
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "dev"
+
+      - name: Change flutter channel to master, enable macos support
+        run: |
+          flutter channel master
+          flutter upgrade
+          flutter config --enable-macos-desktop
+          flutter pub get
+
+      - name: Build macos, apk, ios(simulator)
+        run: |
+          flutter build macos
+          flutter build apk
+          flutter build ios --debug --no-codesign --simulator
+
+      - name: Debug
+        run: |
+          sudo npm install tree-node-cli -g
+          treee build
+
+      - name: Prepare release files
+        run: |
+          cp -r build/macos/Build/Products/Release/flutter_ui_challenges.app flutter_ui_challenges-macos-${{ steps.branch_name.outputs.SOURCE_NAME }}.app
+          cp -r build/ios/Debug-iphonesimulator/Runner.app flutter_ui_challenges-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.app
+          zip flutter_ui_challenges-macos-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r flutter_ui_challenges-macos-${{ steps.branch_name.outputs.SOURCE_NAME }}.app
+          zip flutter_ui_challenges-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r flutter_ui_challenges-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.app
+          cp build/app/outputs/apk/release/app-release.apk flutter_ui_challenges-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
+
+      - uses: xresloader/upload-to-github-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: flutter_ui_challenges-macos-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;flutter_ui_challenges-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;flutter_ui_challenges-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
+          tags: true
+          draft: false

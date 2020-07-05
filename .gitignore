@@ -79,3 +79,14 @@ build/
 **/google-services.json
 **/GoogleService-Info.plist
 .flutter-plugins-dependencies
+
+android/**/.project
+android/**/.classpath
+android/**/.settings
+
+**/generated_plugin_registrant.dart
+**/generated_plugin_registrant.cc
+**/generated_plugin_registrant.h
+**/GeneratedPlugins.props
+**/generated_plugins.mk
+**/GeneratedPluginRegistrant.swift
