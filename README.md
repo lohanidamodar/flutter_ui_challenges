@@ -4,12 +4,9 @@ My effort on replicating various apps UI on flutter.
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
-## Building and running the code
+## Building and running the code [ **Updated** ]
 
-- From now on, you need to create your own firebase project and add the config files in order to build the project
-
-    In order to build the project before firebase services were added please checkout the branch [without-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/without-firebase)
-
+- Thank you all for your tremendous support. With latest update, I have removed all firebase dependency, and project now runs on web and desktop as well. Please use flutter master channel to run and build. If you want previous version with firebase please checkout [with-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/with-firebase) branch.
 
 ### Table of contents
 
