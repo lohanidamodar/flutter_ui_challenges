@@ -16,7 +16,7 @@ class ProfileImage extends StatelessWidget {
         shape: BoxShape.circle,
         color: Colors.red,
         image: DecorationImage(
-          image: CachedNetworkImageProvider(devMausam),
+          image: NetworkImage(devMausam),
           fit: BoxFit.contain,
         ),
         border: Border.all(

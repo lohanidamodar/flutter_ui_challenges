@@ -36,11 +36,10 @@ class CartTwoPage extends StatelessWidget {
           Container(
             width: 130,
             decoration: BoxDecoration(
-              image: DecorationImage(
-                image: CachedNetworkImageProvider(images[1]),
-                fit: BoxFit.cover,
-              )
-            ),
+                image: DecorationImage(
+              image: NetworkImage(images[1]),
+              fit: BoxFit.cover,
+            )),
           ),
           Flexible(
             child: Padding(

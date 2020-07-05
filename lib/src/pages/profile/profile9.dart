@@ -39,8 +39,7 @@ class ProfileNinePage extends StatelessWidget {
               height: 380,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: CachedNetworkImageProvider(pancake),
-                    fit: BoxFit.cover),
+                    image: NetworkImage(pancake), fit: BoxFit.cover),
               ),
               foregroundDecoration:
                   BoxDecoration(color: Colors.pink.withOpacity(0.8)),
@@ -154,7 +153,10 @@ class ProfileNinePage extends StatelessWidget {
                             i,
                             Transform.translate(
                               offset: Offset(i * 30.0, 0),
-                              child: SizedBox(height: 60,width: 60,child: _buildAvatar(e, radius: 30)),
+                              child: SizedBox(
+                                  height: 60,
+                                  width: 60,
+                                  child: _buildAvatar(e, radius: 30)),
                             ),
                           ),
                         )
@@ -181,7 +183,7 @@ class ProfileNinePage extends StatelessWidget {
       radius: radius,
       child: CircleAvatar(
         radius: radius - 2,
-        backgroundImage: CachedNetworkImageProvider(image),
+        backgroundImage: NetworkImage(image),
       ),
     );
   }
@@ -223,8 +225,7 @@ class ProfileNinePage extends StatelessWidget {
             margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: CachedNetworkImageProvider(images[0]),
-                    fit: BoxFit.cover),
+                    image: NetworkImage(images[0]), fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(10.0)),
             foregroundDecoration: BoxDecoration(
                 color: Colors.blue.withOpacity(0.3),

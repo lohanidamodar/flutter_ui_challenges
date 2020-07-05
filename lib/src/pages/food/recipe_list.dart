@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -29,100 +29,100 @@ class RecipeListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Stack(
-          children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      colors: [color3, color4],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter)),
-            ),
-            Container(
-              height: 450,
-              width: 300,
-              decoration: BoxDecoration(
-                  borderRadius:
-                      BorderRadius.only(bottomRight: Radius.circular(30)),
-                  color: color2),
-            ),
-            Container(
-              height: 100,
-              width: 80,
-              decoration: BoxDecoration(
-                  borderRadius:
-                      BorderRadius.only(bottomRight: Radius.circular(30)),
-                  color: color1),
-            ),
-            SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  SizedBox(height: 30.0),
-                  _buildHeader(context),
-                  SizedBox(height: 40.0),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16.0),
-                    child: Text(
-                      "My Favorites".toUpperCase(),
-                      style: TextStyle(color: Colors.white, fontSize: 16.0),
-                    ),
-                  ),
-                  SizedBox(height: 20.0),
-                  Container(
-                    height: 200,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.only(left: 16.0),
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: _buildItem,
-                    ),
-                  ),
-                  SizedBox(height: 40.0),
-                  Container(
-                    height: 230,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.only(left: 16.0),
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) =>  _buildItem(context, index, large:  true),
-                    ),
-                  ),
-                  SizedBox(height: 20.0),
-                  Container(
-                    height: 230,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.only(left: 16.0),
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) =>  _buildItem(context, index, large:  true),
-                    ),
-                  ),
-                  SizedBox(height: 40.0),
-                ],
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-
-              child: TextField(
-                decoration: InputDecoration(
-                  fillColor: Colors.black87,
-                  suffixIcon: Icon(Icons.search, color: Colors.white70,),
-                  filled: true,
-                  hintText: "Search your recipe",
-                  hintStyle: TextStyle(color: Colors.white70)
+      children: <Widget>[
+        Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [color3, color4],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter)),
+        ),
+        Container(
+          height: 450,
+          width: 300,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30)),
+              color: color2),
+        ),
+        Container(
+          height: 100,
+          width: 80,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30)),
+              color: color1),
+        ),
+        SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(height: 30.0),
+              _buildHeader(context),
+              SizedBox(height: 40.0),
+              Padding(
+                padding: const EdgeInsets.only(left: 16.0),
+                child: Text(
+                  "My Favorites".toUpperCase(),
+                  style: TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ),
-            )
-          ],
-        ));
+              SizedBox(height: 20.0),
+              Container(
+                height: 200,
+                child: ListView.builder(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: _buildItem,
+                ),
+              ),
+              SizedBox(height: 40.0),
+              Container(
+                height: 230,
+                child: ListView.builder(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) =>
+                      _buildItem(context, index, large: true),
+                ),
+              ),
+              SizedBox(height: 20.0),
+              Container(
+                height: 230,
+                child: ListView.builder(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) =>
+                      _buildItem(context, index, large: true),
+                ),
+              ),
+              SizedBox(height: 40.0),
+            ],
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: TextField(
+            decoration: InputDecoration(
+                fillColor: Colors.black87,
+                suffixIcon: Icon(
+                  Icons.search,
+                  color: Colors.white70,
+                ),
+                filled: true,
+                hintText: "Search your recipe",
+                hintStyle: TextStyle(color: Colors.white70)),
+          ),
+        )
+      ],
+    ));
   }
 
   Widget _buildItem(BuildContext context, index, {bool large = false}) {
     return GestureDetector(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(
-          builder: (_) => RecipeSinglePage()
-        ));
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (_) => RecipeSinglePage()));
       },
       child: Container(
         margin: EdgeInsets.only(right: 20),
@@ -134,7 +134,7 @@ class RecipeListPage extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15.0),
                   image: DecorationImage(
-                    image: CachedNetworkImageProvider(
+                    image: NetworkImage(
                       images[index % images.length],
                     ),
                     fit: BoxFit.cover,

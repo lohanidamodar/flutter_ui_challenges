@@ -22,107 +22,107 @@ class SportsNewsOnePage extends StatelessWidget {
       fontWeight: FontWeight.bold,
     );
     var teamNameTextStyle = TextStyle(
-                              fontSize: 18.0,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.grey.shade800,
-                            );
-        return Scaffold(
-          backgroundColor: bgColor,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            title: Text(
-              "Feed",
-              style: TextStyle(color: Colors.black, fontSize: 30.0),
-            ),
-            actions: <Widget>[
-              IconButton(
-                color: Colors.black,
-                icon: Icon(Icons.search),
-                onPressed: () {},
-              )
-            ],
-          ),
-          body: ListView(
-            padding: const EdgeInsets.all(16.0),
+      fontSize: 18.0,
+      fontWeight: FontWeight.w500,
+      color: Colors.grey.shade800,
+    );
+    return Scaffold(
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        automaticallyImplyLeading: false,
+        title: Text(
+          "Feed",
+          style: TextStyle(color: Colors.black, fontSize: 30.0),
+        ),
+        actions: <Widget>[
+          IconButton(
+            color: Colors.black,
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          )
+        ],
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16.0),
+        children: <Widget>[
+          ToggleButtons(
+            fillColor: primaryColor,
+            hoverColor: primaryColor,
+            renderBorder: true,
+            borderColor: Colors.grey.shade300,
+            color: Colors.grey.shade800,
+            selectedColor: Colors.white,
+            borderRadius: BorderRadius.circular(10.0),
             children: <Widget>[
-              ToggleButtons(
-                fillColor: primaryColor,
-                hoverColor: primaryColor,
-                renderBorder: true,
-                borderColor: Colors.grey.shade300,
-                color: Colors.grey.shade800,
-                selectedColor: Colors.white,
-                borderRadius: BorderRadius.circular(10.0),
-                children: <Widget>[
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Icon(FontAwesomeIcons.footballBall),
-                        const SizedBox(height: 16.0),
-                        Text(
-                          "Football",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 16.0),
-                        ),
-                      ],
+              Container(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Icon(FontAwesomeIcons.footballBall),
+                    const SizedBox(height: 16.0),
+                    Text(
+                      "Football",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 16.0),
                     ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        Icon(FontAwesomeIcons.basketballBall),
-                        const SizedBox(height: 16.0),
-                        Text("Basketball"),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        Icon(FontAwesomeIcons.basketballBall),
-                        const SizedBox(height: 16.0),
-                        Text("Hockey"),
-                      ],
-                    ),
-                  ),
-                ],
-                isSelected: [
-                  true,
-                  false,
-                  false,
-                ],
-                onPressed: (index) {},
-              ),
-              const SizedBox(height: 16.0),
-              Card(
-                elevation: 4.0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  ],
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Row(
+              ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Icon(FontAwesomeIcons.basketballBall),
+                    const SizedBox(height: 16.0),
+                    Text("Basketball"),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Icon(FontAwesomeIcons.basketballBall),
+                    const SizedBox(height: 16.0),
+                    Text("Hockey"),
+                  ],
+                ),
+              ),
+            ],
+            isSelected: [
+              true,
+              false,
+              false,
+            ],
+            onPressed: (index) {},
+          ),
+          const SizedBox(height: 16.0),
+          Card(
+            elevation: 4.0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundImage: NetworkImage(avatars[0]),
+                  ),
+                  Spacer(),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
-                      CircleAvatar(
-                        backgroundImage: CachedNetworkImageProvider(avatars[0]),
-                      ),
-                      Spacer(),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: <Widget>[
-                          Text(
-                            "Libertad",
-                            style: teamNameTextStyle,
+                      Text(
+                        "Libertad",
+                        style: teamNameTextStyle,
                       ),
                       const SizedBox(height: 5.0),
                       Text(
@@ -148,7 +148,10 @@ class SportsNewsOnePage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text("Gremio",style: teamNameTextStyle,),
+                      Text(
+                        "Gremio",
+                        style: teamNameTextStyle,
+                      ),
                       const SizedBox(height: 5.0),
                       Text(
                         "2",
@@ -161,7 +164,7 @@ class SportsNewsOnePage extends StatelessWidget {
                   ),
                   Spacer(),
                   CircleAvatar(
-                    backgroundImage: CachedNetworkImageProvider(avatars[2]),
+                    backgroundImage: NetworkImage(avatars[2]),
                   ),
                 ],
               ),
@@ -185,7 +188,7 @@ class SportsNewsOnePage extends StatelessWidget {
                             topRight: Radius.circular(10.0),
                           ),
                           image: DecorationImage(
-                            image: CachedNetworkImageProvider(images[1]),
+                            image: NetworkImage(images[1]),
                             fit: BoxFit.cover,
                           )),
                     ),
@@ -253,7 +256,7 @@ class SportsNewsOnePage extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: CachedNetworkImageProvider(images[4]),
+                    image: NetworkImage(images[4]),
                     fit: BoxFit.cover,
                   )),
             ),
@@ -270,7 +273,7 @@ class SportsNewsOnePage extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: CachedNetworkImageProvider(images[1]),
+                    image: NetworkImage(images[1]),
                     fit: BoxFit.cover,
                   )),
             ),

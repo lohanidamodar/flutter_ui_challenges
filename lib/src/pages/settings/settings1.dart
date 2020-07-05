@@ -19,13 +19,13 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
   bool _dark;
 
   @override
-  void initState() { 
+  void initState() {
     super.initState();
     _dark = false;
   }
 
   Brightness _getBrightness() {
-     return _dark ? Brightness.dark : Brightness.light;
+    return _dark ? Brightness.dark : Brightness.light;
   }
 
   @override
@@ -82,7 +82,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                         ),
                       ),
                       leading: CircleAvatar(
-                        backgroundImage: CachedNetworkImageProvider(avatars[0]),
+                        backgroundImage: NetworkImage(avatars[0]),
                       ),
                       trailing: Icon(
                         Icons.edit,

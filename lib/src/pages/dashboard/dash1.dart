@@ -205,7 +205,7 @@ class DashboardOnePage extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: CachedNetworkImageProvider(image), fit: BoxFit.cover),
+                      image: NetworkImage(image), fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(20.0)),
               height: 200,
               foregroundDecoration: BoxDecoration(
@@ -264,7 +264,7 @@ class DashboardOnePage extends StatelessWidget {
       padding: EdgeInsets.all(0),
       icon: CircleAvatar(
         backgroundColor: Colors.grey.shade300,
-        child: CircleAvatar(radius: 16, backgroundImage: CachedNetworkImageProvider(image)),
+        child: CircleAvatar(radius: 16, backgroundImage: NetworkImage(image)),
       ),
       onPressed: () {},
     );

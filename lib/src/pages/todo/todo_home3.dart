@@ -55,7 +55,7 @@ class TodoHomeThreePage extends StatelessWidget {
                 const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
             child: CircleAvatar(
               maxRadius: 15.0,
-              backgroundImage: CachedNetworkImageProvider(avatars[0]),
+              backgroundImage: NetworkImage(avatars[0]),
             ),
           )
         ],
@@ -135,20 +135,20 @@ class TodoHomeThreePage extends StatelessWidget {
             const SizedBox(width: 16.0),
             IconButton(
               icon: Icon(Icons.home),
-              onPressed: (){},
+              onPressed: () {},
               color: Colors.deepOrange,
             ),
             Spacer(),
             IconButton(
               icon: Icon(Icons.message),
-              onPressed: (){},
+              onPressed: () {},
             ),
             const SizedBox(width: 16.0),
           ],
         ),
       ),
       floatingActionButton: MaterialButton(
-        onPressed: (){},
+        onPressed: () {},
         color: Colors.green,
         child: Icon(Icons.add),
         textColor: Colors.white,
@@ -165,22 +165,22 @@ class TodoHomeThreePage extends StatelessWidget {
 
   Row _buildChannelListItem(String title) {
     return Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              FontAwesomeIcons.circle,
-              size: 16.0,
-            ),
-            const SizedBox(width: 10.0),
-            Text(title),
-            Spacer(),
-            IconButton(
-              icon: Icon(Icons.more_vert),
-              onPressed: () {},
-            ),
-          ],
-        );
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          FontAwesomeIcons.circle,
+          size: 16.0,
+        ),
+        const SizedBox(width: 10.0),
+        Text(title),
+        Spacer(),
+        IconButton(
+          icon: Icon(Icons.more_vert),
+          onPressed: () {},
+        ),
+      ],
+    );
   }
 
   Row _buildRecentWikiRow(String avatar, String title) {
@@ -188,7 +188,7 @@ class TodoHomeThreePage extends StatelessWidget {
       children: <Widget>[
         CircleAvatar(
           radius: 15.0,
-          backgroundImage: CachedNetworkImageProvider(avatar),
+          backgroundImage: NetworkImage(avatar),
         ),
         const SizedBox(width: 10.0),
         Text(

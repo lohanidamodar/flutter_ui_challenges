@@ -1,10 +1,10 @@
-
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
+    as assets;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:math';
 
@@ -128,7 +128,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
         SizedBox(width: current ? 30.0 : 20.0),
         if (!current) ...[
           CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(
+            backgroundImage: NetworkImage(
               current ? avatars[0] : avatars[1],
             ),
             radius: 20.0,
@@ -152,7 +152,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
         if (current) ...[
           const SizedBox(width: 5.0),
           CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(
+            backgroundImage: NetworkImage(
               current ? avatars[0] : avatars[1],
             ),
             radius: 10.0,

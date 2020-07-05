@@ -29,7 +29,7 @@ class SettingsTwoPage extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
           ),
-                  child: SingleChildScrollView(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(32.0),
             child: Column(
               children: <Widget>[
@@ -43,10 +43,13 @@ class SettingsTwoPage extends StatelessWidget {
                         color: Colors.white,
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                          image: CachedNetworkImageProvider(avatars[1]),
+                          image: NetworkImage(avatars[1]),
                           fit: BoxFit.cover,
                         ),
-                        border: Border.all(color: Colors.white,width: 2.0,),
+                        border: Border.all(
+                          color: Colors.white,
+                          width: 2.0,
+                        ),
                       ),
                     ),
                     const SizedBox(width: 10.0),
@@ -54,47 +57,85 @@ class SettingsTwoPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Jane Doe", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
-                          ),),
-                          Text("Nepal",style: TextStyle(
-                            color: Colors.grey.shade400,
-                          ),),
+                          Text(
+                            "Jane Doe",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                          Text(
+                            "Nepal",
+                            style: TextStyle(
+                              color: Colors.grey.shade400,
+                            ),
+                          ),
                         ],
                       ),
                     ),
                   ],
                 ),
-
                 const SizedBox(height: 20.0),
                 ListTile(
-                  title: Text("Languages",style: whiteBoldText,),
-                  subtitle: Text("English US",style: greyTExt,),
-                  trailing: Icon(Icons.keyboard_arrow_right,color: Colors.grey.shade400,),
-                  onTap: (){},
+                  title: Text(
+                    "Languages",
+                    style: whiteBoldText,
+                  ),
+                  subtitle: Text(
+                    "English US",
+                    style: greyTExt,
+                  ),
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right,
+                    color: Colors.grey.shade400,
+                  ),
+                  onTap: () {},
                 ),
                 ListTile(
-                  title: Text("Profile Settings",style: whiteBoldText,),
-                  subtitle: Text("Jane Doe",style: greyTExt,),
-                  trailing: Icon(Icons.keyboard_arrow_right,color: Colors.grey.shade400,),
-                  onTap: (){},
+                  title: Text(
+                    "Profile Settings",
+                    style: whiteBoldText,
+                  ),
+                  subtitle: Text(
+                    "Jane Doe",
+                    style: greyTExt,
+                  ),
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right,
+                    color: Colors.grey.shade400,
+                  ),
+                  onTap: () {},
                 ),
                 SwitchListTile(
-                  title: Text("Email Notifications",style: whiteBoldText,),
-                  subtitle: Text("On",style: greyTExt,),
+                  title: Text(
+                    "Email Notifications",
+                    style: whiteBoldText,
+                  ),
+                  subtitle: Text(
+                    "On",
+                    style: greyTExt,
+                  ),
                   value: true,
-                  onChanged: (val){},
+                  onChanged: (val) {},
                 ),
                 SwitchListTile(
-                  title: Text("Push Notifications",style: whiteBoldText,),
-                  subtitle: Text("Off",style: greyTExt,),
+                  title: Text(
+                    "Push Notifications",
+                    style: whiteBoldText,
+                  ),
+                  subtitle: Text(
+                    "Off",
+                    style: greyTExt,
+                  ),
                   value: false,
-                  onChanged: (val){},
+                  onChanged: (val) {},
                 ),
                 ListTile(
-                  title: Text("Logout",style: whiteBoldText,),
-                  onTap: (){},
+                  title: Text(
+                    "Logout",
+                    style: whiteBoldText,
+                  ),
+                  onTap: () {},
                 ),
               ],
             ),
