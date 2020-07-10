@@ -9,7 +9,7 @@ architectures:
   - build-on: amd64
 
 apps:
-  flutter-ui-challenges:
+  flutteruichallenges:
     command: flutteruichallenges
     extensions: [flutter-master]
     plugs:
