@@ -1,4 +1,4 @@
-package com.popupbits.flutter_ui_challenges
+package com.popupbits.flutteruichallenges
 
 import io.flutter.embedding.android.FlutterActivity
 

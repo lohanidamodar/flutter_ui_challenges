@@ -4,6 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/text_styles.dart';
 
 import 'main_menu.dart';
 
@@ -30,7 +31,11 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: Colors.grey.shade300,
         appBar: AppBar(
-          title: Text("UI Challenges"),
+          backgroundColor: Colors.grey.shade300,
+          brightness: Brightness.light,
+          iconTheme: IconThemeData(color: Colors.black),
+          title: Text('Ui Challenges', style: blackText),
+          elevation: 0,
         ),
         body: MainMenu(),
         bottomNavigationBar: null,

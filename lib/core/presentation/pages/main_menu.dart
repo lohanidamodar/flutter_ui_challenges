@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
+import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import '../routes.dart';
 
@@ -15,11 +16,11 @@ class MainMenu extends StatefulWidget {
 }
 
 class _MainMenuState extends State<MainMenu> {
-  Map<String,bool> _expandedData;
+  Map<String, bool> _expandedData;
   @override
   void initState() {
     super.initState();
-    _expandedData={};
+    _expandedData = {};
   }
 
   @override
@@ -42,24 +43,26 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-
   Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
-    return BorderedContainer(
-      margin: EdgeInsets.symmetric(horizontal: _expandedData[page.title] != null && _expandedData[page.title] ? 0 : 8.0, vertical: 4.0),
+    return RoundedContainer(
+      margin: EdgeInsets.symmetric(
+          horizontal:
+              _expandedData[page.title] != null && _expandedData[page.title]
+                  ? 0
+                  : 8.0,
+          vertical: 4.0),
       padding: const EdgeInsets.all(0),
       elevation: 0,
       child: ExpansionTile(
         onExpansionChanged: (val) {
           setState(() {
-            _expandedData[page.title]  = val;
+            _expandedData[page.title] = val;
           });
         },
         leading: Icon(page.icon),
         title: Text(
           "${page.title} (${page.items.length} layouts)",
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.black87),
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black87),
         ),
         children: _buildSubMenus(page.items, context),
       ),
@@ -91,17 +94,17 @@ class _MainMenuState extends State<MainMenu> {
         ),
         title: Text(
           item.title,
-          style: Theme.of(context).textTheme.subhead.copyWith(
-              color: Colors.black87),
+          style: Theme.of(context)
+              .textTheme
+              .subtitle1
+              .copyWith(color: Colors.black87),
         ),
         onTap: () => _openPage(context, item, OpenMode.PREVIEW),
       ),
     );
   }
 
-
   void _openPage(BuildContext context, SubMenuItem item, OpenMode mode) {
-
     Navigator.push(
         context,
         MaterialPageRoute(

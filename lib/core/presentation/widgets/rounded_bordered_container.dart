@@ -1,4 +1,3 @@
-import '../res/colors.dart';
 import 'package:flutter/material.dart';
 
 class RoundedContainer extends StatelessWidget {
@@ -11,6 +10,8 @@ class RoundedContainer extends StatelessWidget {
     this.padding = const EdgeInsets.all(16.0),
     this.margin,
     this.borderRadius,
+    this.alignment,
+    this.elevation,
   }) : super(key: key);
   final Widget child;
   final double width;
@@ -19,23 +20,26 @@ class RoundedContainer extends StatelessWidget {
   final EdgeInsets padding;
   final EdgeInsets margin;
   final BorderRadius borderRadius;
+  final AlignmentGeometry alignment;
+  final double elevation;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width: width,
-      padding: padding,
-      margin: margin,
-      decoration: BoxDecoration(
-        color: color,
+    return Card(
+      margin: margin ?? const EdgeInsets.all(0),
+      color: color,
+      elevation: elevation ?? 0,
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
         borderRadius: borderRadius ?? BorderRadius.circular(20.0),
-        border: Border.all(
-          color: borderColor,
-          width: 0.5,
-        ),
       ),
-      child: child,
+      child: Container(
+        alignment: alignment,
+        height: height,
+        width: width,
+        padding: padding,
+        child: child,
+      ),
     );
   }
 }
