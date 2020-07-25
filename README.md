@@ -2,9 +2,12 @@
 
 My effort on replicating various apps UI on flutter.
 
+
 [View on Web](https://lohanidamodar.github.io/flutter_ui_challenges/#/)
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/flutter-ui-challenges)
 
 ## Building and running the code [ **Updated** ]
 
