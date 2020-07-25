@@ -171,7 +171,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Navigations
 
-<img height="480px" src="screenshots/bottom.png"> <img height="480px" src="screenshots/drawer2.png"> <img height="480px" src="screenshots/dark_drawer_nav.png"> <img height="480px" src="screenshots/hidden_menu1.gif">
+<img height="480px" src="screenshots/menu1.png"> <img height="480px" src="screenshots/bottom.png"> <img height="480px" src="screenshots/drawer2.png"> <img height="480px" src="screenshots/dark_drawer_nav.png"> <img height="480px" src="screenshots/hidden_menu1.gif">
 
 ## Onboarding Screens
 
