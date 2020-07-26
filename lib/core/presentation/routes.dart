@@ -12,6 +12,7 @@ import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
+import 'package:flutter_ui_challenges/src/pages/food/food_checkout.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
@@ -212,6 +213,8 @@ final List<dynamic> pages = [
         path: DashboardThreePage.path),
   ]),
   MenuItem(title: "Food", icon: Icons.fastfood, items: [
+    SubMenuItem("Food Order Checkout", FoodCheckoutOnePage(),
+        path: FoodCheckoutOnePage.path),
     SubMenuItem("Fruits Add to Cart", AvocadoPage(), path: AvocadoPage.path),
     SubMenuItem("Cake Details", CakePage(), path: CakePage.path),
     SubMenuItem("Recipe List", RecipeListPage(), path: RecipeListPage.path),

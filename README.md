@@ -191,7 +191,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Food App
 
-<img height="480px" src="screenshots/recipe-single.png"> <img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/recipe_details1.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png">
+<img height="480px" src="screenshots/food_checkout_1.png"> <img height="480px" src="screenshots/recipe-single.png"> <img height="480px" src="screenshots/recipe-list.png"> <img height="480px" src="screenshots/recipe_details1.png"> <img height="480px" src="screenshots/avocado.png"> <img height="480px" src="screenshots/cake.png"> <img height="480px" src="screenshots/fdhome.png">
 
 ## Quiz App
 
