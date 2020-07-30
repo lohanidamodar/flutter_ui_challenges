@@ -130,9 +130,7 @@ const String mortar =
 const String pineapple =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fpineapple.png?alt=media';
 const String vegetables =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fvegetables.png?alt=media';
-const String mangoSlice =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fmango_slice.png?alt=media';
+    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fvegetables.png?alt=mediroom4ia';
 
 const INVITE_ILLUSTRATION = "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Finvite.png?alt=media";
 
