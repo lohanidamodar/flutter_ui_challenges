@@ -18,6 +18,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/crop.dart';
@@ -149,6 +150,7 @@ final List<dynamic> pages = [
     SubMenuItem("Login Six", LoginSixPage(), path: LoginSixPage.path),
     SubMenuItem("Login Seven", LoginSevenPage(), path: LoginSevenPage.path),
     SubMenuItem("Login Eight", LoginEightPage(), path: LoginEightPage.path),
+    SubMenuItem("Login Nine", LoginNinePage(), path: LoginNinePage.path),
     SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
     SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
   ]),
