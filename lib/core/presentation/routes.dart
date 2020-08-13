@@ -30,6 +30,7 @@ import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
+import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
@@ -160,6 +161,13 @@ final List<dynamic> pages = [
     SubMenuItem("Settings Three", SettingsThreePage(),
         path: SettingsThreePage.path),
   ]),
+  MenuItem(
+    title: "Quotes App",
+    icon: FontAwesomeIcons.quoteLeft,
+    items: [
+      SubMenuItem("Quote Page One", QuotesOnePage(), path: QuotesOnePage.path),
+    ],
+  ),
   MenuItem(title: "Motorbike App", icon: Icons.list, items: [
     SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
     SubMenuItem("Bike Details Page", BikeDetailsPage(),

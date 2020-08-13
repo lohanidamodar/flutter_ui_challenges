@@ -25,6 +25,7 @@ My effort on replicating various apps UI on flutter.
 - **[Login/signup UIs](#user-flow-screens)**
 - **[Settings UIs](#settings-uis)**
 - **[Dashboard UIs](#dashboard-uis)**
+- **[Quotes App UIs](#quotes-app-uis)**
 - **[Motorbike App UIs](#motorbike-app-uis)**
 - **[Profile UIs](#profile-screens)**
 - **[Invitation App UIs](#inviation-app-ui)**
@@ -156,6 +157,9 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Dashboard UIs
 <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/dash2.png">  <img height="480px" src="screenshots/dash3.png">
+
+## Quotes App UIs
+<img height="480px" src="screenshots/quotes1.png"> 
 
 ## Motorbike App UIs
 <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">

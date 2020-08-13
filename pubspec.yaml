@@ -75,6 +75,7 @@ flutter:
     - lib/src/pages/navigation/
     - lib/src/pages/onboarding/
     - lib/src/pages/profile/
+    - lib/src/pages/quotes/
     - lib/src/pages/quiz_app/
     - lib/src/pages/todo/
     - lib/src/pages/settings/
