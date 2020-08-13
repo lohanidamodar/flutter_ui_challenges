@@ -1,3 +1,4 @@
+import 'package:animator/animator.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -33,19 +34,39 @@ class QuotesOnePage extends StatelessWidget {
                   size: 30.0,
                   color: Colors.grey,
                 )),
-            Text(
-              "Anyone who has never made a mistake has never tried anything new",
-              style: Theme.of(context).textTheme.headline3.copyWith(
-                    color: Colors.grey.shade800,
-                  ),
+            Animator(
+              triggerOnInit: true,
+              curve: Curves.easeIn,
+              duration: Duration(milliseconds: 500),
+              tween: Tween<double>(begin: -1, end: 0),
+              builder: (context, state, child) {
+                return FractionalTranslation(
+                    translation: Offset(state.value, 0), child: child);
+              },
+              child: Text(
+                "Anyone who has never made a mistake has never tried anything new",
+                style: Theme.of(context).textTheme.headline3.copyWith(
+                      color: Colors.grey.shade800,
+                    ),
+              ),
             ),
             const SizedBox(height: 10.0),
-            Text(
-              "Albert einstein",
-              style: Theme.of(context).textTheme.subtitle1.copyWith(
-                    color: Colors.grey.shade600,
-                    fontSize: 20.0,
-                  ),
+            Animator(
+              triggerOnInit: true,
+              tween: Tween<double>(begin: 1, end: 0),
+              builder: (context, state, child) {
+                return FractionalTranslation(
+                  translation: Offset(state.value, 0),
+                  child: child,
+                );
+              },
+              child: Text(
+                "Albert einstein",
+                style: Theme.of(context).textTheme.subtitle1.copyWith(
+                      color: Colors.grey.shade600,
+                      fontSize: 20.0,
+                    ),
+              ),
             ),
           ],
         ),
