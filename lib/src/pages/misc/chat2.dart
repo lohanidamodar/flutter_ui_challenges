@@ -8,6 +8,8 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
 import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:math';
 
+import 'chatui.dart';
+
 class ChatTwoPage extends StatefulWidget {
   static final String path = "lib/src/pages/misc/chat2.dart";
   @override
@@ -22,11 +24,12 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
     assets.avatars[4],
   ];
   final List<Message> messages = [
-    Message(0, "But I may not go if the weather is bad."),
+    Message(0,
+        "But I may not go if the weather is bad. So lets see the weather condition 😀"),
     Message(0, "I suppose I am."),
     Message(1, "Are you going to market today?"),
     Message(0, "I am good too"),
-    Message(1, "I am fine, thank you. How are you?"),
+    Message(1, "I am fine, thank you. How are you? "),
     Message(1, "Hi,"),
     Message(0, "How are you today?"),
     Message(0, "Hello,"),
@@ -135,18 +138,74 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
           ),
           const SizedBox(width: 5.0),
         ],
+
+        ///Chat bubbles
         Container(
-          padding: const EdgeInsets.symmetric(
-            vertical: 8.0,
-            horizontal: 16.0,
+          padding: EdgeInsets.only(
+            bottom: 5,
+            right: 5,
           ),
-          decoration: BoxDecoration(
-              color: current ? Theme.of(context).primaryColor : Colors.white,
-              borderRadius: BorderRadius.circular(10.0)),
-          child: Text(
-            message.description,
-            style: TextStyle(
-                color: current ? Colors.white : Colors.black, fontSize: 18.0),
+          child: Column(
+            crossAxisAlignment:
+                current ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                constraints: BoxConstraints(
+                  minHeight: 40,
+                  maxHeight: 250,
+                  maxWidth: MediaQuery.of(context).size.width * 0.7,
+                  minWidth: MediaQuery.of(context).size.width * 0.1,
+                ),
+                decoration: BoxDecoration(
+                  color: current ? Colors.red : Colors.white,
+                  borderRadius: current
+                      ? BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          bottomLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        )
+                      : BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          bottomRight: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 15, top: 10, bottom: 5, right: 5),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: current
+                        ? CrossAxisAlignment.end
+                        : CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Text(
+                          message.description,
+                          style: TextStyle(
+                            color: current ? Colors.white : Colors.black,
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        Icons.done_all,
+                        color: Colors.white,
+                        size: 14,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 2,
+              ),
+              Text(
+                "2:02",
+                style: TextStyle(
+                    fontSize: 12, color: Colors.black.withOpacity(0.5)),
+              )
+            ],
           ),
         ),
         if (current) ...[
