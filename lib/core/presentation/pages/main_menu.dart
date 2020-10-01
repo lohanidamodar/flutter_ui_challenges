@@ -27,7 +27,7 @@ class _MainMenuState extends State<MainMenu> {
   List<SubMenuItem> unseen;
   bool dialogShowing;
   bool showNewUiDialog;
-  Map<String,bool> _expandedData;
+  Map<String, bool> _expandedData;
   @override
   void initState() {
     super.initState();
@@ -35,7 +35,7 @@ class _MainMenuState extends State<MainMenu> {
     viewDataLoaded = false;
     dialogShowing = false;
     showNewUiDialog = false;
-    _expandedData={};
+    _expandedData = {};
     _getViewData();
   }
 
@@ -157,13 +157,18 @@ class _MainMenuState extends State<MainMenu> {
       }
     });
     return BorderedContainer(
-      margin: EdgeInsets.symmetric(horizontal: _expandedData[page.title] != null && _expandedData[page.title] ? 0 : 8.0, vertical: 4.0),
+      margin: EdgeInsets.symmetric(
+          horizontal:
+              _expandedData[page.title] != null && _expandedData[page.title]
+                  ? 0
+                  : 8.0,
+          vertical: 4.0),
       padding: const EdgeInsets.all(0),
       elevation: 0,
       child: ExpansionTile(
         onExpansionChanged: (val) {
           setState(() {
-            _expandedData[page.title]  = val;
+            _expandedData[page.title] = val;
           });
         },
         leading: Icon(page.icon),
@@ -171,7 +176,7 @@ class _MainMenuState extends State<MainMenu> {
           "${page.title} (${page.items.length} layouts)",
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: hasChanges ? Colors.deepOrange : Colors.black87),
+              color: hasChanges ? Colors.lightBlue : Colors.black87),
         ),
         children: _buildSubMenus(page.items, context),
       ),
@@ -188,7 +193,7 @@ class _MainMenuState extends State<MainMenu> {
     return Padding(
       padding: const EdgeInsets.only(left: 32.0),
       child: ListTile(
-        leading: Icon(Icons.arrow_right, color: Colors.deepOrange),
+        leading: Icon(Icons.arrow_right, color: Colors.lightBlue),
         contentPadding: EdgeInsets.all(0),
         dense: false,
         isThreeLine: false,
@@ -202,7 +207,7 @@ class _MainMenuState extends State<MainMenu> {
                       ? Icons.favorite
                       : Icons.favorite_border,
                   color: isFavorited(context, item.title)
-                      ? Colors.red
+                      ? Colors.amber
                       : Colors.black,
                 ),
                 onPressed: () => _addToFavorite(context, item.title),

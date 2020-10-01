@@ -27,8 +27,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Theme(
       data: ThemeData(
-        primarySwatch: Colors.deepOrange,
-        accentColor: Colors.indigo,
+        primarySwatch: Colors.lightBlue,
+        accentColor: Colors.amber,
       ),
       child: Scaffold(
         backgroundColor: Colors.grey.shade300,

@@ -39,8 +39,8 @@ class MyApp extends StatelessWidget {
             title: 'Flutter UIs',
             theme: ThemeData(
               scaffoldBackgroundColor: Colors.grey.shade300,
-              primarySwatch: Colors.red,
-              accentColor: Colors.indigo,
+              primarySwatch: Colors.lightBlue,
+              accentColor: Colors.amber,
             ),
             home: user.loginSkipped ? NewHomePage() : AuthHomePage(),
             routes: {
