@@ -18,6 +18,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
@@ -144,6 +145,7 @@ final List<dynamic> pages = [
         path: ProfileEightPage.path),
   ]),
   MenuItem(title: "Authentication", icon: Icons.lock, items: [
+    SubMenuItem("Login 11", LoginElevenPage(), path: LoginElevenPage.path),
     SubMenuItem("Login 10", LoginTenPage(), path: LoginTenPage.path),
     SubMenuItem("Auth Three", AuthThreePage(), path: AuthThreePage.path),
     SubMenuItem("Auth One", AuthOnePage(), path: AuthOnePage.path),
