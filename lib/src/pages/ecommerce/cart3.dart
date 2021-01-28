@@ -85,10 +85,14 @@ class _CartThreePageState extends State<CartThreePage> {
                     child: Container(
                         height: MediaQuery.of(context).size.height - 300.0,
                         child: ListView(children: [
-                          _buildFoodItem('assets/fooditem/plate1.png', 'Salmon bowl', '\$24.00'),
-                          _buildFoodItem('assets/fooditem/plate2.png', 'Spring bowl', '\$22.00'),
-                          _buildFoodItem('assets/fooditem/plate3.png', 'Avocado bowl', '\$26.00'),
-                          _buildFoodItem('assets/fooditem/plate4.png', 'Berry bowl', '\$24.00')
+                          _buildFoodItem('assets/fooditem/plate1.jpg',
+                              'Salmon bowl', '\$25.00'),
+                          _buildFoodItem('assets/fooditem/plate2.jpg',
+                              'Spring bowl', '\$20.00'),
+                          _buildFoodItem('assets/fooditem/plate3.jpg',
+                              'Avocado bowl', '\$26.00'),
+                          _buildFoodItem('assets/fooditem/plate4.jpg',
+                              'Berry bowl', '\$14.00')
                         ]))),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -154,56 +158,42 @@ class _CartThreePageState extends State<CartThreePage> {
         child: InkWell(
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-              ));
+                  //builder:
+                  ));
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(
-                    child: Row(
-                        children: [
-                          Hero(
-                              tag: imgPath,
-                              child: Image(
-                                  image: AssetImage(imgPath),
-                                  fit: BoxFit.cover,
-                                  height: 75.0,
-                                  width: 75.0
-                              )
-                          ),
-                          SizedBox(width: 10.0),
-                          Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children:[
-                                Text(
-                                    foodName,
-                                    style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 17.0,
-                                        fontWeight: FontWeight.bold
-                                    )
-                                ),
-                                Text(
-                                    price,
-                                    style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 15.0,
-                                        color: Colors.grey
-                                    )
-                                )
-                              ]
-                          )
-                        ]
-                    )
-                ),
+                    child: Row(children: [
+                  Hero(
+                      tag: imgPath,
+                      child: Image(
+                          image: AssetImage(imgPath),
+                          fit: BoxFit.cover,
+                          height: 75.0,
+                          width: 75.0)),
+                  SizedBox(width: 10.0),
+                  Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(foodName,
+                            style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 17.0,
+                                fontWeight: FontWeight.bold)),
+                        Text(price,
+                            style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 15.0,
+                                color: Colors.grey))
+                      ])
+                ])),
                 IconButton(
                     icon: Icon(Icons.add),
                     color: Colors.black,
-                    onPressed: () {}
-                )
+                    onPressed: () {})
               ],
-            )
-        ));
+            )));
   }
 }
-
