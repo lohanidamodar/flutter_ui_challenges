@@ -237,6 +237,7 @@ class _DashboardFourPageState extends State<DashboardFourPage> {
                       
                                 ), 
                               Row(
+                                
                                 children: [
                                   SizedBox(
                                       width:150.0,

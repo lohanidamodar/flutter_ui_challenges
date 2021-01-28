@@ -69,6 +69,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 ## Settings UIs
 <img height="480px" src="screenshots/settings1.png"> <img height="480px" src="screenshots/settings2.png"> <img height="480px" src="screenshots/settings3.png">
 
+
 ## Dashboard UIs
 <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/dash2.png">  <img height="480px" src="screenshots/dash3.png">
 

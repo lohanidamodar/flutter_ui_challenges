@@ -122,6 +122,7 @@ final List<dynamic> pages = [
     SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
         path: FancyAppbarAnimation.path),
     SubMenuItem("Hero Animation", AnimationOnePage(),
+  
         path: AnimationOnePage.path),
     SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
         path: AnimationTwoPage.path),
