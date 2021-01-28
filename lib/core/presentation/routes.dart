@@ -42,6 +42,7 @@ import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
+import 'package:flutter_ui_challenges/src/pages/dashboard/dash4.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash2.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
@@ -233,6 +234,8 @@ final List<dynamic> pages = [
         path: DashboardTwoPage.path),
     SubMenuItem("Dashboard Three", DashboardThreePage(),
         path: DashboardThreePage.path),
+        SubMenuItem("Dashboard Four", DashboardFourPage(),
+        path: DashboardFourPage.path),
   ]),
   MenuItem(title: "Food", icon: Icons.fastfood, items: [
     SubMenuItem("Food Order Checkout", FoodCheckoutOnePage(),
