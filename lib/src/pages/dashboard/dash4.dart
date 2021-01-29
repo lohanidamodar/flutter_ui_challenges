@@ -32,9 +32,9 @@ class _DashboardFourPageState extends State<DashboardFourPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: const EdgeInsets.all(20.0),
               child: Text(
-                "Welcome to Flutter UI Challenges \n here we have latest ui designs for you",
+                "Welcome to Flutter UI Challenges \n here we have latest ui designs for you...",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16.0,
