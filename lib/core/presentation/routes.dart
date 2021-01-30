@@ -29,6 +29,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
@@ -294,7 +295,8 @@ final List<dynamic> pages = [
         path: HotelDetailsPage.path),
   ]),
   MenuItem(title: "Navigation", icon: Icons.menu, items: [
-    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),
+    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),  
+      SubMenuItem("AutoMulti Screen", AutoMultiScreenPage(), path: AutoMultiScreenPage.path),
     SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
     SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
         path: DarkDrawerPage.path),
