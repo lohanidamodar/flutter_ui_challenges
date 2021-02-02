@@ -32,6 +32,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
@@ -130,6 +131,7 @@ final List<dynamic> pages = [
         path: AnimatedListOnePage.path),
   ]),
   MenuItem(title: "Profile", icon: Icons.person, items: [
+    SubMenuItem("Profile 11", ProfileElevenPage(), path: ProfileElevenPage.path),
     SubMenuItem("Profile 10", ProfileTenPage(), path: ProfileTenPage.path),
     SubMenuItem("Profile Nine", ProfileNinePage(), path: ProfileNinePage.path),
     SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
