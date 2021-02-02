@@ -90,3 +90,8 @@ android/**/.settings
 **/GeneratedPlugins.props
 **/generated_plugins.mk
 **/GeneratedPluginRegistrant.swift
+
+//web build only
+android/
+linux/
+ios/

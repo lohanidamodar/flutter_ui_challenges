@@ -4,12 +4,13 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "8044ec93f518471fde51688ff021da7b",
-"index.html": "c34367bd34945ab6a3ef198fa864180e",
-"/": "c34367bd34945ab6a3ef198fa864180e",
+"main.dart.js": "dea88ed0a2528e28b5fefd89c8712ed6",
+"index.html": "bca9af77faa9c1480f07e22527d9587a",
+"/": "bca9af77faa9c1480f07e22527d9587a",
 "manifest.json": "0a3ff767e53856d2cc5d4e30fb675a4b",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"version.json": "94881b5dee062c8c78e29bbbf3f6cfad",
 "assets/lib/src/nic_asia_clone/nic_asia_app.dart": "157a0bf4a562a5edcd520ca906701ed5",
 "assets/lib/src/khalti_clone/main.dart": "64d423c25d75417db2a25462db6c0590",
 "assets/lib/src/furniture_app/furniture_app.dart": "609b1f5b24a442a6b17e511f1296fcbf",
@@ -19,6 +20,8 @@ const RESOURCES = {
 "assets/lib/src/pages/animations/anim3.dart": "3bca822a790fbdfce85c32324161dd04",
 "assets/lib/src/pages/animations/animation1/details.dart": "18bb89611f9065b24943456a447a6e80",
 "assets/lib/src/pages/animations/animation1/animation1.dart": "40e95edd7ed750587af78cb089358db1",
+"assets/lib/src/pages/quotes/quotes1.dart": "923f33ca0b72c1b883bf9254c6cbc418",
+"assets/lib/src/pages/food/food_checkout.dart": "d981bef0227382b5eb9ced7b52e0c68f",
 "assets/lib/src/pages/food/recipe_list.dart": "3c0be74b8044c795aff914f70dd6d189",
 "assets/lib/src/pages/food/cake.dart": "23927419cc7146f7d3bb33df78d22727",
 "assets/lib/src/pages/food/avocado.dart": "18a7ac01843c00bbeb8506d39f5bcf60",
@@ -38,7 +41,7 @@ const RESOURCES = {
 "assets/lib/src/pages/quiz_app/demo_values.dart": "94f1bb4e0e7243fbdd22d895743775bd",
 "assets/lib/src/pages/quiz_app/home.dart": "6bcb0f981fb7feb1dc0c9d173c1c32d2",
 "assets/lib/src/pages/settings/settings3.dart": "d99214b654f35bef94a0e9cb8c678690",
-"assets/lib/src/pages/settings/settings1.dart": "1cea0a42037d1a2e498aef294777d088",
+"assets/lib/src/pages/settings/settings1.dart": "89fe8a768427ca7e4b136508cd78162d",
 "assets/lib/src/pages/settings/settings2.dart": "db080d21d16c67d38f16404bcc6aa36f",
 "assets/lib/src/pages/blog/sports_news1.dart": "7be6856873ea483757d627bd35bc17da",
 "assets/lib/src/pages/blog/article1.dart": "271b935b43aa58ce0e3f70c8a00f6ca7",
@@ -57,7 +60,8 @@ const RESOURCES = {
 "assets/lib/src/pages/misc/form_elements.dart": "78d9ac9017db530e477eb56ec5f0c3ef",
 "assets/lib/src/pages/misc/springy_slider_page.dart": "7a30c1ea3ab71e3b0d295ec70ff34670",
 "assets/lib/src/pages/misc/sliver_appbar.dart": "4a178a1fe1c613f981fd4180326fa926",
-"assets/lib/src/pages/misc/chat2.dart": "0d79bec65f404d7ea74a0f0e6b4bc8c3",
+"assets/lib/src/pages/misc/chat2.dart": "ef49175775b07d1a573556834195056a",
+"assets/lib/src/pages/misc/otp.dart": "6b62257dd729f1dcf60e17a43af9fdd8",
 "assets/lib/src/pages/misc/loaders.dart": "21efc81bc6ec2d3294f3c6047eaeb984",
 "assets/lib/src/pages/dashboard/dash2.dart": "1a976ad973ee9d3b2538f91e74d1fbec",
 "assets/lib/src/pages/dashboard/dash3.dart": "31a462f26638c1826d29e44c7b5c3676",
@@ -70,22 +74,31 @@ const RESOURCES = {
 "assets/lib/src/pages/profile/profile9.dart": "8b20cde77fb1f3cbff59022d3fa33cb6",
 "assets/lib/src/pages/profile/profile7.dart": "fcc4cfcf7b63386114f11a90c945df7d",
 "assets/lib/src/pages/profile/profile6.dart": "7d53f80b02e0330d569d4b4eeb947ffa",
+"assets/lib/src/pages/profile/profile11.dart": "2b74544c25533c60e9e0db3cc4d1847b",
 "assets/lib/src/pages/profile/profile3.dart": "ca37d0a2b602ab01205d584bf81875a0",
 "assets/lib/src/pages/profile/profile5.dart": "afe35e8dc2a1b3aa4173762caadd03e0",
 "assets/lib/src/pages/profile/profile4.dart": "b9f6cc666c3d178651a4dcf3f31defd2",
+"assets/lib/src/pages/profile/profile10.dart": "6b133f4f48483520ced05b67ca7a3a83",
+"assets/lib/src/pages/login/login10.dart": "d5eb5a4b238eb06da19135de1da12e4f",
+"assets/lib/src/pages/login/login8.dart": "373657c3115b4f2bbaa1bc20964950bf",
 "assets/lib/src/pages/login/auth2.dart": "33e629f8404ef49f544cf132fee81923",
-"assets/lib/src/pages/login/login3.dart": "5c723331d22fef96c7204721d93e4571",
+"assets/lib/src/pages/login/login12.dart": "66c145eeae84f530910a2e97dbcdc99f",
+"assets/lib/src/pages/login/login3.dart": "7c1a199860c2c5d15ffe28eb6869ca20",
 "assets/lib/src/pages/login/login7.dart": "0b5e842f1710c3ff56888793ccf54783",
 "assets/lib/src/pages/login/login6.dart": "5253f82cac7968b2c0f2b0b6f4111540",
+"assets/lib/src/pages/login/login11.dart": "1b7aaacd99c6d17eaa2842d059f00f90",
 "assets/lib/src/pages/login/signup2.dart": "386c883de4e6e554de6fe7b0096d362b",
 "assets/lib/src/pages/login/signup1.dart": "cfa8447333b3b17603e1be3fb97f6938",
 "assets/lib/src/pages/login/auth3.dart": "014fc89ab60994b3a074ce16c90eeb0d",
 "assets/lib/src/pages/login/login2.dart": "056593784c3ca7748739efc20421b5ad",
 "assets/lib/src/pages/login/login5.dart": "d890d97cd550eb07b08b904c203acb37",
+"assets/lib/src/pages/login/login9.dart": "a95232fb9df3528059e7861d6d363473",
 "assets/lib/src/pages/login/login4.dart": "44a49e80166954063d5d6b7d2e55fd43",
 "assets/lib/src/pages/login/auth1.dart": "4fad605193f698bf08187a22419ff813",
 "assets/lib/src/pages/login/login1.dart": "7d3fca413adc2580903e7db1601b1774",
 "assets/lib/src/pages/navigation/drawer1.dart": "ce8c8c27bd7b04856c7d60d207a82598",
+"assets/lib/src/pages/navigation/automultiscreen.dart": "a522f893202b2d035db0a2cdadb4c3b6",
+"assets/lib/src/pages/navigation/menu1.dart": "e208dcfeeec68183f3fbdaeae23da010",
 "assets/lib/src/pages/navigation/drawer2.dart": "bbaea9bdec7b422f72be60dcedafd4c5",
 "assets/lib/src/pages/navigation/hiddenmenu.dart": "3bcf7292500baa43baa600d4e2025e70",
 "assets/lib/src/pages/bike/home_page.dart": "7f72a10477ba58ac491666aee726117e",
@@ -100,6 +113,7 @@ const RESOURCES = {
 "assets/lib/src/pages/ecommerce/confirm_order1.dart": "9f1be7bb2987afff9d71e620ba8c1857",
 "assets/lib/src/pages/ecommerce/cart1.dart": "5547185a9e61a4299fd5f165fb4e13cc",
 "assets/lib/src/pages/ecommerce/ecommerce1.dart": "1d525fa2f19e5258661e2a419646d6f0",
+"assets/lib/src/pages/ecommerce/cart3.dart": "de488a52434435bcad9fb93c227af1ed",
 "assets/lib/src/pages/ecommerce/ecommerce_detail3.dart": "a38993530078e6a82064c24c9784bc5a",
 "assets/lib/src/pages/ecommerce/ecommerce_detail1.dart": "8586e21611541a19b351b507b6b8d975",
 "assets/lib/src/pages/ecommerce/checkout1.dart": "866cc195a61cdabcdc594bb80e9678a7",
@@ -120,13 +134,13 @@ const RESOURCES = {
 "assets/lib/src/pages/travel/thome.dart": "19a1e3cc39652907d13250d99af231db",
 "assets/lib/src/pages/grocery/gdetails.dart": "e70867666a7b6f24dfef85ed14c2b2e7",
 "assets/lib/src/pages/grocery/ghome.dart": "f01d3d53af1156b33d72d861334a9807",
-"assets/FontManifest.json": "3ba8631cb165aabe565c093e362a770e",
-"assets/NOTICES": "eebfd4e23c6606cbb2b67a699acde37c",
-"assets/AssetManifest.json": "d2b96e357cbf502a93f6c9b61bb2a7f0",
+"assets/FontManifest.json": "a7549cf183a470287a8b925843a5906d",
+"assets/NOTICES": "6dbbaea156e0f08cc6d8b915ac026e91",
+"assets/AssetManifest.json": "7dc01b404190c47be6a59b880200e992",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "2aa350bd2aeab88b601a593f793734c0",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "2bca5ec802e40d3f4b60343e346cedde",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "5a37ae808cf9f652198acde612b5328d",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/assets/icon/app-store-logo.jpg": "15657cc002c20325ee66acacd3619c38",
 "assets/assets/icon/icon.png": "3c8ccc520c55ee2300ec0d477ec2922d",
 "assets/assets/icon/feature_store.jpg": "dbd61a243681374e435a922bedc5c4b4",
@@ -181,7 +195,11 @@ const RESOURCES = {
 "assets/assets/hotel/room3.jpg": "582b5c922588fcfcb655ef2c5e082c75",
 "assets/assets/hotel/room2.jpg": "6f3ed637989dc9a91852ca9e859e9595",
 "assets/assets/hotel/room1.jpg": "813ee64a2c15f48baf28e109ded1a66f",
-"assets/assets/hotel/room4.jpg": "894aa1aade9429e89d5da03e4b542937"
+"assets/assets/hotel/room4.jpg": "894aa1aade9429e89d5da03e4b542937",
+"assets/assets/fooditem/plate2.jpg": "3884904a8634d93a4faa217a17b36cc0",
+"assets/assets/fooditem/plate4.jpg": "50f445794b887096c16ecac85b6e5b80",
+"assets/assets/fooditem/plate3.jpg": "323c71373db265b78e84779edf2ee1e8",
+"assets/assets/fooditem/plate1.jpg": "5492ad351bb41016834744b9f91861f0"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -193,13 +211,13 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
-
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a no-cache param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'no-cache'})));
+      return cache.addAll(
+        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
     })
   );
 });
@@ -214,7 +232,6 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
-
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -228,7 +245,6 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
-
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -266,24 +282,33 @@ self.addEventListener("activate", function(event) {
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== 'GET') {
+    return;
+  }
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
+  if (key.indexOf('?v=') != -1) {
+    key = key.split('?v=')[0];
+  }
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
-  // If the URL is not the the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list then return to signal that the
+  // browser should take over.
   if (!RESOURCES[key]) {
-    return event.respondWith(fetch(event.request));
+    return;
+  }
+  // If the URL is the index.html, perform an online-first request.
+  if (key == '/') {
+    return onlineFirst(event);
   }
   event.respondWith(caches.open(CACHE_NAME)
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache. Ensure the resources are not cached
-        // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'no-cache'});
-        return response || fetch(modifiedRequest).then((response) => {
+        // lazily populate the cache.
+        return response || fetch(event.request).then((response) => {
           cache.put(event.request, response.clone());
           return response;
         });
@@ -295,12 +320,13 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
-  if (event.data == 'skipWaiting') {
-    return self.skipWaiting();
+  if (event.data === 'skipWaiting') {
+    self.skipWaiting();
+    return;
   }
-
-  if (event.message = 'downloadOffline') {
+  if (event.data === 'downloadOffline') {
     downloadOffline();
+    return;
   }
 });
 
@@ -323,4 +349,26 @@ async function downloadOffline() {
     }
   }
   return contentCache.addAll(resources);
+}
+
+// Attempt to download the resource online before falling back to
+// the offline cache.
+function onlineFirst(event) {
+  return event.respondWith(
+    fetch(event.request).then((response) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        cache.put(event.request, response.clone());
+        return response;
+      });
+    }).catch((error) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        return cache.match(event.request).then((response) => {
+          if (response != null) {
+            return response;
+          }
+          throw error;
+        });
+      });
+    })
+  );
 }
