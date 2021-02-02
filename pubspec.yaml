@@ -17,6 +17,7 @@ dependencies:
     sdk: flutter
   animated_floatactionbuttons: ^0.1.0
   animator: ^2.0.1
+  simple_animations: ^2.5.0
   bottomreveal: ^1.0.0
   cached_network_image: ^2.2.0+1
   charts_flutter: ^0.9.0
