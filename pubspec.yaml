@@ -57,6 +57,7 @@ flutter:
     - assets/smwallet/
     - assets/hotel/
     - assets/icon/
+    - assets/fooditem/
     - assets/flare/
     - lib/src/pages/animations/
     - lib/src/pages/animations/animation1/

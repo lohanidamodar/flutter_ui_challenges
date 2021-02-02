@@ -77,6 +77,7 @@ import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home2.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
+import 'package:flutter_ui_challenges/src/pages/ecommerce/cart3.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
@@ -195,6 +196,7 @@ final List<dynamic> pages = [
         path: InvitationPageOne.path),
   ]),
   MenuItem(title: "Ecommerce", icon: Icons.shopping_basket, items: [
+    SubMenuItem("Cart Three", CartThreePage(), path: CartThreePage.path),
     SubMenuItem("Cart Two", CartTwoPage(), path: CartTwoPage.path),
     SubMenuItem("Ecommerce Four", EcommerceFourPage(),
         path: EcommerceFourPage.path),
