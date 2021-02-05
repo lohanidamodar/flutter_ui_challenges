@@ -64,7 +64,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## User Flow Screens
 
-<img height="480px" src="screenshots/login10.png"> <img height="480px" src="screenshots/login9.png"> <img height="480px" src="screenshots/login8.png"> <img height="480px" src="screenshots/auth3-1.png"> <img height="480px" src="screenshots/auth3-2.png"> <img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
+<img height="480px" src="screenshots/login12.jpg"><img height="480px" src="screenshots/login10.png"> <img height="480px" src="screenshots/login9.png"> <img height="480px" src="screenshots/login8.png"> <img height="480px" src="screenshots/auth3-1.png"> <img height="480px" src="screenshots/auth3-2.png"> <img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
 
 ## Settings UIs
 <img height="480px" src="screenshots/settings1.png"> <img height="480px" src="screenshots/settings2.png"> <img height="480px" src="screenshots/settings3.png">
@@ -80,7 +80,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
+<img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
 
 ## Inviation App UI
 
@@ -92,7 +92,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Navigations
 
-<img height="480px" src="screenshots/menu1.png"> <img height="480px" src="screenshots/bottom.png"> <img height="480px" src="screenshots/drawer2.png"> <img height="480px" src="screenshots/dark_drawer_nav.png"> <img height="480px" src="screenshots/hidden_menu1.gif">
+<img height="480px" src="screenshots/menu2.jpg"> <img height="480px" src="screenshots/menu1.png"> <img height="480px" src="screenshots/bottom.png"> <img height="480px" src="screenshots/drawer2.png"> <img height="480px" src="screenshots/dark_drawer_nav.png"> <img height="480px" src="screenshots/hidden_menu1.gif">
 
 ## Onboarding Screens
 
