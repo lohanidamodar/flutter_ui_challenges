@@ -20,6 +20,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login12.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/DiscoveryPage.dart';
@@ -31,9 +32,11 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
@@ -135,6 +138,7 @@ final List<dynamic> pages = [
         path: AnimatedListOnePage.path),
   ]),
   MenuItem(title: "Profile", icon: Icons.person, items: [
+    SubMenuItem("Profile 11", ProfileElevenPage(), path: ProfileElevenPage.path),
     SubMenuItem("Profile 10", ProfileTenPage(), path: ProfileTenPage.path),
     SubMenuItem("Profile Nine", ProfileNinePage(), path: ProfileNinePage.path),
     SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
@@ -150,6 +154,7 @@ final List<dynamic> pages = [
         path: ProfileEightPage.path),
   ]),
   MenuItem(title: "Authentication", icon: Icons.lock, items: [
+    SubMenuItem("Login 12", LoginTwelvePage(), path: LoginTwelvePage.path),
     SubMenuItem("Login 11", LoginElevenPage(), path: LoginElevenPage.path),
     SubMenuItem("Login 10", LoginTenPage(), path: LoginTenPage.path),
     SubMenuItem("Auth Three", AuthThreePage(), path: AuthThreePage.path),
@@ -294,7 +299,8 @@ final List<dynamic> pages = [
         path: HotelDetailsPage.path),
   ]),
   MenuItem(title: "Navigation", icon: Icons.menu, items: [
-    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),
+    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),  
+      SubMenuItem("Hidden drawer nav", HiddenDrawerNav(), path: HiddenDrawerNav.path),
     SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
     SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
         path: DarkDrawerPage.path),
