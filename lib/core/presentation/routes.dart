@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
@@ -120,10 +121,11 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboardi
 
 final List<dynamic> pages = [
   MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
-    SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
+    SubMenuItem("Grid View Animation Page", GridViewAnimationPage(),
+        path: GridViewAnimationPage.path),
+        SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
         path: FancyAppbarAnimation.path),
     SubMenuItem("Hero Animation", AnimationOnePage(),
-  
         path: AnimationOnePage.path),
     SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
         path: AnimationTwoPage.path),
