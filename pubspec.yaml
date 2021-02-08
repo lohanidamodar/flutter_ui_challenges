@@ -55,7 +55,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/smwallet/
+    - assets/smwallet/   
+    - assets/discoveryimages/
     - assets/hotel/
     - assets/icon/
     - assets/fooditem/
