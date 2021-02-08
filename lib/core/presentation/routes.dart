@@ -43,6 +43,7 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
+import 'package:flutter_ui_challenges/src/pages/quotes/quotes2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
@@ -188,6 +189,7 @@ final List<dynamic> pages = [
     title: "Quotes App",
     icon: FontAwesomeIcons.quoteLeft,
     items: [
+      SubMenuItem("Quote Page Two", QuotesPageTwo(), path: QuotesPageTwo.path),
       SubMenuItem("Quote Page One", QuotesOnePage(), path: QuotesOnePage.path),
     ],
   ),
