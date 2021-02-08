@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
@@ -21,6 +22,8 @@ import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login12.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login14.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login13.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/DiscoveryPage.dart';
@@ -124,10 +127,11 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboardi
 
 final List<dynamic> pages = [
   MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
-    SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
+    SubMenuItem("Grid View Animation Page", GridViewAnimationPage(),
+        path: GridViewAnimationPage.path),
+        SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
         path: FancyAppbarAnimation.path),
     SubMenuItem("Hero Animation", AnimationOnePage(),
-  
         path: AnimationOnePage.path),
     SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
         path: AnimationTwoPage.path),
@@ -153,6 +157,8 @@ final List<dynamic> pages = [
         path: ProfileEightPage.path),
   ]),
   MenuItem(title: "Authentication", icon: Icons.lock, items: [
+    SubMenuItem("Login 14", LoginPageFourteen(), path: LoginPageFourteen.path),
+    SubMenuItem("Login 13", LoginPageThirdteen(), path: LoginPageThirdteen.path),
     SubMenuItem("Login 12", LoginTwelvePage(), path: LoginTwelvePage.path),
     SubMenuItem("Login 11", LoginElevenPage(), path: LoginElevenPage.path),
     SubMenuItem("Login 10", LoginTenPage(), path: LoginTenPage.path),
