@@ -14,6 +14,7 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/food/food_checkout.dart';
+import 'package:flutter_ui_challenges/src/pages/hotel/hotelbooking.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
@@ -302,6 +303,7 @@ final List<dynamic> pages = [
     SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
   ]),
   MenuItem(title: "Hotel", icon: Icons.hotel, items: [
+    SubMenuItem("Hotel Booking Homepage", HotelBookingPage(), path: HotelBookingPage.path),
     SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
     SubMenuItem("Room Details", HotelDetailsPage(),
         path: HotelDetailsPage.path),
