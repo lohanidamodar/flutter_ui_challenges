@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
@@ -13,13 +14,17 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
 import 'package:flutter_ui_challenges/src/pages/food/food_checkout.dart';
+import 'package:flutter_ui_challenges/src/pages/hotel/hotelbooking.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
+import 'package:flutter_ui_challenges/src/pages/login/Signup3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login12.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login14.dart';
+import 'package:flutter_ui_challenges/src/pages/login/login13.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/DiscoveryPage.dart';
@@ -39,6 +44,7 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
+import 'package:flutter_ui_challenges/src/pages/quotes/quotes2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
@@ -123,10 +129,11 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboardi
 
 final List<dynamic> pages = [
   MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
-    SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
+    SubMenuItem("Grid View Animation Page", GridViewAnimationPage(),
+        path: GridViewAnimationPage.path),
+        SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
         path: FancyAppbarAnimation.path),
     SubMenuItem("Hero Animation", AnimationOnePage(),
-  
         path: AnimationOnePage.path),
     SubMenuItem("Bottom Reveal Animation", AnimationTwoPage(),
         path: AnimationTwoPage.path),
@@ -152,6 +159,8 @@ final List<dynamic> pages = [
         path: ProfileEightPage.path),
   ]),
   MenuItem(title: "Authentication", icon: Icons.lock, items: [
+    SubMenuItem("Login 14", LoginPageFourteen(), path: LoginPageFourteen.path),
+    SubMenuItem("Login 13", LoginPageThirdteen(), path: LoginPageThirdteen.path),
     SubMenuItem("Login 12", LoginTwelvePage(), path: LoginTwelvePage.path),
     SubMenuItem("Login 11", LoginElevenPage(), path: LoginElevenPage.path),
     SubMenuItem("Login 10", LoginTenPage(), path: LoginTenPage.path),
@@ -169,6 +178,7 @@ final List<dynamic> pages = [
     SubMenuItem("Login Nine", LoginNinePage(), path: LoginNinePage.path),
     SubMenuItem("Signup One", SignupOnePage(), path: SignupOnePage.path),
     SubMenuItem("Signup Two", SignupTwoPage(), path: SignupTwoPage.path),
+    SubMenuItem("Signup Three", SignupThreePage(), path: SignupThreePage.path),
   ]),
   MenuItem(title: "Settings", icon: Icons.dashboard, items: [
     SubMenuItem("Settings One", SettingsOnePage(), path: SettingsOnePage.path),
@@ -180,6 +190,7 @@ final List<dynamic> pages = [
     title: "Quotes App",
     icon: FontAwesomeIcons.quoteLeft,
     items: [
+      SubMenuItem("Quote Page Two", QuotesPageTwo(), path: QuotesPageTwo.path),
       SubMenuItem("Quote Page One", QuotesOnePage(), path: QuotesOnePage.path),
     ],
   ),
@@ -292,6 +303,7 @@ final List<dynamic> pages = [
     SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
   ]),
   MenuItem(title: "Hotel", icon: Icons.hotel, items: [
+    SubMenuItem("Hotel Booking Homepage", HotelBookingPage(), path: HotelBookingPage.path),
     SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
     SubMenuItem("Room Details", HotelDetailsPage(),
         path: HotelDetailsPage.path),
