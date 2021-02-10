@@ -58,12 +58,12 @@ class _WhatsAppCloneState extends State<WhatsAppClone> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  storyButton(imageUrl[0], "Aparna "),
-                  storyButton(imageUrl[1], "Damodhar"),
-                  storyButton(imageUrl[2], "Puja"),
-                  storyButton(imageUrl[3], "Dipaanjal "),
-                  storyButton(imageUrl[4], "Dipaanjali"),
-                  storyButton(imageUrl[5], "Aroon"),
+                  storyButton(imageUrl[0], "Annupriya  "),
+                  storyButton(imageUrl[1], "dev"),
+                  storyButton(imageUrl[2], "Pujali"),
+                  storyButton(imageUrl[3], "Dipen "),
+                  storyButton(imageUrl[4], "Anjila"),
+                  storyButton(imageUrl[5], "Arunim"),
                   storyButton(imageUrl[6], "Prience"),
                 ],
               ),

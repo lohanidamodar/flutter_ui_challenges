@@ -141,7 +141,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> <img height="480px" src="screenshots/grocery_cart.png"> <img height="480px" src="screenshots/grocery_wishlist.png"> <img height="480px" src="screenshots/grocery_options.png">
 
 ## WhatsApp Clone
-<img height="480px" src="screenshots/whatsapp.jpg">
+<img height="480px" src="screenshots/whatsapp(2).jpg">
 ## Bank App Clone
 Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 <img height="480px" src="screenshots/nic1.png"> <img height="480px" src="screenshots/nic2.png"> <img height="480px" src="screenshots/nic3.png">
