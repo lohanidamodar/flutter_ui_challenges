@@ -36,6 +36,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
@@ -49,7 +50,6 @@ import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
-import 'package:flutter_ui_challenges/src/whatsapp_clone/WhatsApp_clone.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
@@ -333,7 +333,6 @@ final List<dynamic> pages = [
   MenuItem(
       title: "UI Kits (Clones)",
       items: [
-        SubMenuItem('Whats App Clone', WhatsAppClone(), path: WhatsAppClone.path),
         SubMenuItem('Khalti App', KhaltiApp(), path: KhaltiApp.path),
         SubMenuItem("Grocery UI Kit", GroceryHomePage(),
             path: GroceryHomePage.path),
@@ -364,6 +363,7 @@ final List<dynamic> pages = [
         SubMenuItem('DiscoveryPage', DiscoveryPage(),
         path: DiscoveryPage.path),
     SubMenuItem('Music player', MusicPlayer(), path: MusicPlayer.path),
+    SubMenuItem('Whatsapp Clone', WhatsAppClone(), path: WhatsAppClone.path),
   ]),
 ];
 

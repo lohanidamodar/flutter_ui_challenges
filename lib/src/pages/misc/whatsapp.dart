@@ -1,22 +1,20 @@
 /**
- * Author: Aparna Dulal
+ * Author: Ambika Dulal
  * profile: https://github.com/Ambikadulal
  * design source:whatsapp
   */
 import 'package:flutter/material.dart';
 
 class WhatsAppClone extends StatefulWidget {
-  static const String path = 'lib/src/whatsapp_clone/WhatsAppClone.dart';
+  static final String path = "lib/src/pages/misc/whatsapp.dart";
 
   @override
   _WhatsAppCloneState createState() => _WhatsAppCloneState();
 }
 
 class _WhatsAppCloneState extends State<WhatsAppClone> {
-  //Adding the main color of the app
   Color mainColor = Color(0xFF177767);
   var containerRadius = Radius.circular(30.0);
-  //Adding a list of image URL to simulate the avatar picture
   List<String> imageUrl = [
     "https://cdn.pixabay.com/photo/2019/08/06/08/26/man-4387721__340.jpg",
     "https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113__340.png",
