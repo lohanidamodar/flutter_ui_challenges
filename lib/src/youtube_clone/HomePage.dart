@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
       children: <Widget>[
         Stack(
           children: <Widget>[
-            Image.asset(assets),
+            Image.network(assets),
             Positioned.fill(
               bottom: 10.0,
               right: 10.0,
@@ -45,13 +45,13 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text(
               "$title",
-              textAlign: TextAlign.end,
+              textAlign: TextAlign.start,
               style: TextStyle(
                 color: Colors.white70,
               ),
             ),
             subtitle: Text(
-              "React Bits- 2000 Views - 10 Hour",
+              "News Khabar- 2000 Views - 10 Hour",
               style: TextStyle(
                 color: Colors.white70,
               ),
@@ -78,8 +78,12 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            eachvideo("assets/smwallet/logo.png", "Working With Databases "),
-            eachvideo("assets/smwallet/wallet1.png", "Working With Databases "),
+            eachvideo(
+                "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/travel%2Fpashupatinath.jpg?alt=media",
+                "About PasupatiNath Temple "),
+            eachvideo(
+                "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/travel%2Fkathmandu2.jpg?alt=media",
+                "Capital of Nepal "),
           ],
         ),
       ),
@@ -90,7 +94,7 @@ class _HomePageState extends State<HomePage> {
 AppBar topbar = AppBar(
   backgroundColor: Colors.black,
   title: Image.network(
-    'https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png',
+    'https://cdn.logo.com/hotlink-ok/logo-social.png',
     height: 30,
     fit: BoxFit.cover,
     width: 30.0,
