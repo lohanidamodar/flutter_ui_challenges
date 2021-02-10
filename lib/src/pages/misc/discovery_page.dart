@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DiscoveryPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/DiscouveryPage.dart";
+  static final String path = "lib/src/pages/misc/discovery_page.dart";
   DiscoveryPage();
 
   @override

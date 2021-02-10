@@ -17,7 +17,6 @@ dependencies:
     sdk: flutter
   animated_floatactionbuttons: ^0.1.0
   animator: ^2.0.1
-  simple_animations: ^2.5.0
   bottomreveal: ^1.0.0
   cached_network_image: ^2.2.0+1
   charts_flutter: ^0.9.0
@@ -28,8 +27,9 @@ dependencies:
   flutter_swiper: ^1.1.6
   font_awesome_flutter: ^8.8.1
   intl: ^0.16.1
-  intro_views_flutter: ^2.8.1
+  intro_views_flutter: ^2.8.2
   share: ^0.6.4+3
+  simple_animations: ^2.5.0
   url_launcher: ^5.5.0
 dev_dependencies:
   flutter_test:
@@ -55,7 +55,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/smwallet/   
+    - assets/smwallet/
     - assets/discoveryimages/
     - assets/hotel/
     - assets/icon/
