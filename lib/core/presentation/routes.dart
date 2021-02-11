@@ -7,6 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/bikeshop_ui.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
@@ -195,6 +196,7 @@ final List<dynamic> pages = [
     ],
   ),
   MenuItem(title: "Motorbike App", icon: Icons.list, items: [
+    SubMenuItem("MoterBike Shop Page", MoterBikeShopPage(), path: MoterBikeShopPage.path),
     SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
     SubMenuItem("Bike Details Page", BikeDetailsPage(),
         path: BikeDetailsPage.path),
