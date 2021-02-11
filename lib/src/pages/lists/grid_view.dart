@@ -4,9 +4,10 @@
  * images:pixabay.com
   */
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class GridViewAnimationPage extends StatefulWidget {
-    static final String path = "lib/src/pages/animations/anim6.dart";
+    static final String path = "lib/src/pages/lists/grid_view.dart";
 
   @override
   _GridViewAnimationPageState createState() => _GridViewAnimationPageState();
@@ -14,10 +15,10 @@ class GridViewAnimationPage extends StatefulWidget {
 
 class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
   final List<String> _listItem = [
-    'https://cdn.pixabay.com/photo/2017/04/28/10/20/vase-2268019__340.jpg',
-    'https://cdn.pixabay.com/photo/2016/10/05/13/18/bag-gypsofilia-seeds-1716655__340.jpg',
-    'https://cdn.pixabay.com/photo/2020/05/05/16/06/gift-5133734__340.jpg',
-    'https://cdn.pixabay.com/photo/2017/08/24/16/58/dalia-2677514__340.jpg',
+    kathmandu1,
+    fewalake,
+    tokyo,
+    mountEverest,
   
   ];
 
