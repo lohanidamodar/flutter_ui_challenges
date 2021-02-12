@@ -47,6 +47,7 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes2.dart';
+import 'package:flutter_ui_challenges/src/pages/settings/profilesettings.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
@@ -186,7 +187,9 @@ final List<dynamic> pages = [
   MenuItem(title: "Settings", icon: Icons.dashboard, items: [
     SubMenuItem("Settings One", SettingsOnePage(), path: SettingsOnePage.path),
     SubMenuItem("Settings Two", SettingsTwoPage(), path: SettingsTwoPage.path),
-    SubMenuItem("Settings Three", SettingsThreePage(),  path: SettingsThreePage.path),
+    SubMenuItem("Settings Three", SettingsThreePage(),
+        path: SettingsThreePage.path),
+   SubMenuItem("Profile Setting", ProfileSettingsPage(), path: ProfileSettingsPage.path),
     SubMenuItem("Settings Four", SettingsFourPage(), path: SettingsFourPage.path),
   ]),
   MenuItem(
