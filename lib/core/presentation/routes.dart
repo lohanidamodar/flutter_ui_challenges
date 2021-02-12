@@ -36,6 +36,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
@@ -367,6 +368,7 @@ final List<dynamic> pages = [
         path: BottomSheetAwesome.path),
     SubMenuItem('Discovery Page', DiscoveryPage(), path: DiscoveryPage.path),
     SubMenuItem('Music player', MusicPlayer(), path: MusicPlayer.path),
+    SubMenuItem('Whatsapp Clone', WhatsAppClone(), path: WhatsAppClone.path),
   ]),
 ];
 
