@@ -1,16 +1,16 @@
 /**
- * Author: Aparna Dulal
+ * Author: Ambika Dulal
  * profile: https://github.com/Ambikadulal
   */
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  static const String path = 'lib/src/youtube_clone/HomePage.dart';
+class YoutubeHomePage extends StatefulWidget {
+  static final String path = "lib/src/pages/misc/youtube_homepage.dart";
   @override
-  _HomePageState createState() => _HomePageState();
+  _YoutubeHomePageState createState() => _YoutubeHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _YoutubeHomePageState extends State<YoutubeHomePage> {
   Widget eachvideo(String assets, String title) {
     return Column(
       children: <Widget>[

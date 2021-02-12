@@ -36,6 +36,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
@@ -76,7 +77,6 @@ import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
-import 'package:flutter_ui_challenges/src/youtube_clone/HomePage.dart';
 import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
@@ -333,7 +333,6 @@ final List<dynamic> pages = [
   MenuItem(
       title: "UI Kits (Clones)",
       items: [
-        SubMenuItem('Youtube Clone App', HomePage(), path: HomePage.path),
         SubMenuItem('Khalti App', KhaltiApp(), path: KhaltiApp.path),
         SubMenuItem("Grocery UI Kit", GroceryHomePage(),
             path: GroceryHomePage.path),
@@ -342,6 +341,7 @@ final List<dynamic> pages = [
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
+    SubMenuItem("Youtube HomePage", YoutubeHomePage(), path: YoutubeHomePage.path),
     SubMenuItem("OTP Page", OTPPage(), path: OTPPage.path),
     SubMenuItem('Image/Widget Crop', CropPage(),
         path: CropPage.path, icon: Icons.crop),
