@@ -22,18 +22,11 @@ const List<Developer> DEVELOPERS = [
     imageUrl: devSudip,
   ),
   Developer(
-    name: "Shyam Adhikari",
-    profession: "UI/UX designer",
-    address: "Kathmandu, Nepal",
-    github: "https://uilearner.com/",
-    imageUrl: devShyam,
-  ),
-  Developer(
-    name: "Sidhartha Joshi",
+    name: "Arpana Dulal",
     profession: "Flutter Developer",
     address: "Kathmandu, Nepal",
-    github: "https://github.com/cimplesid",
-    imageUrl: devSid,
+    github: "https://github.com/ambikadulal",
+    imageUrl: devArpana,
   ),
 ];
 

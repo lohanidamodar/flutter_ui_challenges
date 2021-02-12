@@ -5,7 +5,7 @@ import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
+import 'package:flutter_ui_challenges/src/pages/lists/grid_view.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
@@ -18,7 +18,7 @@ import 'package:flutter_ui_challenges/src/pages/hotel/hotelbooking.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
-import 'package:flutter_ui_challenges/src/pages/login/Signup3.dart';
+import 'package:flutter_ui_challenges/src/pages/login/signup3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
@@ -27,7 +27,7 @@ import 'package:flutter_ui_challenges/src/pages/login/login14.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login13.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
 import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/DiscoveryPage.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/discovery_page.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
 import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/crop.dart';
@@ -36,6 +36,8 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
@@ -49,6 +51,7 @@ import 'package:flutter_ui_challenges/src/pages/settings/profilesettings.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
+import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -130,9 +133,7 @@ import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboardi
 
 final List<dynamic> pages = [
   MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
-    SubMenuItem("Grid View Animation Page", GridViewAnimationPage(),
-        path: GridViewAnimationPage.path),
-        SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
+    SubMenuItem("Fancy Appbar Animation", FancyAppbarAnimation(),
         path: FancyAppbarAnimation.path),
     SubMenuItem("Hero Animation", AnimationOnePage(),
         path: AnimationOnePage.path),
@@ -144,7 +145,8 @@ final List<dynamic> pages = [
         path: AnimatedListOnePage.path),
   ]),
   MenuItem(title: "Profile", icon: Icons.person, items: [
-    SubMenuItem("Profile 11", ProfileElevenPage(), path: ProfileElevenPage.path),
+    SubMenuItem("Profile 11", ProfileElevenPage(),
+        path: ProfileElevenPage.path),
     SubMenuItem("Profile 10", ProfileTenPage(), path: ProfileTenPage.path),
     SubMenuItem("Profile Nine", ProfileNinePage(), path: ProfileNinePage.path),
     SubMenuItem("Profile One", ProfileOnePage(), path: ProfileOnePage.path),
@@ -161,7 +163,8 @@ final List<dynamic> pages = [
   ]),
   MenuItem(title: "Authentication", icon: Icons.lock, items: [
     SubMenuItem("Login 14", LoginPageFourteen(), path: LoginPageFourteen.path),
-    SubMenuItem("Login 13", LoginPageThirdteen(), path: LoginPageThirdteen.path),
+    SubMenuItem("Login 13", LoginPageThirdteen(),
+        path: LoginPageThirdteen.path),
     SubMenuItem("Login 12", LoginTwelvePage(), path: LoginTwelvePage.path),
     SubMenuItem("Login 11", LoginElevenPage(), path: LoginElevenPage.path),
     SubMenuItem("Login 10", LoginTenPage(), path: LoginTenPage.path),
@@ -187,6 +190,7 @@ final List<dynamic> pages = [
     SubMenuItem("Settings Three", SettingsThreePage(),
         path: SettingsThreePage.path),
    SubMenuItem("Profile Setting", ProfileSettingsPage(), path: ProfileSettingsPage.path),
+    SubMenuItem("Settings Four", SettingsFourPage(), path: SettingsFourPage.path),
   ]),
   MenuItem(
     title: "Quotes App",
@@ -202,6 +206,8 @@ final List<dynamic> pages = [
         path: BikeDetailsPage.path),
   ]),
   MenuItem(title: "Lists", icon: Icons.list, items: [
+    SubMenuItem("Grid View", GridViewAnimationPage(),
+        path: GridViewAnimationPage.path),
     SubMenuItem("Places List One", PlaceList1(), path: PlaceList1.path),
     SubMenuItem("List Two", SchoolList(), path: SchoolList.path),
   ]),
@@ -305,14 +311,16 @@ final List<dynamic> pages = [
     SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
   ]),
   MenuItem(title: "Hotel", icon: Icons.hotel, items: [
-    SubMenuItem("Hotel Booking Homepage", HotelBookingPage(), path: HotelBookingPage.path),
+    SubMenuItem("Hotel Booking Homepage", HotelBookingPage(),
+        path: HotelBookingPage.path),
     SubMenuItem("Hotel Home", HotelHomePage(), path: HotelHomePage.path),
     SubMenuItem("Room Details", HotelDetailsPage(),
         path: HotelDetailsPage.path),
   ]),
   MenuItem(title: "Navigation", icon: Icons.menu, items: [
-    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),  
-      SubMenuItem("Hidden drawer nav", HiddenDrawerNav(), path: HiddenDrawerNav.path),
+    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),
+    SubMenuItem("Hidden drawer nav", HiddenDrawerNav(),
+        path: HiddenDrawerNav.path),
     SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
     SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
         path: DarkDrawerPage.path),
@@ -342,6 +350,7 @@ final List<dynamic> pages = [
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
+    SubMenuItem("Youtube HomePage", YoutubeHomePage(), path: YoutubeHomePage.path),
     SubMenuItem("OTP Page", OTPPage(), path: OTPPage.path),
     SubMenuItem('Image/Widget Crop', CropPage(),
         path: CropPage.path, icon: Icons.crop),
@@ -361,9 +370,9 @@ final List<dynamic> pages = [
     SubMenuItem("ChatUi", ChatUi(), path: ChatUi.path),
     SubMenuItem('Bottomsheet', BottomSheetAwesome(),
         path: BottomSheetAwesome.path),
-        SubMenuItem('DiscoveryPage', DiscoveryPage(),
-        path: DiscoveryPage.path),
+    SubMenuItem('Discovery Page', DiscoveryPage(), path: DiscoveryPage.path),
     SubMenuItem('Music player', MusicPlayer(), path: MusicPlayer.path),
+    SubMenuItem('Whatsapp Clone', WhatsAppClone(), path: WhatsAppClone.path),
   ]),
 ];
 
