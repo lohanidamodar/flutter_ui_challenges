@@ -36,6 +36,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
@@ -344,6 +345,7 @@ final List<dynamic> pages = [
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
+    SubMenuItem("Youtube HomePage", YoutubeHomePage(), path: YoutubeHomePage.path),
     SubMenuItem("OTP Page", OTPPage(), path: OTPPage.path),
     SubMenuItem('Image/Widget Crop', CropPage(),
         path: CropPage.path, icon: Icons.crop),

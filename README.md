@@ -40,6 +40,7 @@ My effort on replicating various apps UI on flutter.
 ## Contributors
 
 1. [Damodar Lohani](https://github.com/lohanidamodar)
+2. [Aparna Dulal] (https://github.com/ambikadulal)
 2. [Sudip Thapa](https://github.com/sudeepthapa)
 3. [Shyam Adhikari (UI/UX Designer)](http://uilearner.com)
 4.  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
@@ -101,7 +102,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/intro6.gif"> <img height="480px" src="screenshots/intro4.gif"> <img height="480px" src="screenshots/onboard3.gif"> <img height="480px" src="screenshots/onboard2.gif"> <img height="480px" src="screenshots/onboarding1.gif"><img height="480px" src="screenshots/i5.gif">
 
 ## miscellaneous widgets
-<img height="480px" src="screenshots/otp1.png"> <img height="480px" src="screenshots/gallery1.png"> <img height="480px" src="screenshots/musicplayer2.png"> <img height="480px" src="screenshots/image-popup.png"> <img height="480px" src="screenshots/dash3.png"> <img height="480px" src="screenshots/dash2.png"> <img height="480px" src="screenshots/chat2.png"> <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/chatui.png"> <img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif"> <img height="480px" src="screenshots/btm2.png"><img height="480px" src="screenshots/music.png"> <img src="screenshots/crop1.png" height="480px" >
+<img height="480px" src="screenshots/youtube.jpg"> <img height="480px" src="screenshots/otp1.png"> <img height="480px" src="screenshots/gallery1.png"> <img height="480px" src="screenshots/musicplayer2.png"> <img height="480px" src="screenshots/image-popup.png"> <img height="480px" src="screenshots/dash3.png"> <img height="480px" src="screenshots/dash2.png"> <img height="480px" src="screenshots/chat2.png"> <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/chatui.png"> <img height="480px" src="screenshots/landing1.png"> <img height="480px" src="screenshots/form.png"> <img height="480px" src="screenshots/sliders.gif"> <img height="480px" src="screenshots/dialog2.png"> <img height="480px" src="screenshots/dialog1.png"> <img height="480px" src="screenshots/hidden_menu1.gif"> <img height="480px" src="screenshots/springy_slider.gif"> <img height="480px" src="screenshots/sliverappbar1.gif"> <img height="480px" src="screenshots/hero-animation.gif"> <img height="480px" src="screenshots/btm2.png"><img height="480px" src="screenshots/music.png"> <img src="screenshots/crop1.png" height="480px" >
 
 ## Blog
 
@@ -138,7 +139,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 - Stateless & Stateful Widgets
 - Custom widgets for list items, category items etc.
 
-<img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> <img height="480px" src="screenshots/grocery_cart.png"> <img height="480px" src="screenshots/grocery_wishlist.png"> <img height="480px" src="screenshots/grocery_options.png">
+ <img height="480px" src="screenshots/grocery_home.png"> <img height="480px" src="screenshots/grocery_details.png"> <img height="480px" src="screenshots/grocery_cart.png"> <img height="480px" src="screenshots/grocery_wishlist.png"> <img height="480px" src="screenshots/grocery_options.png">
 
 ## Bank App Clone
 Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
