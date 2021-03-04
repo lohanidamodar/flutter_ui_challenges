@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 /**
- * Author: Aparna Dulal
+ * Author: Ambika Dulal
  * profile: https://github.com/ambikadulal
  */
 
-
 class HiddenDrawerNav extends StatefulWidget {
-    static final String path = "lib/src/pages/navigation/automultiscreen.dart";
+  static final String path = "lib/src/pages/navigation/automultiscreen.dart";
   @override
   _HiddenDrawerNavState createState() => _HiddenDrawerNavState();
 }
@@ -171,11 +170,18 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         return ListTile(
-                          title: Text("Macbook",style: TextStyle(color: Colors.white, fontSize: 16),
-),
-                          subtitle: Text("Apple",style: TextStyle(color: Colors.white, fontSize: 16),
-),
-                          trailing: Text("-36000",style: TextStyle(color: Colors.white, fontSize: 16),),
+                          title: Text(
+                            "Macbook",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                          subtitle: Text(
+                            "Apple",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                          trailing: Text(
+                            "-36000",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
                         );
                       },
                       separatorBuilder: (context, index) {
