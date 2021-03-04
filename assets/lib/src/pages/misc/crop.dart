@@ -1,7 +1,5 @@
-/**
- * Author: Mahdi K. Fard
- * profile: https://github.com/xclud
- */
+/// Author: Mahdi K. Fard
+/// profile: https://github.com/xclud
 import 'dart:math';
 import 'dart:ui' as ui;
 

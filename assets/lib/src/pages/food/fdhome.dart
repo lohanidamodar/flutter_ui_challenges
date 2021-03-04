@@ -92,7 +92,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
   SliverAppBar _buildAppBar(BuildContext context) {
     return SliverAppBar(
           textTheme: TextTheme(
-            title: Theme.of(context).textTheme.title.merge(TextStyle(color: Colors.black))
+            headline6: Theme.of(context).textTheme.headline6.merge(TextStyle(color: Colors.black))
           ),
           iconTheme: IconThemeData(color: Colors.lightGreen),
           automaticallyImplyLeading: false,
@@ -131,7 +131,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
     return SliverToBoxAdapter(
           child: Container(
             padding: EdgeInsets.only(left: 20.0,top: 20.0),
-            child: Text(title,style: Theme.of(context).textTheme.subtitle,),
+            child: Text(title,style: Theme.of(context).textTheme.subtitle2,),
           ),
         );
   }
@@ -152,11 +152,11 @@ class FoodDeliveryHomePage extends StatelessWidget {
                       width: double.infinity,
                       child: PNetworkImage(restaurants[index]["image"], fit: BoxFit.cover )),
                     SizedBox(height: 10.0,),
-                    Text(restaurants[index]["name"], style: Theme.of(context).textTheme.title.merge(TextStyle(
+                    Text(restaurants[index]["name"], style: Theme.of(context).textTheme.headline6.merge(TextStyle(
                       fontSize: 14.0
                     ))),
                     SizedBox(height: 5.0,),
-                    Text(restaurants[index]["specials"], style: Theme.of(context).textTheme.subhead.merge(TextStyle(
+                    Text(restaurants[index]["specials"], style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                       fontSize: 12.0
                     )))
                   ],
@@ -188,11 +188,11 @@ class FoodDeliveryHomePage extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text("Nepali breakfast", style: Theme.of(context).textTheme.title.merge(TextStyle(
+                              Text("Nepali breakfast", style: Theme.of(context).textTheme.headline6.merge(TextStyle(
                                 fontSize: 14.0
                               ))),
                               SizedBox(height: 5.0,),
-                              Text("Vegetarian, Nepali", style: Theme.of(context).textTheme.subhead.merge(TextStyle(
+                              Text("Vegetarian, Nepali", style: Theme.of(context).textTheme.subtitle1.merge(TextStyle(
                                 fontSize: 12.0
                               ))),
                               SizedBox(height: 5.0,),
@@ -200,7 +200,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Text("Rs. 180", style: Theme.of(context).textTheme.title.merge(TextStyle(
+                        Text("Rs. 180", style: Theme.of(context).textTheme.headline6.merge(TextStyle(
                           fontSize: 16.0,
                           color: Colors.red
                         ))),

@@ -29,7 +29,7 @@ class SpringySliderPage extends StatelessWidget {
           backgroundColor: Colors.white,
           elevation: 0,
           textTheme: TextTheme(
-            title: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 18.0)
+            headline6: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 18.0)
           ),
           iconTheme: IconThemeData(
             color: Colors.pink

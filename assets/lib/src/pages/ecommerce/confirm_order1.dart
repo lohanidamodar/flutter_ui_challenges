@@ -46,8 +46,8 @@ class ConfirmOrderPage extends StatelessWidget{
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text("Total", style: Theme.of(context).textTheme.title,),
-                  Text("Rs. ${total+delivery}", style: Theme.of(context).textTheme.title),
+                  Text("Total", style: Theme.of(context).textTheme.headline6,),
+                  Text("Rs. ${total+delivery}", style: Theme.of(context).textTheme.headline6),
                 ],
               ),
               SizedBox(height: 20.0,),

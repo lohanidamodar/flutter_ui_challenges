@@ -26,7 +26,7 @@ class BikeHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, top: 16.0),
               child: Text(
                 "Categories",
-                style: Theme.of(context).textTheme.subhead,
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             ),
             CategoryChooser(
@@ -98,7 +98,7 @@ class BikeHomePage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent Posts",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                   Spacer(),
                   FlatButton(

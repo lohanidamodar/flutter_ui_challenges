@@ -132,7 +132,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
   }
 
   playerWidget() {
-    return Stack(overflow: Overflow.visible, children: <Widget>[
+    return Stack(clipBehavior: Clip.none, children: <Widget>[
       Container(
         alignment: Alignment.topCenter,
         height: 35,
