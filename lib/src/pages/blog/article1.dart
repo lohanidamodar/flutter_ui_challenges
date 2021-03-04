@@ -48,7 +48,7 @@ class ArticleOnePage extends StatelessWidget {
                       Expanded(child: Text("Oct 21, 2017"),),
                       IconButton(icon: Icon(Icons.share), onPressed: (){},)
                     ],),
-                    Text("Lorem ipsum dolor sit amet", style: Theme.of(context).textTheme.title,),
+                    Text("Lorem ipsum dolor sit amet", style: Theme.of(context).textTheme.headline6,),
                     Divider(),
                     SizedBox(height: 10.0,),
                     Row(children: <Widget>[

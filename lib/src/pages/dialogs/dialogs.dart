@@ -129,7 +129,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Alert!",
-                      style: Theme.of(context).textTheme.title,
+                      style: Theme.of(context).textTheme.headline6,
                     ),
                     SizedBox(height: 10.0),
                     Flexible(

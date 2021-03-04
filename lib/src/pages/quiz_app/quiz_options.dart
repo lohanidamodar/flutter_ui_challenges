@@ -42,7 +42,7 @@ class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
               width: double.infinity,
               padding: const EdgeInsets.all(16.0),
               color: Colors.grey.shade200,
-              child: Text(widget.category.name, style: Theme.of(context).textTheme.title.copyWith(),),
+              child: Text(widget.category.name, style: Theme.of(context).textTheme.headline6.copyWith(),),
             ),
             SizedBox(height: 10.0),
             Text("Select Total Number of Questions"),

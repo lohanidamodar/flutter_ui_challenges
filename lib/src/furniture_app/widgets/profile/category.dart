@@ -10,8 +10,7 @@ class Category extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Stack(
-          overflow: Overflow.visible,
-          children: <Widget>[
+          clipBehavior: Clip.none, children: <Widget>[
             GestureDetector(
               onTap: () {
                 if (catg.name == listProfileCategories[0].name)

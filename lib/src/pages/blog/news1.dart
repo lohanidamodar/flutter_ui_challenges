@@ -211,7 +211,7 @@ class NewsHomeOnePage extends StatelessWidget {
                           flex: 3,
                           child: Text(
                             "A complete set of design elements, and their intitutive design.",
-                            style: Theme.of(context).textTheme.title,
+                            style: Theme.of(context).textTheme.headline6,
                           ),
                         ),
                         const SizedBox(width: 10.0),
