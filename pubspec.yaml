@@ -27,7 +27,6 @@ dependencies:
   flutter_swiper: ^1.1.6
   font_awesome_flutter: ^8.8.1
   intl: ^0.16.1
-  intro_views_flutter: ^2.8.2
   share_plus: ^1.2.0
   simple_animations: ^2.5.0
   url_launcher: ^5.5.0

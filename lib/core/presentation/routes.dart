@@ -130,7 +130,6 @@ import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/smart_wallet_onboarding.dart';
 
 final List<dynamic> pages = [
   MenuItem(title: "Animations", icon: FontAwesomeIcons.truckMoving, items: [
@@ -335,8 +334,6 @@ final List<dynamic> pages = [
     SubMenuItem("Onboarding 6", IntroSixPage(), path: IntroSixPage.path),
     SubMenuItem("Landing Page", LandingOnePage(), path: LandingOnePage.path),
     SubMenuItem("Onboarding 4", IntroFourPage(), path: IntroFourPage.path),
-    SubMenuItem("Smart Wallet Onboarding", SmartWalletOnboardingPage(),
-        path: SmartWalletOnboardingPage.path),
     SubMenuItem("Onboarding 2", IntroTwoPage(), path: IntroTwoPage.path),
     SubMenuItem("Onboarding 3", IntroThreePage(), path: IntroThreePage.path),
     SubMenuItem("Onboarding 5", Intro5(), path: Intro5.path),
