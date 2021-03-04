@@ -25,7 +25,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
             onPressed: () {},
             child: CircleAvatar(
               maxRadius: 15.0,
-              backgroundImage: CachedNetworkImageProvider(avatars[0]),
+              backgroundImage: NetworkImage(avatars[0]),
             ),
           ),
         ],
@@ -47,7 +47,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
-                            image: CachedNetworkImageProvider(images[index]),
+                            image: NetworkImage(images[index]),
                             fit: BoxFit.cover,
                           )),
                     ),
@@ -92,7 +92,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
               trailing: Text("3:45"),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 70.0,right: 20),
+              padding: const EdgeInsets.only(left: 70.0, right: 20),
               child: Stack(
                 children: <Widget>[
                   Container(
@@ -101,7 +101,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
                     color: Colors.grey,
                   ),
                   Container(
-                    width: MediaQuery.of(context).size.width-300,
+                    width: MediaQuery.of(context).size.width - 300,
                     height: 1.0,
                     color: Colors.black,
                   ),

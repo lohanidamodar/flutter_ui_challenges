@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Flutter UI Challenges
+Comment=Flutter UI Reference
+Icon=${SNAP}/meta/gui/icon.png
+Exec=flutter-ui-challenges %U
+Terminal=false
+Type=Application
+Categories=Education;
+Keywords=Education,Flutter;
+StartupNotify=false

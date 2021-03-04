@@ -37,7 +37,7 @@ class ArticleTwoPage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                      Text("Lorem ipsum dolor sit amet", style: Theme.of(context).textTheme.title,),
+                      Text("Lorem ipsum dolor sit amet", style: Theme.of(context).textTheme.headline6,),
                       SizedBox(height: 10.0),
                       Text("Oct 21, 2017 By DLohani"),
                       SizedBox(height: 10.0),

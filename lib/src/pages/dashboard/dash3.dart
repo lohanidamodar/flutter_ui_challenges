@@ -233,7 +233,7 @@ class DashboardThreePage extends StatelessWidget {
             ),
             trailing: CircleAvatar(
               radius: 25.0,
-              backgroundImage: CachedNetworkImageProvider(avatar),
+              backgroundImage: NetworkImage(avatar),
             ),
           ),
           const SizedBox(height: 10.0),

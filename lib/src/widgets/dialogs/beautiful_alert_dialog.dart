@@ -34,7 +34,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Alert!", style: Theme.of(context).textTheme.title,),
+                    Text("Alert!", style: Theme.of(context).textTheme.headline6,),
                     SizedBox(height: 10.0),
                     Flexible(
                       child: Text(

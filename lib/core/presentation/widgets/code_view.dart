@@ -101,7 +101,7 @@ class MyCodeViewState extends State<MyCodeView> {
         if (snapshot.hasData) {
           return Scaffold(
             body: Padding(
-              padding: EdgeInsets.all(4.0),
+              padding: EdgeInsets.all(8.0),
               child: _getCodeView(snapshot.data, context),
             ),
             floatingActionButton: AnimatedFloatingActionButton(

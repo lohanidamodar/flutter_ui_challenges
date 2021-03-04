@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-final TextStyle buttonText = TextStyle(
-  fontSize: 16.0
+final TextStyle blackText = TextStyle(
+  color: Colors.black,
 );
+
+final TextStyle buttonText = TextStyle(fontSize: 16.0);
 final TextStyle linkText = TextStyle(
   fontSize: 16.0,
   fontWeight: FontWeight.bold,
@@ -10,10 +12,7 @@ final TextStyle linkText = TextStyle(
 );
 
 final TextStyle shadedTitle = TextStyle(
-    fontSize: 18.0,
-    fontWeight: FontWeight.bold,
-    color: Colors.grey.shade600
-);
+    fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.grey.shade600);
 
 final TextStyle messageStyle = shadedTitle.copyWith();
 

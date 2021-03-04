@@ -23,10 +23,10 @@ class BikeHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(left: 16.0,top: 16.0),
+              padding: const EdgeInsets.only(left: 16.0, top: 16.0),
               child: Text(
                 "Categories",
-                style: Theme.of(context).textTheme.subhead,
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             ),
             CategoryChooser(
@@ -98,7 +98,7 @@ class BikeHomePage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent Posts",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                   Spacer(),
                   FlatButton(
@@ -113,24 +113,32 @@ class BikeHomePage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   BikeListItem(
-                    onTap: ()=>Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => BikeDetailsPage(),
-                    )),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BikeDetailsPage(),
+                        )),
                   ),
                   BikeListItem(
-                    onTap: ()=>Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => BikeDetailsPage(),
-                    )),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BikeDetailsPage(),
+                        )),
                   ),
                   BikeListItem(
-                    onTap: ()=>Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => BikeDetailsPage(),
-                    )),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BikeDetailsPage(),
+                        )),
                   ),
                   BikeListItem(
-                    onTap: ()=>Navigator.push(context, MaterialPageRoute(
-                      builder: (_) => BikeDetailsPage(),
-                    )),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BikeDetailsPage(),
+                        )),
                   ),
                 ],
               ),
@@ -179,7 +187,7 @@ class CategoryChooser extends StatelessWidget {
                   height: 60.0,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: CachedNetworkImageProvider(bike), fit: BoxFit.cover),
+                        image: NetworkImage(bike), fit: BoxFit.cover),
                     color: Colors.white,
                     shape: BoxShape.circle,
                   ),
@@ -313,7 +321,7 @@ class BikeListItem extends StatelessWidget {
                 bottomLeft: Radius.circular(4.0),
               ),
         image: DecorationImage(
-          image: CachedNetworkImageProvider(bike),
+          image: NetworkImage(bike),
           fit: BoxFit.cover,
         ),
       ),

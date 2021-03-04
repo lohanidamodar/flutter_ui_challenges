@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -11,7 +11,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SlidersPage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/sliders.dart";
-  final List<String> images= [
+  final List<String> images = [
     avatars[0],
     breakfast,
     fishtail,
@@ -26,7 +26,7 @@ class SlidersPage extends StatelessWidget {
     pashupatinath,
   ];
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Sliders'),
@@ -88,21 +88,23 @@ class SlidersPage extends StatelessWidget {
                         height: 200,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0)),
-                          image: DecorationImage(
-                            image: CachedNetworkImageProvider(images[index]),
-                            fit: BoxFit.cover
-                          )
-                        ),
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10.0),
+                                topRight: Radius.circular(10.0)),
+                            image: DecorationImage(
+                                image: NetworkImage(images[index]),
+                                fit: BoxFit.cover)),
                       ),
                       Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0))
-                        ),
-                        child: ListTile(
-                          subtitle: Text("awesome image caption"),
-                          title: Text("Awesome image"),))
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(10.0),
+                                  bottomRight: Radius.circular(10.0))),
+                          child: ListTile(
+                            subtitle: Text("awesome image caption"),
+                            title: Text("Awesome image"),
+                          ))
                     ],
                   );
                 },

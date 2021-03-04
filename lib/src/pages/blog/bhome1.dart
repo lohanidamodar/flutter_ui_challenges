@@ -68,7 +68,7 @@ class BlogHomeOnePage extends StatelessWidget {
           appBarTheme: AppBarTheme(
             color: Colors.white,
             textTheme: TextTheme(
-              title: TextStyle(
+              headline6: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,

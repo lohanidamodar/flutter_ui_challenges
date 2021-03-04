@@ -3,7 +3,6 @@
  * profile: https://github.com/lohanidamodar
   */
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
@@ -44,7 +43,7 @@ class SettingsThreePage extends StatelessWidget {
                 children: <Widget>[
                   ListTile(
                     leading: CircleAvatar(
-                      backgroundImage: CachedNetworkImageProvider(avatars[4]),
+                      backgroundImage: NetworkImage(avatars[4]),
                     ),
                     title: Text("Damodar Lohani"),
                     onTap: () {},
@@ -65,7 +64,10 @@ class SettingsThreePage extends StatelessWidget {
               style: headerStyle,
             ),
             Card(
-              margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0,),
+              margin: const EdgeInsets.symmetric(
+                vertical: 8.0,
+                horizontal: 0,
+              ),
               child: Column(
                 children: <Widget>[
                   SwitchListTile(
@@ -98,14 +100,17 @@ class SettingsThreePage extends StatelessWidget {
                 ],
               ),
             ),
-             Card(
-              margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0,),
+            Card(
+              margin: const EdgeInsets.symmetric(
+                vertical: 8.0,
+                horizontal: 0,
+              ),
               child: ListTile(
                 leading: Icon(Icons.exit_to_app),
                 title: Text("Logout"),
-                onTap: (){},
+                onTap: () {},
               ),
-             ),
+            ),
             const SizedBox(height: 60.0),
           ],
         ),

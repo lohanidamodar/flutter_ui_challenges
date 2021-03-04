@@ -196,7 +196,7 @@ class _SchoolListState extends State<SchoolList> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(width: 3, color: secondary),
               image: DecorationImage(
-                  image: CachedNetworkImageProvider(schoolLists[index]['logoText']),
+                  image: NetworkImage(schoolLists[index]['logoText']),
                   fit: BoxFit.fill),
             ),
           ),

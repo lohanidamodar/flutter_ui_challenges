@@ -12,9 +12,7 @@ class QuizFinishedPage extends StatelessWidget {
   final List<Question> questions;
   final Map<int, dynamic> answers;
   
-  QuizFinishedPage({Key key, @required this.questions, @required this.answers}): super(key: key) {
-    
-  }
+  QuizFinishedPage({Key key, @required this.questions, @required this.answers}): super(key: key);
 
   @override
   Widget build(BuildContext context){

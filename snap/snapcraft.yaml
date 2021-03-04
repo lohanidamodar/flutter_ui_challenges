@@ -1,0 +1,26 @@
+name: flutter-ui-challenges
+version: 1.0.0
+summary: Flutter UI Challenges
+description: 100+ Flutter UIs and source code to learn from and use in your application for free
+confinement: strict
+base: core18
+grade: stable
+architectures:
+  - build-on: amd64
+
+apps:
+  flutter-ui-challenges:
+    command: flutter-ui-challenges
+    extensions: [flutter-master]
+    plugs:
+      - network
+
+parts:
+  flutter-ui-challenges:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart # The main entry-point file of the application
+    build-snaps: [ yq ]
+    override-build: |
+      snapcraftctl build
+      snapcraftctl set-version "$(yq r pubspec.yaml version)"

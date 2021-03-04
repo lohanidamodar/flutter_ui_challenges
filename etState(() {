@@ -1,0 +1,5676 @@
+[33mcommit c72ceda7a56c4372b1d7e26a1d7edc856e805e4b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 157b182 beae5e2
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:31:32 2021 +0545
+
+    Merge branch 'todo-dashboard' of https://github.com/Ambikadulal/flutter_ui_challenges
+
+[33mcommit 157b1823aa4dc3b04c0ba930a47814ed9424e97f[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:30:43 2021 +0545
+
+    changes upto
+
+[33mcommit beae5e231e82835aa232967f89755bbf718a39e5[m[33m ([m[1;31morigin/todo-dashboard[m[33m, [m[1;32mtodo-dashboard[m[33m)[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:27:01 2021 +0545
+
+    Changes
+
+[33mcommit 2e203a550a50bbb80e372d0c0061319b6e1d7c01[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 21:08:44 2021 +0545
+
+    Scrennshot changes
+
+[33mcommit 54c4eab65c660d8e5537c6a4158af3d8c35d0063[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 21:07:19 2021 +0545
+
+    Readme and routes changes
+
+[33mcommit f3d853f8593154f063ae573e676ec5cbf4b10032[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 20:55:18 2021 +0545
+
+    todo dashboard
+
+[33mcommit f346e2c7414cebd0390b9eac0396e9f31ca580e6[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 20:38:15 2021 +0545
+
+    todo dashboard
+
+[33mcommit 21f048d3237cd1709aa0607f06895ae3b57ec8d9[m[33m ([m[1;31mupstreame/master[m[33m, [m[1;32mmultipage-ui-design[m[33m, [m[1;32mdashboardFour[m[33m)[m
+Author: Aparna Dulal <55906788+Ambikadulal@users.noreply.github.com>
+Date:   Thu Jan 28 14:57:49 2021 +0545
+
+    Cart three page (#57)
+    
+    * cart three page design
+    
+    * cart three screenshot and readme
+    
+    * cart three page design
+    
+    * Cart three Readme
+    
+    * deleting old pictures
+    
+    Co-authored-by: Aparna16 <aparna@kumarijob.com>
+
+[33mcommit 18d448160105fd47459bfc728ae501103547a1c7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 10 08:49:36 2020 +0545
+
+    login 11
+
+[33mcommit 3754390808681da85c3aeeb3f7bf43be9dc2e6fc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:18:21 2020 +0545
+
+    readme update
+
+[33mcommit 89810498246209c11d57dd3bdd39df0122b1492f[m
+Merge: 1b4d526 2878af3
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:13:56 2020 +0545
+
+    Merge branch 'master' of github.com:lohanidamodar/flutter_ui_challenges
+
+[33mcommit 1b4d52682e6d192a51edd2004748d7d099e518a0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:13:47 2020 +0545
+
+    3 new screens
+
+[33mcommit 0bf70d6694d887eaa1ab0218a177b558ff75e0cc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Nov 19 09:05:52 2020 +0545
+
+    removed wave package
+
+[33mcommit 2878af3dcf270825673a0026afce59893056a5f4[m
+Author: Pawan Acharya <devpawann@gmail.com>
+Date:   Thu Sep 3 11:05:24 2020 +0545
+
+    Overflow issue on chat bubble fixed and redesigned chat bubblt (#54)
+    
+    Co-authored-by: Pawan <Pawanacharaya070@gmail.com>
+
+[33mcommit ee2de831f781ee153f6b64d30c9aeb0a7e1b1910[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 24 13:57:02 2020 +0545
+
+    updated code viewer
+
+[33mcommit bb2a9ae5e63fbff12b62bc23d87dbdc454389392[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 13 07:00:59 2020 +0545
+
+    animation in quotes page
+
+[33mcommit f670228d08fcca46a640ec1f89dc90597a760a2e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 13 06:53:39 2020 +0545
+
+    quotes one page
+
+[33mcommit 90b3cef230022f1460be49c77c2d04febceccc2a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Aug 11 16:24:39 2020 +0545
+
+    login nine page
+
+[33mcommit 69883f1f2e293ce4e5f3de07cdf0fce631be0b38[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 30 08:07:44 2020 +0545
+
+    login 8 page
+
+[33mcommit e8c36da8b81c2247e0c882eadc9de9eaa48919ce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 26 08:23:01 2020 +0545
+
+    food order checkout page
+
+[33mcommit 32977ce7aa126a07b58fbf85e3739be75722a164[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 25 18:52:49 2020 +0545
+
+    snap store link in github
+
+[33mcommit 7418666f63900f9591aace30bd2291a93ee0e0f6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 25 18:48:41 2020 +0545
+
+    beautiful menu page 1
+
+[33mcommit ad57ba0733defaf93495fd42613c0365a8aca924[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 16:58:33 2020 +0545
+
+    update desktop file
+
+[33mcommit 048e88890300be62008870fdf3f0f512550d3616[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 10:22:57 2020 +0545
+
+    changes update
+
+[33mcommit 34deb5352e67dfc05b8dbd6ffb3106786b86edac[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 09:26:51 2020 +0545
+
+    snapcraft update
+
+[33mcommit ba74a870156bd0da6ed91977bf6ea8e31d6ee208[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:45:25 2020 +0545
+
+    snapcraft details
+
+[33mcommit 169284a8d634fcb57350732350eceb34308ca6e1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:45:17 2020 +0545
+
+    updated binary name
+
+[33mcommit bc1a30645b604aa0a6ed6174e173ebb2b56e446e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:27:55 2020 +0545
+
+    updates and fixes
+
+[33mcommit a186f9f1b9718f4d6f8482ce63d4f28d993c1fa4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:44:53 2020 +0545
+
+    web published link to readme
+
+[33mcommit ed95cb8e77b92291b2565ddd61c94913d45efbf8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:25:57 2020 +0545
+
+    updated readme
+
+[33mcommit 715f43031668f066f3985cc8a5a9889128d9161c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:11:57 2020 +0545
+
+    removed cached network image to make it work on desktop and web
+
+[33mcommit c9967c9e88cd1e439477684b6aecac89957d6f17[m
+Merge: a3dd79a b5ba2ff
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:05:57 2020 +0545
+
+    Merge branch 'isomorphic'
+
+[33mcommit b5ba2ff658964c6379dab609d626cd6c9e6e831c[m[33m ([m[1;31morigin/isomorphic[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:02:57 2020 +0545
+
+    upgrading packages
+
+[33mcommit 81cbf8b4578ded7e9d58c7defca606f3e659b242[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 07:55:41 2020 +0545
+
+    removing unused code and updated to work with linux desktop
+
+[33mcommit a3dd79a38270a6e0062f0423b936c3ea5e8eb49d[m[33m ([m[1;31morigin/with-firebase[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 25 13:43:13 2020 +0545
+
+    updated readme
+
+[33mcommit 307dc2d51097deaf431ff78bbeddf5d02ca72b79[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 25 13:30:27 2020 +0545
+
+    profile nine
+
+[33mcommit a280a0cef74550d01835f6e013cdb96a88b4b0d2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 13 16:24:15 2020 +0545
+
+    updated intro_views_flutter plugin
+
+[33mcommit 0331a6a3e9bfc3d082b259096d8d7753b9dea9ff[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Apr 10 15:10:22 2020 +0545
+
+    minimal alert dialogs
+
+[33mcommit 96adb459872900a8b44995761cfafbbea0796aa0[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Wed Mar 25 15:23:36 2020 +0800
+
+    add global back navigation key handler
+
+[33mcommit 2dd8f932d0ee1926608b688a9cbab959be918427[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Wed Mar 25 14:21:30 2020 +0800
+
+    update vendor specific dir
+
+[33mcommit 01dfff4a4c57a69963356c7a00545b7e1a4df068[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:47:15 2020 +0800
+
+    update android/ios vendor directory
+
+[33mcommit ccb1e995bc8a1d2f7d130439bb905e8c6b9d5da3[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:14:08 2020 +0800
+
+    add github workflow
+
+[33mcommit 29294ddbb60d12bf115512857180d01f6fb19054[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:09:54 2020 +0800
+
+    comment platform specific code
+
+[33mcommit bcba7b71f527ed30d4084f11e3fa64fa85190c2f[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 11:28:37 2020 +0800
+
+    update .gitignore for generated source code
+
+[33mcommit fbf7d13784868b851bc1867a298a1416f38975b2[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:38:47 2020 +0800
+
+    update .gitignore for windows project files
+
+[33mcommit bfc3ad3b5709bb1a07c21fc6f6523c251409fe99[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:33:31 2020 +0800
+
+    add windows desktop support
+
+[33mcommit e6221323c047a06885dd78fffd6ab68794ea884f[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:29:26 2020 +0800
+
+    `flutter create .` to add web and desktop support
+
+[33mcommit 3daed086d8362b9b20039d7f941e6b5f91c66a72[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:28:07 2020 +0800
+
+    update .gitignore for android project files
+
+[33mcommit a6e4e465b8f6b14b95bd43bde71b5ed31c00ceae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Mar 14 13:56:35 2020 +0545
+
+    khalti clone added
+
+[33mcommit b51f76eb0ba417ba977aab64566d93b94fba75eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Mar 3 23:16:15 2020 +0545
+
+    profile 8 screen
+
+[33mcommit 0ed5b361c248954fdcf19b2055c36c3a64027e6c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Mar 3 21:38:47 2020 +0545
+
+    news 1 design
+
+[33mcommit 050bcd1d3cb2214ba192ea3b46774239b9a47b63[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 29 10:11:50 2020 +0545
+
+    furniture app design
+
+[33mcommit ef839e4449cbb2cc4bfdda9832aab6412cf7f926[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 27 11:51:25 2020 +0545
+
+    bank app clone screenshot
+
+[33mcommit 0aace1ebe68107183d7fa2e3d6502c909c2398b8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 27 11:46:03 2020 +0545
+
+    nicasia clone by @mausamrayamajhi
+
+[33mcommit 78000bff5d589936e43f86dc462f2bdef8608501[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 08:21:22 2020 +0545
+
+    cart 2 and ecommerce 4 screens
+
+[33mcommit 4c308320a8bf930d9954284a5421c969e3c23c97[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 07:20:40 2020 +0545
+
+    some minor fixes
+
+[33mcommit 0e591f47f93c171891af7e49eaf63d2db0a3d2ff[m
+Merge: 8304371 8d866ad
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 07:16:07 2020 +0545
+
+    Merge branch 'crop-demo' of git://github.com/xclud/flutter_ui_challenges into xclud-crop-demo
+
+[33mcommit 8d866ad130f1b972e330781e0aae8ab47244ecea[m
+Author: Mahdi <xclud@users.noreply.github.com>
+Date:   Sat Jan 18 15:14:44 2020 +0330
+
+    Use fixed version of crop.
+
+[33mcommit 2923d8114c284b0a614cb966f54a823ed32a2942[m
+Author: Mahdi <xclud@users.noreply.github.com>
+Date:   Sat Jan 18 15:12:57 2020 +0330
+
+    Adds author info.
+
+[33mcommit 7c43270a2a12e51e6e4dd9a55e776955eabb42b2[m
+Author: Mahdi <mahdi3466@yahoo.com>
+Date:   Fri Jan 17 15:29:19 2020 +0330
+
+    Adds crop package demo under Misc menu.
+
+[33mcommit 830437147d05e7c960660503e991f9bcd27c1270[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 13:13:53 2020 +0545
+
+    extend behiend app bar
+
+[33mcommit bda22551f70b0502b9335c6e4b9bb4d29db7e277[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 13:10:56 2020 +0545
+
+    intro routes fixed
+
+[33mcommit 0e37f5520658d722893aadaf5028050d8c8ae602[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 12:10:49 2020 +0545
+
+    adding shyam adhikari
+
+[33mcommit 88397f43bb69139f28f4219bad7c155b92078a0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 12:06:31 2020 +0545
+
+    gallery one design
+
+[33mcommit 846a9ffa341a70eb62e8d60cd2de84737d43e41b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 09:22:17 2020 +0545
+
+    music player 2 ui
+
+[33mcommit 6167dacc503276300772da43f8aeeef8afb6ddfc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 7 15:26:00 2020 +0545
+
+    settings one dark mode
+
+[33mcommit da8c31ee72a61a76f556250608bbf4db19c8ee1d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 7 12:20:20 2020 +0545
+
+    checkout page
+
+[33mcommit 67b3c5f124a65ce8c548d71e0a031a71329f2f14[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 13:10:19 2020 +0545
+
+    design updates
+
+[33mcommit 2643e9a3b2e008076079fb024db986016efc7040[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:36:25 2020 +0545
+
+    image provider updated
+
+[33mcommit 3f5835ad52256bf265d7a752f1c414c7ad556c3f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:34:23 2020 +0545
+
+    settings 3
+
+[33mcommit 5b552938f2b4714824ab6a16eec0b6481a6af365[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:17:46 2020 +0545
+
+    cached network image provider update
+
+[33mcommit 043783593dafae94b5b85d5f8108cd7adb506156[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:17:23 2020 +0545
+
+    launcher icons update
+
+[33mcommit 477e5d7cc2fd21a278674b06aef2785ac5b5112c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 29 09:09:51 2019 +0545
+
+    chat ui image not loading fixed
+
+[33mcommit 50cbdb8e71e36bb7a50b4939ec170335d4a67ded[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 29 08:59:54 2019 +0545
+
+    intro 4 image not loading fixed
+
+[33mcommit 679a7a5a08d5a7d84a924f579648d5c4037f5bbf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 28 20:13:57 2019 +0545
+
+    ui updates
+
+[33mcommit fa7cdd291b5d0ccc52848bf9f8a811baebdf33ac[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:32:08 2019 +0545
+
+    path update
+
+[33mcommit f46cea2f7bf7ddefe8889bea5bcdc09e28d6d301[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:30:11 2019 +0545
+
+    settings page two and readme sections updates
+
+[33mcommit 841a36d066d62a5cccf16edea442a93fc4d2721e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:03:45 2019 +0545
+
+    settings ui one
+
+[33mcommit 43592beefd884df1e85c3b8729d3171d30510faa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 14:22:53 2019 +0545
+
+    rearranging dashboard
+
+[33mcommit 10c5b580cc33c6f06c9a28e8844ffe543a6c4640[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 20:36:45 2019 +0545
+
+    animated list one
+
+[33mcommit d0805a17106de0a98d02d91c06de07f7838d7da1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:44:34 2019 +0545
+
+    home page reorganize
+
+[33mcommit 2982808d806bcf13eff41fb348c484005c9056e3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:44:30 2019 +0545
+
+    announcement design
+
+[33mcommit 96ee43379c80d1964e04cdc843d03689c0bb24a0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:34:05 2019 +0545
+
+    remove margin on expand
+
+[33mcommit 15de0bd2fab46ba0088f66202d2ca59c7e6322c8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 07:49:25 2019 +0545
+
+    redesign challenges menu
+
+[33mcommit 87d854649c5a49dfee27d2bf195b99859f40ce48[m
+Merge: 298b081 f6f0d4e
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 06:00:03 2019 +0545
+
+    Merge branch 'develop'
+
+[33mcommit f6f0d4e63f9e37a977aad7340c9f6f904d2631c4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 05:57:46 2019 +0545
+
+    link to speed code
+
+[33mcommit 699793c1aed4dffc674915f9f2019046355e841f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 05:41:40 2019 +0545
+
+    onboarding 6 design
+
+[33mcommit 83b974c7e16a72980993f46fbc4fc619bba0c508[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 23 15:05:22 2019 +0545
+
+    animated bottom nav
+
+[33mcommit e683b2a50a1f46e3ff8fe2db85fc0c68474dc8ff[m
+Merge: f5d311e fd3934a
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:59:45 2019 +0545
+
+    Merge branch 'feature/new-home' into develop
+
+[33mcommit fd3934a7a85397ec05e2e594811f04db0293282c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:55 2019 +0545
+
+    new home page
+
+[33mcommit 0a459e24bd8f5db81399b84e1139255e87bb1945[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:32 2019 +0545
+
+    main menu refactored
+
+[33mcommit 21b2d76e2bde4578cbf4e325ab09f56120767161[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:09 2019 +0545
+
+    ui challenge home refactored
+
+[33mcommit f1022e05780ba742a1694bf2d5d649a9e98cb857[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:45:45 2019 +0545
+
+    route name change error fixed
+
+[33mcommit 1f8fd9d1922ff11ee44719aed92397bd1ee54a78[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:40:13 2019 +0545
+
+    custom appbar function
+
+[33mcommit f5d311e9d5d802cf8532b82639467f31af0889ec[m
+Merge: b7804e2 951e814
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:31:40 2019 +0545
+
+    Merge branch 'feature/survey' into develop
+
+[33mcommit 951e814810c40232fca7fca811d54b506003ce50[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:28:53 2019 +0545
+
+    display survey if it exists
+
+[33mcommit c1ee517a080b1424b20a007647b327e8be2a52ca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:27:09 2019 +0545
+
+    survey widget
+
+[33mcommit 7eafd4143eff24dd843108b08856d15b1cd136d9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:59 2019 +0545
+
+    firestore functions added
+
+[33mcommit 83b57a6efb0540f8c098ae3fba9eb950b156c493[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:23 2019 +0545
+
+    surveys field added
+
+[33mcommit 2aa27f6bfb7b9d987d4da9f721455419627963dd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:02 2019 +0545
+
+    survey item model
+
+[33mcommit b7804e2d6747fe0d2184e2a9def0d044f583a9f1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 19:47:08 2019 +0545
+
+    rearrange lines
+
+[33mcommit c1543e5bbd9266207424a39a34228774f636fb82[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:57:11 2019 +0545
+
+    analytics implemented
+
+[33mcommit 795ac5fe1048c262abe5fbd44425979d980daa6d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:49:41 2019 +0545
+
+    provider depricated function removed
+
+[33mcommit 2691cce5bc9bf4661dff0202c7a8d0dd76b7b517[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:45:43 2019 +0545
+
+    upgrading plugins
+
+[33mcommit 298b08106e75cc5702b02045df293d18f5fa6b05[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Wed Dec 18 10:02:34 2019 +0545
+
+    Develop (#37)
+    
+    * fix typo (#29)
+    
+    * Update routes.dart (#30)
+    
+    * Bike app home and details page
+    
+    * auth 3 screen
+    
+    * screenshots and readme of bike and auth screen
+    
+    * updated for latest flutter stable version
+    
+    * placeholder image
+
+[33mcommit ad28bc53402fe19c8375ac9547b9a506647c4b34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 10:01:11 2019 +0545
+
+    placeholder image
+
+[33mcommit e72ec3c5cf091535b4e29d67568f7b7188bfb463[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 14 20:18:33 2019 +0545
+
+    updated for latest flutter stable version
+
+[33mcommit d4a219e1b5c75b580c872d1b1cf05d2d3d13760c[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Wed Dec 11 07:23:40 2019 +0545
+
+    Develop (#34)
+    
+    * fix typo (#29)
+    
+    * Update routes.dart (#30)
+    
+    * Bike app home and details page
+    
+    * auth 3 screen
+    
+    * screenshots and readme of bike and auth screen
+
+[33mcommit 3c58daef87f68170103b4983823d26ca4f49f72d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 4 06:14:14 2019 +0545
+
+    screenshots and readme of bike and auth screen
+
+[33mcommit 54a46cdca4f2a1606c848930deba0ffa32396fa7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 4 06:09:27 2019 +0545
+
+    auth 3 screen
+
+[33mcommit dedcd376b756412478ee7b2553961b1a966ccdd8[m
+Merge: 297c392 40b55aa
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 30 07:16:54 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 297c392d5f89b1cc769556ad466bab50349994d1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 30 07:14:30 2019 +0545
+
+    Bike app home and details page
+
+[33mcommit 40b55aa7289b859c2f638c188bfd057147cc4cfa[m
+Author: Bagus Erlang <erlangparasu@gmail.com>
+Date:   Wed Nov 27 20:40:31 2019 +0800
+
+    Update routes.dart (#30)
+
+[33mcommit 182edd0e0b6b9d9bb79007825df1d240429b73a7[m
+Author: Bagus Erlang <erlangparasu@gmail.com>
+Date:   Wed Nov 27 20:40:12 2019 +0800
+
+    fix typo (#29)
+
+[33mcommit 31b0840aae2531fcbf5dcc01e05306bdd34adcfe[m
+Merge: 42c64d1 9f47562
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 19:00:53 2019 +0545
+
+    Merge branch 'feature/news' into develop
+
+[33mcommit 9f4756273d121d302c403f149aebd5dc779222fd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 18:59:29 2019 +0545
+
+    display announcements from firebase remote config
+
+[33mcommit 13ccb6ecdc1304e76cdc62c272b23f0f8c5aa68a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 18:50:43 2019 +0545
+
+    setup firebase_remote_config
+
+[33mcommit 42c64d184e53056a961f2df66bd7f2b61c060a67[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:15:54 2019 +0545
+
+    invitation app ui category in TOC
+
+[33mcommit d5d212207f0cbef3c04cf0a3949a9b8a1c1a1ab2[m
+Merge: 4cd19d1 00839cb
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:51 2019 +0545
+
+    Merge branch 'feature/image-popup' into develop
+
+[33mcommit 00839cbcbc59e727d283d65ac5791355883f68e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:45 2019 +0545
+
+    image popup screenshot and readme
+
+[33mcommit 691b54b091221cba5cd011dd7e6cafe7af47d670[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:32 2019 +0545
+
+    image popup view
+
+[33mcommit 4cd19d1e3155956b03c8f17ed7162a97101b7b8f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:41:09 2019 +0545
+
+    invitation screenshots
+
+[33mcommit ac94a2762338c6d74e970489434513f5de94cbcf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:37:01 2019 +0545
+
+    invitation uis
+
+[33mcommit 36fdfed29dc8ad1ab71852bec600192c09e30bb8[m
+Merge: 0fc18ba 11ead61
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:10:03 2019 +0545
+
+    Merge branch 'sid' into develop
+
+[33mcommit 11ead612d9ec8fe1524f984cba7b69222559460d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:09:40 2019 +0545
+
+    path fixed
+
+[33mcommit a904bf2772aa7d8f54ae3f605734a712c6cec4ab[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Mon Sep 30 22:28:52 2019 +0545
+
+    screenshot added
+
+[33mcommit b8a82557e26baa57cc0e9818fba852a23bd09ea6[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Mon Sep 30 21:36:53 2019 +0545
+
+    music player ui added
+
+[33mcommit 0fc18ba0ebf335523dd588db1b62addda3f1d27d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 26 19:05:17 2019 +0545
+
+    flare flutter version fixed
+
+[33mcommit 696f1aca3a6733d13ec7d4ae5448851537b70254[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 26 14:01:06 2019 +0545
+
+    login ui update keyboard actions
+
+[33mcommit 0eb671770445b879b2a8f6230a095a4dc0f6dab6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Sep 24 10:27:26 2019 +0545
+
+    sports news ui design
+
+[33mcommit f8b989db1b42a3ab542ab9709bc4dcef123096ce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 08:45:18 2019 +0545
+
+    bundle url types added for google sign in
+
+[33mcommit 99f0a593f145609ee460de0f09a9a506acd33232[m
+Merge: 8eea39b 139a08e
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:49:07 2019 +0545
+
+    Merge branch 'master' into develop
+
+[33mcommit 139a08e4d89dac6f97fd24ec55f5f7d892c81bcc[m
+Merge: f5e479f 4464d61
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:48:32 2019 +0545
+
+    Merge branch 'hotfix/misc-cat-fix'
+
+[33mcommit 4464d616cfe16ca18f03f04da5d737569bba148f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:48:20 2019 +0545
+
+    version change
+
+[33mcommit 8eea39b2fe8441e164354589c8c03d2aa07190fd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:47:21 2019 +0545
+
+    fixing misc image preview
+
+[33mcommit d852ec64b99748a59d6c2660c38cf2b277a7c35e[m
+Merge: 49fac9b f5e479f
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:43:14 2019 +0545
+
+    Merge tag 'v3.0.0' into develop
+    
+    v
+
+[33mcommit f5e479fc99110c4d78d2f4a5476dcf4f80e1712c[m[33m ([m[1;33mtag: v3.0.0[m[33m)[m
+Merge: 49ca12e 49fac9b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:42:50 2019 +0545
+
+    Merge branch 'release/3.0.0'
+
+[33mcommit 49fac9b509d6cbd77365bb18cb17c8a9767abda3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:39:39 2019 +0545
+
+    fixing route
+
+[33mcommit b8e8720fee3c423b11f8c3ea77a361277c10eb27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:25:22 2019 +0545
+
+    todo home 3 added
+
+[33mcommit f5b1f3394807ef5b5ddd3e2142cdaf5264f2f8c6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 12:01:19 2019 +0545
+
+    fixing null user error
+
+[33mcommit 31a8fd5631c2a49d98d6a260e1d0b3ff198e12e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:08:16 2019 +0545
+
+    version number upgrade
+
+[33mcommit affd363c056dbfdc80ac11567feb5776cd435fd0[m
+Merge: 542eda7 78fbebc
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:07:50 2019 +0545
+
+    Merge branch 'feature/new-ui-popup' into develop
+
+[33mcommit 78fbebcef39f233fac9893682801d3b807a6e141[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:07:05 2019 +0545
+
+    don't display popup if just installed and haven't chcked any
+
+[33mcommit cf318dab173435d7a23b0f2acd835d82150278ea[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 10:51:53 2019 +0545
+
+    new UIs popup
+
+[33mcommit 542eda7c6f6cbf17513a50779de101e95f888cfa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:21:21 2019 +0545
+
+    info on building with firebase
+
+[33mcommit b04472c90f6ee1616c10d146991d49756dbf1cee[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:15:03 2019 +0545
+
+    login info, fix logout issue
+
+[33mcommit 77494bfd3e8f5b9d6aabb209fec3318bf408afc0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:08:06 2019 +0545
+
+    fixing color in quiz page
+
+[33mcommit f7aa1d461d6af6c96a19b0fda583b31f5800bc1b[m
+Merge: 916a42d c410f5b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:02:25 2019 +0545
+
+    Merge branch 'feature/favorites' into develop
+
+[33mcommit c410f5b5a61361218f013784416c96eb3bae4585[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 08:59:17 2019 +0545
+
+    fixing routes
+
+[33mcommit c83722d7e71b4bd139d7de5062d60a619a3c5cf3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 06:52:16 2019 +0545
+
+    encrypted google services configs
+
+[33mcommit c10a3a7c9df634557912d8b3a790afea84935a4a[m
+Author: Damodar Lohani <dlohani@Dlohani-Mac.local>
+Date:   Sun Sep 22 05:32:20 2019 +0545
+
+    ios setup
+
+[33mcommit 24d89f6b98bc79780b2d2be15ae5247d7489d3dc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Sep 21 07:24:05 2019 +0545
+
+    invitation app ui design
+
+[33mcommit c5ceb255aac43167f1763537fb02ca64293a6c58[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:48:32 2019 +0545
+
+    privacy policy link
+
+[33mcommit 42f52906dbd5c875c95c84d048012605bd1a607c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:45:57 2019 +0545
+
+    link to privacy policy in login-signup
+
+[33mcommit 5253f4697d2a160a46ebe93657460efeab8d526a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:31:36 2019 +0545
+
+    splash screen design
+
+[33mcommit ed88a033f1056e80cd2b7157347b707beb4d57e9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:17:47 2019 +0545
+
+    implementing cached network image
+
+[33mcommit 0937699269f0c1f6c9f7b146b50d34987f792872[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 15:58:21 2019 +0545
+
+    cached network image dependency
+
+[33mcommit e35068d570ea7d80c8bf5adcd30003adab722d7f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 15:40:21 2019 +0545
+
+    using heavy images from network - firebase storage
+
+[33mcommit 0d685d2e07837fdeeec7d2c520220e64946cb769[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 07:44:44 2019 +0545
+
+    image asset constants from firestore
+
+[33mcommit 73eadf0815903986216910150dd110a987259ad6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:54:33 2019 +0545
+
+    fixed body showing favoritestab when logged out
+
+[33mcommit 2cb9198c338ec92b2952dfa9a1b09181c3ce7d46[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:43 2019 +0545
+
+    favorite information
+
+[33mcommit 7109e231535e769478dee92c208d3995635f89eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:19 2019 +0545
+
+    fixing typo error
+
+[33mcommit 2f0541ba67bbc86abf905d70bf343fd12a997965[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:00 2019 +0545
+
+    dev pics
+
+[33mcommit caf09e8a881219a557f3fa824c605acd5b1795e6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:47:48 2019 +0545
+
+    favorite ui feature
+
+[33mcommit a24075e8cc958dcbc1f1021a05134b3f426f46e0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:47:26 2019 +0545
+
+    Merge branch 'feature/fb-integration' into develop
+
+[33mcommit 916a42d49b61033f9ad54cf2206b09133694bbde[m[33m ([m[1;31morigin/without-firebase[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 13 10:39:08 2019 +0545
+
+    removing screenshot
+
+[33mcommit f8b5737b933f29f55cb3ce71044fe34921503001[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 13 10:36:53 2019 +0545
+
+    some fixes
+
+[33mcommit 07e03d3c74d074b0f40c20e92bf80a2263014dc5[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Fri Sep 13 09:24:10 2019 +0545
+
+    conflicts
+
+[33mcommit 5291029211e2df0fb372b328db3c7e1dc317f310[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Wed Sep 11 21:24:02 2019 +0545
+
+    awesome bottom sheeet
+
+[33mcommit 49ca12eabcdb939230cbe7e6347d69a59b86df11[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 9 08:15:53 2019 +0545
+
+    doctor's app dashboard
+
+[33mcommit 5f4b2730210a5abc73f8b0186a37ee341088f78c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 9 08:15:41 2019 +0545
+
+    fitness dashboard speed code
+
+[33mcommit ae82ca7c6ffc3976bfa79aa4574ece509cdb8f38[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Sep 7 05:58:49 2019 +0545
+
+    fitness dashboard screen
+
+[33mcommit d1dac990df652c0d7584d03472a2ef9f814c1daf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 2 16:26:26 2019 +0545
+
+    removed unnecessary UI
+
+[33mcommit 9f3655bdca54702939b2605133af34ad4d2abf98[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 2 16:24:58 2019 +0545
+
+    readme order changed
+
+[33mcommit a6dccda615d410ace98fd482b6212917f618516e[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 14:05:18 2019 +0545
+
+    car ui rem0ved
+
+[33mcommit 181732c19b5f4fe703fd3f6aa24dc51573623e99[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 13:06:25 2019 +0545
+
+    school list ui added
+
+[33mcommit c1d04af1898b609e5a7f0ea24526128320247562[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 13:06:14 2019 +0545
+
+    screenshots added in readme
+
+[33mcommit d7533d9563eeb313fcdfddb25d8b9f28fda06c59[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Thu Aug 29 22:09:23 2019 +0545
+
+    menu added and fixes
+
+[33mcommit 06512191f26af9182535843b83cdc9eb2be21eeb[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Thu Aug 29 22:09:08 2019 +0545
+
+    readme edited and image added
+
+[33mcommit cad83209d609307d40fdc1aec3b805bbf6096bfa[m
+Merge: 1e1ee9f 456f22d
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:21:02 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 1e1ee9f88da392ace3938a0c76503a68f2f7606d[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:29 2019 +0545
+
+    Image Assset added
+
+[33mcommit d897096e78154059fde9eda77221f039a866dca4[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:13 2019 +0545
+
+    model and app created
+
+[33mcommit 2e5e347423ac54ea05161d0badbb9732de335aac[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:01 2019 +0545
+
+    image added and a slider module added
+
+[33mcommit 456f22d985b7bf856c7c8a208d304c92ff190d80[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 22 08:17:35 2019 +0545
+
+    speed code URL
+
+[33mcommit 3590417545a8f3a8e820022a5f69426a0fc7af1a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 22 07:04:48 2019 +0545
+
+    blog home page UI
+
+[33mcommit d3bda026289e54fc48e05fb375f56b25c1e382b2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 22:43:13 2019 +0545
+
+    speed code link
+
+[33mcommit 819bf87f9025ed3fcb2ccf92302cdf24615a35e0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 16:09:58 2019 +0545
+
+    hotel room details UI
+
+[33mcommit 4aaa867b930dfed18b25e9d807bed54279e3752a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 07:38:49 2019 +0545
+
+    todo home two UI
+
+[33mcommit fb09aa92040bd60d23ae8f0a60828e186f3dc993[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 16:59:29 2019 +0545
+
+    chat messages ui
+
+[33mcommit af0682112d0024b06fb3a299421c66fb9fbd183b[m
+Merge: b2f42d7 3cdbe43
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:06:01 2019 +0545
+
+    merge develop
+
+[33mcommit 3cdbe4366e722c8f8136267d19ecbb367d94be43[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:02:17 2019 +0545
+
+    dashboard ui one
+
+[33mcommit b8d0a936044e626a27eb4f7cd44352234b2bcb4b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:02:08 2019 +0545
+
+    charts dependency
+
+[33mcommit b2f42d7d5c84ab73129b97324aebae87c64b2c12[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 07:16:01 2019 +0545
+
+    merge develop
+
+[33mcommit b53bc0db6255b26faaffe26272b6730f5e28586c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 07:08:02 2019 +0545
+
+    youtube link updated
+
+[33mcommit d17fd7cb1b4975664d6d956d61525541e5ddd793[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:51:39 2019 +0545
+
+    screenshot updated
+
+[33mcommit d3f69fdb37c1b3690931d8d5229a0291fae4df82[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:51:10 2019 +0545
+
+    fixing image fits
+
+[33mcommit b1736ed92a8c2e7c3a524b664a91d2ca1c646c16[m
+Merge: 2061667 d8888ec
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:46:40 2019 +0545
+
+    Merge branch 'develop' into siddharth
+
+[33mcommit 20616675799f09cb595cf963e8bc5b4275d51d8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:46:32 2019 +0545
+
+    removed non required files
+
+[33mcommit d8888ece5e184477417d9a7de90c4779c228881c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:39:21 2019 +0545
+
+    speed code link
+
+[33mcommit 5f04c2a3f7ee03a25050a4dc21ba522d8902869c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 05:48:29 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 65106ce1c4f747e6d8ad69b47a35a328ce16dd1a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 05:46:52 2019 +0545
+
+    rounded ecommerce details
+
+[33mcommit ec59677f428370f3f008ccb2efd6e23e04819ff1[m
+Merge: d7bb271 1cf26a0
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:27:33 2019 +0545
+
+    Merge branch 'develop' into newfeature
+
+[33mcommit d7bb271611298a087487598314e460025c094bfe[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:24:17 2019 +0545
+
+    conflict resolve
+
+[33mcommit 1574e3f574ccdbb51c178ed81e1f77634a421aa1[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:22:53 2019 +0545
+
+    conflict resolve
+
+[33mcommit 4b20a109d91a5e3a2605e16b48eba8b9ba1e9023[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 17:12:38 2019 +0545
+
+    chatui added
+
+[33mcommit 1cf26a03f2a01427f2caa9bc6f1ae918315c5bb1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Aug 10 14:19:28 2019 +0545
+
+    fixes
+
+[33mcommit 11f4ed3739eba9b8a82e454b4cf37e31e0851406[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:29:33 2019 +0545
+
+    ui added to navigaion bar
+
+[33mcommit 49e285eaf72e5a499700318533ca00c1577c611c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:29:08 2019 +0545
+
+    travel home page designed
+
+[33mcommit 66f923d53bc56b2e5d879654a681896d19261c6c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:28:53 2019 +0545
+
+    readme updated and screenshots added
+
+[33mcommit 72655fb9c73b9dd8b216d87a85a8a9a6b08cb4ee[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:52:18 2019 +0545
+
+    onboarding added (#10)
+    
+    * onboarding added
+    
+    * commited uncommeted files
+    
+    * scrnct
+    
+    * bug
+
+[33mcommit 2047cd34ed97b0779865e23d205ce80f3932e912[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:29:45 2019 +0545
+
+    bug
+
+[33mcommit 7f9a413e33fffacdd610505d19dd5e35c1a7c549[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:28:41 2019 +0545
+
+    scrnct
+
+[33mcommit e6ccb5db444427b47d9d3dd1d7503d95983368c6[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 08:30:03 2019 +0545
+
+    commited uncommeted files
+
+[33mcommit 81341ec036ae594ce35d8355d5d2d651da8ea5ef[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Wed Aug 7 17:26:21 2019 +0545
+
+    onboarding added
+
+[33mcommit c02796f3ebc4d1368d177d36558372a2218ca22f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 1 07:03:35 2019 +0545
+
+    todo week view
+
+[33mcommit 5bc3c4ca1a73ddfefa8562a90369bb67911b9194[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:37:43 2019 +0545
+
+    recategorize screenshot
+
+[33mcommit 67d43cdf83b2c0df1829c3f7edeffaa518ac94b6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:34:22 2019 +0545
+
+    updating paths and categories
+
+[33mcommit 209dc986b3c4dc0f6c90ae4f449e194221272705[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:34:14 2019 +0545
+
+    updating grid view
+
+[33mcommit 4cec10cc8c9bdc836d7b2d956afa4a20a5db74ba[m
+Merge: d499318 6561658
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:58 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit d499318f42ab9ad7eec56e554407da1750c962a5[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:25 2019 +0545
+
+    navigation menu edited
+
+[33mcommit 357f09f0fab673754593b83af96cd2a7ac1e8985[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:13 2019 +0545
+
+    profile ui added in profile category
+
+[33mcommit 10c0015cf26f7798df8c1085e5935d75db692d18[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:00 2019 +0545
+
+    home screen added in misc category
+
+[33mcommit dc221ace51a6dd355457bff1d61b2d1edb4cc7c4[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:44:41 2019 +0545
+
+    readme edited and screenshots added
+
+[33mcommit 65616580449d6c0360d1c2a67449dd1619ce0eed[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 20:55:57 2019 +0545
+
+    fixed width
+
+[33mcommit 94e0a396da696c4ca645eee84f9fdcbb80bc7bce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 20:54:47 2019 +0545
+
+    app store link
+
+[33mcommit 85eaaa1323e1c4492d50f857b80648cb782043aa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 09:45:32 2019 +0545
+
+    read me
+
+[33mcommit 1bf2defea67b41170541bac2dbf2716d62509ad4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 09:41:18 2019 +0545
+
+    replacing with network asset
+
+[33mcommit b71b1838723dcbd2219986be5e6cce7924255ccc[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:46:09 2019 +0545
+
+    image path fixed
+
+[33mcommit b77f843e45f91c292415a66f13ecae6e34759a28[m
+Merge: 485eea1 6be4885
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:19:17 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 485eea1bedc36f72bc26ac3447f573c59ab047cd[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:40 2019 +0545
+
+    readme edited
+
+[33mcommit 82e71e0658c68bb00258d0fd7d5988c6fbb2e6ab[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:26 2019 +0545
+
+    list UI added to navigation
+
+[33mcommit b4d6b1441a6b10fca9b4e9ce79b4f3271c958e17[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:07 2019 +0545
+
+    images added
+
+[33mcommit 6be488572b2381cb1e0b148bbedc4c94fd3f34f7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jul 23 08:21:23 2019 +0545
+
+    minimal signup UI
+
+[33mcommit 4c4682a0b9a5d8587d01ea07044e96c5515b8e5e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 12:30:57 2019 +0545
+
+    image resized and made smaller
+
+[33mcommit 37f2dd1631cecd506fe3ca79297bc9e54a19765c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:57:06 2019 +0545
+
+    readme correction
+
+[33mcommit dd6dc61f0fb952025b0c6fcd9dc6f6934258f1c7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:55:48 2019 +0545
+
+    emoji test
+
+[33mcommit 487bd6b5160cb1c096a525ba68f6da14ceb2c65f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:53:00 2019 +0545
+
+    updated readme
+
+[33mcommit 061fe09f58fbbc86ed3e7220baac373a007a7d0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 06:20:35 2019 +0545
+
+    fixed file pat
+
+[33mcommit cd9d35618bf8fdb0c99080efd460279be8e84fa5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 06:06:34 2019 +0545
+
+    reorganizing readme
+
+[33mcommit 1ae8aac45f7ebf366aebe7e9a482615d7d49d34c[m
+Merge: 1e5004f c5dc0ed
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Mon Jul 22 05:53:50 2019 +0545
+
+    Merge pull request #7 from sudeepthapa/develop
+    
+    Develop
+
+[33mcommit c5dc0ed3d3b786fa59cb9740b3e70ed39765f074[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:51:49 2019 +0545
+
+    contributor added
+
+[33mcommit fea5154a08db6d8d0646f98b789e99d0dc2c5e6e[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:49:21 2019 +0545
+
+    image added and readme modified
+
+[33mcommit cf56f9ea86a8725683d5d97c9a15c26a8426a33f[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:35:13 2019 +0545
+
+    naming refactored with the current naming flow
+
+[33mcommit 4b7cb163d743679c43ceb3ed517ed177672e47a9[m
+Merge: 9902876 1e5004f
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:31:21 2019 +0545
+
+    merge conflict resolved
+
+[33mcommit 9902876847efc99fe58df2132517c9bacc02e32c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:27:41 2019 +0545
+
+    login UI added to challanges
+
+[33mcommit 1e5004fc6d548a48a3a55cf8c435678dd25f7d09[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:04:06 2019 +0545
+
+    login6 readme and screenshot
+
+[33mcommit cdf4f82670699be1d1c0bd9cf5033ea621fbbd5e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:03:18 2019 +0545
+
+    resize image
+
+[33mcommit 83ceaacdded6778519419f2fcb429ba0ebde57ef[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:01:33 2019 +0545
+
+    clean login
+
+[33mcommit cd0ebe632d22ed4aaffb9799c9a6abc03912359f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:41:56 2019 +0545
+
+    ios back arrow issues fixed
+
+[33mcommit c9ea83ffa3726f9a92156f2d67d4c3603fcc578b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:36:51 2019 +0545
+
+    hide empty ecommerce 4 layout
+
+[33mcommit 88441eba17c6ac539620904c5aef53940aa340b0[m
+Merge: d5580df 16a0c1a
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:28:09 2019 +0545
+
+    Merge branch 'develop'
+
+[33mcommit 16a0c1a8de133c67c8c01909a7c497ef05378f1b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:21:04 2019 +0545
+
+    image resized
+
+[33mcommit faf33c0da9292a220303fd695f9c5662fdbdaf16[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:09:59 2019 +0545
+
+    using default clipboard service
+
+[33mcommit d5580dfa149d43cc187c0772f4c999ab93906ff7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 09:00:08 2019 +0545
+
+    using iOS icons where necessary
+
+[33mcommit 7d0af0f74f15dc28fd214194880f355aed617def[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:47:16 2019 +0545
+
+    sharing link to code
+
+[33mcommit b2a688219aa45af05b4aa4b3511381492cf87ba5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:42:32 2019 +0545
+
+    option to view preview and code
+
+[33mcommit 5997ae87bc5e8f00111e27b6979903a25338a4b0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:32:48 2019 +0545
+
+    full preview
+
+[33mcommit 4ff3471f8def30cde7c5eebdc6628dba7059d017[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:48:59 2019 +0545
+
+    added comments
+
+[33mcommit 447757eb7a31e858ef5c52e71d1311f3c5b15b9d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:42:13 2019 +0545
+
+    more adjustments
+
+[33mcommit bade52c4dfe411623bb51a202b48334b2702fcda[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:11:02 2019 +0545
+
+    able view code and few adjustments
+
+[33mcommit c1e27be349d4d65fda4f9ff27dd22a64ee45f4c4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 06:12:18 2019 +0545
+
+    adding code and preview functionality
+
+[33mcommit 35385fbc97d130327df47db4bc0564faf463273f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:56:32 2019 +0545
+
+    readme and screenshot
+
+[33mcommit c1c5929b4dd5db30bae35b6a86d6872de5510a49[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:54:37 2019 +0545
+
+    fancy appbar animation
+
+[33mcommit f0d7534344355aea40d441f12ed0202027f2869e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:50:05 2019 +0545
+
+    bottom nav category reorganized
+
+[33mcommit 02f9455975c40e55935ee45da02e0ce06cab2037[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:49:47 2019 +0545
+
+    link to github
+
+[33mcommit 6fb81f704977308cf30d8f7add87d0d49ace8d5a[m
+Merge: fcaa60c a63e6fa
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:45:51 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit a63e6fac5608870a2d1562b926e9108334e8f7c3[m
+Merge: ad1940a b47f70c
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Sat Jul 20 11:42:30 2019 +0545
+
+    Merge pull request #6 from cimplesid/develop
+    
+    fancy bottom navigation added
+
+[33mcommit b47f70c0250464294fb19345d66470f2aadbe66c[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Sat Jul 20 11:41:39 2019 +0545
+
+    uncomment release config
+
+[33mcommit 1526d4b588127afa4a6aaed0667e0a542c02284c[m
+Author: root <root@localhost.localdomain>
+Date:   Sat Jul 20 10:47:36 2019 +0545
+
+    fancy bottom navigation added
+
+[33mcommit fcaa60c7ba4117ecaeb4e937feb9debd179e6fd5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 08:20:12 2019 +0545
+
+    link to youtube channel on about page
+
+[33mcommit ad1940a496a335e55b21e09de124784b0885c586[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 06:23:32 2019 +0545
+
+    ios logo updated
+
+[33mcommit 02e515498387acb2ffe5945a0da812b39efcbd0b[m
+Merge: 2afcab5 3385c3b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 19 08:51:42 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 2afcab5a8f53c3bcba26ef7425b2533923585fde[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 19 08:51:33 2019 +0545
+
+    app store updated icon
+
+[33mcommit 3385c3bd5d148d041368091a8fcac40a0db5ac7d[m
+Author: Damodar lohani <dlohani@Damodars-iMac.local>
+Date:   Sun Jun 9 06:56:49 2019 +0545
+
+    display name fixed
+
+[33mcommit 4cb1798c3dceb016d537615df13c40ccbb20a46a[m
+Author: Damodar lohani <dlohani@Damodars-iMac.local>
+Date:   Sun Jun 9 06:48:44 2019 +0545
+
+    selected team and bundle identifier
+
+[33mcommit c53002fc5f7b92e2307e36d5aba25d0538733251[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:53:20 2019 +0545
+
+    links to other repositories
+
+[33mcommit 872a683076994e0b5abb1aef475e8444a084fead[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:41:19 2019 +0545
+
+    fixing animation with sizedbox - closes #4
+
+[33mcommit 5210f5da16ca2adda93e8d78f5ef11ba0fb63ffa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:36:23 2019 +0545
+
+    animation 2 bottom reveal
+
+[33mcommit 7325592223c8940e50eab089f112b4030a49ba48[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 17 09:37:42 2019 +0545
+
+    applying blur
+
+[33mcommit 17f655873449af85bae48643d15fd075890c7ca3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 17 08:18:04 2019 +0545
+
+    welcome screen 2
+
+[33mcommit 166821da0e05cf4dce27eee90ba15e45e2f98b65[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:53:14 2019 +0545
+
+    added contributors
+
+[33mcommit 15fb73686d32d169548e5b986e72bbc05bc3c20f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:51:25 2019 +0545
+
+    added about page with contributors list
+
+[33mcommit 5748ab2bc83f09a4ae026f99054df39674d93956[m
+Merge: 293d2b3 bb82621
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:18:57 2019 +0545
+
+    Merge branch 'cimplesid-feature/sid'
+
+[33mcommit bb82621e43dd1d620cb055da8dd665c8ee1adf64[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:18:32 2019 +0545
+
+    refactoring
+
+[33mcommit 481769577ed5d6353289d29a87a729ce40198b8d[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jul 12 22:01:10 2019 +0545
+
+    profile 6 added
+
+[33mcommit 293d2b3808e270a033942957d7a4dfbaeb8ac335[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:08:12 2019 +0545
+
+    rearranging menu
+
+[33mcommit 48073887941b5697baaa7d921405b1acfd01cbc9[m
+Merge: 48eb067 ca46dcf
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:03:55 2019 +0545
+
+    Merge branch 'master' of github.com:lohanidamodar/flutter_ui_challenges
+
+[33mcommit 48eb067da32efdbb0d4bfb8afa92a6d59a4bb37f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:03:45 2019 +0545
+
+    organized
+
+[33mcommit f29ea96bc8bb24577acf749a6d12d7d3a49aedb3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:00:58 2019 +0545
+
+    speed code link - landing page
+
+[33mcommit 2348a76b333e3f24438bbb08e0ef5f40c03ff907[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:43:17 2019 +0545
+
+    intro 4 all
+
+[33mcommit 3b76b4c5c928d4a201fd270a0b1be9cf5cd241a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:33:26 2019 +0545
+
+    replaced dummy and centered
+
+[33mcommit 760ee8552b757ae5dca1162c07881c5e21ef891f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:02:08 2019 +0545
+
+    landing page one
+
+[33mcommit e6bd0a05afc1211d9feec4fcd34b3a62309a5cd8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 10 09:37:22 2019 +0545
+
+    animation 1 hero animation and readme/shot
+
+[33mcommit ca46dcff22d57d1b6e2afaed3ee707e284bd76f7[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Tue Jul 9 19:41:36 2019 +0545
+
+    adding license
+    
+    Fixes #3
+
+[33mcommit 4b728367e9dcbd54c21f69829414f9d5e0797aca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 18:10:27 2019 +0545
+
+    onboarding 3 screen
+
+[33mcommit 70ab995048c578f959195d3a6b13d712be0c46d4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 18:05:53 2019 +0545
+
+    remove unrequired stack
+
+[33mcommit 2338c0565811f1d266d340d8650faf237d545b94[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 17:53:54 2019 +0545
+
+    onboard 2 design with readme and screenshot
+
+[33mcommit 78d290cf9f688d4332a25cee3852dcefa4723ed0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 08:20:52 2019 +0545
+
+    speed code yt link todo home
+
+[33mcommit 045ead5a6a9b1937110548a38d33c300867f80bd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 08:20:22 2019 +0545
+
+    renaming
+
+[33mcommit c16dab40f405af828b2004bcb4c173b7fe53d61e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 06:37:24 2019 +0545
+
+    todo home design and screenshot
+
+[33mcommit 572a4e04741d62249ba6566c9975aa7481f09c99[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 26 21:38:25 2019 +0545
+
+    speed code link
+
+[33mcommit fe4ed794a11ba501da9bafd8977cd63fc45df8be[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 26 15:44:23 2019 +0545
+
+    recipe single screenshot links and readme
+
+[33mcommit 162cae069764f75169ce622e6fc8a2b016b5c3a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 24 09:26:36 2019 +0545
+
+    youtube speed code link
+
+[33mcommit 93a102979c81f3c239a7a5c3657ee9a1ad9931f6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 24 08:04:29 2019 +0545
+
+    recipe list
+
+[33mcommit adfac5164b9e05906300bb22dafa20c25891c8ea[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jun 20 13:02:05 2019 +0545
+
+    light drawer navigation and screenshot
+
+[33mcommit eb0ba87791fd82b478bb22203a92e5e623175d12[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jun 20 13:00:40 2019 +0545
+
+    updating sdk constraint
+
+[33mcommit 8fe0c98d13eb70b7dad17e017cb786eb36343d79[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 19 11:30:51 2019 +0545
+
+    dark nav drawer
+
+[33mcommit 8d0d26039d47f2c0c063d9c7d66c656fa6037414[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 10 15:14:47 2019 +0545
+
+    readme, screenshots and speed code yt link
+
+[33mcommit d7834aa893fb981c8f8d088c904ea3d3414e6ec3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 10 08:15:33 2019 +0545
+
+    dating profile
+
+[33mcommit 8af505f19f3cea7eaa816256a1c2eb8c0d5794f2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 08:06:45 2019 +0545
+
+    speed code link
+
+[33mcommit 005e7a766a96b130844341cf78e7d0a61384d480[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 07:30:02 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 18cfbca6efe7d756954beae88c8e6e5544e9aa3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 07:28:25 2019 +0545
+
+    login five
+
+[33mcommit 40232bbb53a5308fffd97061fe33e5528e288854[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 09:37:35 2019 +0545
+
+    link to speed codes youtube videos
+
+[33mcommit 04996a7194241a2bc531d493b86b2cfd4c8cf882[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 08:11:15 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 4b156cd12ec04cd3b9982eda5fb7f0ea94bef8fa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 08:07:09 2019 +0545
+
+    fruit add to cart ui
+
+[33mcommit f480a59c30efbf9c42967df32f1a3284719e77a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jun 4 19:36:36 2019 +0545
+
+    screenshots and readme
+
+[33mcommit 991f687ee7f734a2b20bbb00de5824f0aca03f59[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jun 4 19:31:17 2019 +0545
+
+    quiz app with demo questions !
+
+[33mcommit 3e218891a3c2fd76045e627615c111cb1c91a4d4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 18:19:20 2019 +0545
+
+    auth options screen
+
+[33mcommit 901626436293e07b0c586fe7e5bdde9403b600e1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 16:34:24 2019 +0545
+
+    removing unrequired property
+
+[33mcommit cd4ecc02ca2acdd3c3316f033c7fb4a3b5574fc0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 16:32:52 2019 +0545
+
+    implemented shared preferences to check change status
+
+[33mcommit 4691d9e108bd92b6f2eff8d7b5de8f40155b935b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat May 25 08:36:45 2019 +0545
+
+    profile 4 - developer resume
+
+[33mcommit 57a5644576d172a6724bb0f7017f6abd590ecd2b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat May 25 08:36:36 2019 +0545
+
+    fontawesome icons and url launcher
+
+[33mcommit fc4e92ae25c8d5106dd2baf2f58a472b278fbb62[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed May 1 16:31:07 2019 +0545
+
+    ecommerce pages
+
+[33mcommit 12423136a16e3e0b537ebf9a1955996894fe1fb9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 24 08:33:45 2019 +0545
+
+    custom checkbox list tile
+
+[33mcommit ea85d084c07e55a840193922599d3faa4ea8a6d0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 23 07:26:19 2019 +0545
+
+    menu title auto fixing
+
+[33mcommit 1f2fc1cb44e4272ed93d419932b9e20417a8dd8c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 23 07:18:49 2019 +0545
+
+    removing test
+
+[33mcommit 3c0019e802c61a48ab6b32ae18131f0d14507753[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 16 19:44:01 2019 +0545
+
+    cake page food delivery
+
+[33mcommit ba8af3ae009b64380f6f5811f285bd462b3e3e8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 6 16:19:32 2019 +0545
+
+    sliders
+
+[33mcommit 3f6815c8d5d8b87f4be4d8478f8546270f9168b9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:33:12 2019 +0545
+
+    readme updated
+
+[33mcommit c41d068e4fa4fec8a43557c64cee62794537c5b5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:30:02 2019 +0545
+
+    highlight latest additions
+
+[33mcommit 437e538974cf0ac42fc72906084c8c93b683aa34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:07:51 2019 +0545
+
+    refactor alert dialog
+
+[33mcommit f354d94c05fb12efe4840fd3eb3da8d842f0bdf3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:05:17 2019 +0545
+
+    beautiful alert dialog
+
+[33mcommit baf64cf1537b1830e20c09cef065d9ac706ba43e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 20:42:19 2019 +0545
+
+    payment success dialog
+
+[33mcommit ee0fdf38bcee8d25607fd6e6a4d1962938741b52[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 20:56:01 2019 +0545
+
+    get it on google play logo on readme
+
+[33mcommit 073ffebea5eed5d53c2395b398c42ab0d2da4b3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 13:51:02 2019 +0545
+
+    main menu styling more
+
+[33mcommit 54f5937748c16fe19d164b394f821100f42216e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 13:05:34 2019 +0545
+
+    styling main menu
+
+[33mcommit 4fd6e79589655b0cc1dbe6d59ae0829be1c371f8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 12:52:19 2019 +0545
+
+    profile 3
+
+[33mcommit b7278ba59b6c31c2c625519e36dc959a36de7f1e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 19:11:20 2019 +0545
+
+    updating package name and display name
+
+[33mcommit 0e50dc0ff3da5b50b49ade05de1bcf28cc0b770b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 19:01:14 2019 +0545
+
+    adding launcher icon
+
+[33mcommit c10871d90b13b68e3b4d07755f1c8b9b0b87b477[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 18:37:45 2019 +0545
+
+    signing configs added
+
+[33mcommit cbe4504a6ee2de8bfb1c919e9f5e7143cf23870c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 18:18:05 2019 +0545
+
+    updating home page, displaying menu
+
+[33mcommit 35d336fa6c23c57c99ec45aaf5b92f5fdb40f36c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 15:00:13 2019 +0545
+
+    article two
+
+[33mcommit 1fc3fd9a54340d48d9d51485501d98b1903e0f8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Mar 30 19:44:39 2019 +0545
+
+    Article One
+
+[33mcommit d4b82ca6253bc0237d5f11b4e19cbd598f9fec27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Feb 18 07:52:18 2019 +0545
+
+    confirm order page
+
+[33mcommit 6bb2ff2c7489139f58c283d721edfeea50d03184[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Feb 1 07:30:51 2019 +0545
+
+    screenshot and readme
+
+[33mcommit e85f9dd3e98e94e855266e8f4f33d030c0fd9a28[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Feb 1 07:29:52 2019 +0545
+
+    cart page
+
+[33mcommit ffe5ce7a109b879d2574e19a02f9bffdcb6176e9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:31:49 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 53d2c3afecb2a1755e8b13c7a6b6bdd4f038ffbf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:30:41 2019 +0545
+
+    login page 4
+
+[33mcommit 692f5b2472ec7fd0e73f40528e8f019c97a17f59[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:30:35 2019 +0545
+
+    adding all assets in a folder
+
+[33mcommit f7c4ef0538d39fc4c364aefbfcb6f49441412a47[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 17 19:56:31 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 16e7cc963fe10cefc08c246839a3b2dab0ddd088[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 17 19:49:30 2019 +0545
+
+    profile two page
+
+[33mcommit ba73df9b436636ab62a2946a4a59a73798d3cc92[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 16 15:55:41 2019 +0545
+
+    screehshot and readme
+
+[33mcommit 7249f34a85f1a017cafc3de047c1d8b19fdabd25[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 16 15:54:16 2019 +0545
+
+    food delivery home page
+
+[33mcommit 8613b01cfe88346ef23073a3dc46d9f99b6dbe24[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 11 08:57:38 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 90a68ae0a88f62885dd8fd779ff00ceda611c718[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 11 08:56:25 2019 +0545
+
+    discover nepal ui
+
+[33mcommit ee4d94a3ca6f86c60162a7115714b0704993bc2f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 9 10:24:06 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 3e3da93be298ac594ac6acb18951485c5b990646[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 9 10:21:45 2019 +0545
+
+    hotel home page with assets
+
+[33mcommit 34494b3d7cfc5acbbf22246ef44f7e73a0627ee3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 7 10:24:02 2019 +0545
+
+    readme and screenshot- hero animation
+
+[33mcommit 71759939dcad78e93c3f5e209a71815a7e8395b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 7 10:20:18 2019 +0545
+
+    hero animation 1
+
+[33mcommit 4a8baec59580a09c03a0aa483e163973f3633b34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 14:38:44 2019 +0545
+
+    screenshot and readme
+
+[33mcommit d8bd2623022d9541b03a5fe162cb7d66c91ac615[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 14:36:24 2019 +0545
+
+    destination page more images
+
+[33mcommit 5ca89e59b580865217917e207de7fca51a41c4cc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 13:50:03 2019 +0545
+
+    travel destination page
+
+[33mcommit e206e4c0c8df1b2fd7fb29ebe3eb505c6a2644b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:51:14 2019 +0545
+
+    bottom navigation bar added
+
+[33mcommit 757f9080d4d12fe262678f9aead2a30cdbcd1d36[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:39:30 2019 +0545
+
+    refactoring
+
+[33mcommit 776120ee97d7e09ce6f081e2eca5ba933777454d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:27:43 2019 +0545
+
+    rounded border for images too
+
+[33mcommit c39e100ee4b8308eb348778573482b188c0f806c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 07:27:02 2019 +0545
+
+    travel app home page
+
+[33mcommit ada67f3e1a3a9c7407f110107a0b5ebc8d5d45bc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 07:26:57 2019 +0545
+
+    assets for travel app
+
+[33mcommit 99b9b63557d49e3b887dfea37b0f02dc94fac5ad[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 2 12:28:26 2019 +0545
+
+    readme and screenshot
+
+[33mcommit 0a0b055a6588ec21254826dd178d02b45777170a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 2 12:26:53 2019 +0545
+
+    recipe details page
+
+[33mcommit 8fcb58b9dd60ceadf6715fd9ceaf8a04136e70b8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 31 16:02:02 2018 +0545
+
+    readme and screenshot
+
+[33mcommit e48c6f0ff4dfbc52735c578c1ab00c62929050da[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 31 16:00:58 2018 +0545
+
+    login 3 with wave animation
+
+[33mcommit be6dd36e0f3443b90a492c88980992f4aadd744f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:30:25 2018 +0545
+
+    readme and screenshot
+
+[33mcommit 040bea3ddc7ab1c3872cab8fb2f3cc447bcce21d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:24:51 2018 +0545
+
+    few changes
+
+[33mcommit 8176c366f26f037e0f17296c55134199bd6dfc8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:24:01 2018 +0545
+
+    onboarding with logo
+
+[33mcommit 53e1fb3c812c3dba89d280b47b84c7c035cb40b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:08:48 2018 +0545
+
+    onboarding one
+
+[33mcommit 4e2bcfbce1d00dcb5178ba69db62cc8a4ffebd27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 13:34:47 2018 +0545
+
+    added required assets
+
+[33mcommit 0df01d39823db3c1535d466fd9e4e2e7efe25d8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:20:17 2018 +0545
+
+    loader 2 parameterized
+
+[33mcommit b784f1ae6a354ecbbcd54d205848cea49ff0931d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:11:07 2018 +0545
+
+    second loader
+
+[33mcommit b5ba04f4363bd511a059a35b96d006e2915ce59f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:11:03 2018 +0545
+
+    loader one duration fixed
+
+[33mcommit dca08b817dcef58dbd7036b21a47d7a9e623ddaa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 07:53:39 2018 +0545
+
+    animated loader one
+
+[33mcommit ae94a824e70a697c85691fd36f508dbe50b82199[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 29 13:57:42 2018 +0545
+
+    screenshot with readme
+
+[33mcommit 366614baed7211c167a5f929159f789c2d293f45[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 29 13:56:00 2018 +0545
+
+    collapsing app bar with sliver app bar
+
+[33mcommit b494b5dab5dc17992158606c6c31909bf5856713[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:30:10 2018 +0545
+
+    ecommerce detail  2 screenshot in readme
+
+[33mcommit 5fc30a8627260f07f047f5c3af8c0c258e2a3f51[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:27:39 2018 +0545
+
+    refactored readme and updated screenshots
+
+[33mcommit e4922c7c502b77fe2b34bfe55719206c7433cfa5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:24:21 2018 +0545
+
+    ecommerce details 2
+
+[33mcommit ce379a3a38c37779aaee8831eaf12334fa938e9b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:24:12 2018 +0545
+
+    more assets
+
+[33mcommit 0626b3b6ca823eb189fde768b78f8ff8ac8d6bd4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:28:31 2018 +0545
+
+    updated readme
+
+[33mcommit 81fe4b73531428812acb472e35dd3666c13ed05c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:26:02 2018 +0545
+
+    readme and screenshot
+
+[33mcommit 26802e5c186f44fbc64a391c253f79560f95da17[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:19:21 2018 +0545
+
+    complete widget for springy from fluttery challenge
+
+[33mcommit 4436fd386d171249c20460050f3b864d9a03905d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:04:06 2018 +0545
+
+    drag effect and change points, heights accordingly
+
+[33mcommit 74f8b91453ac952e518f12544b112f7b3aa75ddd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 20:43:45 2018 +0545
+
+    springy slider initial with paint and text and everything
+
+[33mcommit 34ca790a58db37d7818ad3f357201be39f7dfeee[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 19:02:27 2018 +0545
+
+    more from custom clipper package
+
+[33mcommit 3dce08083beed0e71526ddcc629e919308691a90[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 16:44:21 2018 +0545
+
+    updated readme
+
+[33mcommit 04693c4d6fbd0b3074dbc4817eaf530a4ab0eaa9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 16:42:56 2018 +0545
+
+    removed custom clippers in favor of using custom clippers package
+
+[33mcommit 26ebdc916d5bcc5a97450b80e1d9567fb1914922[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:45:22 2018 +0545
+
+    updated screenshot
+
+[33mcommit 03762ef7067260b7a4283e2a664df6fd0d6b172c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:42:27 2018 +0545
+
+    readme with screenshot
+
+[33mcommit ec966a6111b9d31af7f5dfec7aa6d2bee32a5fa6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:39:42 2018 +0545
+
+    hidden menu 1
+
+[33mcommit 204f3466980b9c51fb2fde290c419e8acfdb89da[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 09:13:51 2018 +0545
+
+    styling drawer with header
+
+[33mcommit c1afae88e5987d6acb773d1309200cc1c4bc55d6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 09:05:10 2018 +0545
+
+    Refactoring drawer menu
+
+[33mcommit 20cd826651676c12e24e83118835ee81b0821dae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:44:20 2018 +0545
+
+    updated screenshots and readme
+
+[33mcommit 3fb4f5ad3b3de2c782113b6fccb32d6dd664c49b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:41:33 2018 +0545
+
+    app bar bottom border
+
+[33mcommit 980fcfbb42644d926bd413dfcafa3be9db529b4e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:39:04 2018 +0545
+
+    profile tab
+
+[33mcommit 372e1c31873aa531be20f34cb064efea6852fdbb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:30:32 2018 +0545
+
+    wishlist page
+
+[33mcommit 6cf60895c13ff05b688e5a948718d227c36a5578[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:55:37 2018 +0545
+
+    updated readme with screenshot and details of implementation on grocery app
+
+[33mcommit c4a8546fece564d1aa08f44ecb87968a0a3047db[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:52:15 2018 +0545
+
+    text style on checkout button
+
+[33mcommit 978eca7b92c0a838e9c5454337774cf4b9894513[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:51:22 2018 +0545
+
+    clipping and box shadow
+
+[33mcommit 1780f965d76e3df0921945045c8ab3cbb44d3a0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:35:37 2018 +0545
+
+    list view padded
+
+[33mcommit 4a19bdabb55f1549cf037db4fb4a9ce080656e96[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:34:26 2018 +0545
+
+    appbar modified to show relevant information
+
+[33mcommit 27a5e2b68b8f6e9fedb27213d9bbc08ae48bdd21[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:27:10 2018 +0545
+
+    cart page
+
+[33mcommit 2e131931968399f192e57e00a5b3ce6f5e80a61f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:11:26 2018 +0545
+
+    updated different tab views page
+
+[33mcommit 4c6709818b4954c7302ca2cd5705f06f79e78656[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:05:50 2018 +0545
+
+    refactoring home tav to use bottom navigation bar
+
+[33mcommit 3151598d53ea04c8e6476af43003dadf65beb9bc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:23:45 2018 +0545
+
+    readme update
+
+[33mcommit 4b44188ca9c68ef0bd4087770425b874c50c21eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:22:14 2018 +0545
+
+    details page
+
+[33mcommit a013496389e6d73dd814c3c6df9f5e50d78df6a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:21:40 2018 +0545
+
+    refactoring widgets
+
+[33mcommit 8ff6d6aa11c117a7128bfac16d0c244841479343[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 21:54:14 2018 +0545
+
+    spelling correction grocery
+
+[33mcommit 42bb27aa640a3c5d8d1f93d8dc877f1f5c294ad2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 12:04:53 2018 +0545
+
+    readme line break
+
+[33mcommit 5fe4e55d63d770373f2a0af0f13490f98a8d657f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 12:02:33 2018 +0545
+
+    updated readme
+
+[33mcommit 063ccc20a9fbbc522edfabf03100355d7c68e365[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:13:31 2018 +0545
+
+    remaining assets of home page
+
+[33mcommit c4062fb83b8c683232dc43d7f827348f574c27df[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:06:33 2018 +0545
+
+    grocessary home page list items
+
+[33mcommit ce07928f5bc24f19fe08696ec0b8c027bf2ae43c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:06:24 2018 +0545
+
+    asset spelling corrected
+
+[33mcommit 5a4a0c8d1d0e86dad7405cc5c34324541fea98d1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 08:41:57 2018 +0545
+
+    new arrivals row
+
+[33mcommit df4deb6076d4fc09dc57cc621f72bf3140e4a3ae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 19:25:50 2018 +0545
+
+    app bar
+
+[33mcommit 3b30153deff09fe4eef1daa27a900a9609d4c929[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 19:05:26 2018 +0545
+
+    list sub headers
+
+[33mcommit 41c49bcd7af7c8e370f43cd30fdf03cc6c9f3ab0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 18:49:41 2018 +0545
+
+    bottom navigation bar
+
+[33mcommit c8f1bcc8daf3efd69356ab085df42e4871a00030[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 18:43:00 2018 +0545
+
+    grocessary app
+
+[33mcommit 431fb2fe76bc132cd6d4d00b026d439f03648a98[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 17:49:35 2018 +0545
+
+    assets added to pubspec
+
+[33mcommit 85e6ceb8ace5b423e3a8268c5376a018dcef54c3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 17:48:04 2018 +0545
+
+    grocessary app asset
+
+[33mcommit 93f0e15ba66528d5107a1d1e94f0862d4abefaca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 11:01:09 2018 +0545
+
+    updated readme with new ecommerce detail layout
+
+[33mcommit 1b18eb0af3277c2c0f6ea133dc4fccee95e40a7c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 11:00:56 2018 +0545
+
+    changed drawer column to listview
+
+[33mcommit 8b791701384586f364c86c7afd0019796bd4da2c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:56:52 2018 +0545
+
+    refactoring detail page
+
+[33mcommit f307aacbf44d5d4a7c18df24b83a0aa0a57a2f3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:55:22 2018 +0545
+
+    detail page more refinement
+
+[33mcommit ab37aec8af7d2eae6e1f48d126c8700ea15c4954[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:22:25 2018 +0545
+
+    ecommerce details design 1
+
+[33mcommit 31f26a4065b41af87738241f52882a576f41fca0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:57:09 2018 +0545
+
+    updated readme
+
+[33mcommit 42e30fcf084a155e0c818e829d018bf42a9fddbd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:55:21 2018 +0545
+
+    refactoring shop item
+
+[33mcommit 759c145cee108ec5f540667b3a1e3f6233c2803f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:52:52 2018 +0545
+
+    bottom bar titles
+
+[33mcommit 4808d345cad2e0aee75737861df570d0996e09fa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:37:52 2018 +0545
+
+    ecommerce item widget
+
+[33mcommit 101d4438e64380c67f1821e7b607423d0895b8c5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 15:34:05 2018 +0545
+
+    ecommerce 2 header
+
+[33mcommit 3d4f74a75f5b537781c85e69a7662a3c4d69428d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 13:16:48 2018 +0545
+
+    corrected forgot password
+
+[33mcommit 272551734b7c90ad03f16e32af3e48fd44f6421a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 10:01:52 2018 +0545
+
+    screenshot updated
+
+[33mcommit 8fc1be5b6568ca433f2dcc374c47987f312d44b4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 09:15:31 2018 +0545
+
+    removed forgot password from signup screen
+
+[33mcommit 3fe7bdf84c13f26a6963cc49b66b1044342c652b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:33:00 2018 +0545
+
+    updated screenshot and readme
+
+[33mcommit fc255e719271df0bf625341a6be4c02c3485ba5c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:32:03 2018 +0545
+
+    signup route to drawer
+
+[33mcommit 125e499ee771deaf16025aa7b276e9398722ecb4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:31:35 2018 +0545
+
+    signup screen
+
+[33mcommit ce0b3a8b02f0d1ffa5c4df1a4595c88cdcaf2880[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:22:46 2018 +0545
+
+    icon fix
+
+[33mcommit 0b85279ab8f37e529c660c5d2a3ce4ba4dbe0d55[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 15:18:00 2018 +0545
+
+    updated screenshot
+
+[33mcommit 27c06b46367f68b632f7d557b401a32538005d54[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 15:16:57 2018 +0545
+
+    adding curve to another corner and cleaning up
+
+[33mcommit a27fcea5c58378217eaabbd00a127b6a91d76d8b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:52:59 2018 +0545
+
+    updated readme
+
+[33mcommit 958fa7fa3356728c6c128c1b57124079d7911e6a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:51:27 2018 +0545
+
+    further ui changes
+
+[33mcommit 482142cec4e253b9a14555fa8a9adcae8c4fdc26[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:48:13 2018 +0545
+
+    ui changes
+
+[33mcommit 7f4da8ff2e273212fbc632b194756d311dba8c7d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:40:43 2018 +0545
+
+    second login page
+
+[33mcommit 4a723339355de39b16b6c02fdc88e29260fcca6e[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Thu Dec 20 15:22:49 2018 +0545
+
+    show images side by side
+
+[33mcommit 87a1107cd1470a359e5ad0b1a25c0e5b57e40eeb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 20 15:19:20 2018 +0545
+
+    updated readme to show images side by side
+
+[33mcommit a42a6943355ba461a13f972fa6d0dd343bb31203[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 20 15:15:38 2018 +0545
+
+    more screenshots
+
+[33mcommit 5ff894551d2bec4d0049bc7034e0bf2347151cbe[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 18 11:29:47 2018 +0545
+
+    profile colors and styles
+
+[33mcommit 9233b8ccb1c11d395428b9e746b5a4b790cdde63[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 18 09:00:14 2018 +0545
+
+    profile page layout
+
+[33mcommit df3480727d607c257f00bf41368fdc8a2bd0e346[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 17 09:17:23 2018 +0545
+
+    new home page and old page renamed as ecommerce
+
+[33mcommit 64e93786f403160c2674328b5d3fc8b4a4632c62[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 17 09:07:11 2018 +0545
+
+    login page
+
+[33mcommit 5485e0ff2dd8877dc2bb47e513f1ea3d82c2a050[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 16 19:36:34 2018 +0545
+
+    updated pubspec
+
+[33mcommit 6e2ab71eff9db47768e0cc3147efe504bfd9b8a2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 16 19:34:42 2018 +0545
+
+    first commit
+[33mcommit c72ceda7a56c4372b1d7e26a1d7edc856e805e4b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 157b182 beae5e2
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:31:32 2021 +0545
+
+    Merge branch 'todo-dashboard' of https://github.com/Ambikadulal/flutter_ui_challenges
+
+[33mcommit 157b1823aa4dc3b04c0ba930a47814ed9424e97f[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:30:43 2021 +0545
+
+    changes upto
+
+[33mcommit beae5e231e82835aa232967f89755bbf718a39e5[m[33m ([m[1;31morigin/todo-dashboard[m[33m, [m[1;32mtodo-dashboard[m[33m)[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Fri Jan 29 15:27:01 2021 +0545
+
+    Changes
+
+[33mcommit 2e203a550a50bbb80e372d0c0061319b6e1d7c01[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 21:08:44 2021 +0545
+
+    Scrennshot changes
+
+[33mcommit 54c4eab65c660d8e5537c6a4158af3d8c35d0063[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 21:07:19 2021 +0545
+
+    Readme and routes changes
+
+[33mcommit f3d853f8593154f063ae573e676ec5cbf4b10032[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 20:55:18 2021 +0545
+
+    todo dashboard
+
+[33mcommit f346e2c7414cebd0390b9eac0396e9f31ca580e6[m
+Author: Aparna16 <aparna@kumarijob.com>
+Date:   Thu Jan 28 20:38:15 2021 +0545
+
+    todo dashboard
+
+[33mcommit 21f048d3237cd1709aa0607f06895ae3b57ec8d9[m[33m ([m[1;31mupstreame/master[m[33m, [m[1;32mmultipage-ui-design[m[33m, [m[1;32mdashboardFour[m[33m)[m
+Author: Aparna Dulal <55906788+Ambikadulal@users.noreply.github.com>
+Date:   Thu Jan 28 14:57:49 2021 +0545
+
+    Cart three page (#57)
+    
+    * cart three page design
+    
+    * cart three screenshot and readme
+    
+    * cart three page design
+    
+    * Cart three Readme
+    
+    * deleting old pictures
+    
+    Co-authored-by: Aparna16 <aparna@kumarijob.com>
+
+[33mcommit 18d448160105fd47459bfc728ae501103547a1c7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 10 08:49:36 2020 +0545
+
+    login 11
+
+[33mcommit 3754390808681da85c3aeeb3f7bf43be9dc2e6fc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:18:21 2020 +0545
+
+    readme update
+
+[33mcommit 89810498246209c11d57dd3bdd39df0122b1492f[m
+Merge: 1b4d526 2878af3
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:13:56 2020 +0545
+
+    Merge branch 'master' of github.com:lohanidamodar/flutter_ui_challenges
+
+[33mcommit 1b4d52682e6d192a51edd2004748d7d099e518a0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Nov 24 19:13:47 2020 +0545
+
+    3 new screens
+
+[33mcommit 0bf70d6694d887eaa1ab0218a177b558ff75e0cc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Nov 19 09:05:52 2020 +0545
+
+    removed wave package
+
+[33mcommit 2878af3dcf270825673a0026afce59893056a5f4[m
+Author: Pawan Acharya <devpawann@gmail.com>
+Date:   Thu Sep 3 11:05:24 2020 +0545
+
+    Overflow issue on chat bubble fixed and redesigned chat bubblt (#54)
+    
+    Co-authored-by: Pawan <Pawanacharaya070@gmail.com>
+
+[33mcommit ee2de831f781ee153f6b64d30c9aeb0a7e1b1910[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 24 13:57:02 2020 +0545
+
+    updated code viewer
+
+[33mcommit bb2a9ae5e63fbff12b62bc23d87dbdc454389392[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 13 07:00:59 2020 +0545
+
+    animation in quotes page
+
+[33mcommit f670228d08fcca46a640ec1f89dc90597a760a2e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 13 06:53:39 2020 +0545
+
+    quotes one page
+
+[33mcommit 90b3cef230022f1460be49c77c2d04febceccc2a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Aug 11 16:24:39 2020 +0545
+
+    login nine page
+
+[33mcommit 69883f1f2e293ce4e5f3de07cdf0fce631be0b38[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 30 08:07:44 2020 +0545
+
+    login 8 page
+
+[33mcommit e8c36da8b81c2247e0c882eadc9de9eaa48919ce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 26 08:23:01 2020 +0545
+
+    food order checkout page
+
+[33mcommit 32977ce7aa126a07b58fbf85e3739be75722a164[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 25 18:52:49 2020 +0545
+
+    snap store link in github
+
+[33mcommit 7418666f63900f9591aace30bd2291a93ee0e0f6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 25 18:48:41 2020 +0545
+
+    beautiful menu page 1
+
+[33mcommit ad57ba0733defaf93495fd42613c0365a8aca924[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 16:58:33 2020 +0545
+
+    update desktop file
+
+[33mcommit 048e88890300be62008870fdf3f0f512550d3616[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 10:22:57 2020 +0545
+
+    changes update
+
+[33mcommit 34deb5352e67dfc05b8dbd6ffb3106786b86edac[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 09:26:51 2020 +0545
+
+    snapcraft update
+
+[33mcommit ba74a870156bd0da6ed91977bf6ea8e31d6ee208[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:45:25 2020 +0545
+
+    snapcraft details
+
+[33mcommit 169284a8d634fcb57350732350eceb34308ca6e1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:45:17 2020 +0545
+
+    updated binary name
+
+[33mcommit bc1a30645b604aa0a6ed6174e173ebb2b56e446e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 10 08:27:55 2020 +0545
+
+    updates and fixes
+
+[33mcommit a186f9f1b9718f4d6f8482ce63d4f28d993c1fa4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:44:53 2020 +0545
+
+    web published link to readme
+
+[33mcommit ed95cb8e77b92291b2565ddd61c94913d45efbf8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:25:57 2020 +0545
+
+    updated readme
+
+[33mcommit 715f43031668f066f3985cc8a5a9889128d9161c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:11:57 2020 +0545
+
+    removed cached network image to make it work on desktop and web
+
+[33mcommit c9967c9e88cd1e439477684b6aecac89957d6f17[m
+Merge: a3dd79a b5ba2ff
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:05:57 2020 +0545
+
+    Merge branch 'isomorphic'
+
+[33mcommit b5ba2ff658964c6379dab609d626cd6c9e6e831c[m[33m ([m[1;31morigin/isomorphic[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 08:02:57 2020 +0545
+
+    upgrading packages
+
+[33mcommit 81cbf8b4578ded7e9d58c7defca606f3e659b242[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 5 07:55:41 2020 +0545
+
+    removing unused code and updated to work with linux desktop
+
+[33mcommit a3dd79a38270a6e0062f0423b936c3ea5e8eb49d[m[33m ([m[1;31morigin/with-firebase[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 25 13:43:13 2020 +0545
+
+    updated readme
+
+[33mcommit 307dc2d51097deaf431ff78bbeddf5d02ca72b79[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 25 13:30:27 2020 +0545
+
+    profile nine
+
+[33mcommit a280a0cef74550d01835f6e013cdb96a88b4b0d2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 13 16:24:15 2020 +0545
+
+    updated intro_views_flutter plugin
+
+[33mcommit 0331a6a3e9bfc3d082b259096d8d7753b9dea9ff[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Apr 10 15:10:22 2020 +0545
+
+    minimal alert dialogs
+
+[33mcommit 96adb459872900a8b44995761cfafbbea0796aa0[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Wed Mar 25 15:23:36 2020 +0800
+
+    add global back navigation key handler
+
+[33mcommit 2dd8f932d0ee1926608b688a9cbab959be918427[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Wed Mar 25 14:21:30 2020 +0800
+
+    update vendor specific dir
+
+[33mcommit 01dfff4a4c57a69963356c7a00545b7e1a4df068[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:47:15 2020 +0800
+
+    update android/ios vendor directory
+
+[33mcommit ccb1e995bc8a1d2f7d130439bb905e8c6b9d5da3[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:14:08 2020 +0800
+
+    add github workflow
+
+[33mcommit 29294ddbb60d12bf115512857180d01f6fb19054[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 12:09:54 2020 +0800
+
+    comment platform specific code
+
+[33mcommit bcba7b71f527ed30d4084f11e3fa64fa85190c2f[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Fri Mar 20 11:28:37 2020 +0800
+
+    update .gitignore for generated source code
+
+[33mcommit fbf7d13784868b851bc1867a298a1416f38975b2[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:38:47 2020 +0800
+
+    update .gitignore for windows project files
+
+[33mcommit bfc3ad3b5709bb1a07c21fc6f6523c251409fe99[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:33:31 2020 +0800
+
+    add windows desktop support
+
+[33mcommit e6221323c047a06885dd78fffd6ab68794ea884f[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:29:26 2020 +0800
+
+    `flutter create .` to add web and desktop support
+
+[33mcommit 3daed086d8362b9b20039d7f941e6b5f91c66a72[m
+Author: liudonghua123 <liudonghua123@gmail.com>
+Date:   Thu Mar 19 23:28:07 2020 +0800
+
+    update .gitignore for android project files
+
+[33mcommit a6e4e465b8f6b14b95bd43bde71b5ed31c00ceae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Mar 14 13:56:35 2020 +0545
+
+    khalti clone added
+
+[33mcommit b51f76eb0ba417ba977aab64566d93b94fba75eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Mar 3 23:16:15 2020 +0545
+
+    profile 8 screen
+
+[33mcommit 0ed5b361c248954fdcf19b2055c36c3a64027e6c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Mar 3 21:38:47 2020 +0545
+
+    news 1 design
+
+[33mcommit 050bcd1d3cb2214ba192ea3b46774239b9a47b63[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 29 10:11:50 2020 +0545
+
+    furniture app design
+
+[33mcommit ef839e4449cbb2cc4bfdda9832aab6412cf7f926[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 27 11:51:25 2020 +0545
+
+    bank app clone screenshot
+
+[33mcommit 0aace1ebe68107183d7fa2e3d6502c909c2398b8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 27 11:46:03 2020 +0545
+
+    nicasia clone by @mausamrayamajhi
+
+[33mcommit 78000bff5d589936e43f86dc462f2bdef8608501[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 08:21:22 2020 +0545
+
+    cart 2 and ecommerce 4 screens
+
+[33mcommit 4c308320a8bf930d9954284a5421c969e3c23c97[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 07:20:40 2020 +0545
+
+    some minor fixes
+
+[33mcommit 0e591f47f93c171891af7e49eaf63d2db0a3d2ff[m
+Merge: 8304371 8d866ad
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 21 07:16:07 2020 +0545
+
+    Merge branch 'crop-demo' of git://github.com/xclud/flutter_ui_challenges into xclud-crop-demo
+
+[33mcommit 8d866ad130f1b972e330781e0aae8ab47244ecea[m
+Author: Mahdi <xclud@users.noreply.github.com>
+Date:   Sat Jan 18 15:14:44 2020 +0330
+
+    Use fixed version of crop.
+
+[33mcommit 2923d8114c284b0a614cb966f54a823ed32a2942[m
+Author: Mahdi <xclud@users.noreply.github.com>
+Date:   Sat Jan 18 15:12:57 2020 +0330
+
+    Adds author info.
+
+[33mcommit 7c43270a2a12e51e6e4dd9a55e776955eabb42b2[m
+Author: Mahdi <mahdi3466@yahoo.com>
+Date:   Fri Jan 17 15:29:19 2020 +0330
+
+    Adds crop package demo under Misc menu.
+
+[33mcommit 830437147d05e7c960660503e991f9bcd27c1270[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 13:13:53 2020 +0545
+
+    extend behiend app bar
+
+[33mcommit bda22551f70b0502b9335c6e4b9bb4d29db7e277[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 13:10:56 2020 +0545
+
+    intro routes fixed
+
+[33mcommit 0e37f5520658d722893aadaf5028050d8c8ae602[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 12:10:49 2020 +0545
+
+    adding shyam adhikari
+
+[33mcommit 88397f43bb69139f28f4219bad7c155b92078a0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 12:06:31 2020 +0545
+
+    gallery one design
+
+[33mcommit 846a9ffa341a70eb62e8d60cd2de84737d43e41b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 9 09:22:17 2020 +0545
+
+    music player 2 ui
+
+[33mcommit 6167dacc503276300772da43f8aeeef8afb6ddfc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 7 15:26:00 2020 +0545
+
+    settings one dark mode
+
+[33mcommit da8c31ee72a61a76f556250608bbf4db19c8ee1d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jan 7 12:20:20 2020 +0545
+
+    checkout page
+
+[33mcommit 67b3c5f124a65ce8c548d71e0a031a71329f2f14[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 13:10:19 2020 +0545
+
+    design updates
+
+[33mcommit 2643e9a3b2e008076079fb024db986016efc7040[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:36:25 2020 +0545
+
+    image provider updated
+
+[33mcommit 3f5835ad52256bf265d7a752f1c414c7ad556c3f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:34:23 2020 +0545
+
+    settings 3
+
+[33mcommit 5b552938f2b4714824ab6a16eec0b6481a6af365[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:17:46 2020 +0545
+
+    cached network image provider update
+
+[33mcommit 043783593dafae94b5b85d5f8108cd7adb506156[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 2 12:17:23 2020 +0545
+
+    launcher icons update
+
+[33mcommit 477e5d7cc2fd21a278674b06aef2785ac5b5112c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 29 09:09:51 2019 +0545
+
+    chat ui image not loading fixed
+
+[33mcommit 50cbdb8e71e36bb7a50b4939ec170335d4a67ded[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 29 08:59:54 2019 +0545
+
+    intro 4 image not loading fixed
+
+[33mcommit 679a7a5a08d5a7d84a924f579648d5c4037f5bbf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 28 20:13:57 2019 +0545
+
+    ui updates
+
+[33mcommit fa7cdd291b5d0ccc52848bf9f8a811baebdf33ac[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:32:08 2019 +0545
+
+    path update
+
+[33mcommit f46cea2f7bf7ddefe8889bea5bcdc09e28d6d301[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:30:11 2019 +0545
+
+    settings page two and readme sections updates
+
+[33mcommit 841a36d066d62a5cccf16edea442a93fc4d2721e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 15:03:45 2019 +0545
+
+    settings ui one
+
+[33mcommit 43592beefd884df1e85c3b8729d3171d30510faa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 27 14:22:53 2019 +0545
+
+    rearranging dashboard
+
+[33mcommit 10c5b580cc33c6f06c9a28e8844ffe543a6c4640[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 20:36:45 2019 +0545
+
+    animated list one
+
+[33mcommit d0805a17106de0a98d02d91c06de07f7838d7da1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:44:34 2019 +0545
+
+    home page reorganize
+
+[33mcommit 2982808d806bcf13eff41fb348c484005c9056e3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:44:30 2019 +0545
+
+    announcement design
+
+[33mcommit 96ee43379c80d1964e04cdc843d03689c0bb24a0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 19:34:05 2019 +0545
+
+    remove margin on expand
+
+[33mcommit 15de0bd2fab46ba0088f66202d2ca59c7e6322c8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 26 07:49:25 2019 +0545
+
+    redesign challenges menu
+
+[33mcommit 87d854649c5a49dfee27d2bf195b99859f40ce48[m
+Merge: 298b081 f6f0d4e
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 06:00:03 2019 +0545
+
+    Merge branch 'develop'
+
+[33mcommit f6f0d4e63f9e37a977aad7340c9f6f904d2631c4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 05:57:46 2019 +0545
+
+    link to speed code
+
+[33mcommit 699793c1aed4dffc674915f9f2019046355e841f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 24 05:41:40 2019 +0545
+
+    onboarding 6 design
+
+[33mcommit 83b974c7e16a72980993f46fbc4fc619bba0c508[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 23 15:05:22 2019 +0545
+
+    animated bottom nav
+
+[33mcommit e683b2a50a1f46e3ff8fe2db85fc0c68474dc8ff[m
+Merge: f5d311e fd3934a
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:59:45 2019 +0545
+
+    Merge branch 'feature/new-home' into develop
+
+[33mcommit fd3934a7a85397ec05e2e594811f04db0293282c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:55 2019 +0545
+
+    new home page
+
+[33mcommit 0a459e24bd8f5db81399b84e1139255e87bb1945[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:32 2019 +0545
+
+    main menu refactored
+
+[33mcommit 21b2d76e2bde4578cbf4e325ab09f56120767161[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:46:09 2019 +0545
+
+    ui challenge home refactored
+
+[33mcommit f1022e05780ba742a1694bf2d5d649a9e98cb857[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:45:45 2019 +0545
+
+    route name change error fixed
+
+[33mcommit 1f8fd9d1922ff11ee44719aed92397bd1ee54a78[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 22 18:40:13 2019 +0545
+
+    custom appbar function
+
+[33mcommit f5d311e9d5d802cf8532b82639467f31af0889ec[m
+Merge: b7804e2 951e814
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:31:40 2019 +0545
+
+    Merge branch 'feature/survey' into develop
+
+[33mcommit 951e814810c40232fca7fca811d54b506003ce50[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:28:53 2019 +0545
+
+    display survey if it exists
+
+[33mcommit c1ee517a080b1424b20a007647b327e8be2a52ca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:27:09 2019 +0545
+
+    survey widget
+
+[33mcommit 7eafd4143eff24dd843108b08856d15b1cd136d9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:59 2019 +0545
+
+    firestore functions added
+
+[33mcommit 83b57a6efb0540f8c098ae3fba9eb950b156c493[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:23 2019 +0545
+
+    surveys field added
+
+[33mcommit 2aa27f6bfb7b9d987d4da9f721455419627963dd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 19 20:26:02 2019 +0545
+
+    survey item model
+
+[33mcommit b7804e2d6747fe0d2184e2a9def0d044f583a9f1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 19:47:08 2019 +0545
+
+    rearrange lines
+
+[33mcommit c1543e5bbd9266207424a39a34228774f636fb82[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:57:11 2019 +0545
+
+    analytics implemented
+
+[33mcommit 795ac5fe1048c262abe5fbd44425979d980daa6d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:49:41 2019 +0545
+
+    provider depricated function removed
+
+[33mcommit 2691cce5bc9bf4661dff0202c7a8d0dd76b7b517[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 17:45:43 2019 +0545
+
+    upgrading plugins
+
+[33mcommit 298b08106e75cc5702b02045df293d18f5fa6b05[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Wed Dec 18 10:02:34 2019 +0545
+
+    Develop (#37)
+    
+    * fix typo (#29)
+    
+    * Update routes.dart (#30)
+    
+    * Bike app home and details page
+    
+    * auth 3 screen
+    
+    * screenshots and readme of bike and auth screen
+    
+    * updated for latest flutter stable version
+    
+    * placeholder image
+
+[33mcommit ad28bc53402fe19c8375ac9547b9a506647c4b34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 18 10:01:11 2019 +0545
+
+    placeholder image
+
+[33mcommit e72ec3c5cf091535b4e29d67568f7b7188bfb463[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 14 20:18:33 2019 +0545
+
+    updated for latest flutter stable version
+
+[33mcommit d4a219e1b5c75b580c872d1b1cf05d2d3d13760c[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Wed Dec 11 07:23:40 2019 +0545
+
+    Develop (#34)
+    
+    * fix typo (#29)
+    
+    * Update routes.dart (#30)
+    
+    * Bike app home and details page
+    
+    * auth 3 screen
+    
+    * screenshots and readme of bike and auth screen
+
+[33mcommit 3c58daef87f68170103b4983823d26ca4f49f72d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 4 06:14:14 2019 +0545
+
+    screenshots and readme of bike and auth screen
+
+[33mcommit 54a46cdca4f2a1606c848930deba0ffa32396fa7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 4 06:09:27 2019 +0545
+
+    auth 3 screen
+
+[33mcommit dedcd376b756412478ee7b2553961b1a966ccdd8[m
+Merge: 297c392 40b55aa
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 30 07:16:54 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 297c392d5f89b1cc769556ad466bab50349994d1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 30 07:14:30 2019 +0545
+
+    Bike app home and details page
+
+[33mcommit 40b55aa7289b859c2f638c188bfd057147cc4cfa[m
+Author: Bagus Erlang <erlangparasu@gmail.com>
+Date:   Wed Nov 27 20:40:31 2019 +0800
+
+    Update routes.dart (#30)
+
+[33mcommit 182edd0e0b6b9d9bb79007825df1d240429b73a7[m
+Author: Bagus Erlang <erlangparasu@gmail.com>
+Date:   Wed Nov 27 20:40:12 2019 +0800
+
+    fix typo (#29)
+
+[33mcommit 31b0840aae2531fcbf5dcc01e05306bdd34adcfe[m
+Merge: 42c64d1 9f47562
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 19:00:53 2019 +0545
+
+    Merge branch 'feature/news' into develop
+
+[33mcommit 9f4756273d121d302c403f149aebd5dc779222fd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 18:59:29 2019 +0545
+
+    display announcements from firebase remote config
+
+[33mcommit 13ccb6ecdc1304e76cdc62c272b23f0f8c5aa68a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Nov 20 18:50:43 2019 +0545
+
+    setup firebase_remote_config
+
+[33mcommit 42c64d184e53056a961f2df66bd7f2b61c060a67[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:15:54 2019 +0545
+
+    invitation app ui category in TOC
+
+[33mcommit d5d212207f0cbef3c04cf0a3949a9b8a1c1a1ab2[m
+Merge: 4cd19d1 00839cb
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:51 2019 +0545
+
+    Merge branch 'feature/image-popup' into develop
+
+[33mcommit 00839cbcbc59e727d283d65ac5791355883f68e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:45 2019 +0545
+
+    image popup screenshot and readme
+
+[33mcommit 691b54b091221cba5cd011dd7e6cafe7af47d670[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Nov 9 20:13:32 2019 +0545
+
+    image popup view
+
+[33mcommit 4cd19d1e3155956b03c8f17ed7162a97101b7b8f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:41:09 2019 +0545
+
+    invitation screenshots
+
+[33mcommit ac94a2762338c6d74e970489434513f5de94cbcf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:37:01 2019 +0545
+
+    invitation uis
+
+[33mcommit 36fdfed29dc8ad1ab71852bec600192c09e30bb8[m
+Merge: 0fc18ba 11ead61
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:10:03 2019 +0545
+
+    Merge branch 'sid' into develop
+
+[33mcommit 11ead612d9ec8fe1524f984cba7b69222559460d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Oct 4 16:09:40 2019 +0545
+
+    path fixed
+
+[33mcommit a904bf2772aa7d8f54ae3f605734a712c6cec4ab[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Mon Sep 30 22:28:52 2019 +0545
+
+    screenshot added
+
+[33mcommit b8a82557e26baa57cc0e9818fba852a23bd09ea6[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Mon Sep 30 21:36:53 2019 +0545
+
+    music player ui added
+
+[33mcommit 0fc18ba0ebf335523dd588db1b62addda3f1d27d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 26 19:05:17 2019 +0545
+
+    flare flutter version fixed
+
+[33mcommit 696f1aca3a6733d13ec7d4ae5448851537b70254[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 26 14:01:06 2019 +0545
+
+    login ui update keyboard actions
+
+[33mcommit 0eb671770445b879b2a8f6230a095a4dc0f6dab6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Sep 24 10:27:26 2019 +0545
+
+    sports news ui design
+
+[33mcommit f8b989db1b42a3ab542ab9709bc4dcef123096ce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 08:45:18 2019 +0545
+
+    bundle url types added for google sign in
+
+[33mcommit 99f0a593f145609ee460de0f09a9a506acd33232[m
+Merge: 8eea39b 139a08e
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:49:07 2019 +0545
+
+    Merge branch 'master' into develop
+
+[33mcommit 139a08e4d89dac6f97fd24ec55f5f7d892c81bcc[m
+Merge: f5e479f 4464d61
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:48:32 2019 +0545
+
+    Merge branch 'hotfix/misc-cat-fix'
+
+[33mcommit 4464d616cfe16ca18f03f04da5d737569bba148f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:48:20 2019 +0545
+
+    version change
+
+[33mcommit 8eea39b2fe8441e164354589c8c03d2aa07190fd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:47:21 2019 +0545
+
+    fixing misc image preview
+
+[33mcommit d852ec64b99748a59d6c2660c38cf2b277a7c35e[m
+Merge: 49fac9b f5e479f
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:43:14 2019 +0545
+
+    Merge tag 'v3.0.0' into develop
+    
+    v
+
+[33mcommit f5e479fc99110c4d78d2f4a5476dcf4f80e1712c[m[33m ([m[1;33mtag: v3.0.0[m[33m)[m
+Merge: 49ca12e 49fac9b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:42:50 2019 +0545
+
+    Merge branch 'release/3.0.0'
+
+[33mcommit 49fac9b509d6cbd77365bb18cb17c8a9767abda3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:39:39 2019 +0545
+
+    fixing route
+
+[33mcommit b8e8720fee3c423b11f8c3ea77a361277c10eb27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 23 07:25:22 2019 +0545
+
+    todo home 3 added
+
+[33mcommit f5b1f3394807ef5b5ddd3e2142cdaf5264f2f8c6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 12:01:19 2019 +0545
+
+    fixing null user error
+
+[33mcommit 31a8fd5631c2a49d98d6a260e1d0b3ff198e12e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:08:16 2019 +0545
+
+    version number upgrade
+
+[33mcommit affd363c056dbfdc80ac11567feb5776cd435fd0[m
+Merge: 542eda7 78fbebc
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:07:50 2019 +0545
+
+    Merge branch 'feature/new-ui-popup' into develop
+
+[33mcommit 78fbebcef39f233fac9893682801d3b807a6e141[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 11:07:05 2019 +0545
+
+    don't display popup if just installed and haven't chcked any
+
+[33mcommit cf318dab173435d7a23b0f2acd835d82150278ea[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 10:51:53 2019 +0545
+
+    new UIs popup
+
+[33mcommit 542eda7c6f6cbf17513a50779de101e95f888cfa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:21:21 2019 +0545
+
+    info on building with firebase
+
+[33mcommit b04472c90f6ee1616c10d146991d49756dbf1cee[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:15:03 2019 +0545
+
+    login info, fix logout issue
+
+[33mcommit 77494bfd3e8f5b9d6aabb209fec3318bf408afc0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:08:06 2019 +0545
+
+    fixing color in quiz page
+
+[33mcommit f7aa1d461d6af6c96a19b0fda583b31f5800bc1b[m
+Merge: 916a42d c410f5b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 09:02:25 2019 +0545
+
+    Merge branch 'feature/favorites' into develop
+
+[33mcommit c410f5b5a61361218f013784416c96eb3bae4585[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 08:59:17 2019 +0545
+
+    fixing routes
+
+[33mcommit c83722d7e71b4bd139d7de5062d60a619a3c5cf3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Sep 22 06:52:16 2019 +0545
+
+    encrypted google services configs
+
+[33mcommit c10a3a7c9df634557912d8b3a790afea84935a4a[m
+Author: Damodar Lohani <dlohani@Dlohani-Mac.local>
+Date:   Sun Sep 22 05:32:20 2019 +0545
+
+    ios setup
+
+[33mcommit 24d89f6b98bc79780b2d2be15ae5247d7489d3dc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Sep 21 07:24:05 2019 +0545
+
+    invitation app ui design
+
+[33mcommit c5ceb255aac43167f1763537fb02ca64293a6c58[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:48:32 2019 +0545
+
+    privacy policy link
+
+[33mcommit 42f52906dbd5c875c95c84d048012605bd1a607c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:45:57 2019 +0545
+
+    link to privacy policy in login-signup
+
+[33mcommit 5253f4697d2a160a46ebe93657460efeab8d526a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:31:36 2019 +0545
+
+    splash screen design
+
+[33mcommit ed88a033f1056e80cd2b7157347b707beb4d57e9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 16:17:47 2019 +0545
+
+    implementing cached network image
+
+[33mcommit 0937699269f0c1f6c9f7b146b50d34987f792872[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 15:58:21 2019 +0545
+
+    cached network image dependency
+
+[33mcommit e35068d570ea7d80c8bf5adcd30003adab722d7f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 15:40:21 2019 +0545
+
+    using heavy images from network - firebase storage
+
+[33mcommit 0d685d2e07837fdeeec7d2c520220e64946cb769[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 20 07:44:44 2019 +0545
+
+    image asset constants from firestore
+
+[33mcommit 73eadf0815903986216910150dd110a987259ad6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:54:33 2019 +0545
+
+    fixed body showing favoritestab when logged out
+
+[33mcommit 2cb9198c338ec92b2952dfa9a1b09181c3ce7d46[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:43 2019 +0545
+
+    favorite information
+
+[33mcommit 7109e231535e769478dee92c208d3995635f89eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:19 2019 +0545
+
+    fixing typo error
+
+[33mcommit 2f0541ba67bbc86abf905d70bf343fd12a997965[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:48:00 2019 +0545
+
+    dev pics
+
+[33mcommit caf09e8a881219a557f3fa824c605acd5b1795e6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:47:48 2019 +0545
+
+    favorite ui feature
+
+[33mcommit a24075e8cc958dcbc1f1021a05134b3f426f46e0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Sep 19 05:47:26 2019 +0545
+
+    Merge branch 'feature/fb-integration' into develop
+
+[33mcommit 916a42d49b61033f9ad54cf2206b09133694bbde[m[33m ([m[1;31morigin/without-firebase[m[33m)[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 13 10:39:08 2019 +0545
+
+    removing screenshot
+
+[33mcommit f8b5737b933f29f55cb3ce71044fe34921503001[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Sep 13 10:36:53 2019 +0545
+
+    some fixes
+
+[33mcommit 07e03d3c74d074b0f40c20e92bf80a2263014dc5[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Fri Sep 13 09:24:10 2019 +0545
+
+    conflicts
+
+[33mcommit 5291029211e2df0fb372b328db3c7e1dc317f310[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Wed Sep 11 21:24:02 2019 +0545
+
+    awesome bottom sheeet
+
+[33mcommit 49ca12eabcdb939230cbe7e6347d69a59b86df11[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 9 08:15:53 2019 +0545
+
+    doctor's app dashboard
+
+[33mcommit 5f4b2730210a5abc73f8b0186a37ee341088f78c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 9 08:15:41 2019 +0545
+
+    fitness dashboard speed code
+
+[33mcommit ae82ca7c6ffc3976bfa79aa4574ece509cdb8f38[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Sep 7 05:58:49 2019 +0545
+
+    fitness dashboard screen
+
+[33mcommit d1dac990df652c0d7584d03472a2ef9f814c1daf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 2 16:26:26 2019 +0545
+
+    removed unnecessary UI
+
+[33mcommit 9f3655bdca54702939b2605133af34ad4d2abf98[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Sep 2 16:24:58 2019 +0545
+
+    readme order changed
+
+[33mcommit a6dccda615d410ace98fd482b6212917f618516e[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 14:05:18 2019 +0545
+
+    car ui rem0ved
+
+[33mcommit 181732c19b5f4fe703fd3f6aa24dc51573623e99[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 13:06:25 2019 +0545
+
+    school list ui added
+
+[33mcommit c1d04af1898b609e5a7f0ea24526128320247562[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 31 13:06:14 2019 +0545
+
+    screenshots added in readme
+
+[33mcommit d7533d9563eeb313fcdfddb25d8b9f28fda06c59[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Thu Aug 29 22:09:23 2019 +0545
+
+    menu added and fixes
+
+[33mcommit 06512191f26af9182535843b83cdc9eb2be21eeb[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Thu Aug 29 22:09:08 2019 +0545
+
+    readme edited and image added
+
+[33mcommit cad83209d609307d40fdc1aec3b805bbf6096bfa[m
+Merge: 1e1ee9f 456f22d
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:21:02 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 1e1ee9f88da392ace3938a0c76503a68f2f7606d[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:29 2019 +0545
+
+    Image Assset added
+
+[33mcommit d897096e78154059fde9eda77221f039a866dca4[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:13 2019 +0545
+
+    model and app created
+
+[33mcommit 2e5e347423ac54ea05161d0badbb9732de335aac[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 24 21:20:01 2019 +0545
+
+    image added and a slider module added
+
+[33mcommit 456f22d985b7bf856c7c8a208d304c92ff190d80[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 22 08:17:35 2019 +0545
+
+    speed code URL
+
+[33mcommit 3590417545a8f3a8e820022a5f69426a0fc7af1a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 22 07:04:48 2019 +0545
+
+    blog home page UI
+
+[33mcommit d3bda026289e54fc48e05fb375f56b25c1e382b2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 22:43:13 2019 +0545
+
+    speed code link
+
+[33mcommit 819bf87f9025ed3fcb2ccf92302cdf24615a35e0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 16:09:58 2019 +0545
+
+    hotel room details UI
+
+[33mcommit 4aaa867b930dfed18b25e9d807bed54279e3752a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Aug 21 07:38:49 2019 +0545
+
+    todo home two UI
+
+[33mcommit fb09aa92040bd60d23ae8f0a60828e186f3dc993[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 16:59:29 2019 +0545
+
+    chat messages ui
+
+[33mcommit af0682112d0024b06fb3a299421c66fb9fbd183b[m
+Merge: b2f42d7 3cdbe43
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:06:01 2019 +0545
+
+    merge develop
+
+[33mcommit 3cdbe4366e722c8f8136267d19ecbb367d94be43[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:02:17 2019 +0545
+
+    dashboard ui one
+
+[33mcommit b8d0a936044e626a27eb4f7cd44352234b2bcb4b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Aug 19 08:02:08 2019 +0545
+
+    charts dependency
+
+[33mcommit b2f42d7d5c84ab73129b97324aebae87c64b2c12[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 07:16:01 2019 +0545
+
+    merge develop
+
+[33mcommit b53bc0db6255b26faaffe26272b6730f5e28586c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 07:08:02 2019 +0545
+
+    youtube link updated
+
+[33mcommit d17fd7cb1b4975664d6d956d61525541e5ddd793[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:51:39 2019 +0545
+
+    screenshot updated
+
+[33mcommit d3f69fdb37c1b3690931d8d5229a0291fae4df82[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:51:10 2019 +0545
+
+    fixing image fits
+
+[33mcommit b1736ed92a8c2e7c3a524b664a91d2ca1c646c16[m
+Merge: 2061667 d8888ec
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:46:40 2019 +0545
+
+    Merge branch 'develop' into siddharth
+
+[33mcommit 20616675799f09cb595cf963e8bc5b4275d51d8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:46:32 2019 +0545
+
+    removed non required files
+
+[33mcommit d8888ece5e184477417d9a7de90c4779c228881c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 06:39:21 2019 +0545
+
+    speed code link
+
+[33mcommit 5f04c2a3f7ee03a25050a4dc21ba522d8902869c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 05:48:29 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 65106ce1c4f747e6d8ad69b47a35a328ce16dd1a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Aug 11 05:46:52 2019 +0545
+
+    rounded ecommerce details
+
+[33mcommit ec59677f428370f3f008ccb2efd6e23e04819ff1[m
+Merge: d7bb271 1cf26a0
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:27:33 2019 +0545
+
+    Merge branch 'develop' into newfeature
+
+[33mcommit d7bb271611298a087487598314e460025c094bfe[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:24:17 2019 +0545
+
+    conflict resolve
+
+[33mcommit 1574e3f574ccdbb51c178ed81e1f77634a421aa1[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 21:22:53 2019 +0545
+
+    conflict resolve
+
+[33mcommit 4b20a109d91a5e3a2605e16b48eba8b9ba1e9023[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Sat Aug 10 17:12:38 2019 +0545
+
+    chatui added
+
+[33mcommit 1cf26a03f2a01427f2caa9bc6f1ae918315c5bb1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Aug 10 14:19:28 2019 +0545
+
+    fixes
+
+[33mcommit 11f4ed3739eba9b8a82e454b4cf37e31e0851406[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:29:33 2019 +0545
+
+    ui added to navigaion bar
+
+[33mcommit 49e285eaf72e5a499700318533ca00c1577c611c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:29:08 2019 +0545
+
+    travel home page designed
+
+[33mcommit 66f923d53bc56b2e5d879654a681896d19261c6c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Aug 10 09:28:53 2019 +0545
+
+    readme updated and screenshots added
+
+[33mcommit 72655fb9c73b9dd8b216d87a85a8a9a6b08cb4ee[m
+Author: Siddhartha joshi <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:52:18 2019 +0545
+
+    onboarding added (#10)
+    
+    * onboarding added
+    
+    * commited uncommeted files
+    
+    * scrnct
+    
+    * bug
+
+[33mcommit 2047cd34ed97b0779865e23d205ce80f3932e912[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:29:45 2019 +0545
+
+    bug
+
+[33mcommit 7f9a413e33fffacdd610505d19dd5e35c1a7c549[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 09:28:41 2019 +0545
+
+    scrnct
+
+[33mcommit e6ccb5db444427b47d9d3dd1d7503d95983368c6[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Thu Aug 8 08:30:03 2019 +0545
+
+    commited uncommeted files
+
+[33mcommit 81341ec036ae594ce35d8355d5d2d651da8ea5ef[m
+Author: cimplesid <joshisid178@gmail.com>
+Date:   Wed Aug 7 17:26:21 2019 +0545
+
+    onboarding added
+
+[33mcommit c02796f3ebc4d1368d177d36558372a2218ca22f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Aug 1 07:03:35 2019 +0545
+
+    todo week view
+
+[33mcommit 5bc3c4ca1a73ddfefa8562a90369bb67911b9194[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:37:43 2019 +0545
+
+    recategorize screenshot
+
+[33mcommit 67d43cdf83b2c0df1829c3f7edeffaa518ac94b6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:34:22 2019 +0545
+
+    updating paths and categories
+
+[33mcommit 209dc986b3c4dc0f6c90ae4f449e194221272705[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 28 06:34:14 2019 +0545
+
+    updating grid view
+
+[33mcommit 4cec10cc8c9bdc836d7b2d956afa4a20a5db74ba[m
+Merge: d499318 6561658
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:58 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit d499318f42ab9ad7eec56e554407da1750c962a5[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:25 2019 +0545
+
+    navigation menu edited
+
+[33mcommit 357f09f0fab673754593b83af96cd2a7ac1e8985[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:13 2019 +0545
+
+    profile ui added in profile category
+
+[33mcommit 10c0015cf26f7798df8c1085e5935d75db692d18[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:45:00 2019 +0545
+
+    home screen added in misc category
+
+[33mcommit dc221ace51a6dd355457bff1d61b2d1edb4cc7c4[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sat Jul 27 13:44:41 2019 +0545
+
+    readme edited and screenshots added
+
+[33mcommit 65616580449d6c0360d1c2a67449dd1619ce0eed[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 20:55:57 2019 +0545
+
+    fixed width
+
+[33mcommit 94e0a396da696c4ca645eee84f9fdcbb80bc7bce[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 20:54:47 2019 +0545
+
+    app store link
+
+[33mcommit 85eaaa1323e1c4492d50f857b80648cb782043aa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 09:45:32 2019 +0545
+
+    read me
+
+[33mcommit 1bf2defea67b41170541bac2dbf2716d62509ad4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 24 09:41:18 2019 +0545
+
+    replacing with network asset
+
+[33mcommit b71b1838723dcbd2219986be5e6cce7924255ccc[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:46:09 2019 +0545
+
+    image path fixed
+
+[33mcommit b77f843e45f91c292415a66f13ecae6e34759a28[m
+Merge: 485eea1 6be4885
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:19:17 2019 +0545
+
+    Merge branch 'develop' of https://github.com/lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 485eea1bedc36f72bc26ac3447f573c59ab047cd[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:40 2019 +0545
+
+    readme edited
+
+[33mcommit 82e71e0658c68bb00258d0fd7d5988c6fbb2e6ab[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:26 2019 +0545
+
+    list UI added to navigation
+
+[33mcommit b4d6b1441a6b10fca9b4e9ce79b4f3271c958e17[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Tue Jul 23 20:18:07 2019 +0545
+
+    images added
+
+[33mcommit 6be488572b2381cb1e0b148bbedc4c94fd3f34f7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jul 23 08:21:23 2019 +0545
+
+    minimal signup UI
+
+[33mcommit 4c4682a0b9a5d8587d01ea07044e96c5515b8e5e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 12:30:57 2019 +0545
+
+    image resized and made smaller
+
+[33mcommit 37f2dd1631cecd506fe3ca79297bc9e54a19765c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:57:06 2019 +0545
+
+    readme correction
+
+[33mcommit dd6dc61f0fb952025b0c6fcd9dc6f6934258f1c7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:55:48 2019 +0545
+
+    emoji test
+
+[33mcommit 487bd6b5160cb1c096a525ba68f6da14ceb2c65f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 11:53:00 2019 +0545
+
+    updated readme
+
+[33mcommit 061fe09f58fbbc86ed3e7220baac373a007a7d0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 06:20:35 2019 +0545
+
+    fixed file pat
+
+[33mcommit cd9d35618bf8fdb0c99080efd460279be8e84fa5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jul 22 06:06:34 2019 +0545
+
+    reorganizing readme
+
+[33mcommit 1ae8aac45f7ebf366aebe7e9a482615d7d49d34c[m
+Merge: 1e5004f c5dc0ed
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Mon Jul 22 05:53:50 2019 +0545
+
+    Merge pull request #7 from sudeepthapa/develop
+    
+    Develop
+
+[33mcommit c5dc0ed3d3b786fa59cb9740b3e70ed39765f074[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:51:49 2019 +0545
+
+    contributor added
+
+[33mcommit fea5154a08db6d8d0646f98b789e99d0dc2c5e6e[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:49:21 2019 +0545
+
+    image added and readme modified
+
+[33mcommit cf56f9ea86a8725683d5d97c9a15c26a8426a33f[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:35:13 2019 +0545
+
+    naming refactored with the current naming flow
+
+[33mcommit 4b7cb163d743679c43ceb3ed517ed177672e47a9[m
+Merge: 9902876 1e5004f
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:31:21 2019 +0545
+
+    merge conflict resolved
+
+[33mcommit 9902876847efc99fe58df2132517c9bacc02e32c[m
+Author: sudeptech <sudeptech@gmail.com>
+Date:   Sun Jul 21 21:27:41 2019 +0545
+
+    login UI added to challanges
+
+[33mcommit 1e5004fc6d548a48a3a55cf8c435678dd25f7d09[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:04:06 2019 +0545
+
+    login6 readme and screenshot
+
+[33mcommit cdf4f82670699be1d1c0bd9cf5033ea621fbbd5e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:03:18 2019 +0545
+
+    resize image
+
+[33mcommit 83ceaacdded6778519419f2fcb429ba0ebde57ef[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 18:01:33 2019 +0545
+
+    clean login
+
+[33mcommit cd0ebe632d22ed4aaffb9799c9a6abc03912359f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:41:56 2019 +0545
+
+    ios back arrow issues fixed
+
+[33mcommit c9ea83ffa3726f9a92156f2d67d4c3603fcc578b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:36:51 2019 +0545
+
+    hide empty ecommerce 4 layout
+
+[33mcommit 88441eba17c6ac539620904c5aef53940aa340b0[m
+Merge: d5580df 16a0c1a
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:28:09 2019 +0545
+
+    Merge branch 'develop'
+
+[33mcommit 16a0c1a8de133c67c8c01909a7c497ef05378f1b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:21:04 2019 +0545
+
+    image resized
+
+[33mcommit faf33c0da9292a220303fd695f9c5662fdbdaf16[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 10:09:59 2019 +0545
+
+    using default clipboard service
+
+[33mcommit d5580dfa149d43cc187c0772f4c999ab93906ff7[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 09:00:08 2019 +0545
+
+    using iOS icons where necessary
+
+[33mcommit 7d0af0f74f15dc28fd214194880f355aed617def[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:47:16 2019 +0545
+
+    sharing link to code
+
+[33mcommit b2a688219aa45af05b4aa4b3511381492cf87ba5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:42:32 2019 +0545
+
+    option to view preview and code
+
+[33mcommit 5997ae87bc5e8f00111e27b6979903a25338a4b0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 08:32:48 2019 +0545
+
+    full preview
+
+[33mcommit 4ff3471f8def30cde7c5eebdc6628dba7059d017[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:48:59 2019 +0545
+
+    added comments
+
+[33mcommit 447757eb7a31e858ef5c52e71d1311f3c5b15b9d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:42:13 2019 +0545
+
+    more adjustments
+
+[33mcommit bade52c4dfe411623bb51a202b48334b2702fcda[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 07:11:02 2019 +0545
+
+    able view code and few adjustments
+
+[33mcommit c1e27be349d4d65fda4f9ff27dd22a64ee45f4c4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jul 21 06:12:18 2019 +0545
+
+    adding code and preview functionality
+
+[33mcommit 35385fbc97d130327df47db4bc0564faf463273f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:56:32 2019 +0545
+
+    readme and screenshot
+
+[33mcommit c1c5929b4dd5db30bae35b6a86d6872de5510a49[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:54:37 2019 +0545
+
+    fancy appbar animation
+
+[33mcommit f0d7534344355aea40d441f12ed0202027f2869e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:50:05 2019 +0545
+
+    bottom nav category reorganized
+
+[33mcommit 02f9455975c40e55935ee45da02e0ce06cab2037[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:49:47 2019 +0545
+
+    link to github
+
+[33mcommit 6fb81f704977308cf30d8f7add87d0d49ace8d5a[m
+Merge: fcaa60c a63e6fa
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 13:45:51 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit a63e6fac5608870a2d1562b926e9108334e8f7c3[m
+Merge: ad1940a b47f70c
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Sat Jul 20 11:42:30 2019 +0545
+
+    Merge pull request #6 from cimplesid/develop
+    
+    fancy bottom navigation added
+
+[33mcommit b47f70c0250464294fb19345d66470f2aadbe66c[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Sat Jul 20 11:41:39 2019 +0545
+
+    uncomment release config
+
+[33mcommit 1526d4b588127afa4a6aaed0667e0a542c02284c[m
+Author: root <root@localhost.localdomain>
+Date:   Sat Jul 20 10:47:36 2019 +0545
+
+    fancy bottom navigation added
+
+[33mcommit fcaa60c7ba4117ecaeb4e937feb9debd179e6fd5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 08:20:12 2019 +0545
+
+    link to youtube channel on about page
+
+[33mcommit ad1940a496a335e55b21e09de124784b0885c586[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 20 06:23:32 2019 +0545
+
+    ios logo updated
+
+[33mcommit 02e515498387acb2ffe5945a0da812b39efcbd0b[m
+Merge: 2afcab5 3385c3b
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 19 08:51:42 2019 +0545
+
+    Merge branch 'develop' of github.com:lohanidamodar/flutter_ui_challenges into develop
+
+[33mcommit 2afcab5a8f53c3bcba26ef7425b2533923585fde[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jul 19 08:51:33 2019 +0545
+
+    app store updated icon
+
+[33mcommit 3385c3bd5d148d041368091a8fcac40a0db5ac7d[m
+Author: Damodar lohani <dlohani@Damodars-iMac.local>
+Date:   Sun Jun 9 06:56:49 2019 +0545
+
+    display name fixed
+
+[33mcommit 4cb1798c3dceb016d537615df13c40ccbb20a46a[m
+Author: Damodar lohani <dlohani@Damodars-iMac.local>
+Date:   Sun Jun 9 06:48:44 2019 +0545
+
+    selected team and bundle identifier
+
+[33mcommit c53002fc5f7b92e2307e36d5aba25d0538733251[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:53:20 2019 +0545
+
+    links to other repositories
+
+[33mcommit 872a683076994e0b5abb1aef475e8444a084fead[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:41:19 2019 +0545
+
+    fixing animation with sizedbox - closes #4
+
+[33mcommit 5210f5da16ca2adda93e8d78f5ef11ba0fb63ffa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 18 20:36:23 2019 +0545
+
+    animation 2 bottom reveal
+
+[33mcommit 7325592223c8940e50eab089f112b4030a49ba48[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 17 09:37:42 2019 +0545
+
+    applying blur
+
+[33mcommit 17f655873449af85bae48643d15fd075890c7ca3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 17 08:18:04 2019 +0545
+
+    welcome screen 2
+
+[33mcommit 166821da0e05cf4dce27eee90ba15e45e2f98b65[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:53:14 2019 +0545
+
+    added contributors
+
+[33mcommit 15fb73686d32d169548e5b986e72bbc05bc3c20f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:51:25 2019 +0545
+
+    added about page with contributors list
+
+[33mcommit 5748ab2bc83f09a4ae026f99054df39674d93956[m
+Merge: 293d2b3 bb82621
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:18:57 2019 +0545
+
+    Merge branch 'cimplesid-feature/sid'
+
+[33mcommit bb82621e43dd1d620cb055da8dd665c8ee1adf64[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 13 06:18:32 2019 +0545
+
+    refactoring
+
+[33mcommit 481769577ed5d6353289d29a87a729ce40198b8d[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jul 12 22:01:10 2019 +0545
+
+    profile 6 added
+
+[33mcommit 293d2b3808e270a033942957d7a4dfbaeb8ac335[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:08:12 2019 +0545
+
+    rearranging menu
+
+[33mcommit 48073887941b5697baaa7d921405b1acfd01cbc9[m
+Merge: 48eb067 ca46dcf
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:03:55 2019 +0545
+
+    Merge branch 'master' of github.com:lohanidamodar/flutter_ui_challenges
+
+[33mcommit 48eb067da32efdbb0d4bfb8afa92a6d59a4bb37f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:03:45 2019 +0545
+
+    organized
+
+[33mcommit f29ea96bc8bb24577acf749a6d12d7d3a49aedb3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 11:00:58 2019 +0545
+
+    speed code link - landing page
+
+[33mcommit 2348a76b333e3f24438bbb08e0ef5f40c03ff907[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:43:17 2019 +0545
+
+    intro 4 all
+
+[33mcommit 3b76b4c5c928d4a201fd270a0b1be9cf5cd241a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:33:26 2019 +0545
+
+    replaced dummy and centered
+
+[33mcommit 760ee8552b757ae5dca1162c07881c5e21ef891f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jul 11 10:02:08 2019 +0545
+
+    landing page one
+
+[33mcommit e6bd0a05afc1211d9feec4fcd34b3a62309a5cd8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jul 10 09:37:22 2019 +0545
+
+    animation 1 hero animation and readme/shot
+
+[33mcommit ca46dcff22d57d1b6e2afaed3ee707e284bd76f7[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Tue Jul 9 19:41:36 2019 +0545
+
+    adding license
+    
+    Fixes #3
+
+[33mcommit 4b728367e9dcbd54c21f69829414f9d5e0797aca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 18:10:27 2019 +0545
+
+    onboarding 3 screen
+
+[33mcommit 70ab995048c578f959195d3a6b13d712be0c46d4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 18:05:53 2019 +0545
+
+    remove unrequired stack
+
+[33mcommit 2338c0565811f1d266d340d8650faf237d545b94[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jul 6 17:53:54 2019 +0545
+
+    onboard 2 design with readme and screenshot
+
+[33mcommit 78d290cf9f688d4332a25cee3852dcefa4723ed0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 08:20:52 2019 +0545
+
+    speed code yt link todo home
+
+[33mcommit 045ead5a6a9b1937110548a38d33c300867f80bd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 08:20:22 2019 +0545
+
+    renaming
+
+[33mcommit c16dab40f405af828b2004bcb4c173b7fe53d61e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Jun 30 06:37:24 2019 +0545
+
+    todo home design and screenshot
+
+[33mcommit 572a4e04741d62249ba6566c9975aa7481f09c99[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 26 21:38:25 2019 +0545
+
+    speed code link
+
+[33mcommit fe4ed794a11ba501da9bafd8977cd63fc45df8be[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 26 15:44:23 2019 +0545
+
+    recipe single screenshot links and readme
+
+[33mcommit 162cae069764f75169ce622e6fc8a2b016b5c3a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 24 09:26:36 2019 +0545
+
+    youtube speed code link
+
+[33mcommit 93a102979c81f3c239a7a5c3657ee9a1ad9931f6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 24 08:04:29 2019 +0545
+
+    recipe list
+
+[33mcommit adfac5164b9e05906300bb22dafa20c25891c8ea[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jun 20 13:02:05 2019 +0545
+
+    light drawer navigation and screenshot
+
+[33mcommit eb0ba87791fd82b478bb22203a92e5e623175d12[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jun 20 13:00:40 2019 +0545
+
+    updating sdk constraint
+
+[33mcommit 8fe0c98d13eb70b7dad17e017cb786eb36343d79[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jun 19 11:30:51 2019 +0545
+
+    dark nav drawer
+
+[33mcommit 8d0d26039d47f2c0c063d9c7d66c656fa6037414[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 10 15:14:47 2019 +0545
+
+    readme, screenshots and speed code yt link
+
+[33mcommit d7834aa893fb981c8f8d088c904ea3d3414e6ec3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jun 10 08:15:33 2019 +0545
+
+    dating profile
+
+[33mcommit 8af505f19f3cea7eaa816256a1c2eb8c0d5794f2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 08:06:45 2019 +0545
+
+    speed code link
+
+[33mcommit 005e7a766a96b130844341cf78e7d0a61384d480[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 07:30:02 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 18cfbca6efe7d756954beae88c8e6e5544e9aa3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 8 07:28:25 2019 +0545
+
+    login five
+
+[33mcommit 40232bbb53a5308fffd97061fe33e5528e288854[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 09:37:35 2019 +0545
+
+    link to speed codes youtube videos
+
+[33mcommit 04996a7194241a2bc531d493b86b2cfd4c8cf882[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 08:11:15 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 4b156cd12ec04cd3b9982eda5fb7f0ea94bef8fa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jun 7 08:07:09 2019 +0545
+
+    fruit add to cart ui
+
+[33mcommit f480a59c30efbf9c42967df32f1a3284719e77a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jun 4 19:36:36 2019 +0545
+
+    screenshots and readme
+
+[33mcommit 991f687ee7f734a2b20bbb00de5824f0aca03f59[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Jun 4 19:31:17 2019 +0545
+
+    quiz app with demo questions !
+
+[33mcommit 3e218891a3c2fd76045e627615c111cb1c91a4d4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 18:19:20 2019 +0545
+
+    auth options screen
+
+[33mcommit 901626436293e07b0c586fe7e5bdde9403b600e1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 16:34:24 2019 +0545
+
+    removing unrequired property
+
+[33mcommit cd4ecc02ca2acdd3c3316f033c7fb4a3b5574fc0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Jun 1 16:32:52 2019 +0545
+
+    implemented shared preferences to check change status
+
+[33mcommit 4691d9e108bd92b6f2eff8d7b5de8f40155b935b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat May 25 08:36:45 2019 +0545
+
+    profile 4 - developer resume
+
+[33mcommit 57a5644576d172a6724bb0f7017f6abd590ecd2b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat May 25 08:36:36 2019 +0545
+
+    fontawesome icons and url launcher
+
+[33mcommit fc4e92ae25c8d5106dd2baf2f58a472b278fbb62[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed May 1 16:31:07 2019 +0545
+
+    ecommerce pages
+
+[33mcommit 12423136a16e3e0b537ebf9a1955996894fe1fb9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 24 08:33:45 2019 +0545
+
+    custom checkbox list tile
+
+[33mcommit ea85d084c07e55a840193922599d3faa4ea8a6d0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 23 07:26:19 2019 +0545
+
+    menu title auto fixing
+
+[33mcommit 1f2fc1cb44e4272ed93d419932b9e20417a8dd8c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 23 07:18:49 2019 +0545
+
+    removing test
+
+[33mcommit 3c0019e802c61a48ab6b32ae18131f0d14507753[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Apr 16 19:44:01 2019 +0545
+
+    cake page food delivery
+
+[33mcommit ba8af3ae009b64380f6f5811f285bd462b3e3e8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Apr 6 16:19:32 2019 +0545
+
+    sliders
+
+[33mcommit 3f6815c8d5d8b87f4be4d8478f8546270f9168b9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:33:12 2019 +0545
+
+    readme updated
+
+[33mcommit c41d068e4fa4fec8a43557c64cee62794537c5b5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:30:02 2019 +0545
+
+    highlight latest additions
+
+[33mcommit 437e538974cf0ac42fc72906084c8c93b683aa34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:07:51 2019 +0545
+
+    refactor alert dialog
+
+[33mcommit f354d94c05fb12efe4840fd3eb3da8d842f0bdf3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 22:05:17 2019 +0545
+
+    beautiful alert dialog
+
+[33mcommit baf64cf1537b1830e20c09cef065d9ac706ba43e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Apr 3 20:42:19 2019 +0545
+
+    payment success dialog
+
+[33mcommit ee0fdf38bcee8d25607fd6e6a4d1962938741b52[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 20:56:01 2019 +0545
+
+    get it on google play logo on readme
+
+[33mcommit 073ffebea5eed5d53c2395b398c42ab0d2da4b3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 13:51:02 2019 +0545
+
+    main menu styling more
+
+[33mcommit 54f5937748c16fe19d164b394f821100f42216e4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 13:05:34 2019 +0545
+
+    styling main menu
+
+[33mcommit 4fd6e79589655b0cc1dbe6d59ae0829be1c371f8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Apr 1 12:52:19 2019 +0545
+
+    profile 3
+
+[33mcommit b7278ba59b6c31c2c625519e36dc959a36de7f1e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 19:11:20 2019 +0545
+
+    updating package name and display name
+
+[33mcommit 0e50dc0ff3da5b50b49ade05de1bcf28cc0b770b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 19:01:14 2019 +0545
+
+    adding launcher icon
+
+[33mcommit c10871d90b13b68e3b4d07755f1c8b9b0b87b477[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 18:37:45 2019 +0545
+
+    signing configs added
+
+[33mcommit cbe4504a6ee2de8bfb1c919e9f5e7143cf23870c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 18:18:05 2019 +0545
+
+    updating home page, displaying menu
+
+[33mcommit 35d336fa6c23c57c99ec45aaf5b92f5fdb40f36c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Mar 31 15:00:13 2019 +0545
+
+    article two
+
+[33mcommit 1fc3fd9a54340d48d9d51485501d98b1903e0f8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Mar 30 19:44:39 2019 +0545
+
+    Article One
+
+[33mcommit d4b82ca6253bc0237d5f11b4e19cbd598f9fec27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Feb 18 07:52:18 2019 +0545
+
+    confirm order page
+
+[33mcommit 6bb2ff2c7489139f58c283d721edfeea50d03184[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Feb 1 07:30:51 2019 +0545
+
+    screenshot and readme
+
+[33mcommit e85f9dd3e98e94e855266e8f4f33d030c0fd9a28[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Feb 1 07:29:52 2019 +0545
+
+    cart page
+
+[33mcommit ffe5ce7a109b879d2574e19a02f9bffdcb6176e9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:31:49 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 53d2c3afecb2a1755e8b13c7a6b6bdd4f038ffbf[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:30:41 2019 +0545
+
+    login page 4
+
+[33mcommit 692f5b2472ec7fd0e73f40528e8f019c97a17f59[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 23 06:30:35 2019 +0545
+
+    adding all assets in a folder
+
+[33mcommit f7c4ef0538d39fc4c364aefbfcb6f49441412a47[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 17 19:56:31 2019 +0545
+
+    screenshot and readme
+
+[33mcommit 16e7cc963fe10cefc08c246839a3b2dab0ddd088[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Jan 17 19:49:30 2019 +0545
+
+    profile two page
+
+[33mcommit ba73df9b436636ab62a2946a4a59a73798d3cc92[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 16 15:55:41 2019 +0545
+
+    screehshot and readme
+
+[33mcommit 7249f34a85f1a017cafc3de047c1d8b19fdabd25[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 16 15:54:16 2019 +0545
+
+    food delivery home page
+
+[33mcommit 8613b01cfe88346ef23073a3dc46d9f99b6dbe24[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 11 08:57:38 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 90a68ae0a88f62885dd8fd779ff00ceda611c718[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 11 08:56:25 2019 +0545
+
+    discover nepal ui
+
+[33mcommit ee4d94a3ca6f86c60162a7115714b0704993bc2f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 9 10:24:06 2019 +0545
+
+    readme and screenshots
+
+[33mcommit 3e3da93be298ac594ac6acb18951485c5b990646[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 9 10:21:45 2019 +0545
+
+    hotel home page with assets
+
+[33mcommit 34494b3d7cfc5acbbf22246ef44f7e73a0627ee3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 7 10:24:02 2019 +0545
+
+    readme and screenshot- hero animation
+
+[33mcommit 71759939dcad78e93c3f5e209a71815a7e8395b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Jan 7 10:20:18 2019 +0545
+
+    hero animation 1
+
+[33mcommit 4a8baec59580a09c03a0aa483e163973f3633b34[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 14:38:44 2019 +0545
+
+    screenshot and readme
+
+[33mcommit d8bd2623022d9541b03a5fe162cb7d66c91ac615[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 14:36:24 2019 +0545
+
+    destination page more images
+
+[33mcommit 5ca89e59b580865217917e207de7fca51a41c4cc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 13:50:03 2019 +0545
+
+    travel destination page
+
+[33mcommit e206e4c0c8df1b2fd7fb29ebe3eb505c6a2644b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:51:14 2019 +0545
+
+    bottom navigation bar added
+
+[33mcommit 757f9080d4d12fe262678f9aead2a30cdbcd1d36[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:39:30 2019 +0545
+
+    refactoring
+
+[33mcommit 776120ee97d7e09ce6f081e2eca5ba933777454d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 08:27:43 2019 +0545
+
+    rounded border for images too
+
+[33mcommit c39e100ee4b8308eb348778573482b188c0f806c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 07:27:02 2019 +0545
+
+    travel app home page
+
+[33mcommit ada67f3e1a3a9c7407f110107a0b5ebc8d5d45bc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Jan 4 07:26:57 2019 +0545
+
+    assets for travel app
+
+[33mcommit 99b9b63557d49e3b887dfea37b0f02dc94fac5ad[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 2 12:28:26 2019 +0545
+
+    readme and screenshot
+
+[33mcommit 0a0b055a6588ec21254826dd178d02b45777170a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Jan 2 12:26:53 2019 +0545
+
+    recipe details page
+
+[33mcommit 8fcb58b9dd60ceadf6715fd9ceaf8a04136e70b8[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 31 16:02:02 2018 +0545
+
+    readme and screenshot
+
+[33mcommit e48c6f0ff4dfbc52735c578c1ab00c62929050da[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 31 16:00:58 2018 +0545
+
+    login 3 with wave animation
+
+[33mcommit be6dd36e0f3443b90a492c88980992f4aadd744f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:30:25 2018 +0545
+
+    readme and screenshot
+
+[33mcommit 040bea3ddc7ab1c3872cab8fb2f3cc447bcce21d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:24:51 2018 +0545
+
+    few changes
+
+[33mcommit 8176c366f26f037e0f17296c55134199bd6dfc8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:24:01 2018 +0545
+
+    onboarding with logo
+
+[33mcommit 53e1fb3c812c3dba89d280b47b84c7c035cb40b3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 14:08:48 2018 +0545
+
+    onboarding one
+
+[33mcommit 4e2bcfbce1d00dcb5178ba69db62cc8a4ffebd27[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 13:34:47 2018 +0545
+
+    added required assets
+
+[33mcommit 0df01d39823db3c1535d466fd9e4e2e7efe25d8e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:20:17 2018 +0545
+
+    loader 2 parameterized
+
+[33mcommit b784f1ae6a354ecbbcd54d205848cea49ff0931d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:11:07 2018 +0545
+
+    second loader
+
+[33mcommit b5ba04f4363bd511a059a35b96d006e2915ce59f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 09:11:03 2018 +0545
+
+    loader one duration fixed
+
+[33mcommit dca08b817dcef58dbd7036b21a47d7a9e623ddaa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 30 07:53:39 2018 +0545
+
+    animated loader one
+
+[33mcommit ae94a824e70a697c85691fd36f508dbe50b82199[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 29 13:57:42 2018 +0545
+
+    screenshot with readme
+
+[33mcommit 366614baed7211c167a5f929159f789c2d293f45[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 29 13:56:00 2018 +0545
+
+    collapsing app bar with sliver app bar
+
+[33mcommit b494b5dab5dc17992158606c6c31909bf5856713[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:30:10 2018 +0545
+
+    ecommerce detail  2 screenshot in readme
+
+[33mcommit 5fc30a8627260f07f047f5c3af8c0c258e2a3f51[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:27:39 2018 +0545
+
+    refactored readme and updated screenshots
+
+[33mcommit e4922c7c502b77fe2b34bfe55719206c7433cfa5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:24:21 2018 +0545
+
+    ecommerce details 2
+
+[33mcommit ce379a3a38c37779aaee8831eaf12334fa938e9b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 28 14:24:12 2018 +0545
+
+    more assets
+
+[33mcommit 0626b3b6ca823eb189fde768b78f8ff8ac8d6bd4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:28:31 2018 +0545
+
+    updated readme
+
+[33mcommit 81fe4b73531428812acb472e35dd3666c13ed05c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:26:02 2018 +0545
+
+    readme and screenshot
+
+[33mcommit 26802e5c186f44fbc64a391c253f79560f95da17[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:19:21 2018 +0545
+
+    complete widget for springy from fluttery challenge
+
+[33mcommit 4436fd386d171249c20460050f3b864d9a03905d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 21:04:06 2018 +0545
+
+    drag effect and change points, heights accordingly
+
+[33mcommit 74f8b91453ac952e518f12544b112f7b3aa75ddd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 20:43:45 2018 +0545
+
+    springy slider initial with paint and text and everything
+
+[33mcommit 34ca790a58db37d7818ad3f357201be39f7dfeee[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 19:02:27 2018 +0545
+
+    more from custom clipper package
+
+[33mcommit 3dce08083beed0e71526ddcc629e919308691a90[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 16:44:21 2018 +0545
+
+    updated readme
+
+[33mcommit 04693c4d6fbd0b3074dbc4817eaf530a4ab0eaa9[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 16:42:56 2018 +0545
+
+    removed custom clippers in favor of using custom clippers package
+
+[33mcommit 26ebdc916d5bcc5a97450b80e1d9567fb1914922[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:45:22 2018 +0545
+
+    updated screenshot
+
+[33mcommit 03762ef7067260b7a4283e2a664df6fd0d6b172c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:42:27 2018 +0545
+
+    readme with screenshot
+
+[33mcommit ec966a6111b9d31af7f5dfec7aa6d2bee32a5fa6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 13:39:42 2018 +0545
+
+    hidden menu 1
+
+[33mcommit 204f3466980b9c51fb2fde290c419e8acfdb89da[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 09:13:51 2018 +0545
+
+    styling drawer with header
+
+[33mcommit c1afae88e5987d6acb773d1309200cc1c4bc55d6[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 09:05:10 2018 +0545
+
+    Refactoring drawer menu
+
+[33mcommit 20cd826651676c12e24e83118835ee81b0821dae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:44:20 2018 +0545
+
+    updated screenshots and readme
+
+[33mcommit 3fb4f5ad3b3de2c782113b6fccb32d6dd664c49b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:41:33 2018 +0545
+
+    app bar bottom border
+
+[33mcommit 980fcfbb42644d926bd413dfcafa3be9db529b4e[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:39:04 2018 +0545
+
+    profile tab
+
+[33mcommit 372e1c31873aa531be20f34cb064efea6852fdbb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 27 06:30:32 2018 +0545
+
+    wishlist page
+
+[33mcommit 6cf60895c13ff05b688e5a948718d227c36a5578[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:55:37 2018 +0545
+
+    updated readme with screenshot and details of implementation on grocery app
+
+[33mcommit c4a8546fece564d1aa08f44ecb87968a0a3047db[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:52:15 2018 +0545
+
+    text style on checkout button
+
+[33mcommit 978eca7b92c0a838e9c5454337774cf4b9894513[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:51:22 2018 +0545
+
+    clipping and box shadow
+
+[33mcommit 1780f965d76e3df0921945045c8ab3cbb44d3a0c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:35:37 2018 +0545
+
+    list view padded
+
+[33mcommit 4a19bdabb55f1549cf037db4fb4a9ce080656e96[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:34:26 2018 +0545
+
+    appbar modified to show relevant information
+
+[33mcommit 27a5e2b68b8f6e9fedb27213d9bbc08ae48bdd21[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:27:10 2018 +0545
+
+    cart page
+
+[33mcommit 2e131931968399f192e57e00a5b3ce6f5e80a61f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:11:26 2018 +0545
+
+    updated different tab views page
+
+[33mcommit 4c6709818b4954c7302ca2cd5705f06f79e78656[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Wed Dec 26 08:05:50 2018 +0545
+
+    refactoring home tav to use bottom navigation bar
+
+[33mcommit 3151598d53ea04c8e6476af43003dadf65beb9bc[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:23:45 2018 +0545
+
+    readme update
+
+[33mcommit 4b44188ca9c68ef0bd4087770425b874c50c21eb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:22:14 2018 +0545
+
+    details page
+
+[33mcommit a013496389e6d73dd814c3c6df9f5e50d78df6a3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 25 13:21:40 2018 +0545
+
+    refactoring widgets
+
+[33mcommit 8ff6d6aa11c117a7128bfac16d0c244841479343[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 21:54:14 2018 +0545
+
+    spelling correction grocery
+
+[33mcommit 42bb27aa640a3c5d8d1f93d8dc877f1f5c294ad2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 12:04:53 2018 +0545
+
+    readme line break
+
+[33mcommit 5fe4e55d63d770373f2a0af0f13490f98a8d657f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 12:02:33 2018 +0545
+
+    updated readme
+
+[33mcommit 063ccc20a9fbbc522edfabf03100355d7c68e365[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:13:31 2018 +0545
+
+    remaining assets of home page
+
+[33mcommit c4062fb83b8c683232dc43d7f827348f574c27df[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:06:33 2018 +0545
+
+    grocessary home page list items
+
+[33mcommit ce07928f5bc24f19fe08696ec0b8c027bf2ae43c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 09:06:24 2018 +0545
+
+    asset spelling corrected
+
+[33mcommit 5a4a0c8d1d0e86dad7405cc5c34324541fea98d1[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 24 08:41:57 2018 +0545
+
+    new arrivals row
+
+[33mcommit df4deb6076d4fc09dc57cc621f72bf3140e4a3ae[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 19:25:50 2018 +0545
+
+    app bar
+
+[33mcommit 3b30153deff09fe4eef1daa27a900a9609d4c929[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 19:05:26 2018 +0545
+
+    list sub headers
+
+[33mcommit 41c49bcd7af7c8e370f43cd30fdf03cc6c9f3ab0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 18:49:41 2018 +0545
+
+    bottom navigation bar
+
+[33mcommit c8f1bcc8daf3efd69356ab085df42e4871a00030[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 18:43:00 2018 +0545
+
+    grocessary app
+
+[33mcommit 431fb2fe76bc132cd6d4d00b026d439f03648a98[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 17:49:35 2018 +0545
+
+    assets added to pubspec
+
+[33mcommit 85e6ceb8ace5b423e3a8268c5376a018dcef54c3[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 17:48:04 2018 +0545
+
+    grocessary app asset
+
+[33mcommit 93f0e15ba66528d5107a1d1e94f0862d4abefaca[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 11:01:09 2018 +0545
+
+    updated readme with new ecommerce detail layout
+
+[33mcommit 1b18eb0af3277c2c0f6ea133dc4fccee95e40a7c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 11:00:56 2018 +0545
+
+    changed drawer column to listview
+
+[33mcommit 8b791701384586f364c86c7afd0019796bd4da2c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:56:52 2018 +0545
+
+    refactoring detail page
+
+[33mcommit f307aacbf44d5d4a7c18df24b83a0aa0a57a2f3a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:55:22 2018 +0545
+
+    detail page more refinement
+
+[33mcommit ab37aec8af7d2eae6e1f48d126c8700ea15c4954[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 23 10:22:25 2018 +0545
+
+    ecommerce details design 1
+
+[33mcommit 31f26a4065b41af87738241f52882a576f41fca0[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:57:09 2018 +0545
+
+    updated readme
+
+[33mcommit 42e30fcf084a155e0c818e829d018bf42a9fddbd[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:55:21 2018 +0545
+
+    refactoring shop item
+
+[33mcommit 759c145cee108ec5f540667b3a1e3f6233c2803f[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:52:52 2018 +0545
+
+    bottom bar titles
+
+[33mcommit 4808d345cad2e0aee75737861df570d0996e09fa[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 19:37:52 2018 +0545
+
+    ecommerce item widget
+
+[33mcommit 101d4438e64380c67f1821e7b607423d0895b8c5[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 15:34:05 2018 +0545
+
+    ecommerce 2 header
+
+[33mcommit 3d4f74a75f5b537781c85e69a7662a3c4d69428d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 13:16:48 2018 +0545
+
+    corrected forgot password
+
+[33mcommit 272551734b7c90ad03f16e32af3e48fd44f6421a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 10:01:52 2018 +0545
+
+    screenshot updated
+
+[33mcommit 8fc1be5b6568ca433f2dcc374c47987f312d44b4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sat Dec 22 09:15:31 2018 +0545
+
+    removed forgot password from signup screen
+
+[33mcommit 3fe7bdf84c13f26a6963cc49b66b1044342c652b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:33:00 2018 +0545
+
+    updated screenshot and readme
+
+[33mcommit fc255e719271df0bf625341a6be4c02c3485ba5c[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:32:03 2018 +0545
+
+    signup route to drawer
+
+[33mcommit 125e499ee771deaf16025aa7b276e9398722ecb4[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:31:35 2018 +0545
+
+    signup screen
+
+[33mcommit ce0b3a8b02f0d1ffa5c4df1a4595c88cdcaf2880[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 20:22:46 2018 +0545
+
+    icon fix
+
+[33mcommit 0b85279ab8f37e529c660c5d2a3ce4ba4dbe0d55[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 15:18:00 2018 +0545
+
+    updated screenshot
+
+[33mcommit 27c06b46367f68b632f7d557b401a32538005d54[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 15:16:57 2018 +0545
+
+    adding curve to another corner and cleaning up
+
+[33mcommit a27fcea5c58378217eaabbd00a127b6a91d76d8b[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:52:59 2018 +0545
+
+    updated readme
+
+[33mcommit 958fa7fa3356728c6c128c1b57124079d7911e6a[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:51:27 2018 +0545
+
+    further ui changes
+
+[33mcommit 482142cec4e253b9a14555fa8a9adcae8c4fdc26[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:48:13 2018 +0545
+
+    ui changes
+
+[33mcommit 7f4da8ff2e273212fbc632b194756d311dba8c7d[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Fri Dec 21 12:40:43 2018 +0545
+
+    second login page
+
+[33mcommit 4a723339355de39b16b6c02fdc88e29260fcca6e[m
+Author: Damodar Lohani <lohanidamodar@users.noreply.github.com>
+Date:   Thu Dec 20 15:22:49 2018 +0545
+
+    show images side by side
+
+[33mcommit 87a1107cd1470a359e5ad0b1a25c0e5b57e40eeb[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 20 15:19:20 2018 +0545
+
+    updated readme to show images side by side
+
+[33mcommit a42a6943355ba461a13f972fa6d0dd343bb31203[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Thu Dec 20 15:15:38 2018 +0545
+
+    more screenshots
+
+[33mcommit 5ff894551d2bec4d0049bc7034e0bf2347151cbe[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 18 11:29:47 2018 +0545
+
+    profile colors and styles
+
+[33mcommit 9233b8ccb1c11d395428b9e746b5a4b790cdde63[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Tue Dec 18 09:00:14 2018 +0545
+
+    profile page layout
+
+[33mcommit df3480727d607c257f00bf41368fdc8a2bd0e346[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 17 09:17:23 2018 +0545
+
+    new home page and old page renamed as ecommerce
+
+[33mcommit 64e93786f403160c2674328b5d3fc8b4a4632c62[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Mon Dec 17 09:07:11 2018 +0545
+
+    login page
+
+[33mcommit 5485e0ff2dd8877dc2bb47e513f1ea3d82c2a050[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 16 19:36:34 2018 +0545
+
+    updated pubspec
+
+[33mcommit 6e2ab71eff9db47768e0cc3147efe504bfd9b8a2[m
+Author: Damodar Lohani <dlohani48@gmail.com>
+Date:   Sun Dec 16 19:34:42 2018 +0545
+
+    first commit

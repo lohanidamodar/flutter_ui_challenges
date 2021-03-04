@@ -12,9 +12,9 @@ class GroceryCategory extends StatelessWidget {
 
   const GroceryCategory({
     Key key,
-    @required String this.image,
-    @required String this.title,
-    Color this.backgroundColor
+    @required this.image,
+    @required this.title,
+    this.backgroundColor
   }) : super(key: key);
 
   @override
