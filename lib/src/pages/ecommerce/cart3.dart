@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /**
- * Author: Aparna Dulal
+ * Author: Ambika Dulal
  * profile: https://github.com/ambikadulal
  */
 

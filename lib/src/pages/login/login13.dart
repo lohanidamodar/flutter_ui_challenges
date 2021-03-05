@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 
 /**
- * Author: Aparna Dulal
+ * Author: Ambika Dulal
  * profile: https://github.com/ambikadulal
  * images:pixabay.com
   */
@@ -22,11 +22,11 @@ class LoginPageThirdteen extends StatelessWidget {
                   height: 400,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
-                          //topLeft: Radius.circular(60),
-                         // topRight: Radius.circular(60),
-                          //bottomLeft: Radius.circular(20),
-                          bottomRight: Radius.circular(300),
-                          ),
+                        //topLeft: Radius.circular(60),
+                        // topRight: Radius.circular(60),
+                        //bottomLeft: Radius.circular(20),
+                        bottomRight: Radius.circular(300),
+                      ),
                       image: DecorationImage(
                           image: NetworkImage(
                               'https://cdn.pixabay.com/photo/2015/03/30/12/37/jellyfish-698521__340.jpg'),

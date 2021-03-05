@@ -7,6 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
 import 'package:flutter_ui_challenges/src/pages/lists/grid_view.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
+import 'package:flutter_ui_challenges/src/pages/bike/bikeshop_ui.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
 import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
@@ -36,6 +37,8 @@ import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
+import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
@@ -45,9 +48,11 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes2.dart';
+import 'package:flutter_ui_challenges/src/pages/settings/profilesettings.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
+import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -185,6 +190,8 @@ final List<dynamic> pages = [
     SubMenuItem("Settings Two", SettingsTwoPage(), path: SettingsTwoPage.path),
     SubMenuItem("Settings Three", SettingsThreePage(),
         path: SettingsThreePage.path),
+   SubMenuItem("Profile Setting", ProfileSettingsPage(), path: ProfileSettingsPage.path),
+    SubMenuItem("Settings Four", SettingsFourPage(), path: SettingsFourPage.path),
   ]),
   MenuItem(
     title: "Quotes App",
@@ -195,6 +202,7 @@ final List<dynamic> pages = [
     ],
   ),
   MenuItem(title: "Motorbike App", icon: Icons.list, items: [
+    SubMenuItem("MoterBike Shop Page", MoterBikeShopPage(), path: MoterBikeShopPage.path),
     SubMenuItem("Home Page", BikeHomePage(), path: BikeHomePage.path),
     SubMenuItem("Bike Details Page", BikeDetailsPage(),
         path: BikeDetailsPage.path),
@@ -344,6 +352,7 @@ final List<dynamic> pages = [
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
+    SubMenuItem("Youtube HomePage", YoutubeHomePage(), path: YoutubeHomePage.path),
     SubMenuItem("OTP Page", OTPPage(), path: OTPPage.path),
     SubMenuItem('Image/Widget Crop', CropPage(),
         path: CropPage.path, icon: Icons.crop),
@@ -365,6 +374,7 @@ final List<dynamic> pages = [
         path: BottomSheetAwesome.path),
     SubMenuItem('Discovery Page', DiscoveryPage(), path: DiscoveryPage.path),
     SubMenuItem('Music player', MusicPlayer(), path: MusicPlayer.path),
+    SubMenuItem('Whatsapp Clone', WhatsAppClone(), path: WhatsAppClone.path),
   ]),
 ];
 
