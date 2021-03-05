@@ -97,6 +97,7 @@ import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
+import 'package:flutter_ui_challenges/src/pages/animations/anim6.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro2.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro3.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
@@ -139,6 +140,8 @@ final List<dynamic> pages = [
         path: AnimatedBottomBar.path),
     SubMenuItem("Animated List One", AnimatedListOnePage(),
         path: AnimatedListOnePage.path),
+    SubMenuItem("Transmission Animated ", TransmisionAnimationPage(),
+        path: TransmisionAnimationPage.path),
   ]),
   MenuItem(title: "Profile", icon: Icons.person, items: [
     SubMenuItem("Profile 11", ProfileElevenPage(),
