@@ -5,6 +5,7 @@ import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
 import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
+import 'package:flutter_ui_challenges/src/pages/food/food_delivery.dart';
 import 'package:flutter_ui_challenges/src/pages/lists/grid_view.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bikeshop_ui.dart';
@@ -273,6 +274,8 @@ final List<dynamic> pages = [
         path: RecipeDetailsPage.path),
     SubMenuItem("Food Delivery", FoodDeliveryHomePage(),
         path: FoodDeliveryHomePage.path),
+        SubMenuItem("Food Delivery One", FoodDeliveryPage(),
+        path: FoodDeliveryPage.path),
   ]),
   MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
     SubMenuItem("Quiz Home", QuizHomePage(), path: QuizHomePage.path),
