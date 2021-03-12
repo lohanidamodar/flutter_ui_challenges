@@ -19,10 +19,6 @@ List<String> title = [
   "The dreaming moon",
   "Bhaktapur and patan darbar Temple",
 ];
-class CustomIcons {
-  static const IconData menu = IconData(0xe900, fontFamily: "CustomIcons");
-  static const IconData option = IconData(0xe902, fontFamily: "CustomIcons");
-}
 class TravelStoryPage extends StatefulWidget {
     static final String path = "lib/src/pages/travel/tstory.dart";
   @override
