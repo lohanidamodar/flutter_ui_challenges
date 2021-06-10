@@ -150,3 +150,7 @@ Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 ## Furniture App UI 
 Furniture App by  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 <img height="480px" src="screenshots/f1.png"> <img height="480px" src="screenshots/f2.gif"> 
+
+## Wallet App Clone 
+Furniture App by  [Ambika Dulal](https://github.com/Ambikadulal)
+<img height="480px" src="screenshots/wallet-1.jpg"> <img height="480px" src="screenshots/wallet-2.jpg"> 
