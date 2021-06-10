@@ -55,6 +55,7 @@ import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
+import 'package:flutter_ui_challenges/src/travelui_clone/ui/main.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travelstory.dart';
 import 'package:flutter_ui_challenges/src/walletapp_ui/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -355,8 +356,8 @@ final List<dynamic> pages = [
             path: GroceryHomePage.path),
         SubMenuItem("Bank App Clone", NicAsiaApp(), path: NicAsiaApp.path),
         SubMenuItem("Furniture App", FurnitureApp(), path: FurnitureApp.path),
+        SubMenuItem('Travel Ui Clone', TravelUiClone(), path: TravelUiClone.path),
         SubMenuItem("Wallet App Clone", WalletAppClone(), path: WalletAppClone.path),
-
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [
