@@ -81,7 +81,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
+<img height="480px" src="screenshots/profile12.jpg"> <img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
 
 ## Inviation App UI
 
@@ -127,7 +127,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Travel App
 
-<img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
+<img height="480px" src="screenshots/travelstory.jpg"> <img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
 
 ## grocery App UI Kit
 
@@ -149,6 +149,12 @@ Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 
 ## Furniture App UI 
 Furniture App by  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
+
 <img height="480px" src="screenshots/f1.png"> <img height="480px" src="screenshots/f2.gif"> 
+
 ## TravelUi Clone
 <img height="480px" src="screenshots/TravelUi1.jpg"> <img height="480px" src="screenshots/TravelUi2.jpg">
+
+## Wallet App Clone 
+Furniture App by  [Ambika Dulal](https://github.com/Ambikadulal)
+<img height="480px" src="screenshots/wallet-1.jpg"> <img height="480px" src="screenshots/wallet-2.jpg"> 
