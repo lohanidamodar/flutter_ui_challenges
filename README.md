@@ -152,6 +152,11 @@ Furniture App by  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 
 <img height="480px" src="screenshots/f1.png"> <img height="480px" src="screenshots/f2.gif"> 
 
+## Plant App UI 
+Plant UI Clone by [Ambika Dulal](https://github.com/Ambikadulal)
+
+<img height="480px" src="screenshots/plant-1.jpg"> <img height="480px" src="screenshots/plant-2.jpg"> <img height="480px" src="screenshots/plant-3.jpg"> <img height="480px" src="screenshots/plant-4.jpg"> <img height="480px" src="screenshots/plant-5.jpg"> <img height="480px" src="screenshots/plant-6.jpg">
+
 ## TravelUi Clone
 <img height="480px" src="screenshots/TravelUi1.jpg"> <img height="480px" src="screenshots/TravelUi2.jpg">
 
