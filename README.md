@@ -81,7 +81,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
+<img height="480px" src="screenshots/profile12.jpg"> <img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
 
 ## Inviation App UI
 
