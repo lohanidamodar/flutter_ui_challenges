@@ -44,6 +44,7 @@ import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile12.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
@@ -55,6 +56,7 @@ import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/travelstory.dart';
+import 'package:flutter_ui_challenges/src/walletapp_ui/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
@@ -147,6 +149,8 @@ final List<dynamic> pages = [
         path: AnimatedListOnePage.path),
   ]),
   MenuItem(title: "Profile", icon: Icons.person, items: [
+    SubMenuItem("Profile 12", UserProfilePage(),
+        path: UserProfilePage.path),
     SubMenuItem("Profile 11", ProfileElevenPage(),
         path: ProfileElevenPage.path),
     SubMenuItem("Profile 10", ProfileTenPage(), path: ProfileTenPage.path),
@@ -351,6 +355,8 @@ final List<dynamic> pages = [
             path: GroceryHomePage.path),
         SubMenuItem("Bank App Clone", NicAsiaApp(), path: NicAsiaApp.path),
         SubMenuItem("Furniture App", FurnitureApp(), path: FurnitureApp.path),
+        SubMenuItem("Wallet App Clone", WalletAppClone(), path: WalletAppClone.path),
+
       ],
       icon: Icons.account_balance_wallet),
   MenuItem(title: "Miscellaneous", items: [

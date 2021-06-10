@@ -31,6 +31,7 @@ dependencies:
   share: ^0.6.4+3
   simple_animations: ^2.5.0
   url_launcher: ^5.5.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
