@@ -95,7 +95,7 @@ class DefaultBottomBarController extends StatefulWidget {
 
   static BottomBarController of(BuildContext context) {
     final _BottomBarControllerScope scope =
-        context.inheritFromWidgetOfExactType(_BottomBarControllerScope);
+        context.dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
     return scope?.controller;
   }
 
