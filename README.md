@@ -77,7 +77,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/quotes1.png"> <img height="480px" src="screenshots/quotes2.jpg"> 
 
 ## Motorbike App UIs
-<img height="480px" src="screenshots/bikeshop.png"> <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
+<img height="480px" src="screenshots/bikeshop.jpg"> <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
 
 ## Profile Screens
 
