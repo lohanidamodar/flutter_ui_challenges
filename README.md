@@ -127,7 +127,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Travel App
 
-<img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
+<img height="480px" src="screenshots/travelstory.jpg"> <img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
 
 ## grocery App UI Kit
 

@@ -55,6 +55,7 @@ import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travelstory.dart';
 import 'package:flutter_ui_challenges/src/walletapp_ui/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
@@ -315,6 +316,7 @@ final List<dynamic> pages = [
     SubMenuItem("Travel Destination Detail", DestinationPage(),
         path: DestinationPage.path),
     SubMenuItem("Travel Home2", TravelHome(), path: TravelHome.path),
+    SubMenuItem("Travel Stroy", TravelStoryPage(), path: TravelStoryPage.path),
   ]),
   MenuItem(title: "Hotel", icon: Icons.hotel, items: [
     SubMenuItem("Hotel Booking Homepage", HotelBookingPage(),
