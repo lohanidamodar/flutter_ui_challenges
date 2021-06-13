@@ -15,7 +15,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animated_floatactionbuttons: ^0.1.0
   animator: ^2.0.1
   bottomreveal: ^1.0.0
   cached_network_image: ^2.2.0+1
@@ -23,6 +22,7 @@ dependencies:
   fl_chart: ^0.36.1
   flare_flutter: ^1.8.3
   flutter_custom_clippers: ^1.1.1
+  flutter_speed_dial: ^3.0.5
   flutter_staggered_grid_view: ^0.3.0
   flutter_swiper_null_safety: ^1.0.2
   font_awesome_flutter: ^8.8.1

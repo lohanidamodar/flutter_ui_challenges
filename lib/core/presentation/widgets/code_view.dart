@@ -4,7 +4,7 @@
   */
 import 'dart:math';
 
-import 'package:animated_floatactionbuttons/animated_floatactionbuttons.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/code_highlighter.dart';
@@ -54,38 +54,34 @@ class MyCodeViewState extends State<MyCodeView> {
     );
   }
 
-  List<Widget> _buildFloatingButtons() {
-    return <Widget>[
-      FloatingActionButton(
-        heroTag: "copy",
+  List<SpeedDialChild> _buildFloatingButtons() {
+    return <SpeedDialChild>[
+      SpeedDialChild(
+        label: "Copy",
         child: Icon(Icons.content_copy),
-        tooltip: 'Copy code link to clipboard',
-        onPressed: () async {
+        onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
           Scaffold.of(context).showSnackBar(SnackBar(
             content: Text('Code link copied to Clipboard!'),
           ));
         },
       ),
-      FloatingActionButton(
-        heroTag: "open",
+      SpeedDialChild(
+        label: "Open",
         child: Icon(Icons.open_in_new),
-        tooltip: 'View code on github',
-        onPressed: () => url_launcher.launch(this.widget.githubPath),
+        onTap: () => url_launcher.launch(this.widget.githubPath),
       ),
-      FloatingActionButton(
-        heroTag: "zoom_out",
+      SpeedDialChild(
         child: Icon(Icons.zoom_out),
-        tooltip: 'Zoom out',
-        onPressed: () => setState(() {
+        label: 'Zoom out',
+        onTap: () => setState(() {
           this._textScaleFactor = max(0.8, this._textScaleFactor - 0.1);
         }),
       ),
-      FloatingActionButton(
-        heroTag: "zoom_in",
+      SpeedDialChild(
         child: Icon(Icons.zoom_in),
-        tooltip: 'Zoom in',
-        onPressed: () => setState(() {
+        label: 'Zoom in',
+        onTap: () => setState(() {
           this._textScaleFactor += 0.1;
         }),
       ),
@@ -104,11 +100,15 @@ class MyCodeViewState extends State<MyCodeView> {
               padding: EdgeInsets.all(8.0),
               child: _getCodeView(snapshot.data, context),
             ),
-            floatingActionButton: AnimatedFloatingActionButton(
-              fabButtons: _buildFloatingButtons(),
-              colorStartAnimation: Colors.indigo,
-              colorEndAnimation: Colors.red,
-              animatedIconData: AnimatedIcons.menu_close,
+            floatingActionButton: Padding(
+              padding: const EdgeInsets.only(bottom: 60.0),
+              child: SpeedDial(
+                children: _buildFloatingButtons(),
+                icon: Icons.menu,
+                activeIcon: Icons.close,
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
             ),
           );
         } else {
