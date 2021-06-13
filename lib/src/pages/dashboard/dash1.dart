@@ -5,9 +5,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:fl_chart/fl_chart.dart';
 
 class DashboardOnePage extends StatelessWidget {
   static final String path = "lib/src/pages/dashboard/dash1.dart";
@@ -294,7 +293,7 @@ class DashboardOnePage extends StatelessWidget {
 }
 
 class DonutPieChart extends StatelessWidget {
-  final List<charts.Series> seriesList;
+  final List<PieChartSectionData> seriesList;
   final bool animate;
 
   DonutPieChart(this.seriesList, {this.animate});
@@ -304,38 +303,69 @@ class DonutPieChart extends StatelessWidget {
     return new DonutPieChart(
       _createSampleData(),
       // Disable animations for image tests.
-      animate: false,
+      animate: true,
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return new charts.PieChart(seriesList,
-        animate: animate,
-        // Configure the width of the pie slices to 60px. The remaining space in
-        // the chart will be left as a hole in the center.
-        defaultRenderer: new charts.ArcRendererConfig(
-            arcWidth: 60,
-            arcRendererDecorators: [new charts.ArcLabelDecorator()]));
+    return PieChart(
+      PieChartData(
+        centerSpaceRadius: 40.0,
+        sectionsSpace: 10.0,
+        sections: seriesList,
+      ),
+      swapAnimationDuration: animate ? Duration(milliseconds: 150) : null,
+      swapAnimationCurve: animate ? Curves.linear : null,
+    );
   }
 
   /// Create one series with sample hard coded data.
-  static List<charts.Series<LinearSales, String>> _createSampleData() {
+  static List<PieChartSectionData> _createSampleData() {
     final data = [
-      new LinearSales("July", 100),
-      new LinearSales("August", 75),
-      new LinearSales("September", 25),
-      new LinearSales("October", 5),
+      PieChartSectionData(
+        value: 100,
+        title: "July",
+        color: Colors.red.shade400,
+        titleStyle: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+        ),
+        titlePositionPercentageOffset: 1,
+      ),
+      PieChartSectionData(
+        title: "August",
+        value: 75,
+        color: Colors.blue.shade400,
+        titleStyle: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+        ),
+        titlePositionPercentageOffset: 1,
+      ),
+      PieChartSectionData(
+        title: "September",
+        value: 25,
+        color: Colors.green.shade400,
+        titleStyle: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+        ),
+        titlePositionPercentageOffset: 1,
+      ),
+      PieChartSectionData(
+        title: "October",
+        value: 50,
+        color: Colors.purple.shade400,
+        titleStyle: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+        ),
+        titlePositionPercentageOffset: 1,
+      ),
     ];
 
-    return [
-      new charts.Series<LinearSales, String>(
-        id: 'Sales',
-        domainFn: (LinearSales sales, _) => sales.month,
-        measureFn: (LinearSales sales, _) => sales.sales,
-        data: data,
-      )
-    ];
+    return data;
   }
 }
 
