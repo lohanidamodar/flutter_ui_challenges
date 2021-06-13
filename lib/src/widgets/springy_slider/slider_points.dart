@@ -8,9 +8,9 @@ import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controll
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
 
 class SliderPoints extends StatelessWidget {
-  final SpringySliderController sliderController;
-  final double paddingTop;
-  final double paddingBottom;
+  final SpringySliderController? sliderController;
+  final double? paddingTop;
+  final double? paddingBottom;
 
   SliderPoints({
     this.sliderController,
@@ -22,13 +22,13 @@ class SliderPoints extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        double sliderPercent = sliderController.sliderValue;
-        if (sliderController.state == SpringySliderState.dragging) {
-          sliderPercent = sliderController.draggingPercent.clamp(0.0, 1.0);
+        double? sliderPercent = sliderController!.sliderValue;
+        if (sliderController!.state == SpringySliderState.dragging) {
+          sliderPercent = sliderController!.draggingPercent!.clamp(0.0, 1.0);
         }
 
-        final height = constraints.maxHeight - paddingTop - paddingBottom;
-        final sliderY = height * (1.0 - sliderPercent) + paddingTop;
+        final height = constraints.maxHeight - paddingTop! - paddingBottom!;
+        final sliderY = height * (1.0 - sliderPercent!) + paddingTop!;
         final pointsYouNeedPercent = 1.0 - sliderPercent;
         final pointsYouNeed = (100 * pointsYouNeedPercent).round();
         final pointsYouHavePercent = sliderPercent;
@@ -67,10 +67,10 @@ class SliderPoints extends StatelessWidget {
 }
 
 class Points extends StatelessWidget {
-  final int points;
+  final int? points;
   final bool isAboveSlider;
   final bool isPointsYouNeed;
-  final Color color;
+  final Color? color;
 
   Points({
     this.points,
@@ -81,7 +81,7 @@ class Points extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final percent = points / 100.0;
+    final percent = points! / 100.0;
     final pointTextSize = 50.0 + (50.0 * percent);
 
     return Row(

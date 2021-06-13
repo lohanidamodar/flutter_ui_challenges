@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 
 class SliderDragger extends StatefulWidget {
-  final SpringySliderController sliderController;
-  final double paddingTop;
-  final double paddingBottom;
-  final Widget child;
+  final SpringySliderController? sliderController;
+  final double? paddingTop;
+  final double? paddingBottom;
+  final Widget? child;
 
   SliderDragger({
     this.sliderController,
@@ -24,34 +24,34 @@ class SliderDragger extends StatefulWidget {
 }
 
 class _SliderDraggerState extends State<SliderDragger> {
-  double startDragY;
-  double startDragPercent;
+  double? startDragY;
+  double? startDragPercent;
 
   void _onPanStart(DragStartDetails details) {
     startDragY = details.globalPosition.dy;
-    startDragPercent = widget.sliderController.sliderValue;
+    startDragPercent = widget.sliderController!.sliderValue;
 
-    final sliderWidth = context.size.width;
+    final sliderWidth = context.size!.width;
     final sliderLeftPosition =
         (context.findRenderObject() as RenderBox).localToGlobal(const Offset(0.0, 0.0)).dx;
     final dragHorizontalPercent = (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
 
-    widget.sliderController.onDragStart(dragHorizontalPercent);
+    widget.sliderController!.onDragStart(dragHorizontalPercent);
   }
 
   void _onPanUpdate(DragUpdateDetails details) {
-    final dragDistance = startDragY - details.globalPosition.dy;
-    final sliderHeight = context.size.height - widget.paddingTop - widget.paddingBottom;
+    final dragDistance = startDragY! - details.globalPosition.dy;
+    final sliderHeight = context.size!.height - widget.paddingTop! - widget.paddingBottom!;
     final dragPercent = dragDistance / sliderHeight;
 
-    final sliderWidth = context.size.width;
+    final sliderWidth = context.size!.width;
     final sliderLeftPosition =
         (context.findRenderObject() as RenderBox).localToGlobal(const Offset(0.0, 0.0)).dx;
     final dragHorizontalPercent = (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
 
-    widget.sliderController.draggingPercents = new Offset(
+    widget.sliderController!.draggingPercents = new Offset(
       dragHorizontalPercent,
-      startDragPercent + dragPercent,
+      startDragPercent! + dragPercent,
     );
   }
 
@@ -59,7 +59,7 @@ class _SliderDraggerState extends State<SliderDragger> {
     startDragY = null;
     startDragPercent = null;
 
-    widget.sliderController.onDragEnd();
+    widget.sliderController!.onDragEnd();
   }
 
   @override

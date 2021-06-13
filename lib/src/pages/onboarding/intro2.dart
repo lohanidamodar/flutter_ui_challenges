@@ -94,7 +94,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
     );
   }
 
-  Widget _buildPage({String title, String icon}) {
+  Widget _buildPage({required String title, required String icon}) {
     final TextStyle titleStyle =
         TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0);
     return Container(

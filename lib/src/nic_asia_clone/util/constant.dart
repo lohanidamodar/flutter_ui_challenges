@@ -104,12 +104,12 @@ final List transactions = [
 ];
 
 class Trx {
-  final String type, number, amount, date;
+  final String? type, number, amount, date;
   Trx({this.type, this.amount, this.date, this.number});
 }
 
 class Draw {
-  final String title;
-  final IconData icon;
+  final String? title;
+  final IconData? icon;
   Draw({this.title, this.icon});
 }

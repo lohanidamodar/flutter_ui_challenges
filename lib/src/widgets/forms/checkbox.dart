@@ -9,10 +9,10 @@ class PCheckboxListTile extends StatelessWidget {
   final bool value;
   final String title;
   final Function onChanged;
-  final Color selectedColor;
-  final Color color;
+  final Color? selectedColor;
+  final Color? color;
 
-  const PCheckboxListTile({Key key, @required this.value, @required this.title, @required this.onChanged, this.selectedColor, this.color}) : super(key: key);
+  const PCheckboxListTile({Key? key, required this.value, required this.title, required this.onChanged, this.selectedColor, this.color}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {

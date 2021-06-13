@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
-  final String image, title;
+  final String? image, title;
   Category({this.title, this.image});
   @override
   Widget build(BuildContext context) {
@@ -22,19 +22,19 @@ class Category extends StatelessWidget {
           children: <Widget>[
             title != 'Load eSewa'
                 ? Image.asset(
-                    image,
+                    image!,
                     height: 50.0,
                     color: Colors.red[900],
                   )
                 : Image.asset(
-                    image,
+                    image!,
                     height: 40.0,
                   ),
             SizedBox(
               height: 15.0,
             ),
             Text(
-              title,
+              title!,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15.0,

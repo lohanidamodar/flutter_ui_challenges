@@ -153,18 +153,18 @@ class FoodCheckoutOnePage extends StatelessWidget {
 }
 
 class OrderItem {
-  final String title;
-  final int qty;
-  final double price;
-  final String image;
-  final Color bgColor;
+  final String? title;
+  final int? qty;
+  final double? price;
+  final String? image;
+  final Color? bgColor;
   OrderItem({this.title, this.qty, this.price, this.image, this.bgColor});
 }
 
 class OrderListItem extends StatelessWidget {
-  final OrderItem item;
+  final OrderItem? item;
 
-  const OrderListItem({Key key, this.item}) : super(key: key);
+  const OrderListItem({Key? key, this.item}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -176,12 +176,12 @@ class OrderListItem extends StatelessWidget {
             height: 100,
             clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(
-              color: item.bgColor,
+              color: item!.bgColor,
               borderRadius: BorderRadius.circular(20.0),
             ),
-            child: item.image != null
+            child: item!.image != null
                 ? Image.network(
-                    item.image,
+                    item!.image!,
                     fit: BoxFit.cover,
                   )
                 : null,
@@ -193,7 +193,7 @@ class OrderListItem extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  item.title,
+                  item!.title!,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 18.0,
@@ -220,7 +220,7 @@ class OrderListItem extends StatelessWidget {
                         onPressed: () {},
                       ),
                       Text(
-                        "${item.qty}",
+                        "${item!.qty}",
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -241,7 +241,7 @@ class OrderListItem extends StatelessWidget {
           ),
           const SizedBox(width: 10.0),
           Text(
-            "\$${item.price * item.qty}",
+            "\$${item!.price! * item!.qty!}",
             style: priceTextStyle,
           ),
         ],

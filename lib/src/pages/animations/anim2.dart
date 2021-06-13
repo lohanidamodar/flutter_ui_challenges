@@ -77,7 +77,7 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
             color: Color(0xff644B77),
             elevation: 0,
             onPressed:() {
-              _menuController.close();
+              _menuController.close!();
             },
           ),
           const SizedBox(height: 10.0),
@@ -90,7 +90,7 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
             color: Color(0xff644B77),
             elevation: 0,
             onPressed:() {
-              _menuController.close();
+              _menuController.close!();
             },
           ),
           const SizedBox(height: 10.0),
@@ -103,7 +103,7 @@ class _AnimationTwoPageState extends State<AnimationTwoPage> {
             color: Color(0xff644B77),
             elevation: 0,
             onPressed:() {
-              _menuController.close();
+              _menuController.close!();
             },
           ),
         ],

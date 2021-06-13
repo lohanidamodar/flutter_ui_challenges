@@ -8,10 +8,10 @@ import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_clipper.
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 
 class SliderGoo extends StatelessWidget {
-  final SpringySliderController sliderController;
-  final double paddingTop;
-  final double paddingBottom;
-  final Widget child;
+  final SpringySliderController? sliderController;
+  final double? paddingTop;
+  final double? paddingBottom;
+  final Widget? child;
 
   SliderGoo({
     this.sliderController,

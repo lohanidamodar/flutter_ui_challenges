@@ -11,9 +11,9 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class AnimationOneDetails extends StatelessWidget {
   static final String path = "lib/src/pages/animations/animation1/details.dart";
-  final int index;
+  final int? index;
 
-  const AnimationOneDetails({Key key, this.index}) : super(key: key);
+  const AnimationOneDetails({Key? key, this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context){
@@ -23,7 +23,7 @@ class AnimationOneDetails extends StatelessWidget {
         children: <Widget>[
           Hero(
             tag: "image$index",
-            child: PNetworkImage(images[index], fit: BoxFit.cover)),
+            child: PNetworkImage(images[index!], fit: BoxFit.cover)),
           Container(
             padding: const EdgeInsets.all(16.0),
             width: double.infinity,
@@ -43,7 +43,7 @@ class AnimationOneDetails extends StatelessWidget {
                     tag: "title$index",
                     child: Material(
                       type: MaterialType.transparency,
-                      child: Text(dummy[index]["title"], style: TextStyle(
+                      child: Text(dummy[index!]["title"], style: TextStyle(
                         color: Colors.white,
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold
@@ -55,7 +55,7 @@ class AnimationOneDetails extends StatelessWidget {
                     tag: "price$index",
                     child: Material(
                       type: MaterialType.transparency,
-                      child: Text(dummy[index]['price'], textAlign: TextAlign.start, style: TextStyle(
+                      child: Text(dummy[index!]['price'], textAlign: TextAlign.start, style: TextStyle(
                         fontSize: 30.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.white

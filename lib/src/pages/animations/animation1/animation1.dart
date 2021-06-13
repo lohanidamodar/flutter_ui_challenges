@@ -37,7 +37,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
   int currentIndex = 0;
   int prevIndex = 0;
   final SwiperController _swiperController = SwiperController();
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   void initState() {

@@ -6,7 +6,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BikeDetailsPage extends StatelessWidget {
   static final String path = "lib/src/pages/bike/bike_details.dart";
@@ -237,17 +236,17 @@ class BikeDetailsPage extends StatelessWidget {
 }
 
 class BorderedContainer extends StatelessWidget {
-  final String title;
-  final Widget child;
-  final double height;
+  final String? title;
+  final Widget? child;
+  final double? height;
   final double width;
-  final EdgeInsets padding;
-  final EdgeInsets margin;
-  final Color color;
+  final EdgeInsets? padding;
+  final EdgeInsets? margin;
+  final Color? color;
   final double elevation;
 
   const BorderedContainer({
-    Key key,
+    Key? key,
     this.title,
     this.child,
     this.height,
@@ -275,11 +274,14 @@ class BorderedContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    title,
+                    title!,
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
                   ),
-                  if (child != null) ...[const SizedBox(height: 10.0), child]
+                  if (child != null) ...[
+                    const SizedBox(height: 10.0),
+                    child!,
+                  ]
                 ],
               ),
       ),
@@ -289,15 +291,15 @@ class BorderedContainer extends StatelessWidget {
 
 class SpecsBlock extends StatelessWidget {
   const SpecsBlock({
-    Key key,
+    Key? key,
     this.icon,
     this.label,
     this.value,
   }) : super(key: key);
 
-  final Widget icon;
-  final String label;
-  final String value;
+  final Widget? icon;
+  final String? label;
+  final String? value;
 
   @override
   Widget build(BuildContext context) {
@@ -306,17 +308,17 @@ class SpecsBlock extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: <Widget>[
-            icon,
+            if (icon != null) icon!,
             const SizedBox(height: 2.0),
             Text(
-              label,
+              label!,
               style: TextStyle(
                 color: Colors.grey.shade800,
               ),
             ),
             const SizedBox(height: 5.0),
             Text(
-              value,
+              value!,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),

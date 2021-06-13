@@ -58,7 +58,7 @@ class LoginInputSection extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: Checkbox(
                         value: false,
-                        onChanged: (bool value) {},
+                        onChanged: (bool? value) {},
                       ),
                     ),
                     Text(

@@ -14,12 +14,12 @@ class HiddenDrawerNav extends StatefulWidget {
 class _HiddenDrawerNavState extends State<HiddenDrawerNav>
     with SingleTickerProviderStateMixin {
   bool isCollapsed = true;
-  double screenWidth, screenHeight;
+  double? screenWidth, screenHeight;
   final Duration duration = const Duration(milliseconds: 300);
-  AnimationController _controller;
-  Animation<double> _scaleAnimation;
-  Animation<double> _menuScaleAnimation;
-  Animation<Offset> _slideAnimation;
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
+  late Animation<double> _menuScaleAnimation;
+  late Animation<Offset> _slideAnimation;
 
   @override
   void initState() {
@@ -96,8 +96,8 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
       duration: duration,
       top: 0,
       bottom: 0,
-      left: isCollapsed ? 0 : 0.6 * screenWidth,
-      right: isCollapsed ? 0 : -0.2 * screenWidth,
+      left: isCollapsed ? 0 : 0.6 * screenWidth!,
+      right: isCollapsed ? 0 : -0.2 * screenWidth!,
       child: ScaleTransition(
         scale: _scaleAnimation,
         child: Material(

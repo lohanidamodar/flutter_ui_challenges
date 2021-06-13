@@ -45,7 +45,7 @@ class DashboardTwoPage extends StatelessWidget {
                             title: Text(
                               "9,850",
                               style:
-                                  Theme.of(context).textTheme.display1.copyWith(
+                                  Theme.of(context).textTheme.display1!.copyWith(
                                         color: Colors.white,
                                         fontSize: 24.0,
                                       ),
@@ -76,7 +76,7 @@ class DashboardTwoPage extends StatelessWidget {
                             title: Text(
                               "70 bpm",
                               style:
-                                  Theme.of(context).textTheme.display1.copyWith(
+                                  Theme.of(context).textTheme.display1!.copyWith(
                                         color: Colors.white,
                                         fontSize: 24.0,
                                       ),
@@ -113,7 +113,7 @@ class DashboardTwoPage extends StatelessWidget {
                             title: Text(
                               "2,430",
                               style:
-                                  Theme.of(context).textTheme.display1.copyWith(
+                                  Theme.of(context).textTheme.display1!.copyWith(
                                         color: Colors.white,
                                         fontSize: 24.0,
                                       ),
@@ -144,7 +144,7 @@ class DashboardTwoPage extends StatelessWidget {
                             title: Text(
                               "15 kms",
                               style:
-                                  Theme.of(context).textTheme.display1.copyWith(
+                                  Theme.of(context).textTheme.display1!.copyWith(
                                         fontSize: 24.0,
                                         color: Colors.black,
                                       ),

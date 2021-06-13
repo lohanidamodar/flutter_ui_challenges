@@ -6,12 +6,12 @@ import 'package:flutter/material.dart';
 
 class BottomBarController extends ChangeNotifier {
   final bool snap;
-  final double dragLength;
+  final double? dragLength;
 
   BottomBarController({
-    @required TickerProvider vsync,
+    required TickerProvider vsync,
     this.snap: true,
-    double dragLength,
+    double? dragLength,
   })  : _animationController = AnimationController(vsync: vsync),
         assert(dragLength == null || dragLength > 0),
         dragLength = dragLength;
@@ -27,7 +27,7 @@ class BottomBarController extends ChangeNotifier {
 
   void onDrag(DragUpdateDetails details) {
     if (dragLength == null) return;
-    _animationController.value -= details.primaryDelta / (dragLength);
+    _animationController.value -= details.primaryDelta! / dragLength!;
   }
 
   void onDragEnd(DragEndDetails details) {
@@ -40,7 +40,7 @@ class BottomBarController extends ChangeNotifier {
     //check if the velocity is sufficient to constitute fling
     if (details.velocity.pixelsPerSecond.dy.abs() >= minFlingVelocity) {
       double visualVelocity =
-          -details.velocity.pixelsPerSecond.dy / (dragLength);
+          -details.velocity.pixelsPerSecond.dy / dragLength!;
 
       if (snap) {
         _animationController.fling(velocity: visualVelocity);
@@ -89,12 +89,12 @@ class DefaultBottomBarController extends StatefulWidget {
   final Widget child;
 
   DefaultBottomBarController({
-    Key key,
-    @required this.child,
+    Key? key,
+    required this.child,
   }) : super(key: key);
 
-  static BottomBarController of(BuildContext context) {
-    final _BottomBarControllerScope scope =
+  static BottomBarController? of(BuildContext context) {
+    final _BottomBarControllerScope? scope =
         context.dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
     return scope?.controller;
   }
@@ -106,7 +106,7 @@ class DefaultBottomBarController extends StatefulWidget {
 
 class _DefaultBottomBarControllerState extends State<DefaultBottomBarController>
     with SingleTickerProviderStateMixin {
-  BottomBarController _controller;
+  BottomBarController? _controller;
 
   @override
   void initState() {
@@ -116,7 +116,7 @@ class _DefaultBottomBarControllerState extends State<DefaultBottomBarController>
 
   @override
   void dispose() {
-    _controller.dispose();
+    _controller!.dispose();
     super.dispose();
   }
 
@@ -132,14 +132,14 @@ class _DefaultBottomBarControllerState extends State<DefaultBottomBarController>
 
 class _BottomBarControllerScope extends InheritedWidget {
   const _BottomBarControllerScope({
-    Key key,
+    Key? key,
     this.controller,
     this.enabled,
-    Widget child,
+    required Widget child,
   }) : super(key: key, child: child);
 
-  final BottomBarController controller;
-  final bool enabled;
+  final BottomBarController? controller;
+  final bool? enabled;
 
   @override
   bool updateShouldNotify(_BottomBarControllerScope old) {

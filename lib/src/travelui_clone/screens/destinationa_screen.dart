@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/src/travelui_clone/models/destination_mode
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DestinationScreen extends StatefulWidget {
-  final Destination destination;
+  final Destination? destination;
 
   DestinationScreen({this.destination});
 
@@ -42,11 +42,11 @@ class _DestinationScreenState extends State<DestinationScreen> {
                   ],
                 ),
                 child: Hero(
-                  tag: widget.destination.imageUrl,
+                  tag: widget.destination!.imageUrl!,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image(
-                      image: NetworkImage(widget.destination.imageUrl),
+                      image: NetworkImage(widget.destination!.imageUrl!),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -89,7 +89,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      widget.destination.city,
+                      widget.destination!.city!,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 35.0,
@@ -106,7 +106,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                         ),
                         SizedBox(width: 5.0),
                         Text(
-                          widget.destination.country,
+                          widget.destination!.country!,
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 20.0,
@@ -131,9 +131,9 @@ class _DestinationScreenState extends State<DestinationScreen> {
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.only(top: 10.0, bottom: 15.0),
-              itemCount: widget.destination.activities.length,
+              itemCount: widget.destination!.activities!.length,
               itemBuilder: (BuildContext context, int index) {
-                Activity activity = widget.destination.activities[index];
+                Activity activity = widget.destination!.activities![index];
                 return Stack(
                   children: <Widget>[
                     Container(
@@ -157,7 +157,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                 Container(
                                   width: 120.0,
                                   child: Text(
-                                    activity.name,
+                                    activity.name!,
                                     style: TextStyle(
                                       fontSize: 18.0,
                                       fontWeight: FontWeight.w600,
@@ -186,12 +186,12 @@ class _DestinationScreenState extends State<DestinationScreen> {
                               ],
                             ),
                             Text(
-                              activity.type,
+                              activity.type!,
                               style: TextStyle(
                                 color: Colors.grey,
                               ),
                             ),
-                            _buildRatingStars(activity.rating),
+                            _buildRatingStars(activity.rating!),
                             SizedBox(height: 10.0),
                             Expanded(
                               child: Row(
@@ -205,7 +205,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                     ),
                                     alignment: Alignment.center,
                                     child: Text(
-                                      activity.startTimes[0],
+                                      activity.startTimes![0],
                                     ),
                                   ),
                                   SizedBox(width: 20.0),
@@ -218,7 +218,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                     ),
                                     alignment: Alignment.center,
                                     child: Text(
-                                      activity.startTimes[1],
+                                      activity.startTimes![1],
                                     ),
                                   ),
                                 ],
@@ -237,7 +237,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                         child: Image(
                           width: 110.0,
                           image: NetworkImage(
-                            activity.imageUrl,
+                            activity.imageUrl!,
                           ),
                           fit: BoxFit.cover,
                         ),

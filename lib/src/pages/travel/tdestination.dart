@@ -153,7 +153,7 @@ class DestinationPage extends StatelessWidget {
     );
   }
 
-  Widget _buildPlaceToVisit({String image, String title}) {
+  Widget _buildPlaceToVisit({String? image, required String title}) {
     return Column(
       children: <Widget>[
         ClipRRect(

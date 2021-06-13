@@ -6,15 +6,15 @@
 import 'package:flutter/material.dart';
 
 class LoaderOne extends StatefulWidget {
-  final Color color;
+  final Color? color;
 
-  const LoaderOne({Key key, this.color}) : super(key: key);
+  const LoaderOne({Key? key, this.color}) : super(key: key);
   _LoaderOneState createState() => _LoaderOneState();
 }
 
 class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMixin {
-  AnimationController controller;
-  Animation<double> animation;
+  late AnimationController controller;
+  late Animation<double> animation;
 
   @override
   void initState() {

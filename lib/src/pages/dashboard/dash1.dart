@@ -179,7 +179,7 @@ class DashboardOnePage extends StatelessWidget {
                         ),
                         const SizedBox(height: 5.0),
                         Text(
-                          activity.title,
+                          activity.title!,
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 14.0),
@@ -269,7 +269,8 @@ class DashboardOnePage extends StatelessWidget {
     );
   }
 
-  Container _buildTitledContainer(String title, {Widget child, double height}) {
+  Container _buildTitledContainer(String title,
+      {Widget? child, double? height}) {
     return Container(
       padding: const EdgeInsets.all(16.0),
       width: double.infinity,
@@ -294,16 +295,13 @@ class DashboardOnePage extends StatelessWidget {
 
 class DonutPieChart extends StatelessWidget {
   final List<PieChartSectionData> seriesList;
-  final bool animate;
 
-  DonutPieChart(this.seriesList, {this.animate});
+  DonutPieChart(this.seriesList);
 
   /// Creates a [PieChart] with sample data and no transition.
   factory DonutPieChart.withSampleData() {
     return new DonutPieChart(
       _createSampleData(),
-      // Disable animations for image tests.
-      animate: true,
     );
   }
 
@@ -315,8 +313,8 @@ class DonutPieChart extends StatelessWidget {
         sectionsSpace: 10.0,
         sections: seriesList,
       ),
-      swapAnimationDuration: animate ? Duration(milliseconds: 150) : null,
-      swapAnimationCurve: animate ? Curves.linear : null,
+      swapAnimationDuration: Duration(milliseconds: 150),
+      swapAnimationCurve: Curves.linear,
     );
   }
 
@@ -378,8 +376,8 @@ class LinearSales {
 }
 
 class Activity {
-  final String title;
-  final IconData icon;
+  final String? title;
+  final IconData? icon;
   Activity({this.title, this.icon});
 }
 

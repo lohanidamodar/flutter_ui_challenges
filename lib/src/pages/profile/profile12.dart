@@ -101,7 +101,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
     );
   }
 
-  Row _actionSection({double hPadding}) {
+  Row _actionSection({double? hPadding}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
@@ -135,7 +135,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             alignment: Alignment.center,
             child: SizedBox(
               width: _isOpen
-                  ? (MediaQuery.of(context).size.width - (2 * hPadding)) / 1.6
+                  ? (MediaQuery.of(context).size.width - (2 * hPadding!)) / 1.6
                   : double.infinity,
               child: FlatButton(
                 onPressed: () => print('Message tapped'),
@@ -180,7 +180,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
     );
   }
 
-  Column _infoCell({String title, String value}) {
+  Column _infoCell({required String title, required String value}) {
     return Column(
       children: <Widget>[
         Text(

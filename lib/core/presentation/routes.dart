@@ -389,14 +389,14 @@ final List<dynamic> pages = [
   ]),
 ];
 
-SubMenuItem getItemForKey(String key) {
-  SubMenuItem item;
+SubMenuItem? getItemForKey(String key) {
+  SubMenuItem? item;
   List<dynamic> pag = List<dynamic>.from(pages);
   pag.forEach((page) {
     if (page is SubMenuItem && page.title == key) {
       item = page;
     } else if (page is MenuItem) {
-      page.items.forEach((sub) {
+      page.items!.forEach((sub) {
         if (sub.title == key) item = sub;
       });
     }

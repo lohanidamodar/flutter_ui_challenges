@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class Hotel {
-  String imageUrl;
-  String title;
-  String description;
-  int price;
-  double rating;
+  String? imageUrl;
+  String? title;
+  String? description;
+  int? price;
+  double? rating;
 
   Hotel({this.description, this.imageUrl, this.price, this.rating, this.title});
 }
@@ -214,7 +214,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                             topRight: Radius.circular(10.0),
                           ),
                           image: DecorationImage(
-                            image: AssetImage(hotels[index].imageUrl),
+                            image: AssetImage(hotels[index].imageUrl!),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -222,14 +222,14 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                       Padding(
                         padding: const EdgeInsets.only(left: 10, top: 10),
                         child: Text(
-                          hotels[index].title,
+                          hotels[index].title!,
                           style: TextStyle(fontSize: 14.0),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
                         child: Text(
-                          hotels[index].description,
+                          hotels[index].description!,
                           style: TextStyle(fontSize: 13.0, color: Colors.grey),
                         ),
                       ),
@@ -333,7 +333,7 @@ _hotelPackage(int index) {
                   bottomLeft: Radius.circular(10.0),
                 ),
                 image: DecorationImage(
-                  image: AssetImage(hotels[index].imageUrl),
+                  image: AssetImage(hotels[index].imageUrl!),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -346,7 +346,7 @@ _hotelPackage(int index) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  hotels[index].title,
+                  hotels[index].title!,
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
@@ -356,7 +356,7 @@ _hotelPackage(int index) {
                   height: 5,
                 ),
                 Text(
-                  hotels[index].description,
+                  hotels[index].description!,
                   style: TextStyle(
                     fontSize: 14.0,
                     color: Colors.grey,

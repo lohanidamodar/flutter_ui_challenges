@@ -94,7 +94,7 @@ class ProfileElevenPage extends StatelessWidget {
             value: true,
             groupValue: true,
             title: Text("private"),
-            onChanged: (value) {},
+            onChanged: (dynamic value) {},
             secondary: SizedBox(
               width: 10,
             ),
@@ -105,7 +105,7 @@ class ProfileElevenPage extends StatelessWidget {
             groupValue: true,
             controlAffinity: ListTileControlAffinity.trailing,
             title: Text("public"),
-            onChanged: (value) {},
+            onChanged: (dynamic value) {},
             secondary: SizedBox(
               width: 10,
             ),

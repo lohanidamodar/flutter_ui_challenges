@@ -5,8 +5,8 @@ import '../../widgets/furniture/custom_side_button.dart';
 import 'package:flutter/material.dart';
 
 class Lamp extends StatelessWidget {
-  final ProfileMenu item;
-  final int index;
+  final ProfileMenu? item;
+  final int? index;
   Lamp({this.item, this.index});
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class Lamp extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
                   child: PNetworkImage(
-                    lampsImage[index]['image'],
+                    lampsImage[index!]['image'],
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -93,7 +93,7 @@ class Lamp extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text(
-                                    item.title,
+                                    item!.title!,
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: index == 0 ? 17.0 : 14,
@@ -120,7 +120,7 @@ class Lamp extends StatelessWidget {
                                 // crossAxisAlignment: CrossAxisAlignment.end,
                                 children: <Widget>[
                                   Text(
-                                    item.subTitle,
+                                    item!.subTitle!,
                                     style: TextStyle(
                                       color: profile_info_background,
                                       fontSize: index == 0 ? 30.0 : 20.0,
@@ -157,7 +157,7 @@ class Lamp extends StatelessWidget {
                           Navigator.pushNamed(
                             context,
                             '/selectedItem',
-                            arguments: lampsImage[index]['image'],
+                            arguments: lampsImage[index!]['image'],
                           );
                         },
                       ),

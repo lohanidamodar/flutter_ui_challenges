@@ -169,7 +169,7 @@ class ProfileFourPage extends StatelessWidget {
   }
 
   ListTile _buildExperienceRow(
-      {String company, String position, String duration}) {
+      {required String company, String? position, String? duration}) {
     return ListTile(
       leading: Padding(
         padding: const EdgeInsets.only(top: 8.0, left: 20.0),

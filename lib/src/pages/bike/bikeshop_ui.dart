@@ -68,6 +68,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     width: MediaQuery.of(context).size.width*0.25,
                     height: 80,
                     child: IconButton(
+                      onPressed: (){},
                       padding: EdgeInsets.only(top: 5),
                       icon: Icon(
                         Icons.search,
@@ -253,6 +254,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),),
                 SizedBox(width: 15,),
                 IconButton(
+                  onPressed: (){},
                   icon: Icon(
                     Icons.add_shopping_cart,
                   ),
@@ -358,6 +360,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     fontWeight: FontWeight.bold
                 )),
                 IconButton(
+                  onPressed: (){},
                   iconSize: 30,
                   icon: Icon(Icons.add_shopping_cart),
                 )

@@ -13,8 +13,8 @@ class FancyAppbarAnimation extends StatefulWidget {
 
 class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
   ScrollController _scrollController = ScrollController();
-  Color appBarBackground;
-  double topPosition;
+  Color? appBarBackground;
+  late double topPosition;
   @override
   void initState() {
     topPosition = -80;

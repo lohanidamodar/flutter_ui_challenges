@@ -62,7 +62,7 @@ class HotelDestinationPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
                               Text(
-                                hotel.name,
+                                hotel.name!,
                                 style: TextStyle(
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.w600,
@@ -71,7 +71,7 @@ class HotelDestinationPage extends StatelessWidget {
                               ),
                               SizedBox(height: 2.0),
                               Text(
-                                hotel.address,
+                                hotel.address!,
                                 style: TextStyle(
                                   color: Colors.grey,
                                 ),
@@ -106,7 +106,7 @@ class HotelDestinationPage extends StatelessWidget {
                         child: Image(
                           height: 180.0,
                           width: 220.0,
-                          image: NetworkImage(hotel.imageUrl),
+                          image: NetworkImage(hotel.imageUrl!),
                           fit: BoxFit.cover,
                         ),
                       ),

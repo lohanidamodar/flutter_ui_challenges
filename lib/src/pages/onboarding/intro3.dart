@@ -111,7 +111,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
     );
   }
 
-  Widget _buildPage({String title, String icon, Color pageBg}) {
+  Widget _buildPage({required String title, required String icon, Color? pageBg}) {
     final TextStyle titleStyle = TextStyle(
         fontWeight: FontWeight.w500, fontSize: 20.0, color: Colors.white);
     return Container(

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class TitleLarge extends StatelessWidget {
   final String title;
-  final IconData icon;
+  final IconData? icon;
 
-  TitleLarge({@required this.title, this.icon});
+  TitleLarge({required this.title, this.icon});
   @override
   Widget build(BuildContext context) {
     return Row(

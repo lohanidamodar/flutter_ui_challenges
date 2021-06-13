@@ -13,9 +13,9 @@ import 'package:url_launcher/url_launcher.dart' as url_launcher;
 import '../../constants.dart';
 
 class MyCodeView extends StatefulWidget {
-  final String filePath;
+  final String? filePath;
 
-  MyCodeView({@required this.filePath});
+  MyCodeView({required this.filePath});
 
   String get githubPath => '$githubRepo/blob/master/$filePath';
 
@@ -28,7 +28,7 @@ class MyCodeView extends StatefulWidget {
 class MyCodeViewState extends State<MyCodeView> {
   double _textScaleFactor = 1.0;
 
-  Widget _getCodeView(String codeContent, BuildContext context) {
+  Widget _getCodeView(String? codeContent, BuildContext context) {
     final SyntaxHighlighterStyle style =
         Theme.of(context).brightness == Brightness.dark
             ? SyntaxHighlighterStyle.darkThemeStyle()
@@ -91,8 +91,7 @@ class MyCodeViewState extends State<MyCodeView> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: rootBundle.loadString(widget.filePath) ??
-          'Error loading source code from $this.filePath',
+      future: rootBundle.loadString(widget.filePath!),
       builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
         if (snapshot.hasData) {
           return Scaffold(

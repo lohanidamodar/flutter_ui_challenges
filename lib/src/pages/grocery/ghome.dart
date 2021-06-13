@@ -42,7 +42,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
   @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: _appBars[_currentIndex],
+        appBar: _appBars[_currentIndex] as PreferredSizeWidget?,
         body: _children[_currentIndex],
         bottomNavigationBar: _buildBottomNavigationBar(),
       );

@@ -92,12 +92,12 @@ class _IntroSixPageState extends State<IntroSixPage> {
 
 class IntroItem extends StatelessWidget {
   final String title;
-  final String subtitle;
-  final Color bg;
-  final String imageUrl;
+  final String? subtitle;
+  final Color? bg;
+  final String? imageUrl;
 
   const IntroItem(
-      {Key key, @required this.title, this.subtitle, this.bg, this.imageUrl})
+      {Key? key, required this.title, this.subtitle, this.bg, this.imageUrl})
       : super(key: key);
 
   @override
@@ -120,7 +120,7 @@ class IntroItem extends StatelessWidget {
               if (subtitle != null) ...[
                 const SizedBox(height: 20.0),
                 Text(
-                  subtitle,
+                  subtitle!,
                   style: TextStyle(color: Colors.white, fontSize: 24.0),
                   textAlign: TextAlign.center,
                 ),

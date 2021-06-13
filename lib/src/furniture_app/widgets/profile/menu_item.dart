@@ -2,7 +2,7 @@ import '../../utils/constant.dart';
 import 'package:flutter/material.dart';
 
 class MenuItem extends StatelessWidget {
-  final ProfileMenu menu;
+  final ProfileMenu? menu;
   MenuItem({this.menu});
   @override
   Widget build(BuildContext context) {
@@ -36,10 +36,10 @@ class MenuItem extends StatelessWidget {
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: menu.iconColor,
+                    color: menu!.iconColor,
                   ),
                   child: Icon(
-                    menu.icon,
+                    menu!.icon,
                     color: Colors.white,
                   ),
                 ),
@@ -50,7 +50,7 @@ class MenuItem extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        menu.title,
+                        menu!.title!,
                         style: TextStyle(
                           fontSize: 18.0,
                           color: Colors.black,
@@ -58,7 +58,7 @@ class MenuItem extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        menu.subTitle,
+                        menu!.subTitle!,
                         style: TextStyle(
                           fontSize: 14.0,
                           color: profile_item_color,

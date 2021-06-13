@@ -194,13 +194,13 @@ class TodoTwoPage extends StatelessWidget {
 }
 
 class HeaderWidget extends StatelessWidget {
-  final Widget body;
-  final Widget header;
+  final Widget? body;
+  final Widget? header;
   final Color headerColor;
   final Color backColor;
 
   const HeaderWidget(
-      {Key key,
+      {Key? key,
       this.body,
       this.header,
       this.headerColor = Colors.white,

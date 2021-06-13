@@ -7,13 +7,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 
 class CustomPaginationBuilder extends SwiperPlugin {
-  final Color activeColor;
-  final Color color;
+  final Color? activeColor;
+  final Color? color;
   final Size activeSize;
   final Size size;
   final double space;
 
-  final Key key;
+  final Key? key;
 
   const CustomPaginationBuilder(
       {this.activeColor,

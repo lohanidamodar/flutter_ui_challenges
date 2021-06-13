@@ -48,12 +48,12 @@ class ShapePlantPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Hero(
-                            tag: Shape[index].title,
-                            child: Image.network(Shape[index].image),
+                            tag: Shape[index].title!,
+                            child: Image.network(Shape[index].image!),
                           ),
                           SizedBox(height: 10),
                           Text(
-                            Shape[index].title,
+                            Shape[index].title!,
                             style: TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class ShapePlantPage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            Shape[index].discription,
+                            Shape[index].discription!,
                             style: TextStyle(
                               color: Colors.grey,
                               fontSize: 16,

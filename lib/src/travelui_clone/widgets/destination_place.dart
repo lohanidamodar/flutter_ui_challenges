@@ -74,7 +74,7 @@ class DestinationPlacePage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  '${destination.activities.length} activities',
+                                  '${destination.activities!.length} activities',
                                   style: TextStyle(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.w600,
@@ -82,7 +82,7 @@ class DestinationPlacePage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  destination.description,
+                                  destination.description!,
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -107,13 +107,13 @@ class DestinationPlacePage extends StatelessWidget {
                         child: Stack(
                           children: <Widget>[
                             Hero(
-                              tag: destination.imageUrl,
+                              tag: destination.imageUrl!,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(20.0),
                                 child: Image(
                                   height: 180.0,
                                   width: 180.0,
-                                  image: NetworkImage(destination.imageUrl),
+                                  image: NetworkImage(destination.imageUrl!),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -125,7 +125,7 @@ class DestinationPlacePage extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text(
-                                    destination.city,
+                                    destination.city!,
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,
@@ -142,7 +142,7 @@ class DestinationPlacePage extends StatelessWidget {
                                       ),
                                       SizedBox(width: 5.0),
                                       Text(
-                                        destination.country,
+                                        destination.country!,
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),

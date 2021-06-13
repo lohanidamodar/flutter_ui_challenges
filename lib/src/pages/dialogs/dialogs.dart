@@ -304,15 +304,15 @@ class CustomAlertDialog extends StatelessWidget {
   final AlertDialogType type;
   final String title;
   final String content;
-  final Widget icon;
+  final Widget? icon;
   final String buttonLabel;
   final TextStyle titleStyle = TextStyle(
       fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.bold);
 
   CustomAlertDialog(
-      {Key key,
+      {Key? key,
       this.title = "Successful",
-      @required this.content,
+      required this.content,
       this.icon,
       this.type = AlertDialogType.INFO,
       this.buttonLabel = "Ok"})

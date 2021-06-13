@@ -86,7 +86,7 @@ class TravelHomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildItem({String title}) {
+  Widget _buildItem({required String title}) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Material(
@@ -103,7 +103,7 @@ class TravelHomePage extends StatelessWidget {
     );
   }
 
-  Container _buildFeaturedItem({String image, String title, String subtitle}) {
+  Container _buildFeaturedItem({String? image, required String title, required String subtitle}) {
     return Container(
       padding: EdgeInsets.only(left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
       child: Material(

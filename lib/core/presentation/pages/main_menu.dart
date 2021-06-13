@@ -16,7 +16,7 @@ class MainMenu extends StatefulWidget {
 }
 
 class _MainMenuState extends State<MainMenu> {
-  Map<String, bool> _expandedData;
+  late Map<String, bool> _expandedData;
   @override
   void initState() {
     super.initState();
@@ -47,7 +47,7 @@ class _MainMenuState extends State<MainMenu> {
     return RoundedContainer(
       margin: EdgeInsets.symmetric(
           horizontal:
-              _expandedData[page.title] != null && _expandedData[page.title]
+              _expandedData[page.title] != null && _expandedData[page.title]!
                   ? 0
                   : 8.0,
           vertical: 4.0),
@@ -61,10 +61,10 @@ class _MainMenuState extends State<MainMenu> {
         },
         leading: Icon(page.icon),
         title: Text(
-          "${page.title} (${page.items.length} layouts)",
+          "${page.title} (${page.items!.length} layouts)",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black87),
         ),
-        children: _buildSubMenus(page.items, context),
+        children: _buildSubMenus(page.items!, context),
       ),
     );
   }
@@ -96,7 +96,7 @@ class _MainMenuState extends State<MainMenu> {
           item.title,
           style: Theme.of(context)
               .textTheme
-              .subtitle1
+              .subtitle1!
               .copyWith(color: Colors.black87),
         ),
         onTap: () => _openPage(context, item, OpenMode.PREVIEW),

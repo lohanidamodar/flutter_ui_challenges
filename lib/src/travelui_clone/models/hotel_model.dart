@@ -1,8 +1,8 @@
 class Hotel {
-  String imageUrl;
-  String name;
-  String address;
-  int price;
+  String? imageUrl;
+  String? name;
+  String? address;
+  int? price;
 
   Hotel({
     this.imageUrl,

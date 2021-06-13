@@ -10,7 +10,7 @@ class Payment extends StatefulWidget {
 }
 
 class _PaymentState extends State<Payment> {
-  double amount;
+  double? amount;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

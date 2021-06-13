@@ -75,7 +75,7 @@ class Dashboard extends StatelessWidget {
                     color: Colors.white70,
                   ),
                   title: Text(
-                    item.title,
+                    item.title!,
                     style: TextStyle(
                       color: Colors.white70,
                     ),

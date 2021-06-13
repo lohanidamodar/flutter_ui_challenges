@@ -36,7 +36,7 @@ class CakePage extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: <Widget>[
-              Text("Fruits Cake", style: Theme.of(context).textTheme.title.copyWith(
+              Text("Fruits Cake", style: Theme.of(context).textTheme.title!.copyWith(
                 color: Colors.white,
                 fontSize: 24.0,
                 fontWeight: FontWeight.normal

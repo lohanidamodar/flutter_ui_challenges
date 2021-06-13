@@ -12,18 +12,18 @@ import 'quiz_page.dart';
 
 class QuizOptionsDialog extends StatefulWidget {
   static final String path = "lib/src/pages/quiz_app/quiz_options.dart";
-  final Category category;
+  final Category? category;
 
-  const QuizOptionsDialog({Key key, this.category}) : super(key: key);
+  const QuizOptionsDialog({Key? key, this.category}) : super(key: key);
 
   @override
   _QuizOptionsDialogState createState() => _QuizOptionsDialogState();
 }
 
 class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
-  int _noOfQuestions;
-  String _difficulty;
-  bool processing;
+  int? _noOfQuestions;
+  String? _difficulty;
+  late bool processing;
 
   @override
   void initState() { 
@@ -42,7 +42,7 @@ class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
               width: double.infinity,
               padding: const EdgeInsets.all(16.0),
               color: Colors.grey.shade200,
-              child: Text(widget.category.name, style: Theme.of(context).textTheme.title.copyWith(),),
+              child: Text(widget.category!.name, style: Theme.of(context).textTheme.title!.copyWith(),),
             ),
             SizedBox(height: 10.0),
             Text("Select Total Number of Questions"),
@@ -150,7 +150,7 @@ class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
     });
   }
 
-  _selectDifficulty(String s) {
+  _selectDifficulty(String? s) {
     setState(() {
       _difficulty=s;
     });

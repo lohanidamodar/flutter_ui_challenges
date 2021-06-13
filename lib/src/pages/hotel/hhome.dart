@@ -195,12 +195,12 @@ class HotelHomePage extends StatelessWidget {
 class Category extends StatelessWidget {
   final IconData icon;
   final String title;
-  final Color backgroundColor;
+  final Color? backgroundColor;
 
   const Category({
-    Key key,
-    @required this.icon,
-    @required this.title,
+    Key? key,
+    required this.icon,
+    required this.title,
     this.backgroundColor
   }) : super(key: key);
 

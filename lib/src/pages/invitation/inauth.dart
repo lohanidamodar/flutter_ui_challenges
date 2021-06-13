@@ -13,7 +13,7 @@ class InvitationAuthPage extends StatefulWidget {
 }
 
 class _InvitationAuthPageState extends State<InvitationAuthPage> {
-  bool signupForm;
+  bool? signupForm;
   @override
   void initState() { 
     super.initState();
@@ -88,7 +88,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                               ),
                             ),
                           ],
-                          isSelected: [signupForm, !signupForm],
+                          isSelected: [signupForm!, !signupForm!],
                           onPressed: (index) {
                             setState(() {
                               signupForm = index == 0;
@@ -98,7 +98,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                       ),
                       AnimatedSwitcher(
                         duration: Duration(milliseconds: 200,),
-                        child: signupForm ? SignUp() : SignIn(),
+                        child: signupForm! ? SignUp() : SignIn(),
                       ),
                     ],
                   ),

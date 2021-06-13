@@ -12,9 +12,9 @@ import 'quiz_finished.dart';
 class QuizPage extends StatefulWidget {
   static final String path = "lib/src/pages/quiz_app/quiz_page.dart";
   final List<Question> questions;
-  final Category category;
+  final Category? category;
 
-  const QuizPage({Key key, @required this.questions, this.category}) : super(key: key);
+  const QuizPage({Key? key, required this.questions, this.category}) : super(key: key);
 
   @override
   _QuizPageState createState() => _QuizPageState();
@@ -35,19 +35,19 @@ class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context){
     Question question = widget.questions[_currentIndex];
-    final List<dynamic> options = question.incorrectAnswers;
+    final List<dynamic> options = question.incorrectAnswers!;
     if(!options.contains(question.correctAnswer)) {
       options.add(question.correctAnswer);
       options.shuffle();
     }
     
     return WillPopScope(
-      onWillPop: _onWillPop,
+      onWillPop: _onWillPop as Future<bool> Function()?,
       child: Scaffold(
         key: _key,
         appBar: AppBar(
           backgroundColor: Colors.deepPurple,
-          title: Text(widget.category.name),
+          title: Text(widget.category!.name),
           elevation: 0,
         ),
         body: Stack(
@@ -73,7 +73,7 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                       SizedBox(width: 16.0),
                       Expanded(
-                        child: Text(widget.questions[_currentIndex].question,
+                        child: Text(widget.questions[_currentIndex].question!,
                           softWrap: true,
                           style: _questionStyle,),
                       ),
@@ -89,7 +89,7 @@ class _QuizPageState extends State<QuizPage> {
                           title: Text("$option"),
                           groupValue: _answers[_currentIndex],
                           value: option,
-                          onChanged: (value){
+                          onChanged: (dynamic value){
                             setState(() {
                               _answers[_currentIndex] = option;
                             });
@@ -123,7 +123,7 @@ class _QuizPageState extends State<QuizPage> {
 
   void _nextSubmit() {
     if(_answers[_currentIndex] == null) {
-      _key.currentState.showSnackBar(SnackBar(
+      _key.currentState!.showSnackBar(SnackBar(
         content: Text("You must select an answer to continue."),
       ));
       return;
@@ -139,7 +139,7 @@ class _QuizPageState extends State<QuizPage> {
     }
   }
 
-  Future<bool> _onWillPop() async {
+  Future<bool?> _onWillPop() async {
     return showDialog<bool>(
       context: context,
       builder: (_) {

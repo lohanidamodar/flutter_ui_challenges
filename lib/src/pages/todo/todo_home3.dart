@@ -65,7 +65,7 @@ class TodoHomeThreePage extends StatelessWidget {
         children: <Widget>[
           Text(
             "Wiki Lists",
-            style: Theme.of(context).textTheme.display1.copyWith(
+            style: Theme.of(context).textTheme.display1!.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),

@@ -14,9 +14,9 @@ class LoginTwelvePage extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-          Colors.orange[900],
-          Colors.orange[800],
-          Colors.orange[400]
+          Colors.orange[900]!,
+          Colors.orange[800]!,
+          Colors.orange[400]!
         ])),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +76,7 @@ class LoginTwelvePage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     border: Border(
                                         bottom: BorderSide(
-                                            color: Colors.grey[200]))),
+                                            color: Colors.grey[200]!))),
                                 child: TextField(
                                   decoration: InputDecoration(
                                       hintText: "Email or Phone number",
@@ -89,7 +89,7 @@ class LoginTwelvePage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     border: Border(
                                         bottom: BorderSide(
-                                            color: Colors.grey[200]))),
+                                            color: Colors.grey[200]!))),
                                 child: TextField(
                                   decoration: InputDecoration(
                                       hintText: "Password",

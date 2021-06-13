@@ -1,11 +1,11 @@
 class Plant {
-  final String title;
-  final String discription;
-  final String price;
-  final String height;
-  final String image;
-  final String temprature;
-  final String port;
+  final String? title;
+  final String? discription;
+  final String? price;
+  final String? height;
+  final String? image;
+  final String? temprature;
+  final String? port;
 
   Plant({
     this.title,

@@ -42,7 +42,7 @@ class DesignPreviewsPage extends StatelessWidget {
   final Widget page;
   final String path;
 
-  const DesignPreviewsPage({Key key, @required this.title, @required this.page, @required this.path}) : super(key: key);
+  const DesignPreviewsPage({Key? key, required this.title, required this.page, required this.path}) : super(key: key);
 
 
   @override

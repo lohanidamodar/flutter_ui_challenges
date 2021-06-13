@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 
 class CustomInputField extends StatelessWidget {
-  final String textHint;
+  final String? textHint;
   final TextInputType keyboardType;
   final bool showInputText;
   CustomInputField({

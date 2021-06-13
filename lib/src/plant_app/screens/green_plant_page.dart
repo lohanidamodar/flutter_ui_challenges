@@ -48,12 +48,12 @@ class GreenPlantPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Hero(
-                            tag: plants[index].title,
-                            child: Image.network(plants[index].image),
+                            tag: plants[index].title!,
+                            child: Image.network(plants[index].image!),
                           ),
                           SizedBox(height: 10),
                           Text(
-                            plants[index].title,
+                            plants[index].title!,
                             style: TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class GreenPlantPage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            plants[index].discription,
+                            plants[index].discription!,
                             style: TextStyle(
                               color: Colors.grey,
                               fontSize: 16,

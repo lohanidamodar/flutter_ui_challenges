@@ -12,7 +12,7 @@ class AnimatedBottomBar extends StatefulWidget {
 }
 
 class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
-  int _currentPage;
+  int? _currentPage;
 
   @override
   void initState() {
@@ -38,7 +38,7 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
     );
   }
 
-  getPage(int page) {
+  getPage(int? page) {
     switch(page) {
       case 0:
         return Center(child: Container(child: Text("Home Page"),));
@@ -51,9 +51,9 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
 }
 
 class AnimatedBottomNav extends StatelessWidget {
-  final int currentIndex;
-  final Function(int) onChange;
-  const AnimatedBottomNav({Key key, this.currentIndex, this.onChange})
+  final int? currentIndex;
+  final Function(int)? onChange;
+  const AnimatedBottomNav({Key? key, this.currentIndex, this.onChange})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class AnimatedBottomNav extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: InkWell(
-              onTap: () => onChange(0),
+              onTap: () => onChange!(0),
               child: BottomNavItem(
                 icon: Icons.home,
                 title: "Home",
@@ -74,7 +74,7 @@ class AnimatedBottomNav extends StatelessWidget {
           ),
           Expanded(
             child: InkWell(
-              onTap: () => onChange(1),
+              onTap: () => onChange!(1),
               child: BottomNavItem(
                 icon: Icons.verified_user,
                 title: "User",
@@ -84,7 +84,7 @@ class AnimatedBottomNav extends StatelessWidget {
           ),
           Expanded(
             child: InkWell(
-              onTap: () => onChange(2),
+              onTap: () => onChange!(2),
               child: BottomNavItem(
                 icon: Icons.menu,
                 title: "Menu",
@@ -100,12 +100,12 @@ class AnimatedBottomNav extends StatelessWidget {
 
 class BottomNavItem extends StatelessWidget {
   final bool isActive;
-  final IconData icon;
-  final Color activeColor;
-  final Color inactiveColor;
-  final String title;
+  final IconData? icon;
+  final Color? activeColor;
+  final Color? inactiveColor;
+  final String? title;
   const BottomNavItem(
-      {Key key,
+      {Key? key,
       this.isActive = false,
       this.icon,
       this.activeColor,
@@ -134,7 +134,7 @@ class BottomNavItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    title,
+                    title!,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: activeColor ?? Theme.of(context).primaryColor,

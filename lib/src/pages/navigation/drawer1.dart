@@ -24,7 +24,7 @@ class DarkDrawerPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
-            _key.currentState.openDrawer();
+            _key.currentState!.openDrawer();
           },
         ),
       ),

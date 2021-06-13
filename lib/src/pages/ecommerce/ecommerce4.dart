@@ -170,7 +170,7 @@ class EcommerceFourPage extends StatelessWidget {
 
 class ProductListItem extends StatelessWidget {
   final Function onPressed;
-  const ProductListItem({Key key, @required this.onPressed}) : super(key: key);
+  const ProductListItem({Key? key, required this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -184,7 +184,7 @@ class ProductListItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
-        onPressed: onPressed,
+        onPressed: onPressed as void Function()?,
         child: Row(
           children: <Widget>[
             Ink(

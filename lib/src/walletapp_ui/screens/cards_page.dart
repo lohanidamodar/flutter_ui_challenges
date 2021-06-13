@@ -46,6 +46,7 @@ class CardPage extends StatelessWidget {
                             color: Colors.lightBlue[900],
                             size: 20,
                           ),
+                          onPressed: (){},
                         )
                       ],
                     ),
@@ -72,7 +73,7 @@ class CardPage extends StatelessWidget {
                                   BorderRadius.all(Radius.circular(20)),
                               boxShadow: [
                                 BoxShadow(
-                                    color: Colors.grey[200],
+                                    color: Colors.grey[200]!,
                                     blurRadius: 10.0,
                                     spreadRadius: 4.5)
                               ]),
@@ -96,7 +97,7 @@ class CardPage extends StatelessWidget {
                                   BorderRadius.all(Radius.circular(20)),
                               boxShadow: [
                                 BoxShadow(
-                                    color: Colors.grey[200],
+                                    color: Colors.grey[200]!,
                                     blurRadius: 10.0,
                                     spreadRadius: 4.5)
                               ]),
@@ -248,7 +249,7 @@ class CardPage extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
-                              color: Colors.grey[100],
+                              color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
@@ -292,7 +293,7 @@ class CardPage extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
-                              color: Colors.grey[100],
+                              color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
@@ -336,7 +337,7 @@ class CardPage extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
-                              color: Colors.grey[100],
+                              color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),

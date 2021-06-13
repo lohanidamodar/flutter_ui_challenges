@@ -61,7 +61,7 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                         width: 16,
                       ),
                       PopupMenuButton(
-                        onSelected: (index) {
+                        onSelected: (dynamic index) {
                           setState(() {
                             selectedLocationIndex = index;
                           });

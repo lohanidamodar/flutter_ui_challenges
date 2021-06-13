@@ -14,8 +14,8 @@ class _HiddenMenuPageState extends State<HiddenMenuPage> with TickerProviderStat
   bool menuShown = false;
   double appbarHeight = 80.0;
   double menuHeight = 0.0;
-  Animation<double> openAnimation, closeAnimation;
-  AnimationController openController, closeController;
+  late Animation<double> openAnimation, closeAnimation;
+  late AnimationController openController, closeController;
 
   void initState() { 
     super.initState();

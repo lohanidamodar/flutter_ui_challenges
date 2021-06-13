@@ -28,7 +28,7 @@ var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
 
 class _TravelStoryPageState extends State<TravelStoryPage> {
-  var currentPage = images.length - 1.0;
+  double? currentPage = images.length - 1.0;
 
   @override
   Widget build(BuildContext context) {
@@ -236,7 +236,7 @@ class CardScrollWidget extends StatelessWidget {
         var primaryCardLeft = safeWidth - widthOfPrimaryCard;
         var horizontalInset = primaryCardLeft / 2;
 
-        List<Widget> cardList = new List();
+        List<Widget> cardList = [];
 
         for (var i = 0; i < images.length; i++) {
           var delta = i - currentPage;

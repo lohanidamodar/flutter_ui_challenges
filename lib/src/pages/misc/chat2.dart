@@ -17,8 +17,8 @@ class ChatTwoPage extends StatefulWidget {
 }
 
 class _ChatTwoPageState extends State<ChatTwoPage> {
-  String text;
-  TextEditingController _controller;
+  String? text;
+  TextEditingController? _controller;
   final List<String> avatars = [
     assets.avatars[3],
     assets.avatars[4],
@@ -113,15 +113,15 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
   }
 
   _save() async {
-    if (_controller.text.isEmpty) return;
+    if (_controller!.text.isEmpty) return;
     FocusScope.of(context).requestFocus(FocusNode());
     setState(() {
-      messages.insert(0, Message(rand.nextInt(2), _controller.text));
-      _controller.clear();
+      messages.insert(0, Message(rand.nextInt(2), _controller!.text));
+      _controller!.clear();
     });
   }
 
-  Row _buildMessageRow(Message message, {bool current}) {
+  Row _buildMessageRow(Message message, {required bool current}) {
     return Row(
       mainAxisAlignment:
           current ? MainAxisAlignment.end : MainAxisAlignment.start,

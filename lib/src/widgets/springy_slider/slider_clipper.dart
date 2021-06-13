@@ -10,9 +10,9 @@ import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controll
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
 
 class SliderClipper extends CustomClipper<Path> {
-  final SpringySliderController sliderController;
-  final double paddingTop;
-  final double paddingBottom;
+  final SpringySliderController? sliderController;
+  final double? paddingTop;
+  final double? paddingBottom;
 
   SliderClipper({
     this.sliderController,
@@ -22,7 +22,7 @@ class SliderClipper extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
-    switch (sliderController.state) {
+    switch (sliderController!.state) {
       case SpringySliderState.idle:
         return _clipIdle(size);
       case SpringySliderState.dragging:
@@ -35,10 +35,10 @@ class SliderClipper extends CustomClipper<Path> {
   Path _clipIdle(Size size) {
     Path rect = new Path();
 
-    final top = paddingTop;
+    final top = paddingTop!;
     final bottom = size.height;
-    final height = (bottom - paddingBottom) - top;
-    final percentFromBottom = 1.0 - sliderController.sliderValue;
+    final height = (bottom - paddingBottom!) - top;
+    final percentFromBottom = 1.0 - sliderController!.sliderValue!;
 
     rect.addRect(
       new Rect.fromLTRB(
@@ -55,11 +55,11 @@ class SliderClipper extends CustomClipper<Path> {
   Path _clipDragging(Size size) {
     Path compositePath = new Path();
 
-    final top = paddingTop;
-    final bottom = size.height - paddingBottom;
+    final top = paddingTop!;
+    final bottom = size.height - paddingBottom!;
     final height = bottom - top;
-    final basePercentFromBottom = 1.0 - sliderController.sliderValue;
-    final dragPercentFromBottom = 1.0 - sliderController.draggingPercent;
+    final basePercentFromBottom = 1.0 - sliderController!.sliderValue!;
+    final dragPercentFromBottom = 1.0 - sliderController!.draggingPercent!;
 
     final baseY = top + (basePercentFromBottom * height);
     final leftX = -0.15 * size.width;
@@ -67,18 +67,18 @@ class SliderClipper extends CustomClipper<Path> {
     final rightX = 1.15 * size.width;
     final rightPoint = Point(rightX, baseY);
 
-    final dragX = sliderController.draggingHorizontalPercent * size.width;
+    final dragX = sliderController!.draggingHorizontalPercent! * size.width;
     final dragY = top + (dragPercentFromBottom * height);
     final crestPoint = Point(dragX, dragY.clamp(top, bottom));
 
-    double excessDrag = 0.0;
-    if (sliderController.draggingPercent < 0.0) {
-      excessDrag = sliderController.draggingPercent;
-    } else if (sliderController.draggingPercent > 1.0) {
-      excessDrag = sliderController.draggingPercent - 1.0;
+    double? excessDrag = 0.0;
+    if (sliderController!.draggingPercent! < 0.0) {
+      excessDrag = sliderController!.draggingPercent;
+    } else if (sliderController!.draggingPercent! > 1.0) {
+      excessDrag = sliderController!.draggingPercent! - 1.0;
     }
     final baseControlPointWidth = 150.0;
-    final thickeningFactor = excessDrag * height * 0.05;
+    final thickeningFactor = excessDrag! * height * 0.05;
     final controlPointWidth = (200.0 * thickeningFactor).abs() + baseControlPointWidth;
 
     final rect = new Path();
@@ -92,18 +92,18 @@ class SliderClipper extends CustomClipper<Path> {
     compositePath.addPath(rect, const Offset(0.0, 0.0));
 
     final curve = new Path();
-    curve.moveTo(crestPoint.x, crestPoint.y);
+    curve.moveTo(crestPoint.x as double, crestPoint.y as double);
     curve.quadraticBezierTo(
       crestPoint.x - controlPointWidth,
-      crestPoint.y,
+      crestPoint.y as double,
       leftPoint.x,
       leftPoint.y,
     );
 
-    curve.moveTo(crestPoint.x, crestPoint.y);
+    curve.moveTo(crestPoint.x as double, crestPoint.y as double);
     curve.quadraticBezierTo(
       crestPoint.x + controlPointWidth,
-      crestPoint.y,
+      crestPoint.y as double,
       rightPoint.x,
       rightPoint.y,
     );
@@ -123,11 +123,11 @@ class SliderClipper extends CustomClipper<Path> {
   Path _clipSpringing(Size size) {
     Path compositePath = new Path();
 
-    final top = paddingTop;
-    final bottom = size.height - paddingBottom;
+    final top = paddingTop!;
+    final bottom = size.height - paddingBottom!;
     final height = bottom - top;
-    final basePercentFromBottom = 1.0 - sliderController.springingPercent;
-    final crestSpringPercentFromBottom = 1.0 - sliderController.crestSpringingPercent;
+    final basePercentFromBottom = 1.0 - sliderController!.springingPercent!;
+    final crestSpringPercentFromBottom = 1.0 - sliderController!.crestSpringingPercent!;
 
     final baseY = top + (basePercentFromBottom * height);
     final leftX = -0.85 * size.width;

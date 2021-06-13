@@ -48,12 +48,12 @@ class IndoorPlantPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Hero(
-                            tag: Indoor[index].title,
-                            child: Image.network(Indoor[index].image),
+                            tag: Indoor[index].title!,
+                            child: Image.network(Indoor[index].image!),
                           ),
                           SizedBox(height: 10),
                           Text(
-                            Indoor[index].title,
+                            Indoor[index].title!,
                             style: TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class IndoorPlantPage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            Indoor[index].discription,
+                            Indoor[index].discription!,
                             style: TextStyle(
                               color: Colors.grey,
                               fontSize: 16,

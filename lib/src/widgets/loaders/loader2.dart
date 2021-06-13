@@ -22,16 +22,16 @@ class LoaderTwo extends StatefulWidget {
   final double spanRadius;
   final Duration duration;
 
-  LoaderTwo({Key key, this.centralDotColor = Colors.black26, this.dotOneColor=Colors.red, this.dotTwoColor=Colors.lightBlue, this.dotThreeColor=Colors.orange, this.dotFourColor=Colors.green, this.dotFiveColor=Colors.yellow, this.dotSixColor=Colors.blue, this.dotSevenColor=Colors.pink, this.dotEightColor=Colors.lightGreen, this.centralDotRadius=15.0, this.spanRadius=15.0, this.duration = const Duration(seconds: 2), this.outerDotRadius = 5.0 }) : super(key: key);
+  LoaderTwo({Key? key, this.centralDotColor = Colors.black26, this.dotOneColor=Colors.red, this.dotTwoColor=Colors.lightBlue, this.dotThreeColor=Colors.orange, this.dotFourColor=Colors.green, this.dotFiveColor=Colors.yellow, this.dotSixColor=Colors.blue, this.dotSevenColor=Colors.pink, this.dotEightColor=Colors.lightGreen, this.centralDotRadius=15.0, this.spanRadius=15.0, this.duration = const Duration(seconds: 2), this.outerDotRadius = 5.0 }) : super(key: key);
 
   _LoaderTwoState createState() => _LoaderTwoState(centralDotRadius);
 }
 
 class _LoaderTwoState extends State<LoaderTwo> with SingleTickerProviderStateMixin {
-  AnimationController controller;
-  Animation<double> animationRotation;
-  Animation<double> animationRadiusIn;
-  Animation<double> animationRadiusOut;
+  late AnimationController controller;
+  late Animation<double> animationRotation;
+  late Animation<double> animationRadiusIn;
+  late Animation<double> animationRadiusOut;
 
   final double initialRadius;
   double radius = 0.0;
@@ -120,10 +120,10 @@ class _LoaderTwoState extends State<LoaderTwo> with SingleTickerProviderStateMix
 }
 
 class Dot extends StatelessWidget {
-  final double radius;
-  final Color color;
+  final double? radius;
+  final Color? color;
 
-  const Dot({Key key, this.radius, this.color}) : super(key: key);
+  const Dot({Key? key, this.radius, this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

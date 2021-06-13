@@ -80,7 +80,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
       textTheme: TextTheme(
           title: Theme.of(context)
               .textTheme
-              .title
+              .title!
               .merge(TextStyle(color: Colors.black))),
       iconTheme: IconThemeData(color: Colors.lightGreen),
       automaticallyImplyLeading: false,
@@ -153,7 +153,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
               Text(restaurants[index]["name"],
                   style: Theme.of(context)
                       .textTheme
-                      .title
+                      .title!
                       .merge(TextStyle(fontSize: 14.0))),
               SizedBox(
                 height: 5.0,
@@ -161,7 +161,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
               Text(restaurants[index]["specials"],
                   style: Theme.of(context)
                       .textTheme
-                      .subhead
+                      .subhead!
                       .merge(TextStyle(fontSize: 12.0)))
             ],
           ),
@@ -194,7 +194,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                         Text("Nepali breakfast",
                             style: Theme.of(context)
                                 .textTheme
-                                .title
+                                .title!
                                 .merge(TextStyle(fontSize: 14.0))),
                         SizedBox(
                           height: 5.0,
@@ -202,7 +202,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                         Text("Vegetarian, Nepali",
                             style: Theme.of(context)
                                 .textTheme
-                                .subhead
+                                .subhead!
                                 .merge(TextStyle(fontSize: 12.0))),
                         SizedBox(
                           height: 5.0,
@@ -213,7 +213,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                   Text("Rs. 180",
                       style: Theme.of(context)
                           .textTheme
-                          .title
+                          .title!
                           .merge(TextStyle(fontSize: 16.0, color: Colors.red))),
                   IconButton(
                     icon: Icon(Icons.favorite_border),

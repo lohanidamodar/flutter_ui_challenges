@@ -39,7 +39,7 @@ class LoginElevenPage extends StatelessWidget {
                 Text(
                   "Welcome",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headline3.copyWith(
+                  style: Theme.of(context).textTheme.headline3!.copyWith(
                         color: Colors.white,
                       ),
                 ),
@@ -67,7 +67,7 @@ class LoginElevenPage extends StatelessWidget {
                       Text(
                         "Log In",
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.headline5.copyWith(
+                        style: Theme.of(context).textTheme.headline5!.copyWith(
                               color: Colors.red,
                             ),
                       ),

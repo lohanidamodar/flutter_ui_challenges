@@ -8,12 +8,12 @@ import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dar
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemOne extends StatelessWidget {
-  final String image, title, price, subtitle;
+  final String? image, title, price, subtitle;
   const GroceryListItemOne({
-    Key key,
-    @required this.image,
-    @required this.title,
-    @required this.subtitle,
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.subtitle,
     this.price,
   }) : super(key: key);
 

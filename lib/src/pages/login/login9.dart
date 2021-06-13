@@ -68,7 +68,7 @@ class LoginNinePage extends StatelessWidget {
                           "Namaste!",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4
+                              .headline4!
                               .copyWith(color: Colors.white),
                           textAlign: TextAlign.center,
                         ),

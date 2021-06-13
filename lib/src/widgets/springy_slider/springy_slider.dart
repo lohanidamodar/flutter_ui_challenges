@@ -18,9 +18,9 @@ import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_points.d
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
 
 class SpringySlider extends StatefulWidget {
-  final int markCount;
-  final Color positiveColor;
-  final Color negativeColor;
+  final int? markCount;
+  final Color? positiveColor;
+  final Color? negativeColor;
 
   SpringySlider({
     this.markCount,
@@ -36,7 +36,7 @@ class _SpringySliderState extends State<SpringySlider> with TickerProviderStateM
   final double paddingTop = 50.0;
   final double paddingBottom = 50.0;
 
-  SpringySliderController sliderController;
+  SpringySliderController? sliderController;
 
   @override
   void initState() {
@@ -51,9 +51,9 @@ class _SpringySliderState extends State<SpringySlider> with TickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    double sliderPercent = sliderController.sliderValue;
-    if (sliderController.state == SpringySliderState.springing) {
-      sliderPercent = sliderController.springingPercent;
+    double? sliderPercent = sliderController!.sliderValue;
+    if (sliderController!.state == SpringySliderState.springing) {
+      sliderPercent = sliderController!.springingPercent;
     }
 
     return SliderDragger(

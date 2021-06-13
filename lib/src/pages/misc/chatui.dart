@@ -226,10 +226,10 @@ class ChatUi extends StatelessWidget {
 }
 
 class OnlinePersonAction extends StatelessWidget {
-  final String personImagePath;
-  final Color actColor;
+  final String? personImagePath;
+  final Color? actColor;
   const OnlinePersonAction({
-    Key key,
+    Key? key,
     this.personImagePath,
     this.actColor,
   }) : super(key: key);
@@ -256,7 +256,7 @@ class OnlinePersonAction extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50.0),
                 image: DecorationImage(
-                    image: NetworkImage(personImagePath), fit: BoxFit.cover),
+                    image: NetworkImage(personImagePath!), fit: BoxFit.cover),
               ),
             ),
           ),

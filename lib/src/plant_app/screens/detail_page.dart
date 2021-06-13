@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/plant_app/model/data_model.dart';
 
 class DetailPage extends StatelessWidget {
-  final Plant plant;
+  final Plant? plant;
 
-  const DetailPage({Key key, this.plant}) : super(key: key);
+  const DetailPage({Key? key, this.plant}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,8 +38,8 @@ class DetailPage extends StatelessWidget {
                   ),
                   Container(
                     child: Hero(
-                      tag: plant.title,
-                      child: Image.network(plant.image),
+                      tag: plant!.title!,
+                      child: Image.network(plant!.image!),
                     ),
                   ),
                   SizedBox(height: 10),
@@ -50,7 +50,7 @@ class DetailPage extends StatelessWidget {
                       children: [
                         SizedBox(height: 10),
                         Text(
-                          plant.title,
+                          plant!.title!,
                           style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class DetailPage extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          plant.discription,
+                          plant!.discription!,
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 16,
@@ -68,7 +68,7 @@ class DetailPage extends StatelessWidget {
                         Row(
                           children: [
                             Text(
-                              "\$${plant.price}",
+                              "\$${plant!.price}",
                               style: TextStyle(
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold,
@@ -97,9 +97,9 @@ class DetailPage extends StatelessWidget {
                     child: Row( 
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        buildCard("Height", Icons.height, plant.height),
-                        buildCard("Temperature", Icons.thermostat_outlined,plant.temprature),
-                        buildCard("Pot", Icons.portrait, plant.port),
+                        buildCard("Height", Icons.height, plant!.height!),
+                        buildCard("Temperature", Icons.thermostat_outlined,plant!.temprature!),
+                        buildCard("Pot", Icons.portrait, plant!.port!),
                       ],
                     ),
                   ),

@@ -119,14 +119,14 @@ class ProfileHeader extends StatelessWidget {
   final ImageProvider<dynamic> coverImage;
   final ImageProvider<dynamic> avatar;
   final String title;
-  final String subtitle;
-  final List<Widget> actions;
+  final String? subtitle;
+  final List<Widget>? actions;
 
   const ProfileHeader(
-      {Key key,
-      @required this.coverImage,
-      @required this.avatar,
-      @required this.title,
+      {Key? key,
+      required this.coverImage,
+      required this.avatar,
+      required this.title,
       this.subtitle,
       this.actions})
       : super(key: key);
@@ -137,7 +137,7 @@ class ProfileHeader extends StatelessWidget {
         Ink(
           height: 200,
           decoration: BoxDecoration(
-            image: DecorationImage(image: coverImage, fit: BoxFit.cover),
+            image: DecorationImage(image: coverImage as ImageProvider<Object>, fit: BoxFit.cover),
           ),
         ),
         Ink(
@@ -154,7 +154,7 @@ class ProfileHeader extends StatelessWidget {
             alignment: Alignment.bottomRight,
             child: Row(
               mainAxisSize: MainAxisSize.min,
-              children: actions,
+              children: actions!,
             ),
           ),
         Container(
@@ -176,7 +176,7 @@ class ProfileHeader extends StatelessWidget {
               if (subtitle != null) ...[
                 const SizedBox(height: 5.0),
                 Text(
-                  subtitle,
+                  subtitle!,
                   style: Theme.of(context).textTheme.subtitle,
                 ),
               ]
@@ -191,13 +191,13 @@ class ProfileHeader extends StatelessWidget {
 class Avatar extends StatelessWidget {
   final ImageProvider<dynamic> image;
   final Color borderColor;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final double radius;
   final double borderWidth;
 
   const Avatar(
-      {Key key,
-      @required this.image,
+      {Key? key,
+      required this.image,
       this.borderColor = Colors.grey,
       this.backgroundColor,
       this.radius = 30,
@@ -216,7 +216,7 @@ class Avatar extends StatelessWidget {
             : Theme.of(context).primaryColor,
         child: CircleAvatar(
           radius: radius - borderWidth,
-          backgroundImage: image,
+          backgroundImage: image as ImageProvider<Object>?,
         ),
       ),
     );

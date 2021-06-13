@@ -236,7 +236,7 @@ class HomePage extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(20)),
                                     boxShadow: [
                                       BoxShadow(
-                                          color: Colors.grey[500],
+                                          color: Colors.grey[500]!,
                                           blurRadius: 10.0,
                                           spreadRadius: 4.5)
                                     ]),
@@ -271,7 +271,7 @@ class HomePage extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(20)),
                                     boxShadow: [
                                       BoxShadow(
-                                          color: Colors.grey[200],
+                                          color: Colors.grey[200]!,
                                           blurRadius: 10.0,
                                           spreadRadius: 4.5)
                                     ]),
@@ -306,7 +306,7 @@ class HomePage extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(20)),
                                     boxShadow: [
                                       BoxShadow(
-                                          color: Colors.grey[200],
+                                          color: Colors.grey[200]!,
                                           blurRadius: 10.0,
                                           spreadRadius: 4.5)
                                     ]),

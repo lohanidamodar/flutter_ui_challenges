@@ -13,7 +13,7 @@ class IntroPage extends StatefulWidget {
 }
 
 class _IntroPageState extends State<IntroPage> {
-  int currentIndex;
+  int? currentIndex;
   final SwiperController _controller = SwiperController();
 
   @override
@@ -25,7 +25,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: introBackground[currentIndex],
+      backgroundColor: introBackground[currentIndex!],
       body: Column(
         children: <Widget>[
           Expanded(
@@ -127,7 +127,7 @@ class _IntroPageState extends State<IntroPage> {
         children: <Widget>[
           const SizedBox(height: 60.0),
           Text(
-            introItems[index].title,
+            introItems[index].title!,
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 30.0,
@@ -135,7 +135,7 @@ class _IntroPageState extends State<IntroPage> {
           ),
           const SizedBox(height: 20.0),
           Text(
-            introItems[index].subtitle,
+            introItems[index].subtitle!,
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 18.0),
           ),
@@ -143,7 +143,7 @@ class _IntroPageState extends State<IntroPage> {
           Expanded(
             child: Container(
                 child: Image.asset(
-              introItems[index].image,
+              introItems[index].image!,
               fit: BoxFit.contain,
             )),
           ),

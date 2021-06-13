@@ -152,9 +152,9 @@ class BikeHomePage extends StatelessWidget {
 }
 
 class CategoryChooser extends StatelessWidget {
-  final Function(String) onTap;
+  final Function(String)? onTap;
   const CategoryChooser({
-    Key key,
+    Key? key,
     this.onTap,
   }) : super(key: key);
   final List<String> types = const [
@@ -179,7 +179,7 @@ class CategoryChooser extends StatelessWidget {
         itemBuilder: (context, index) {
           String type = types[index];
           return GestureDetector(
-            onTap: onTap != null ? () => onTap(type) : null,
+            onTap: onTap != null ? () => onTap!(type) : null,
             child: Column(
               children: <Widget>[
                 Container(
@@ -212,13 +212,13 @@ class CategoryChooser extends StatelessWidget {
 }
 
 class BikeListItem extends StatelessWidget {
-  final String thirdTitle;
+  final String? thirdTitle;
   final bool imageRight;
   final double elevation;
-  final void Function() onTap;
+  final void Function()? onTap;
 
   const BikeListItem(
-      {Key key,
+      {Key? key,
       this.thirdTitle,
       this.imageRight = false,
       this.elevation = 0.5,

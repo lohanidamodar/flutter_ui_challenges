@@ -21,37 +21,37 @@ class SpringySliderController extends ChangeNotifier {
     damping: 0.5,
   );
 
-  final TickerProvider _vsync;
+  final TickerProvider? _vsync;
 
   SpringySliderState _state = SpringySliderState.idle;
 
   // Stable slider value.
-  double _sliderPercent;
+  double? _sliderPercent;
 
   // Slider value during user drag.
-  double _draggingPercent;
+  double? _draggingPercent;
 
   // Slider horizontal value during user drag.
-  double _draggingHorizontalPercent;
+  double? _draggingHorizontalPercent;
 
   // When springing to new slider value, this is where the UI is springing from.
-  double _springStartPercent;
+  double? _springStartPercent;
   // When springing to new slider value, this is where the UI is springing to.
-  double _springEndPercent;
+  double? _springEndPercent;
   // Current slider value during spring effect.
-  double _springingPercent;
+  double? _springingPercent;
   // Physics spring.
-  SpringSimulation _sliderSpringSimulation;
+  late SpringSimulation _sliderSpringSimulation;
 
-  double _crestSpringingPercent;
-  double _crestSpringingStartPercent;
-  double _crestSpringingEndPercent;
-  SpringSimulation _crestSpringSimulation;
+  double? _crestSpringingPercent;
+  double? _crestSpringingStartPercent;
+  double? _crestSpringingEndPercent;
+  late SpringSimulation _crestSpringSimulation;
 
   // Ticker that computes current spring position based on time.
-  Ticker _springTicker;
+  Ticker? _springTicker;
   // Elapsed time that has passed since the start of the spring.
-  double _springTime;
+  late double _springTime;
 
   SpringySliderController({
     double sliderPercent = 0.0,
@@ -61,7 +61,7 @@ class SpringySliderController extends ChangeNotifier {
 
   void dispose() {
     if (_springTicker != null) {
-      _springTicker.dispose();
+      _springTicker!.dispose();
     }
 
     super.dispose();
@@ -69,16 +69,16 @@ class SpringySliderController extends ChangeNotifier {
 
   SpringySliderState get state => _state;
 
-  double get sliderValue => _sliderPercent;
+  double? get sliderValue => _sliderPercent;
 
-  set sliderValue(double newValue) {
+  set sliderValue(double? newValue) {
     _sliderPercent = newValue;
     notifyListeners();
   }
 
-  double get draggingPercent => _draggingPercent;
+  double? get draggingPercent => _draggingPercent;
 
-  double get draggingHorizontalPercent => _draggingHorizontalPercent;
+  double? get draggingHorizontalPercent => _draggingHorizontalPercent;
 
   set draggingPercents(Offset draggingPercents) {
     _draggingHorizontalPercent = draggingPercents.dx;
@@ -88,7 +88,7 @@ class SpringySliderController extends ChangeNotifier {
 
   void onDragStart(double draggingHorizontalPercent) {
     if (_springTicker != null) {
-      _springTicker
+      _springTicker!
         ..stop()
         ..dispose();
     }
@@ -105,7 +105,7 @@ class SpringySliderController extends ChangeNotifier {
 
     _springingPercent = _sliderPercent;
     _springStartPercent = _sliderPercent;
-    _springEndPercent = _draggingPercent.clamp(0.0, 1.0);
+    _springEndPercent = _draggingPercent!.clamp(0.0, 1.0);
 
     _crestSpringingPercent = draggingPercent;
     _crestSpringingStartPercent = draggingPercent;
@@ -129,23 +129,23 @@ class SpringySliderController extends ChangeNotifier {
 
     _sliderSpringSimulation = new SpringSimulation(
       sliderSpring,
-      _springStartPercent,
-      _springEndPercent,
+      _springStartPercent!,
+      _springEndPercent!,
       0.0,
     );
 
-    final crestSpringNormal = (_crestSpringingEndPercent - _crestSpringingStartPercent) /
-        (_crestSpringingEndPercent - _crestSpringingStartPercent).abs();
+    final crestSpringNormal = (_crestSpringingEndPercent! - _crestSpringingStartPercent!) /
+        (_crestSpringingEndPercent! - _crestSpringingStartPercent!).abs();
     _crestSpringSimulation = new SpringSimulation(
       crestSpring,
-      _crestSpringingStartPercent,
-      _crestSpringingEndPercent,
+      _crestSpringingStartPercent!,
+      _crestSpringingEndPercent!,
       0.5 * crestSpringNormal,
     );
 
     _springTime = 0.0;
 
-    _springTicker = _vsync.createTicker(_springTick)..start();
+    _springTicker = _vsync!.createTicker(_springTick)..start();
 
     notifyListeners();
   }
@@ -159,14 +159,14 @@ class SpringySliderController extends ChangeNotifier {
     _crestSpringingPercent = _crestSpringSimulation.x(lastFrameTime);
     _crestSpringSimulation = new SpringSimulation(
       crestSpring,
-      _crestSpringingPercent,
-      _springingPercent,
+      _crestSpringingPercent!,
+      _springingPercent!,
       _crestSpringSimulation.dx(lastFrameTime),
     );
 
     if (_sliderSpringSimulation.isDone(_springTime) &&
         _crestSpringSimulation.isDone(lastFrameTime)) {
-      _springTicker
+      _springTicker!
         ..stop()
         ..dispose();
       _springTicker = null;
@@ -177,7 +177,7 @@ class SpringySliderController extends ChangeNotifier {
     notifyListeners();
   }
 
-  double get springingPercent => _springingPercent;
+  double? get springingPercent => _springingPercent;
 
-  double get crestSpringingPercent => _crestSpringingPercent;
+  double? get crestSpringingPercent => _crestSpringingPercent;
 }
