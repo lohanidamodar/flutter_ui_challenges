@@ -15,11 +15,11 @@ class CropPage extends StatefulWidget {
 }
 
 class _CropPageState extends State<CropPage> {
-  final _cropKey = GlobalKey<CropState>();
+  final _cropKey = CropController(aspectRatio: 1920 / 1280.0);
   double _rotation = 0;
 
   void _cropImage() async {
-    final cropped = await _cropKey.currentState.crop();
+    final cropped = await _cropKey.crop();
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => Scaffold(
@@ -57,9 +57,8 @@ class _CropPageState extends State<CropPage> {
         children: <Widget>[
           Expanded(
             child: Crop(
-              key: _cropKey,
+              controller: _cropKey,
               child: Image.asset('assets/placeholder.jpg'),
-              aspectRatio: 1920 / 1280.0,
             ),
           ),
           Row(
@@ -68,9 +67,9 @@ class _CropPageState extends State<CropPage> {
                 icon: Icon(Icons.undo),
                 tooltip: 'Undo',
                 onPressed: () {
-                  _cropKey.currentState.rotation = 0;
-                  _cropKey.currentState.scale = 1;
-                  _cropKey.currentState.offset = Offset.zero;
+                  _cropKey.rotation = 0;
+                  _cropKey.scale = 1;
+                  _cropKey.offset = Offset.zero;
                   setState(() {
                     _rotation = 0;
                   });
@@ -90,7 +89,7 @@ class _CropPageState extends State<CropPage> {
                     onChanged: (n) {
                       setState(() {
                         _rotation = n.roundToDouble();
-                        _cropKey.currentState.rotation = _rotation;
+                        _cropKey.rotation = _rotation;
                       });
                     },
                   ),

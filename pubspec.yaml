@@ -15,27 +15,26 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animator: ^2.0.1
-  bottomreveal: ^1.0.0
-  cached_network_image: ^2.2.0+1
-  crop: ^0.1.2
+  animator: ^3.0.0
+  bottomreveal: ^2.0.0
+  cached_network_image: ^3.0.0
+  crop: ^0.5.1+1
   fl_chart: ^0.36.1
-  flare_flutter: ^1.8.3
-  flutter_custom_clippers: ^1.1.1
+  flare_flutter: ^3.0.1
+  flutter_custom_clippers: ^2.0.0
   flutter_speed_dial: ^3.0.5
-  flutter_staggered_grid_view: ^0.3.0
+  flutter_staggered_grid_view: ^0.4.0
   flutter_swiper_null_safety: ^1.0.2
-  font_awesome_flutter: ^8.8.1
-  intl: ^0.16.1
-  intro_views_flutter: ^2.8.2
-  share: ^0.6.4+3
-  simple_animations: ^2.5.0
-  url_launcher: ^5.5.0
+  font_awesome_flutter: ^9.1.0
+  intl: ^0.17.0
+  intro_views_flutter: ^3.1.1
+  share: ^2.0.4
+  url_launcher: ^6.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.7.0
+  flutter_launcher_icons: ^0.9.0
 
 flutter_icons:
   android: true
