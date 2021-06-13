@@ -48,7 +48,7 @@ My effort on replicating various apps UI on flutter.
 
 ## Packages Used
 
-- Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
+- Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper_null_safety)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
 
 ## Credits

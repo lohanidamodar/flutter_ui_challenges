@@ -3,7 +3,7 @@
  * profile: https://github.com/lohanidamodar
   */
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import '../../res/colors.dart';
 import '../../res/constants.dart';
 
@@ -17,13 +17,13 @@ class _IntroPageState extends State<IntroPage> {
   final SwiperController _controller = SwiperController();
 
   @override
-  void initState() { 
+  void initState() {
     currentIndex = 0;
     super.initState();
   }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: introBackground[currentIndex],
       body: Column(
@@ -35,23 +35,20 @@ class _IntroPageState extends State<IntroPage> {
               autoplay: true,
               autoplayDelay: 5000,
               index: currentIndex,
-              onIndexChanged: (index){
+              onIndexChanged: (index) {
                 setState(() {
                   currentIndex = index;
                 });
               },
-              itemBuilder: (context,index) => _buildPage(context,index),
+              itemBuilder: (context, index) => _buildPage(context, index),
               pagination: SwiperPagination(
-                builder: DotSwiperPaginationBuilder(
-                  activeColor: Colors.white,
-                  color: Colors.white,
-                  size: 5.0,
-                  activeSize: 12.0
-                )
-              ),
+                  builder: DotSwiperPaginationBuilder(
+                      activeColor: Colors.white,
+                      color: Colors.white,
+                      size: 5.0,
+                      activeSize: 12.0)),
               loop: true,
               autoplayDisableOnInteraction: true,
-              
             ),
           ),
           Row(
@@ -60,7 +57,7 @@ class _IntroPageState extends State<IntroPage> {
               Expanded(
                 child: RaisedButton(
                   child: Text("login".toUpperCase()),
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.pushReplacementNamed(context, "login");
                   },
                 ),
@@ -69,7 +66,8 @@ class _IntroPageState extends State<IntroPage> {
               Expanded(
                 child: RaisedButton(
                   child: Text("create account".toUpperCase()),
-                  onPressed: () => Navigator.pushReplacementNamed(context, 'register'),
+                  onPressed: () =>
+                      Navigator.pushReplacementNamed(context, 'register'),
                 ),
               ),
               const SizedBox(width: 20.0),
@@ -79,31 +77,39 @@ class _IntroPageState extends State<IntroPage> {
           Row(
             children: <Widget>[
               const SizedBox(width: 10.0),
-              if(!_isFirstPage())
+              if (!_isFirstPage())
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(Icons.arrow_back, size: 20.0,),
-                  onPressed: (){
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 20.0,
+                  ),
+                  onPressed: () {
                     _controller.previous();
                   },
                 ),
-              if(!_isFirstPage())
-              Spacer(),
+              if (!_isFirstPage()) Spacer(),
               IconButton(
                 color: Colors.white,
-                icon: Icon(_isLastPage() ? Icons.check_circle : Icons.close, size: 20.0,),
-                onPressed: () => Navigator.pushReplacementNamed(context, 'register'),
+                icon: Icon(
+                  _isLastPage() ? Icons.check_circle : Icons.close,
+                  size: 20.0,
+                ),
+                onPressed: () =>
+                    Navigator.pushReplacementNamed(context, 'register'),
               ),
-              if(!_isLastPage())
-              Spacer(),
-              if(!_isLastPage())
-              IconButton(
-                color: Colors.white,
-                icon: Icon(Icons.arrow_forward, size: 20.0,),
-                onPressed: (){
-                  _controller.next();
-                },
-              ),
+              if (!_isLastPage()) Spacer(),
+              if (!_isLastPage())
+                IconButton(
+                  color: Colors.white,
+                  icon: Icon(
+                    Icons.arrow_forward,
+                    size: 20.0,
+                  ),
+                  onPressed: () {
+                    _controller.next();
+                  },
+                ),
             ],
           ),
           const SizedBox(height: 20.0),
@@ -111,6 +117,7 @@ class _IntroPageState extends State<IntroPage> {
       ),
     );
   }
+
   bool _isLastPage() => currentIndex == introItems.length - 1;
   bool _isFirstPage() => currentIndex == 0;
   Widget _buildPage(BuildContext context, int index) {
@@ -119,21 +126,26 @@ class _IntroPageState extends State<IntroPage> {
       child: Column(
         children: <Widget>[
           const SizedBox(height: 60.0),
-          Text(introItems[index].title, style: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold
-          ),),
+          Text(
+            introItems[index].title,
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold),
+          ),
           const SizedBox(height: 20.0),
-          Text(introItems[index].subtitle,textAlign: TextAlign.center,style: TextStyle(
-            color: Colors.white,
-            fontSize: 18.0
-          ),),
+          Text(
+            introItems[index].subtitle,
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 18.0),
+          ),
           const SizedBox(height: 20.0),
           Expanded(
             child: Container(
-
-              child: Image.asset(introItems[index].image, fit: BoxFit.contain,)),
+                child: Image.asset(
+              introItems[index].image,
+              fit: BoxFit.contain,
+            )),
           ),
           const SizedBox(height: 20.0),
           //image

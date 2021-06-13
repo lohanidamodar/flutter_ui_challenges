@@ -4,10 +4,11 @@ import 'dart:io';
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/assets.dart' as assets;
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
+import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
+    as assets;
 import './details.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
@@ -18,22 +19,15 @@ List<String> images = [
 ];
 
 const List<Map> dummy = [
-  {
-    "title": "Beautiful Cardigan",
-    "price": "\$600"
-  },
-  {
-    "title": "Leather Bag",
-    "price": "\$400"
-  },
-  {
-    "title": "White Beautiful Bag",
-    "price": "\$350"
-  },
+  {"title": "Beautiful Cardigan", "price": "\$600"},
+  {"title": "Leather Bag", "price": "\$400"},
+  {"title": "White Beautiful Bag", "price": "\$350"},
 ];
+
 class AnimationOnePage extends StatefulWidget {
-  static final String path = "lib/src/pages/animations/animation1/animation1.dart";
-  
+  static final String path =
+      "lib/src/pages/animations/animation1/animation1.dart";
+
   @override
   _AnimationOnePageState createState() => _AnimationOnePageState();
 }
@@ -69,7 +63,8 @@ class _AnimationOnePageState extends State<AnimationOnePage>
           Align(
             alignment: Alignment.topLeft,
             child: IconButton(
-              icon: Icon(Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
+              icon: Icon(
+                  Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
               onPressed: () => Navigator.pop(context),
             ),
           ),
@@ -106,7 +101,10 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                             context,
                             PageRouteBuilder(
                                 transitionDuration: Duration(seconds: 1),
-                                pageBuilder: (_, __, ___) => AnimationOneDetails(index: index,))),
+                                pageBuilder: (_, __, ___) =>
+                                    AnimationOneDetails(
+                                      index: index,
+                                    ))),
                         child: Hero(
                           tag: "image$index",
                           child: ClipRRect(
@@ -164,7 +162,10 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                 child: Text(
                   dummy[index]["title"],
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 18.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      color: Theme.of(context).primaryColor,
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
             ),
