@@ -83,7 +83,7 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Key Specs",
-                          style: Theme.of(context).textTheme.title,
+                          style: Theme.of(context).textTheme.bodyText1,
                         ),
                       ),
                       SingleChildScrollView(
@@ -126,7 +126,7 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Free Gifts",
-                          style: Theme.of(context).textTheme.subhead,
+                          style: Theme.of(context).textTheme.subtitle1,
                         ),
                       ),
                       const SizedBox(height: 5.0),
@@ -139,7 +139,7 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Specification",
-                          style: Theme.of(context).textTheme.title,
+                          style: Theme.of(context).textTheme.bodyText1,
                         ),
                       ),
                       BorderedContainer(

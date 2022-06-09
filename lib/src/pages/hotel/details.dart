@@ -181,12 +181,12 @@ class HotelDetailsPage extends StatelessWidget {
               selectedItemColor: Colors.black,
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.search), title: Text("Search")),
+                    icon: Icon(Icons.search), label: "Search"),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.favorite_border),
-                    title: Text("Favorites")),
+                    label: "Favorites"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.settings), title: Text("Settings")),
+                    icon: Icon(Icons.settings), label: "Settings"),
               ],
             ),
           )

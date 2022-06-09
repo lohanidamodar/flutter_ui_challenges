@@ -29,19 +29,19 @@ class DashboardThreePage extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text("Home"),
+          label: "Home",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.person_add),
-          title: Text("Refer"),
+          label: "Refer",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.history),
-          title: Text("History"),
+          label: "History",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.person_outline),
-          title: Text("Profile"),
+          label: "Profile",
         ),
       ],
     );

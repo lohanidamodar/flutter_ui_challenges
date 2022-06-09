@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
+
 /**
  * Author: Aparna Dulal
  * profile: https://github.com/ambikadulal
-  */
+ */
 import 'package:flutter/material.dart';
 
 class SettingsFourPage extends StatefulWidget {
@@ -17,7 +18,9 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        backgroundColor: Theme
+            .of(context)
+            .scaffoldBackgroundColor,
         elevation: 1,
         leading: IconButton(
           onPressed: () {
@@ -98,10 +101,11 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
               height: 50,
             ),
             Center(
-              child: OutlineButton(
-                padding: EdgeInsets.symmetric(horizontal: 40),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+              child: OutlinedButton(
+                style: ButtonStyle(padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(horizontal: 40)),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)))),
                 onPressed: () {},
                 child: Text("Lagout",
                     style: TextStyle(

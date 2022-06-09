@@ -3,7 +3,7 @@
  * profile: https://github.com/Ambikadulal
  * images: pixabay.com
  * design:dribble.com
-  */
+ */
 
 import 'package:flutter/material.dart';
 
@@ -24,6 +24,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
     'https://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpg',
     'https://cdn.pixabay.com/photo/2018/08/09/10/46/phone-3594206__340.jpg',
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -108,11 +109,13 @@ class _UserProfilePageState extends State<UserProfilePage> {
         Visibility(
           visible: !_isOpen,
           child: Expanded(
-            child: OutlineButton(
+            child: OutlinedButton(
               onPressed: () {},
-              borderSide: BorderSide(color: Colors.blue),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30)),
+              style: ButtonStyle(
+                  side:
+                      MaterialStateProperty.all(BorderSide(color: Colors.blue)),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)))),
               child: Text(
                 'VIEW PROFILE',
                 style: TextStyle(

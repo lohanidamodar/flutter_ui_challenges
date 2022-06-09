@@ -89,12 +89,8 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
         IconName,
         size: 35.0,
       ),
-      title: Text(
+      label:
         '$title',
-        style: TextStyle(
-          fontSize: 10.0,
-        ),
-      ),
     );
   }
 

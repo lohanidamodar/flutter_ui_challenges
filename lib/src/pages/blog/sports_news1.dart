@@ -290,7 +290,7 @@ class SportsNewsOnePage extends StatelessWidget {
         items: [
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.listAlt),
-            title: Padding(
+            activeIcon: Padding(
               padding: const EdgeInsets.only(top: 4.0),
               child: Icon(
                 FontAwesomeIcons.solidCircle,
@@ -301,15 +301,15 @@ class SportsNewsOnePage extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bookmark),
-            title: Text(""),
+            label: "",
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.chartBar),
-            title: Text(""),
+            label: "",
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.clipboard),
-            title: Text(""),
+            label: "",
           ),
         ],
       ),

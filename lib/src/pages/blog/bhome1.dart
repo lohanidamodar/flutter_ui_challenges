@@ -68,7 +68,7 @@ class BlogHomeOnePage extends StatelessWidget {
           appBarTheme: AppBarTheme(
             color: Colors.white,
             textTheme: TextTheme(
-              title: TextStyle(
+              titleMedium: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -153,23 +153,23 @@ class BlogHomeOnePage extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(FontAwesomeIcons.folderOpen),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite_border),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person_outline),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.settings),
-                title: Text(""),
+                label: "",
               ),
             ],
           ),

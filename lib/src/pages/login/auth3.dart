@@ -1,7 +1,7 @@
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
-  */
+ */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -109,13 +109,13 @@ class _AuthThreePageState extends State<AuthThreePage> {
                   ],
                 ),
                 const SizedBox(height: 40.0),
-                OutlineButton.icon(
-                  borderSide: BorderSide(color: Colors.red),
-                  color: Colors.red,
-                  textColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
+                OutlinedButton.icon(
+                  style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.white),
+                      backgroundColor: MaterialStateProperty.all(Colors.red),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          side: BorderSide(color: Colors.red),
+                          borderRadius: BorderRadius.circular(20.0)))),
                   icon: Icon(FontAwesomeIcons.google),
                   label: Text("Continue with Google"),
                   onPressed: () {},

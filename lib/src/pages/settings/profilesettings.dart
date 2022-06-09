@@ -1,7 +1,7 @@
 /**
  * Author: Aparna Dulal
  * profile: https://github.com/ambikadulal
-  */
+ */
 import 'package:flutter/material.dart';
 
 class ProfileSettingsPage extends StatelessWidget {
@@ -23,6 +23,7 @@ class EditPage extends StatefulWidget {
 
 class _EditPageState extends State<EditPage> {
   bool showPassword = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,10 +121,12 @@ class _EditPageState extends State<EditPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  OutlineButton(
-                    padding: EdgeInsets.symmetric(horizontal: 50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
+                  OutlinedButton(
+                    style: ButtonStyle(
+                        padding: MaterialStateProperty.all(
+                            EdgeInsets.symmetric(horizontal: 50)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
                     onPressed: () {},
                     child: Text("CANCEL",
                         style: TextStyle(

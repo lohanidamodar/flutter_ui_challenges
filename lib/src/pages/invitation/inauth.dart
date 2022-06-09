@@ -111,8 +111,8 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                   padding: const EdgeInsets.symmetric(
                     horizontal: 16.0,
                   ),
-                  child: OutlineButton.icon(
-                    padding: const EdgeInsets.all(16.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(padding: MaterialStateProperty.all(const EdgeInsets.all(16.0))),
                     icon: Icon(FontAwesomeIcons.google,color: Colors.red,),
                     label: Text("Google"),
                     onPressed: () {},

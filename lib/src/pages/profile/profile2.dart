@@ -46,7 +46,7 @@ class ProfileTwoPage extends StatelessWidget {
           color: Colors.white,
           padding: EdgeInsets.only(left: 20.0, top: 20.0, bottom: 10.0),
           child: Text("Most liked posts",
-              style: Theme.of(context).textTheme.title));
+              style: Theme.of(context).textTheme.bodyText1));
     return _buildListItem();
   }
 
@@ -70,7 +70,7 @@ class ProfileTwoPage extends StatelessWidget {
         children: <Widget>[
           Text(
             "Collection",
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
           FlatButton(
             onPressed: () {},
@@ -112,7 +112,7 @@ class ProfileTwoPage extends StatelessWidget {
                   Text(collections[index]['title'],
                       style: Theme.of(context)
                           .textTheme
-                          .subhead!
+                          .subtitle1!
                           .merge(TextStyle(color: Colors.grey.shade600)))
                 ],
               ));
@@ -142,7 +142,7 @@ class ProfileTwoPage extends StatelessWidget {
                   ),
                   Text(
                     "Mebina Nepal",
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.bodyText1,
                   ),
                   SizedBox(
                     height: 5.0,
