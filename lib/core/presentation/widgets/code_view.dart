@@ -62,7 +62,7 @@ class MyCodeViewState extends State<MyCodeView> {
         tooltip: 'Copy code link to clipboard',
         onPressed: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
-          Scaffold.of(context).showSnackBar(SnackBar(
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text('Code link copied to Clipboard!'),
           ));
         },
@@ -71,7 +71,7 @@ class MyCodeViewState extends State<MyCodeView> {
         heroTag: "open",
         child: Icon(Icons.open_in_new),
         tooltip: 'View code on github',
-        onPressed: () => url_launcher.launch(this.widget.githubPath),
+        onPressed: () => url_launcher.launchUrl(Uri.parse(this.widget.githubPath)),
       ),
       FloatingActionButton(
         heroTag: "zoom_out",

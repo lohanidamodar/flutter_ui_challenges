@@ -222,9 +222,11 @@ class BikeDetailsPage extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: RaisedButton.icon(
-              color: Theme.of(context).accentColor,
-              textColor: Colors.white,
+            child: ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.secondary,
+                foregroundColor: Colors.white,
+              ),
               icon: Icon(Icons.message),
               label: Text("Message Seller"),
               onPressed: () {},

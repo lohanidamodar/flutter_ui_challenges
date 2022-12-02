@@ -58,7 +58,7 @@ class _IntroPageState extends State<IntroPage> {
             children: <Widget>[
               const SizedBox(width: 20.0),
               Expanded(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text("login".toUpperCase()),
                   onPressed: (){
                     Navigator.pushReplacementNamed(context, "login");
@@ -67,7 +67,7 @@ class _IntroPageState extends State<IntroPage> {
               ),
               const SizedBox(width: 20.0),
               Expanded(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text("create account".toUpperCase()),
                   onPressed: () => Navigator.pushReplacementNamed(context, 'register'),
                 ),

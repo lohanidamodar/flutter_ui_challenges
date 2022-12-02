@@ -9,7 +9,10 @@ ThemeData buildDefaultTheme() {
   return ThemeData(
     primarySwatch: Colors.green,
     primaryColor: Colors.green,
-    accentColor: Colors.orange,
+    colorScheme: ColorScheme.light(
+      secondary: Colors.orange,
+      primary: Colors.green, 
+    ),
     scaffoldBackgroundColor: bgColor,
     appBarTheme: AppBarTheme(),
     textTheme: TextTheme(
@@ -31,7 +34,7 @@ ThemeData buildDefaultTheme() {
         borderRadius: BorderRadius.circular(10.0),
       ),
       contentPadding: const EdgeInsets.all(16.0),
-      hasFloatingPlaceholder: true,
+      floatingLabelBehavior: FloatingLabelBehavior.auto,
     )
   );
 }
