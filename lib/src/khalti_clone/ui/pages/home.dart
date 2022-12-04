@@ -18,7 +18,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  BottomBarController controller;
+  BottomBarController? controller;
 
   @override
   void initState() {
@@ -54,8 +54,8 @@ class _HomePageState extends State<HomePage>
         ],
       ),
       bottomNavigationBar: GestureDetector(
-        onVerticalDragUpdate: controller.onDrag,
-        onVerticalDragEnd: controller.onDragEnd,
+        onVerticalDragUpdate: controller!.onDrag,
+        onVerticalDragEnd: controller!.onDragEnd,
         child: _buildBottomBar(context),
       ),
     );
@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage>
             child: _buildBottomMenuItem(
                 icon: Icon(Icons.more_horiz),
                 label: "More",
-                onTap: () => controller.open()),
+                onTap: () => controller!.open()),
           ),
         ],
       ),
@@ -129,20 +129,20 @@ class _HomePageState extends State<HomePage>
   }
 
   MaterialButton _buildBottomMenuItem(
-      {Widget icon, String label, Function onTap}) {
+      {Widget? icon, required String label, Function? onTap}) {
     return MaterialButton(
       height: 30,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          icon,
+          if (icon != null) icon,
           Text(
             label,
             style: TextStyle(fontSize: 9),
           )
         ],
       ),
-      onPressed: onTap,
+      onPressed: onTap as void Function()?,
     );
   }
 
@@ -160,7 +160,7 @@ class _HomePageState extends State<HomePage>
     );
   }
 
-  Widget _buildDivider({Color color, double height = 4.0}) {
+  Widget _buildDivider({Color? color, double height = 4.0}) {
     if (color == null) color = Colors.deepPurple.shade100;
     return SliverToBoxAdapter(
       child: Container(
@@ -194,7 +194,7 @@ class _HomePageState extends State<HomePage>
     );
   }
 
-  Column _buildHeaderItem({IconData icon, String label}) {
+  Column _buildHeaderItem({IconData? icon, required String label}) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -217,7 +217,8 @@ class _HomePageState extends State<HomePage>
     );
   }
 
-  Widget _buildMenuItem({IconData icon, String label, String subtitle}) {
+  Widget _buildMenuItem(
+      {IconData? icon, required String label, String? subtitle}) {
     return InkWell(
       onTap: () {
         Navigator.pushNamed(context, 'payment');

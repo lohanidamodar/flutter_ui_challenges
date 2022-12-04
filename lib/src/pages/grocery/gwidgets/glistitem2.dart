@@ -9,10 +9,10 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemTwo extends StatelessWidget {
   const GroceryListItemTwo({
-    Key key,
-    @required this.title,
-    @required this.subtitle,
-    @required this.image,
+    Key? key,
+    required this.title,
+    required this.subtitle,
+    required this.image,
   }) : super(key: key);
 
   final String title;

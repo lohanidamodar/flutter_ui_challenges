@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Heading extends StatelessWidget {
-  final String title;
+  final String? title;
   Heading({this.title});
 
   @override
@@ -23,7 +23,7 @@ class Heading extends StatelessWidget {
         ),
         Expanded(
           child: Text(
-            title.toUpperCase(),
+            title!.toUpperCase(),
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.w600,

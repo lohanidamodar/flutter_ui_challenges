@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 class GrocerySubtitle extends StatelessWidget {
   const GrocerySubtitle({
-    Key key,
-    @required this.text,
+    Key? key,
+    required this.text,
   }) : super(key: key);
 
   final String text;
@@ -21,8 +21,8 @@ class GrocerySubtitle extends StatelessWidget {
 
 class GroceryTitle extends StatelessWidget {
   const GroceryTitle({
-    Key key,
-    @required this.text,
+    Key? key,
+    required this.text,
   }) : super(key: key);
 
   final String text;

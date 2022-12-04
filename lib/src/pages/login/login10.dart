@@ -42,7 +42,7 @@ class LoginTenPage extends StatelessWidget {
                     children: [
                       Text(
                         "Hello",
-                        style: Theme.of(context).textTheme.headline4.copyWith(
+                        style: Theme.of(context).textTheme.headline4!.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Colors.grey.shade800,
                             ),

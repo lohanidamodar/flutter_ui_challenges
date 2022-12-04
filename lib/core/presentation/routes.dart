@@ -44,6 +44,7 @@ import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
+import 'package:flutter_ui_challenges/src/pages/profile/profile12.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
 import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
@@ -54,6 +55,10 @@ import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
 import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
+import 'package:flutter_ui_challenges/src/plant_app/main.dart';
+import 'package:flutter_ui_challenges/src/travelui_clone/ui/main.dart';
+import 'package:flutter_ui_challenges/src/pages/travel/travelstory.dart';
+import 'package:flutter_ui_challenges/src/walletapp_ui/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
 import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
@@ -421,14 +426,14 @@ final List<dynamic> pages = [
   ]),
 ];
 
-menu.SubMenuItem getItemForKey(String key) {
-  menu.SubMenuItem item;
+menu.SubMenuItem? getItemForKey(String key) {
+  menu.SubMenuItem? item;
   List<dynamic> pag = List<dynamic>.from(pages);
   pag.forEach((page) {
     if (page is menu.SubMenuItem && page.title == key) {
       item = page;
     } else if (page is menu.MenuItem) {
-      page.items.forEach((sub) {
+      page.items!.forEach((sub) {
         if (sub.title == key) item = sub;
       });
     }

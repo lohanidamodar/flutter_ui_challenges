@@ -30,12 +30,12 @@ class PlaceList1 extends StatelessWidget {
 }
 
 class Item {
-  final String title;
-  final String catagory;
-  final String place;
-  final String ratings;
-  final String discount;
-  final String image;
+  final String? title;
+  final String? catagory;
+  final String? place;
+  final String? ratings;
+  final String? discount;
+  final String? image;
 
   Item(
       {this.title,
@@ -108,7 +108,7 @@ class Lists extends StatelessWidget {
                     EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: NetworkImage(item.image), fit: BoxFit.cover)),
+                        image: NetworkImage(item.image!), fit: BoxFit.cover)),
                 child: item.discount == null
                     ? Container()
                     : Container(
@@ -117,7 +117,7 @@ class Lists extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
                             Text(
-                              item.discount,
+                              item.discount!,
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.normal),
@@ -139,18 +139,18 @@ class Lists extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      item.title,
+                      item.title!,
                       style: TextStyle(
                           color: Colors.deepOrange,
                           fontWeight: FontWeight.w700,
                           fontSize: 17),
                     ),
                     Text(
-                      item.catagory,
+                      item.catagory!,
                       style: TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                     Text(
-                      item.place,
+                      item.place!,
                       style: TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                     SizedBox(
@@ -188,7 +188,7 @@ class Lists extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Text(
-                          item.ratings,
+                          item.ratings!,
                           style: TextStyle(fontSize: 13),
                         ),
                         SizedBox(

@@ -8,11 +8,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class SliderMarks extends StatelessWidget {
-  final int markCount;
-  final Color markColor;
-  final Color backgroundColor;
-  final double paddingTop;
-  final double paddingBottom;
+  final int? markCount;
+  final Color? markColor;
+  final Color? backgroundColor;
+  final double? paddingTop;
+  final double? paddingBottom;
 
   SliderMarks({
     this.markCount,
@@ -27,8 +27,8 @@ class SliderMarks extends StatelessWidget {
     return CustomPaint(
       painter: new SliderMarksPainter(
         markCount: markCount,
-        markColor: markColor,
-        backgroundColor: backgroundColor,
+        markColor: markColor!,
+        backgroundColor: backgroundColor!,
         markThickness: 2.0,
         paddingTop: paddingTop,
         paddingBottom: paddingBottom,
@@ -43,21 +43,21 @@ class SliderMarksPainter extends CustomPainter {
   final double largeMarkWidth = 30.0;
   final double smallMarkWidth = 10.0;
 
-  final int markCount;
+  final int? markCount;
   final Color markColor;
   final Color backgroundColor;
   final double markThickness;
-  final double paddingTop;
-  final double paddingBottom;
-  final double paddingRight;
+  final double? paddingTop;
+  final double? paddingBottom;
+  final double? paddingRight;
   final Paint markPaint;
   final Paint backgroundPaint;
 
   SliderMarksPainter({
     this.markCount,
-    this.markColor,
-    this.backgroundColor,
-    this.markThickness,
+    required this.markColor,
+    required this.backgroundColor,
+    required this.markThickness,
     this.paddingTop,
     this.paddingBottom,
     this.paddingRight,
@@ -82,22 +82,22 @@ class SliderMarksPainter extends CustomPainter {
       backgroundPaint,
     );
 
-    final paintHeight = size.height - paddingTop - paddingBottom;
-    final gap = paintHeight / (markCount - 1);
+    final paintHeight = size.height - paddingTop! - paddingBottom!;
+    final gap = paintHeight / (markCount! - 1);
 
-    for (int i = 0; i < markCount; ++i) {
-      double markWidth = smallMarkWidth;
-      if (i == 0 || i == markCount - 1) {
+    for (int i = 0; i < markCount!; ++i) {
+      double? markWidth = smallMarkWidth;
+      if (i == 0 || i == markCount! - 1) {
         markWidth = largeMarkWidth;
-      } else if (i == 1 || i == markCount - 2) {
+      } else if (i == 1 || i == markCount! - 2) {
         markWidth = lerpDouble(smallMarkWidth, largeMarkWidth, 0.5);
       }
 
-      final markY = i * gap + paddingTop;
+      final markY = i * gap + paddingTop!;
 
       canvas.drawLine(
-        new Offset(size.width - paddingRight - markWidth, markY),
-        new Offset(size.width - paddingRight, markY),
+        new Offset(size.width - paddingRight! - markWidth!, markY),
+        new Offset(size.width - paddingRight!, markY),
         markPaint,
       );
     }

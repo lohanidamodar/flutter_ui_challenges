@@ -8,12 +8,12 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryCategory extends StatelessWidget {
   final String image, title;
-  final Color backgroundColor;
+  final Color? backgroundColor;
 
   const GroceryCategory(
-      {Key key,
-      @required this.image,
-      @required this.title,
+      {Key? key,
+      required this.image,
+      required this.title,
       this.backgroundColor})
       : super(key: key);
 

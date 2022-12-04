@@ -261,7 +261,7 @@ class DashboardThreePage extends StatelessWidget {
   }
 
   Container _buildTile(
-      {Color color, IconData icon, String title, String data}) {
+      {Color? color, IconData? icon, required String title, required String data}) {
     return Container(
       padding: const EdgeInsets.all(8.0),
       height: 150.0,

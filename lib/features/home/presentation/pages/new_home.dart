@@ -14,11 +14,11 @@ class NewHomePage extends StatefulWidget {
 class _NewHomePageState extends State<NewHomePage>
     with SingleTickerProviderStateMixin {
   // RemoteConfig remoteConfig;
-  bool dialogShowing;
-  bool showNewUiDialog;
+  bool? dialogShowing;
+  bool? showNewUiDialog;
   // List<Announcement> announcements;
   // SurveyItem survey;
-  AnimationController _animationController;
+  late AnimationController _animationController;
   @override
   void initState() {
     _animationController = AnimationController(
@@ -164,12 +164,12 @@ class CategoryItem extends StatelessWidget {
   final TextStyle buttonText = boldText.copyWith(
     fontSize: 16.0,
   );
-  final Function onPressed;
-  final String title;
-  final Widget icon;
+  final Function? onPressed;
+  final String? title;
+  final Widget? icon;
 
   CategoryItem({
-    Key key,
+    Key? key,
     this.onPressed,
     this.title,
     this.icon,
@@ -184,11 +184,11 @@ class CategoryItem extends StatelessWidget {
       child: Row(
         children: <Widget>[
           if (icon != null) ...[
-            icon,
+            icon!,
             const SizedBox(width: 10.0),
           ],
           Text(
-            title,
+            title!,
             style: buttonText,
           ),
           Spacer(),
@@ -197,7 +197,7 @@ class CategoryItem extends StatelessWidget {
       ),
       color: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      onPressed: onPressed,
+      onPressed: onPressed as void Function()?,
     );
   }
 }
@@ -206,12 +206,12 @@ class FeaturedCategoryItem extends StatelessWidget {
   final TextStyle buttonText = boldText.copyWith(
     fontSize: 16.0,
   );
-  final Function onPressed;
-  final String title;
-  final Widget icon;
+  final Function? onPressed;
+  final String? title;
+  final Widget? icon;
 
   FeaturedCategoryItem({
-    Key key,
+    Key? key,
     this.onPressed,
     this.title,
     this.icon,
@@ -228,11 +228,11 @@ class FeaturedCategoryItem extends StatelessWidget {
       child: Row(
         children: <Widget>[
           if (icon != null) ...[
-            icon,
+            icon!,
             const SizedBox(width: 10.0),
           ],
           Text(
-            title,
+            title!,
             style: buttonText.copyWith(
                 fontSize: 24.0, fontWeight: FontWeight.w300),
           ),
@@ -242,7 +242,7 @@ class FeaturedCategoryItem extends StatelessWidget {
       ),
       color: Theme.of(context).primaryColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      onPressed: onPressed,
+      onPressed: onPressed as void Function()?,
     );
   }
 }

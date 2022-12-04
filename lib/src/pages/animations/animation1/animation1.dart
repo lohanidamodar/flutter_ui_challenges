@@ -6,7 +6,7 @@ import 'dart:io';
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
     as assets;
 import './details.dart';
@@ -37,7 +37,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
   int currentIndex = 0;
   int prevIndex = 0;
   final SwiperController _swiperController = SwiperController();
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   void initState() {

@@ -23,7 +23,7 @@ class GroceryHomePage extends StatefulWidget {
 class GroceryHomePageState extends State<GroceryHomePage> {
   int _currentIndex = 0;
   List<Widget> _children = [];
-  List<Widget> _appBars = [];
+  List<PreferredSizeWidget> _appBars = [];
 
   @override
   void initState() {
@@ -48,7 +48,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
     );
   }
 
-  Widget _buildAppBar() {
+  PreferredSizeWidget _buildAppBar() {
     return PreferredSize(
       preferredSize: Size.fromHeight(90.0),
       child: Container(
@@ -77,7 +77,7 @@ class GroceryHomePageState extends State<GroceryHomePage> {
     );
   }
 
-  Widget _buildAppBarOne(String title) {
+  PreferredSizeWidget _buildAppBarOne(String title) {
     return AppBar(
       bottom: PreferredSize(
           child: Container(

@@ -155,13 +155,13 @@ class DestinationPage extends StatelessWidget {
     );
   }
 
-  Widget _buildPlaceToVisit({String image, String title}) {
+  Widget _buildPlaceToVisit({String? image, required String title}) {
     return Column(
       children: <Widget>[
         ClipRRect(
           borderRadius: BorderRadius.circular(5.0),
           child: PNetworkImage(
-            image,
+            image!,
             height: 80,
             fit: BoxFit.cover,
           ),

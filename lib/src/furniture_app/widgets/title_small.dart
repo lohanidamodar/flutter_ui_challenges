@@ -7,7 +7,7 @@ import 'package:flutter_ui_challenges/src/furniture_app/utils/constant.dart';
 
 class TitleSmall extends StatelessWidget {
   final String title, subTitle;
-  TitleSmall({@required this.title, @required this.subTitle});
+  TitleSmall({required this.title, required this.subTitle});
   @override
   Widget build(BuildContext context) {
     return Row(

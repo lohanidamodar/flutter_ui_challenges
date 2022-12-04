@@ -48,7 +48,7 @@ My effort on replicating various apps UI on flutter.
 
 ## Packages Used
 
-- Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper)
+- Flutter Swiper (https://pub.dartlang.org/packages/flutter_swiper_null_safety)
 - Flutter Custom Clippers (https://pub.dartlang.org/packages/flutter_custom_clippers)
 
 ## Credits
@@ -68,7 +68,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/signup3.jpg"> <img height="480px" src="screenshots/login14.jpg"> <img height="480px" src="screenshots/login13.jpg"> <img height="480px" src="screenshots/login12.jpg"> <img height="480px" src="screenshots/login10.png"> <img height="480px" src="screenshots/login9.png"> <img height="480px" src="screenshots/login8.png"> <img height="480px" src="screenshots/auth3-1.png"> <img height="480px" src="screenshots/auth3-2.png"> <img height="480px" src="screenshots/login7.png"> <img height="480px" src="screenshots/signup2.png"> <img height="480px" src="screenshots/login6.png"> <img height="480px" src="screenshots/auth2.png"> <img height="480px" src="screenshots/login5.png"> <img height="480px" src="screenshots/auth1.png"> <img height="480px" src="screenshots/login4.png"> <img height="480px" src="screenshots/login1.png"> <img height="480px" src="screenshots/login2.png"> <img height="480px" src="screenshots/login3.gif"> <img height="480px" src="screenshots/signup1.png">
 
 ## Settings UIs
-<img height="480px" src="screenshots/settings1.png"> <img height="480px" src="screenshots/settings2.png"> <img height="480px" src="screenshots/settings3.png"> <img height="480px" src="screenshots/profilesetting.jpg"> <img height="480px" src="screenshots/settings4.png">
+<img height="480px" src="screenshots/settings1.png"> <img height="480px" src="screenshots/settings2.png"> <img height="480px" src="screenshots/settings3.png"> <img height="480px" src="screenshots/profilesetting.jpg"> <img height="480px" src="screenshots/settings4.jpg">
 
 ## Dashboard UIs
 <img height="480px" src="screenshots/dash1.png"> <img height="480px" src="screenshots/dash2.png">  <img height="480px" src="screenshots/dash3.png">
@@ -77,11 +77,11 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 <img height="480px" src="screenshots/quotes1.png"> <img height="480px" src="screenshots/quotes2.jpg"> 
 
 ## Motorbike App UIs
-<img height="480px" src="screenshots/bikeshop.png"> <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
+<img height="480px" src="screenshots/bikeshop.jpg"> <img height="480px" src="screenshots/bike1.png"> <img height="480px" src="screenshots/bike2.png">
 
 ## Profile Screens
 
-<img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
+<img height="480px" src="screenshots/profile12.jpg"> <img height="480px" src="screenshots/profile11.png"> <img height="480px" src="screenshots/profile10.png"> <img height="480px" src="screenshots/profile9.png"> <img height="480px" src="screenshots/profile8.png"> <img height="480px" src="screenshots/profile7.png"> <img height="480px" src="screenshots/profile4.png"> <img height="480px" src="screenshots/profile3.png"> <img height="480px" src="screenshots/p6.png"> <img height="480px" src="screenshots/profile5.png"> <img height="480px" src="screenshots/profile1.png"> <img height="480px" src="screenshots/profile2.png">
 
 ## Inviation App UI
 
@@ -127,7 +127,7 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
 
 ## Travel App
 
-<img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
+<img height="480px" src="screenshots/travelstory.jpg"> <img height="480px" src="screenshots/travel_home1.png"> <img height="480px" src="screenshots/thome.png"> <img height="480px" src="screenshots/tdetails.png"> <img height="480px" src="screenshots/travel_nepal.gif">
 
 ## grocery App UI Kit
 
@@ -149,4 +149,20 @@ Bank app clone by [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
 
 ## Furniture App UI 
 Furniture App by  [Mausam Rayamajhi](https://github.com/mausamRayamajhi)
+
 <img height="480px" src="screenshots/f1.png"> <img height="480px" src="screenshots/f2.gif"> 
+
+## Plant App UI 
+Plant UI Clone by [Ambika Dulal](https://github.com/Ambikadulal)
+
+<img height="480px" src="screenshots/plant-1.jpg"> <img height="480px" src="screenshots/plant-2.jpg"> <img height="480px" src="screenshots/plant-3.jpg"> <img height="480px" src="screenshots/plant-4.jpg"> <img height="480px" src="screenshots/plant-5.jpg"> <img height="480px" src="screenshots/plant-6.jpg">
+
+## TravelUi Clone
+Furniture App by  [Ambika Dulal](https://github.com/Ambikadulal)
+
+<img height="480px" src="screenshots/travelui1.jpg"> <img height="480px" src="screenshots/travelui2.jpg">
+
+## Wallet App Clone 
+Furniture App by  [Ambika Dulal](https://github.com/Ambikadulal)
+
+<img height="480px" src="screenshots/wallet-1.jpg"> <img height="480px" src="screenshots/wallet-2.jpg"> 

@@ -270,7 +270,7 @@ class DashboardOnePage extends StatelessWidget {
     );
   }
 
-  Container _buildTitledContainer(String title, {Widget child, double height}) {
+  Container _buildTitledContainer(String title, {required Widget child, double? height}) {
     return Container(
       padding: const EdgeInsets.all(16.0),
       width: double.infinity,
@@ -297,7 +297,7 @@ class DonutPieChart extends StatelessWidget {
   final List<charts.Series> seriesList;
   final bool animate;
 
-  DonutPieChart(this.seriesList, {this.animate});
+  DonutPieChart(this.seriesList, {required this.animate});
 
   /// Creates a [PieChart] with sample data and no transition.
   factory DonutPieChart.withSampleData() {
@@ -350,14 +350,14 @@ class LinearSales {
 class Activity {
   final String title;
   final IconData icon;
-  Activity({this.title, this.icon});
+  Activity({required this.title, required this.icon});
 }
 
 final List<Activity> activities = [
   Activity(title: "Results", icon: FontAwesomeIcons.listOl),
-  Activity(title: "Messages", icon: FontAwesomeIcons.sms),
+  Activity(title: "Messages", icon: FontAwesomeIcons.commentSms),
   Activity(title: "Appointments", icon: FontAwesomeIcons.calendarDay),
   Activity(title: "Video Consultation", icon: FontAwesomeIcons.video),
-  Activity(title: "Summary", icon: FontAwesomeIcons.fileAlt),
+  Activity(title: "Summary", icon: FontAwesomeIcons.fileLines),
   Activity(title: "Billing", icon: FontAwesomeIcons.dollarSign),
 ];

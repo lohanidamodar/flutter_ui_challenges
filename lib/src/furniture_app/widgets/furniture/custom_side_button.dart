@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class CustomSideButton extends StatelessWidget {
   final IconData icon;
-  final Function fxn;
-  CustomSideButton({@required this.icon, this.fxn});
+  final Function? fxn;
+  CustomSideButton({required this.icon, this.fxn});
 
   @override
   Widget build(BuildContext context) {

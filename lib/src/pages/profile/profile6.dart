@@ -240,13 +240,13 @@ class VideoCard extends StatelessWidget {
 
 class DEV {
   DEV({
-    @required this.firstName,
-    @required this.lastName,
-    @required this.avatar,
-    @required this.backdropPhoto,
-    @required this.location,
-    @required this.biography,
-    @required this.videos,
+    required this.firstName,
+    required this.lastName,
+    required this.avatar,
+    required this.backdropPhoto,
+    required this.location,
+    required this.biography,
+    required this.videos,
   });
 
   final String firstName;
@@ -266,9 +266,9 @@ class DEV {
 
 class Video {
   Video({
-    @required this.title,
-    @required this.thumbnail,
-    @required this.url,
+    required this.title,
+    required this.thumbnail,
+    required this.url,
   });
 
   final String title;

@@ -4,7 +4,7 @@
   */
 import 'dart:math';
 
-import 'package:animated_floatactionbuttons/animated_floatactionbuttons.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/code_highlighter.dart';
@@ -13,9 +13,9 @@ import 'package:url_launcher/url_launcher.dart' as url_launcher;
 import '../../constants.dart';
 
 class MyCodeView extends StatefulWidget {
-  final String filePath;
+  final String? filePath;
 
-  MyCodeView({@required this.filePath});
+  MyCodeView({required this.filePath});
 
   String get githubPath => '$githubRepo/blob/master/$filePath';
 
@@ -28,7 +28,7 @@ class MyCodeView extends StatefulWidget {
 class MyCodeViewState extends State<MyCodeView> {
   double _textScaleFactor = 1.0;
 
-  Widget _getCodeView(String codeContent, BuildContext context) {
+  Widget _getCodeView(String? codeContent, BuildContext context) {
     final SyntaxHighlighterStyle style =
         Theme.of(context).brightness == Brightness.dark
             ? SyntaxHighlighterStyle.darkThemeStyle()
@@ -54,39 +54,34 @@ class MyCodeViewState extends State<MyCodeView> {
     );
   }
 
-  List<Widget> _buildFloatingButtons() {
-    return <Widget>[
-      FloatingActionButton(
-        heroTag: "copy",
+  List<SpeedDialChild> _buildFloatingButtons() {
+    return <SpeedDialChild>[
+      SpeedDialChild(
+        label: "Copy",
         child: Icon(Icons.content_copy),
-        tooltip: 'Copy code link to clipboard',
-        onPressed: () async {
+        onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text('Code link copied to Clipboard!'),
           ));
         },
       ),
-      FloatingActionButton(
-        heroTag: "open",
+      SpeedDialChild(
+        label: "Open",
         child: Icon(Icons.open_in_new),
-        tooltip: 'View code on github',
-        onPressed: () =>
-            url_launcher.launchUrl(Uri.parse(this.widget.githubPath)),
+        onTap: () => url_launcher.launch(this.widget.githubPath),
       ),
-      FloatingActionButton(
-        heroTag: "zoom_out",
+      SpeedDialChild(
         child: Icon(Icons.zoom_out),
-        tooltip: 'Zoom out',
-        onPressed: () => setState(() {
+        label: 'Zoom out',
+        onTap: () => setState(() {
           this._textScaleFactor = max(0.8, this._textScaleFactor - 0.1);
         }),
       ),
-      FloatingActionButton(
-        heroTag: "zoom_in",
+      SpeedDialChild(
         child: Icon(Icons.zoom_in),
-        tooltip: 'Zoom in',
-        onPressed: () => setState(() {
+        label: 'Zoom in',
+        onTap: () => setState(() {
           this._textScaleFactor += 0.1;
         }),
       ),
@@ -96,8 +91,7 @@ class MyCodeViewState extends State<MyCodeView> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: rootBundle.loadString(widget.filePath) ??
-          'Error loading source code from $this.filePath',
+      future: rootBundle.loadString(widget.filePath!),
       builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
         if (snapshot.hasData) {
           return Scaffold(
@@ -105,11 +99,15 @@ class MyCodeViewState extends State<MyCodeView> {
               padding: EdgeInsets.all(8.0),
               child: _getCodeView(snapshot.data, context),
             ),
-            floatingActionButton: AnimatedFloatingActionButton(
-              fabButtons: _buildFloatingButtons(),
-              colorStartAnimation: Colors.indigo,
-              colorEndAnimation: Colors.red,
-              animatedIconData: AnimatedIcons.menu_close,
+            floatingActionButton: Padding(
+              padding: const EdgeInsets.only(bottom: 60.0),
+              child: SpeedDial(
+                children: _buildFloatingButtons(),
+                icon: Icons.menu,
+                activeIcon: Icons.close,
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
             ),
           );
         } else {

@@ -133,7 +133,7 @@ class AboutPage extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         color: Colors.grey.shade200,
-        onPressed: () => _open(developer.github),
+        onPressed: () => _open(developer.github!),
         child: Row(
           children: <Widget>[
             Container(
@@ -144,17 +144,17 @@ class AboutPage extends StatelessWidget {
                     backgroundColor: Colors.grey,
                     child: CircleAvatar(
                         radius: 35.0,
-                        backgroundImage: NetworkImage(developer.imageUrl)))),
+                        backgroundImage: NetworkImage(developer.imageUrl!)))),
             SizedBox(width: 20.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  developer.name,
+                  developer.name!,
                   style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 10.0),
-                Text(developer.profession),
+                Text(developer.profession!),
                 SizedBox(height: 5.0),
                 Row(
                   children: <Widget>[
@@ -165,7 +165,7 @@ class AboutPage extends StatelessWidget {
                     ),
                     SizedBox(width: 10.0),
                     Text(
-                      developer.address,
+                      developer.address!,
                       style: TextStyle(color: Colors.black54),
                     ),
                   ],

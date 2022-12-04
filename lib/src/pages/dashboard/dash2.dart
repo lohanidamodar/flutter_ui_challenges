@@ -47,7 +47,7 @@ class DashboardTwoPage extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline4
-                                  .copyWith(
+                                  ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
@@ -80,7 +80,7 @@ class DashboardTwoPage extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline4
-                                  .copyWith(
+                                  ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
@@ -119,7 +119,7 @@ class DashboardTwoPage extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline4
-                                  .copyWith(
+                                  ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
@@ -152,7 +152,7 @@ class DashboardTwoPage extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline4
-                                  .copyWith(
+                                  ?.copyWith(
                                     fontSize: 24.0,
                                     color: Colors.black,
                                   ),

@@ -8,12 +8,13 @@ import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dar
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemOne extends StatelessWidget {
-  final String image, title, price, subtitle;
+  final String image, title, subtitle;
+  final String? price;
   const GroceryListItemOne({
-    Key key,
-    @required this.image,
-    @required this.title,
-    @required this.subtitle,
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.subtitle,
     this.price,
   }) : super(key: key);
 
@@ -41,7 +42,7 @@ class GroceryListItemOne extends StatelessWidget {
                 children: <Widget>[
                   Center(
                       child: PNetworkImage(
-                    image,
+                    image!,
                     height: 150.0,
                   )),
                   new GroceryTitle(text: title),

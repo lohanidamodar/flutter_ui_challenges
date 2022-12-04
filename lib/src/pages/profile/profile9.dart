@@ -55,7 +55,7 @@ class ProfileNinePage extends StatelessWidget {
                 "Damodar Lohani",
                 style: Theme.of(context)
                     .textTheme
-                    .headline6
+                    .headline6!
                     .copyWith(color: Colors.white),
                 textAlign: TextAlign.center,
               ),
@@ -240,7 +240,7 @@ class ProfileNinePage extends StatelessWidget {
               title,
               style: Theme.of(context)
                   .textTheme
-                  .headline6
+                  .headline6!
                   .copyWith(color: Colors.white),
             ),
           ),

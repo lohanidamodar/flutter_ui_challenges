@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ProfileMenuItem extends StatelessWidget {
   final ProfileMenu menu;
-  ProfileMenuItem({this.menu});
+  ProfileMenuItem({required this.menu});
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -36,10 +36,10 @@ class ProfileMenuItem extends StatelessWidget {
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: menu.iconColor,
+                    color: menu!.iconColor,
                   ),
                   child: Icon(
-                    menu.icon,
+                    menu!.icon,
                     color: Colors.white,
                   ),
                 ),
@@ -50,7 +50,7 @@ class ProfileMenuItem extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        menu.title,
+                        menu!.title!,
                         style: TextStyle(
                           fontSize: 18.0,
                           color: Colors.black,
@@ -58,7 +58,7 @@ class ProfileMenuItem extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        menu.subTitle,
+                        menu!.subTitle!,
                         style: TextStyle(
                           fontSize: 14.0,
                           color: profile_item_color,

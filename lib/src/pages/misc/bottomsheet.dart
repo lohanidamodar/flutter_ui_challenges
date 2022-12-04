@@ -103,7 +103,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                           onPressed: () {
                             _pageController.animateToPage(
-                                _pageController.page.ceil() - 1,
+                                _pageController.page!.ceil() - 1,
                                 duration: Duration(seconds: 1),
                                 curve: Curves.easeInBack);
                             // .jumpToPage(_pageController.page.ceil() - 1);
@@ -136,7 +136,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                           onPressed: () {
                             _pageController.animateToPage(
-                                _pageController.page.ceil() + 1,
+                                _pageController.page!.ceil() + 1,
                                 duration: Duration(seconds: 1),
                                 curve: Curves.easeIn);
                             // .jumpToPage(_pageController.page.ceil() + 1);

@@ -11,7 +11,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceFivePage extends StatelessWidget {
-  const EcommerceFivePage({Key key}) : super(key: key);
+  const EcommerceFivePage({Key? key}) : super(key: key);
   static final String path = "lib/src/pages/ecommerce/ecommerce5.dart";
 
   Widget cards(image, title, price) {

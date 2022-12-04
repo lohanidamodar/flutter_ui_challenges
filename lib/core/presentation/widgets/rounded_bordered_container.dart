@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class RoundedContainer extends StatelessWidget {
   const RoundedContainer({
-    Key key,
-    @required this.child,
+    Key? key,
+    required this.child,
     this.height,
     this.width,
     this.color = Colors.white,
@@ -14,14 +14,14 @@ class RoundedContainer extends StatelessWidget {
     this.elevation,
   }) : super(key: key);
   final Widget child;
-  final double width;
-  final double height;
+  final double? width;
+  final double? height;
   final Color color;
   final EdgeInsets padding;
-  final EdgeInsets margin;
-  final BorderRadius borderRadius;
-  final AlignmentGeometry alignment;
-  final double elevation;
+  final EdgeInsets? margin;
+  final BorderRadius? borderRadius;
+  final AlignmentGeometry? alignment;
+  final double? elevation;
 
   @override
   Widget build(BuildContext context) {

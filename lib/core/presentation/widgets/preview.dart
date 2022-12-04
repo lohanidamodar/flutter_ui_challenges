@@ -18,10 +18,10 @@ import 'keep_alive.dart';
 class DesignPreviewsPage extends StatefulWidget {
   final String title;
   final Widget page;
-  final String path;
+  final String? path;
 
   const DesignPreviewsPage(
-      {Key key, @required this.title, @required this.page, @required this.path})
+      {Key? key, required this.title, required this.page, required this.path})
       : super(key: key);
 
   @override
@@ -29,7 +29,7 @@ class DesignPreviewsPage extends StatefulWidget {
 }
 
 class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
-  Offset offset;
+  late Offset offset;
 
   @override
   void initState() {

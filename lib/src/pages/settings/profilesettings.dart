@@ -43,9 +43,7 @@ class _EditPageState extends State<EditPage> {
               color: Colors.green,
             ),
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  // builder: (BuildContext context) => SettingsFourPage()
-                  ));
+              
             },
           ),
         ],

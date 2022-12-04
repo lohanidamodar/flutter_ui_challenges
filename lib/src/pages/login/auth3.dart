@@ -16,8 +16,8 @@ class AuthThreePage extends StatefulWidget {
 
 class _AuthThreePageState extends State<AuthThreePage> {
   final String backImg = room4;
-  bool formVisible;
-  int _formsIndex;
+  late bool formVisible;
+  int? _formsIndex;
 
   @override
   void initState() {
@@ -211,7 +211,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -261,7 +261,7 @@ class LoginForm extends StatelessWidget {
 
 class SignupForm extends StatelessWidget {
   const SignupForm({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

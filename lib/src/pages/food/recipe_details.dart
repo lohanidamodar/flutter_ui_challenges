@@ -161,7 +161,7 @@ class RecipeDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildStep({String leadingTitle, String title, String content}) {
+  Widget _buildStep({required String leadingTitle, required String title, required String content}) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[

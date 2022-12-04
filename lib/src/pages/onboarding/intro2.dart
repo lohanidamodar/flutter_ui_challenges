@@ -4,7 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -96,7 +96,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
     );
   }
 
-  Widget _buildPage({String title, String icon}) {
+  Widget _buildPage({required String title, required String icon}) {
     final TextStyle titleStyle =
         TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0);
     return Container(

@@ -53,7 +53,7 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
           initialData: 0,
           stream: indexcontroller.stream,
           builder: (context, snapshot) {
-            int cIndex = snapshot.data;
+            int? cIndex = snapshot.data as int?;
             return FancyBottomNavigation(
               currentIndex: cIndex,
               items: <FancyBottomNavigationItem>[
@@ -77,23 +77,23 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
 }
 
 class FancyBottomNavigation extends StatefulWidget {
-  final int currentIndex;
+  final int? currentIndex;
   final double iconSize;
-  final Color activeColor;
-  final Color inactiveColor;
-  final Color backgroundColor;
+  final Color? activeColor;
+  final Color? inactiveColor;
+  final Color? backgroundColor;
   final List<FancyBottomNavigationItem> items;
   final ValueChanged<int> onItemSelected;
 
   FancyBottomNavigation(
-      {Key key,
+      {Key? key,
       this.currentIndex = 0,
       this.iconSize = 24,
       this.activeColor,
       this.inactiveColor,
       this.backgroundColor,
-      @required this.items,
-      @required this.onItemSelected}) {
+      required this.items,
+      required this.onItemSelected}) {
     assert(items != null);
     assert(onItemSelected != null);
   }
@@ -112,23 +112,23 @@ class FancyBottomNavigation extends StatefulWidget {
 }
 
 class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
-  final int currentIndex;
-  final double iconSize;
-  Color activeColor;
-  Color inactiveColor;
-  Color backgroundColor;
+  final int? currentIndex;
+  final double? iconSize;
+  Color? activeColor;
+  Color? inactiveColor;
+  Color? backgroundColor;
   List<FancyBottomNavigationItem> items;
-  int _selectedIndex;
+  int? _selectedIndex;
   ValueChanged<int> onItemSelected;
 
   _FancyBottomNavigationState(
-      {@required this.items,
+      {required this.items,
       this.currentIndex,
       this.activeColor,
       this.inactiveColor = Colors.black,
       this.backgroundColor,
       this.iconSize,
-      @required this.onItemSelected}) {
+      required this.onItemSelected}) {
     _selectedIndex = currentIndex;
   }
 
@@ -217,8 +217,8 @@ class FancyBottomNavigationItem {
   final Text title;
 
   FancyBottomNavigationItem({
-    @required this.icon,
-    @required this.title,
+    required this.icon,
+    required this.title,
   }) {
     assert(icon != null);
     assert(title != null);

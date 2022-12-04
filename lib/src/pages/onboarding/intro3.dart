@@ -4,7 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -113,7 +113,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
     );
   }
 
-  Widget _buildPage({String title, String icon, Color pageBg}) {
+  Widget _buildPage({required String title, required String icon, Color? pageBg}) {
     final TextStyle titleStyle = TextStyle(
         fontWeight: FontWeight.w500, fontSize: 20.0, color: Colors.white);
     return Container(

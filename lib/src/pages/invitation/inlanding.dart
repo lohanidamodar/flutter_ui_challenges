@@ -27,7 +27,7 @@ class InvitationLandingPage extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .headline4
-                .copyWith(fontWeight: FontWeight.bold),
+                ?.copyWith(fontWeight: FontWeight.bold),
           ),
           Text.rich(
             TextSpan(children: [

@@ -14,11 +14,10 @@ class InvitationAuthPage extends StatefulWidget {
 }
 
 class _InvitationAuthPageState extends State<InvitationAuthPage> {
-  bool signupForm;
+  bool signupForm = true;
   @override
   void initState() {
     super.initState();
-    signupForm = true;
   }
 
   @override
@@ -89,7 +88,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                               ),
                             ),
                           ],
-                          isSelected: [signupForm, !signupForm],
+                          isSelected: [signupForm!, !signupForm!],
                           onPressed: (index) {
                             setState(() {
                               signupForm = index == 0;

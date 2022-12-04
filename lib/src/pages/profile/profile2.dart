@@ -113,7 +113,7 @@ class ProfileTwoPage extends StatelessWidget {
                       style: Theme.of(context)
                           .textTheme
                           .subtitle1
-                          .merge(TextStyle(color: Colors.grey.shade600)))
+                          ?.merge(TextStyle(color: Colors.grey.shade600)))
                 ],
               ));
         },

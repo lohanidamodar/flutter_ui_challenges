@@ -21,7 +21,7 @@ class AnimatedListOnePage extends StatefulWidget {
 }
 
 class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
-  List<String> items;
+  late List<String> items;
   GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
 
   @override
@@ -55,7 +55,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
                 trailing: IconButton(
                   icon: Icon(Icons.clear),
                   onPressed: () {
-                    _listKey.currentState.removeItem(index,
+                    _listKey.currentState!.removeItem(index,
                         (context, animation) {
                       String removedItem = items.removeAt(index);
                       return SizeTransition(
@@ -85,7 +85,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
         onPressed: () {
           places.shuffle();
           items.insert(items.length, places[0]);
-          _listKey.currentState.insertItem(items.length - 1);
+          _listKey.currentState!.insertItem(items.length - 1);
           setState(() {});
         },
       ),

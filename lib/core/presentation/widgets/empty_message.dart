@@ -5,7 +5,7 @@ class EmptyMessage extends StatelessWidget {
   final String message;
   const EmptyMessage({
     this.message = "",
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

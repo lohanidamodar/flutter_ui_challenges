@@ -4,7 +4,6 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
 
 class TodoHomeTwoPage extends StatelessWidget {
@@ -199,15 +198,15 @@ class TodoHomeTwoPage extends StatelessWidget {
 }
 
 class HeaderFooterwidget extends StatelessWidget {
-  final Widget header;
-  final Widget footer;
-  final Widget body;
+  final Widget? header;
+  final Widget? footer;
+  final Widget? body;
   final Color headerColor;
   final Color footerColor;
-  final double headerHeight;
+  final double? headerHeight;
 
   const HeaderFooterwidget(
-      {Key key,
+      {Key? key,
       this.header,
       this.footer,
       this.body,
@@ -268,7 +267,8 @@ class HeaderFooterwidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10.0),
-            footer,
+            if(footer != null)
+              footer!,
           ],
         ),
       ],

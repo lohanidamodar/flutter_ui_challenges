@@ -45,7 +45,7 @@ class CakePage extends StatelessWidget {
             children: <Widget>[
               Text(
                 "Fruits Cake",
-                style: Theme.of(context).textTheme.headline6.copyWith(
+                style: Theme.of(context).textTheme.headline6?.copyWith(
                     color: Colors.white,
                     fontSize: 24.0,
                     fontWeight: FontWeight.normal),

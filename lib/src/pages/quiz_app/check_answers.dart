@@ -14,7 +14,7 @@ class CheckAnswersPage extends StatelessWidget {
   final Map<int, dynamic> answers;
 
   const CheckAnswersPage(
-      {Key key, @required this.questions, @required this.answers})
+      {Key? key, required this.questions, required this.answers})
       : super(key: key);
 
   @override
@@ -69,7 +69,7 @@ class CheckAnswersPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              question.question,
+              question.question!,
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w500,

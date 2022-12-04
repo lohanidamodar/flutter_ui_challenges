@@ -9,17 +9,17 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryListItemThree extends StatelessWidget {
   const GroceryListItemThree({
-    Key key,
-    @required this.title,
-    @required this.subtitle,
-    @required this.image,
+    Key? key,
+    required this.title,
+    required this.subtitle,
+    required this.image,
     this.price,
   }) : super(key: key);
 
   final String title;
   final String subtitle;
   final String image;
-  final double price;
+  final double? price;
 
   @override
   Widget build(BuildContext context) {

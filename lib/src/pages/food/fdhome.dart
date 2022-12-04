@@ -4,7 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
@@ -81,7 +81,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
           headline6: Theme.of(context)
               .textTheme
               .headline6
-              .merge(TextStyle(color: Colors.black))),
+              ?.merge(TextStyle(color: Colors.black))),
       iconTheme: IconThemeData(color: Colors.lightGreen),
       automaticallyImplyLeading: false,
       backgroundColor: Colors.white,
@@ -154,7 +154,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .headline6
-                      .merge(TextStyle(fontSize: 14.0))),
+                      ?.merge(TextStyle(fontSize: 14.0))),
               SizedBox(
                 height: 5.0,
               ),
@@ -162,7 +162,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .subtitle1
-                      .merge(TextStyle(fontSize: 12.0)))
+                      ?.merge(TextStyle(fontSize: 12.0)))
             ],
           ),
         );
@@ -195,7 +195,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .headline6
-                                .merge(TextStyle(fontSize: 14.0))),
+                                ?.merge(TextStyle(fontSize: 14.0))),
                         SizedBox(
                           height: 5.0,
                         ),
@@ -203,7 +203,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .subtitle1
-                                .merge(TextStyle(fontSize: 12.0))),
+                                ?.merge(TextStyle(fontSize: 12.0))),
                         SizedBox(
                           height: 5.0,
                         ),
@@ -214,7 +214,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                       style: Theme.of(context)
                           .textTheme
                           .headline6
-                          .merge(TextStyle(fontSize: 16.0, color: Colors.red))),
+                          ?.merge(TextStyle(fontSize: 16.0, color: Colors.red))),
                   IconButton(
                     icon: Icon(Icons.favorite_border),
                     onPressed: () {},

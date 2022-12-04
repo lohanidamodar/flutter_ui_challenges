@@ -90,3 +90,4 @@ android/**/.settings
 **/GeneratedPlugins.props
 **/generated_plugins.mk
 **/GeneratedPluginRegistrant.swift
+lib/generated_plugin_registrant.dart

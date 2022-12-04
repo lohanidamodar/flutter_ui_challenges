@@ -87,7 +87,7 @@ class OTPPage extends StatelessWidget {
 
 class OTPFields extends StatefulWidget {
   const OTPFields({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -95,9 +95,9 @@ class OTPFields extends StatefulWidget {
 }
 
 class _OTPFieldsState extends State<OTPFields> {
-  FocusNode pin2FN;
-  FocusNode pin3FN;
-  FocusNode pin4FN;
+  FocusNode? pin2FN;
+  FocusNode? pin3FN;
+  FocusNode? pin4FN;
   final pinStyle = TextStyle(fontSize: 32, fontWeight: FontWeight.bold);
 
   @override
@@ -116,9 +116,9 @@ class _OTPFieldsState extends State<OTPFields> {
     pin4FN?.dispose();
   }
 
-  void nextField(String value, FocusNode focusNode) {
+  void nextField(String value, FocusNode? focusNode) {
     if (value.length == 1) {
-      focusNode.requestFocus();
+      focusNode!.requestFocus();
     }
   }
 
@@ -176,7 +176,7 @@ class _OTPFieldsState extends State<OTPFields> {
                   decoration: inputDecoration,
                   onChanged: (value) {
                     if (value.length == 1) {
-                      pin4FN.unfocus();
+                      pin4FN!.unfocus();
                     }
                   },
                 ),

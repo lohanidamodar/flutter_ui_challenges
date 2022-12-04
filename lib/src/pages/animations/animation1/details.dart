@@ -13,7 +13,7 @@ class AnimationOneDetails extends StatelessWidget {
   static final String path = "lib/src/pages/animations/animation1/details.dart";
   final int index;
 
-  const AnimationOneDetails({Key key, this.index}) : super(key: key);
+  const AnimationOneDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -123,7 +123,7 @@ class HeaderContainer extends StatelessWidget {
 }
 
 class ButtonWidget extends StatelessWidget {
-  var btnText = "";
+  String? btnText = "";
   var onClick;
 
   ButtonWidget({this.btnText, this.onClick});
@@ -146,7 +146,7 @@ class ButtonWidget extends StatelessWidget {
         ),
         alignment: Alignment.center,
         child: Text(
-          btnText,
+          btnText!,
           style: TextStyle(
               fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
         ),

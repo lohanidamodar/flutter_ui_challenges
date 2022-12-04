@@ -41,11 +41,11 @@ class QuotesOnePage extends StatelessWidget {
               tween: Tween<double>(begin: -1, end: 0),
               builder: (context, state, child) {
                 return FractionalTranslation(
-                    translation: Offset(state.value, 0), child: child);
+                    translation: Offset(state.value as double, 0), child: child);
               },
               child: Text(
                 "Anyone who has never made a mistake has never tried anything new",
-                style: Theme.of(context).textTheme.headline3.copyWith(
+                style: Theme.of(context).textTheme.headline3!.copyWith(
                       color: Colors.grey.shade800,
                     ),
               ),
@@ -56,13 +56,13 @@ class QuotesOnePage extends StatelessWidget {
               tween: Tween<double>(begin: 1, end: 0),
               builder: (context, state, child) {
                 return FractionalTranslation(
-                  translation: Offset(state.value, 0),
+                  translation: Offset(state.value as double, 0),
                   child: child,
                 );
               },
               child: Text(
                 "Albert einstein",
-                style: Theme.of(context).textTheme.subtitle1.copyWith(
+                style: Theme.of(context).textTheme.subtitle1!.copyWith(
                       color: Colors.grey.shade600,
                       fontSize: 20.0,
                     ),

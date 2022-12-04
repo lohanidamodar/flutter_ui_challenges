@@ -7,12 +7,12 @@ import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 
 class Transaction extends StatelessWidget {
-  final Trx transaction;
+  final Trx? transaction;
   Transaction({this.transaction});
 
   @override
   Widget build(BuildContext context) {
-    print('${transaction.amount}');
+    print('${transaction!.amount}');
     Size deviceSize = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.only(bottom: 15.0),
@@ -38,7 +38,7 @@ class Transaction extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  transaction.type.toUpperCase(),
+                  transaction!.type!.toUpperCase(),
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14.0,
@@ -48,14 +48,14 @@ class Transaction extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      transaction.number.toUpperCase(),
+                      transaction!.number!.toUpperCase(),
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 14.0,
                       ),
                     ),
                     Text(
-                      'NPR. ' + transaction.amount.toUpperCase(),
+                      'NPR. ' + transaction!.amount!.toUpperCase(),
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 14.0,
@@ -67,7 +67,7 @@ class Transaction extends StatelessWidget {
                   height: 5.0,
                 ),
                 Text(
-                  transaction.date.toUpperCase(),
+                  transaction!.date!.toUpperCase(),
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 10.0,
