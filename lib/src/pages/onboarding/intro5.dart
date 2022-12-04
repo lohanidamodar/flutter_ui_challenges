@@ -33,11 +33,12 @@ class _Intro5State extends State<Intro5> {
           Flexible(
             flex: 2,
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(),
-              color: darkYellow,
-              elevation: 4,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: darkYellow,
+                elevation: 4,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)),
+              ),
               child: Text(
                 'Tap here to proceed',
                 style: TextStyle(color: Colors.black54),

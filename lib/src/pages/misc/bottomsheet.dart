@@ -66,10 +66,11 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                   ),
                 ),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(),
-                  color: progress.containsKey(progress[index])
-                      ? Theme.of(context).primaryColor
-                      : Colors.grey.shade800,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: progress.containsKey(progress[index])
+                        ? Theme.of(context).primaryColor
+                        : Colors.grey.shade800,
+                  ),
                   onPressed: () {
                     if (progress.containsKey(progress[index]))
                       setState(() {
@@ -93,12 +94,13 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         ElevatedButton(
-                          style: ElevatedButton.styleFrom(),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Theme.of(context).primaryColor,
+                          ),
                           child: Icon(
                             Icons.chevron_left,
                             color: Colors.white,
                           ),
-                          color: Theme.of(context).primaryColor,
                           onPressed: () {
                             _pageController.animateToPage(
                                 _pageController.page.ceil() - 1,
@@ -125,12 +127,13 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                         ),
                         ElevatedButton(
-                          style: ElevatedButton.styleFrom(),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Theme.of(context).primaryColor,
+                          ),
                           child: Icon(
                             Icons.chevron_right,
                             color: Colors.white,
                           ),
-                          color: Theme.of(context).primaryColor,
                           onPressed: () {
                             _pageController.animateToPage(
                                 _pageController.page.ceil() + 1,

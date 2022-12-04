@@ -4,13 +4,16 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/springy_slider.dart';
 
 class SpringySliderPage extends StatelessWidget {
   static final String path = "lib/src/pages/misc/springy_slider_page.dart";
   _buildTextButton(String title, bool isOnLight) {
     return TextButton(
-      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+      style: TextButton.styleFrom(
+        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+      ),
       onPressed: () {},
       child: Text(title.toUpperCase(),
           style: TextStyle(
@@ -27,14 +30,11 @@ class SpringySliderPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          brightness: Brightness.light,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
           backgroundColor: Colors.white,
           elevation: 0,
-          textTheme: TextTheme(
-              headline6: TextStyle(
-                  color: Colors.pink,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0)),
+          titleTextStyle: TextStyle(
+              color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 18.0),
           iconTheme: IconThemeData(color: Colors.pink),
           leading: IconButton(
             icon: Icon(Icons.menu),

@@ -77,12 +77,13 @@ class LandingOnePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 80.0),
                 width: double.infinity,
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(),
-                  padding: const EdgeInsets.all(16.0),
-                  textColor: Colors.white,
-                  color: Colors.lightGreen,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(40.0)),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.all(16.0),
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.lightGreen,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(40.0)),
+                  ),
                   onPressed: () {},
                   child: Text(
                     "Get Started",

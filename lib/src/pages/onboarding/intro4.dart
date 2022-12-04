@@ -77,7 +77,9 @@ class _IntroFourPageState extends State<IntroFourPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           TextButton(
-            textColor: Colors.grey.shade700,
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.grey.shade700,
+            ),
             child: Text("Skip"),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('challenge_home');

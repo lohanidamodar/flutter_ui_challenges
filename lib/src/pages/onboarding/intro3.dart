@@ -88,7 +88,9 @@ class _IntroThreePageState extends State<IntroThreePage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           TextButton(
-            textColor: Colors.grey.shade600,
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.grey.shade600,
+            ),
             child: Text("Skip"),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('challenge_home');

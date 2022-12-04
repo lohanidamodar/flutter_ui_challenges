@@ -38,7 +38,9 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   Expanded getExpanded(String imageName, String mainText, String subText) {
     return Expanded(
       child: TextButton(
-        padding: EdgeInsets.all(0),
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.all(0),
+        ),
         child: Container(
           child: Center(
             child: Column(
@@ -89,12 +91,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
         IconName,
         size: 35.0,
       ),
-      title: Text(
-        '$title',
-        style: TextStyle(
-          fontSize: 10.0,
-        ),
-      ),
+      label: title,
     );
   }
 
