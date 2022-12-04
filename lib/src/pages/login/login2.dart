@@ -141,12 +141,13 @@ class LoginTwoPage extends StatelessWidget {
             child: Align(
               alignment: Alignment.bottomCenter,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40.0)),
+                  backgroundColor: Colors.blue,
+                ),
                 onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40.0)),
                 child: Text("Login", style: TextStyle(color: Colors.white70)),
-                color: Colors.blue,
               ),
             ),
           )

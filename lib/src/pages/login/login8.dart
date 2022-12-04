@@ -93,11 +93,14 @@ class LoginEightPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 30.0),
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(),
-                    elevation: 0,
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.all(16.0),
                     ),
                     child: Text(
                       "login",
@@ -107,8 +110,6 @@ class LoginEightPage extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {},
-                    textColor: Colors.white,
-                    padding: const EdgeInsets.all(16.0),
                   ),
                   const SizedBox(height: 40.0),
                 ],
@@ -117,9 +118,10 @@ class LoginEightPage extends StatelessWidget {
           ),
           Expanded(
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(),
-              color: Colors.white,
-              textColor: Colors.black,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.black,
+              ),
               child: Text(
                 "SIGN UP",
                 style: TextStyle(

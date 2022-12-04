@@ -64,9 +64,10 @@ class LoginOnePage extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.cyan,
+                      ),
                       onPressed: () {},
-                      color: Colors.cyan,
                       child: Text(
                         'Login',
                         style: TextStyle(color: Colors.white70, fontSize: 16.0),

@@ -90,14 +90,15 @@ class LoginFivePage extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(),
-                color: Colors.white,
-                textColor: Colors.lightGreen,
-                padding: const EdgeInsets.all(20.0),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.lightGreen,
+                  padding: const EdgeInsets.all(20.0),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0)),
+                ),
                 child: Text("Login".toUpperCase()),
                 onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0)),
               ),
             ),
             Spacer(),
@@ -105,7 +106,9 @@ class LoginFivePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 TextButton(
-                  textColor: Colors.white70,
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white70,
+                  ),
                   child: Text("Create Account".toUpperCase()),
                   onPressed: () {},
                 ),
@@ -115,7 +118,9 @@ class LoginFivePage extends StatelessWidget {
                   height: 20.0,
                 ),
                 TextButton(
-                  textColor: Colors.white70,
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white70,
+                  ),
                   child: Text("Forgot Password".toUpperCase()),
                   onPressed: () {},
                 ),

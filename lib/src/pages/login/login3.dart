@@ -87,14 +87,15 @@ class LoginThreePage extends StatelessWidget {
                       width: double.infinity,
                       padding: EdgeInsets.all(30.0),
                       child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        color: Colors.pink,
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(vertical: 16.0),
+                          backgroundColor: Colors.pink,
+                          elevation: 11,
+                          shape: RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(40.0))),
+                        ),
                         onPressed: () {},
-                        elevation: 11,
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(40.0))),
                         child: Text("Login",
                             style: TextStyle(color: Colors.white70)),
                       ),
@@ -123,14 +124,15 @@ class LoginThreePage extends StatelessWidget {
                         ),
                         Expanded(
                           child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(),
-                            child: Text("Facebook"),
-                            textColor: Colors.white,
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40)),
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.blue,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(40)),
+                              ),
                             ),
+                            child: Text("Facebook"),
                             onPressed: () {},
                           ),
                         ),
@@ -139,14 +141,15 @@ class LoginThreePage extends StatelessWidget {
                         ),
                         Expanded(
                           child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(),
-                            child: Text("Twitter"),
-                            textColor: Colors.white,
-                            color: Colors.indigo,
-                            shape: RoundedRectangleBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40)),
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.indigo,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(40)),
+                              ),
                             ),
+                            child: Text("Twitter"),
                             onPressed: () {},
                           ),
                         ),
@@ -160,8 +163,10 @@ class LoginThreePage extends StatelessWidget {
                       children: <Widget>[
                         Text("Dont have an account?"),
                         TextButton(
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.indigo,
+                          ),
                           child: Text("Sign up"),
-                          textColor: Colors.indigo,
                           onPressed: () {},
                         )
                       ],
