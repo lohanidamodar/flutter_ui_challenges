@@ -157,7 +157,9 @@ class TodoHomeTwoPage extends StatelessWidget {
           ),
           Text("John Doe"),
           const SizedBox(height: 5.0),
-          Divider(color: Colors.pink,),
+          Divider(
+            color: Colors.pink,
+          ),
         ],
       ),
     );

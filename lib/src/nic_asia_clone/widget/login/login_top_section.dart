@@ -2,7 +2,7 @@
  * Author: Mausam Rayamajhi
  * profile: https://github.com/mausamRayamajhi
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../../util/constant.dart';

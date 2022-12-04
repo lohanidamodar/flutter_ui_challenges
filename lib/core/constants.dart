@@ -30,4 +30,5 @@ const List<Developer> DEVELOPERS = [
   ),
 ];
 
-const String privacyUrl = "https://popupbits.com/contact/flutter-ui-challenges-privacy-policy/";
+const String privacyUrl =
+    "https://popupbits.com/contact/flutter-ui-challenges-privacy-policy/";

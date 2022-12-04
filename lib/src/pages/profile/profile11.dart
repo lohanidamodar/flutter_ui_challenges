@@ -44,11 +44,11 @@ class ProfileElevenPage extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: Alignment(1.5,1.5),
+                    alignment: Alignment(1.5, 1.5),
                     child: MaterialButton(
                       minWidth: 0,
                       child: Icon(Icons.camera_alt),
-                      onPressed: (){},
+                      onPressed: () {},
                       textColor: Colors.white,
                       color: Theme.of(context).accentColor,
                       elevation: 0,

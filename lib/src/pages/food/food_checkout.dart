@@ -120,12 +120,11 @@ class FoodCheckoutOnePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 32.0, vertical: 8.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-
-                  padding: const EdgeInsets.all(16.0),
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0)),
-                  backgroundColor: Colors.yellow.shade700,
+                    padding: const EdgeInsets.all(16.0),
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0)),
+                    backgroundColor: Colors.yellow.shade700,
                   ),
                   child: Text(
                     "Next",

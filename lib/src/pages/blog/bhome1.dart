@@ -146,7 +146,6 @@ class BlogHomeOnePage extends StatelessWidget {
               ),
             ],
           ),
-
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: 1,
             type: BottomNavigationBarType.fixed,

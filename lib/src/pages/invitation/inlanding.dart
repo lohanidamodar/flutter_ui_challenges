@@ -53,12 +53,12 @@ class InvitationLandingPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 8.0),
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(),
-                      highlightElevation: 0,
-                      elevation: 0,
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        foregroundColor: Colors.pink,
+                        backgroundColor: Colors.white,
+                      ),
                       child: Text("Create an Account"),
-                      textColor: Colors.pink,
-                      color: Colors.white,
                       onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
@@ -66,12 +66,14 @@ class InvitationLandingPage extends StatelessWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 8.0),
-                    child: OutlineButton(
-                      highlightElevation: 0,
-                      borderSide: BorderSide(color: Colors.white),
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        elevation: 0,
+                        side: BorderSide(color: Colors.white),
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.white,
+                      ),
                       child: Text("Sign in with Google"),
-                      textColor: Colors.white,
-                      color: Colors.white,
                       onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),

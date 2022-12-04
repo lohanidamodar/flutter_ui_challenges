@@ -16,17 +16,18 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   BottomBarController controller;
 
   @override
-    void initState() {
-      super.initState();
-      controller = BottomBarController(vsync: this, dragLength: 550, snap: true);
-    }
+  void initState() {
+    super.initState();
+    controller = BottomBarController(vsync: this, dragLength: 550, snap: true);
+  }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.notifications),
-                onPressed: (){},
+                onPressed: () {},
               )
             ],
           ),
@@ -62,36 +63,32 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   SliverPadding _buildBookingsGrid() {
     return SliverPadding(
-          padding: const EdgeInsets.all(16.0),
-          sliver: SliverGrid(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
-              crossAxisSpacing: 16.0,
-              mainAxisSpacing: 16.0
-            ),
-            delegate: SliverChildBuilderDelegate((_,index){
-              HomeMenuItem item = homeBookingsItems[index];
-              return _buildMenuItem(icon: item.icon, label: item.title,subtitle: item.subtitle );
-            },childCount: homeBookingsItems.length),
-          ),
-        );
+      padding: const EdgeInsets.all(16.0),
+      sliver: SliverGrid(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 4, crossAxisSpacing: 16.0, mainAxisSpacing: 16.0),
+        delegate: SliverChildBuilderDelegate((_, index) {
+          HomeMenuItem item = homeBookingsItems[index];
+          return _buildMenuItem(
+              icon: item.icon, label: item.title, subtitle: item.subtitle);
+        }, childCount: homeBookingsItems.length),
+      ),
+    );
   }
 
   SliverPadding _buildUtilityPaymentsGrid() {
     return SliverPadding(
-          padding: const EdgeInsets.all(16.0),
-          sliver: SliverGrid(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
-              crossAxisSpacing: 16.0,
-              mainAxisSpacing: 16.0
-            ),
-            delegate: SliverChildBuilderDelegate((_,index){
-              HomeMenuItem item = homeMenuItems[index];
-              return _buildMenuItem(icon: item.icon, label: item.title,subtitle: item.subtitle );
-            },childCount: homeMenuItems.length),
-          ),
-        );
+      padding: const EdgeInsets.all(16.0),
+      sliver: SliverGrid(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 4, crossAxisSpacing: 16.0, mainAxisSpacing: 16.0),
+        delegate: SliverChildBuilderDelegate((_, index) {
+          HomeMenuItem item = homeMenuItems[index];
+          return _buildMenuItem(
+              icon: item.icon, label: item.title, subtitle: item.subtitle);
+        }, childCount: homeMenuItems.length),
+      ),
+    );
   }
 
   BottomExpandableAppBar _buildBottomBar(BuildContext context) {
@@ -110,47 +107,39 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         children: <Widget>[
           Expanded(
             child: _buildBottomMenuItem(
-              icon: Icon(Icons.home),
-              label: "Home",
-              onTap: (){}
-            ),
+                icon: Icon(Icons.home), label: "Home", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-              icon: Icon(Icons.card_giftcard),
-              label: "Bazaar",
-              onTap: (){}
-            ),
+                icon: Icon(Icons.card_giftcard), label: "Bazaar", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-              icon: Icon(Icons.list),
-              label: "Transactions",
-              onTap: (){}
-            ),
+                icon: Icon(Icons.list), label: "Transactions", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-              icon: Icon(Icons.more_horiz),
-              label: "More",
-              onTap: () => controller.open()
-            ),
+                icon: Icon(Icons.more_horiz),
+                label: "More",
+                onTap: () => controller.open()),
           ),
         ],
       ),
     );
   }
 
-  MaterialButton _buildBottomMenuItem({Widget icon, String label, Function onTap}) {
+  MaterialButton _buildBottomMenuItem(
+      {Widget icon, String label, Function onTap}) {
     return MaterialButton(
       height: 30,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           icon,
-          Text(label, style: TextStyle(
-            fontSize: 9
-          ),)
+          Text(
+            label,
+            style: TextStyle(fontSize: 9),
+          )
         ],
       ),
       onPressed: onTap,
@@ -162,17 +151,17 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       padding: const EdgeInsets.all(16.0),
       sliver: SliverToBoxAdapter(
         child: Container(
-          child: Text(title, style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.w600
-          ),),
+          child: Text(
+            title,
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+          ),
         ),
       ),
     );
   }
 
   Widget _buildDivider({Color color, double height = 4.0}) {
-    if(color == null ) color = Colors.deepPurple.shade100;
+    if (color == null) color = Colors.deepPurple.shade100;
     return SliverToBoxAdapter(
       child: Container(
         height: height,
@@ -192,11 +181,13 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           Spacer(),
           _buildHeaderItem(icon: FontAwesomeIcons.wallet, label: "Load Fund"),
           Spacer(),
-          _buildHeaderItem(icon: FontAwesomeIcons.mobileAlt, label: "Send/Request"),
+          _buildHeaderItem(
+              icon: FontAwesomeIcons.mobileAlt, label: "Send/Request"),
           Spacer(),
-          _buildHeaderItem(icon: FontAwesomeIcons.qrcode,label: "Scan & Pay"),
+          _buildHeaderItem(icon: FontAwesomeIcons.qrcode, label: "Scan & Pay"),
           Spacer(),
-          _buildHeaderItem(icon: FontAwesomeIcons.coins,label: "Bank Transfer"),
+          _buildHeaderItem(
+              icon: FontAwesomeIcons.coins, label: "Bank Transfer"),
           Spacer(),
         ],
       ),
@@ -205,44 +196,60 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   Column _buildHeaderItem({IconData icon, String label}) {
     return Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              padding: const EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white
-              ),
-              child: Icon(icon,size: 30, color: Colors.purple.shade300,),
-            ),
-            const SizedBox(height: 5.0),
-            Text(label, style: smallText,),
-          ],
-        );
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Container(
+          padding: const EdgeInsets.all(10.0),
+          decoration:
+              BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+          child: Icon(
+            icon,
+            size: 30,
+            color: Colors.purple.shade300,
+          ),
+        ),
+        const SizedBox(height: 5.0),
+        Text(
+          label,
+          style: smallText,
+        ),
+      ],
+    );
   }
+
   Widget _buildMenuItem({IconData icon, String label, String subtitle}) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         Navigator.pushNamed(context, 'payment');
       },
       child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Icon(icon,size: 28, color: Colors.purple.shade300,),
-              const SizedBox(height: 10.0),
-              Text(label, style: smallText,),
-              if(subtitle != null)
-              const SizedBox(height: 5.0),
-              if(subtitle != null)
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 4.0,),
-                color: Colors.grey.shade200,
-                child: Text(subtitle, textAlign: TextAlign.center, style: smallText.copyWith(
-                  fontSize: 8.0
-                ),)
-              )
-            ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Icon(
+            icon,
+            size: 28,
+            color: Colors.purple.shade300,
           ),
+          const SizedBox(height: 10.0),
+          Text(
+            label,
+            style: smallText,
+          ),
+          if (subtitle != null) const SizedBox(height: 5.0),
+          if (subtitle != null)
+            Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 2.0,
+                  horizontal: 4.0,
+                ),
+                color: Colors.grey.shade200,
+                child: Text(
+                  subtitle,
+                  textAlign: TextAlign.center,
+                  style: smallText.copyWith(fontSize: 8.0),
+                ))
+        ],
+      ),
     );
   }
 }

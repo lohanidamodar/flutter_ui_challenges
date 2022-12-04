@@ -293,11 +293,11 @@ class CakePage extends StatelessWidget {
               SizedBox(height: 20.0),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40.0)),
-                padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
-                backgroundColor: primary,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40.0)),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
+                  backgroundColor: primary,
                 ),
                 onPressed: () {},
                 child: Text(

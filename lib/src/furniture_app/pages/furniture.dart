@@ -14,7 +14,7 @@ class Furniture extends StatelessWidget {
     return Material(
       color: Colors.white,
       child: SingleChildScrollView(
-              child: Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
@@ -44,7 +44,8 @@ class Furniture extends StatelessWidget {
             ),
             buildLampsWithSlider(),
             Padding(
-              padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
               child: TitleSmall(
                 subTitle: 'In recent month',
                 title: 'Popular',
@@ -84,9 +85,9 @@ class Furniture extends StatelessWidget {
     shrinkWrap: true,
     itemCount: lampList.length,
     itemBuilder: (context, int index) => Lamp(
-          item: lampList[index],
-          index: index,
-        ),
+      item: lampList[index],
+      index: index,
+    ),
   );
   final buildFurnitureCategories = Container(
     height: 100.0,
@@ -95,8 +96,8 @@ class Furniture extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: furnitureCategoriesList.length,
       itemBuilder: (context, int index) => FurnitureCategory(
-            item: furnitureCategoriesList[index],
-          ),
+        item: furnitureCategoriesList[index],
+      ),
     ),
   );
 }

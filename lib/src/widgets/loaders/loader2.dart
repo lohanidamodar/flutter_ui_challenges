@@ -4,7 +4,7 @@ import 'dart:math';
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 
 class LoaderTwo extends StatefulWidget {
@@ -22,12 +22,28 @@ class LoaderTwo extends StatefulWidget {
   final double spanRadius;
   final Duration duration;
 
-  LoaderTwo({Key key, this.centralDotColor = Colors.black26, this.dotOneColor=Colors.red, this.dotTwoColor=Colors.lightBlue, this.dotThreeColor=Colors.orange, this.dotFourColor=Colors.green, this.dotFiveColor=Colors.yellow, this.dotSixColor=Colors.blue, this.dotSevenColor=Colors.pink, this.dotEightColor=Colors.lightGreen, this.centralDotRadius=15.0, this.spanRadius=15.0, this.duration = const Duration(seconds: 2), this.outerDotRadius = 5.0 }) : super(key: key);
+  LoaderTwo(
+      {Key key,
+      this.centralDotColor = Colors.black26,
+      this.dotOneColor = Colors.red,
+      this.dotTwoColor = Colors.lightBlue,
+      this.dotThreeColor = Colors.orange,
+      this.dotFourColor = Colors.green,
+      this.dotFiveColor = Colors.yellow,
+      this.dotSixColor = Colors.blue,
+      this.dotSevenColor = Colors.pink,
+      this.dotEightColor = Colors.lightGreen,
+      this.centralDotRadius = 15.0,
+      this.spanRadius = 15.0,
+      this.duration = const Duration(seconds: 2),
+      this.outerDotRadius = 5.0})
+      : super(key: key);
 
   _LoaderTwoState createState() => _LoaderTwoState(centralDotRadius);
 }
 
-class _LoaderTwoState extends State<LoaderTwo> with SingleTickerProviderStateMixin {
+class _LoaderTwoState extends State<LoaderTwo>
+    with SingleTickerProviderStateMixin {
   AnimationController controller;
   Animation<double> animationRotation;
   Animation<double> animationRadiusIn;
@@ -41,32 +57,35 @@ class _LoaderTwoState extends State<LoaderTwo> with SingleTickerProviderStateMix
   @override
   void initState() {
     super.initState();
-    controller = AnimationController(
-      vsync: this,
-      duration: widget.duration);
-    
-    animationRadiusIn = Tween<double>(begin: 1.0, end: 0.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.75, 1.0, curve: Curves.elasticIn),)
-    );
-    animationRadiusOut = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.0, 0.25, curve: Curves.elasticOut),)
-    );
-    animationRotation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.0, 1.0, curve: Curves.linear))
-    );
+    controller = AnimationController(vsync: this, duration: widget.duration);
 
-    controller.addListener((){
-      if(controller.value >= 0.75 && controller.value <= 1.0) {
-        setState(() {                  
+    animationRadiusIn =
+        Tween<double>(begin: 1.0, end: 0.0).animate(CurvedAnimation(
+      parent: controller,
+      curve: Interval(0.75, 1.0, curve: Curves.elasticIn),
+    ));
+    animationRadiusOut =
+        Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+      parent: controller,
+      curve: Interval(0.0, 0.25, curve: Curves.elasticOut),
+    ));
+    animationRotation = Tween<double>(begin: 0.0, end: 1.0).animate(
+        CurvedAnimation(
+            parent: controller,
+            curve: Interval(0.0, 1.0, curve: Curves.linear)));
+
+    controller.addListener(() {
+      if (controller.value >= 0.75 && controller.value <= 1.0) {
+        setState(() {
           radius = animationRadiusIn.value * initialRadius;
         });
-      }else if(controller.value >= 0.0 && controller.value <= 0.25) {
+      } else if (controller.value >= 0.0 && controller.value <= 0.25) {
         setState(() {
           radius = animationRadiusOut.value * initialRadius;
         });
       }
     });
-    
+
     controller.repeat();
   }
 
@@ -86,31 +105,64 @@ class _LoaderTwoState extends State<LoaderTwo> with SingleTickerProviderStateMix
           turns: animationRotation,
           child: Stack(
             children: <Widget>[
-              Dot(radius: widget.centralDotRadius,color: widget.centralDotColor,),
+              Dot(
+                radius: widget.centralDotRadius,
+                color: widget.centralDotColor,
+              ),
               Transform.translate(
-                offset: Offset(cos(pi/4)*radius, sin(pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotOneColor,)),
+                  offset: Offset(cos(pi / 4) * radius, sin(pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotOneColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(2*pi/4)*radius, sin(2*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotTwoColor,)),
+                  offset: Offset(
+                      cos(2 * pi / 4) * radius, sin(2 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotTwoColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(3*pi/4)*radius, sin(3*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotThreeColor,)),
+                  offset: Offset(
+                      cos(3 * pi / 4) * radius, sin(3 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotThreeColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(pi)*radius, sin(pi)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotFourColor,)),
+                  offset: Offset(cos(pi) * radius, sin(pi) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotFourColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(5*pi/4)*radius, sin(5*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotFiveColor,)),
+                  offset: Offset(
+                      cos(5 * pi / 4) * radius, sin(5 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotFiveColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(6*pi/4)*radius, sin(6*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotSixColor,)),
+                  offset: Offset(
+                      cos(6 * pi / 4) * radius, sin(6 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotSixColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(7*pi/4)*radius, sin(7*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotSevenColor,)),
+                  offset: Offset(
+                      cos(7 * pi / 4) * radius, sin(7 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotSevenColor,
+                  )),
               Transform.translate(
-                offset: Offset(cos(8*pi/4)*radius, sin(8*pi/4)*radius),
-                child: Dot(radius: widget.outerDotRadius,color: widget.dotEightColor,)),
+                  offset: Offset(
+                      cos(8 * pi / 4) * radius, sin(8 * pi / 4) * radius),
+                  child: Dot(
+                    radius: widget.outerDotRadius,
+                    color: widget.dotEightColor,
+                  )),
             ],
           ),
         ),
@@ -131,10 +183,7 @@ class Dot extends StatelessWidget {
       child: Container(
         width: radius,
         height: radius,
-        decoration: BoxDecoration(
-          color: color,
-          shape: BoxShape.circle
-        ),
+        decoration: BoxDecoration(color: color, shape: BoxShape.circle),
       ),
     );
   }

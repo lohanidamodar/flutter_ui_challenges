@@ -71,7 +71,8 @@ class MyCodeViewState extends State<MyCodeView> {
         heroTag: "open",
         child: Icon(Icons.open_in_new),
         tooltip: 'View code on github',
-        onPressed: () => url_launcher.launchUrl(Uri.parse(this.widget.githubPath)),
+        onPressed: () =>
+            url_launcher.launchUrl(Uri.parse(this.widget.githubPath)),
       ),
       FloatingActionButton(
         heroTag: "zoom_out",

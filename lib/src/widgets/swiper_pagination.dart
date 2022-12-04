@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
@@ -47,9 +47,8 @@ class CustomPaginationBuilder extends SwiperPlugin {
         height: size.height,
         child: Container(
           decoration: BoxDecoration(
-            color: active ? activeColor : color,
-            borderRadius: BorderRadius.circular(10.0)
-          ),
+              color: active ? activeColor : color,
+              borderRadius: BorderRadius.circular(10.0)),
           key: Key("pagination_$i"),
           margin: EdgeInsets.all(space),
         ),
@@ -71,6 +70,3 @@ class CustomPaginationBuilder extends SwiperPlugin {
     }
   }
 }
-
-
-

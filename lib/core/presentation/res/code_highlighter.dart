@@ -6,7 +6,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:string_scanner/string_scanner.dart';
 

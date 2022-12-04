@@ -31,7 +31,9 @@ class InvitationPageOne extends StatelessWidget {
               onPressed: () {},
             ),
             trailing: TextButton(
-              textColor: Colors.white,
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
               onPressed: () {},
               child: Text("Skip"),
             ),

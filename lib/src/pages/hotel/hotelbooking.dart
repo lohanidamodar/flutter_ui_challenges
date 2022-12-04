@@ -61,15 +61,15 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            title: Text('Explore'),
+            label: 'Explore',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text('Profile'),
+            label: 'Profile',
           ),
         ],
       ),

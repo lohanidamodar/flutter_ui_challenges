@@ -69,7 +69,8 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-  List<Widget> _buildSubMenus(List<menu.SubMenuItem> items, BuildContext context) {
+  List<Widget> _buildSubMenus(
+      List<menu.SubMenuItem> items, BuildContext context) {
     final List<Widget> subMenus = [];
     items.forEach((item) => subMenus.add(_buildSubMenu(item, context)));
     return subMenus;
@@ -104,7 +105,8 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-  void _openPage(BuildContext context, menu.SubMenuItem item, menu.OpenMode mode) {
+  void _openPage(
+      BuildContext context, menu.SubMenuItem item, menu.OpenMode mode) {
     Navigator.push(
         context,
         MaterialPageRoute(

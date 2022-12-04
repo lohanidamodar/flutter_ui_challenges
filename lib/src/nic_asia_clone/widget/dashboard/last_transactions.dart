@@ -2,7 +2,7 @@
  * Author: Mausam Rayamajhi
  * profile: https://github.com/mausamRayamajhi
   */
-  
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
@@ -35,8 +35,8 @@ class LastTransactions extends StatelessWidget {
               physics: BouncingScrollPhysics(),
               itemCount: transactions.length,
               itemBuilder: (context, int index) => Transaction(
-                    transaction: transactions[index],
-                  ),
+                transaction: transactions[index],
+              ),
             ),
           ),
         ),

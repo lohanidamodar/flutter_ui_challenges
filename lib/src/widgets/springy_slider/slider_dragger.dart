@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 
@@ -32,22 +32,27 @@ class _SliderDraggerState extends State<SliderDragger> {
     startDragPercent = widget.sliderController.sliderValue;
 
     final sliderWidth = context.size.width;
-    final sliderLeftPosition =
-        (context.findRenderObject() as RenderBox).localToGlobal(const Offset(0.0, 0.0)).dx;
-    final dragHorizontalPercent = (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
+    final sliderLeftPosition = (context.findRenderObject() as RenderBox)
+        .localToGlobal(const Offset(0.0, 0.0))
+        .dx;
+    final dragHorizontalPercent =
+        (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
 
     widget.sliderController.onDragStart(dragHorizontalPercent);
   }
 
   void _onPanUpdate(DragUpdateDetails details) {
     final dragDistance = startDragY - details.globalPosition.dy;
-    final sliderHeight = context.size.height - widget.paddingTop - widget.paddingBottom;
+    final sliderHeight =
+        context.size.height - widget.paddingTop - widget.paddingBottom;
     final dragPercent = dragDistance / sliderHeight;
 
     final sliderWidth = context.size.width;
-    final sliderLeftPosition =
-        (context.findRenderObject() as RenderBox).localToGlobal(const Offset(0.0, 0.0)).dx;
-    final dragHorizontalPercent = (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
+    final sliderLeftPosition = (context.findRenderObject() as RenderBox)
+        .localToGlobal(const Offset(0.0, 0.0))
+        .dx;
+    final dragHorizontalPercent =
+        (details.globalPosition.dx - sliderLeftPosition) / sliderWidth;
 
     widget.sliderController.draggingPercents = new Offset(
       dragHorizontalPercent,

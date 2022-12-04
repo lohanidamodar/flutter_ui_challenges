@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 
 class LoaderOne extends StatefulWidget {
@@ -12,7 +12,8 @@ class LoaderOne extends StatefulWidget {
   _LoaderOneState createState() => _LoaderOneState();
 }
 
-class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMixin {
+class _LoaderOneState extends State<LoaderOne>
+    with SingleTickerProviderStateMixin {
   AnimationController controller;
   Animation<double> animation;
 
@@ -20,18 +21,13 @@ class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMix
   void initState() {
     super.initState();
     controller = AnimationController(
-      vsync: this,
-      duration: Duration(milliseconds: 1200));
+        vsync: this, duration: Duration(milliseconds: 1200));
     animation = CurvedAnimation(parent: controller, curve: Curves.elasticOut);
-    animation.addListener((){
-      setState(() {
-              
-      });
+    animation.addListener(() {
+      setState(() {});
     });
 
-    animation.addStatusListener((AnimationStatus status){
-
-    });
+    animation.addStatusListener((AnimationStatus status) {});
     controller.repeat();
   }
 
@@ -49,21 +45,25 @@ class _LoaderOneState extends State<LoaderOne> with SingleTickerProviderStateMix
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-             color: widget.color,
-             height: 3.0,
-             width: animation.value * 75.0,
+            color: widget.color,
+            height: 3.0,
+            width: animation.value * 75.0,
           ),
-          SizedBox(height: 5.0,),
-          Container(
-             color: widget.color,
-             height: 3.0,
-             width: animation.value * 50.0,
+          SizedBox(
+            height: 5.0,
           ),
-          SizedBox(height: 5.0,),
           Container(
-             color: widget.color,
-             height: 3.0,
-             width: animation.value * 35.0,
+            color: widget.color,
+            height: 3.0,
+            width: animation.value * 50.0,
+          ),
+          SizedBox(
+            height: 5.0,
+          ),
+          Container(
+            color: widget.color,
+            height: 3.0,
+            width: animation.value * 35.0,
           ),
         ],
       ),

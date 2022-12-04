@@ -140,10 +140,9 @@ class RecipeSinglePage extends StatelessWidget {
               right: 20,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-
-                backgroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)),
+                  backgroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0)),
                 ),
                 child: Text("Read More".toUpperCase()),
                 onPressed: () {

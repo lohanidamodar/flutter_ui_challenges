@@ -118,13 +118,12 @@ class EcommerceDetailThreePage extends StatelessWidget {
                             Spacer(),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 8.0, horizontal: 16.0),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0)),
-                              backgroundColor: Colors.orange,
-                              foregroundColor: Colors.white,
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 8.0, horizontal: 16.0),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0)),
+                                backgroundColor: Colors.orange,
+                                foregroundColor: Colors.white,
                               ),
                               onPressed: () {},
                               child: Row(

@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 import 'package:flutter/scheduler.dart';
@@ -134,8 +134,9 @@ class SpringySliderController extends ChangeNotifier {
       0.0,
     );
 
-    final crestSpringNormal = (_crestSpringingEndPercent - _crestSpringingStartPercent) /
-        (_crestSpringingEndPercent - _crestSpringingStartPercent).abs();
+    final crestSpringNormal =
+        (_crestSpringingEndPercent - _crestSpringingStartPercent) /
+            (_crestSpringingEndPercent - _crestSpringingStartPercent).abs();
     _crestSpringSimulation = new SpringSimulation(
       crestSpring,
       _crestSpringingStartPercent,

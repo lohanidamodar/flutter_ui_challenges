@@ -119,77 +119,76 @@ class TodoTwoPage extends StatelessWidget {
 
   Row _buildTaskWithDate() {
     return Row(
-                children: <Widget>[
-                  Text(
-                    "JAN\n10",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.5),
-                  ),
-                  const SizedBox(width: 20.0),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20.0),
-                          bottomRight: Radius.circular(20.0),
-                          bottomLeft: Radius.circular(20.0),
-                        ),
-                        color: Colors.white70,
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
-                      width: double.infinity,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text(
-                            "10:30 - 11:30AM",
-                            style: TextStyle(
-                                letterSpacing: 2.5, color: Colors.deepPurple),
-                          ),
-                          const SizedBox(height: 5.0),
-                          Text(
-                            "Meeting With",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.deepPurple,
-                                fontSize: 16.0),
-                          ),
-                          Text("John Doe")
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              );
+      children: <Widget>[
+        Text(
+          "JAN\n10",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.5),
+        ),
+        const SizedBox(width: 20.0),
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                bottomRight: Radius.circular(20.0),
+                bottomLeft: Radius.circular(20.0),
+              ),
+              color: Colors.white70,
+            ),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "10:30 - 11:30AM",
+                  style:
+                      TextStyle(letterSpacing: 2.5, color: Colors.deepPurple),
+                ),
+                const SizedBox(height: 5.0),
+                Text(
+                  "Meeting With",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepPurple,
+                      fontSize: 16.0),
+                ),
+                Text("John Doe")
+              ],
+            ),
+          ),
+        )
+      ],
+    );
   }
 
   Container _buildTask() {
     return Container(
-                padding: const EdgeInsets.only(left: 70.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "10:30 - 11:30AM",
-                      style:
-                          TextStyle(letterSpacing: 2.5, color: Colors.white),
-                    ),
-                    const SizedBox(height: 5.0),
-                    Text(
-                      "Meeting With",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 16.0),
-                    ),
-                    Text("John Doe")
-                  ],
-                ),
-              );
+      padding: const EdgeInsets.only(left: 70.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            "10:30 - 11:30AM",
+            style: TextStyle(letterSpacing: 2.5, color: Colors.white),
+          ),
+          const SizedBox(height: 5.0),
+          Text(
+            "Meeting With",
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 16.0),
+          ),
+          Text("John Doe")
+        ],
+      ),
+    );
   }
 }
 

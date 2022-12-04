@@ -28,7 +28,7 @@ class KhaltiApp extends StatelessWidget {
         "payment": (_) => Payment(),
       },
       onGenerateRoute: (RouteSettings settings) {
-        switch(settings.name) {
+        switch (settings.name) {
           case "login":
             return SlideRightRoute(widget: LoginPage());
             break;

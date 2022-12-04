@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   // https://stackoverflow.com/questions/44004451/navigator-operation-requested-with-a-context-that-does-not-include-a-navigator
   final _navKey = GlobalKey<NavigatorState>();
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

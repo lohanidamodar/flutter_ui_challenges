@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
@@ -85,7 +85,8 @@ class Points extends StatelessWidget {
     final pointTextSize = 50.0 + (50.0 * percent);
 
     return Row(
-      crossAxisAlignment: isAboveSlider ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+      crossAxisAlignment:
+          isAboveSlider ? CrossAxisAlignment.end : CrossAxisAlignment.start,
       children: <Widget>[
         FractionalTranslation(
           translation: Offset(-0.05 * percent, isAboveSlider ? 0.18 : -0.18),

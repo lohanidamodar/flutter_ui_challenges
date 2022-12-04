@@ -4,7 +4,7 @@ import 'dart:math';
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
@@ -79,7 +79,8 @@ class SliderClipper extends CustomClipper<Path> {
     }
     final baseControlPointWidth = 150.0;
     final thickeningFactor = excessDrag * height * 0.05;
-    final controlPointWidth = (200.0 * thickeningFactor).abs() + baseControlPointWidth;
+    final controlPointWidth =
+        (200.0 * thickeningFactor).abs() + baseControlPointWidth;
 
     final rect = new Path();
     rect.moveTo(leftPoint.x, leftPoint.y);
@@ -127,7 +128,8 @@ class SliderClipper extends CustomClipper<Path> {
     final bottom = size.height - paddingBottom;
     final height = bottom - top;
     final basePercentFromBottom = 1.0 - sliderController.springingPercent;
-    final crestSpringPercentFromBottom = 1.0 - sliderController.crestSpringingPercent;
+    final crestSpringPercentFromBottom =
+        1.0 - sliderController.crestSpringingPercent;
 
     final baseY = top + (basePercentFromBottom * height);
     final leftX = -0.85 * size.width;

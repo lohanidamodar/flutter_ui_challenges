@@ -66,7 +66,11 @@ class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
             },
           ),
           IconButton(
-            icon: kIsWeb ? Icon(Icons.share) : Platform.isIOS ? Icon(Icons.ios_share) : Icon(Icons.share),
+            icon: kIsWeb
+                ? Icon(Icons.share)
+                : Platform.isIOS
+                    ? Icon(Icons.ios_share)
+                    : Icon(Icons.share),
             tooltip: "Share code",
             onPressed: () {
               Share.share('$githubRepo/blob/master/${widget.path}');

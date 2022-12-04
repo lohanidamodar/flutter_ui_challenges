@@ -35,15 +35,13 @@ class _PaymentState extends State<Payment> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-              },
+              onPressed: () {},
               child: Text('Pay',
                   style: TextStyle(
                     color: Colors.white,
                   )),
               style: ElevatedButton.styleFrom(
-
-              backgroundColor: Theme.of(context).primaryColor,
+                backgroundColor: Theme.of(context).primaryColor,
               ),
             ),
             Text(

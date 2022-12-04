@@ -80,8 +80,7 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
   @override
   void dispose() {
     if (_controller != null)
-      _controller.state
-          .removeListener(_handleBottomBarControllerAnimationTick);
+      _controller.state.removeListener(_handleBottomBarControllerAnimationTick);
     // We don't own the _controller Animation, so it's not disposed here.
     super.dispose();
   }
@@ -103,13 +102,11 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
     if (newController == _controller) return;
 
     if (_controller != null) {
-      _controller.state
-          .removeListener(_handleBottomBarControllerAnimationTick);
+      _controller.state.removeListener(_handleBottomBarControllerAnimationTick);
     }
     _controller = newController;
     if (_controller != null) {
-      _controller.state
-          .addListener(_handleBottomBarControllerAnimationTick);
+      _controller.state.addListener(_handleBottomBarControllerAnimationTick);
     }
   }
 
@@ -123,7 +120,7 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
       color: Colors.transparent,
       elevation: 0,
       child: Stack(
-        //TODO: Find out how to get top app bar overlap body content of scaffold 
+        //TODO: Find out how to get top app bar overlap body content of scaffold
         alignment: widget.attachSide == Side.Bottom
             ? Alignment.bottomCenter
             : Alignment.topCenter,
@@ -151,8 +148,8 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
             ),
           ),
           Container(
-            color: widget.bottomAppBarColor ??
-                Theme.of(context).bottomAppBarColor,
+            color:
+                widget.bottomAppBarColor ?? Theme.of(context).bottomAppBarColor,
             height: widget.appBarHeight,
             child: widget.bottomAppBarBody,
           ),
