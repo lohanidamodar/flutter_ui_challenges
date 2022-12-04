@@ -151,7 +151,8 @@ class EcommerceDetailOnePage extends StatelessWidget {
           child: Container(
             color: Colors.transparent,
             padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40.0)),
               onPressed: () {},

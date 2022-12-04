@@ -71,7 +71,8 @@ class _AuthThreePageState extends State<AuthThreePage> {
                   children: <Widget>[
                     const SizedBox(width: 10.0),
                     Expanded(
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
                         color: Colors.red,
                         textColor: Colors.white,
                         elevation: 0,
@@ -89,7 +90,8 @@ class _AuthThreePageState extends State<AuthThreePage> {
                     ),
                     const SizedBox(width: 10.0),
                     Expanded(
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
                         color: Colors.grey.shade700,
                         textColor: Colors.white,
                         elevation: 0,
@@ -137,7 +139,8 @@ class _AuthThreePageState extends State<AuthThreePage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            RaisedButton(
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(),
                               textColor: _formsIndex == 1
                                   ? Colors.white
                                   : Colors.black,
@@ -153,7 +156,8 @@ class _AuthThreePageState extends State<AuthThreePage> {
                               },
                             ),
                             const SizedBox(width: 10.0),
-                            RaisedButton(
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(),
                               textColor: _formsIndex == 2
                                   ? Colors.white
                                   : Colors.black,
@@ -229,7 +233,8 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10.0),
-          RaisedButton(
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(),
             color: Colors.red,
             textColor: Colors.white,
             elevation: 0,
@@ -285,7 +290,8 @@ class SignupForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10.0),
-          RaisedButton(
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(),
             color: Colors.red,
             textColor: Colors.white,
             elevation: 0,

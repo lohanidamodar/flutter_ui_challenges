@@ -1,4 +1,3 @@
-
 /**
  * Author: Siddhartha Joshi
  * profile: https://github.com/cimplesid
@@ -7,7 +6,7 @@ import 'dart:ui' as ui;
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:url_launcher/url_launcher.dart';
-  
+
 import 'package:flutter/material.dart';
 
 class ProfileSixPage extends StatelessWidget {
@@ -34,7 +33,8 @@ class ProfileSixPage extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        RaisedButton(
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(),
           color: Colors.transparent,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),
@@ -276,8 +276,6 @@ class Video {
 
   final String url;
 }
-
-
 
 final DEV sid = DEV(
   firstName: 'Cimple',

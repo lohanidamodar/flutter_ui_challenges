@@ -66,7 +66,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          FlatButton(
+          TextButton(
             textColor: Colors.white70,
             child: Text("Skip"),
             onPressed: () {

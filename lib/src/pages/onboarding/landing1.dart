@@ -76,7 +76,8 @@ class LandingOnePage extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 80.0),
                 width: double.infinity,
-                child: RaisedButton(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(),
                   padding: const EdgeInsets.all(16.0),
                   textColor: Colors.white,
                   color: Colors.lightGreen,

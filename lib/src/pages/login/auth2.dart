@@ -58,7 +58,8 @@ class AuthTwoPage extends StatelessWidget {
                       const SizedBox(height: 30.0),
                       SizedBox(
                         width: double.infinity,
-                        child: RaisedButton(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(),
                           elevation: 0,
                           highlightElevation: 0,
                           color: Colors.white,

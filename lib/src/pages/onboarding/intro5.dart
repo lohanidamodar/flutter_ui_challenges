@@ -32,7 +32,8 @@ class _Intro5State extends State<Intro5> {
           ),
           Flexible(
             flex: 2,
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               color: darkYellow,
               elevation: 4,
               shape: RoundedRectangleBorder(

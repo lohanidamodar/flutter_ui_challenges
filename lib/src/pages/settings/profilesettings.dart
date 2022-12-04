@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileSettingsPage extends StatelessWidget {
-    static final String path = "lib/src/pages/settings/profilesettings.dart";
+  static final String path = "lib/src/pages/settings/profilesettings.dart";
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +44,8 @@ class _EditPageState extends State<EditPage> {
             ),
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(
-                 // builder: (BuildContext context) => SettingsFourPage()
-                 )
-                  );
+                  // builder: (BuildContext context) => SettingsFourPage()
+                  ));
             },
           ),
         ],
@@ -136,7 +135,8 @@ class _EditPageState extends State<EditPage> {
                             letterSpacing: 2.2,
                             color: Colors.black)),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(),
                     onPressed: () {},
                     color: Colors.green,
                     padding: EdgeInsets.symmetric(horizontal: 50),

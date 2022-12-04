@@ -94,7 +94,8 @@ class AvocadoPage extends StatelessWidget {
                   SizedBox(height: 20.0),
                   SizedBox(
                       width: double.infinity,
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5.0)),
                         color: Colors.pink.shade200,

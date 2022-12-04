@@ -73,20 +73,23 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 16.0, vertical: 8.0),
                                 child: Text(
-                                    "Hand-stitched finish. Flexible pebble sole. Made of brown leather with a textured effect",style: TextStyle(
-                                      color: Colors.grey.shade600
-                                    ),),
+                                  "Hand-stitched finish. Flexible pebble sole. Made of brown leather with a textured effect",
+                                  style: TextStyle(color: Colors.grey.shade600),
+                                ),
                               ),
                               ExpansionTile(
-                                title: Text("Show Details",style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                                ),),
+                                title: Text(
+                                  "Show Details",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 children: <Widget>[
                                   Container(
                                     alignment: Alignment.topLeft,
                                     padding: const EdgeInsets.all(16.0),
-                                    child: Text("This is the details widget. Here you can see more details of the product"),
+                                    child: Text(
+                                        "This is the details widget. Here you can see more details of the product"),
                                   )
                                 ],
                               ),
@@ -106,11 +109,15 @@ class EcommerceDetailThreePage extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               "\$35.99",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 18.0),
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18.0),
                             ),
                             const SizedBox(width: 20.0),
                             Spacer(),
-                            RaisedButton(
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(),
                               padding: const EdgeInsets.symmetric(
                                   vertical: 8.0, horizontal: 16.0),
                               shape: RoundedRectangleBorder(
@@ -121,10 +128,12 @@ class EcommerceDetailThreePage extends StatelessWidget {
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
-                                  Text("Add to Cart",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16.0
-                                  ),),
+                                  Text(
+                                    "Add to Cart",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16.0),
+                                  ),
                                   const SizedBox(width: 20.0),
                                   Container(
                                     padding: const EdgeInsets.all(8.0),

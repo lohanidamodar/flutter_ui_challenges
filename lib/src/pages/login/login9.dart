@@ -49,7 +49,7 @@ class LoginNinePage extends StatelessWidget {
                   tween: Tween<double>(begin: -1, end: 0),
                   builder: (context, state, child) {
                     return FractionalTranslation(
-                      translation: Offset(state.value,0),
+                      translation: Offset(state.value, 0),
                       child: child,
                     );
                   },
@@ -122,7 +122,7 @@ class LoginNinePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 20.0),
-                        FlatButton(
+                        TextButton(
                           textColor: Colors.white,
                           child: Text("Create new account"),
                           onPressed: () {},
@@ -135,7 +135,8 @@ class LoginNinePage extends StatelessWidget {
             ),
           ),
           if (MediaQuery.of(context).viewInsets == EdgeInsets.zero)
-            RaisedButton(
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               padding: const EdgeInsets.all(32.0),
               elevation: 0,
               textColor: Colors.white,

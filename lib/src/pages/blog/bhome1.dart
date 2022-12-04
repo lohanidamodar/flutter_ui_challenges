@@ -153,23 +153,23 @@ class BlogHomeOnePage extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(FontAwesomeIcons.folderOpen),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite_border),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person_outline),
-                title: Text(""),
+                label: "",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.settings),
-                title: Text(""),
+                label: "",
               ),
             ],
           ),

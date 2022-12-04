@@ -183,7 +183,8 @@ class CheckoutOnePage extends StatelessWidget {
                 vertical: 16.0,
                 horizontal: 32.0,
               ),
-              child: RaisedButton(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(),
                 elevation: 0,
                 padding: const EdgeInsets.all(24.0),
                 shape: RoundedRectangleBorder(

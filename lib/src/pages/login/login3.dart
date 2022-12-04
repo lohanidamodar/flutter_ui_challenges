@@ -86,7 +86,8 @@ class LoginThreePage extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(30.0),
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(),
                         padding: EdgeInsets.symmetric(vertical: 16.0),
                         color: Colors.pink,
                         onPressed: () {},
@@ -121,7 +122,8 @@ class LoginThreePage extends StatelessWidget {
                           width: 20.0,
                         ),
                         Expanded(
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(),
                             child: Text("Facebook"),
                             textColor: Colors.white,
                             color: Colors.blue,
@@ -136,7 +138,8 @@ class LoginThreePage extends StatelessWidget {
                           width: 10.0,
                         ),
                         Expanded(
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(),
                             child: Text("Twitter"),
                             textColor: Colors.white,
                             color: Colors.indigo,
@@ -156,7 +159,7 @@ class LoginThreePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text("Dont have an account?"),
-                        FlatButton(
+                        TextButton(
                           child: Text("Sign up"),
                           textColor: Colors.indigo,
                           onPressed: () {},

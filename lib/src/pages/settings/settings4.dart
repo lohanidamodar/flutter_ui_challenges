@@ -152,7 +152,7 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                   ],
                 ),
                 actions: [
-                  FlatButton(
+                  TextButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

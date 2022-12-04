@@ -6,6 +6,7 @@ import '../../../core/presentation/res/assets.dart';
 const TextStyle boldText = TextStyle(
   fontWeight: FontWeight.bold,
 );
+
 class InvitationAuthPage extends StatefulWidget {
   static final String path = "lib/src/pages/invitation/inauth.dart";
   @override
@@ -15,7 +16,7 @@ class InvitationAuthPage extends StatefulWidget {
 class _InvitationAuthPageState extends State<InvitationAuthPage> {
   bool signupForm;
   @override
-  void initState() { 
+  void initState() {
     super.initState();
     signupForm = true;
   }
@@ -97,7 +98,9 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                         ),
                       ),
                       AnimatedSwitcher(
-                        duration: Duration(milliseconds: 200,),
+                        duration: Duration(
+                          milliseconds: 200,
+                        ),
                         child: signupForm ? SignUp() : SignIn(),
                       ),
                     ],
@@ -113,7 +116,10 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                   ),
                   child: OutlineButton.icon(
                     padding: const EdgeInsets.all(16.0),
-                    icon: Icon(FontAwesomeIcons.google,color: Colors.red,),
+                    icon: Icon(
+                      FontAwesomeIcons.google,
+                      color: Colors.red,
+                    ),
                     label: Text("Google"),
                     onPressed: () {},
                   ),
@@ -161,12 +167,13 @@ class SignUp extends StatelessWidget {
             padding: const EdgeInsets.symmetric(
               horizontal: 32.0,
             ),
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               elevation: 0,
               highlightElevation: 0,
               textColor: Colors.white,
               color: Colors.pink,
-              onPressed: (){},
+              onPressed: () {},
               child: Text("Sign up"),
             ),
           ),
@@ -211,7 +218,8 @@ class SignIn extends StatelessWidget {
             padding: const EdgeInsets.symmetric(
               horizontal: 32.0,
             ),
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               elevation: 0,
               highlightElevation: 0,
               textColor: Colors.white,

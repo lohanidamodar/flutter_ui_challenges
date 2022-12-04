@@ -14,7 +14,6 @@ const TextStyle primaryText = TextStyle(
   color: primary,
 );
 
-
 class InvitationLandingPage extends StatelessWidget {
   static final String path = "lib/src/pages/invitation/inlanding.dart";
   @override
@@ -53,7 +52,8 @@ class InvitationLandingPage extends StatelessWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 8.0),
-                    child: RaisedButton(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(),
                       highlightElevation: 0,
                       elevation: 0,
                       child: Text("Create an Account"),
@@ -72,7 +72,7 @@ class InvitationLandingPage extends StatelessWidget {
                       child: Text("Sign in with Google"),
                       textColor: Colors.white,
                       color: Colors.white,
-                      onPressed: () =>Navigator.pushNamed(context, 'auth'),
+                      onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
                   const SizedBox(height: 10.0),

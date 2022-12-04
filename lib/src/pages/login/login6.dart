@@ -23,9 +23,8 @@ class LoginSixPage extends StatelessWidget {
                   top: 15.0,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.yellow,
-                      borderRadius: BorderRadius.circular(20.0)
-                    ),
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.circular(20.0)),
                     width: 70.0,
                     height: 20.0,
                   ),
@@ -65,7 +64,8 @@ class LoginSixPage extends StatelessWidget {
             const SizedBox(height: 120.0),
             Align(
               alignment: Alignment.centerRight,
-              child: RaisedButton(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(),
                 padding: const EdgeInsets.fromLTRB(40.0, 16.0, 30.0, 16.0),
                 color: Colors.yellow,
                 elevation: 0,

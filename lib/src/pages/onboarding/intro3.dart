@@ -87,7 +87,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          FlatButton(
+          TextButton(
             textColor: Colors.grey.shade600,
             child: Text("Skip"),
             onPressed: () {

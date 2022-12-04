@@ -101,7 +101,7 @@ class BikeHomePage extends StatelessWidget {
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
                   Spacer(),
-                  FlatButton(
+                  TextButton(
                     child: Text("View all"),
                     onPressed: () {},
                   ),

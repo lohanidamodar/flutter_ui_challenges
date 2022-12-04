@@ -65,8 +65,11 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                     ),
                   ),
                 ),
-                RaisedButton(
-                  color: progress.containsKey(progress[index]) ? Theme.of(context).primaryColor : Colors.grey.shade800,
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(),
+                  color: progress.containsKey(progress[index])
+                      ? Theme.of(context).primaryColor
+                      : Colors.grey.shade800,
                   onPressed: () {
                     if (progress.containsKey(progress[index]))
                       setState(() {
@@ -77,8 +80,10 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                         progress[index] = index;
                       });
                   },
-                  child: Text(progress.containsKey(progress[index]) ?
-                    'Unselect Page ${currentIndex +1}' : 'Select Page ${currentIndex +1}' ,
+                  child: Text(
+                    progress.containsKey(progress[index])
+                        ? 'Unselect Page ${currentIndex + 1}'
+                        : 'Select Page ${currentIndex + 1}',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -87,7 +92,8 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        RaisedButton(
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(),
                           child: Icon(
                             Icons.chevron_left,
                             color: Colors.white,
@@ -118,7 +124,8 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                                 fontWeight: FontWeight.w700, fontSize: 35),
                           ),
                         ),
-                        RaisedButton(
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(),
                           child: Icon(
                             Icons.chevron_right,
                             color: Colors.white,

@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 
 class LoginSevenPage extends StatefulWidget {
-    static final String path = "lib/src/pages/login/login7.dart";
+  static final String path = "lib/src/pages/login/login7.dart";
   @override
   _LoginSevenPageState createState() => _LoginSevenPageState();
 }
@@ -84,7 +84,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               elevation: 2.0,
               borderRadius: BorderRadius.all(Radius.circular(30)),
               child: TextField(
-                onChanged: (String value){},
+                onChanged: (String value) {},
                 cursorColor: Colors.deepOrange,
                 decoration: InputDecoration(
                     hintText: "Email",
@@ -111,7 +111,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               elevation: 2.0,
               borderRadius: BorderRadius.all(Radius.circular(30)),
               child: TextField(
-                onChanged: (String value){},
+                onChanged: (String value) {},
                 cursorColor: Colors.deepOrange,
                 decoration: InputDecoration(
                     hintText: "Password",
@@ -138,7 +138,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(100)),
                     color: Color(0xffff3a5a)),
-                child: FlatButton(
+                child: TextButton(
                   child: Text(
                     "Login",
                     style: TextStyle(
@@ -149,17 +149,35 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                   onPressed: () {},
                 ),
               )),
-              SizedBox(height: 20,),
-          Center(
-            child: Text("FORGOT PASSWORD ?", style: TextStyle(color:Colors.red,fontSize: 12 ,fontWeight: FontWeight.w700),),
+          SizedBox(
+            height: 20,
           ),
-          SizedBox(height: 40,),
+          Center(
+            child: Text(
+              "FORGOT PASSWORD ?",
+              style: TextStyle(
+                  color: Colors.red, fontSize: 12, fontWeight: FontWeight.w700),
+            ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("Don't have an Account ? ", style: TextStyle(color:Colors.black,fontSize: 12 ,fontWeight: FontWeight.normal),),
-              Text("Sign Up ", style: TextStyle(color:Colors.red, fontWeight: FontWeight.w500,fontSize: 12, decoration: TextDecoration.underline )),
-
+              Text(
+                "Don't have an Account ? ",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal),
+              ),
+              Text("Sign Up ",
+                  style: TextStyle(
+                      color: Colors.red,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 12,
+                      decoration: TextDecoration.underline)),
             ],
           )
         ],

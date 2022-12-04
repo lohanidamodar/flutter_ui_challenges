@@ -48,7 +48,9 @@ class AuthOnePage extends StatelessWidget {
                         SizedBox(height: 10.0),
                         SizedBox(
                           width: double.infinity,
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                          ),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.0)),
                             padding: const EdgeInsets.all(16.0),
@@ -79,7 +81,9 @@ class AuthOnePage extends StatelessWidget {
                     SizedBox(height: 10.0),
                     SizedBox(
                       width: double.infinity,
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                          ),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5.0)),
                         padding: const EdgeInsets.all(16.0),
@@ -96,7 +100,9 @@ class AuthOnePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        RaisedButton.icon(
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                          ),.icon(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(2.0)),
                           color: Colors.red,
@@ -111,7 +117,9 @@ class AuthOnePage extends StatelessWidget {
                           onPressed: () {},
                         ),
                         SizedBox(width: 10.0),
-                        RaisedButton.icon(
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                          ),.icon(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(2.0)),
                           color: Colors.indigo,

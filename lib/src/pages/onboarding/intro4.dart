@@ -76,7 +76,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          FlatButton(
+          TextButton(
             textColor: Colors.grey.shade700,
             child: Text("Skip"),
             onPressed: () {

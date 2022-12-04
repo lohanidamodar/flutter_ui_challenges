@@ -25,7 +25,7 @@ class RecipeDetailsPage extends StatelessWidget {
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: <Widget>[
-          FlatButton.icon(
+          TextButton.icon(
             icon: Icon(Icons.play_circle_filled, color: Colors.red),
             label: Text("Watch Recipe"),
             onPressed: () {},

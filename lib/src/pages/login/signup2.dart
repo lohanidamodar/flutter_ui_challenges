@@ -84,7 +84,8 @@ class SignupTwoPage extends StatelessWidget {
             const SizedBox(height: 60.0),
             Align(
               alignment: Alignment.centerRight,
-              child: RaisedButton(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(),
                 padding: const EdgeInsets.fromLTRB(40.0, 16.0, 30.0, 16.0),
                 color: Colors.yellow,
                 elevation: 0,

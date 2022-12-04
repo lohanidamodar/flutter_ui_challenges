@@ -289,27 +289,16 @@ class SportsNewsOnePage extends StatelessWidget {
         elevation: 0,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.listAlt),
-            title: Padding(
-              padding: const EdgeInsets.only(top: 4.0),
-              child: Icon(
-                FontAwesomeIcons.solidCircle,
-                size: 8.0,
-                color: primaryColor,
-              ),
-            ),
+            icon: Icon(FontAwesomeIcons.rectangleList),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bookmark),
-            title: Text(""),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.chartBar),
-            title: Text(""),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.clipboard),
-            title: Text(""),
           ),
         ],
       ),

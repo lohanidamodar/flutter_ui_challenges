@@ -92,7 +92,8 @@ class LoginEightPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30.0),
-                  RaisedButton(
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(),
                     elevation: 0,
                     color: Colors.red,
                     shape: RoundedRectangleBorder(
@@ -115,7 +116,8 @@ class LoginEightPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(),
               color: Colors.white,
               textColor: Colors.black,
               child: Text(
