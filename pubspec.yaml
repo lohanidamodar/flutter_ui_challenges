@@ -35,6 +35,7 @@ dev_dependencies:
     sdk: flutter
   flutter_automation: null
   flutter_launcher_icons: ^0.11.0
+  flutter_lints: ^2.0.1
 
 flutter_icons:
   android: true

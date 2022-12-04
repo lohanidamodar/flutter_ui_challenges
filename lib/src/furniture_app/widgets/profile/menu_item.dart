@@ -1,9 +1,9 @@
 import '../../utils/constant.dart';
 import 'package:flutter/material.dart';
 
-class MenuItem extends StatelessWidget {
+class ProfileMenuItem extends StatelessWidget {
   final ProfileMenu menu;
-  MenuItem({this.menu});
+  ProfileMenuItem({this.menu});
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;

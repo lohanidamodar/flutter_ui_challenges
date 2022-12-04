@@ -1,5 +1,5 @@
 import '../../utils/constant.dart';
-import '../../widgets/profile/menu_item.dart' as menu;
+import '../../widgets/profile/menu_item.dart';
 import 'package:flutter/material.dart';
 
 class ProfileMenu extends StatelessWidget {
@@ -10,7 +10,7 @@ class ProfileMenu extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
         for (var menu in profileMenuList)
-          menu.MenuItem(
+          ProfileMenuItem(
             menu: menu,
           ),
       ],
