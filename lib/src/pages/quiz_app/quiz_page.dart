@@ -100,11 +100,12 @@ class _QuizPageState extends State<QuizPage> {
                     child: Container(
                       alignment: Alignment.bottomCenter,
                       child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                        color: Theme.of(context).primaryColor,
-                        textColor: Colors.white,
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0)),
+                          backgroundColor: Theme.of(context).primaryColor,
+                          foregroundColor: Colors.white,
+                        ),
                         child: Text(
                             _currentIndex == (widget.questions.length - 1)
                                 ? "Submit"
@@ -124,7 +125,7 @@ class _QuizPageState extends State<QuizPage> {
 
   void _nextSubmit() {
     if (_answers[_currentIndex] == null) {
-      _key.currentState.showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text("You must select an answer to continue."),
       ));
       return;

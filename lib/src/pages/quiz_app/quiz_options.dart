@@ -151,12 +151,13 @@ class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
           processing
               ? CircularProgressIndicator()
               : ElevatedButton(
-                  style: ElevatedButton.styleFrom(),
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                    backgroundColor: Theme.of(context).primaryColor,
+                    foregroundColor: Colors.white,
+                  ),
                   child: Text("Start Quiz"),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0)),
-                  color: Theme.of(context).primaryColor,
-                  textColor: Colors.white,
                   onPressed: _startQuiz,
                 ),
           SizedBox(height: 20.0),

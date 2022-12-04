@@ -34,10 +34,11 @@ class ProfileSixPage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         ElevatedButton(
-          style: ElevatedButton.styleFrom(),
-          color: Colors.transparent,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.transparent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20.0),
+            ),
           ),
           child: Text(
             'Back',

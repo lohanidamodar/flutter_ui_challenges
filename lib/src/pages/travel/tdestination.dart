@@ -69,7 +69,9 @@ class DestinationPage extends StatelessWidget {
                 children: <Widget>[
                   Expanded(child: Text("Places to visit")),
                   TextButton(
-                      textColor: Colors.red,
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.red,
+                      ),
                       onPressed: () {},
                       child: Text("See All")),
                 ],

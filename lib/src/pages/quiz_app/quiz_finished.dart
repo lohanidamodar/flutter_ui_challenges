@@ -94,26 +94,28 @@ class QuizFinishedPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 20.0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 20.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      backgroundColor: Colors.pink.withOpacity(0.8),
+                      foregroundColor: Colors.white,
                     ),
-                    color: Colors.pink.withOpacity(0.8),
-                    textColor: Colors.white,
                     child: Text("Goto Home"),
                     onPressed: () => Navigator.pop(context),
                   ),
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 20.0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 20.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      backgroundColor: Colors.deepPurple.withOpacity(0.8),
+                      foregroundColor: Colors.white,
                     ),
-                    color: Colors.deepPurple.withOpacity(0.8),
-                    textColor: Colors.white,
                     child: Text("Check Answers"),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
