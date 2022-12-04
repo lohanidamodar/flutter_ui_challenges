@@ -52,7 +52,9 @@ class GroceryDetailsPage extends StatelessWidget {
               child: Container(
                 color: Colors.green,
                 child: TextButton(
-                  color: Colors.green,
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.green,
+                  ),
                   onPressed: () {},
                   child: Text("Add to Cart"),
                 ),

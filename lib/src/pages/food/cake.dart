@@ -292,10 +292,13 @@ class CakePage extends StatelessWidget {
               ),
               SizedBox(height: 20.0),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(),
+                style: ElevatedButton.styleFrom(
+
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40.0)),
                 padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
+                backgroundColor: primary,
+                ),
                 onPressed: () {},
                 child: Text(
                   "Make order now",
@@ -305,7 +308,6 @@ class CakePage extends StatelessWidget {
                       letterSpacing: 1.50,
                       fontWeight: FontWeight.normal),
                 ),
-                color: primary,
               ),
               SizedBox(
                 height: 20.0,

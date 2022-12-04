@@ -121,8 +121,9 @@ class ConfirmOrderPage extends StatelessWidget {
           Container(
             width: double.infinity,
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(),
-              color: Theme.of(context).primaryColor,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).primaryColor,
+              ),
               onPressed: () => {},
               child: Text(
                 "Confirm Order",

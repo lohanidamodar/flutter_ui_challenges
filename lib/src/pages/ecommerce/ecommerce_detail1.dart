@@ -152,13 +152,15 @@ class EcommerceDetailOnePage extends StatelessWidget {
             color: Colors.transparent,
             padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(),
+              style: ElevatedButton.styleFrom(
+
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40.0)),
+              backgroundColor: Colors.orange,
+              foregroundColor: Colors.white,
+              ),
               onPressed: () {},
               child: Text("Add to Cart"),
-              color: Colors.orange,
-              textColor: Colors.white,
             ),
           ),
         ),
