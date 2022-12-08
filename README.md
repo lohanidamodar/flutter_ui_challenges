@@ -11,7 +11,7 @@ My effort on replicating various apps UI on flutter.
 
 ## Building and running the code [ **Updated** ]
 
-- Thank you all for your tremendous support. With latest update, I have removed all firebase dependency, and project now runs on web and desktop as well. Please use flutter master channel to run and build. If you want previous version with firebase please checkout [with-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/with-firebase) branch.
+- Should work on all platforms with Flutter Stable Release
 
 ### Table of contents
 - **[Animation Examples UI](#animations)**
