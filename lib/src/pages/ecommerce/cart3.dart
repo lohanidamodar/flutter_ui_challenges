@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/ambikadulal
- */
+/// Author: Ambika Dulal
+/// profile: https://github.com/ambikadulal
 
 class CartThreePage extends StatefulWidget {
   static final String path = "lib/src/pages/ecommerece/cart3.dart";

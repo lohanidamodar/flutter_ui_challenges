@@ -17,7 +17,8 @@ class QuotesPageTwo extends StatelessWidget {
           "If you quit now, you will end up right back where you first began. \n And when you frist began, you were desperate to be where you are right now. Keep going.",
     },
     {
-      "title": "The Life you want comes when you decide to go get it. \n Just Remember Think positive, hope positive,definatly happen positive",
+      "title":
+          "The Life you want comes when you decide to go get it. \n Just Remember Think positive, hope positive,definatly happen positive",
     },
     {
       "title":
@@ -35,17 +36,16 @@ class QuotesPageTwo extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
-          title: Text(
-            'Motivational',
-            style: TextStyle(
-              color: Colors.black,
-            ),
+        title: Text(
+          'Motivational',
+          style: TextStyle(
+            color: Colors.black,
           ),
-
-          ),
-      body:SingleChildScrollView(
-       child:Container(
-           height: MediaQuery.of(context).size.height,
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+            height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -64,7 +64,7 @@ class QuotesPageTwo extends StatelessWidget {
                 ],
               ),
             )),
-     ),
+      ),
     );
   }
 
@@ -95,44 +95,44 @@ class QuotesPageTwo extends StatelessWidget {
                   child: InkWell(
                     child: Row(
                       children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Icon(
-                            Icons.share, color: Colors.blue,
-                            size: 18,
-                          
-                          ),
-                      ),
-                       Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Icon(
-                            Icons.send, color: Colors.blue,
-                            size: 18,
-                          
-                          ),
-                      ),
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Icon(
-                            Icons.copy,color: Colors.blue,
+                            Icons.share,
+                            color: Colors.blue,
                             size: 18,
-                          
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Icon(
-                            Icons.emoji_emotions,color: Colors.blue,
+                            Icons.send,
+                            color: Colors.blue,
                             size: 18,
-                          
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Icon(
-                            Icons.emoji_events,color: Colors.blue,
+                            Icons.copy,
+                            color: Colors.blue,
                             size: 18,
-                          
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Icon(
+                            Icons.emoji_emotions,
+                            color: Colors.blue,
+                            size: 18,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Icon(
+                            Icons.emoji_events,
+                            color: Colors.blue,
+                            size: 18,
                           ),
                         ),
                         SizedBox(

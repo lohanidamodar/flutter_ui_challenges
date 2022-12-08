@@ -68,8 +68,10 @@ class DestinationPage extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Expanded(child: Text("Places to visit")),
-                  FlatButton(
-                      textColor: Colors.red,
+                  TextButton(
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.red,
+                      ),
                       onPressed: () {},
                       child: Text("See All")),
                 ],
@@ -159,7 +161,7 @@ class DestinationPage extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(5.0),
           child: PNetworkImage(
-            image,
+            image!,
             height: 80,
             fit: BoxFit.cover,
           ),

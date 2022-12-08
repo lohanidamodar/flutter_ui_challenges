@@ -4,7 +4,7 @@ PreferredSize customAppBar({required BuildContext context}) {
   return PreferredSize(
     preferredSize: Size.fromHeight(100),
     child: Container(
-      height: kToolbarHeight+20,
+      height: kToolbarHeight + 20,
       child: ListTile(
         contentPadding: const EdgeInsets.all(0),
         trailing: Container(
@@ -20,7 +20,10 @@ PreferredSize customAppBar({required BuildContext context}) {
           ),
         ),
         title: Padding(
-          padding: const EdgeInsets.only(top: 35.0, left: 16.0,),
+          padding: const EdgeInsets.only(
+            top: 35.0,
+            left: 16.0,
+          ),
         ),
       ),
     ),

@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'category.dart';
 import 'question.dart';
@@ -14,7 +14,8 @@ class QuizPage extends StatefulWidget {
   final List<Question> questions;
   final Category? category;
 
-  const QuizPage({Key? key, required this.questions, this.category}) : super(key: key);
+  const QuizPage({Key? key, required this.questions, this.category})
+      : super(key: key);
 
   @override
   _QuizPageState createState() => _QuizPageState();
@@ -22,25 +23,21 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   final TextStyle _questionStyle = TextStyle(
-    fontSize: 18.0,
-    fontWeight: FontWeight.w500,
-    color: Colors.white
-  );
+      fontSize: 18.0, fontWeight: FontWeight.w500, color: Colors.white);
 
   int _currentIndex = 0;
-  final Map<int,dynamic> _answers = {};
+  final Map<int, dynamic> _answers = {};
   final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
 
-
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     Question question = widget.questions[_currentIndex];
     final List<dynamic> options = question.incorrectAnswers!;
-    if(!options.contains(question.correctAnswer)) {
+    if (!options.contains(question.correctAnswer)) {
       options.add(question.correctAnswer);
       options.shuffle();
     }
-    
+
     return WillPopScope(
       onWillPop: _onWillPop as Future<bool> Function()?,
       child: Scaffold(
@@ -69,45 +66,50 @@ class _QuizPageState extends State<QuizPage> {
                     children: <Widget>[
                       CircleAvatar(
                         backgroundColor: Colors.white70,
-                        child: Text("${_currentIndex+1}"),
+                        child: Text("${_currentIndex + 1}"),
                       ),
                       SizedBox(width: 16.0),
                       Expanded(
-                        child: Text(widget.questions[_currentIndex].question!,
+                        child: Text(
+                          widget.questions[_currentIndex].question!,
                           softWrap: true,
-                          style: _questionStyle,),
+                          style: _questionStyle,
+                        ),
                       ),
                     ],
                   ),
-
                   SizedBox(height: 20.0),
                   Card(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                        ...options.map((option)=>RadioListTile(
-                          title: Text("$option"),
-                          groupValue: _answers[_currentIndex],
-                          value: option,
-                          onChanged: (dynamic value){
-                            setState(() {
-                              _answers[_currentIndex] = option;
-                            });
-                          },
-                        )),
+                        ...options.map((option) => RadioListTile(
+                              title: Text("$option"),
+                              groupValue: _answers[_currentIndex]!,
+                              value: option!,
+                              onChanged: (dynamic value) {
+                                setState(() {
+                                  _answers[_currentIndex] = option;
+                                });
+                              },
+                            )),
                       ],
                     ),
                   ),
                   Expanded(
                     child: Container(
                       alignment: Alignment.bottomCenter,
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0)
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0)),
+                          backgroundColor: Theme.of(context).primaryColor,
+                          foregroundColor: Colors.white,
                         ),
-                        color: Theme.of(context).primaryColor,
-                        textColor: Colors.white,
-                        child: Text( _currentIndex == (widget.questions.length - 1) ? "Submit" : "Next"),
+                        child: Text(
+                            _currentIndex == (widget.questions.length - 1)
+                                ? "Submit"
+                                : "Next"),
                         onPressed: _nextSubmit,
                       ),
                     ),
@@ -122,46 +124,46 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   void _nextSubmit() {
-    if(_answers[_currentIndex] == null) {
-      _key.currentState!.showSnackBar(SnackBar(
+    if (_answers[_currentIndex] == null) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text("You must select an answer to continue."),
       ));
       return;
     }
-    if(_currentIndex < (widget.questions.length - 1)){
+    if (_currentIndex < (widget.questions.length - 1)) {
       setState(() {
-          _currentIndex++;
+        _currentIndex++;
       });
     } else {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (_) => QuizFinishedPage(questions: widget.questions, answers: _answers)
-      ));
+          builder: (_) => QuizFinishedPage(
+              questions: widget.questions, answers: _answers)));
     }
   }
 
   Future<bool?> _onWillPop() async {
     return showDialog<bool>(
-      context: context,
-      builder: (_) {
-        return AlertDialog(
-          content: Text("Are you sure you want to quit the quiz? All your progress will be lost."),
-          title: Text("Warning!"),
-          actions: <Widget>[
-            FlatButton(
-              child: Text("Yes"),
-              onPressed: (){
-                Navigator.pop(context,true);
-              },
-            ),
-            FlatButton(
-              child: Text("No"),
-              onPressed: (){
-                Navigator.pop(context,false);
-              },
-            ),
-          ],
-        );
-      }
-    );
+        context: context,
+        builder: (_) {
+          return AlertDialog(
+            content: Text(
+                "Are you sure you want to quit the quiz? All your progress will be lost."),
+            title: Text("Warning!"),
+            actions: <Widget>[
+              TextButton(
+                child: Text("Yes"),
+                onPressed: () {
+                  Navigator.pop(context, true);
+                },
+              ),
+              TextButton(
+                child: Text("No"),
+                onPressed: () {
+                  Navigator.pop(context, false);
+                },
+              ),
+            ],
+          );
+        });
   }
 }

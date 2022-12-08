@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/forms/checkbox.dart';
 
@@ -15,7 +15,7 @@ class FormElementPage extends StatefulWidget {
 class _FormElementPageState extends State<FormElementPage> {
   bool downloadOverWifi = false;
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Form Elements'),
@@ -26,23 +26,23 @@ class _FormElementPageState extends State<FormElementPage> {
             PCheckboxListTile(
               title: "Download over wifi",
               value: downloadOverWifi,
-              onChanged: (value){
+              onChanged: (value) {
                 setState(() {
                   downloadOverWifi = value;
                 });
-              }
-            ,),
+              },
+            ),
             Divider(),
             PCheckboxListTile(
               title: "Download over wifi",
               value: false,
-              onChanged: (value){},
+              onChanged: (value) {},
             ),
             Divider(),
             PCheckboxListTile(
               title: "Download over wifi",
               value: true,
-              onChanged: (value){},
+              onChanged: (value) {},
             ),
             Divider(),
           ],

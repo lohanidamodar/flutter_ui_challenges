@@ -2,7 +2,7 @@
  * Author: Mausam Rayamajhi
  * profile: https://github.com/mausamRayamajhi
   */
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import 'pages/furniture.dart';
 import 'pages/profile.dart';

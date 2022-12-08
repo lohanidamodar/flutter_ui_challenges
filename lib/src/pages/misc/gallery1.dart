@@ -5,23 +5,23 @@ import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1
 
 class GalleryPageOne extends StatelessWidget {
   static final String path = "lib/src/pages/misc/gallery1.dart";
-  final List<StaggeredTile> _staggeredTiles = const <StaggeredTile>[
-    const StaggeredTile.count(2, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(2, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(2, 1),
-    const StaggeredTile.count(1, 2),
-    const StaggeredTile.count(1, 1),
+  final List<QuiltedGridTile> _quiltedGridTiles = const <QuiltedGridTile>[
+    QuiltedGridTile(2, 2),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(2, 2),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(1, 1),
+    QuiltedGridTile(2, 1),
+    QuiltedGridTile(1, 2),
+    QuiltedGridTile(1, 1),
   ];
   @override
   Widget build(BuildContext context) {
@@ -37,28 +37,34 @@ class GalleryPageOne extends StatelessWidget {
         backgroundColor: Colors.transparent,
         iconTheme: IconThemeData(color: Colors.black),
         actions: <Widget>[
-          FlatButton(
-            textColor: Colors.blue,
+          TextButton(
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.blue,
+            ),
             child: Text("Add New"),
             onPressed: () {},
           )
         ],
       ),
-      body: StaggeredGridView.countBuilder(
+      body: GridView.custom(
         padding: const EdgeInsets.all(8.0),
-        crossAxisCount: 3,
-        itemCount: 16,
-        itemBuilder: (context, index) => Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(images[index % images.length]),
-                fit: BoxFit.cover,
-              ),
-              borderRadius: BorderRadius.circular(10.0)),
+        gridDelegate: SliverQuiltedGridDelegate(
+          crossAxisCount: 3,
+          mainAxisSpacing: 8.0,
+          crossAxisSpacing: 8.0,
+          repeatPattern: QuiltedGridRepeatPattern.inverted,
+          pattern: _quiltedGridTiles,
         ),
-        staggeredTileBuilder: (index) => _staggeredTiles[index],
-        mainAxisSpacing: 8.0,
-        crossAxisSpacing: 8.0,
+        childrenDelegate: SliverChildBuilderDelegate(
+            (context, index) => Container(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(images[index % images.length]),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(10.0)),
+                ),
+            childCount: 16),
       ),
     );
   }

@@ -45,7 +45,8 @@ class SignupTwoPage extends StatelessWidget {
                   const EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 decoration: InputDecoration(
-                    labelText: "Email", hasFloatingPlaceholder: true),
+                    labelText: "Email",
+                    floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
             Padding(
@@ -54,7 +55,8 @@ class SignupTwoPage extends StatelessWidget {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                    labelText: "Password", hasFloatingPlaceholder: true),
+                    labelText: "Password",
+                    floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
             Padding(
@@ -64,7 +66,7 @@ class SignupTwoPage extends StatelessWidget {
                 obscureText: true,
                 decoration: InputDecoration(
                     labelText: "Confirm password",
-                    hasFloatingPlaceholder: true),
+                    floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
             Padding(
@@ -84,14 +86,16 @@ class SignupTwoPage extends StatelessWidget {
             const SizedBox(height: 60.0),
             Align(
               alignment: Alignment.centerRight,
-              child: RaisedButton(
-                padding: const EdgeInsets.fromLTRB(40.0, 16.0, 30.0, 16.0),
-                color: Colors.yellow,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30.0),
-                        bottomLeft: Radius.circular(30.0))),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.fromLTRB(40.0, 16.0, 30.0, 16.0),
+                  backgroundColor: Colors.yellow,
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(30.0),
+                          bottomLeft: Radius.circular(30.0))),
+                ),
                 onPressed: () {},
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -114,17 +118,18 @@ class SignupTwoPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                OutlineButton.icon(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 8.0,
-                    horizontal: 30.0,
+                OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 8.0,
+                      horizontal: 30.0,
+                    ),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                    side: BorderSide(color: Colors.red),
+                    backgroundColor: Colors.red,
+                    foregroundColor: Colors.red,
                   ),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0)),
-                  borderSide: BorderSide(color: Colors.red),
-                  color: Colors.red,
-                  highlightedBorderColor: Colors.red,
-                  textColor: Colors.red,
                   icon: Icon(
                     FontAwesomeIcons.googlePlusG,
                     size: 18.0,
@@ -133,17 +138,18 @@ class SignupTwoPage extends StatelessWidget {
                   onPressed: () {},
                 ),
                 const SizedBox(width: 10.0),
-                OutlineButton.icon(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 8.0,
-                    horizontal: 30.0,
+                OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 8.0,
+                      horizontal: 30.0,
+                    ),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                    side: BorderSide(color: Colors.indigo),
+                    backgroundColor: Colors.indigo,
+                    foregroundColor: Colors.indigo,
                   ),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0)),
-                  highlightedBorderColor: Colors.indigo,
-                  borderSide: BorderSide(color: Colors.indigo),
-                  color: Colors.indigo,
-                  textColor: Colors.indigo,
                   icon: Icon(
                     FontAwesomeIcons.facebookF,
                     size: 18.0,

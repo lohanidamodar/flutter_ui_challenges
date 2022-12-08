@@ -20,41 +20,51 @@ class DialogsPage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(8.0),
           children: <Widget>[
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Payment Success"),
               onPressed: () => _paymentSuccessDialog(context),
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Alert Dialog"),
               onPressed: () => _alertDialog(context),
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Success Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.SUCCESS ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.SUCCESS),
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Info Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.INFO ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.INFO),
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Warning Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.WARNING ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.WARNING),
             ),
-            RaisedButton(
-              color: Colors.lightGreen,
-              colorBrightness: Brightness.light,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
               child: Text("Error Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.ERROR ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.ERROR),
             ),
           ],
         ),
@@ -129,7 +139,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Alert!",
-                      style: Theme.of(context).textTheme.title,
+                      style: Theme.of(context).textTheme.headline6,
                     ),
                     SizedBox(height: 10.0),
                     Flexible(
@@ -140,28 +150,30 @@ class BeautifulAlertDialog extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Expanded(
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.red,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0)),
+                            ),
                             child: Text("No"),
-                            color: Colors.red,
-                            colorBrightness: Brightness.dark,
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0)),
                           ),
                         ),
                         SizedBox(width: 10.0),
                         Expanded(
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0)),
+                            ),
                             child: Text("Yes"),
-                            color: Colors.green,
-                            colorBrightness: Brightness.dark,
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0)),
                           ),
                         ),
                       ],
@@ -355,8 +367,10 @@ class CustomAlertDialog extends StatelessWidget {
                 SizedBox(height: 40.0),
                 SizedBox(
                   width: double.infinity,
-                  child: FlatButton(
-                    padding: const EdgeInsets.all(5.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.all(5.0),
+                    ),
                     child: Text(buttonLabel),
                     onPressed: () => Navigator.pop(context, true),
                   ),

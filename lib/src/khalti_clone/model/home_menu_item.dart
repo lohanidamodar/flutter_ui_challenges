@@ -10,5 +10,4 @@ class HomeMenuItem {
   final String? subtitle;
 
   HomeMenuItem(this.title, this.icon, {this.subtitle});
-
 }

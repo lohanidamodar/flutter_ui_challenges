@@ -44,11 +44,13 @@ class DashboardTwoPage extends StatelessWidget {
                           ListTile(
                             title: Text(
                               "9,850",
-                              style:
-                                  Theme.of(context).textTheme.display1!.copyWith(
-                                        color: Colors.white,
-                                        fontSize: 24.0,
-                                      ),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline4
+                                  ?.copyWith(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                  ),
                             ),
                             trailing: Icon(
                               FontAwesomeIcons.walking,
@@ -75,11 +77,13 @@ class DashboardTwoPage extends StatelessWidget {
                           ListTile(
                             title: Text(
                               "70 bpm",
-                              style:
-                                  Theme.of(context).textTheme.display1!.copyWith(
-                                        color: Colors.white,
-                                        fontSize: 24.0,
-                                      ),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline4
+                                  ?.copyWith(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                  ),
                             ),
                             trailing: Icon(
                               FontAwesomeIcons.heartbeat,
@@ -112,11 +116,13 @@ class DashboardTwoPage extends StatelessWidget {
                           ListTile(
                             title: Text(
                               "2,430",
-                              style:
-                                  Theme.of(context).textTheme.display1!.copyWith(
-                                        color: Colors.white,
-                                        fontSize: 24.0,
-                                      ),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline4
+                                  ?.copyWith(
+                                    color: Colors.white,
+                                    fontSize: 24.0,
+                                  ),
                             ),
                             trailing: Icon(
                               FontAwesomeIcons.fire,
@@ -143,11 +149,13 @@ class DashboardTwoPage extends StatelessWidget {
                           ListTile(
                             title: Text(
                               "15 kms",
-                              style:
-                                  Theme.of(context).textTheme.display1!.copyWith(
-                                        fontSize: 24.0,
-                                        color: Colors.black,
-                                      ),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline4
+                                  ?.copyWith(
+                                    fontSize: 24.0,
+                                    color: Colors.black,
+                                  ),
                             ),
                             trailing: Icon(
                               FontAwesomeIcons.road,

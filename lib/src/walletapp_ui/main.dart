@@ -38,12 +38,12 @@ class _WalletAppState extends State<WalletApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(38, 81, 158, 1),
+      backgroundColor: const Color.fromRGBO(38, 81, 158, 1),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.credit_card), title: Text("Card")),
+              icon: Icon(Icons.credit_card), label: "Card"),
         ],
         onTap: (index) {
           setState(() {
@@ -56,7 +56,7 @@ class _WalletAppState extends State<WalletApp> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         elevation: 0,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: screens[selectedTab],

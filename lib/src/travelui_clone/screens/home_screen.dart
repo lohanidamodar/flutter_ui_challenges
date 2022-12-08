@@ -93,21 +93,21 @@ class _HomeScreenState extends State<HomeScreen> {
               Icons.search,
               size: 30.0,
             ),
-            title: SizedBox.shrink(),
+           
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.local_pizza,
               size: 30.0,
             ),
-            title: SizedBox.shrink(),
+           
           ),
           BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 15.0,
               backgroundImage: NetworkImage('https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F1.jpg?alt=media'),
             ),
-            title: SizedBox.shrink(),
+           
           )
         ],
       ),

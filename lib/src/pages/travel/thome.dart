@@ -76,11 +76,11 @@ class TravelHomePage extends StatelessWidget {
         currentIndex: 0,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.location_searching), title: Text("Discover")),
+              icon: Icon(Icons.location_searching), label: "Discover"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.location_on), title: Text("Popular")),
+              icon: Icon(Icons.location_on), label: "Popular"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings), title: Text("Settings")),
+              icon: Icon(Icons.settings), label: "Settings"),
         ],
       ),
     );
@@ -114,7 +114,7 @@ class TravelHomePage extends StatelessWidget {
             ClipRRect(
                 borderRadius: BorderRadius.circular(5.0),
                 child: PNetworkImage(
-                  image,
+                  image!,
                   fit: BoxFit.cover,
                 )),
             Positioned(

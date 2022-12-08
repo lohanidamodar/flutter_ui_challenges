@@ -8,118 +8,155 @@ import '../../../res/typography.dart';
 
 class RegisterPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mainBg,
       body: Container(
-        margin: const EdgeInsets.fromLTRB(16.0,40.0,16.0,16.0),
+        margin: const EdgeInsets.fromLTRB(16.0, 40.0, 16.0, 16.0),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2.0),
-          color: Colors.white
-        ),
+            borderRadius: BorderRadius.circular(2.0), color: Colors.white),
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text("Full Name", style: smallText,),
+              Text(
+                "Full Name",
+                style: smallText,
+              ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text("Mobile Number", style: smallText,),
+              Text(
+                "Mobile Number",
+                style: smallText,
+              ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text("Email (Optional)", style: smallText,),
+              Text(
+                "Email (Optional)",
+                style: smallText,
+              ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text("Date Type", style: smallText,),
+              Text(
+                "Date Type",
+                style: smallText,
+              ),
               Row(
                 children: <Widget>[
                   Radio(
                     groupValue: "AD",
                     value: "AD",
-                    onChanged: (dynamic value){},
+                    onChanged: (value) {},
                   ),
                   Text("AD"),
                   Spacer(),
                   Radio(
                     groupValue: "AD",
                     value: "BS",
-                    onChanged: (dynamic value){},
+                    onChanged: (value) {},
                   ),
                   Text("BS"),
                   Spacer(),
                 ],
               ),
               const SizedBox(height: 10.0),
-              Text("Date of Birth (YYYY-MM-DD)", style: smallText,),
+              Text(
+                "Date of Birth (YYYY-MM-DD)",
+                style: smallText,
+              ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text("Date Type", style: smallText,),
+              Text(
+                "Date Type",
+                style: smallText,
+              ),
               Row(
                 children: <Widget>[
                   Radio(
                     groupValue: "Male",
                     value: "Male",
-                    onChanged: (dynamic value){},
+                    onChanged: (value) {},
                   ),
                   Text("Male"),
                   Spacer(),
                   Radio(
                     groupValue: "Male",
                     value: "Female",
-                    onChanged: (dynamic value){},
+                    onChanged: (value) {},
                   ),
                   Text("Female"),
                   Spacer(),
                   Radio(
                     groupValue: "Male",
                     value: "Other",
-                    onChanged: (dynamic value){},
+                    onChanged: (value) {},
                   ),
                   Text("Other"),
                   Spacer(),
-                  
                 ],
               ),
               const SizedBox(height: 10.0),
-
-              Text("Password", style: smallText,),
+              Text(
+                "Password",
+                style: smallText,
+              ),
               _buildTextField(obscureText: true),
               const SizedBox(height: 20.0),
-              Text("Confirm Password", style: smallText,),
+              Text(
+                "Confirm Password",
+                style: smallText,
+              ),
               _buildTextField(obscureText: true),
               const SizedBox(height: 20.0),
-              Text("By signing up you agree to the Terms & Conditions", style: smallText,),
+              Text(
+                "By signing up you agree to the Terms & Conditions",
+                style: smallText,
+              ),
               const SizedBox(height: 10.0),
               SizedBox(
-                width:double.infinity,
-                child: RaisedButton(
-                  color: Theme.of(context).primaryColor,
-                  textColor: Colors.white,
-                  child: Text("Sign Up".toUpperCase()),
-                  onPressed: (){},
-                )
-              ),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).primaryColor,
+                      foregroundColor: Colors.white,
+                    ),
+                    child: Text("Sign Up".toUpperCase()),
+                    onPressed: () {},
+                  )),
               const SizedBox(height: 10.0),
               Row(
                 children: <Widget>[
-                  Expanded(child: Divider(color: Colors.grey.shade600,)),
+                  Expanded(
+                      child: Divider(
+                    color: Colors.grey.shade600,
+                  )),
                   const SizedBox(width: 10.0),
-                  Text("Already have an account?",style: smallText,),
+                  Text(
+                    "Already have an account?",
+                    style: smallText,
+                  ),
                   const SizedBox(width: 10.0),
-                  Expanded(child: Divider(color: Colors.grey.shade600,)),
+                  Expanded(
+                      child: Divider(
+                    color: Colors.grey.shade600,
+                  )),
                 ],
               ),
               const SizedBox(height: 20.0),
               GestureDetector(
                 child: SizedBox(
                   width: double.infinity,
-                  child: Text("Login".toUpperCase(), textAlign: TextAlign.center, style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontWeight: FontWeight.w600
-                  ),),
+                  child: Text(
+                    "Login".toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
-                onTap: ()=>Navigator.pushNamedAndRemoveUntil(context,'login',(Route<dynamic> route) => false),
+                onTap: () => Navigator.pushNamedAndRemoveUntil(
+                    context, 'login', (Route<dynamic> route) => false),
               ),
               const SizedBox(height: 20.0),
             ],

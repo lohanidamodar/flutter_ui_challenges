@@ -10,7 +10,7 @@ class Category extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Stack(
-          overflow: Overflow.visible,
+          clipBehavior: Clip.none,
           children: <Widget>[
             GestureDetector(
               onTap: () {

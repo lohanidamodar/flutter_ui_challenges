@@ -64,7 +64,7 @@ class _IntroSixPageState extends State<IntroSixPage> {
           ),
           Align(
             alignment: Alignment.bottomLeft,
-            child: FlatButton(
+            child: TextButton(
               child: Text("Skip"),
               onPressed: () {
                 Navigator.pop(context);
@@ -135,7 +135,7 @@ class IntroItem extends StatelessWidget {
                     child: Material(
                       elevation: 4.0,
                       child: PNetworkImage(
-                        imageUrl,
+                        imageUrl!,
                         fit: BoxFit.cover,
                       ),
                     ),

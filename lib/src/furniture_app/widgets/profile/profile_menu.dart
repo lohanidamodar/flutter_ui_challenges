@@ -10,7 +10,7 @@ class ProfileMenu extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
         for (var menu in profileMenuList)
-          MenuItem(
+          ProfileMenuItem(
             menu: menu,
           ),
       ],

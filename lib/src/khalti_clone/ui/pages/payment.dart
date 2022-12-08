@@ -34,14 +34,15 @@ class _PaymentState extends State<Payment> {
               ),
             ),
             SizedBox(height: 20),
-            RaisedButton(
-              onPressed: () {
-              },
+            ElevatedButton(
+              onPressed: () {},
               child: Text('Pay',
                   style: TextStyle(
                     color: Colors.white,
                   )),
-              color: Theme.of(context).primaryColor,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).primaryColor,
+              ),
             ),
             Text(
               'Note: Make sure your device have khalti app',

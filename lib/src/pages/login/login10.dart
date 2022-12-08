@@ -26,9 +26,9 @@ class LoginTenPage extends StatelessWidget {
             body: ListView(
               children: [
                 SizedBox(
-                  width:100,
-                  height:60,
-                  child:Image.asset(appLogo),
+                  width: 100,
+                  height: 60,
+                  child: Image.asset(appLogo),
                 ),
                 const SizedBox(height: 30.0),
                 Container(
@@ -71,12 +71,14 @@ class LoginTenPage extends StatelessWidget {
                           alignment: Alignment.centerRight,
                           child: Text("Forgot your Password?")),
                       const SizedBox(height: 20.0),
-                      RaisedButton(
-                        padding: const EdgeInsets.all(16.0),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30.0)),
-                        color: Colors.orange,
-                        textColor: Colors.white,
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.all(16.0),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          backgroundColor: Colors.orange,
+                          foregroundColor: Colors.white,
+                        ),
                         onPressed: () {},
                         child: Text("Login"),
                       ),

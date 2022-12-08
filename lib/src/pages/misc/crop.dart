@@ -1,7 +1,5 @@
-/**
- * Author: Mahdi K. Fard
- * profile: https://github.com/xclud
- */
+/// Author: Mahdi K. Fard
+/// profile: https://github.com/xclud
 import 'dart:math';
 import 'dart:ui' as ui;
 
@@ -15,11 +13,11 @@ class CropPage extends StatefulWidget {
 }
 
 class _CropPageState extends State<CropPage> {
-  final _cropKey = CropController(aspectRatio: 1920 / 1280.0);
+  final _controller = CropController(aspectRatio: 1920 / 1280.0);
   double _rotation = 0;
 
   void _cropImage() async {
-    final cropped = await _cropKey.crop();
+    final cropped = await _controller.crop();
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => Scaffold(
@@ -57,7 +55,7 @@ class _CropPageState extends State<CropPage> {
         children: <Widget>[
           Expanded(
             child: Crop(
-              controller: _cropKey,
+              controller: _controller,
               child: Image.asset('assets/placeholder.jpg'),
             ),
           ),
@@ -67,9 +65,9 @@ class _CropPageState extends State<CropPage> {
                 icon: Icon(Icons.undo),
                 tooltip: 'Undo',
                 onPressed: () {
-                  _cropKey.rotation = 0;
-                  _cropKey.scale = 1;
-                  _cropKey.offset = Offset.zero;
+                  _controller.rotation = 0;
+                  _controller.scale = 1;
+                  _controller.offset = Offset.zero;
                   setState(() {
                     _rotation = 0;
                   });
@@ -89,7 +87,7 @@ class _CropPageState extends State<CropPage> {
                     onChanged: (n) {
                       setState(() {
                         _rotation = n.roundToDouble();
-                        _cropKey.rotation = _rotation;
+                        _controller.rotation = _rotation;
                       });
                     },
                   ),

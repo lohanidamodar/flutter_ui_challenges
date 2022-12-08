@@ -4,7 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/data/models/menu.dart';
+import 'package:flutter_ui_challenges/core/data/models/menu.dart' as menu;
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
@@ -30,7 +30,7 @@ class _MainMenuState extends State<MainMenu> {
     return ListView(
       physics: BouncingScrollPhysics(),
       children: <Widget>[
-        ...pages.map((page) => page is MenuItem
+        ...pages.map((page) => page is menu.MenuItem
             ? _buildExpandableMenu(page, context)
             : BorderedContainer(
                 margin: const EdgeInsets.symmetric(
@@ -43,7 +43,7 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-  Widget _buildExpandableMenu(MenuItem page, BuildContext context) {
+  Widget _buildExpandableMenu(menu.MenuItem page, BuildContext context) {
     return RoundedContainer(
       margin: EdgeInsets.symmetric(
           horizontal:
@@ -69,13 +69,14 @@ class _MainMenuState extends State<MainMenu> {
     );
   }
 
-  List<Widget> _buildSubMenus(List<SubMenuItem> items, BuildContext context) {
+  List<Widget> _buildSubMenus(
+      List<menu.SubMenuItem> items, BuildContext context) {
     final List<Widget> subMenus = [];
     items.forEach((item) => subMenus.add(_buildSubMenu(item, context)));
     return subMenus;
   }
 
-  Widget _buildSubMenu(SubMenuItem item, BuildContext context) {
+  Widget _buildSubMenu(menu.SubMenuItem item, BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 32.0),
       child: ListTile(
@@ -88,7 +89,7 @@ class _MainMenuState extends State<MainMenu> {
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.code),
-              onPressed: () => _openPage(context, item, OpenMode.CODE),
+              onPressed: () => _openPage(context, item, menu.OpenMode.CODE),
             ),
           ],
         ),
@@ -99,16 +100,17 @@ class _MainMenuState extends State<MainMenu> {
               .subtitle1!
               .copyWith(color: Colors.black87),
         ),
-        onTap: () => _openPage(context, item, OpenMode.PREVIEW),
+        onTap: () => _openPage(context, item, menu.OpenMode.PREVIEW),
       ),
     );
   }
 
-  void _openPage(BuildContext context, SubMenuItem item, OpenMode mode) {
+  void _openPage(
+      BuildContext context, menu.SubMenuItem item, menu.OpenMode mode) {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => mode == OpenMode.CODE
+          builder: (context) => mode == menu.OpenMode.CODE
               ? DesignPreviewsPage(
                   page: item.page, title: item.title, path: item.path)
               : item.page,

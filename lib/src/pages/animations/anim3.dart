@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 
 class FancyAppbarAnimation extends StatefulWidget {
@@ -58,7 +58,8 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                   padding: const EdgeInsets.only(left: 16.0, right: 50),
                   height: 190,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
+                    borderRadius:
+                        BorderRadius.only(bottomRight: Radius.circular(30.0)),
                     color: Colors.white,
                   ),
                   child: Column(
@@ -107,31 +108,35 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
             ),
           ),
           Positioned(
-            top: topPosition,
-            left: 0,
-            right: 0,
-            child: Container(
-              height: 80,
-              padding: const EdgeInsets.only(left: 50,top: 25.0,right: 20.0),
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
-                color: Colors.white.withOpacity(_getOpacity()),
-              ),
-              child: DefaultTextStyle(
-                style: TextStyle(),
-                softWrap: false,
-                overflow: TextOverflow.ellipsis,
-                child: Semantics(
-                      child: Text(
+              top: topPosition,
+              left: 0,
+              right: 0,
+              child: Container(
+                height: 80,
+                padding:
+                    const EdgeInsets.only(left: 50, top: 25.0, right: 20.0),
+                alignment: Alignment.centerLeft,
+                decoration: BoxDecoration(
+                  borderRadius:
+                      BorderRadius.only(bottomRight: Radius.circular(30.0)),
+                  color: Colors.white.withOpacity(_getOpacity()),
+                ),
+                child: DefaultTextStyle(
+                  style: TextStyle(),
+                  softWrap: false,
+                  overflow: TextOverflow.ellipsis,
+                  child: Semantics(
+                    child: Text(
                       'Awesome and simple app bar hiding animation',
-                      style: TextStyle(color: Colors.black, fontSize: 18.0,fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold),
                     ),
-                  header: true,
+                    header: true,
+                  ),
                 ),
-                ),
-              )
-          ),
+              )),
           SizedBox(
             height: 80,
             child: AppBar(

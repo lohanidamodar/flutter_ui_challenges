@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/ambikadulal
- */
+/// Author: Ambika Dulal
+/// profile: https://github.com/ambikadulal
 
 class HiddenDrawerNav extends StatefulWidget {
   static final String path = "lib/src/pages/navigation/automultiscreen.dart";

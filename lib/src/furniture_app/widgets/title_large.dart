@@ -24,7 +24,7 @@ class TitleLarge extends StatelessWidget {
         ),
         if (icon != null)
           Stack(
-            overflow: Overflow.visible,
+            clipBehavior: Clip.none,
             children: <Widget>[
               Icon(icon),
               Positioned(

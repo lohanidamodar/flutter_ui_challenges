@@ -48,11 +48,13 @@ class AuthOnePage extends StatelessWidget {
                         SizedBox(height: 10.0),
                         SizedBox(
                           width: double.infinity,
-                          child: RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5.0)),
-                            padding: const EdgeInsets.all(16.0),
-                            color: Colors.white,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0)),
+                              padding: const EdgeInsets.all(16.0),
+                              backgroundColor: Colors.white,
+                            ),
                             child: Text(
                               "Login",
                               style: TextStyle(color: Colors.pink),
@@ -79,11 +81,13 @@ class AuthOnePage extends StatelessWidget {
                     SizedBox(height: 10.0),
                     SizedBox(
                       width: double.infinity,
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5.0)),
-                        padding: const EdgeInsets.all(16.0),
-                        color: Colors.pink,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0)),
+                          padding: const EdgeInsets.all(16.0),
+                          backgroundColor: Colors.pink,
+                        ),
                         child: Text(
                           "Sign up",
                           style: TextStyle(color: Colors.white),
@@ -96,10 +100,12 @@ class AuthOnePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        RaisedButton.icon(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(2.0)),
-                          color: Colors.red,
+                        ElevatedButton.icon(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(2.0)),
+                            backgroundColor: Colors.red,
+                          ),
                           icon: Icon(
                             FontAwesomeIcons.google,
                             color: Colors.white,
@@ -111,10 +117,12 @@ class AuthOnePage extends StatelessWidget {
                           onPressed: () {},
                         ),
                         SizedBox(width: 10.0),
-                        RaisedButton.icon(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(2.0)),
-                          color: Colors.indigo,
+                        ElevatedButton.icon(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(2.0)),
+                            backgroundColor: Colors.indigo,
+                          ),
                           icon: Icon(
                             FontAwesomeIcons.facebook,
                             color: Colors.white,

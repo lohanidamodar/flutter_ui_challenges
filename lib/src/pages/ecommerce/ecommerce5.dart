@@ -64,19 +64,17 @@ class EcommerceFivePage extends StatelessWidget {
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today),
-              title: Text("Today's Special"),
+              label: "Today's Special",
             ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.fastfood,
-                  color: Colors.deepOrange,
-                ),
-                title: Text(
-                  "Foods",
-                  style: TextStyle(color: Colors.deepOrange),
-                )),
+              icon: Icon(
+                Icons.fastfood,
+                color: Colors.deepOrange,
+              ),
+              label: "Foods",
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings), title: Text("Settings")),
+                icon: Icon(Icons.settings), label: "Settings"),
           ],
         ),
         backgroundColor: Colors.white70.withOpacity(0.9),
@@ -162,8 +160,7 @@ class EcommerceFivePage extends StatelessWidget {
                         cards(brocoli, 'Brocoli', '30'),
                         cards(cabbage, 'Cabbage', '37'),
                         cards(mango, 'Mango', '22'),
-                        cards(
-                            pineapple, 'Pineapple', '90'),
+                        cards(pineapple, 'Pineapple', '90'),
                       ],
                     ),
                   ),

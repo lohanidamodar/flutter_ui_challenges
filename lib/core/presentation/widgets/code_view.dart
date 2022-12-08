@@ -61,7 +61,7 @@ class MyCodeViewState extends State<MyCodeView> {
         child: Icon(Icons.content_copy),
         onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
-          Scaffold.of(context).showSnackBar(SnackBar(
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text('Code link copied to Clipboard!'),
           ));
         },

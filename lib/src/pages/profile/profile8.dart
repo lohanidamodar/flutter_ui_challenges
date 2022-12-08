@@ -171,13 +171,13 @@ class ProfileHeader extends StatelessWidget {
               ),
               Text(
                 title,
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.headline6,
               ),
               if (subtitle != null) ...[
                 const SizedBox(height: 5.0),
                 Text(
                   subtitle!,
-                  style: Theme.of(context).textTheme.subtitle,
+                  style: Theme.of(context).textTheme.subtitle2,
                 ),
               ]
             ],

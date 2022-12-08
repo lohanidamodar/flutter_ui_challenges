@@ -237,7 +237,7 @@ class OnlinePersonAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      overflow: Overflow.visible,
+      clipBehavior: Clip.none,
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.only(right: 8.0),

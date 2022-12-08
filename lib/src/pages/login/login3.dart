@@ -86,14 +86,16 @@ class LoginThreePage extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       padding: EdgeInsets.all(30.0),
-                      child: RaisedButton(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        color: Colors.pink,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(vertical: 16.0),
+                          backgroundColor: Colors.pink,
+                          elevation: 11,
+                          shape: RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(40.0))),
+                        ),
                         onPressed: () {},
-                        elevation: 11,
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(40.0))),
                         child: Text("Login",
                             style: TextStyle(color: Colors.white70)),
                       ),
@@ -121,14 +123,16 @@ class LoginThreePage extends StatelessWidget {
                           width: 20.0,
                         ),
                         Expanded(
-                          child: RaisedButton(
-                            child: Text("Facebook"),
-                            textColor: Colors.white,
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40)),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.blue,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(40)),
+                              ),
                             ),
+                            child: Text("Facebook"),
                             onPressed: () {},
                           ),
                         ),
@@ -136,14 +140,16 @@ class LoginThreePage extends StatelessWidget {
                           width: 10.0,
                         ),
                         Expanded(
-                          child: RaisedButton(
-                            child: Text("Twitter"),
-                            textColor: Colors.white,
-                            color: Colors.indigo,
-                            shape: RoundedRectangleBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40)),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.indigo,
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(40)),
+                              ),
                             ),
+                            child: Text("Twitter"),
                             onPressed: () {},
                           ),
                         ),
@@ -156,9 +162,11 @@ class LoginThreePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text("Dont have an account?"),
-                        FlatButton(
+                        TextButton(
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.indigo,
+                          ),
                           child: Text("Sign up"),
-                          textColor: Colors.indigo,
                           onPressed: () {},
                         )
                       ],

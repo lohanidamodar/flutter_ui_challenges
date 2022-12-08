@@ -14,22 +14,23 @@ class HotelDetailsPage extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Container(
-            foregroundDecoration: BoxDecoration(
-              color: Colors.black26
-            ),
-            height: 400,
-            child: Image.asset(image, fit: BoxFit.cover)),
+              foregroundDecoration: BoxDecoration(color: Colors.black26),
+              height: 400,
+              child: Image.asset(image, fit: BoxFit.cover)),
           SingleChildScrollView(
-            padding: const EdgeInsets.only(top: 16.0,bottom: 20.0),
+            padding: const EdgeInsets.only(top: 16.0, bottom: 20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 const SizedBox(height: 250),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal:16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
                     "Lux Hotel\nToronto",
-                    style: TextStyle(color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28.0,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
                 Row(
@@ -93,28 +94,36 @@ class HotelDetailsPage extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Text.rich(TextSpan(children: [
-                                  WidgetSpan(
-                                    child: Icon(Icons.location_on, size: 16.0, color: Colors.grey,)
-                                  ),
-                                  TextSpan(
-                                    text: "8 km to centrum"
-                                  )
-                                ]), style: TextStyle(color: Colors.grey, fontSize: 12.0),)
+                                Text.rich(
+                                  TextSpan(children: [
+                                    WidgetSpan(
+                                        child: Icon(
+                                      Icons.location_on,
+                                      size: 16.0,
+                                      color: Colors.grey,
+                                    )),
+                                    TextSpan(text: "8 km to centrum")
+                                  ]),
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 12.0),
+                                )
                               ],
                             ),
                           ),
                           Column(
                             children: <Widget>[
-                              Text("\$ 200", style: TextStyle(
-                                color: Colors.purple,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20.0
-                              ),),
-                              Text("/per night",style: TextStyle(
-                                fontSize: 12.0,
-                                color: Colors.grey
-                              ),)
+                              Text(
+                                "\$ 200",
+                                style: TextStyle(
+                                    color: Colors.purple,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0),
+                              ),
+                              Text(
+                                "/per night",
+                                style: TextStyle(
+                                    fontSize: 12.0, color: Colors.grey),
+                              )
                             ],
                           )
                         ],
@@ -122,37 +131,44 @@ class HotelDetailsPage extends StatelessWidget {
                       const SizedBox(height: 30.0),
                       SizedBox(
                         width: double.infinity,
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                          color: Colors.purple,
-                          textColor: Colors.white,
-                          child: Text("Book Now", style: TextStyle(
-                            fontWeight: FontWeight.normal
-                          ),),
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 16.0,
-                            horizontal: 32.0,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0)),
+                            backgroundColor: Colors.purple,
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(
+                              vertical: 16.0,
+                              horizontal: 32.0,
+                            ),
+                          ),
+                          child: Text(
+                            "Book Now",
+                            style: TextStyle(fontWeight: FontWeight.normal),
                           ),
                           onPressed: () {},
                         ),
                       ),
                       const SizedBox(height: 30.0),
-                      Text("Description".toUpperCase(), style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14.0
-                      ),),
+                      Text(
+                        "Description".toUpperCase(),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 14.0),
+                      ),
                       const SizedBox(height: 10.0),
                       Text(
-                          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione architecto autem quasi nisi iusto eius ex dolorum velit! Atque, veniam! Atque incidunt laudantium eveniet sint quod harum facere numquam molestias?", textAlign: TextAlign.justify, style: TextStyle(
-                            fontWeight: FontWeight.w300,
-                            fontSize: 14.0
-                          ),),
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione architecto autem quasi nisi iusto eius ex dolorum velit! Atque, veniam! Atque incidunt laudantium eveniet sint quod harum facere numquam molestias?",
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 14.0),
+                      ),
                       const SizedBox(height: 10.0),
                       Text(
-                          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione architecto autem quasi nisi iusto eius ex dolorum velit! Atque, veniam! Atque incidunt laudantium eveniet sint quod harum facere numquam molestias?", textAlign: TextAlign.justify, style: TextStyle(
-                            fontWeight: FontWeight.w300,
-                            fontSize: 14.0
-                          ),),
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione architecto autem quasi nisi iusto eius ex dolorum velit! Atque, veniam! Atque incidunt laudantium eveniet sint quod harum facere numquam molestias?",
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 14.0),
+                      ),
                     ],
                   ),
                 ),
@@ -167,10 +183,10 @@ class HotelDetailsPage extends StatelessWidget {
               backgroundColor: Colors.transparent,
               elevation: 0,
               centerTitle: true,
-              title: Text("DETAIL",style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.normal
-              ),),
+              title: Text(
+                "DETAIL",
+                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.normal),
+              ),
             ),
           ),
           Align(
@@ -181,12 +197,11 @@ class HotelDetailsPage extends StatelessWidget {
               selectedItemColor: Colors.black,
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.search), title: Text("Search")),
+                    icon: Icon(Icons.search), label: "Search"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.favorite_border),
-                    title: Text("Favorites")),
+                    icon: Icon(Icons.favorite_border), label: "Favorites"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.settings), title: Text("Settings")),
+                    icon: Icon(Icons.settings), label: "Settings"),
               ],
             ),
           )

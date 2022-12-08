@@ -108,11 +108,14 @@ class _UserProfilePageState extends State<UserProfilePage> {
         Visibility(
           visible: !_isOpen,
           child: Expanded(
-            child: OutlineButton(
-              onPressed: () {},
-              borderSide: BorderSide(color: Colors.blue),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+
+              side: BorderSide(color: Colors.blue),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
+              ),
+              onPressed: () {},
               child: Text(
                 'VIEW PROFILE',
                 style: TextStyle(
@@ -137,12 +140,15 @@ class _UserProfilePageState extends State<UserProfilePage> {
               width: _isOpen
                   ? (MediaQuery.of(context).size.width - (2 * hPadding!)) / 1.6
                   : double.infinity,
-              child: FlatButton(
-                onPressed: () => print('Message tapped'),
-                color: Colors.blue,
-                textColor: Colors.white,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),
+
+                ),
+                onPressed: () => print('Message tapped'),
                 child: Text(
                   'MESSAGE',
                   style: TextStyle(

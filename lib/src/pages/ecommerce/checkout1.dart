@@ -183,14 +183,16 @@ class CheckoutOnePage extends StatelessWidget {
                 vertical: 16.0,
                 horizontal: 32.0,
               ),
-              child: RaisedButton(
-                elevation: 0,
-                padding: const EdgeInsets.all(24.0),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0)),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                  padding: const EdgeInsets.all(24.0),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0)),
+                  backgroundColor: Colors.indigo,
+                  foregroundColor: Colors.white,
+                ),
                 child: Text("Continue"),
-                color: Colors.indigo,
-                textColor: Colors.white,
                 onPressed: () {},
               ),
             )

@@ -25,7 +25,7 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Categories",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
           Container(
@@ -44,7 +44,7 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Featured Products",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
           SizedBox(height: 10),
@@ -70,7 +70,7 @@ class EcommerceFourPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent products",
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                   Spacer(),
                   InkWell(

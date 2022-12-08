@@ -14,7 +14,6 @@ const TextStyle primaryText = TextStyle(
   color: primary,
 );
 
-
 class InvitationLandingPage extends StatelessWidget {
   static final String path = "lib/src/pages/invitation/inlanding.dart";
   @override
@@ -27,8 +26,8 @@ class InvitationLandingPage extends StatelessWidget {
             "Invitations",
             style: Theme.of(context)
                 .textTheme
-                .display1!
-                .copyWith(fontWeight: FontWeight.bold),
+                .headline4
+                ?.copyWith(fontWeight: FontWeight.bold),
           ),
           Text.rich(
             TextSpan(children: [
@@ -53,12 +52,13 @@ class InvitationLandingPage extends StatelessWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 8.0),
-                    child: RaisedButton(
-                      highlightElevation: 0,
-                      elevation: 0,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        foregroundColor: Colors.pink,
+                        backgroundColor: Colors.white,
+                      ),
                       child: Text("Create an Account"),
-                      textColor: Colors.pink,
-                      color: Colors.white,
                       onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
@@ -66,13 +66,15 @@ class InvitationLandingPage extends StatelessWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 8.0),
-                    child: OutlineButton(
-                      highlightElevation: 0,
-                      borderSide: BorderSide(color: Colors.white),
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        elevation: 0,
+                        side: BorderSide(color: Colors.white),
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.white,
+                      ),
                       child: Text("Sign in with Google"),
-                      textColor: Colors.white,
-                      color: Colors.white,
-                      onPressed: () =>Navigator.pushNamed(context, 'auth'),
+                      onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
                   const SizedBox(height: 10.0),

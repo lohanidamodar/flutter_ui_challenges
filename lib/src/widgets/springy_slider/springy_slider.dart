@@ -3,12 +3,12 @@
  * are taken from Fluttery UI Challenges 
  * (https://github.com/matthew-carroll/flutter_ui_challenge_springy_slider)
  * Check out the repository and give it a start
- */ 
+ */
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_dragger.dart';
@@ -32,7 +32,8 @@ class SpringySlider extends StatefulWidget {
   _SpringySliderState createState() => new _SpringySliderState();
 }
 
-class _SpringySliderState extends State<SpringySlider> with TickerProviderStateMixin {
+class _SpringySliderState extends State<SpringySlider>
+    with TickerProviderStateMixin {
   final double paddingTop = 50.0;
   final double paddingBottom = 50.0;
 

@@ -1,4 +1,3 @@
-
 /**
  * Author: Sudip Thapa  
  * profile: https://github.com/sudeepthapa
@@ -16,7 +15,7 @@ class ProfileSevenPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: Icon(Platform.isIOS?Icons.arrow_back_ios : Icons.arrow_back),
+          child: Icon(Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -43,14 +42,13 @@ class ProfileSevenPage extends StatelessWidget {
                   Column(
                     children: <Widget>[
                       Container(
-                        height: 90,
-                        margin: EdgeInsets.only(top: 60),
-                        child: CircleAvatar(
-                          radius: 50,
-                          backgroundColor: Colors.white,
-                          child: PNetworkImage(rocket),
-                        )
-                      ),
+                          height: 90,
+                          margin: EdgeInsets.only(top: 60),
+                          child: CircleAvatar(
+                            radius: 50,
+                            backgroundColor: Colors.white,
+                            child: PNetworkImage(rocket),
+                          )),
                       Padding(
                         padding: EdgeInsets.all(4),
                       ),

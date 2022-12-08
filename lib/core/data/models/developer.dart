@@ -5,5 +5,6 @@ class Developer {
   final String? address;
   final String? github;
 
-  const Developer({this.name, this.github, this.imageUrl, this.profession, this.address});
+  const Developer(
+      {this.name, this.github, this.imageUrl, this.profession, this.address});
 }

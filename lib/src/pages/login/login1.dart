@@ -2,7 +2,7 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -17,47 +17,72 @@ class LoginOnePage extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              SizedBox(height: 50,),
-              Container(width: 200, child: PNetworkImage(rocket),),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
+              Container(
+                width: 200,
+                child: PNetworkImage(rocket),
+              ),
+              SizedBox(
+                height: 50,
+              ),
               ListTile(
-                title: TextField(
-                  style: TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  title: TextField(
+                style: TextStyle(color: Colors.white),
+                decoration: InputDecoration(
                     hintText: "Email address:",
                     hintStyle: TextStyle(color: Colors.white70),
                     border: InputBorder.none,
-                    icon: Icon(Icons.email, color: Colors.white30,)
-                  ),
-                )
+                    icon: Icon(
+                      Icons.email,
+                      color: Colors.white30,
+                    )),
+              )),
+              Divider(
+                color: Colors.grey.shade600,
               ),
-              Divider(color: Colors.grey.shade600,),
               ListTile(
-                title: TextField(
-                  style: TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  title: TextField(
+                style: TextStyle(color: Colors.white),
+                decoration: InputDecoration(
                     hintText: "Password:",
                     hintStyle: TextStyle(color: Colors.white70),
                     border: InputBorder.none,
-                    icon: Icon(Icons.lock, color: Colors.white30,)
-                  ),
-                )
+                    icon: Icon(
+                      Icons.lock,
+                      color: Colors.white30,
+                    )),
+              )),
+              Divider(
+                color: Colors.grey.shade600,
               ),
-              Divider(color: Colors.grey.shade600,),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Row(
                 children: <Widget>[
                   Expanded(
-                    child: RaisedButton(
-                      onPressed: (){},
-                      color: Colors.cyan,
-                      child: Text('Login', style: TextStyle(color: Colors.white70, fontSize: 16.0),),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.cyan,
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'Login',
+                        style: TextStyle(color: Colors.white70, fontSize: 16.0),
+                      ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 40,),
-              Text('Forgot your password?', style: TextStyle(color: Colors.grey.shade500),)
+              SizedBox(
+                height: 40,
+              ),
+              Text(
+                'Forgot your password?',
+                style: TextStyle(color: Colors.grey.shade500),
+              )
             ],
           ),
         ],
@@ -66,9 +91,9 @@ class LoginOnePage extends StatelessWidget {
   }
 
   @override
-    Widget build(BuildContext context) {
-      return Scaffold(
-        body: _buildPageContent(),
-      );
-    }
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _buildPageContent(),
+    );
+  }
 }

@@ -185,10 +185,12 @@ class RecipeListPage extends StatelessWidget {
             ],
           ),
         ),
-        OutlineButton(
-          color: Colors.white,
-          textColor: Colors.white,
-          borderSide: BorderSide(color: Colors.white),
+        OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.white,
+            side: BorderSide(color: Colors.white),
+          ),
           child: Text("Filter".toUpperCase()),
           onPressed: () {},
         ),
