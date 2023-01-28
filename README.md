@@ -3,7 +3,14 @@
 My effort on replicating various apps UI on flutter.
 
 
-[View on Web](https://lohanidamodar.github.io/flutter_ui_challenges/#/)
+> Want to enhance your Dart & Flutter Knowledge?
+> Check out my latest endevour
+>
+> [Master Flutter](https://masterflutter.appwriters.dev)
+
+## Live
+
+[Flutter UI Challenges Web](https://lohanidamodar.github.io/flutter_ui_challenges/#/)
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
