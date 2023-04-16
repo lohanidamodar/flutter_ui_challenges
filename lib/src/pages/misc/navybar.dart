@@ -1,5 +1,7 @@
-/// Author: Siddhartha Joshi
-/// profile: https://github.com/cimplesid
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -7,7 +9,7 @@ import 'dart:async';
 class FancyBottomBarPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/navybar.dart";
 
-  const FancyBottomBarPage({Key? key}) : super(key: key);
+  const FancyBottomBarPage({super.key});
   @override
   _FancyBottomBarPageState createState() => _FancyBottomBarPageState();
 }
@@ -62,11 +64,9 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
                 FancyBottomNavigationItem(
                     icon: const Icon(Icons.person), title: const Text('User')),
                 FancyBottomNavigationItem(
-                    icon: const Icon(Icons.security),
-                    title: const Text('Security')),
+                    icon: const Icon(Icons.security), title: const Text('Security')),
                 FancyBottomNavigationItem(
-                    icon: const Icon(Icons.message),
-                    title: const Text('Message')),
+                    icon: const Icon(Icons.message), title: const Text('Message')),
               ],
               onItemSelected: (int value) {
                 indexcontroller.add(value);
@@ -88,16 +88,14 @@ class FancyBottomNavigation extends StatefulWidget {
   final ValueChanged<int> onItemSelected;
 
   const FancyBottomNavigation(
-      {Key? key,
-      Key? key,
+      {super.key, 
       this.currentIndex = 0,
       this.iconSize = 24,
       this.activeColor,
       this.inactiveColor,
       this.backgroundColor,
       required this.items,
-      required this.onItemSelected})
-      : super(key: key);
+      required this.onItemSelected});
 
   @override
   _FancyBottomNavigationState createState() {
@@ -179,12 +177,11 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    activeColor = (activeColor == null)
-        ? Theme.of(context).colorScheme.secondary
-        : activeColor;
+    activeColor =
+        (activeColor == null) ? Theme.of(context).colorScheme.secondary : activeColor;
 
     backgroundColor = (backgroundColor == null)
-        ? Theme.of(context).bottomAppBarColor
+        ? Theme.of(context).bottomAppBarTheme.color
         : backgroundColor;
 
     return Container(

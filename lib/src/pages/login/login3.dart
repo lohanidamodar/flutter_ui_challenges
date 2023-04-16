@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class LoginThreePage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login3.dart";
 
-  const LoginThreePage({Key? key}) : super(key: key);
+  const LoginThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

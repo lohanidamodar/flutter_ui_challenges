@@ -28,7 +28,7 @@ class AnimationOnePage extends StatefulWidget {
   static const String path =
       "lib/src/pages/animations/animation1/animation1.dart";
 
-  const AnimationOnePage({Key? key}) : super(key: key);
+  const AnimationOnePage({super.key});
 
   @override
   _AnimationOnePageState createState() => _AnimationOnePageState();
@@ -182,8 +182,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                 child: Text(
                   dummy[index]["price"],
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 30.0, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -54,7 +56,7 @@ class CheckAnswersPage extends StatelessWidget {
         child: const Text("Done"),
         onPressed: () {
           Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (_) => QuizHomePage()));
+              MaterialPageRoute(builder: (_) =>  QuizHomePage()));
         },
       );
     }

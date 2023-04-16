@@ -118,41 +118,19 @@ class _NewHomePageState extends State<NewHomePage>
               ),
             ),
           ),
-          // if (announcements.length > 0) ...[
-          //   AnnouncementSlider(news: announcements),
-          //   const SizedBox(height: 16.0),
-          // ],
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                // CategoryItem(
-                //   icon: Icon(
-                //     FontAwesomeIcons.user,
-                //     color: Colors.indigo,
-                //   ),
-                //   title: "Profile",
-                //   onPressed: () {
-                //     (Provider.of<UserRepository>(context).user != null)
-                //         ? Navigator.pushNamed(context, "profile")
-                //         : Navigator.pushNamed(context, 'auth_home');
-                //   },
-                // ),
                 const SizedBox(height: 10.0),
                 CategoryItem(
                   title: "About",
                   icon: const Icon(
-                    FontAwesomeIcons.infoCircle,
+                    FontAwesomeIcons.circleInfo,
                     color: Colors.red,
                   ),
                   onPressed: () => Navigator.pushNamed(context, 'about'),
                 ),
-                // if (survey != null &&
-                //     user != null &&
-                //     !user.surveys.contains(survey?.id)) ...[
-                //   const SizedBox(height: 10.0),
-                //   SurveyWidget(survey: survey),
-                // ],
               ],
             ),
           ),

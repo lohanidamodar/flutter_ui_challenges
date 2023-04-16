@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -29,7 +31,7 @@ class EcommerceOnePage extends StatelessWidget {
     assets.backgroundImages[1]
   ];
 
-  const EcommerceOnePage({Key? key}) : super(key: key);
+   EcommerceOnePage({super.key});
 
   Widget _buildListView(_, index) {
     if (index == 0) return _buildSlider();
@@ -182,8 +184,8 @@ class EcommerceOnePage extends StatelessWidget {
                   ),
                   Container(
                       color: Colors.black,
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 2.0, horizontal: 5.0),
+                      padding:
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
                       child: const Text(
                         '02',
                         style: TextStyle(color: Colors.white),
@@ -193,8 +195,8 @@ class EcommerceOnePage extends StatelessWidget {
                   ),
                   Container(
                       color: Colors.black,
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 2.0, horizontal: 5.0),
+                      padding:
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
                       child: const Text(
                         '20',
                         style: TextStyle(color: Colors.white),
@@ -204,8 +206,8 @@ class EcommerceOnePage extends StatelessWidget {
                   ),
                   Container(
                       color: Colors.black,
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 2.0, horizontal: 5.0),
+                      padding:
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
                       child: const Text(
                         '30',
                         style: TextStyle(color: Colors.white),

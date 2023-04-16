@@ -4,7 +4,7 @@ import 'shape_plant_page.dart';
 import 'green_plant_page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -60,12 +60,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Expanded(
-            child: Container(
-              child: PageView(
-                children: [
-                  widgets[currentIndex],
-                ],
-              ),
+            child: PageView(
+              children: [
+                widgets[currentIndex],
+              ],
             ),
           ),
         ],

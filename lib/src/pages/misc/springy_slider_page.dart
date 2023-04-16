@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_ui_challenges/src/widgets/springy_slider/springy_slider.
 class SpringySliderPage extends StatelessWidget {
   static const String path = "lib/src/pages/misc/springy_slider_page.dart";
 
-  const SpringySliderPage({Key? key}) : super(key: key);
+  const SpringySliderPage({super.key});
   _buildTextButton(String title, bool isOnLight) {
     return TextButton(
       style: TextButton.styleFrom(

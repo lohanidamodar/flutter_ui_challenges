@@ -1,5 +1,7 @@
-/// Author: Sudip Thapa
-/// profile: https://github.com/sudeepthapa
+/**
+ * Author: Sudip Thapa  
+ * profile: https://github.com/sudeepthapa
+  */
 
 import 'dart:io';
 import 'package:flutter/material.dart';
@@ -9,7 +11,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class ProfileSevenPage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile7.dart";
 
-  const ProfileSevenPage({Key? key}) : super(key: key);
+  const ProfileSevenPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -81,14 +83,13 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding: const EdgeInsets.only(
-                                          top: 15, bottom: 5),
+                                      padding:
+                                          const EdgeInsets.only(top: 15, bottom: 5),
                                       child: const Text("Photos",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(bottom: 15),
+                                      padding: const EdgeInsets.only(bottom: 15),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -98,14 +99,13 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding: const EdgeInsets.only(
-                                          top: 15, bottom: 5),
+                                      padding:
+                                          const EdgeInsets.only(top: 15, bottom: 5),
                                       child: const Text("Followers",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(bottom: 15),
+                                      padding: const EdgeInsets.only(bottom: 15),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -115,14 +115,13 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding: const EdgeInsets.only(
-                                          top: 10, bottom: 5),
+                                      padding:
+                                          const EdgeInsets.only(top: 10, bottom: 5),
                                       child: const Text("Followings",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(bottom: 10),
+                                      padding: const EdgeInsets.only(bottom: 10),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -145,7 +144,7 @@ class ProfileSevenPage extends StatelessWidget {
 }
 
 class UserInfo extends StatelessWidget {
-  const UserInfo({Key? key}) : super(key: key);
+  const UserInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -174,34 +173,33 @@ class UserInfo extends StatelessWidget {
                   const Divider(
                     color: Colors.black38,
                   ),
-                  Container(
-                      child: Column(
+                  Column(
                     children: const <Widget>[
-                      ListTile(
-                        contentPadding:
-                            EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                        leading: Icon(Icons.my_location),
-                        title: Text("Location"),
-                        subtitle: Text("Kathmandu"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.email),
-                        title: Text("Email"),
-                        subtitle: Text("sudeptech@gmail.com"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.phone),
-                        title: Text("Phone"),
-                        subtitle: Text("99--99876-56"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.person),
-                        title: Text("About Me"),
-                        subtitle: Text(
-                            "This is a about me link and you can khow about me in this section."),
-                      ),
+                  ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                    leading: Icon(Icons.my_location),
+                    title: Text("Location"),
+                    subtitle: Text("Kathmandu"),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.email),
+                    title: Text("Email"),
+                    subtitle: Text("sudeptech@gmail.com"),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.phone),
+                    title: Text("Phone"),
+                    subtitle: Text("99--99876-56"),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("About Me"),
+                    subtitle: Text(
+                        "This is a about me link and you can khow about me in this section."),
+                  ),
                     ],
-                  ))
+                  )
                 ],
               ),
             ),

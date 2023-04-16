@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
@@ -7,7 +9,7 @@ class HotelDetailsPage extends StatelessWidget {
   static const String path = "lib/src/pages/hotel/details.dart";
   final String image = "assets/hotel/room3.jpg";
 
-  const HotelDetailsPage({Key? key}) : super(key: key);
+  const HotelDetailsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

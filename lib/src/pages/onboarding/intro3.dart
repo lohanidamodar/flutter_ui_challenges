@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -10,7 +12,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class IntroThreePage extends StatefulWidget {
   static const String path = "lib/src/pages/onboarding/intro3.dart";
 
-  const IntroThreePage({Key? key}) : super(key: key);
+  const IntroThreePage({super.key});
   @override
   _IntroThreePageState createState() => _IntroThreePageState();
 }

@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani  
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginEightPage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login8.dart";
 
-  const LoginEightPage({Key? key}) : super(key: key);
+  const LoginEightPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import '../../widgets/profile_image.dart';
 import 'package:flutter/material.dart';
 
 class ProfileDetail extends StatelessWidget {
-  const ProfileDetail({Key? key}) : super(key: key);
+  const ProfileDetail({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class ProfileDetail extends StatelessWidget {
         height: deviceSize.height * 0.2,
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         decoration: const BoxDecoration(
-          color: profile_info_background,
+          color: profileInfoBackground,
           borderRadius: BorderRadius.all(
             Radius.circular(20.0),
           ),

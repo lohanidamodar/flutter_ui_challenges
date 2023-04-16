@@ -1,5 +1,7 @@
-/// Author: Siddhartha Joshi
-/// profile: https://github.com/cimplesid
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 import 'dart:ui' as ui;
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -9,7 +11,7 @@ import 'package:flutter/material.dart';
 
 class ProfileSixPage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile6.dart";
-  const ProfileSixPage(this.dev, {Key? key}) : super(key: key);
+  const ProfileSixPage(this.dev, {super.key});
 
   final DEV dev;
 
@@ -153,7 +155,7 @@ class ProfileSixPage extends StatelessWidget {
 }
 
 class VideoCard extends StatelessWidget {
-  const VideoCard(this.video, {Key? key}) : super(key: key);
+  const VideoCard(this.video, {super.key});
 
   final Video video;
 
@@ -193,8 +195,8 @@ class VideoCard extends StatelessWidget {
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {
-          if (await canLaunch(video.url)) {
-            await launch(video.url);
+          if (await canLaunchUrl(Uri.parse(video.url))) {
+            await launchUrl(Uri.parse(video.url));
           }
         },
         child: const Padding(

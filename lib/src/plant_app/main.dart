@@ -1,14 +1,16 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
-/// design: Dribble.com
-/// imagesource:purepng.com/pngio.com
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+ * design: Dribble.com
+ * imagesource:purepng.com/pngio.com
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/plant_app/screens/home_page.dart';
 
 class PlantAppPage extends StatelessWidget {
   static const String path = 'lib/src/plant_app/main.dart';
 
-  const PlantAppPage({Key? key}) : super(key: key);
+  const PlantAppPage({super.key});
 
   @override
   Widget build(BuildContext context) {

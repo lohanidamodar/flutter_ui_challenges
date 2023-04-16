@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani  
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -8,7 +10,7 @@ import 'dart:ui' as ui;
 class LoginTenPage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login10.dart";
 
-  const LoginTenPage({Key? key}) : super(key: key);
+  const LoginTenPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,10 +44,7 @@ class LoginTenPage extends StatelessWidget {
                     children: [
                       Text(
                         "Hello",
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineMedium!
-                            .copyWith(
+                        style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Colors.grey.shade800,
                             ),

@@ -1,12 +1,14 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 import '../../widget/profile_image.dart';
 
 class TopAccountInfo extends StatelessWidget {
-  TopAccountInfo({Key? key}) : super(key: key);
+  TopAccountInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

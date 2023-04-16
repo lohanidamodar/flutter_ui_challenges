@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -8,7 +10,7 @@ class DashboardTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/dashboard/dash2.dart";
   final TextStyle whiteText = const TextStyle(color: Colors.white);
 
-  const DashboardTwoPage({Key? key}) : super(key: key);
+  const DashboardTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +55,7 @@ class DashboardTwoPage extends StatelessWidget {
                                   ),
                             ),
                             trailing: const Icon(
-                              FontAwesomeIcons.walking,
+                              FontAwesomeIcons.personWalking,
                               color: Colors.white,
                             ),
                           ),
@@ -86,7 +88,7 @@ class DashboardTwoPage extends StatelessWidget {
                                   ),
                             ),
                             trailing: const Icon(
-                              FontAwesomeIcons.heartbeat,
+                              FontAwesomeIcons.heartPulse,
                               color: Colors.white,
                             ),
                           ),

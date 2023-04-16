@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class Lamp extends StatelessWidget {
   final ProfileMenu? item;
   final int? index;
-  const Lamp({Key? key, this.item, this.index}) : super(key: key);
+  const Lamp({super.key, this.item, this.index});
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -121,7 +121,7 @@ class Lamp extends StatelessWidget {
                                   Text(
                                     item!.subTitle!,
                                     style: TextStyle(
-                                      color: profile_info_background,
+                                      color: profileInfoBackground,
                                       fontSize: index == 0 ? 30.0 : 20.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -134,7 +134,7 @@ class Lamp extends StatelessWidget {
                                     child: Text(
                                       'USD',
                                       style: TextStyle(
-                                        color: profile_info_background,
+                                        color: profileInfoBackground,
                                         fontSize: index == 0 ? 15.0 : 10.0,
                                         fontWeight: FontWeight.normal,
                                       ),

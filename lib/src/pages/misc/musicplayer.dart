@@ -1,12 +1,14 @@
-/// Author: Siddhartha Joshi
-/// profile: https://github.com/cimplesid
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 
 import 'package:flutter/material.dart';
 
 class MusicPlayer extends StatefulWidget {
   static const String path = "lib/src/pages/misc/musicplayer.dart";
 
-  const MusicPlayer({Key? key}) : super(key: key);
+  const MusicPlayer({super.key});
 
   @override
   _PodcastPlayerState createState() => _PodcastPlayerState();

@@ -6,7 +6,7 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 class MusicPlayerTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/misc/musicplayer2.dart";
 
-  const MusicPlayerTwoPage({Key? key}) : super(key: key);
+  const MusicPlayerTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class FancyAppbarAnimation extends StatefulWidget {
   static const String path = "lib/src/pages/animations/anim3.dart";
 
-  const FancyAppbarAnimation({Key? key}) : super(key: key);
+  const FancyAppbarAnimation({super.key});
   @override
   _FancyAppbarAnimationState createState() => _FancyAppbarAnimationState();
 }
@@ -119,8 +121,8 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                     const EdgeInsets.only(left: 50, top: 25.0, right: 20.0),
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
-                      bottomRight: Radius.circular(30.0)),
+                  borderRadius:
+                      const BorderRadius.only(bottomRight: Radius.circular(30.0)),
                   color: Colors.white.withOpacity(_getOpacity()),
                 ),
                 child: DefaultTextStyle(

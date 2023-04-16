@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -12,7 +14,7 @@ class SettingsThreePage extends StatelessWidget {
     fontSize: 20.0,
   );
 
-  SettingsThreePage({Key? key}) : super(key: key);
+  SettingsThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

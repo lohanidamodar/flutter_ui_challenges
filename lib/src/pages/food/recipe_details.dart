@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'dart:io';
@@ -8,7 +10,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class RecipeDetailsPage extends StatelessWidget {
   static const String path = "lib/src/pages/food/recipe_details.dart";
 
-  const RecipeDetailsPage({Key? key}) : super(key: key);
+  const RecipeDetailsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,8 +41,7 @@ class RecipeDetailsPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "French\nToast".toUpperCase(),
-                  style: const TextStyle(
-                      fontSize: 24.0, fontWeight: FontWeight.w600),
+                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(
                   height: 16.0,
@@ -189,8 +190,8 @@ class RecipeDetailsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(title,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  style:
+                      const TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0)),
               const SizedBox(
                 height: 10.0,
               ),

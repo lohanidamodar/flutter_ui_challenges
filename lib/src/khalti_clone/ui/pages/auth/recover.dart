@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import '../../../res/colors.dart';
 import '../../../res/constants.dart';
 import '../../../res/typography.dart';
 
 class RecoverPasswordPage extends StatelessWidget {
-  const RecoverPasswordPage({Key? key}) : super(key: key);
+  const RecoverPasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,13 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 
 class LoginTopSection extends StatelessWidget {
-  const LoginTopSection({Key? key}) : super(key: key);
+  const LoginTopSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +29,7 @@ class LoginTopSection extends StatelessWidget {
           const SizedBox(
             height: 10.0,
           ),
-          Container(
-            child: Image.asset('assets/nicasiaassets/brand_alternate.png'),
-          ),
+          Image.asset('assets/nicasiaassets/brand_alternate.png'),
           const SizedBox(
             height: 15.0,
           ),

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'res/colors.dart';
 import 'ui/pages/auth/login.dart';
@@ -13,7 +15,7 @@ import 'ui/widgets/slide_right_route.dart';
 class KhaltiApp extends StatelessWidget {
   static const String path = 'lib/src/khalti_clone/main.dart';
 
-  const KhaltiApp({Key? key}) : super(key: key);
+  const KhaltiApp({super.key});
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,9 +23,7 @@ class KhaltiApp extends StatelessWidget {
       title: 'Khalti',
       debugShowCheckedModeBanner: false,
       color: primary,
-      theme: ThemeData(
-          primaryColor: primary,
-          colorScheme: ColorScheme.fromSwatch().copyWith(secondary: accent)),
+      theme: ThemeData(primaryColor: primary, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: accent)),
       routes: {
         "/": (_) => const IntroPage(),
         "home": (_) => const HomePage(),
@@ -33,13 +33,10 @@ class KhaltiApp extends StatelessWidget {
         switch (settings.name) {
           case "login":
             return SlideRightRoute(widget: const LoginPage());
-            break;
           case "recover":
             return SlideRightRoute(widget: const RecoverPasswordPage());
-            break;
           case "register":
             return SlideRightRoute(widget: const RegisterPage());
-            break;
           default:
             return null;
         }

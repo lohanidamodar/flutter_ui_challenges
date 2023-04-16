@@ -10,7 +10,7 @@ class InvitationPageOne extends StatelessWidget {
   final Color bg = const Color(0xfffefefe);
   final List<bool> toggleIsSelected = [true, false, false];
 
-  InvitationPageOne({Key? key}) : super(key: key);
+  InvitationPageOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -156,7 +156,7 @@ class InvitationPageOne extends StatelessWidget {
                           color: Colors.grey,
                         ),
                         const Spacer(),
-                        const Icon(FontAwesomeIcons.calendarTimes),
+                        const Icon(FontAwesomeIcons.calendarXmark),
                         const Spacer(),
                         Container(
                           height: 20.0,
@@ -213,10 +213,7 @@ class InvitationPageOne extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
-                          children: const <Widget>[
-                            Text("14:33:00"),
-                            Text("Time")
-                          ],
+                          children: const <Widget>[Text("14:33:00"), Text("Time")],
                         ),
                       ]),
                     ),

@@ -1,11 +1,13 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+  */
 import 'package:flutter/material.dart';
 
 class YoutubeHomePage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/youtube_homepage.dart";
 
-  const YoutubeHomePage({Key? key}) : super(key: key);
+  const YoutubeHomePage({super.key});
   @override
   _YoutubeHomePageState createState() => _YoutubeHomePageState();
 }

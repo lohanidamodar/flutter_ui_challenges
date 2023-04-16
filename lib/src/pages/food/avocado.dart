@@ -6,7 +6,7 @@ class AvocadoPage extends StatelessWidget {
   static const String path = "lib/src/pages/food/avocado.dart";
   final String image = avocadoF;
 
-  const AvocadoPage({Key? key}) : super(key: key);
+  const AvocadoPage({super.key});
 
   @override
   Widget build(BuildContext context) {

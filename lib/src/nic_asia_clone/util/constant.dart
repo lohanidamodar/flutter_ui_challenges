@@ -1,5 +1,7 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 

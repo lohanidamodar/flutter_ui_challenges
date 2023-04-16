@@ -48,7 +48,7 @@ class InvitationLandingPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   const Expanded(
-                      child: Center(child: PNetworkImage(INVITE_ILLUSTRATION))),
+                      child: Center(child: PNetworkImage(inviteIllustration))),
                   const SizedBox(height: 20.0),
                   Container(
                     width: double.infinity,

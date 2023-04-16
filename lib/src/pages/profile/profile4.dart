@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 class ProfileFourPage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile4.dart";
 
-  const ProfileFourPage({Key? key}) : super(key: key);
+  const ProfileFourPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -156,8 +156,8 @@ class ProfileFourPage extends StatelessWidget {
   }
 
   _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -176,8 +176,7 @@ class ProfileFourPage extends StatelessWidget {
       ),
       title: Text(
         company,
-        style:
-            const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
       ),
       subtitle: Text("$position ($duration)"),
     );

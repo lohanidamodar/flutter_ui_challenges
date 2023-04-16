@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/src/travelui_clone/widgets/hotel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -16,8 +16,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<IconData> _icons = [
     FontAwesomeIcons.plane,
     FontAwesomeIcons.bed,
-    FontAwesomeIcons.walking,
-    FontAwesomeIcons.biking,
+    FontAwesomeIcons.personWalking,
+    FontAwesomeIcons.personBiking,
   ];
 
   Widget _buildIcon(int index) {

@@ -1,12 +1,14 @@
-/// Author: Siddhartha Joshi
-/// profile: https://github.com/cimplesid
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 
 import 'package:flutter/material.dart';
 
 class BottomSheetAwesome extends StatefulWidget {
   static const String path = "lib/src/pages/misc/bottomsheet.dart";
 
-  const BottomSheetAwesome({Key? key}) : super(key: key);
+  const BottomSheetAwesome({super.key});
   @override
   _BottomSheetAwesomeState createState() => _BottomSheetAwesomeState();
 }
@@ -35,7 +37,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  progress.length == null ? "0/100" : "${progress.length}/100 ",
+                  progress.isEmpty ? "0/100" : "${progress.length}/100 ",
                   style: const TextStyle(color: Colors.white),
                 ),
               ),
@@ -89,62 +91,60 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                     style: const TextStyle(color: Colors.white),
                   ),
                 ),
-                Container(
-                  child: Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: <Widget>[
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Theme.of(context).primaryColor,
-                          ),
-                          child: const Icon(
-                            Icons.chevron_left,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            _pageController.animateToPage(
-                                _pageController.page!.ceil() - 1,
-                                duration: const Duration(seconds: 1),
-                                curve: Curves.easeInBack);
-                            // .jumpToPage(_pageController.page.ceil() - 1);
-                          },
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).primaryColor,
                         ),
-                        const SizedBox(
-                          width: 5,
+                        child: const Icon(
+                          Icons.chevron_left,
+                          color: Colors.white,
                         ),
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(15, 0, 10, 0),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                                width: 1,
-                                color: Theme.of(context).primaryColor),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Text(
-                            'Page ${currentIndex + 1}',
-                            style: const TextStyle(
-                                fontWeight: FontWeight.w700, fontSize: 35),
-                          ),
+                        onPressed: () {
+                          _pageController.animateToPage(
+                              _pageController.page!.ceil() - 1,
+                              duration: const Duration(seconds: 1),
+                              curve: Curves.easeInBack);
+                          // .jumpToPage(_pageController.page.ceil() - 1);
+                        },
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      Container(
+                        padding: const EdgeInsets.fromLTRB(15, 0, 10, 0),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 1,
+                              color: Theme.of(context).primaryColor),
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Theme.of(context).primaryColor,
-                          ),
-                          child: const Icon(
-                            Icons.chevron_right,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            _pageController.animateToPage(
-                                _pageController.page!.ceil() + 1,
-                                duration: const Duration(seconds: 1),
-                                curve: Curves.easeIn);
-                            // .jumpToPage(_pageController.page.ceil() + 1);
-                          },
+                        child: Text(
+                          'Page ${currentIndex + 1}',
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w700, fontSize: 35),
                         ),
-                      ],
-                    ),
+                      ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).primaryColor,
+                        ),
+                        child: const Icon(
+                          Icons.chevron_right,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          _pageController.animateToPage(
+                              _pageController.page!.ceil() + 1,
+                              duration: const Duration(seconds: 1),
+                              curve: Curves.easeIn);
+                          // .jumpToPage(_pageController.page.ceil() + 1);
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ],

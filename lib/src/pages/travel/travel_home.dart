@@ -1,5 +1,7 @@
-/// Author: Sudip Thapa
-/// profile: https://github.com/sudeepthapa
+/**
+ * Author: Sudip Thapa  
+ * profile: https://github.com/sudeepthapa
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -7,7 +9,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class TravelHome extends StatelessWidget {
   static const String path = "lib/src/pages/travel/travel_home.dart";
 
-  const TravelHome({Key? key}) : super(key: key);
+  const TravelHome({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class TravelHome extends StatelessWidget {
 }
 
 class HomeScreenTop extends StatefulWidget {
-  const HomeScreenTop({Key? key}) : super(key: key);
+  const HomeScreenTop({super.key});
 
   @override
   _HomeScreenTopState createState() => _HomeScreenTopState();
@@ -185,8 +187,7 @@ class ChoiceChip extends StatefulWidget {
   final IconData icon;
   final String text;
   final bool isflightSelected;
-  const ChoiceChip(this.icon, this.text, this.isflightSelected, {Key? key})
-      : super(key: key);
+  const ChoiceChip(this.icon, this.text, this.isflightSelected, {super.key});
   @override
   _ChoiceChipState createState() => _ChoiceChipState();
 }
@@ -194,7 +195,6 @@ class ChoiceChip extends StatefulWidget {
 class _ChoiceChipState extends State<ChoiceChip> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: widget.isflightSelected
@@ -212,8 +212,7 @@ class _ChoiceChipState extends State<ChoiceChip> {
           const SizedBox(
             width: 8,
           ),
-          Text(widget.text,
-              style: const TextStyle(color: Colors.white, fontSize: 14))
+          Text(widget.text, style: const TextStyle(color: Colors.white, fontSize: 14))
         ],
       ),
     );
@@ -302,9 +301,7 @@ List<CityCard> cityCards = [
 class CityCard extends StatelessWidget {
   final String imagePath, cityName, monthYear, discount, oldPrice, newPrice;
   const CityCard(this.imagePath, this.cityName, this.monthYear, this.discount,
-      this.oldPrice, this.newPrice,
-      {Key? key})
-      : super(key: key);
+      this.oldPrice, this.newPrice, {super.key});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -363,16 +360,14 @@ class CityCard extends StatelessWidget {
                     ],
                   ),
                   Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 6, vertical: 2),
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                       decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: Text(
                         "$discount%",
-                        style:
-                            const TextStyle(color: Colors.black, fontSize: 14),
+                        style: const TextStyle(color: Colors.black, fontSize: 14),
                       ))
                 ],
               ),

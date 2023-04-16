@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class SettingsFourPage extends StatefulWidget {
   static const String path = "lib/src/pages/settings/settings4.dart";
 
-  const SettingsFourPage({Key? key}) : super(key: key);
+  const SettingsFourPage({super.key});
 
   @override
   _SettingsFourPageState createState() => _SettingsFourPageState();

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -12,7 +14,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class GroceryHomePage extends StatefulWidget {
   static const String path = "lib/src/pages/grocery/ghome.dart";
 
-  const GroceryHomePage({Key? key}) : super(key: key);
+  const GroceryHomePage({super.key});
 
   @override
   GroceryHomePageState createState() {
@@ -56,19 +58,15 @@ class GroceryHomePageState extends State<GroceryHomePage> {
         child: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          title: Container(
-            child: Card(
-              child: Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 15.0),
-                      hintText: "Search products",
-                      border: InputBorder.none,
-                      suffixIcon: IconButton(
-                          onPressed: () {}, icon: const Icon(Icons.search))),
-                ),
-              ),
+          title: Card(
+            child: TextField(
+              decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 20.0, vertical: 15.0),
+                  hintText: "Search products",
+                  border: InputBorder.none,
+                  suffixIcon: IconButton(
+                      onPressed: () {}, icon: const Icon(Icons.search))),
             ),
           ),
           leading: const PNetworkImage(deliveryIcon),

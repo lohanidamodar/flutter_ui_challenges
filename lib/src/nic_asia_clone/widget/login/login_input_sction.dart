@@ -1,12 +1,14 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 import '../../widget/login/custome_input.dart';
 
 class LoginInputSection extends StatelessWidget {
-  const LoginInputSection({Key? key}) : super(key: key);
+  const LoginInputSection({super.key});
 
   @override
   Widget build(BuildContext context) {

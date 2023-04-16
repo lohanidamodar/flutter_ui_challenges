@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,28 +25,26 @@ class HomePage extends StatelessWidget {
                           fontSize: 36,
                           fontWeight: FontWeight.w700),
                     ),
-                    Container(
-                      child: Row(
-                        children: <Widget>[
-                          Icon(
-                            Icons.notifications,
-                            color: Colors.lightBlue[100],
-                          ),
-                          const SizedBox(
-                            width: 16,
-                          ),
-                          CircleAvatar(
-                            radius: 25,
-                            backgroundColor: Colors.white,
-                            child: ClipOval(
-                              child: Image.network(
-                                'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F6.jpg?alt=media',
-                                fit: BoxFit.contain,
-                              ),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.notifications,
+                          color: Colors.lightBlue[100],
+                        ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.white,
+                          child: ClipOval(
+                            child: Image.network(
+                              'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F6.jpg?alt=media',
+                              fit: BoxFit.contain,
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
@@ -63,117 +61,109 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            padding: const EdgeInsets.all(12),
-                            child: Icon(
-                              Icons.date_range,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.date_range,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Send",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Send",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            padding: const EdgeInsets.all(12),
-                            child: Icon(
-                              Icons.public,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.public,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Request",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Request",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            padding: const EdgeInsets.all(12),
-                            child: Icon(
-                              Icons.attach_money,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.attach_money,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Loan",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Loan",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            padding: const EdgeInsets.all(12),
-                            child: Icon(
-                              Icons.trending_down,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.trending_down,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Topup",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Topup",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     )
                   ],
                 )
@@ -228,8 +218,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: const BorderRadius.all(
-                                      Radius.circular(20)),
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[500]!,
@@ -252,8 +242,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: const BorderRadius.all(
-                                      Radius.circular(20)),
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[200]!,
@@ -287,8 +277,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: const BorderRadius.all(
-                                      Radius.circular(20)),
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[200]!,

@@ -59,15 +59,17 @@ class MyCodeViewState extends State<MyCodeView> {
         child: const Icon(Icons.content_copy),
         onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
-          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-            content: Text('Code link copied to Clipboard!'),
-          ));
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+              content: Text('Code link copied to Clipboard!'),
+            ));
+          }
         },
       ),
       SpeedDialChild(
         label: "Open",
         child: const Icon(Icons.open_in_new),
-        onTap: () => url_launcher.launch(widget.githubPath),
+        onTap: () => url_launcher.launchUrl(Uri.parse(widget.githubPath)),
       ),
       SpeedDialChild(
         child: const Icon(Icons.zoom_out),

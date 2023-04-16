@@ -9,7 +9,7 @@ class CustomIcon {
   static const IconData truck = IconData(0xe800, fontFamily: _kFontFam);
   static const IconData chat = IconData(0xe801, fontFamily: _kFontFam);
   static const IconData money = IconData(0xe802, fontFamily: _kFontFam);
-  static const IconData account_balance_wallet =
+  static const IconData accountBalanceWallet =
       IconData(0xf008, fontFamily: _kFontFam);
 
   static const IconData wallet = IconData(0xe910, fontFamily: _icomoon);

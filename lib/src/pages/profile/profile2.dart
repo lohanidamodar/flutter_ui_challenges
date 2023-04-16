@@ -11,7 +11,7 @@ class ProfileTwoPage extends StatelessWidget {
     {"title": "Nepal", "image": kathmandu2},
   ];
 
-  const ProfileTwoPage({Key? key}) : super(key: key);
+   ProfileTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,8 +92,7 @@ class ProfileTwoPage extends StatelessWidget {
         itemCount: collections.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-              margin:
-                  const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+              margin: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
               width: 150.0,
               height: 200.0,
               child: Column(

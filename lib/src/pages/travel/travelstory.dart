@@ -1,7 +1,9 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
-/// design concept:uikit
-/// image:pixabay
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+ * design concept:uikit
+ * image:pixabay
+  */
 
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -22,7 +24,7 @@ List<String> title = [
 class TravelStoryPage extends StatefulWidget {
   static const String path = "lib/src/pages/travel/tstory.dart";
 
-  const TravelStoryPage({Key? key}) : super(key: key);
+  const TravelStoryPage({super.key});
   @override
   _TravelStoryPageState createState() => _TravelStoryPageState();
 }
@@ -132,7 +134,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
               ),
               Stack(
                 children: <Widget>[
-                  CardScrollWidget(currentPage),
+                  CardScrollWidget(currentPage!),
                   Positioned.fill(
                     child: PageView.builder(
                       itemCount: images.length,
@@ -219,11 +221,11 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
 }
 
 class CardScrollWidget extends StatelessWidget {
-  final currentPage;
+  final double currentPage;
   final padding = 20.0;
   final verticalInset = 20.0;
 
-  const CardScrollWidget(this.currentPage, {Key? key}) : super(key: key);
+  const CardScrollWidget(this.currentPage, {super.key});
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -261,14 +263,12 @@ class CardScrollWidget extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black12,
-                          offset: Offset(3.0, 6.0),
-                          blurRadius: 10.0)
-                    ]),
+                decoration: const BoxDecoration(color: Colors.white, boxShadow: [
+                  BoxShadow(
+                      color: Colors.black12,
+                      offset: Offset(3.0, 6.0),
+                      blurRadius: 10.0)
+                ]),
                 child: AspectRatio(
                   aspectRatio: cardAspectRatio,
                   child: Stack(

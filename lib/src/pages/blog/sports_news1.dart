@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -8,7 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class SportsNewsOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/blog/sports_news1.dart";
 
-  const SportsNewsOnePage({Key? key}) : super(key: key);
+  const SportsNewsOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +68,7 @@ class SportsNewsOnePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const <Widget>[
-                    Icon(FontAwesomeIcons.footballBall),
+                    Icon(FontAwesomeIcons.football),
                     SizedBox(height: 16.0),
                     Text(
                       "Football",
@@ -82,7 +84,7 @@ class SportsNewsOnePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(FontAwesomeIcons.basketballBall),
+                    Icon(FontAwesomeIcons.basketball),
                     SizedBox(height: 16.0),
                     Text("Basketball"),
                   ],
@@ -94,7 +96,7 @@ class SportsNewsOnePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(FontAwesomeIcons.basketballBall),
+                    Icon(FontAwesomeIcons.basketball),
                     SizedBox(height: 16.0),
                     Text("Hockey"),
                   ],
@@ -134,8 +136,8 @@ class SportsNewsOnePage extends StatelessWidget {
                     ],
                   ),
                   const Padding(
-                    padding:
-                        EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+                    padding: EdgeInsets.only(
+                        top: 20.0, left: 20.0, right: 20.0),
                     child: Text(
                       ":",
                       style: TextStyle(

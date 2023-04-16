@@ -1,9 +1,11 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
+import 'package:flutter_ui_challenges/src/utils/oval_right_clipper.dart';
 
 class LightDrawerPage extends StatelessWidget {
   static const String path = "lib/src/pages/navigation/drawer2.dart";
@@ -12,7 +14,7 @@ class LightDrawerPage extends StatelessWidget {
   final Color active = Colors.grey.shade800;
   final Color divider = Colors.grey.shade600;
 
-  LightDrawerPage({Key? key}) : super(key: key);
+  LightDrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -70,8 +72,7 @@ class LightDrawerPage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(left: 16.0, right: 40),
           decoration: BoxDecoration(
-              color: primary,
-              boxShadow: const [BoxShadow(color: Colors.black45)]),
+              color: primary, boxShadow: const [BoxShadow(color: Colors.black45)]),
           width: 300,
           child: SafeArea(
             child: SingleChildScrollView(

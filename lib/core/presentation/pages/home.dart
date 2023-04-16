@@ -15,11 +15,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int? _pageIndex;
   @override
   void initState() {
     super.initState();
-    _pageIndex = 0;
   }
 
   @override

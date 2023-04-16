@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class ProfileEightPage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile8.dart";
 
-  const ProfileEightPage({Key? key}) : super(key: key);
+  const ProfileEightPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class ProfileEightPage extends StatelessWidget {
 }
 
 class UserInfo extends StatelessWidget {
-  const UserInfo({Key? key}) : super(key: key);
+  const UserInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

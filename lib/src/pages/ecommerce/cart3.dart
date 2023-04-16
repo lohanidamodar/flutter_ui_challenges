@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class CartThreePage extends StatefulWidget {
   static const String path = "lib/src/pages/ecommerece/cart3.dart";
 
-  const CartThreePage({Key? key}) : super(key: key);
+  const CartThreePage({super.key});
 
   @override
   _CartThreePageState createState() => _CartThreePageState();
@@ -160,31 +160,30 @@ class _CartThreePageState extends State<CartThreePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
-                    child: Row(children: [
+                Row(children: [
                   Hero(
-                      tag: imgPath,
-                      child: Image(
-                          image: AssetImage(imgPath),
-                          fit: BoxFit.cover,
-                          height: 75.0,
-                          width: 75.0)),
+                  tag: imgPath,
+                  child: Image(
+                      image: AssetImage(imgPath),
+                      fit: BoxFit.cover,
+                      height: 75.0,
+                      width: 75.0)),
                   const SizedBox(width: 10.0),
                   Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(foodName,
-                            style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 17.0,
-                                fontWeight: FontWeight.bold)),
-                        Text(price,
-                            style: const TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 15.0,
-                                color: Colors.grey))
-                      ])
-                ])),
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(foodName,
+                        style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.bold)),
+                    Text(price,
+                        style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 15.0,
+                            color: Colors.grey))
+                  ])
+                ]),
                 IconButton(
                     icon: const Icon(Icons.add),
                     color: Colors.black,

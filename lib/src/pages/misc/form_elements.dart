@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/forms/checkbox.dart';
@@ -7,7 +9,7 @@ import 'package:flutter_ui_challenges/src/widgets/forms/checkbox.dart';
 class FormElementPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/form_elements.dart";
 
-  const FormElementPage({Key? key}) : super(key: key);
+  const FormElementPage({super.key});
   @override
   _FormElementPageState createState() => _FormElementPageState();
 }

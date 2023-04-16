@@ -1,11 +1,13 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
   final String? image, title;
-  const Category({Key? key, this.title, this.image}) : super(key: key);
+  const Category({super.key, this.title, this.image});
   @override
   Widget build(BuildContext context) {
     return Card(

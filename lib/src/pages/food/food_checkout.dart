@@ -10,7 +10,7 @@ final priceTextStyle = TextStyle(
 class FoodCheckoutOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/food/food_checkout.dart";
 
-  const FoodCheckoutOnePage({Key? key}) : super(key: key);
+  const FoodCheckoutOnePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

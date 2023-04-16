@@ -1,11 +1,13 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../res/constants.dart';
 
 class MenuPage extends StatelessWidget {
-  const MenuPage({Key? key}) : super(key: key);
+  const MenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,8 +57,8 @@ class MenuPage extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 8.0, horizontal: 75.0),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
                       TextSpan(text: "Rs "),
@@ -66,8 +68,8 @@ class MenuPage extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 8.0, horizontal: 75.0),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
                       TextSpan(text: "KP "),

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
@@ -18,7 +20,7 @@ final inputDecoration = InputDecoration(
 class OTPPage extends StatelessWidget {
   static const String path = "lib/src/pages/misc/otp.dart";
 
-  const OTPPage({Key? key}) : super(key: key);
+  const OTPPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

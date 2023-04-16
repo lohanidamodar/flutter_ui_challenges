@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../model/home_menu_item.dart';
@@ -10,7 +12,7 @@ import '../widgets/bottom_expandable_app_bar/bottom_expandable_app_bar.dart';
 import '../widgets/bottom_expandable_app_bar/controller.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -93,7 +95,7 @@ class _HomePageState extends State<HomePage>
 
   BottomExpandableAppBar _buildBottomBar(BuildContext context) {
     return BottomExpandableAppBar(
-      attachSide: Side.Top,
+      attachSide: Side.top,
       controller: controller,
       expandedHeight: MediaQuery.of(context).size.height - 75,
       horizontalMargin: 0,
@@ -111,15 +113,11 @@ class _HomePageState extends State<HomePage>
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: const Icon(Icons.card_giftcard),
-                label: "Bazaar",
-                onTap: () {}),
+                icon: const Icon(Icons.card_giftcard), label: "Bazaar", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: const Icon(Icons.list),
-                label: "Transactions",
-                onTap: () {}),
+                icon: const Icon(Icons.list), label: "Transactions", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
@@ -154,12 +152,9 @@ class _HomePageState extends State<HomePage>
     return SliverPadding(
       padding: const EdgeInsets.all(16.0),
       sliver: SliverToBoxAdapter(
-        child: Container(
-          child: Text(
-            title,
-            style: const TextStyle(
-                color: Colors.black, fontWeight: FontWeight.w600),
-          ),
+        child: Text(
+          title,
+          style: const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
         ),
       ),
     );
@@ -187,7 +182,7 @@ class _HomePageState extends State<HomePage>
           _buildHeaderItem(icon: FontAwesomeIcons.wallet, label: "Load Fund"),
           const Spacer(),
           _buildHeaderItem(
-              icon: FontAwesomeIcons.mobileAlt, label: "Send/Request"),
+              icon: FontAwesomeIcons.mobileScreenButton, label: "Send/Request"),
           const Spacer(),
           _buildHeaderItem(icon: FontAwesomeIcons.qrcode, label: "Scan & Pay"),
           const Spacer(),

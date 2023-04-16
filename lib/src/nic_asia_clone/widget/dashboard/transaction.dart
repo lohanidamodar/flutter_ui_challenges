@@ -1,17 +1,18 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 
 class Transaction extends StatelessWidget {
   final Trx? transaction;
-  const Transaction({Key? key, this.transaction}) : super(key: key);
+  const Transaction({super.key, this.transaction});
 
   @override
   Widget build(BuildContext context) {
-    print('${transaction!.amount}');
-    Size deviceSize = MediaQuery.of(context).size;
+     Size deviceSize = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 15.0),
       child: Material(

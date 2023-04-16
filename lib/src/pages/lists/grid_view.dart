@@ -1,13 +1,15 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/ambikadulal
-/// images:pixabay.com
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/ambikadulal
+ * images:pixabay.com
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class GridViewAnimationPage extends StatefulWidget {
   static const String path = "lib/src/pages/lists/grid_view.dart";
 
-  const GridViewAnimationPage({Key? key}) : super(key: key);
+  const GridViewAnimationPage({super.key});
 
   @override
   _GridViewAnimationPageState createState() => _GridViewAnimationPageState();

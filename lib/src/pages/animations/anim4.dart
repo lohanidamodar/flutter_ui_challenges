@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class AnimatedBottomBar extends StatefulWidget {
   static const String path = "lib/src/pages/animations/anim4.dart";
 
-  const AnimatedBottomBar({Key? key}) : super(key: key);
+  const AnimatedBottomBar({super.key});
   @override
   _AnimatedBottomBarState createState() => _AnimatedBottomBarState();
 }
@@ -41,20 +43,14 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
   getPage(int? page) {
     switch (page) {
       case 0:
-        return Center(
-            child: Container(
-          child: const Text("Home Page"),
-        ));
+        return const Center(
+            child: Text("Home Page"));
       case 1:
-        return Center(
-            child: Container(
-          child: const Text("Profile Page"),
-        ));
+        return const Center(
+            child: Text("Profile Page"));
       case 2:
-        return Center(
-            child: Container(
-          child: const Text("Menu Page"),
-        ));
+        return const Center(
+            child: Text("Menu Page"));
     }
   }
 }

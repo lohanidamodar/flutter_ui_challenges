@@ -1,14 +1,17 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SettingsOnePage extends StatefulWidget {
   static const String path = "lib/src/pages/settings/settings1.dart";
 
-  const SettingsOnePage({Key? key}) : super(key: key);
+  const SettingsOnePage({super.key});
 
   @override
   _SettingsOnePageState createState() => _SettingsOnePageState();
@@ -37,7 +40,8 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
         backgroundColor: _dark ? null : Colors.grey.shade200,
         appBar: AppBar(
           elevation: 0,
-          brightness: _getBrightness(),
+          systemOverlayStyle:
+              _dark ? SystemUiOverlayStyle.dark : SystemUiOverlayStyle.light,
           iconTheme: IconThemeData(color: _dark ? Colors.white : Colors.black),
           backgroundColor: Colors.transparent,
           title: Text(

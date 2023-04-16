@@ -1,11 +1,13 @@
-/// Author: Aparna Dulal
-/// profile: https://github.com/ambikadulal
+/**
+ * Author: Aparna Dulal
+ * profile: https://github.com/ambikadulal
+  */
 import 'package:flutter/material.dart';
 
 class ProfileSettingsPage extends StatelessWidget {
   static const String path = "lib/src/pages/settings/profilesettings.dart";
 
-  const ProfileSettingsPage({Key? key}) : super(key: key);
+  const ProfileSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class ProfileSettingsPage extends StatelessWidget {
 }
 
 class EditPage extends StatefulWidget {
-  const EditPage({Key? key}) : super(key: key);
+  const EditPage({super.key});
 
   @override
   _EditPageState createState() => _EditPageState();
@@ -44,9 +46,7 @@ class _EditPageState extends State<EditPage> {
               Icons.settings,
               color: Colors.green,
             ),
-            onPressed: () {
-              
-            },
+            onPressed: () {},
           ),
         ],
       ),

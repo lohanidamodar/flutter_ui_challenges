@@ -5,8 +5,7 @@ class TitleLarge extends StatelessWidget {
   final String title;
   final IconData? icon;
 
-  const TitleLarge({Key? key, required this.title, this.icon})
-      : super(key: key);
+  const TitleLarge({super.key, required this.title, this.icon});
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -34,7 +33,7 @@ class TitleLarge extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(4.0),
                   decoration: const BoxDecoration(
-                    color: profile_info_background,
+                    color: profileInfoBackground,
                     shape: BoxShape.circle,
                   ),
                   child: const Text(

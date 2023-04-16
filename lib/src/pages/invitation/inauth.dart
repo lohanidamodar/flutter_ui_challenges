@@ -42,7 +42,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                   alignment: Alignment.topCenter,
                   height: (MediaQuery.of(context).size.height / 2) - 150,
                   child: const PNetworkImage(
-                    INVITE_ILLUSTRATION,
+                    inviteIllustration,
                     fit: BoxFit.contain,
                   ),
                 ),

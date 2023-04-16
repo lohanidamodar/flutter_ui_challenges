@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
@@ -8,12 +10,11 @@ class SliderDebug extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderDebug({
-    Key? key,
+  const SliderDebug({super.key, 
     this.sliderPercent,
     this.paddingTop,
     this.paddingBottom,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

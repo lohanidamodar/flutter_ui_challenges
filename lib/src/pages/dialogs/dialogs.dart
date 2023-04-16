@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class DialogsPage extends StatelessWidget {
   static const String path = "lib/src/pages/dialogs/dialogs.dart";
 
-  const DialogsPage({Key? key}) : super(key: key);
+  const DialogsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +42,7 @@ class DialogsPage extends StatelessWidget {
               ),
               child: const Text("Success Dialog"),
               onPressed: () =>
-                  _customAlertDialog(context, AlertDialogType.SUCCESS),
+                  _customAlertDialog(context, AlertDialogType.success),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -48,7 +50,7 @@ class DialogsPage extends StatelessWidget {
               ),
               child: const Text("Info Dialog"),
               onPressed: () =>
-                  _customAlertDialog(context, AlertDialogType.INFO),
+                  _customAlertDialog(context, AlertDialogType.info),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -56,7 +58,7 @@ class DialogsPage extends StatelessWidget {
               ),
               child: const Text("Warning Dialog"),
               onPressed: () =>
-                  _customAlertDialog(context, AlertDialogType.WARNING),
+                  _customAlertDialog(context, AlertDialogType.warning),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -64,7 +66,7 @@ class DialogsPage extends StatelessWidget {
               ),
               child: const Text("Error Dialog"),
               onPressed: () =>
-                  _customAlertDialog(context, AlertDialogType.ERROR),
+                  _customAlertDialog(context, AlertDialogType.error),
             ),
           ],
         ),
@@ -104,7 +106,7 @@ class DialogsPage extends StatelessWidget {
 }
 
 class BeautifulAlertDialog extends StatelessWidget {
-  const BeautifulAlertDialog({Key? key}) : super(key: key);
+  const BeautifulAlertDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -193,11 +195,10 @@ class BeautifulAlertDialog extends StatelessWidget {
 
 class PaymentSuccessDialog extends StatelessWidget {
   final image = images[2];
-  final TextStyle subtitle =
-      const TextStyle(fontSize: 12.0, color: Colors.grey);
+  final TextStyle subtitle = const TextStyle(fontSize: 12.0, color: Colors.grey);
   final TextStyle label = const TextStyle(fontSize: 14.0, color: Colors.grey);
 
-  PaymentSuccessDialog({Key? key}) : super(key: key);
+  PaymentSuccessDialog({super.key});
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -229,10 +230,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const <Widget>[
-                    Text("2, April 2019"),
-                    Text("9:10 AM")
-                  ],
+                  children: const <Widget>[Text("2, April 2019"), Text("9:10 AM")],
                 ),
                 const SizedBox(height: 20.0),
                 Row(
@@ -314,10 +312,10 @@ class PaymentSuccessDialog extends StatelessWidget {
 }
 
 enum AlertDialogType {
-  SUCCESS,
-  ERROR,
-  WARNING,
-  INFO,
+  success,
+  error,
+  warning,
+  info,
 }
 
 class CustomAlertDialog extends StatelessWidget {
@@ -334,7 +332,7 @@ class CustomAlertDialog extends StatelessWidget {
       this.title = "Successful",
       required this.content,
       this.icon,
-      this.type = AlertDialogType.INFO,
+      this.type = AlertDialogType.info,
       this.buttonLabel = "Ok"})
       : super(key: key);
 
@@ -391,13 +389,13 @@ class CustomAlertDialog extends StatelessWidget {
 
   IconData _getIconForType(AlertDialogType type) {
     switch (type) {
-      case AlertDialogType.WARNING:
+      case AlertDialogType.warning:
         return Icons.warning;
-      case AlertDialogType.SUCCESS:
+      case AlertDialogType.success:
         return Icons.check_circle;
-      case AlertDialogType.ERROR:
+      case AlertDialogType.error:
         return Icons.error;
-      case AlertDialogType.INFO:
+      case AlertDialogType.info:
       default:
         return Icons.info_outline;
     }
@@ -405,13 +403,13 @@ class CustomAlertDialog extends StatelessWidget {
 
   Color _getColorForType(AlertDialogType type) {
     switch (type) {
-      case AlertDialogType.WARNING:
+      case AlertDialogType.warning:
         return Colors.orange;
-      case AlertDialogType.SUCCESS:
+      case AlertDialogType.success:
         return Colors.green;
-      case AlertDialogType.ERROR:
+      case AlertDialogType.error:
         return Colors.red;
-      case AlertDialogType.INFO:
+      case AlertDialogType.info:
       default:
         return Colors.blue;
     }

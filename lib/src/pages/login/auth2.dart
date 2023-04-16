@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'dart:ui';
@@ -9,7 +11,7 @@ class AuthTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/login/auth2.dart";
   final String backImg = meal;
 
-  const AuthTwoPage({Key? key}) : super(key: key);
+  const AuthTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

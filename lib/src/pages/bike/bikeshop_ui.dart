@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MoterBikeShopPage extends StatelessWidget {
   static const String path = "lib/src/pages/bike/bikeshop_ui.dart";
 
-  const MoterBikeShopPage({Key? key}) : super(key: key);
+  const MoterBikeShopPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MoterBikeShopPage extends StatelessWidget {
 }
 
 class DetailsPage extends StatefulWidget {
-  const DetailsPage({Key? key}) : super(key: key);
+  const DetailsPage({super.key});
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
@@ -110,84 +110,82 @@ class _DetailsPageState extends State<DetailsPage> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.85,
                   child: SingleChildScrollView(
-                    child: Container(
-                      child: Column(
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              const Text(
-                                "New Arrival",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
+                    child: Column(
+                      children: <Widget>[
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              "New Arrival",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
                               ),
-                              const SizedBox(
-                                height: 10,
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            SizedBox(
+                              height: 380,
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  newArrivalWidget(
+                                      "24A", "400W", "30Km", "250,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  newArrivalWidget(
+                                      "22A", "300W", "25Km", "200,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  newArrivalWidget(
+                                      "20A", "320W", "27Km", "300,000"),
+                                ],
                               ),
-                              SizedBox(
-                                height: 380,
-                                width: MediaQuery.of(context).size.width * 0.8,
-                                child: ListView(
-                                  physics: const BouncingScrollPhysics(),
-                                  scrollDirection: Axis.horizontal,
-                                  children: <Widget>[
-                                    newArrivalWidget(
-                                        "24A", "400W", "30Km", "250,000"),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    newArrivalWidget(
-                                        "22A", "300W", "25Km", "200,000"),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    newArrivalWidget(
-                                        "20A", "320W", "27Km", "300,000"),
-                                  ],
-                                ),
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            const Text(
+                              "Best Sellers",
+                              style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.w900,
                               ),
-                              const SizedBox(
-                                height: 20,
+                            ),
+                            SizedBox(
+                              height: 300,
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  bestSellerWidget(
+                                      "Honda Bike", "Prospero", "150,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  bestSellerWidget(
+                                      "Bullet Bike", "Rero", "400,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  bestSellerWidget(
+                                      "Plusar Bike", "Mount", "250,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                ],
                               ),
-                              const Text(
-                                "Best Sellers",
-                                style: TextStyle(
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 300,
-                                width: MediaQuery.of(context).size.width * 0.8,
-                                child: ListView(
-                                  physics: const BouncingScrollPhysics(),
-                                  scrollDirection: Axis.horizontal,
-                                  children: <Widget>[
-                                    bestSellerWidget(
-                                        "Honda Bike", "Prospero", "150,000"),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    bestSellerWidget(
-                                        "Bullet Bike", "Rero", "400,000"),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    bestSellerWidget(
-                                        "Plusar Bike", "Mount", "250,000"),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
+                            ),
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 )
@@ -261,8 +259,7 @@ class _DetailsPageState extends State<DetailsPage> {
             ),
             Text(
               companyName,
-              style:
-                  const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
             ),
             const SizedBox(
               height: 10,
@@ -330,69 +327,63 @@ class _DetailsPageState extends State<DetailsPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        battery,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      battery,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      const Text(
-                        "Battery",
-                        style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.normal),
-                      )
-                    ],
-                  ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "Battery",
+                      style: TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.normal),
+                    )
+                  ],
                 ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        enginePower,
-                        style: const TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      const Text("Engine",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.normal,
-                          ))
-                    ],
-                  ),
-                ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        distance,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      const Text(
-                        "Distance",
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      enginePower,
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text("Engine",
                         style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.normal),
-                      )
-                    ],
-                  ),
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal,
+                        ))
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      distance,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "Distance",
+                      style: TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.normal),
+                    )
+                  ],
                 )
               ],
             ),

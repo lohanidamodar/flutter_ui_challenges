@@ -1,12 +1,14 @@
-/// Author: Siddhartha Joshi
-/// profile: https://github.com/cimplesid
+/**
+ * Author: Siddhartha Joshi
+ * profile: https://github.com/cimplesid
+  */
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 
 class Intro5 extends StatefulWidget {
   static const String path = "lib/src/pages/onboarding/intro5.dart";
 
-  const Intro5({Key? key}) : super(key: key);
+  const Intro5({super.key});
   @override
   _Intro5State createState() => _Intro5State();
 }

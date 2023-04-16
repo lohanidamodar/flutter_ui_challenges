@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -22,7 +24,7 @@ class QuizHomePage extends StatelessWidget {
     Colors.brown
   ];
 
-  QuizHomePage({Key? key}) : super(key: key);
+   QuizHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +48,8 @@ class QuizHomePage extends StatelessWidget {
               slivers: <Widget>[
                 const SliverToBoxAdapter(
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    padding: EdgeInsets.symmetric(
+                        horizontal: 16.0, vertical: 8.0),
                     child: Text(
                       "Select a category to start the quiz",
                       style: TextStyle(
@@ -60,12 +62,11 @@ class QuizHomePage extends StatelessWidget {
                 SliverPadding(
                   padding: const EdgeInsets.all(16.0),
                   sliver: SliverGrid(
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              childAspectRatio: 1.2,
-                              crossAxisSpacing: 10.0,
-                              mainAxisSpacing: 10.0),
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          childAspectRatio: 1.2,
+                          crossAxisSpacing: 10.0,
+                          mainAxisSpacing: 10.0),
                       delegate: SliverChildBuilderDelegate(
                         _buildCategoryItem,
                         childCount: categories.length,

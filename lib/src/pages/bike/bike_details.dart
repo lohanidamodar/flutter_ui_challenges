@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -9,7 +11,7 @@ class BikeDetailsPage extends StatelessWidget {
   static const String path = "lib/src/pages/bike/bike_details.dart";
   final TextStyle bold = const TextStyle(fontWeight: FontWeight.bold);
 
-  const BikeDetailsPage({Key? key}) : super(key: key);
+  const BikeDetailsPage({super.key});
   @override
   Widget build(BuildContext context) {
     const String title = "Bajaj Pulsar 220F";
@@ -277,8 +279,8 @@ class BorderedContainer extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title!,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 28.0),
+                    style:
+                        const TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
                   ),
                   if (child != null) ...[
                     const SizedBox(height: 10.0),

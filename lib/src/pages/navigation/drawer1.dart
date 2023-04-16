@@ -1,9 +1,11 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
+import 'package:flutter_ui_challenges/src/utils/oval_right_clipper.dart';
 
 class DarkDrawerPage extends StatelessWidget {
   static const String path = "lib/src/pages/navigation/drawer1.dart";
@@ -11,7 +13,7 @@ class DarkDrawerPage extends StatelessWidget {
   final Color primary = const Color(0xff291747);
   final Color active = const Color(0xff6C48AB);
 
-  DarkDrawerPage({Key? key}) : super(key: key);
+  DarkDrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,8 +71,7 @@ class DarkDrawerPage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(left: 16.0, right: 40),
           decoration: BoxDecoration(
-              color: primary,
-              boxShadow: const [BoxShadow(color: Colors.black45)]),
+              color: primary, boxShadow: const [BoxShadow(color: Colors.black45)]),
           width: 300,
           child: SafeArea(
             child: SingleChildScrollView(

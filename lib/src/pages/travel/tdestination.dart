@@ -12,7 +12,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class DestinationPage extends StatelessWidget {
   static const String path = "lib/src/pages/travel/tdestination.dart";
 
-  const DestinationPage({Key? key}) : super(key: key);
+  const DestinationPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,38 +32,35 @@ class DestinationPage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 200, left: 40),
                 child: Card(
                   elevation: 5.0,
-                  child: Container(
-                    child: Column(
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            IconButton(
-                              icon: Icon(Platform.isIOS
-                                  ? Icons.arrow_back_ios
-                                  : Icons.arrow_back),
-                              onPressed: () {
-                                Navigator.pop(context);
-                              },
-                            ),
-                            const Text("Kathmandu",
-                                style: TextStyle(
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.bold)),
-                            IconButton(
-                              icon: const Icon(Icons.star_border),
-                              onPressed: () {},
-                            )
-                          ],
-                        ),
-                        Container(
-                            padding:
-                                const EdgeInsets.fromLTRB(20.0, 0, 20.0, 16.0),
-                            child: const Text(
-                              "Kathmandu, worlds spiritual capital mixes the traditional cultures of Nepal as well as the modern technology.",
-                              textAlign: TextAlign.justify,
-                            ))
-                      ],
-                    ),
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          IconButton(
+                            icon: Icon(Platform.isIOS
+                                ? Icons.arrow_back_ios
+                                : Icons.arrow_back),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                          const Text("Kathmandu",
+                              style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold)),
+                          IconButton(
+                            icon: const Icon(Icons.star_border),
+                            onPressed: () {},
+                          )
+                        ],
+                      ),
+                      Container(
+                          padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 16.0),
+                          child: const Text(
+                            "Kathmandu, worlds spiritual capital mixes the traditional cultures of Nepal as well as the modern technology.",
+                            textAlign: TextAlign.justify,
+                          ))
+                    ],
                   ),
                 ),
               ),
@@ -123,16 +120,15 @@ class DestinationPage extends StatelessWidget {
                     Expanded(
                       child: GridView(
                         shrinkWrap: true,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                crossAxisSpacing: 10.0,
-                                mainAxisSpacing: 10.0),
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 10.0,
+                            mainAxisSpacing: 10.0),
                         children: <Widget>[
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
-                              child: const PNetworkImage(kathmandu1,
-                                  fit: BoxFit.cover)),
+                              child:
+                                  const PNetworkImage(kathmandu1, fit: BoxFit.cover)),
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
                               child: const PNetworkImage(pashupatinath,
@@ -143,8 +139,8 @@ class DestinationPage extends StatelessWidget {
                                   fit: BoxFit.cover)),
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
-                              child: const PNetworkImage(kathmandu1,
-                                  fit: BoxFit.cover)),
+                              child:
+                                  const PNetworkImage(kathmandu1, fit: BoxFit.cover)),
                         ],
                       ),
                     ),

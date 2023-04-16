@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,7 @@ final List rooms = [
 class HotelHomePage extends StatelessWidget {
   static const String path = "lib/src/pages/hotel/hhome.dart";
 
-  const HotelHomePage({Key? key}) : super(key: key);
+  const HotelHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +56,7 @@ class HotelHomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontSize: 20.0)),
                 Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                   padding: const EdgeInsets.all(5.0),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -97,100 +98,98 @@ class HotelHomePage extends StatelessWidget {
       margin: const EdgeInsets.all(20.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(5.0),
-        child: Container(
-          child: Material(
-            elevation: 5.0,
-            borderRadius: BorderRadius.circular(5.0),
-            color: Colors.white,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Stack(
+        child: Material(
+          elevation: 5.0,
+          borderRadius: BorderRadius.circular(5.0),
+          color: Colors.white,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Image.asset(room['image']),
+                  Positioned(
+                    right: 10,
+                    top: 10,
+                    child: Icon(
+                      Icons.star,
+                      color: Colors.grey.shade800,
+                      size: 20.0,
+                    ),
+                  ),
+                  const Positioned(
+                    right: 8,
+                    top: 8,
+                    child: Icon(
+                      Icons.star_border,
+                      color: Colors.white,
+                      size: 24.0,
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 20.0,
+                    right: 10.0,
+                    child: Container(
+                      padding: const EdgeInsets.all(10.0),
+                      color: Colors.white,
+                      child: const Text("\$40"),
+                    ),
+                  )
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Image.asset(room['image']),
-                    Positioned(
-                      right: 10,
-                      top: 10,
-                      child: Icon(
-                        Icons.star,
-                        color: Colors.grey.shade800,
-                        size: 20.0,
-                      ),
+                    Text(
+                      room['title'],
+                      style: const TextStyle(
+                          fontSize: 18.0, fontWeight: FontWeight.bold),
                     ),
-                    const Positioned(
-                      right: 8,
-                      top: 8,
-                      child: Icon(
-                        Icons.star_border,
-                        color: Colors.white,
-                        size: 24.0,
-                      ),
+                    const SizedBox(
+                      height: 5.0,
                     ),
-                    Positioned(
-                      bottom: 20.0,
-                      right: 10.0,
-                      child: Container(
-                        padding: const EdgeInsets.all(10.0),
-                        color: Colors.white,
-                        child: const Text("\$40"),
-                      ),
+                    const Text("Bouddha, Kathmandu"),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: const <Widget>[
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Text(
+                          "(220 reviews)",
+                          style: TextStyle(color: Colors.grey),
+                        )
+                      ],
                     )
                   ],
                 ),
-                Container(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        room['title'],
-                        style: const TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(
-                        height: 5.0,
-                      ),
-                      const Text("Bouddha, Kathmandu"),
-                      const SizedBox(
-                        height: 10.0,
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const <Widget>[
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Text(
-                            "(220 reviews)",
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

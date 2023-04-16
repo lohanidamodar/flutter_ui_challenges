@@ -39,7 +39,6 @@ import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/automultiscreen.dart';
 import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
@@ -159,9 +158,9 @@ final List<dynamic> pages = [
         path: ProfileNinePage.path),
     menu.SubMenuItem("Profile One", const ProfileOnePage(),
         path: ProfileOnePage.path),
-    menu.SubMenuItem("Profile Two", const ProfileTwoPage(),
+    menu.SubMenuItem("Profile Two",  ProfileTwoPage(),
         path: ProfileTwoPage.path),
-    menu.SubMenuItem("Profile Three", const ProfileThreePage(),
+    menu.SubMenuItem("Profile Three",  ProfileThreePage(),
         path: ProfileThreePage.path),
     menu.SubMenuItem("Profile Four", const ProfileFourPage(),
         path: ProfileFourPage.path),
@@ -266,23 +265,23 @@ final List<dynamic> pages = [
         path: EcommerceFourPage.path),
     menu.SubMenuItem("Checkout One", const CheckoutOnePage(),
         path: CheckoutOnePage.path),
-    menu.SubMenuItem("Ecommerce One", const EcommerceOnePage(),
+    menu.SubMenuItem("Ecommerce One",   EcommerceOnePage(),
         path: EcommerceOnePage.path),
-    menu.SubMenuItem("Ecommerce Two", const EcommerceTwoPage(),
+    menu.SubMenuItem("Ecommerce Two",  EcommerceTwoPage(),
         path: EcommerceTwoPage.path),
-    menu.SubMenuItem("Ecommerce Three", const SliverAppbarPage(),
+    menu.SubMenuItem("Ecommerce Three",  SliverAppbarPage(),
         path: SliverAppbarPage.path),
     menu.SubMenuItem("Ecommerce Grocery", const EcommerceFivePage(),
         path: EcommerceFivePage.path),
     menu.SubMenuItem("Confirm Order", const ConfirmOrderPage(),
         path: ConfirmOrderPage.path),
-    menu.SubMenuItem("Ecommerce Cart One", const CartOnePage(),
+    menu.SubMenuItem("Ecommerce Cart One",   CartOnePage(),
         path: CartOnePage.path),
     menu.SubMenuItem("Ecommerce Details One", const EcommerceDetailOnePage(),
         path: EcommerceDetailOnePage.path),
     menu.SubMenuItem("Ecommerce Details Two", const EcommerceDetailTwoPage(),
         path: EcommerceDetailTwoPage.path),
-    menu.SubMenuItem("Rounded Details Page", const EcommerceDetailThreePage(),
+    menu.SubMenuItem("Rounded Details Page",  EcommerceDetailThreePage(),
         path: EcommerceDetailThreePage.path),
   ]),
   menu.MenuItem(title: "Blog", icon: Icons.pages, items: [
@@ -298,7 +297,7 @@ final List<dynamic> pages = [
         path: ArticleTwoPage.path),
   ]),
   menu.MenuItem(title: "Dashboard", icon: Icons.dashboard, items: [
-    menu.SubMenuItem("Dashboard One", const DashboardOnePage(),
+    menu.SubMenuItem("Dashboard One",  DashboardOnePage(),
         path: DashboardOnePage.path),
     menu.SubMenuItem("Dashboard Two", const DashboardTwoPage(),
         path: DashboardTwoPage.path),
@@ -317,7 +316,7 @@ final List<dynamic> pages = [
         path: RecipeSinglePage.path),
     menu.SubMenuItem("Recipe Details", const RecipeDetailsPage(),
         path: RecipeDetailsPage.path),
-    menu.SubMenuItem("Food Delivery", const FoodDeliveryHomePage(),
+    menu.SubMenuItem("Food Delivery",  FoodDeliveryHomePage(),
         path: FoodDeliveryHomePage.path),
   ]),
   menu.MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
@@ -344,7 +343,7 @@ final List<dynamic> pages = [
         ),
         path: CheckAnswersPage.path),
   ]),
-  menu.MenuItem(title: "Todo", icon: FontAwesomeIcons.tasks, items: [
+  menu.MenuItem(title: "Todo", icon: FontAwesomeIcons.listCheck, items: [
     menu.SubMenuItem("Todo Home Three", const TodoHomeThreePage(),
         path: TodoHomeThreePage.path),
     menu.SubMenuItem("Todo Week View", TodoTwoPage(), path: TodoTwoPage.path),
@@ -372,8 +371,6 @@ final List<dynamic> pages = [
   ]),
   menu.MenuItem(title: "Navigation", icon: Icons.menu, items: [
     menu.SubMenuItem("Menu One", const MenuOnePage(), path: MenuOnePage.path),
-    menu.SubMenuItem("Hidden drawer nav", const HiddenDrawerNav(),
-        path: HiddenDrawerNav.path),
     menu.SubMenuItem("Hidden Menu", const HiddenMenuPage(),
         path: HiddenMenuPage.path),
     menu.SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
@@ -424,12 +421,12 @@ final List<dynamic> pages = [
         path: ChatTwoPage.path),
     menu.SubMenuItem("Form Elements", const FormElementPage(),
         path: FormElementPage.path),
-    menu.SubMenuItem("Sliders", const SlidersPage(), path: SlidersPage.path),
+    menu.SubMenuItem("Sliders",  SlidersPage(), path: SlidersPage.path),
     menu.SubMenuItem("Alert Dialogs", const DialogsPage(),
         path: DialogsPage.path),
     menu.SubMenuItem("Springy Slider", const SpringySliderPage(),
         path: SpringySliderPage.path),
-    menu.SubMenuItem("Sliver App Bar", const SliverAppbarPage(),
+    menu.SubMenuItem("Sliver App Bar",  SliverAppbarPage(),
         path: SliverAppbarPage.path),
     menu.SubMenuItem("Loaders", const LoadersPage(), path: LoadersPage.path),
     menu.SubMenuItem("ChatUi", const ChatUi(), path: ChatUi.path),

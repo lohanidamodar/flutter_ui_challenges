@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'question.dart';
@@ -10,8 +12,7 @@ class QuizFinishedPage extends StatelessWidget {
   final List<Question> questions;
   final Map<int, dynamic> answers;
 
-  const QuizFinishedPage(
-      {Key? key, required this.questions, required this.answers})
+  const QuizFinishedPage({Key? key, required this.questions, required this.answers})
       : super(key: key);
 
   @override

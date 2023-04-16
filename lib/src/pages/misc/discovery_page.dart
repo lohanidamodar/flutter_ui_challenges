@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DiscoveryPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/discovery_page.dart";
-  const DiscoveryPage({Key? key}) : super(key: key);
+  const DiscoveryPage({super.key});
 
   @override
   _DiscoveryPageState createState() => _DiscoveryPageState();
@@ -35,8 +35,8 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
           padding: const EdgeInsets.all(0),
         ),
         child: Container(
-          margin: const EdgeInsets.only(
-              left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
+          margin:
+              const EdgeInsets.only(left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
           decoration: getBoxDecoration(),
           child: Center(
             child: Column(
@@ -78,10 +78,10 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   }
 
   BottomNavigationBarItem getBottomNavigationItem(
-      String title, IconData IconName) {
+      String title, IconData iconName) {
     return BottomNavigationBarItem(
       icon: Icon(
-        IconName,
+        iconName,
         size: 35.0,
       ),
       label: title,

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'dart:io';
@@ -23,7 +25,7 @@ class RecipeListPage extends StatelessWidget {
     pancake,
   ];
 
-  RecipeListPage({Key? key}) : super(key: key);
+  RecipeListPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,16 +42,14 @@ class RecipeListPage extends StatelessWidget {
           height: 450,
           width: 300,
           decoration: BoxDecoration(
-              borderRadius:
-                  const BorderRadius.only(bottomRight: Radius.circular(30)),
+              borderRadius: const BorderRadius.only(bottomRight: Radius.circular(30)),
               color: color2),
         ),
         Container(
           height: 100,
           width: 80,
           decoration: BoxDecoration(
-              borderRadius:
-                  const BorderRadius.only(bottomRight: Radius.circular(30)),
+              borderRadius: const BorderRadius.only(bottomRight: Radius.circular(30)),
               color: color1),
         ),
         SingleChildScrollView(
@@ -122,8 +122,8 @@ class RecipeListPage extends StatelessWidget {
   Widget _buildItem(BuildContext context, index, {bool large = false}) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (_) => const RecipeSinglePage()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (_) => const RecipeSinglePage()));
       },
       child: Container(
         margin: const EdgeInsets.only(right: 20),

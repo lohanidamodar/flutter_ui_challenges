@@ -1,11 +1,13 @@
-/// Author: Sudip Thapa
-/// profile: https://github.com/sudeepthapa
+/**
+ * Author: Sudip Thapa  
+ * profile: https://github.com/sudeepthapa
+  */
 import 'package:flutter/material.dart';
 
 class LoginSevenPage extends StatefulWidget {
   static const String path = "lib/src/pages/login/login7.dart";
 
-  const LoginSevenPage({Key? key}) : super(key: key);
+  const LoginSevenPage({super.key});
   @override
   _LoginSevenPageState createState() => _LoginSevenPageState();
 }

@@ -1,5 +1,7 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 import 'package:flutter/material.dart';
 
 import 'pages/furniture.dart';
@@ -8,7 +10,7 @@ import 'pages/profile.dart';
 class FurnitureApp extends StatelessWidget {
   static const String path = "lib/src/furniture_app/furniture_app.dart";
 
-  const FurnitureApp({Key? key}) : super(key: key);
+  const FurnitureApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

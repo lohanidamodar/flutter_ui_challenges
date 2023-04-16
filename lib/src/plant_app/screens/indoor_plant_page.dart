@@ -3,7 +3,7 @@ import 'package:flutter_ui_challenges/src/plant_app/model/data_model.dart';
 import 'detail_page.dart';
 
 class IndoorPlantPage extends StatelessWidget {
-  const IndoorPlantPage({Key? key}) : super(key: key);
+  const IndoorPlantPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,72 +31,68 @@ class IndoorPlantPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Expanded(
-            child: Container(
-              child: ListView.builder(
-                itemCount: plants.length,
-                itemBuilder: (_, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DetailPage(
-                            plant: Indoor[index],
-                          ),
+            child: ListView.builder(
+              itemCount: plants.length,
+              itemBuilder: (_, index) {
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => DetailPage(
+                          plant: indoor[index],
                         ),
-                      );
-                    },
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      ),
+                    );
+                  },
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Hero(
+                        tag: indoor[index].title!,
+                        child: Image.network(indoor[index].image!),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        indoor[index].title!,
+                        style: const TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        indoor[index].discription!,
+                        style: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
                         children: [
-                          Hero(
-                            tag: Indoor[index].title!,
-                            child: Image.network(Indoor[index].image!),
-                          ),
-                          const SizedBox(height: 10),
                           Text(
-                            Indoor[index].title!,
+                            "\$${indoor[index].price}",
                             style: const TextStyle(
-                              fontSize: 25,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const SizedBox(height: 10),
-                          Text(
-                            Indoor[index].discription!,
-                            style: const TextStyle(
-                              color: Colors.grey,
-                              fontSize: 16,
+                          TextButton(
+                            child: const Text(
+                              "+",
+                              style: TextStyle(fontSize: 22),
                             ),
-                          ),
-                          const SizedBox(height: 10),
-                          Row(
-                            children: [
-                              Text(
-                                "\$${Indoor[index].price}",
-                                style: const TextStyle(
-                                  fontSize: 35,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              TextButton(
-                                child: const Text(
-                                  "+",
-                                  style: TextStyle(fontSize: 22),
-                                ),
-                                onPressed: () {},
-                              )
-                            ],
-                          ),
-                          const SizedBox(height: 30),
-                          const Divider(),
+                            onPressed: () {},
+                          )
                         ],
                       ),
-                    ),
-                  );
-                },
-              ),
+                      const SizedBox(height: 30),
+                      const Divider(),
+                    ],
+                  ),
+                );
+              },
             ),
           )
         ],

@@ -36,11 +36,9 @@ class DetailPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Container(
-                    child: Hero(
-                      tag: plant!.title!,
-                      child: Image.network(plant!.image!),
-                    ),
+                  Hero(
+                    tag: plant!.title!,
+                    child: Image.network(plant!.image!),
                   ),
                   const SizedBox(height: 10),
                   Container(

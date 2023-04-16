@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -7,7 +9,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class SignupTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/login/signup2.dart";
 
-  const SignupTwoPage({Key? key}) : super(key: key);
+  const SignupTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +43,8 @@ class SignupTwoPage extends StatelessWidget {
             ),
             const SizedBox(height: 30.0),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding:
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 decoration: InputDecoration(
                     labelText: "Email",
@@ -49,7 +52,8 @@ class SignupTwoPage extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding:
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -58,7 +62,8 @@ class SignupTwoPage extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding:
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(

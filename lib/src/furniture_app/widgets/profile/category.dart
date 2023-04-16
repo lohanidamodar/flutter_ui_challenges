@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
   final Catg? catg;
-  const Category({Key? key, this.catg}) : super(key: key);
+  const Category({super.key, this.catg});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -22,7 +22,7 @@ class Category extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: profile_info_categories_background,
+                  color: profileInfoCategoriesBackground,
                 ),
                 child: Icon(
                   catg!.icon,
@@ -36,7 +36,7 @@ class Category extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(5.0),
                       decoration: const BoxDecoration(
-                        color: profile_info_background,
+                        color: profileInfoBackground,
                         shape: BoxShape.circle,
                       ),
                       child: Text(

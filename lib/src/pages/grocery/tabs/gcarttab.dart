@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -7,7 +9,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem3.dart';
 
 class GroceryCartTabView extends StatelessWidget {
-  const GroceryCartTabView({Key? key}) : super(key: key);
+  const GroceryCartTabView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,8 +54,8 @@ class GroceryCartTabView extends StatelessWidget {
           ],
           color: Colors.white,
         ),
-        padding: const EdgeInsets.only(
-            left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
+        padding:
+            const EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
         child: Column(
           children: <Widget>[
             Row(

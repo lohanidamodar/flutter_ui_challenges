@@ -1,10 +1,12 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class BeautifulAlertDialog extends StatelessWidget {
-  const BeautifulAlertDialog({Key? key}) : super(key: key);
+  const BeautifulAlertDialog({super.key});
 
   @override
   Widget build(BuildContext context) {

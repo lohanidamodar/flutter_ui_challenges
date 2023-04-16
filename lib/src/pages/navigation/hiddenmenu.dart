@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class HiddenMenuPage extends StatefulWidget {
   static const String path = "lib/src/pages/navigation/hiddenmenu.dart";
 
-  const HiddenMenuPage({Key? key}) : super(key: key);
+  const HiddenMenuPage({super.key});
   @override
   _HiddenMenuPageState createState() => _HiddenMenuPageState();
 }

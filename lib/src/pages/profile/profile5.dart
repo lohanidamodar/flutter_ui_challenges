@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -9,7 +11,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class ProfileFivePage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile5.dart";
 
-  const ProfileFivePage({Key? key}) : super(key: key);
+  const ProfileFivePage({super.key});
   @override
   Widget build(BuildContext context) {
     const Color color1 = Color(0xffFC5CF0);
@@ -112,57 +114,55 @@ class ProfileFivePage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                Container(
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 5.0, horizontal: 16.0),
-                        margin: const EdgeInsets.only(
-                            top: 30, left: 20.0, right: 20.0, bottom: 20.0),
-                        decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              colors: [color1, color2],
-                            ),
-                            borderRadius: BorderRadius.circular(30.0)),
-                        child: Row(
-                          children: <Widget>[
-                            IconButton(
-                              color: Colors.white,
-                              icon: const Icon(FontAwesomeIcons.user),
-                              onPressed: () {},
-                            ),
-                            IconButton(
-                              color: Colors.white,
-                              icon: const Icon(Icons.location_on),
-                              onPressed: () {},
-                            ),
-                            const Spacer(),
-                            IconButton(
-                              color: Colors.white,
-                              icon: const Icon(Icons.add),
-                              onPressed: () {},
-                            ),
-                            IconButton(
-                              color: Colors.white,
-                              icon: const Icon(Icons.message),
-                              onPressed: () {},
-                            ),
-                          ],
-                        ),
-                      ),
-                      Center(
-                        child: FloatingActionButton(
-                          backgroundColor: Colors.white,
-                          onPressed: () {},
-                          child: const Icon(
-                            Icons.favorite,
-                            color: Colors.pink,
+                Stack(
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 5.0, horizontal: 16.0),
+                      margin: const EdgeInsets.only(
+                          top: 30, left: 20.0, right: 20.0, bottom: 20.0),
+                      decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [color1, color2],
                           ),
+                          borderRadius: BorderRadius.circular(30.0)),
+                      child: Row(
+                        children: <Widget>[
+                          IconButton(
+                            color: Colors.white,
+                            icon: const Icon(FontAwesomeIcons.user),
+                            onPressed: () {},
+                          ),
+                          IconButton(
+                            color: Colors.white,
+                            icon: const Icon(Icons.location_on),
+                            onPressed: () {},
+                          ),
+                          const Spacer(),
+                          IconButton(
+                            color: Colors.white,
+                            icon: const Icon(Icons.add),
+                            onPressed: () {},
+                          ),
+                          IconButton(
+                            color: Colors.white,
+                            icon: const Icon(Icons.message),
+                            onPressed: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                    Center(
+                      child: FloatingActionButton(
+                        backgroundColor: Colors.white,
+                        onPressed: () {},
+                        child: const Icon(
+                          Icons.favorite,
+                          color: Colors.pink,
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 )
               ],
             ),

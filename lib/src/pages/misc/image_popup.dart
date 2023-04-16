@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class ImagePopupPage extends StatelessWidget {
   static const String path = "lib/src/pages/misc/image_popup.dart";
 
-  const ImagePopupPage({Key? key}) : super(key: key);
+  const ImagePopupPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

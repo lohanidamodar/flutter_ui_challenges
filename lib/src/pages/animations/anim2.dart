@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:bottomreveal/bottomreveal.dart';
@@ -7,7 +9,7 @@ import 'package:bottomreveal/bottomreveal.dart';
 class AnimationTwoPage extends StatefulWidget {
   static const String path = "lib/src/pages/animations/anim2.dart";
 
-  const AnimationTwoPage({Key? key}) : super(key: key);
+  const AnimationTwoPage({super.key});
   @override
   _AnimationTwoPageState createState() => _AnimationTwoPageState();
 }

@@ -1,9 +1,11 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 
 class Payment extends StatefulWidget {
-  const Payment({Key? key}) : super(key: key);
+  const Payment({super.key});
 
   @override
   _PaymentState createState() => _PaymentState();
@@ -17,39 +19,37 @@ class _PaymentState extends State<Payment> {
       appBar: AppBar(
         title: const Text('Payment'),
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            const SizedBox(height: 20),
-            Container(
-              margin: const EdgeInsets.all(20),
-              child: TextField(
-                onChanged: (val) {
-                  setState(() {
-                    amount = double.parse(val);
-                  });
-                },
-                decoration: const InputDecoration(hintText: 'Amount'),
-                keyboardType: TextInputType.number,
-              ),
+      body: Column(
+        children: <Widget>[
+          const SizedBox(height: 20),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: TextField(
+              onChanged: (val) {
+                setState(() {
+                  amount = double.parse(val);
+                });
+              },
+              decoration: const InputDecoration(hintText: 'Amount'),
+              keyboardType: TextInputType.number,
             ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).primaryColor,
-              ),
-              child: const Text('Pay',
-                  style: TextStyle(
-                    color: Colors.white,
-                  )),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
             ),
-            const Text(
-              'Note: Make sure your device have khalti app',
-              style: TextStyle(color: Colors.grey),
-            )
-          ],
-        ),
+            child: const Text('Pay',
+                style: TextStyle(
+                  color: Colors.white,
+                )),
+          ),
+          const Text(
+            'Note: Make sure your device have khalti app',
+            style: TextStyle(color: Colors.grey),
+          )
+        ],
       ),
     );
   }

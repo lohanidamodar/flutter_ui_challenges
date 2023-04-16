@@ -1,14 +1,16 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
-/// images: pixabay.com
-/// design:dribble.com
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+ * images: pixabay.com
+ * design:dribble.com
+  */
 
 import 'package:flutter/material.dart';
 
 class UserProfilePage extends StatefulWidget {
   static const String path = "lib/src/pages/profile/profile12.dart";
 
-  const UserProfilePage({Key? key}) : super(key: key);
+  const UserProfilePage({super.key});
 
   @override
   _UserProfilePageState createState() => _UserProfilePageState();

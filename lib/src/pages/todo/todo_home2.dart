@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -7,7 +9,7 @@ import 'package:intl/intl.dart';
 class TodoHomeTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/todo/todo_home2.dart";
 
-  const TodoHomeTwoPage({Key? key}) : super(key: key);
+  const TodoHomeTwoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,8 +100,7 @@ class TodoHomeTwoPage extends StatelessWidget {
                 const SizedBox(height: 5.0),
                 Text(
                   DateFormat.d().format(date),
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18.0),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
                 )
               ],
             ),
@@ -280,8 +281,7 @@ class HeaderFooterwidget extends StatelessWidget {
       height: headerHeight,
       width: double.infinity,
       decoration: BoxDecoration(
-        borderRadius:
-            const BorderRadius.only(bottomLeft: Radius.circular(30.0)),
+        borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(30.0)),
         color: headerColor,
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),

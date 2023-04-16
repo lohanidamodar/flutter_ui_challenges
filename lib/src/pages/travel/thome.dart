@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -9,7 +11,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class TravelHomePage extends StatelessWidget {
   static const String path = "lib/src/pages/travel/thome.dart";
 
-  const TravelHomePage({Key? key}) : super(key: key);
+  const TravelHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,8 +43,7 @@ class TravelHomePage extends StatelessWidget {
               ),
             ),
             Container(
-              padding:
-                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
+              padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
               child: const Material(
                 elevation: 5.0,
                 child: TextField(
@@ -106,8 +107,7 @@ class TravelHomePage extends StatelessWidget {
   Container _buildFeaturedItem(
       {String? image, required String title, required String subtitle}) {
     return Container(
-      padding: const EdgeInsets.only(
-          left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
+      padding: const EdgeInsets.only(left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
       child: Material(
         elevation: 5.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -130,8 +130,7 @@ class TravelHomePage extends StatelessWidget {
             Positioned(
               bottom: 20.0,
               child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 color: Colors.black.withOpacity(0.7),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

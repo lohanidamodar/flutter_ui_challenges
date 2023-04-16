@@ -1,16 +1,18 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
-TextStyle priceTextStyle = const TextStyle(
-    color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
+TextStyle priceTextStyle =
+    const TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
 
 class EcommerceFourPage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/ecommerce4.dart";
 
-  const EcommerceFourPage({Key? key}) : super(key: key);
+  const EcommerceFourPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -20,7 +22,7 @@ class SliverAppbarPage extends StatelessWidget {
     assets.images[5]
   ];
 
-  const SliverAppbarPage({Key? key}) : super(key: key);
+   SliverAppbarPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -134,18 +136,16 @@ class SliverAppbarPage extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(bottom: 20.0),
       height: 200.0,
-      child: Container(
-        child: Swiper(
-          autoplay: true,
-          itemBuilder: (BuildContext context, int index) {
-            return PNetworkImage(
-              images[index],
-              fit: BoxFit.cover,
-            );
-          },
-          itemCount: 4,
-          pagination: const SwiperPagination(),
-        ),
+      child: Swiper(
+        autoplay: true,
+        itemBuilder: (BuildContext context, int index) {
+          return PNetworkImage(
+            images[index],
+            fit: BoxFit.cover,
+          );
+        },
+        itemCount: 4,
+        pagination: const SwiperPagination(),
       ),
     );
   }

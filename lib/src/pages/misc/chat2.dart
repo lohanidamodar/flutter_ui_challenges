@@ -1,14 +1,17 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
     as assets;
 import 'dart:math';
 
+
 class ChatTwoPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/chat2.dart";
 
-  const ChatTwoPage({Key? key}) : super(key: key);
+  const ChatTwoPage({super.key});
   @override
   _ChatTwoPageState createState() => _ChatTwoPageState();
 }

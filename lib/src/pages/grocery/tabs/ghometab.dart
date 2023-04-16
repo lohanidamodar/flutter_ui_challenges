@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -9,7 +11,7 @@ import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem1.dart
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem2.dart';
 
 class GroceryHomeTabView extends StatelessWidget {
-  const GroceryHomeTabView({Key? key}) : super(key: key);
+  const GroceryHomeTabView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,36 +87,35 @@ class GroceryHomeTabView extends StatelessWidget {
   }
 
   Widget _buildListHeader(String left, String right) {
-    return Container(
-        child: Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Container(
-          margin: const EdgeInsets.only(left: 10),
-          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-          color: Colors.red,
-          child: Text(
-            left,
-            style: const TextStyle(
-              color: Colors.white,
-            ),
+    Container(
+      margin: const EdgeInsets.only(left: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      color: Colors.red,
+      child: Text(
+        left,
+        style: const TextStyle(
+          color: Colors.white,
+        ),
+      ),
+    ),
+    Container(
+      margin: const EdgeInsets.only(right: 10.0),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      child: InkWell(
+        onTap: () {},
+        child: Text(
+          right,
+          style: const TextStyle(
+            color: Colors.red,
           ),
         ),
-        Container(
-          margin: const EdgeInsets.only(right: 10.0),
-          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-          child: InkWell(
-            onTap: () {},
-            child: Text(
-              right,
-              style: const TextStyle(
-                color: Colors.red,
-              ),
-            ),
-          ),
-        ),
+      ),
+    ),
       ],
-    ));
+    );
   }
 
   Widget _buildCategories() {

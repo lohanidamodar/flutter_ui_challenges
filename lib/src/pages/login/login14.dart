@@ -1,5 +1,7 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/ambikadulal
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/ambikadulal
+  */
 
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,7 @@ Color orangeLightColors = const Color(0xffF2861E);
 class LoginPageFourteen extends StatefulWidget {
   static const String path = "lib/src/pages/login/login14.dart";
 
-  const LoginPageFourteen({Key? key}) : super(key: key);
+  const LoginPageFourteen({super.key});
   @override
   _LoginPageFourteenState createState() => _LoginPageFourteenState();
 }
@@ -22,7 +24,7 @@ class _LoginPageFourteenState extends State<LoginPageFourteen> {
         padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: <Widget>[
-            HeaderContainer("Login"),
+            const HeaderContainer(),
             Expanded(
               flex: 1,
               child: Container(
@@ -81,9 +83,7 @@ class _LoginPageFourteenState extends State<LoginPageFourteen> {
 }
 
 class HeaderContainer extends StatelessWidget {
-  var text = "Login";
-
-  HeaderContainer(this.text, {Key? key}) : super(key: key);
+  const HeaderContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,12 +98,12 @@ class HeaderContainer extends StatelessWidget {
               const BorderRadius.only(bottomLeft: Radius.circular(100))),
       child: Stack(
         children: <Widget>[
-          Positioned(
+          const Positioned(
               bottom: 20,
               right: 20,
               child: Text(
-                text,
-                style: const TextStyle(color: Colors.white, fontSize: 20),
+                "Login",
+                style: TextStyle(color: Colors.white, fontSize: 20),
               )),
           Center(
             child: Image.asset(

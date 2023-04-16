@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 
 class BottomBarController extends ChangeNotifier {
@@ -9,17 +11,14 @@ class BottomBarController extends ChangeNotifier {
   BottomBarController({
     required TickerProvider vsync,
     this.snap = true,
-    double? dragLength,
+    this.dragLength,
   })  : _animationController = AnimationController(vsync: vsync),
-        assert(dragLength == null || dragLength > 0),
-        dragLength = dragLength;
+        assert(dragLength == null || dragLength > 0);
 
   @Deprecated("use state instead. Will be removed soon")
-  Animation<double> get animation =>
-      _animationController.view ?? kAlwaysCompleteAnimation;
+  Animation<double> get animation => _animationController.view;
 
-  Animation<double> get state =>
-      _animationController.view ?? kAlwaysCompleteAnimation;
+  Animation<double> get state => _animationController.view;
 
   final AnimationController _animationController;
 

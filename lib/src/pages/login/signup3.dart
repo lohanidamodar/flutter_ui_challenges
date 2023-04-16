@@ -1,5 +1,7 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/ambikadulal
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/ambikadulal
+  */
 
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,7 @@ Color orangeLightColors = const Color(0xffF2861E);
 class SignupThreePage extends StatefulWidget {
   static const String path = "lib/src/pages/login/signup3.dart";
 
-  const SignupThreePage({Key? key}) : super(key: key);
+  const SignupThreePage({super.key});
 
   @override
   _SignupThreePageState createState() => _SignupThreePageState();
@@ -23,7 +25,7 @@ class _SignupThreePageState extends State<SignupThreePage> {
         padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: <Widget>[
-            HeaderContainer("Signup For Free"),
+            const HeaderContainer("Signup For Free"),
             Expanded(
               flex: 1,
               child: Container(
@@ -86,9 +88,9 @@ class _SignupThreePageState extends State<SignupThreePage> {
 }
 
 class HeaderContainer extends StatelessWidget {
-  var text = "Signin";
+  final String text;
 
-  HeaderContainer(this.text, {Key? key}) : super(key: key);
+  const HeaderContainer(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -124,15 +126,15 @@ class HeaderContainer extends StatelessWidget {
 }
 
 class ButtonWidget extends StatelessWidget {
-  String? btnText = "";
-  var onClick;
+  final String btnText;
+  final Function onClick;
 
-  ButtonWidget({Key? key, this.btnText, this.onClick}) : super(key: key);
+  const ButtonWidget({super.key, required this.btnText, required this.onClick});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onClick,
+      onTap: () => onClick(),
       child: Container(
         width: double.infinity,
         height: 40,
@@ -147,7 +149,7 @@ class ButtonWidget extends StatelessWidget {
         ),
         alignment: Alignment.center,
         child: Text(
-          btnText!,
+          btnText,
           style: const TextStyle(
               fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
         ),

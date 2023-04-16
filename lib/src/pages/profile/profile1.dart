@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class ProfileOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile1.dart";
 
-  const ProfileOnePage({Key? key}) : super(key: key);
+  const ProfileOnePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,52 +71,49 @@ class ProfileOnePage extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            // height: 50,
-            child: Row(
-              children: <Widget>[
-                Expanded(
-                  child: Container(
-                    color: Colors.deepOrange.shade300,
-                    child: const ListTile(
-                      title: Text(
-                        "50895",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24.0),
-                      ),
-                      subtitle: Text(
-                        "FOLLOWERS",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.red),
-                      ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  color: Colors.deepOrange.shade300,
+                  child: const ListTile(
+                    title: Text(
+                      "50895",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24.0),
+                    ),
+                    subtitle: Text(
+                      "FOLLOWERS",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.red),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Container(
-                    color: Colors.red,
-                    child: const ListTile(
-                      title: Text(
-                        "34524",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24.0),
-                      ),
-                      subtitle: Text(
-                        "FOLLOWING",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white70),
-                      ),
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.red,
+                  child: const ListTile(
+                    title: Text(
+                      "34524",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24.0),
+                    ),
+                    subtitle: Text(
+                      "FOLLOWING",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white70),
                     ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
           const ListTile(
             title: Text(

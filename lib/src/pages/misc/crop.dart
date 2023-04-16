@@ -9,7 +9,7 @@ import 'package:crop/crop.dart';
 class CropPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/crop.dart";
 
-  const CropPage({Key? key}) : super(key: key);
+  const CropPage({super.key});
   @override
   _CropPageState createState() => _CropPageState();
 }
@@ -20,7 +20,8 @@ class _CropPageState extends State<CropPage> {
 
   void _cropImage() async {
     final cropped = await _controller.crop();
-    Navigator.of(context).push(
+    if(mounted) {
+      Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => Scaffold(
           appBar: AppBar(
@@ -36,6 +37,7 @@ class _CropPageState extends State<CropPage> {
         fullscreenDialog: true,
       ),
     );
+    }
   }
 
   @override
@@ -110,15 +112,18 @@ class _CropPageState extends State<CropPage> {
 
 class CenteredRectangularSliderTrackShape extends RectangularSliderTrackShape {
   @override
-  void paint(PaintingContext context, ui.Offset offset,
-      {required RenderBox parentBox,
-      required SliderThemeData sliderTheme,
-      required Animation<double> enableAnimation,
-      required ui.Offset thumbCenter,
-      ui.Offset? secondaryOffset,
-      bool isEnabled = false,
-      bool isDiscrete = false,
-      ui.TextDirection? textDirection}) {
+  void paint(
+    PaintingContext context,
+    ui.Offset offset, {
+    required RenderBox parentBox,
+    required SliderThemeData sliderTheme,
+    required Animation<double> enableAnimation,
+    required ui.Offset thumbCenter,
+    required ui.TextDirection? textDirection,
+    ui.Offset? secondaryOffset,
+    bool isEnabled = false,
+    bool isDiscrete = false,
+  }) {
     // If the slider track height is less than or equal to 0, then it makes no
     // difference whether the track is painted or not, therefore the painting
     // can be a no-op.

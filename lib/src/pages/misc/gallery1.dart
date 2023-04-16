@@ -23,7 +23,7 @@ class GalleryPageOne extends StatelessWidget {
     QuiltedGridTile(1, 1),
   ];
 
-  const GalleryPageOne({Key? key}) : super(key: key);
+  const GalleryPageOne({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

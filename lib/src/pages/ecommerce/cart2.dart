@@ -5,7 +5,7 @@ import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1
 class CartTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/cart2.dart";
 
-  const CartTwoPage({Key? key}) : super(key: key);
+  const CartTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

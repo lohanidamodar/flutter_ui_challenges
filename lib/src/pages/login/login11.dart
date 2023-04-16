@@ -1,11 +1,13 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani  
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 
 class LoginElevenPage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login11.dart";
 
-  const LoginElevenPage({Key? key}) : super(key: key);
+  const LoginElevenPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,23 +15,21 @@ class LoginElevenPage extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: Card(
-                    color: Colors.red,
-                    margin: const EdgeInsets.all(0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0),
-                    ),
-                    elevation: 10,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: Card(
+                  color: Colors.red,
+                  margin: const EdgeInsets.all(0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
                   ),
+                  elevation: 10,
                 ),
-                const Spacer(),
-              ],
-            ),
+              ),
+              const Spacer(),
+            ],
           ),
           SafeArea(
             child: ListView(
@@ -66,10 +66,9 @@ class LoginElevenPage extends StatelessWidget {
                       Text(
                         "Log In",
                         textAlign: TextAlign.center,
-                        style:
-                            Theme.of(context).textTheme.headlineSmall!.copyWith(
-                                  color: Colors.red,
-                                ),
+                        style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                              color: Colors.red,
+                            ),
                       ),
                       const SizedBox(height: 40.0),
                       const TextField(

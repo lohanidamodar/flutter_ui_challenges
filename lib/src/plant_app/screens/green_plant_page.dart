@@ -3,7 +3,7 @@ import 'package:flutter_ui_challenges/src/plant_app/model/data_model.dart';
 import 'detail_page.dart';
 
 class GreenPlantPage extends StatelessWidget {
-  const GreenPlantPage({Key? key}) : super(key: key);
+  const GreenPlantPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +22,7 @@ class GreenPlantPage extends StatelessWidget {
               )
             ],
           ),
-          const Text('Green',
-              style: TextStyle(color: Colors.grey, fontSize: 17)),
+          const Text('Green', style: TextStyle(color: Colors.grey, fontSize: 17)),
           const SizedBox(height: 7),
           const Text(
             'Plants',
@@ -31,72 +30,68 @@ class GreenPlantPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Expanded(
-            child: Container(
-              child: ListView.builder(
-                itemCount: plants.length,
-                itemBuilder: (_, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DetailPage(
-                            plant: plants[index],
-                          ),
+            child: ListView.builder(
+              itemCount: plants.length,
+              itemBuilder: (_, index) {
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => DetailPage(
+                          plant: plants[index],
                         ),
-                      );
-                    },
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      ),
+                    );
+                  },
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Hero(
+                        tag: plants[index].title!,
+                        child: Image.network(plants[index].image!),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        plants[index].title!,
+                        style: const TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        plants[index].discription!,
+                        style: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
                         children: [
-                          Hero(
-                            tag: plants[index].title!,
-                            child: Image.network(plants[index].image!),
-                          ),
-                          const SizedBox(height: 10),
                           Text(
-                            plants[index].title!,
+                            "\$${plants[index].price}",
                             style: const TextStyle(
-                              fontSize: 25,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const SizedBox(height: 10),
-                          Text(
-                            plants[index].discription!,
-                            style: const TextStyle(
-                              color: Colors.grey,
-                              fontSize: 16,
+                          TextButton(
+                            child: const Text(
+                              "+",
+                              style: TextStyle(fontSize: 22),
                             ),
-                          ),
-                          const SizedBox(height: 10),
-                          Row(
-                            children: [
-                              Text(
-                                "\$${plants[index].price}",
-                                style: const TextStyle(
-                                  fontSize: 35,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              TextButton(
-                                child: const Text(
-                                  "+",
-                                  style: TextStyle(fontSize: 22),
-                                ),
-                                onPressed: () {},
-                              )
-                            ],
-                          ),
-                          const SizedBox(height: 30),
-                          const Divider(),
+                            onPressed: () {},
+                          )
                         ],
                       ),
-                    ),
-                  );
-                },
-              ),
+                      const SizedBox(height: 30),
+                      const Divider(),
+                    ],
+                  ),
+                );
+              },
             ),
           )
         ],

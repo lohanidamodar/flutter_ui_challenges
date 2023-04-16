@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 import '../../utils/constant.dart';
 import '../../widgets/furniture/custom_side_button.dart';
-import 'package:flutter/material.dart';
 
 class BottomItem extends StatelessWidget {
-  const BottomItem({Key? key}) : super(key: key);
+  const BottomItem({super.key});
 
   @override
   Widget build(BuildContext context) {

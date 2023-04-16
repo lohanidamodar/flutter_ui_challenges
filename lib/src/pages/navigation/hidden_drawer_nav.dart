@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 /// profile: https://github.com/ambikadulal
 
 class HiddenDrawerNav extends StatefulWidget {
-  static const String path = "lib/src/pages/navigation/automultiscreen.dart";
+  static const String path = "lib/src/pages/navigation/hidden_drawer_nav.dart";
 
-  const HiddenDrawerNav({Key? key}) : super(key: key);
+  const HiddenDrawerNav({super.key});
   @override
   _HiddenDrawerNavState createState() => _HiddenDrawerNavState();
 }
@@ -28,9 +28,8 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
     _scaleAnimation = Tween<double>(begin: 1, end: 0.8).animate(_controller);
     _menuScaleAnimation =
         Tween<double>(begin: 0.5, end: 1).animate(_controller);
-    _slideAnimation =
-        Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
-            .animate(_controller);
+    _slideAnimation = Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
+        .animate(_controller);
   }
 
   @override

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
@@ -10,12 +12,11 @@ class SliderPoints extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderPoints({
-    Key? key,
+  const SliderPoints({super.key, 
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -71,13 +72,12 @@ class Points extends StatelessWidget {
   final bool isPointsYouNeed;
   final Color? color;
 
-  const Points({
-    Key? key,
+  const Points({super.key, 
     this.points,
     this.isAboveSlider = true,
     this.isPointsYouNeed = true,
     this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

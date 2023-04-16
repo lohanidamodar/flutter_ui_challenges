@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 class CustomSideButton extends StatelessWidget {
   final IconData icon;
   final Function? fxn;
-  const CustomSideButton({Key? key, required this.icon, this.fxn})
-      : super(key: key);
+  const CustomSideButton({super.key, required this.icon, this.fxn});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class CustomSideButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
-            color: profile_info_background,
+            color: profileInfoBackground,
             borderRadius: BorderRadius.circular(10.0)),
         child: Icon(
           icon,

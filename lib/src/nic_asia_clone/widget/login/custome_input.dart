@@ -1,5 +1,7 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
@@ -8,12 +10,11 @@ class CustomInputField extends StatelessWidget {
   final String? textHint;
   final TextInputType keyboardType;
   final bool showInputText;
-  const CustomInputField({
-    Key? key,
+  const CustomInputField({super.key, 
     this.textHint,
     this.showInputText = false,
     this.keyboardType = TextInputType.text,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return TextField(

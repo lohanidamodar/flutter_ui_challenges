@@ -10,7 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class QuotesOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/quotes/quotes1.dart";
 
-  const QuotesOnePage({Key? key}) : super(key: key);
+  const QuotesOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class QuotesOnePage extends StatelessWidget {
               tween: Tween<double>(begin: -1, end: 0),
               builder: (context, state, child) {
                 return FractionalTranslation(
-                    translation: Offset(state.value as double, 0),
+                    translation: Offset(state.value, 0),
                     child: child);
               },
               child: Text(
@@ -59,7 +59,7 @@ class QuotesOnePage extends StatelessWidget {
               tween: Tween<double>(begin: 1, end: 0),
               builder: (context, state, child) {
                 return FractionalTranslation(
-                  translation: Offset(state.value as double, 0),
+                  translation: Offset(state.value, 0),
                   child: child,
                 );
               },

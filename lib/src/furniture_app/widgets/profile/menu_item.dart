@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ProfileMenuItem extends StatelessWidget {
   final ProfileMenu menu;
-  const ProfileMenuItem({Key? key, required this.menu}) : super(key: key);
+  const ProfileMenuItem({super.key, required this.menu});
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -61,7 +61,7 @@ class ProfileMenuItem extends StatelessWidget {
                         menu.subTitle!,
                         style: const TextStyle(
                           fontSize: 14.0,
-                          color: profile_item_color,
+                          color: profileItemColor,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -72,7 +72,7 @@ class ProfileMenuItem extends StatelessWidget {
             ),
             const Icon(
               Icons.chevron_right,
-              color: profile_item_color,
+              color: profileItemColor,
             )
           ],
         ),

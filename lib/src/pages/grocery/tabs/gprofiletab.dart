@@ -1,11 +1,13 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
 
 class GroceryProfileTabView extends StatelessWidget {
-  const GroceryProfileTabView({Key? key}) : super(key: key);
+  const GroceryProfileTabView({super.key});
 
   @override
   Widget build(BuildContext context) {

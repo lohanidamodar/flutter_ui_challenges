@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -19,7 +21,7 @@ class TodoHomeOnePage extends StatelessWidget {
     {"title": "Pay telephone bill", "completed": false},
   ];
 
-  TodoHomeOnePage({Key? key}) : super(key: key);
+  TodoHomeOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -93,7 +95,7 @@ class TodoHomeOnePage extends StatelessWidget {
               IconButton(
                 color: Colors.grey.shade700,
                 icon: const Icon(
-                  FontAwesomeIcons.calendarAlt,
+                  FontAwesomeIcons.calendarDays,
                   size: 30,
                 ),
                 onPressed: () {},
@@ -143,9 +145,7 @@ class TodoHomeOnePage extends StatelessWidget {
                 gradient: LinearGradient(colors: [color3, color2]),
                 boxShadow: [
                   BoxShadow(
-                      color: color3,
-                      offset: const Offset(1.0, 1.0),
-                      blurRadius: 4.0)
+                      color: color3, offset: const Offset(1.0, 1.0), blurRadius: 4.0)
                 ]),
           ),
           Positioned(

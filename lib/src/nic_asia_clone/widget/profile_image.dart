@@ -1,5 +1,7 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../util/constant.dart';
@@ -8,11 +10,7 @@ class ProfileImage extends StatelessWidget {
   final double height, width;
   final Color color;
   const ProfileImage(
-      {Key? key,
-      this.height = 100.0,
-      this.width = 100.0,
-      this.color = primaryColor})
-      : super(key: key);
+      {super.key, this.height = 100.0, this.width = 100.0, this.color = primaryColor});
   @override
   Widget build(BuildContext context) {
     return Container(

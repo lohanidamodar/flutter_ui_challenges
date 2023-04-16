@@ -6,7 +6,7 @@ import '../widget/dashboard/top_account_info.dart';
 import '../widget/profile_image.dart';
 
 class Dashboard extends StatelessWidget {
-  Dashboard({Key? key}) : super(key: key);
+  Dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -9,7 +9,7 @@ import '../../constants.dart';
 import 'code_view.dart';
 import 'keep_alive.dart';
 
-const _TABS = <Widget>[
+const _tabs = <Widget>[
   Tab(
     child: ListTile(
       leading: Icon(
@@ -48,13 +48,13 @@ class DesignPreviewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: _TABS.length,
+      length: _tabs.length,
       child: Scaffold(
         appBar: AppBar(
           title: Text(title),
           actions: <Widget>[
             IconButton(
-              icon: const Icon(FontAwesomeIcons.shareSquare),
+              icon: const Icon(FontAwesomeIcons.shareFromSquare),
               tooltip: "Open full preview",
               onPressed: () {
                 Share.share('$githubRepo/blob/master/$path');
@@ -62,7 +62,7 @@ class DesignPreviewsPage extends StatelessWidget {
             )
           ],
           bottom: const TabBar(
-            tabs: _TABS,
+            tabs: _tabs,
           ),
         ),
         body: TabBarView(

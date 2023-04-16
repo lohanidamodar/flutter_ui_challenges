@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -8,7 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class AuthThreePage extends StatefulWidget {
   static const String path = "lib/src/pages/login/auth3.dart";
 
-  const AuthThreePage({Key? key}) : super(key: key);
+  const AuthThreePage({super.key});
 
   @override
   _AuthThreePageState createState() => _AuthThreePageState();
@@ -192,13 +194,10 @@ class _AuthThreePageState extends State<AuthThreePage> {
                             )
                           ],
                         ),
-                        Container(
-                          child: AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 300),
-                            child: _formsIndex == 1
-                                ? const LoginForm()
-                                : const SignupForm(),
-                          ),
+                        AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 300),
+                          child:
+                              _formsIndex == 1 ? const LoginForm() : const SignupForm(),
                         )
                       ],
                     ),

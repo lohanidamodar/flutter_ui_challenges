@@ -1,5 +1,7 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/ambikadulal
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/ambikadulal
+  */
 import 'package:flutter/material.dart';
 
 class QuotesPageTwo extends StatelessWidget {
@@ -24,7 +26,7 @@ class QuotesPageTwo extends StatelessWidget {
     },
   ];
 
-  QuotesPageTwo({Key? key}) : super(key: key);
+   QuotesPageTwo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -91,55 +93,53 @@ class QuotesPageTwo extends StatelessWidget {
                       //color: primary,
                       fontSize: 13),
                 ),
-                Container(
-                  child: InkWell(
-                    child: Row(
-                      children: const <Widget>[
-                        Padding(
-                          padding: EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.share,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                InkWell(
+                  child: Row(
+                    children: const <Widget>[
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.share,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.send,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.send,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.copy,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.copy,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.emoji_emotions,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.emoji_emotions,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.emoji_events,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.emoji_events,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                      ],
-                    ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
                 ),
               ],

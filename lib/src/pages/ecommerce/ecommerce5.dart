@@ -1,8 +1,10 @@
-/// Author: Sudip Thapa
-/// profile: https://github.com/sudeepthapa
-///
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Sudip Thapa  
+ * profile: https://github.com/sudeepthapa
+ * 
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -38,13 +40,12 @@ class EcommerceFivePage extends StatelessWidget {
               height: 5,
             ),
             Text(title,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
             Container(
                 padding: const EdgeInsets.all(5),
                 margin: const EdgeInsets.only(top: 4),
                 color: Colors.deepOrange,
-                child: Text("\$ " + price,
+                child: Text("\$ $price",
                     style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -126,14 +127,13 @@ class EcommerceFivePage extends StatelessWidget {
                           ),
                           Material(
                             elevation: 5.0,
-                            borderRadius:
-                                const BorderRadius.all(Radius.circular(30)),
+                            borderRadius: const BorderRadius.all(Radius.circular(30)),
                             child: TextField(
                               controller:
                                   TextEditingController(text: 'Search...'),
                               cursorColor: Theme.of(context).primaryColor,
-                              style: const TextStyle(
-                                  color: Colors.black, fontSize: 18),
+                              style:
+                                  const TextStyle(color: Colors.black, fontSize: 18),
                               decoration: const InputDecoration(
                                   suffixIcon: Material(
                                     elevation: 2.0,

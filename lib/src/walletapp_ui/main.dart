@@ -1,6 +1,8 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
-/// design:dribble.com
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+ * design:dribble.com
+  */
 import 'package:flutter/material.dart';
 import 'screens/cards_page.dart';
 import 'screens/homapage.dart';
@@ -8,7 +10,7 @@ import 'screens/homapage.dart';
 class WalletAppClone extends StatelessWidget {
   static const String path = 'lib/src/walletapp_ui/main.dart';
 
-  const WalletAppClone({Key? key}) : super(key: key);
+  const WalletAppClone({super.key});
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class WalletAppClone extends StatelessWidget {
 }
 
 class WalletApp extends StatefulWidget {
-  const WalletApp({Key? key}) : super(key: key);
+  const WalletApp({super.key});
 
   @override
   _WalletAppState createState() => _WalletAppState();

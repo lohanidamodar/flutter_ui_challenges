@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart' as menu;
-import 'package:flutter_ui_challenges/core/presentation/widgets/preview.dart';
+import 'package:flutter_ui_challenges/core/presentation/widgets/preview_copy.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import '../routes.dart';
@@ -92,7 +92,7 @@ class _MainMenuState extends State<MainMenu> {
           children: <Widget>[
             IconButton(
               icon: const Icon(Icons.code),
-              onPressed: () => _openPage(context, item, menu.OpenMode.CODE),
+              onPressed: () => _openPage(context, item, menu.OpenMode.code),
             ),
           ],
         ),
@@ -103,7 +103,7 @@ class _MainMenuState extends State<MainMenu> {
               .titleMedium!
               .copyWith(color: Colors.black87),
         ),
-        onTap: () => _openPage(context, item, menu.OpenMode.PREVIEW),
+        onTap: () => _openPage(context, item, menu.OpenMode.preview),
       ),
     );
   }
@@ -113,9 +113,9 @@ class _MainMenuState extends State<MainMenu> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => mode == menu.OpenMode.CODE
+          builder: (context) => mode == menu.OpenMode.code
               ? DesignPreviewsPage(
-                  page: item.page, title: item.title, path: item.path)
+                  page: item.page, title: item.title, path: item.path!)
               : item.page,
         ));
   }

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
@@ -55,7 +57,7 @@ class BlogHomeOnePage extends StatelessWidget {
   final Color bgColor = const Color(0xffF9E0E3);
   final Color secondaryColor = const Color(0xff324558);
 
-  const BlogHomeOnePage({Key? key}) : super(key: key);
+  const BlogHomeOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -70,15 +72,13 @@ class BlogHomeOnePage extends StatelessWidget {
             iconTheme: IconThemeData(color: secondaryColor),
             actionsIconTheme: IconThemeData(
               color: secondaryColor,
-            ),
-            toolbarTextStyle: TextTheme(
+            ), toolbarTextStyle: TextTheme(
               titleLarge: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),
-            ).bodyMedium,
-            titleTextStyle: TextTheme(
+            ).bodyMedium, titleTextStyle: TextTheme(
               titleLarge: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
@@ -88,7 +88,6 @@ class BlogHomeOnePage extends StatelessWidget {
           ),
         ),
         child: Scaffold(
-          backgroundColor: Theme.of(context).buttonColor,
           appBar: AppBar(
             centerTitle: true,
             title: const Text('Categories'),
@@ -139,18 +138,10 @@ class BlogHomeOnePage extends StatelessWidget {
                 separatorBuilder: (context, index) =>
                     const SizedBox(height: 16.0),
               ),
-              Container(
-                child: const Text("Tab 2"),
-              ),
-              Container(
-                child: const Text("Tab 3"),
-              ),
-              Container(
-                child: const Text("Tab 4"),
-              ),
-              Container(
-                child: const Text("Tab 5"),
-              ),
+              const Text("Tab 2"),
+              const Text("Tab 3"),
+              const Text("Tab 4"),
+              const Text("Tab 5"),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(

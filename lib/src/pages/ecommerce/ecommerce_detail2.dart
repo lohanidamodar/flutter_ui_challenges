@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,7 +11,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class EcommerceDetailTwoPage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/ecommerce_detail2.dart";
 
-  const EcommerceDetailTwoPage({Key? key}) : super(key: key);
+  const EcommerceDetailTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,8 +22,7 @@ class EcommerceDetailTwoPage extends StatelessWidget {
             children: <Widget>[
               PNetworkImage(images[4]),
               Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -34,8 +35,7 @@ class EcommerceDetailTwoPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding:
-                    const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
                 child: const Text(
                   "Kapka Valour",
                   style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w500),
@@ -73,14 +73,13 @@ class EcommerceDetailTwoPage extends StatelessWidget {
                 ],
               ),
               Container(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0, vertical: 10.0),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
                   child: const Text("Description",
                       style: TextStyle(
                           fontSize: 20.0, fontWeight: FontWeight.w400))),
               Container(
-                padding: const EdgeInsets.only(
-                    left: 20.0, right: 20.0, bottom: 10.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                 child: Text(
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim erat in accumsan tempus. Mauris congue luctus neque, in semper purus maximus iaculis. Donec et eleifend quam, a sollicitudin magna.",
                   textAlign: TextAlign.justify,
@@ -105,8 +104,7 @@ class EcommerceDetailTwoPage extends StatelessWidget {
                     icon: const Icon(Icons.favorite_border),
                     onPressed: () {},
                   )
-                ],
-                systemOverlayStyle: SystemUiOverlayStyle.dark,
+                ], systemOverlayStyle: SystemUiOverlayStyle.dark,
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,

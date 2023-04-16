@@ -7,7 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class BikeHomePage extends StatelessWidget {
   static const String path = "lib/src/pages/bike/home_page.dart";
 
-  const BikeHomePage({Key? key}) : super(key: key);
+  const BikeHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

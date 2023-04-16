@@ -1,5 +1,5 @@
 import '../utils/constant.dart';
-import '../widgets/furniture/bottomItem.dart';
+import '../widgets/furniture/bottom_item.dart';
 import '../widgets/furniture/furniture_category.dart';
 import '../widgets/furniture/item_navigation.dart';
 import '../widgets/furniture/lamp.dart';
@@ -8,11 +8,10 @@ import '../widgets/title_small.dart';
 import 'package:flutter/material.dart';
 
 class Furniture extends StatelessWidget {
-  Furniture({Key? key}) : super(key: key);
+  Furniture({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size deviceSize = MediaQuery.of(context).size;
     return Material(
       color: Colors.white,
       child: SingleChildScrollView(
@@ -46,7 +45,8 @@ class Furniture extends StatelessWidget {
             ),
             buildLampsWithSlider(),
             const Padding(
-              padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              padding:
+                  EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
               child: TitleSmall(
                 subTitle: 'In recent month',
                 title: 'Popular',

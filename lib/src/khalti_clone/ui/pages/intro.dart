@@ -1,12 +1,14 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import '../../res/colors.dart';
 import '../../res/constants.dart';
 
 class IntroPage extends StatefulWidget {
-  const IntroPage({Key? key}) : super(key: key);
+  const IntroPage({super.key});
 
   @override
   _IntroPageState createState() => _IntroPageState();
@@ -141,11 +143,10 @@ class _IntroPageState extends State<IntroPage> {
           ),
           const SizedBox(height: 20.0),
           Expanded(
-            child: Container(
-                child: Image.asset(
+            child: Image.asset(
               introItems[index].image!,
               fit: BoxFit.contain,
-            )),
+            ),
           ),
           const SizedBox(height: 20.0),
           //image

@@ -1,5 +1,7 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+  */
 import 'package:flutter/material.dart';
 
 class Hotel {
@@ -46,7 +48,7 @@ final List<Hotel> hotels = [
 class HotelBookingPage extends StatefulWidget {
   static const String path = "lib/src/pages/hotel/hotelbooking.dart";
 
-  const HotelBookingPage({Key? key}) : super(key: key);
+  const HotelBookingPage({super.key});
 
   @override
   _HotelBookingPageState createState() => _HotelBookingPageState();
@@ -229,8 +231,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                         padding: const EdgeInsets.only(left: 10),
                         child: Text(
                           hotels[index].description!,
-                          style: const TextStyle(
-                              fontSize: 13.0, color: Colors.grey),
+                          style: const TextStyle(fontSize: 13.0, color: Colors.grey),
                         ),
                       ),
                       Padding(

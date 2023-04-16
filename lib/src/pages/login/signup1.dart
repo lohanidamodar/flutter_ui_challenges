@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -9,7 +11,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class SignupOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/login/signup1.dart";
 
-  const SignupOnePage({Key? key}) : super(key: key);
+  const SignupOnePage({super.key});
   Widget _buildPageContent(BuildContext context) {
     return Container(
       color: Colors.blue.shade100,
@@ -79,8 +81,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding: const EdgeInsets.only(
-                        left: 20.0, right: 20.0, bottom: 10.0),
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -99,8 +101,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding: const EdgeInsets.only(
-                        left: 20.0, right: 20.0, bottom: 10.0),
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -119,8 +121,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding: const EdgeInsets.only(
-                        left: 20.0, right: 20.0, bottom: 10.0),
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -153,8 +155,7 @@ class SignupOnePage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {},
-                child: const Text("Sign Up",
-                    style: TextStyle(color: Colors.white70)),
+                child: const Text("Sign Up", style: TextStyle(color: Colors.white70)),
               ),
             ),
           )

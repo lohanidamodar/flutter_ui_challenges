@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class LoginOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login1.dart";
 
-  const LoginOnePage({Key? key}) : super(key: key);
+  const LoginOnePage({super.key});
   Widget _buildPageContent() {
     return Container(
       padding: const EdgeInsets.all(20.0),

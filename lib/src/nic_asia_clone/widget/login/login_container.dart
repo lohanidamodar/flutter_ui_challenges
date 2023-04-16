@@ -1,12 +1,14 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 
 import 'package:flutter/material.dart';
 import '../../widget/login/login_input_sction.dart';
 import '../../widget/login/login_top_section.dart';
 
 class LoginContainer extends StatelessWidget {
-  const LoginContainer({Key? key}) : super(key: key);
+  const LoginContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

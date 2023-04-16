@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
@@ -9,7 +11,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class CheckoutOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/cart1.dart";
 
-  const CheckoutOnePage({Key? key}) : super(key: key);
+  const CheckoutOnePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

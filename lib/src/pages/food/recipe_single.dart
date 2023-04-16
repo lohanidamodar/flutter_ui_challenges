@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -14,7 +16,7 @@ class RecipeSinglePage extends StatelessWidget {
   final Color color2 = const Color(0xffE1372F);
   final Color color3 = const Color(0xffFF6C1C);
 
-  const RecipeSinglePage({Key? key}) : super(key: key);
+  const RecipeSinglePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -146,10 +148,8 @@ class RecipeSinglePage extends StatelessWidget {
                 ),
                 child: Text("Read More".toUpperCase()),
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const RecipeDetailsPage()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const RecipeDetailsPage()));
                 },
               ),
             ),

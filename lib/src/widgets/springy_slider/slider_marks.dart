@@ -14,14 +14,13 @@ class SliderMarks extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderMarks({
-    Key? key,
+  const SliderMarks({super.key, 
     this.markCount,
     this.markColor,
     this.backgroundColor,
     this.paddingTop,
     this.paddingBottom,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

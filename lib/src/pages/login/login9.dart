@@ -9,7 +9,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class LoginNinePage extends StatelessWidget {
   static const String path = "lib/src/pages/login/login9.dart";
 
-  const LoginNinePage({Key? key}) : super(key: key);
+  const LoginNinePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,8 +98,7 @@ class LoginNinePage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide:
-                                  const BorderSide(color: Colors.blueGrey),
+                              borderSide: const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),
@@ -119,8 +118,7 @@ class LoginNinePage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide:
-                                  const BorderSide(color: Colors.blueGrey),
+                              borderSide: const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),

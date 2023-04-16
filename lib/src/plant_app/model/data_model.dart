@@ -38,7 +38,7 @@ List<Plant> plants = [
       port: "Self Growing pot",
       price: "59.00"),
 ];
-List<Plant> Indoor = [
+List<Plant> indoor = [
   Plant(
       title: "Cactsgrass Plant",
       discription: "Indoor plant for your home and office decoration",
@@ -58,7 +58,7 @@ List<Plant> Indoor = [
       port: "Self Growing pot",
       price: "59.00"),
 ];
-List<Plant> Shape = [
+List<Plant> shape = [
   Plant(
       title: "Yew Plant",
       discription: "Indoor plant for your home and office decoration",

@@ -1,12 +1,13 @@
-/// Author: Mausam Rayamajhi
-/// profile: https://github.com/mausamRayamajhi
+/**
+ * Author: Mausam Rayamajhi
+ * profile: https://github.com/mausamRayamajhi
+  */
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/furniture_app/utils/constant.dart';
 
 class TitleSmall extends StatelessWidget {
   final String title, subTitle;
-  const TitleSmall({Key? key, required this.title, required this.subTitle})
-      : super(key: key);
+  const TitleSmall({super.key, required this.title, required this.subTitle});
   @override
   Widget build(BuildContext context) {
     return Row(

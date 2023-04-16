@@ -5,7 +5,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 class EcommerceDetailOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/ecommerce_detail1.dart";
 
-  const EcommerceDetailOnePage({Key? key}) : super(key: key);
+  const EcommerceDetailOnePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,65 +47,63 @@ class EcommerceDetailOnePage extends StatelessWidget {
   }
 
   Widget _buildPageContent() {
-    return Container(
-      child: Stack(
-        children: <Widget>[
-          SizedBox(
-            height: double.infinity,
-            child: ListView(
-              padding: const EdgeInsets.all(20.0),
-              children: <Widget>[
-                Container(
-                  height: 320,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(images[1]), fit: BoxFit.cover)),
-                ),
-                const SizedBox(
-                  height: 20.0,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const <Widget>[
-                    Text(
-                      "\$500",
-                      style: TextStyle(
-                          color: Colors.red,
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w600),
-                    )
-                  ],
-                ),
-                const SizedBox(
-                  height: 20.0,
-                ),
-                const Text(
-                  "Womens Casual Purse",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 28.0,
-                  ),
-                ),
-                const SizedBox(
-                  height: 10.0,
-                ),
-                Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim erat in accumsan tempus. Mauris congue luctus neque, in semper purus maximus iaculis. Donec et eleifend quam, a sollicitudin magna.",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.grey.shade600),
-                ),
-                _buildImagesGrid()
-              ],
-            ),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+    return Stack(
+      children: <Widget>[
+        SizedBox(
+          height: double.infinity,
+          child: ListView(
+            padding: const EdgeInsets.all(20.0),
             children: <Widget>[
-              _buildAddToCartButton(),
+              Container(
+                height: 320,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(images[1]), fit: BoxFit.cover)),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const <Widget>[
+                  Text(
+                    "\$500",
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w600),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              const Text(
+                "Womens Casual Purse",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 28.0,
+                ),
+              ),
+              const SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim erat in accumsan tempus. Mauris congue luctus neque, in semper purus maximus iaculis. Donec et eleifend quam, a sollicitudin magna.",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.grey.shade600),
+              ),
+              _buildImagesGrid()
             ],
-          )
-        ],
-      ),
+          ),
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            _buildAddToCartButton(),
+          ],
+        )
+      ],
     );
   }
 
@@ -146,8 +144,7 @@ class EcommerceDetailOnePage extends StatelessWidget {
         Expanded(
           child: Container(
             color: Colors.transparent,
-            padding:
-                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(

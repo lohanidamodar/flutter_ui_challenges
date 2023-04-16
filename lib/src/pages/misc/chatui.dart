@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 class ChatUi extends StatelessWidget {
   static const String path = "lib/src/pages/misc/chatui.dart";
 
-  const ChatUi({Key? key}) : super(key: key);
+  const ChatUi({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
@@ -10,13 +12,12 @@ class SliderDragger extends StatefulWidget {
   final double? paddingBottom;
   final Widget? child;
 
-  const SliderDragger({
-    Key? key,
+  const SliderDragger({super.key, 
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,
     this.child,
-  }) : super(key: key);
+  });
 
   @override
   _SliderDraggerState createState() => _SliderDraggerState();

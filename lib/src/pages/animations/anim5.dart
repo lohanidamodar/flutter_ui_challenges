@@ -1,5 +1,7 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
@@ -15,7 +17,7 @@ List<String> places = [
 class AnimatedListOnePage extends StatefulWidget {
   static const String path = "lib/src/pages/animations/anim5.dart";
 
-  const AnimatedListOnePage({Key? key}) : super(key: key);
+  const AnimatedListOnePage({super.key});
   @override
   _AnimatedListOnePageState createState() => _AnimatedListOnePageState();
 }

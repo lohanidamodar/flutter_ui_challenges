@@ -4,7 +4,7 @@ import 'package:flutter_ui_challenges/src/travelui_clone/screens/destinationa_sc
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DestinationPlacePage extends StatelessWidget {
-  const DestinationPlacePage({Key? key}) : super(key: key);
+  const DestinationPlacePage({super.key});
 
   @override
   Widget build(BuildContext context) {

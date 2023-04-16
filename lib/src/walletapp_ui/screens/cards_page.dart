@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CardPage extends StatelessWidget {
-  const CardPage({Key? key}) : super(key: key);
+  const CardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -253,16 +253,14 @@ class CardPage extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(10)),
+                        borderRadius: const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -300,16 +298,14 @@ class CardPage extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(10)),
+                        borderRadius: const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -346,16 +342,14 @@ class CardPage extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(10)),
+                        borderRadius: const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

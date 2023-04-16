@@ -1,10 +1,11 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 import './controller.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-enum Side { Top, Bottom }
+enum Side { top, bottom }
 
 class BottomExpandableAppBar extends StatefulWidget {
   final Widget? expandedBody;
@@ -14,7 +15,6 @@ class BottomExpandableAppBar extends StatefulWidget {
   final Side attachSide;
 
   final double appBarHeight;
-  // TODO: Get max available height
   final bool useMax;
 
   final BoxConstraints? constraints;
@@ -36,7 +36,7 @@ class BottomExpandableAppBar extends StatefulWidget {
     this.shape,
     this.expandedHeight = 150,
     this.appBarHeight = 50,
-    this.attachSide = Side.Bottom,
+    this.attachSide = Side.bottom,
     this.constraints,
     this.bottomAppBarColor,
     this.appBarDecoration,
@@ -121,14 +121,12 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
       color: Colors.transparent,
       elevation: 0,
       child: Stack(
-        //TODO: Find out how to get top app bar overlap body content of scaffold
-        alignment: widget.attachSide == Side.Bottom
+        alignment: widget.attachSide == Side.bottom
             ? Alignment.bottomCenter
             : Alignment.topCenter,
         children: <Widget>[
           Padding(
-            padding:
-                EdgeInsets.symmetric(horizontal: widget.horizontalMargin ?? 0),
+            padding: EdgeInsets.symmetric(horizontal: widget.horizontalMargin),
             child: Stack(
               children: [
                 Container(
@@ -149,48 +147,13 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
             ),
           ),
           Container(
-            color:
-                widget.bottomAppBarColor ?? Theme.of(context).bottomAppBarColor,
+            color: widget.bottomAppBarColor ??
+                Theme.of(context).bottomAppBarTheme.color,
             height: widget.appBarHeight,
             child: widget.bottomAppBarBody,
           ),
         ],
       ),
     );
-  }
-}
-
-//Copied from flutter sdk
-class _BottomAppBarClipper extends CustomClipper<Path> {
-  const _BottomAppBarClipper(
-      {required this.geometry,
-      required this.shape,
-      required this.notchMargin,
-      required this.buttonOffset})
-      : super(reclip: geometry);
-
-  final ValueListenable<ScaffoldGeometry> geometry;
-  final NotchedShape shape;
-  final double notchMargin;
-  final double buttonOffset;
-
-  @override
-  Path getClip(Size size) {
-    // button is the floating action button's bounding rectangle in the
-    // coordinate system whose origin is at the appBar's top left corner,
-    // or null if there is no floating action button.
-    final Rect? button = geometry.value.floatingActionButtonArea?.translate(
-      0.0,
-      geometry.value.bottomNavigationBarTop! * -1.0 - buttonOffset,
-    );
-    return shape.getOuterPath(
-        const Offset(0, 0) & size, button?.inflate(notchMargin));
-  }
-
-  @override
-  bool shouldReclip(_BottomAppBarClipper oldClipper) {
-    return oldClipper.geometry != geometry ||
-        oldClipper.shape != shape ||
-        oldClipper.notchMargin != notchMargin;
   }
 }

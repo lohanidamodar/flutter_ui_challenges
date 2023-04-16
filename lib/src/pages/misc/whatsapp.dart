@@ -1,12 +1,14 @@
-/// Author: Ambika Dulal
-/// profile: https://github.com/Ambikadulal
-/// design source:whatsapp
+/**
+ * Author: Ambika Dulal
+ * profile: https://github.com/Ambikadulal
+ * design source:whatsapp
+  */
 import 'package:flutter/material.dart';
 
 class WhatsAppClone extends StatefulWidget {
   static const String path = "lib/src/pages/misc/whatsapp.dart";
 
-  const WhatsAppClone({Key? key}) : super(key: key);
+  const WhatsAppClone({super.key});
 
   @override
   _WhatsAppCloneState createState() => _WhatsAppCloneState();

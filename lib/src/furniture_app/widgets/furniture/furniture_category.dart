@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FurnitureCategory extends StatelessWidget {
   final FurnitureCatg item;
-  const FurnitureCategory({Key? key, required this.item}) : super(key: key);
+  const FurnitureCategory({super.key, required this.item});
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -28,8 +28,8 @@ class FurnitureCategory extends StatelessWidget {
                   )
               ],
               color: item.elivation!
-                  ? profile_info_background
-                  : profile_info_categories_background,
+                  ? profileInfoBackground
+                  : profileInfoCategoriesBackground,
               borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             ),
             child: Transform.rotate(

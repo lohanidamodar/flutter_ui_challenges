@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' hide MenuItem;
+import 'package:flutter/material.dart';
 
 class MenuItem {
   final String title;
@@ -21,4 +21,4 @@ class SubMenuItem {
   SubMenuItem(this.title, this.page, {this.icon = Icons.block, this.path});
 }
 
-enum OpenMode { CODE, PREVIEW }
+enum OpenMode { code, preview }

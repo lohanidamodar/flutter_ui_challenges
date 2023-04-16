@@ -1,15 +1,16 @@
-/// Author: Damodar Lohani
-/// profile: https://github.com/lohanidamodar
+/**
+ * Author: Damodar Lohani
+ * profile: https://github.com/lohanidamodar
+  */
 
 import 'package:flutter/material.dart';
 
 class PaymentSuccessDialog extends StatelessWidget {
   final image = 'assets/img/3.jpg';
-  final TextStyle subtitle =
-      const TextStyle(fontSize: 12.0, color: Colors.grey);
+  final TextStyle subtitle = const TextStyle(fontSize: 12.0, color: Colors.grey);
   final TextStyle label = const TextStyle(fontSize: 14.0, color: Colors.grey);
 
-  const PaymentSuccessDialog({Key? key}) : super(key: key);
+  const PaymentSuccessDialog({super.key});
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -41,10 +42,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const <Widget>[
-                    Text("2, April 2019"),
-                    Text("9:10 AM")
-                  ],
+                  children: const <Widget>[Text("2, April 2019"), Text("9:10 AM")],
                 ),
                 const SizedBox(height: 20.0),
                 Row(
