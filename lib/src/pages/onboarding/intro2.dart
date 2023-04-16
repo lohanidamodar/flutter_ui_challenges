@@ -6,12 +6,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
 class IntroTwoPage extends StatefulWidget {
-  static final String path = "lib/src/pages/onboarding/intro2.dart";
+  static const String path = "lib/src/pages/onboarding/intro2.dart";
+
+  const IntroTwoPage({super.key});
   @override
   _IntroTwoPageState createState() => _IntroTwoPageState();
 }
@@ -49,11 +50,11 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             pagination: SwiperPagination(
                 builder: CustomPaginationBuilder(
                     activeColor: Colors.white,
-                    activeSize: Size(10.0, 20.0),
-                    size: Size(10.0, 15.0),
+                    activeSize: const Size(10.0, 20.0),
+                    size: const Size(10.0, 15.0),
                     color: Colors.grey.shade600)),
           )),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           _buildButtons(),
         ],
       ),
@@ -70,7 +71,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             style: TextButton.styleFrom(
               foregroundColor: Colors.white70,
             ),
-            child: Text("Skip"),
+            child: const Text("Skip"),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('challenge_home');
             },
@@ -84,9 +85,9 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
               size: 40,
             ),
             onPressed: () async {
-              if (_currentIndex < _pageCount - 1)
+              if (_currentIndex < _pageCount - 1) {
                 _swiperController.next();
-              else {
+              } else {
                 Navigator.of(context).pushReplacementNamed('challenge_home');
               }
             },
@@ -97,7 +98,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
   }
 
   Widget _buildPage({required String title, required String icon}) {
-    final TextStyle titleStyle =
+    const TextStyle titleStyle =
         TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0);
     return Container(
       width: double.infinity,
@@ -109,7 +110,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
               image: NetworkImage(icon),
               fit: BoxFit.cover,
               colorFilter:
-                  ColorFilter.mode(Colors.black38, BlendMode.multiply))),
+                  const ColorFilter.mode(Colors.black38, BlendMode.multiply))),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
@@ -118,7 +119,7 @@ class _IntroTwoPageState extends State<IntroTwoPage> {
             textAlign: TextAlign.center,
             style: titleStyle.copyWith(color: Colors.white),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
         ],
       ),
     );

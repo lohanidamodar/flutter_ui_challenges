@@ -4,15 +4,17 @@ import 'shape_plant_page.dart';
 import 'green_plant_page.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   List<Widget> widgets = [
-    GreenPlantPage(),
-    IndoorPlantPage(),
-    ShapePlantPage(),
+    const GreenPlantPage(),
+    const IndoorPlantPage(),
+    const ShapePlantPage(),
   ];
   int currentIndex = 0;
   @override
@@ -24,28 +26,28 @@ class _HomePageState extends State<HomePage> {
         children: [
           Container(
             width: 90,
-            padding: EdgeInsets.symmetric(vertical: 35),
+            padding: const EdgeInsets.symmetric(vertical: 35),
             color: Theme.of(context).primaryColor,
             child: RotatedBox(
               quarterTurns: 1,
               child: Row(
                 children: [
                   IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.more_horiz,
                       color: Colors.white,
                     ),
                     onPressed: () {},
                   ),
-                  Spacer(),
+                  const Spacer(),
                   buildMenuItem("Green Plant", 0),
                   buildMenuItem("Indoor Plant", 1),
                   buildMenuItem("Shape Plant", 2),
-                  Spacer(),
+                  const Spacer(),
                   RotatedBox(
                     quarterTurns: -1,
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.home,
                         color: Colors.white,
                         size: 30,
@@ -58,12 +60,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Expanded(
-            child: Container(
-              child: PageView(
-                children: [
-                  widgets[currentIndex],
-                ],
-              ),
+            child: PageView(
+              children: [
+                widgets[currentIndex],
+              ],
             ),
           ),
         ],
@@ -82,13 +82,13 @@ class _HomePageState extends State<HomePage> {
               ? Container(
                   height: 10,
                   width: 10,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.amber,
                     shape: BoxShape.circle,
                   ),
                 )
               : Container(height: 10),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             title,
             style: TextStyle(

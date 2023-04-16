@@ -15,7 +15,9 @@ const TextStyle primaryText = TextStyle(
 );
 
 class InvitationLandingPage extends StatelessWidget {
-  static final String path = "lib/src/pages/invitation/inlanding.dart";
+  static const String path = "lib/src/pages/invitation/inlanding.dart";
+
+  const InvitationLandingPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,10 +28,10 @@ class InvitationLandingPage extends StatelessWidget {
             "Invitations",
             style: Theme.of(context)
                 .textTheme
-                .headline4
+                .headlineMedium
                 ?.copyWith(fontWeight: FontWeight.bold),
           ),
-          Text.rich(
+          const Text.rich(
             TextSpan(children: [
               TextSpan(text: "A smarter way to hold "),
               TextSpan(text: "events", style: primaryText),
@@ -38,15 +40,15 @@ class InvitationLandingPage extends StatelessWidget {
           const SizedBox(height: 20.0),
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.pink,
                 borderRadius:
                     BorderRadius.only(topRight: Radius.circular(60.0)),
               ),
               child: Column(
                 children: <Widget>[
-                  Expanded(
-                      child: Center(child: PNetworkImage(INVITE_ILLUSTRATION))),
+                  const Expanded(
+                      child: Center(child: PNetworkImage(inviteIllustration))),
                   const SizedBox(height: 20.0),
                   Container(
                     width: double.infinity,
@@ -58,7 +60,7 @@ class InvitationLandingPage extends StatelessWidget {
                         foregroundColor: Colors.pink,
                         backgroundColor: Colors.white,
                       ),
-                      child: Text("Create an Account"),
+                      child: const Text("Create an Account"),
                       onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
@@ -69,22 +71,22 @@ class InvitationLandingPage extends StatelessWidget {
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
                         elevation: 0,
-                        side: BorderSide(color: Colors.white),
+                        side: const BorderSide(color: Colors.white),
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.white,
                       ),
-                      child: Text("Sign in with Google"),
+                      child: const Text("Sign in with Google"),
                       onPressed: () => Navigator.pushNamed(context, 'auth'),
                     ),
                   ),
                   const SizedBox(height: 10.0),
                   Text.rich(
                     TextSpan(children: [
-                      TextSpan(text: "Already have an account? "),
+                      const TextSpan(text: "Already have an account? "),
                       WidgetSpan(
                           child: GestureDetector(
                         onTap: () {},
-                        child: Text(
+                        child: const Text(
                           "Sign in",
                           style: whiteBoldText,
                         ),

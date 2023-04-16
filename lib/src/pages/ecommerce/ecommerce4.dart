@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -8,16 +7,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 TextStyle priceTextStyle =
-    TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
+    const TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
 
 class EcommerceFourPage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/ecommerce4.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce4.dart";
+
+  const EcommerceFourPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        title: Text('Buy Stuff'),
+        title: const Text('Buy Stuff'),
       ),
       body: ListView(
         children: <Widget>[
@@ -25,13 +26,13 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Categories",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
           Container(
             width: double.infinity,
             height: 150,
-            margin: EdgeInsets.only(top: 15),
+            margin: const EdgeInsets.only(top: 15),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 8,
@@ -44,14 +45,14 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Featured Products",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Container(
             width: double.infinity,
             height: 150,
-            margin: EdgeInsets.only(top: 15),
+            margin: const EdgeInsets.only(top: 15),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 5,
@@ -70,14 +71,14 @@ class EcommerceFourPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent products",
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   InkWell(
                     onTap: () {
                       print("hello");
                     },
-                    child: Text("View all"),
+                    child: const Text("View all"),
                   ),
                 ],
               ),
@@ -110,7 +111,7 @@ class EcommerceFourPage extends StatelessWidget {
               ),
             ),
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             width: 150,
             height: 150,
           ),
@@ -124,7 +125,7 @@ class EcommerceFourPage extends StatelessWidget {
                 horizontal: 16.0,
               ),
               color: Colors.black87,
-              child: Text(
+              child: const Text(
                 "Sofa Set",
                 style: TextStyle(
                   color: Colors.white,
@@ -134,7 +135,7 @@ class EcommerceFourPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
         ],
@@ -154,14 +155,14 @@ class EcommerceFourPage extends StatelessWidget {
                 image: DecorationImage(
                     image: NetworkImage(images[2]), fit: BoxFit.cover)),
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             width: 100,
             height: 100,
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text("Tables")
+          const Text("Tables")
         ],
       ),
     );
@@ -210,8 +211,8 @@ class ProductListItem extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
-                            Text("Drawer Table"),
-                            SizedBox(
+                            const Text("Drawer Table"),
+                            const SizedBox(
                               height: 5,
                             ),
                             Text("Rs. 8000", style: priceTextStyle)
@@ -219,7 +220,7 @@ class ProductListItem extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        icon: Icon(Icons.shopping_cart),
+                        icon: const Icon(Icons.shopping_cart),
                         onPressed: () {
                           print('tapped');
                         },

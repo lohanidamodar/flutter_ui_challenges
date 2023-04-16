@@ -9,11 +9,11 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
-      body: SingleChildScrollView( 
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(200),
@@ -22,60 +22,58 @@ class DetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 35),
+                  const SizedBox(height: 35),
                   Row(
                     children: [
                       IconButton(
-                        icon: Icon(Icons.arrow_back),
+                        icon: const Icon(Icons.arrow_back),
                         onPressed: () => Navigator.pop(context),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
-                        icon: Icon(Icons.shopping_cart),
+                        icon: const Icon(Icons.shopping_cart),
                         onPressed: () {},
                       ),
                     ],
                   ),
-                  Container(
-                    child: Hero(
-                      tag: plant!.title!,
-                      child: Image.network(plant!.image!),
-                    ),
+                  Hero(
+                    tag: plant!.title!,
+                    child: Image.network(plant!.image!),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 70),
+                    padding: const EdgeInsets.symmetric(horizontal: 70),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
                           plant!.title!,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
                           plant!.discription!,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.grey,
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Row(
                           children: [
                             Text(
                               "\$${plant!.price}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             TextButton(
-                              child: Text(
+                              child: const Text(
                                 "+",
                                 style: TextStyle(fontSize: 22),
                               ),
@@ -86,24 +84,25 @@ class DetailPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 70),
+                  const SizedBox(height: 70),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(5),
-                  child: new SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row( 
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        buildCard("Height", Icons.height, plant!.height!),
-                        buildCard("Temperature", Icons.thermostat_outlined,plant!.temprature!),
-                        buildCard("Pot", Icons.portrait, plant!.port!),
-                      ],
-                    ),
-                  ),
+              padding: const EdgeInsets.all(5),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    buildCard("Height", Icons.height, plant!.height!),
+                    buildCard("Temperature", Icons.thermostat_outlined,
+                        plant!.temprature!),
+                    buildCard("Pot", Icons.portrait, plant!.port!),
+                  ],
                 ),
+              ),
+            ),
           ],
         ),
       ),
@@ -114,19 +113,19 @@ class DetailPage extends StatelessWidget {
     return Column(
       children: [
         Icon(icon, color: Colors.white, size: 25),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           data,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         )
       ],
     );

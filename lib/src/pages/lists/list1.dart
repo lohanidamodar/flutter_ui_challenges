@@ -4,27 +4,27 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class PlaceList1 extends StatelessWidget {
-  static final String path = "lib/src/pages/lists/list1.dart";
+  static const String path = "lib/src/pages/lists/list1.dart";
+
+  const PlaceList1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("Place List 1"),
+        title: const Text("Place List 1"),
         backgroundColor: Colors.deepOrangeAccent,
         elevation: 2,
         actions: <Widget>[
           Container(
-            padding: EdgeInsets.all(10),
-            child: Icon(Icons.filter_list),
+            padding: const EdgeInsets.all(10),
+            child: const Icon(Icons.filter_list),
           )
         ],
       ),
-      body: Lists(),
+      body:  Lists(),
     );
   }
 }
@@ -90,10 +90,12 @@ class Lists extends StatelessWidget {
             "https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
   ];
 
+   Lists({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: EdgeInsets.all(6),
+      padding: const EdgeInsets.all(6),
       itemCount: _data.length,
       itemBuilder: (BuildContext context, int index) {
         Item item = _data[index];
@@ -105,7 +107,7 @@ class Lists extends StatelessWidget {
                 height: 125,
                 width: 110,
                 padding:
-                    EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
+                    const EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         image: NetworkImage(item.image!), fit: BoxFit.cover)),
@@ -118,11 +120,11 @@ class Lists extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               item.discount!,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.normal),
                             ),
-                            Text(
+                            const Text(
                               "Discount",
                               style: TextStyle(
                                   color: Colors.white,
@@ -140,24 +142,24 @@ class Lists extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       item.title!,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.deepOrange,
                           fontWeight: FontWeight.w700,
                           fontSize: 17),
                     ),
                     Text(
                       item.catagory!,
-                      style: TextStyle(fontSize: 14, color: Colors.black87),
+                      style: const TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                     Text(
                       item.place!,
-                      style: TextStyle(fontSize: 14, color: Colors.black87),
+                      style: const TextStyle(fontSize: 14, color: Colors.black87),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Icon(
                           Icons.star,
                           color: Colors.pink,
@@ -189,12 +191,12 @@ class Lists extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           item.ratings!,
-                          style: TextStyle(fontSize: 13),
+                          style: const TextStyle(fontSize: 13),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
-                        Text(
+                        const Text(
                           "Ratings",
                           style: TextStyle(fontSize: 13),
                         ),

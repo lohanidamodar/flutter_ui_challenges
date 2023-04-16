@@ -1,19 +1,20 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 
 class MusicPlayerTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/musicplayer2.dart";
+  static const String path = "lib/src/pages/misc/musicplayer2.dart";
+
+  const MusicPlayerTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Text(
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text(
           'Music Player',
           style: TextStyle(color: Colors.black),
         ),
@@ -21,7 +22,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
           MaterialButton(
             padding: const EdgeInsets.all(0),
             elevation: 0,
-            shape: CircleBorder(),
+            shape: const CircleBorder(),
             onPressed: () {},
             child: CircleAvatar(
               maxRadius: 15.0,
@@ -34,7 +35,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
+            SizedBox(
               height: 250,
               child: Swiper(
                 viewportFraction: 0.8,
@@ -56,7 +57,7 @@ class MusicPlayerTwoPage extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
                           color: Colors.blue.withOpacity(0.5)),
-                      child: Text(
+                      child: const Text(
                         "Travel Series",
                         style: TextStyle(
                           color: Colors.white,
@@ -80,16 +81,16 @@ class MusicPlayerTwoPage extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.pause),
-              title: Text("Ariana Grande"),
+              leading: const Icon(Icons.pause),
+              title: const Text("Ariana Grande"),
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+                children: const <Widget>[
                   Text("Daydreaming"),
-                  const SizedBox(height: 10.0),
+                  SizedBox(height: 10.0),
                 ],
               ),
-              trailing: Text("3:45"),
+              trailing: const Text("3:45"),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 70.0, right: 20),
@@ -108,31 +109,31 @@ class MusicPlayerTwoPage extends StatelessWidget {
                 ],
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.play_arrow),
               title: Text("Beyonce"),
               subtitle: Text("Halo"),
               trailing: Text("3:05"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.play_arrow),
               title: Text("Don't let me down"),
               subtitle: Text("Coldplay"),
               trailing: Text("3:05"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.play_arrow),
               title: Text("Just the way you are"),
               subtitle: Text("Bruno Mars"),
               trailing: Text("3:05"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.play_arrow),
               title: Text("Beyonce"),
               subtitle: Text("Halo"),
               trailing: Text("3:05"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.play_arrow),
               title: Text("Just the way you are"),
               subtitle: Text("Bruno Mars"),

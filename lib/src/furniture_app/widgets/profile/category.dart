@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
   final Catg? catg;
-  Category({this.catg});
+  const Category({super.key, this.catg});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -14,14 +14,15 @@ class Category extends StatelessWidget {
           children: <Widget>[
             GestureDetector(
               onTap: () {
-                if (catg!.name == listProfileCategories[0].name)
+                if (catg!.name == listProfileCategories[0].name) {
                   Navigator.pushNamed(context, '/furniture');
+                }
               },
               child: Container(
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.all(10.0),
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: profile_info_categories_background,
+                  color: profileInfoCategoriesBackground,
                 ),
                 child: Icon(
                   catg!.icon,
@@ -33,29 +34,29 @@ class Category extends StatelessWidget {
                 ? Positioned(
                     right: -5.0,
                     child: Container(
-                      padding: EdgeInsets.all(5.0),
-                      decoration: BoxDecoration(
-                        color: profile_info_background,
+                      padding: const EdgeInsets.all(5.0),
+                      decoration: const BoxDecoration(
+                        color: profileInfoBackground,
                         shape: BoxShape.circle,
                       ),
                       child: Text(
                         catg!.number.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 10.0,
                         ),
                       ),
                     ),
                   )
-                : SizedBox(),
+                : const SizedBox(),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         Text(
           catg!.name!,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 13.0,
           ),
         )

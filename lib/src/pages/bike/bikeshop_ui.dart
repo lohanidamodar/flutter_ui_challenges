@@ -1,13 +1,9 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambika Dulal
-  */
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MoterBikeShopPage extends StatelessWidget {
-  static final String path = "lib/src/pages/bike/bikeshop_ui.dart";
+  static const String path = "lib/src/pages/bike/bikeshop_ui.dart";
+
+  const MoterBikeShopPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +12,14 @@ class MoterBikeShopPage extends StatelessWidget {
         fontFamily: 'avenir',
       ),
       debugShowCheckedModeBanner: false,
-      home: DetailsPage(),
+      home: const DetailsPage(),
     );
   }
 }
 
 class DetailsPage extends StatefulWidget {
+  const DetailsPage({super.key});
+
   @override
   _DetailsPageState createState() => _DetailsPageState();
 }
@@ -31,27 +29,27 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xfff5f6fa),
+        backgroundColor: const Color(0xfff5f6fa),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Row(
               children: <Widget>[
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.15,
                   width: MediaQuery.of(context).size.width,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.only(left: 30),
+                        padding: const EdgeInsets.only(left: 30),
                         width: MediaQuery.of(context).size.width * 0.7,
                         child: Stack(
                           children: <Widget>[
                             Container(
-                              padding: EdgeInsets.only(top: 40),
-                              child: Text("Bike Shop Name",
+                              padding: const EdgeInsets.only(top: 40),
+                              child: const Text("Bike Shop Name",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.w900,
@@ -62,16 +60,16 @@ class _DetailsPageState extends State<DetailsPage> {
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(20))),
                         width: MediaQuery.of(context).size.width * 0.25,
                         height: 80,
                         child: IconButton(
-                          onPressed: (){},
-                          padding: EdgeInsets.only(top: 5),
-                          icon: Icon(
+                          onPressed: () {},
+                          padding: const EdgeInsets.only(top: 5),
+                          icon: const Icon(
                             Icons.search,
                             color: Colors.white,
                             size: 30,
@@ -93,7 +91,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     RotatedBox(
                       quarterTurns: 3,
                       child: Padding(
-                        padding: EdgeInsets.only(top: 3),
+                        padding: const EdgeInsets.only(top: 3),
                         child: Row(
                           children: <Widget>[
                             title("All"),
@@ -106,90 +104,88 @@ class _DetailsPageState extends State<DetailsPage> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.85,
                   child: SingleChildScrollView(
-                    child: Container(
-                      child: Column(
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "New Arrival",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
+                    child: Column(
+                      children: <Widget>[
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              "New Arrival",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
                               ),
-                              SizedBox(
-                                height: 10,
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            SizedBox(
+                              height: 380,
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  newArrivalWidget(
+                                      "24A", "400W", "30Km", "250,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  newArrivalWidget(
+                                      "22A", "300W", "25Km", "200,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  newArrivalWidget(
+                                      "20A", "320W", "27Km", "300,000"),
+                                ],
                               ),
-                              Container(
-                                height: 380,
-                                width: MediaQuery.of(context).size.width * 0.8,
-                                child: ListView(
-                                  physics: BouncingScrollPhysics(),
-                                  scrollDirection: Axis.horizontal,
-                                  children: <Widget>[
-                                    newArrivalWidget(
-                                        "24A", "400W", "30Km", "250,000"),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    newArrivalWidget(
-                                        "22A", "300W", "25Km", "200,000"),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    newArrivalWidget(
-                                        "20A", "320W", "27Km", "300,000"),
-                                  ],
-                                ),
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            const Text(
+                              "Best Sellers",
+                              style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.w900,
                               ),
-                              SizedBox(
-                                height: 20,
+                            ),
+                            SizedBox(
+                              height: 300,
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  bestSellerWidget(
+                                      "Honda Bike", "Prospero", "150,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  bestSellerWidget(
+                                      "Bullet Bike", "Rero", "400,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  bestSellerWidget(
+                                      "Plusar Bike", "Mount", "250,000"),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                ],
                               ),
-                              Text(
-                                "Best Sellers",
-                                style: TextStyle(
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              Container(
-                                height: 300,
-                                width: MediaQuery.of(context).size.width * 0.8,
-                                child: ListView(
-                                  physics: BouncingScrollPhysics(),
-                                  scrollDirection: Axis.horizontal,
-                                  children: <Widget>[
-                                    bestSellerWidget(
-                                        "Honda Bike", "Prospero", "150,000"),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    bestSellerWidget(
-                                        "Bullet Bike", "Rero", "400,000"),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                    bestSellerWidget(
-                                        "Plusar Bike", "Mount", "250,000"),
-                                    SizedBox(
-                                      width: 15,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
+                            ),
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 )
@@ -202,7 +198,7 @@ class _DetailsPageState extends State<DetailsPage> {
   Container title(String titleName) {
     return Container(
       width: 100,
-      padding: EdgeInsets.only(right: 20),
+      padding: const EdgeInsets.only(right: 20),
       child: InkWell(
         child: Column(
           children: <Widget>[
@@ -244,14 +240,14 @@ class _DetailsPageState extends State<DetailsPage> {
             )
           ]),
       child: Container(
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
               width: 200,
               height: 150,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: NetworkImage(
                           'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/bike%2Fbike1.jpg?alt=media'),
@@ -259,13 +255,13 @@ class _DetailsPageState extends State<DetailsPage> {
             ),
             Text(
               bikeName,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Text(
               companyName,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -273,18 +269,18 @@ class _DetailsPageState extends State<DetailsPage> {
               children: <Widget>[
                 Text(
                   price,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.orange,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 IconButton(
-                  onPressed: (){},
-                  icon: Icon(
+                  onPressed: () {},
+                  icon: const Icon(
                     Icons.add_shopping_cart,
                   ),
                 )
@@ -311,10 +307,10 @@ class _DetailsPageState extends State<DetailsPage> {
             )
           ]),
       child: Container(
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         child: Column(
           children: <Widget>[
-            Text(
+            const Text(
               "All Terrain",
               style: TextStyle(
                 fontSize: 20,
@@ -322,7 +318,7 @@ class _DetailsPageState extends State<DetailsPage> {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(30),
+              padding: const EdgeInsets.all(30),
               child: Center(
                 child: Image.network(
                     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/bike%2Fbike1.jpg?alt=media'),
@@ -331,87 +327,81 @@ class _DetailsPageState extends State<DetailsPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        battery,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      battery,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Battery",
-                        style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.normal),
-                      )
-                    ],
-                  ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "Battery",
+                      style: TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.normal),
+                    )
+                  ],
                 ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        enginePower,
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      enginePower,
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text("Engine",
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text("Engine",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.normal,
-                          ))
-                    ],
-                  ),
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal,
+                        ))
+                  ],
                 ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        distance,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      distance,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Distance",
-                        style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.normal),
-                      )
-                    ],
-                  ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "Distance",
+                      style: TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.normal),
+                    )
+                  ],
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(price,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 22,
                         color: Colors.orange,
                         fontWeight: FontWeight.bold)),
                 IconButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   iconSize: 30,
-                  icon: Icon(Icons.add_shopping_cart),
+                  icon: const Icon(Icons.add_shopping_cart),
                 )
               ],
             )

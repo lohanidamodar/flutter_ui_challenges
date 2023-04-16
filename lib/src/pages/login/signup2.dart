@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignupTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/signup2.dart";
+  static const String path = "lib/src/pages/login/signup2.dart";
+
+  const SignupTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,8 +31,8 @@ class SignupTwoPage extends StatelessWidget {
                     height: 20.0,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 32.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 32.0),
                   child: Text(
                     "Sign Up",
                     style:
@@ -40,18 +42,18 @@ class SignupTwoPage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30.0),
-            Padding(
+            const Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 decoration: InputDecoration(
                     labelText: "Email",
                     floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
-            Padding(
+            const Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -59,9 +61,9 @@ class SignupTwoPage extends StatelessWidget {
                     floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
-            Padding(
+            const Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -69,8 +71,8 @@ class SignupTwoPage extends StatelessWidget {
                     floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
               child: Text.rich(
                 TextSpan(children: [
                   TextSpan(
@@ -91,7 +93,7 @@ class SignupTwoPage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(40.0, 16.0, 30.0, 16.0),
                   backgroundColor: Colors.yellow,
                   elevation: 0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(30.0),
                           bottomLeft: Radius.circular(30.0))),
@@ -102,11 +104,11 @@ class SignupTwoPage extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Sign up".toUpperCase(),
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 16.0),
                     ),
                     const SizedBox(width: 40.0),
-                    Icon(
+                    const Icon(
                       FontAwesomeIcons.arrowRight,
                       size: 18.0,
                     )
@@ -126,15 +128,15 @@ class SignupTwoPage extends StatelessWidget {
                     ),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
-                    side: BorderSide(color: Colors.red),
+                    side: const BorderSide(color: Colors.red),
                     backgroundColor: Colors.red,
                     foregroundColor: Colors.red,
                   ),
-                  icon: Icon(
+                  icon: const Icon(
                     FontAwesomeIcons.googlePlusG,
                     size: 18.0,
                   ),
-                  label: Text("Google"),
+                  label: const Text("Google"),
                   onPressed: () {},
                 ),
                 const SizedBox(width: 10.0),
@@ -146,15 +148,15 @@ class SignupTwoPage extends StatelessWidget {
                     ),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
-                    side: BorderSide(color: Colors.indigo),
+                    side: const BorderSide(color: Colors.indigo),
                     backgroundColor: Colors.indigo,
                     foregroundColor: Colors.indigo,
                   ),
-                  icon: Icon(
+                  icon: const Icon(
                     FontAwesomeIcons.facebookF,
                     size: 18.0,
                   ),
-                  label: Text("Google"),
+                  label: const Text("Google"),
                   onPressed: () {},
                 ),
               ],

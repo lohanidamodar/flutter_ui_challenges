@@ -29,7 +29,7 @@ class GroceryListItemTwo extends StatelessWidget {
       child: Row(
         children: <Widget>[
           const SizedBox(width: 10.0),
-          Container(
+          SizedBox(
               height: 80.0,
               child: PNetworkImage(
                 image,
@@ -41,8 +41,8 @@ class GroceryListItemTwo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                new GroceryTitle(text: title),
-                new GrocerySubtitle(text: subtitle)
+                GroceryTitle(text: title),
+                GrocerySubtitle(text: subtitle)
               ],
             ),
           ),
@@ -50,11 +50,11 @@ class GroceryListItemTwo extends StatelessWidget {
           Column(
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.favorite_border),
+                icon: const Icon(Icons.favorite_border),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.add,
                 ),
                 color: Colors.green,

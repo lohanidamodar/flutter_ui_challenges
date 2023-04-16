@@ -1,5 +1,5 @@
 import '../utils/constant.dart';
-import '../widgets/furniture/bottomItem.dart';
+import '../widgets/furniture/bottom_item.dart';
 import '../widgets/furniture/furniture_category.dart';
 import '../widgets/furniture/item_navigation.dart';
 import '../widgets/furniture/lamp.dart';
@@ -8,17 +8,18 @@ import '../widgets/title_small.dart';
 import 'package:flutter/material.dart';
 
 class Furniture extends StatelessWidget {
+  Furniture({super.key});
+
   @override
   Widget build(BuildContext context) {
-    Size deviceSize = MediaQuery.of(context).size;
     return Material(
       color: Colors.white,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(
+            const Padding(
+              padding: EdgeInsets.only(
                 left: 20.0,
                 right: 20.0,
                 top: 20.0,
@@ -29,8 +30,8 @@ class Furniture extends StatelessWidget {
               ),
             ),
             buildFurnitureCategories,
-            Padding(
-              padding: const EdgeInsets.only(
+            const Padding(
+              padding: EdgeInsets.only(
                 left: 20.0,
                 right: 20.0,
               ),
@@ -39,22 +40,22 @@ class Furniture extends StatelessWidget {
                 title: 'Modern',
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             buildLampsWithSlider(),
-            Padding(
+            const Padding(
               padding:
-                  const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+                  EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
               child: TitleSmall(
                 subTitle: 'In recent month',
                 title: 'Popular',
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
-            BottomItem(),
+            const BottomItem(),
             const SizedBox(height: 10.0),
           ],
         ),
@@ -62,14 +63,14 @@ class Furniture extends StatelessWidget {
     );
   }
 
-  Container buildLampsWithSlider() {
-    return Container(
+  Widget buildLampsWithSlider() {
+    return SizedBox(
       //color: Colors.yellow,
       height: 350,
       child: Stack(
         children: <Widget>[
           buildLamps,
-          Positioned(
+          const Positioned(
             bottom: 40.0,
             right: 50.0,
             child: ItemNavigation(),
@@ -81,7 +82,7 @@ class Furniture extends StatelessWidget {
 
   final buildLamps = ListView.builder(
     scrollDirection: Axis.horizontal,
-    physics: BouncingScrollPhysics(),
+    physics: const BouncingScrollPhysics(),
     shrinkWrap: true,
     itemCount: lampList.length,
     itemBuilder: (context, int index) => Lamp(
@@ -89,7 +90,7 @@ class Furniture extends StatelessWidget {
       index: index,
     ),
   );
-  final buildFurnitureCategories = Container(
+  final buildFurnitureCategories = SizedBox(
     height: 100.0,
     //color: Colors.red,
     child: ListView.builder(

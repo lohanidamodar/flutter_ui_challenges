@@ -24,7 +24,8 @@ final List<IntroItem> introItems = [
 ];
 
 final List<HomeMenuItem> homeMenuItems = [
-  HomeMenuItem("Topup", FontAwesomeIcons.mobileAlt, subtitle: "CASHBACK 2%"),
+  HomeMenuItem("Topup", FontAwesomeIcons.mobileScreenButton,
+      subtitle: "CASHBACK 2%"),
   HomeMenuItem("RC Card", FontAwesomeIcons.addressCard,
       subtitle: "CASHBACK 2-3%"),
   HomeMenuItem("Landline", FontAwesomeIcons.intercom, subtitle: "CASHBACK 2%"),
@@ -33,17 +34,17 @@ final List<HomeMenuItem> homeMenuItems = [
   HomeMenuItem("TV", FontAwesomeIcons.tv, subtitle: "CASHBACK 2%"),
   HomeMenuItem("Internet", FontAwesomeIcons.globe, subtitle: "CASHBACK 0.5-5%"),
   HomeMenuItem("E-Learning", FontAwesomeIcons.readme, subtitle: "CASHBACK 2%"),
-  HomeMenuItem("Antivirus", FontAwesomeIcons.shieldAlt,
+  HomeMenuItem("Antivirus", FontAwesomeIcons.shieldHalved,
       subtitle: "CASHBACK 30%"),
   HomeMenuItem("Insurance", FontAwesomeIcons.userShield),
   HomeMenuItem("Ride", FontAwesomeIcons.motorcycle, subtitle: "CASHBACK 5%"),
-  HomeMenuItem("Share", FontAwesomeIcons.shareSquare),
+  HomeMenuItem("Share", FontAwesomeIcons.shareFromSquare),
   HomeMenuItem("Newspaper", FontAwesomeIcons.newspaper),
   HomeMenuItem("Credit Card", FontAwesomeIcons.creditCard),
 ];
 final List<HomeMenuItem> homeBookingsItems = [
   HomeMenuItem("Flight", FontAwesomeIcons.plane),
-  HomeMenuItem("Movie", FontAwesomeIcons.ticketAlt, subtitle: "CASHBACK 2%"),
+  HomeMenuItem("Movie", FontAwesomeIcons.ticketSimple, subtitle: "CASHBACK 2%"),
   HomeMenuItem("Hotel", FontAwesomeIcons.hotel),
   HomeMenuItem("Event", FontAwesomeIcons.calendarCheck)
 ];

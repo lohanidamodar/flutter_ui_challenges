@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class GridViewAnimationPage extends StatefulWidget {
-  static final String path = "lib/src/pages/lists/grid_view.dart";
+  static const String path = "lib/src/pages/lists/grid_view.dart";
+
+  const GridViewAnimationPage({super.key});
 
   @override
   _GridViewAnimationPageState createState() => _GridViewAnimationPageState();
@@ -28,25 +30,25 @@ class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(Icons.menu),
-        title: Text("Home"),
+        leading: const Icon(Icons.menu),
+        title: const Text("Home"),
         actions: <Widget>[
           Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Container(
               width: 36,
               height: 30,
               decoration: BoxDecoration(
                   color: Colors.grey[800],
                   borderRadius: BorderRadius.circular(10)),
-              child: Center(child: Text("0")),
+              child: const Center(child: Text("0")),
             ),
           )
         ],
       ),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: <Widget>[
               Container(
@@ -54,7 +56,7 @@ class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
                 height: 250,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         image: NetworkImage(
                             'https://cdn.pixabay.com/photo/2017/08/31/11/55/wedding-2700495__340.jpg'),
                         fit: BoxFit.cover)),
@@ -69,19 +71,19 @@ class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
-                      Text(
+                      const Text(
                         "Lifestyle Sale",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 35,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Container(
                         height: 50,
-                        margin: EdgeInsets.symmetric(horizontal: 40),
+                        margin: const EdgeInsets.symmetric(horizontal: 40),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.white),
@@ -93,14 +95,14 @@ class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
                               fontWeight: FontWeight.bold),
                         )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Expanded(
@@ -119,14 +121,14 @@ class _GridViewAnimationPageState extends State<GridViewAnimationPage> {
                                     image: NetworkImage(item),
                                     fit: BoxFit.cover)),
                             child: Transform.translate(
-                              offset: Offset(50, -50),
+                              offset: const Offset(50, -50),
                               child: Container(
-                                margin: EdgeInsets.symmetric(
+                                margin: const EdgeInsets.symmetric(
                                     horizontal: 65, vertical: 63),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.white),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.bookmark_border,
                                   size: 15,
                                 ),

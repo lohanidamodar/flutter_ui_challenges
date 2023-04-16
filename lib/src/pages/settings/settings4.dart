@@ -6,7 +6,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SettingsFourPage extends StatefulWidget {
-  static final String path = "lib/src/pages/settings/settings4.dart";
+  static const String path = "lib/src/pages/settings/settings4.dart";
+
+  const SettingsFourPage({super.key});
 
   @override
   _SettingsFourPageState createState() => _SettingsFourPageState();
@@ -23,25 +25,25 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.green,
           ),
         ),
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 16, top: 25, right: 16),
+        padding: const EdgeInsets.only(left: 16, top: 25, right: 16),
         child: ListView(
           children: [
-            Text(
+            const Text(
               "Settings",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
-              children: [
+              children: const [
                 Icon(
                   Icons.person,
                   color: Colors.green,
@@ -55,11 +57,11 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               height: 15,
               thickness: 2,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             buildAccountOptionRow(context, "Change password"),
@@ -67,11 +69,11 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
             buildAccountOptionRow(context, "Social Media"),
             buildAccountOptionRow(context, "Language"),
             buildAccountOptionRow(context, "Privacy and Policy"),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
-              children: [
+              children: const [
                 Icon(
                   Icons.volume_up_outlined,
                   color: Colors.green,
@@ -85,27 +87,27 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               height: 15,
               thickness: 2,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             buildNotificationOptionRow("New update", true),
             buildNotificationOptionRow("Account Status", false),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Center(
               child: OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                 ),
                 onPressed: () {},
-                child: Text("Lagout",
+                child: const Text("Lagout",
                     style: TextStyle(
                         fontSize: 16, letterSpacing: 2.2, color: Colors.black)),
               ),
@@ -147,7 +149,7 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                 title: Text(title),
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: [
+                  children: const [
                     Text("Option A"),
                     Text("Option B"),
                     Text("Option C"),
@@ -158,7 +160,7 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text("Close")),
+                      child: const Text("Close")),
                 ],
               );
             });
@@ -176,7 +178,7 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
                 color: Colors.grey[600],
               ),
             ),
-            Icon(
+            const Icon(
               Icons.arrow_forward_ios,
               color: Colors.grey,
             ),

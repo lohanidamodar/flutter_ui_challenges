@@ -7,17 +7,17 @@ import 'package:flutter/material.dart';
 class Lamp extends StatelessWidget {
   final ProfileMenu? item;
   final int? index;
-  Lamp({this.item, this.index});
+  const Lamp({super.key, this.item, this.index});
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Align(
       alignment: Alignment.topCenter,
-      child: Container(
+      child: SizedBox(
         height: index == 0 ? 350 : 300,
         //color: Colors.red,
         child: Container(
-          margin: EdgeInsets.only(left: 25.0),
+          margin: const EdgeInsets.only(left: 25.0),
           //color: Colors.yellow,
           child: Stack(
             clipBehavior: Clip.none,
@@ -46,12 +46,12 @@ class Lamp extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFFE7E9EF).withOpacity(0.0),
-                      Color(0xFFE7E9EF)
+                      const Color(0xFFE7E9EF).withOpacity(0.0),
+                      const Color(0xFFE7E9EF)
                     ],
                     begin: FractionalOffset.topCenter,
                     end: FractionalOffset.bottomCenter,
-                    stops: [0.5, 1.0],
+                    stops: const [0.5, 1.0],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
@@ -72,7 +72,7 @@ class Lamp extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
                           // color: Colors.white,
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [
                               Color(0xFFE7E9EF),
                               Colors.white30,
@@ -99,7 +99,7 @@ class Lamp extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5.0,
                                   ),
                                   Text(
@@ -112,7 +112,7 @@ class Lamp extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10.0,
                               ),
                               Row(
@@ -121,12 +121,12 @@ class Lamp extends StatelessWidget {
                                   Text(
                                     item!.subTitle!,
                                     style: TextStyle(
-                                      color: profile_info_background,
+                                      color: profileInfoBackground,
                                       fontSize: index == 0 ? 30.0 : 20.0,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 8.0,
                                   ),
                                   Padding(
@@ -134,7 +134,7 @@ class Lamp extends StatelessWidget {
                                     child: Text(
                                       'USD',
                                       style: TextStyle(
-                                        color: profile_info_background,
+                                        color: profileInfoBackground,
                                         fontSize: index == 0 ? 15.0 : 10.0,
                                         fontWeight: FontWeight.normal,
                                       ),

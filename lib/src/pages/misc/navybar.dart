@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class FancyBottomBarPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/navybar.dart";
+  static const String path = "lib/src/pages/misc/navybar.dart";
+
+  const FancyBottomBarPage({super.key});
   @override
   _FancyBottomBarPageState createState() => _FancyBottomBarPageState();
 }
@@ -26,15 +28,15 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bottom navigation fancy'),
+        title: const Text('Bottom navigation fancy'),
       ),
       body: PageView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         onPageChanged: (index) {
           indexcontroller.add(index);
         },
         controller: pageController,
-        children: <Widget>[
+        children: const <Widget>[
           Center(
             child: Text('Home'),
           ),
@@ -58,13 +60,13 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
               currentIndex: cIndex,
               items: <FancyBottomNavigationItem>[
                 FancyBottomNavigationItem(
-                    icon: Icon(Icons.home), title: Text('Home')),
+                    icon: const Icon(Icons.home), title: const Text('Home')),
                 FancyBottomNavigationItem(
-                    icon: Icon(Icons.person), title: Text('User')),
+                    icon: const Icon(Icons.person), title: const Text('User')),
                 FancyBottomNavigationItem(
-                    icon: Icon(Icons.security), title: Text('Security')),
+                    icon: const Icon(Icons.security), title: const Text('Security')),
                 FancyBottomNavigationItem(
-                    icon: Icon(Icons.message), title: Text('Message')),
+                    icon: const Icon(Icons.message), title: const Text('Message')),
               ],
               onItemSelected: (int value) {
                 indexcontroller.add(value);
@@ -85,18 +87,15 @@ class FancyBottomNavigation extends StatefulWidget {
   final List<FancyBottomNavigationItem> items;
   final ValueChanged<int> onItemSelected;
 
-  FancyBottomNavigation(
-      {Key? key,
+  const FancyBottomNavigation(
+      {super.key, 
       this.currentIndex = 0,
       this.iconSize = 24,
       this.activeColor,
       this.inactiveColor,
       this.backgroundColor,
       required this.items,
-      required this.onItemSelected}) {
-    assert(items != null);
-    assert(onItemSelected != null);
-  }
+      required this.onItemSelected});
 
   @override
   _FancyBottomNavigationState createState() {
@@ -136,18 +135,18 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
     return AnimatedContainer(
       width: isSelected ? 124 : 50,
       height: double.maxFinite,
-      duration: Duration(milliseconds: 250),
-      padding: EdgeInsets.fromLTRB(12, 8, 12, 8),
+      duration: const Duration(milliseconds: 250),
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
       decoration: !isSelected
           ? null
           : BoxDecoration(
               color: activeColor,
-              borderRadius: BorderRadius.all(Radius.circular(50)),
+              borderRadius: const BorderRadius.all(Radius.circular(50)),
             ),
       child: ListView(
         shrinkWrap: true,
-        padding: EdgeInsets.all(0),
-        physics: NeverScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(0),
+        physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Row(
@@ -168,7 +167,7 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
                       style: TextStyle(color: backgroundColor),
                       child: item.title,
                     )
-                  : SizedBox.shrink()
+                  : const SizedBox.shrink()
             ],
           )
         ],
@@ -179,19 +178,19 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
   @override
   Widget build(BuildContext context) {
     activeColor =
-        (activeColor == null) ? Theme.of(context).accentColor : activeColor;
+        (activeColor == null) ? Theme.of(context).colorScheme.secondary : activeColor;
 
     backgroundColor = (backgroundColor == null)
-        ? Theme.of(context).bottomAppBarColor
+        ? Theme.of(context).bottomAppBarTheme.color
         : backgroundColor;
 
     return Container(
       width: MediaQuery.of(context).size.width,
       height: 56,
-      padding: EdgeInsets.only(left: 8, right: 8, top: 6, bottom: 6),
+      padding: const EdgeInsets.only(left: 8, right: 8, top: 6, bottom: 6),
       decoration: BoxDecoration(
           color: backgroundColor,
-          boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 2)]),
+          boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 2)]),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: items.map((item) {
@@ -219,8 +218,5 @@ class FancyBottomNavigationItem {
   FancyBottomNavigationItem({
     required this.icon,
     required this.title,
-  }) {
-    assert(icon != null);
-    assert(title != null);
-  }
+  });
 }

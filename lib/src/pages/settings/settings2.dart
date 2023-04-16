@@ -4,18 +4,19 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 
 class SettingsTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/settings/settings2.dart";
-  final TextStyle whiteText = TextStyle(
+  static const String path = "lib/src/pages/settings/settings2.dart";
+  final TextStyle whiteText = const TextStyle(
     color: Colors.white,
   );
   final TextStyle greyTExt = TextStyle(
     color: Colors.grey.shade400,
   );
+
+  SettingsTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +27,7 @@ class SettingsTwoPage extends StatelessWidget {
           primaryColor: Colors.purple,
         ),
         child: DefaultTextStyle(
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
           ),
           child: SingleChildScrollView(
@@ -57,7 +58,7 @@ class SettingsTwoPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
+                          const Text(
                             "Jane Doe",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -77,7 +78,7 @@ class SettingsTwoPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20.0),
                 ListTile(
-                  title: Text(
+                  title: const Text(
                     "Languages",
                     style: whiteBoldText,
                   ),
@@ -92,7 +93,7 @@ class SettingsTwoPage extends StatelessWidget {
                   onTap: () {},
                 ),
                 ListTile(
-                  title: Text(
+                  title: const Text(
                     "Profile Settings",
                     style: whiteBoldText,
                   ),
@@ -107,7 +108,7 @@ class SettingsTwoPage extends StatelessWidget {
                   onTap: () {},
                 ),
                 SwitchListTile(
-                  title: Text(
+                  title: const Text(
                     "Email Notifications",
                     style: whiteBoldText,
                   ),
@@ -119,7 +120,7 @@ class SettingsTwoPage extends StatelessWidget {
                   onChanged: (val) {},
                 ),
                 SwitchListTile(
-                  title: Text(
+                  title: const Text(
                     "Push Notifications",
                     style: whiteBoldText,
                   ),
@@ -131,7 +132,7 @@ class SettingsTwoPage extends StatelessWidget {
                   onChanged: (val) {},
                 ),
                 ListTile(
-                  title: Text(
+                  title: const Text(
                     "Logout",
                     style: whiteBoldText,
                   ),

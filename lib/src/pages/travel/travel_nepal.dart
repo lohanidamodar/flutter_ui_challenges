@@ -9,7 +9,9 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelNepalPage extends StatelessWidget {
-  static final String path = "lib/src/pages/travel/travel_nepal.dart";
+  static const String path = "lib/src/pages/travel/travel_nepal.dart";
+
+  const TravelNepalPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,7 @@ class TravelNepalPage extends StatelessWidget {
         children: <Widget>[
           Container(
             height: 300,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(mountEverest), fit: BoxFit.cover)),
           ),
@@ -28,82 +30,82 @@ class TravelNepalPage extends StatelessWidget {
           ),
           ListView(
             children: <Widget>[
-              SizedBox(height: 100.0),
+              const SizedBox(height: 100.0),
               Text("Discover Nepal".toUpperCase(),
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24.0, color: Colors.white)),
-              Text("Heaven is myth. Nepal is real.",
+                  style: const TextStyle(fontSize: 24.0, color: Colors.white)),
+              const Text("Heaven is myth. Nepal is real.",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white)),
-              SizedBox(
+              const SizedBox(
                 height: 50.0,
               ),
               Container(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Material(
                   elevation: 5.0,
                   child: Container(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text("Top Rated".toUpperCase()),
-                        Text("Sort by price"),
-                        SizedBox(
+                        const Text("Sort by price"),
+                        const SizedBox(
                           height: 20.0,
                         ),
                         Container(
-                          margin: EdgeInsets.all(10.0),
+                          margin: const EdgeInsets.all(10.0),
                           height: 200,
                           child: Swiper.children(
                             autoplay: true,
                             loop: true,
-                            pagination: SwiperPagination(
+                            pagination: const SwiperPagination(
                               margin: EdgeInsets.only(
                                 right: 25.0,
                               ),
                               builder: DotSwiperPaginationBuilder(
                                   color: Colors.grey),
                             ),
-                            control: SwiperControl(
+                            control: const SwiperControl(
                               iconNext: Icons.arrow_forward_ios,
                               iconPrevious: Icons.arrow_back_ios,
                             ),
                             children: <Widget>[
                               Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                       right: 50.0, bottom: 20.0),
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(5.0),
-                                      child: PNetworkImage(fewalake,
+                                      child: const PNetworkImage(fewalake,
                                           fit: BoxFit.cover))),
                               Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                       right: 50.0, bottom: 20.0),
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(5.0),
-                                      child: PNetworkImage(kathmandu1,
+                                      child: const PNetworkImage(kathmandu1,
                                           fit: BoxFit.cover))),
                               Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                       right: 50.0, bottom: 20.0),
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(5.0),
-                                      child: PNetworkImage(fishtail,
+                                      child: const PNetworkImage(fishtail,
                                           fit: BoxFit.cover))),
                               Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                       right: 50.0, bottom: 20.0),
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(5.0),
-                                      child: PNetworkImage(mountEverest,
+                                      child: const PNetworkImage(mountEverest,
                                           fit: BoxFit.cover))),
                               Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                       right: 50.0, bottom: 20.0),
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(5.0),
-                                      child: PNetworkImage(kathmandu2,
+                                      child: const PNetworkImage(kathmandu2,
                                           fit: BoxFit.cover))),
                             ],
                           ),
@@ -114,12 +116,12 @@ class TravelNepalPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text("Frequently Searched".toUpperCase()),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
                     Wrap(
@@ -130,7 +132,7 @@ class TravelNepalPage extends StatelessWidget {
                         Chip(
                           backgroundColor: Colors.red,
                           label: Text("Pokhara".toUpperCase(),
-                              style: TextStyle(color: Colors.white)),
+                              style: const TextStyle(color: Colors.white)),
                         ),
                         Chip(
                           label: Text("Everest base camp".toUpperCase()),

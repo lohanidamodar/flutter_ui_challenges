@@ -6,7 +6,9 @@
 import 'package:flutter/material.dart';
 
 class AnimatedBottomBar extends StatefulWidget {
-  static final String path = "lib/src/pages/animations/anim4.dart";
+  static const String path = "lib/src/pages/animations/anim4.dart";
+
+  const AnimatedBottomBar({super.key});
   @override
   _AnimatedBottomBarState createState() => _AnimatedBottomBarState();
 }
@@ -24,7 +26,7 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated Bottom Navigation Bar"),
+        title: const Text("Animated Bottom Navigation Bar"),
       ),
       backgroundColor: Colors.grey.shade300,
       body: getPage(_currentPage),
@@ -39,13 +41,16 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
   }
 
   getPage(int? page) {
-    switch(page) {
+    switch (page) {
       case 0:
-        return Center(child: Container(child: Text("Home Page"),));
+        return const Center(
+            child: Text("Home Page"));
       case 1:
-        return Center(child: Container(child: Text("Profile Page"),));
+        return const Center(
+            child: Text("Profile Page"));
       case 2:
-        return Center(child: Container(child: Text("Menu Page"),));
+        return const Center(
+            child: Text("Menu Page"));
     }
   }
 }
@@ -59,7 +64,7 @@ class AnimatedBottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: kToolbarHeight,
-      decoration: BoxDecoration(color: Colors.white),
+      decoration: const BoxDecoration(color: Colors.white),
       child: Row(
         children: <Widget>[
           Expanded(
@@ -124,8 +129,8 @@ class BottomNavItem extends StatelessWidget {
           child: child,
         );
       },
-      duration: Duration(milliseconds: 500),
-      reverseDuration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 500),
+      reverseDuration: const Duration(milliseconds: 200),
       child: isActive
           ? Container(
               color: Colors.white,

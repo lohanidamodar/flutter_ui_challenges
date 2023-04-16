@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
@@ -9,14 +8,16 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SportsNewsOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/blog/sports_news1.dart";
+  static const String path = "lib/src/pages/blog/sports_news1.dart";
+
+  const SportsNewsOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final Color bgColor = Color(0xffF3F3F3);
-    final Color primaryColor = Color(0xffE70F0B);
+    const Color bgColor = Color(0xffF3F3F3);
+    const Color primaryColor = Color(0xffE70F0B);
 
-    var titleTextStyle = TextStyle(
+    var titleTextStyle = const TextStyle(
       color: Colors.black87,
       fontSize: 20.0,
       fontWeight: FontWeight.bold,
@@ -32,14 +33,14 @@ class SportsNewsOnePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         automaticallyImplyLeading: false,
-        title: Text(
+        title: const Text(
           "Feed",
           style: TextStyle(color: Colors.black, fontSize: 30.0),
         ),
         actions: <Widget>[
           IconButton(
             color: Colors.black,
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {},
           )
         ],
@@ -55,14 +56,20 @@ class SportsNewsOnePage extends StatelessWidget {
             color: Colors.grey.shade800,
             selectedColor: Colors.white,
             borderRadius: BorderRadius.circular(10.0),
+            isSelected: const [
+              true,
+              false,
+              false,
+            ],
+            onPressed: (index) {},
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Icon(FontAwesomeIcons.footballBall),
-                    const SizedBox(height: 16.0),
+                  children: const <Widget>[
+                    Icon(FontAwesomeIcons.football),
+                    SizedBox(height: 16.0),
                     Text(
                       "Football",
                       style: TextStyle(
@@ -76,9 +83,9 @@ class SportsNewsOnePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Icon(FontAwesomeIcons.basketballBall),
-                    const SizedBox(height: 16.0),
+                  children: const <Widget>[
+                    Icon(FontAwesomeIcons.basketball),
+                    SizedBox(height: 16.0),
                     Text("Basketball"),
                   ],
                 ),
@@ -88,20 +95,14 @@ class SportsNewsOnePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Icon(FontAwesomeIcons.basketballBall),
-                    const SizedBox(height: 16.0),
+                  children: const <Widget>[
+                    Icon(FontAwesomeIcons.basketball),
+                    SizedBox(height: 16.0),
                     Text("Hockey"),
                   ],
                 ),
               ),
             ],
-            isSelected: [
-              true,
-              false,
-              false,
-            ],
-            onPressed: (index) {},
           ),
           const SizedBox(height: 16.0),
           Card(
@@ -116,7 +117,7 @@ class SportsNewsOnePage extends StatelessWidget {
                   CircleAvatar(
                     backgroundImage: NetworkImage(avatars[0]),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
@@ -125,7 +126,7 @@ class SportsNewsOnePage extends StatelessWidget {
                         style: teamNameTextStyle,
                       ),
                       const SizedBox(height: 5.0),
-                      Text(
+                      const Text(
                         "0",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -134,8 +135,8 @@ class SportsNewsOnePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
+                  const Padding(
+                    padding: EdgeInsets.only(
                         top: 20.0, left: 20.0, right: 20.0),
                     child: Text(
                       ":",
@@ -153,7 +154,7 @@ class SportsNewsOnePage extends StatelessWidget {
                         style: teamNameTextStyle,
                       ),
                       const SizedBox(height: 5.0),
-                      Text(
+                      const Text(
                         "2",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -162,7 +163,7 @@ class SportsNewsOnePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   CircleAvatar(
                     backgroundImage: NetworkImage(avatars[2]),
                   ),
@@ -183,7 +184,7 @@ class SportsNewsOnePage extends StatelessWidget {
                     Container(
                       height: 200.0,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(10.0),
                             topRight: Radius.circular(10.0),
                           ),
@@ -202,7 +203,7 @@ class SportsNewsOnePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: Row(
-                        children: <Widget>[
+                        children: const <Widget>[
                           Text(
                             "Yesterday, 9:24 PM",
                             style: TextStyle(
@@ -230,7 +231,7 @@ class SportsNewsOnePage extends StatelessWidget {
                   child: Container(
                     color: Colors.green,
                     padding: const EdgeInsets.all(4.0),
-                    child: Text(
+                    child: const Text(
                       "LIVE",
                       style: TextStyle(
                         color: Colors.white,
@@ -243,14 +244,14 @@ class SportsNewsOnePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10.0),
-          Divider(),
+          const Divider(),
           const SizedBox(height: 10.0),
           ListTile(
             title: Text(
               "Cosgrove hat-tricks sparks Aberdeen",
               style: titleTextStyle,
             ),
-            subtitle: Text("Yesterday, 7:02 PM | Aberdeen"),
+            subtitle: const Text("Yesterday, 7:02 PM | Aberdeen"),
             trailing: Container(
               width: 80.0,
               decoration: BoxDecoration(
@@ -267,7 +268,7 @@ class SportsNewsOnePage extends StatelessWidget {
               "Cosgrove hat-tricks sparks Aberdeen",
               style: titleTextStyle,
             ),
-            subtitle: Text("Yesterday, 7:02 PM | Aberdeen"),
+            subtitle: const Text("Yesterday, 7:02 PM | Aberdeen"),
             trailing: Container(
               width: 80.0,
               decoration: BoxDecoration(
@@ -287,7 +288,7 @@ class SportsNewsOnePage extends StatelessWidget {
         unselectedItemColor: Colors.grey.shade700,
         currentIndex: 0,
         elevation: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.rectangleList),
           ),

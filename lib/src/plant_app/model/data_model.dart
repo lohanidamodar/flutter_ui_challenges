@@ -38,26 +38,28 @@ List<Plant> plants = [
       port: "Self Growing pot",
       price: "59.00"),
 ];
-List<Plant> Indoor = [
-   Plant(
+List<Plant> indoor = [
+  Plant(
       title: "Cactsgrass Plant",
       discription: "Indoor plant for your home and office decoration",
       height: "40.0 cm to 50cm",
       temprature: "18c to 25c",
-      image: 'https://purepng.com/public/uploads/large/purepng.com-classic-duo-cactusgrassbushplantnaturegreen-541521125305jqngl.png',
+      image:
+          'https://purepng.com/public/uploads/large/purepng.com-classic-duo-cactusgrassbushplantnaturegreen-541521125305jqngl.png',
       port: "Self Growing pot",
       price: "59.00"),
-       Plant(
+  Plant(
       title: "Castsgrass bush Plant",
       discription: "Plant for your home and office decoration",
       height: "40.0 cm to 50cm",
       temprature: "18c to 25c",
-      image: "https://purepng.com/public/uploads/large/purepng.com-green-cactusgrassbushplantnaturegreen-541521125231377lf.png",
+      image:
+          "https://purepng.com/public/uploads/large/purepng.com-green-cactusgrassbushplantnaturegreen-541521125231377lf.png",
       port: "Self Growing pot",
       price: "59.00"),
 ];
-List<Plant> Shape = [
-   Plant(
+List<Plant> shape = [
+  Plant(
       title: "Yew Plant",
       discription: "Indoor plant for your home and office decoration",
       height: "40.0 cm to 50cm",
@@ -65,7 +67,7 @@ List<Plant> Shape = [
       image: 'https://purepng.com/public/uploads/large/clover-heart-bi1.png',
       port: "Self Growing pot",
       price: "59.00"),
-       Plant(
+  Plant(
       title: "Lily bush Plant",
       discription: "Plant for your home and office decoration",
       height: "40.0 cm to 50cm",

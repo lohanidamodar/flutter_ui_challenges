@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class TodoHomeTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/todo/todo_home2.dart";
+  static const String path = "lib/src/pages/todo/todo_home2.dart";
+
+  const TodoHomeTwoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +48,8 @@ class TodoHomeTwoPage extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          SizedBox(width: 5.0),
-          Expanded(
+          const SizedBox(width: 5.0),
+          const Expanded(
             child: TextField(
               textCapitalization: TextCapitalization.sentences,
               style: TextStyle(color: Colors.white70),
@@ -60,7 +62,7 @@ class TodoHomeTwoPage extends StatelessWidget {
           ),
           IconButton(
             color: Colors.white70,
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () {},
           )
         ],
@@ -69,7 +71,7 @@ class TodoHomeTwoPage extends StatelessWidget {
   }
 
   Widget _buildDateHeader(DateTime date) {
-    final TextStyle boldStyle = TextStyle(
+    const TextStyle boldStyle = TextStyle(
         color: Colors.white,
         fontWeight: FontWeight.bold,
         fontSize: 24,
@@ -98,7 +100,7 @@ class TodoHomeTwoPage extends StatelessWidget {
                 const SizedBox(height: 5.0),
                 Text(
                   DateFormat.d().format(date),
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
                 )
               ],
             ),
@@ -112,7 +114,7 @@ class TodoHomeTwoPage extends StatelessWidget {
             Text(
               DateFormat.EEEE().format(date).toUpperCase(),
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 letterSpacing: 2.0,
               ),
@@ -129,7 +131,7 @@ class TodoHomeTwoPage extends StatelessWidget {
 
   Widget _buildTaskTwo() {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20.0),
           bottomRight: Radius.circular(20.0),
@@ -141,12 +143,12 @@ class TodoHomeTwoPage extends StatelessWidget {
       width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: const <Widget>[
           Text(
             "10:30 - 11:30AM",
             style: TextStyle(letterSpacing: 2.5, color: Colors.pink),
           ),
-          const SizedBox(height: 5.0),
+          SizedBox(height: 5.0),
           Text(
             "Meeting With",
             style: TextStyle(
@@ -155,7 +157,7 @@ class TodoHomeTwoPage extends StatelessWidget {
                 fontSize: 16.0),
           ),
           Text("John Doe"),
-          const SizedBox(height: 5.0),
+          SizedBox(height: 5.0),
           Divider(
             color: Colors.pink,
           ),
@@ -167,7 +169,7 @@ class TodoHomeTwoPage extends StatelessWidget {
   Container _buildTask({Color color = Colors.indigo}) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topRight: Radius.circular(20.0),
           bottomLeft: Radius.circular(20.0),
           bottomRight: Radius.circular(20.0),
@@ -177,12 +179,12 @@ class TodoHomeTwoPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: const <Widget>[
           Text(
             "10:30 - 11:30AM",
             style: TextStyle(letterSpacing: 2.5, color: Colors.white),
           ),
-          const SizedBox(height: 5.0),
+          SizedBox(height: 5.0),
           Text(
             "Meeting With",
             style: TextStyle(
@@ -250,7 +252,7 @@ class HeaderFooterwidget extends StatelessWidget {
             decoration: BoxDecoration(
                 color: headerColor,
                 borderRadius:
-                    BorderRadius.only(bottomLeft: Radius.circular(20.0))),
+                    const BorderRadius.only(bottomLeft: Radius.circular(20.0))),
           ),
         ),
         Column(
@@ -267,8 +269,7 @@ class HeaderFooterwidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10.0),
-            if(footer != null)
-              footer!,
+            if (footer != null) footer!,
           ],
         ),
       ],
@@ -280,7 +281,7 @@ class HeaderFooterwidget extends StatelessWidget {
       height: headerHeight,
       width: double.infinity,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0)),
+        borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(30.0)),
         color: headerColor,
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),

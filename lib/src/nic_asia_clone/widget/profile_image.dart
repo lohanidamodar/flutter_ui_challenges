@@ -9,8 +9,8 @@ import '../util/constant.dart';
 class ProfileImage extends StatelessWidget {
   final double height, width;
   final Color color;
-  ProfileImage(
-      {this.height = 100.0, this.width = 100.0, this.color = primaryColor});
+  const ProfileImage(
+      {super.key, this.height = 100.0, this.width = 100.0, this.color = primaryColor});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +19,7 @@ class ProfileImage extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: Colors.red,
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage('assets/nicasiaassets/profile.jpg'),
           fit: BoxFit.contain,
         ),

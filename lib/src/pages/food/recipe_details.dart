@@ -6,10 +6,11 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
-  static final String path = "lib/src/pages/food/recipe_details.dart";
+  static const String path = "lib/src/pages/food/recipe_details.dart";
+
+  const RecipeDetailsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +27,8 @@ class RecipeDetailsPage extends StatelessWidget {
         ),
         actions: <Widget>[
           TextButton.icon(
-            icon: Icon(Icons.play_circle_filled, color: Colors.red),
-            label: Text("Watch Recipe"),
+            icon: const Icon(Icons.play_circle_filled, color: Colors.red),
+            label: const Text("Watch Recipe"),
             onPressed: () {},
           )
         ],
@@ -36,28 +37,28 @@ class RecipeDetailsPage extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: ListView(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               children: <Widget>[
                 Text(
                   "French\nToast".toUpperCase(),
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600),
+                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16.0,
                 ),
-                Text(
+                const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia, odio ut placerat finibus, ipsum risus consectetur ligula, non mattis mi neque ac mi."),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                Container(
+                SizedBox(
                   height: 30,
                   child: Row(
                     children: <Widget>[
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Icon(Icons.memory),
                             SizedBox(
                               width: 5.0,
@@ -66,18 +67,18 @@ class RecipeDetailsPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      VerticalDivider(),
-                      Expanded(
+                      const VerticalDivider(),
+                      const Expanded(
                         child: Text(
                           "Vegetarian",
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      VerticalDivider(),
+                      const VerticalDivider(),
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Icon(Icons.timer),
                             SizedBox(
                               width: 5.0,
@@ -89,7 +90,7 @@ class RecipeDetailsPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 _buildStep(
@@ -97,7 +98,7 @@ class RecipeDetailsPage extends StatelessWidget {
                     title: "Step".toUpperCase(),
                     content:
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia, odio ut placerat finibus, ipsum risus consectetur ligula, non mattis mi neque ac mi. Vivamus quis tellus sed erat eleifend pharetra ac non diam. Integer vitae ipsum congue, vestibulum eros quis, interdum tellus. Nunc vel dictum elit. Curabitur suscipit scelerisque."),
-                SizedBox(
+                const SizedBox(
                   height: 30.0,
                 ),
                 _buildStep(
@@ -105,7 +106,7 @@ class RecipeDetailsPage extends StatelessWidget {
                     title: "Step".toUpperCase(),
                     content:
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia, odio ut placerat finibus, ipsum risus consectetur ligula, non mattis mi neque ac mi. Vivamus quis tellus sed erat eleifend pharetra ac non diam. Integer vitae ipsum congue, vestibulum eros quis, interdum tellus. Nunc vel dictum elit. Curabitur suscipit scelerisque."),
-                SizedBox(
+                const SizedBox(
                   height: 30.0,
                 ),
                 _buildStep(
@@ -120,25 +121,25 @@ class RecipeDetailsPage extends StatelessWidget {
             elevation: 10.0,
             color: Colors.white,
             child: Container(
-              padding: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
               height: 80,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   _buildBottomImage(breakfast),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   _buildBottomImage(meal),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   _buildBottomImage(burger),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   _buildBottomImage(frenchFries),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   _buildBottomImage(fries),
@@ -161,7 +162,10 @@ class RecipeDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildStep({required String leadingTitle, required String title, required String content}) {
+  Widget _buildStep(
+      {required String leadingTitle,
+      required String title,
+      required String content}) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -170,15 +174,15 @@ class RecipeDetailsPage extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           color: Colors.red,
           child: Container(
-            padding: EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(5.0),
             child: Text(leadingTitle,
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 18.0)),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 16.0,
         ),
         Expanded(
@@ -187,8 +191,8 @@ class RecipeDetailsPage extends StatelessWidget {
             children: <Widget>[
               Text(title,
                   style:
-                      TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0)),
-              SizedBox(
+                      const TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0)),
+              const SizedBox(
                 height: 10.0,
               ),
               Text(content),

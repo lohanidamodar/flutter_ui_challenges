@@ -16,7 +16,9 @@ final List rooms = [
 ];
 
 class HotelHomePage extends StatelessWidget {
-  static final String path = "lib/src/pages/hotel/hhome.dart";
+  static const String path = "lib/src/pages/hotel/hhome.dart";
+
+  const HotelHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,7 @@ class HotelHomePage extends StatelessWidget {
             expandedHeight: 180.0,
             backgroundColor: Colors.cyan,
             leading: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: Colors.white,
               ),
@@ -34,7 +36,7 @@ class HotelHomePage extends StatelessWidget {
             ),
             actions: <Widget>[
               IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.favorite_border,
                   color: Colors.white,
                 ),
@@ -44,18 +46,18 @@ class HotelHomePage extends StatelessWidget {
             floating: true,
             flexibleSpace: ListView(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 70.0,
                 ),
-                Text("Type your Location",
+                const Text("Type your Location",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 20.0)),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                  padding: EdgeInsets.all(5.0),
+                  margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  padding: const EdgeInsets.all(5.0),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(40.0)),
@@ -64,14 +66,14 @@ class HotelHomePage extends StatelessWidget {
                       hintText: "Bouddha, Kathmandu",
                       border: InputBorder.none,
                       icon: IconButton(
-                          onPressed: () {}, icon: Icon(Icons.search)),
+                          onPressed: () {}, icon: const Icon(Icons.search)),
                     ),
                   ),
                 ),
               ],
             ),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: SizedBox(
               height: 10.0,
             ),
@@ -93,103 +95,101 @@ class HotelHomePage extends StatelessWidget {
   Widget _buildRooms(BuildContext context, int index) {
     var room = rooms[index % rooms.length];
     return Container(
-      margin: EdgeInsets.all(20.0),
+      margin: const EdgeInsets.all(20.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(5.0),
-        child: Container(
-          child: Material(
-            elevation: 5.0,
-            borderRadius: BorderRadius.circular(5.0),
-            color: Colors.white,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Stack(
+        child: Material(
+          elevation: 5.0,
+          borderRadius: BorderRadius.circular(5.0),
+          color: Colors.white,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Image.asset(room['image']),
+                  Positioned(
+                    right: 10,
+                    top: 10,
+                    child: Icon(
+                      Icons.star,
+                      color: Colors.grey.shade800,
+                      size: 20.0,
+                    ),
+                  ),
+                  const Positioned(
+                    right: 8,
+                    top: 8,
+                    child: Icon(
+                      Icons.star_border,
+                      color: Colors.white,
+                      size: 24.0,
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 20.0,
+                    right: 10.0,
+                    child: Container(
+                      padding: const EdgeInsets.all(10.0),
+                      color: Colors.white,
+                      child: const Text("\$40"),
+                    ),
+                  )
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Image.asset(room['image']),
-                    Positioned(
-                      right: 10,
-                      top: 10,
-                      child: Icon(
-                        Icons.star,
-                        color: Colors.grey.shade800,
-                        size: 20.0,
-                      ),
+                    Text(
+                      room['title'],
+                      style: const TextStyle(
+                          fontSize: 18.0, fontWeight: FontWeight.bold),
                     ),
-                    Positioned(
-                      right: 8,
-                      top: 8,
-                      child: Icon(
-                        Icons.star_border,
-                        color: Colors.white,
-                        size: 24.0,
-                      ),
+                    const SizedBox(
+                      height: 5.0,
                     ),
-                    Positioned(
-                      bottom: 20.0,
-                      right: 10.0,
-                      child: Container(
-                        padding: EdgeInsets.all(10.0),
-                        color: Colors.white,
-                        child: Text("\$40"),
-                      ),
+                    const Text("Bouddha, Kathmandu"),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: const <Widget>[
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Text(
+                          "(220 reviews)",
+                          style: TextStyle(color: Colors.grey),
+                        )
+                      ],
                     )
                   ],
                 ),
-                Container(
-                  padding: EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        room['title'],
-                        style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Text("Bouddha, Kathmandu"),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          Icon(
-                            Icons.star,
-                            color: Colors.green,
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Text(
-                            "(220 reviews)",
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
@@ -197,11 +197,11 @@ class HotelHomePage extends StatelessWidget {
   }
 
   Widget _buildCategories() {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
+        children: const <Widget>[
           SizedBox(
             width: 15.0,
           ),
@@ -238,10 +238,7 @@ class Category extends StatelessWidget {
   final Color? backgroundColor;
 
   const Category(
-      {Key? key,
-      required this.icon,
-      required this.title,
-      this.backgroundColor})
+      {Key? key, required this.icon, required this.title, this.backgroundColor})
       : super(key: key);
 
   @override
@@ -251,9 +248,9 @@ class Category extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             color: backgroundColor,
-            borderRadius: BorderRadius.all(Radius.circular(5.0))),
-        margin: EdgeInsets.symmetric(vertical: 10.0),
-        padding: EdgeInsets.all(10.0),
+            borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.all(10.0),
         width: 100,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -262,10 +259,10 @@ class Category extends StatelessWidget {
               icon,
               color: Colors.white,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
-            Text(title, style: TextStyle(color: Colors.white))
+            Text(title, style: const TextStyle(color: Colors.white))
           ],
         ),
       ),

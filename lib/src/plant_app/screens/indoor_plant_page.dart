@@ -3,97 +3,96 @@ import 'package:flutter_ui_challenges/src/plant_app/model/data_model.dart';
 import 'detail_page.dart';
 
 class IndoorPlantPage extends StatelessWidget {
+  const IndoorPlantPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 35),
+          const SizedBox(height: 35),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               IconButton(
-                icon: Icon(Icons.search,size: 30),
+                icon: const Icon(Icons.search, size: 30),
                 onPressed: () {},
               )
             ],
           ),
-          Text('Indoor', style: TextStyle(color: Colors.grey, fontSize: 17)),
-          SizedBox(height: 7),
-          Text(
+          const Text('Indoor',
+              style: TextStyle(color: Colors.grey, fontSize: 17)),
+          const SizedBox(height: 7),
+          const Text(
             'Plants',
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Expanded(
-            child: Container(
-              child: ListView.builder(
-                itemCount: plants.length,
-                itemBuilder: (_, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => DetailPage(
-                            plant: Indoor[index],
-                          ),
+            child: ListView.builder(
+              itemCount: plants.length,
+              itemBuilder: (_, index) {
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => DetailPage(
+                          plant: indoor[index],
                         ),
-                      );
-                    },
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      ),
+                    );
+                  },
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Hero(
+                        tag: indoor[index].title!,
+                        child: Image.network(indoor[index].image!),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        indoor[index].title!,
+                        style: const TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        indoor[index].discription!,
+                        style: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
                         children: [
-                          Hero(
-                            tag: Indoor[index].title!,
-                            child: Image.network(Indoor[index].image!),
-                          ),
-                          SizedBox(height: 10),
                           Text(
-                            Indoor[index].title!,
-                            style: TextStyle(
-                              fontSize: 25,
+                            "\$${indoor[index].price}",
+                            style: const TextStyle(
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 10),
-                          Text(
-                            Indoor[index].discription!,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 16,
+                          TextButton(
+                            child: const Text(
+                              "+",
+                              style: TextStyle(fontSize: 22),
                             ),
-                          ),
-                          SizedBox(height: 10),
-                          Row(
-                            children: [
-                              Text(
-                                "\$${Indoor[index].price}",
-                                style: TextStyle(
-                                  fontSize: 35,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              TextButton(
-                                child: Text(
-                                  "+",
-                                  style: TextStyle(fontSize: 22),
-                                ),
-                                onPressed: () {},
-                              )
-                            ],
-                          ),
-                          SizedBox(height: 30),
-                          Divider(),
+                            onPressed: () {},
+                          )
                         ],
                       ),
-                    ),
-                  );
-                },
-              ),
+                      const SizedBox(height: 30),
+                      const Divider(),
+                    ],
+                  ),
+                );
+              },
             ),
           )
         ],

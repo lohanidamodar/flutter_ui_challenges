@@ -5,11 +5,13 @@
 
 import 'package:flutter/material.dart';
 
-Color orangeColors = Color(0xffF5591F);
-Color orangeLightColors = Color(0xffF2861E);
+Color orangeColors = const Color(0xffF5591F);
+Color orangeLightColors = const Color(0xffF2861E);
 
 class SignupThreePage extends StatefulWidget {
-  static final String path = "lib/src/pages/login/signup3.dart";
+  static const String path = "lib/src/pages/login/signup3.dart";
+
+  const SignupThreePage({super.key});
 
   @override
   _SignupThreePageState createState() => _SignupThreePageState();
@@ -20,14 +22,14 @@ class _SignupThreePageState extends State<SignupThreePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(bottom: 30),
+        padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: <Widget>[
-            HeaderContainer("Signup For Free"),
+            const HeaderContainer("Signup For Free"),
             Expanded(
               flex: 1,
               child: Container(
-                margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+                margin: const EdgeInsets.only(left: 20, right: 20, top: 30),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
@@ -47,7 +49,7 @@ class _SignupThreePageState extends State<SignupThreePage> {
                     ),
                     RichText(
                       text: TextSpan(children: [
-                        TextSpan(
+                        const TextSpan(
                             text: "Already a member ? ",
                             style: TextStyle(color: Colors.black)),
                         TextSpan(
@@ -67,12 +69,12 @@ class _SignupThreePageState extends State<SignupThreePage> {
 
   Widget _textInput({controller, hint, icon}) {
     return Container(
-      margin: EdgeInsets.only(top: 10),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.only(top: 10),
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         color: Colors.white,
       ),
-      padding: EdgeInsets.only(left: 10),
+      padding: const EdgeInsets.only(left: 10),
       child: TextFormField(
         controller: controller,
         decoration: InputDecoration(
@@ -86,9 +88,9 @@ class _SignupThreePageState extends State<SignupThreePage> {
 }
 
 class HeaderContainer extends StatelessWidget {
-  var text = "Signin";
+  final String text;
 
-  HeaderContainer(this.text);
+  const HeaderContainer(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +101,8 @@ class HeaderContainer extends StatelessWidget {
               colors: [orangeColors, orangeLightColors],
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter),
-          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(100))),
+          borderRadius:
+              const BorderRadius.only(bottomLeft: Radius.circular(100))),
       child: Stack(
         children: <Widget>[
           Positioned(
@@ -107,7 +110,7 @@ class HeaderContainer extends StatelessWidget {
               right: 20,
               child: Text(
                 text,
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: const TextStyle(color: Colors.white, fontSize: 20),
               )),
           Center(
             child: Image.asset(
@@ -123,15 +126,15 @@ class HeaderContainer extends StatelessWidget {
 }
 
 class ButtonWidget extends StatelessWidget {
-  String? btnText = "";
-  var onClick;
+  final String btnText;
+  final Function onClick;
 
-  ButtonWidget({this.btnText, this.onClick});
+  const ButtonWidget({super.key, required this.btnText, required this.onClick});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onClick,
+      onTap: () => onClick(),
       child: Container(
         width: double.infinity,
         height: 40,
@@ -140,14 +143,14 @@ class ButtonWidget extends StatelessWidget {
               colors: [orangeColors, orangeLightColors],
               end: Alignment.centerLeft,
               begin: Alignment.centerRight),
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
             Radius.circular(100),
           ),
         ),
         alignment: Alignment.center,
         child: Text(
-          btnText!,
-          style: TextStyle(
+          btnText,
+          style: const TextStyle(
               fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),

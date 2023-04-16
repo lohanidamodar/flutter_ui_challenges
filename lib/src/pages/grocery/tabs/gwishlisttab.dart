@@ -8,14 +8,16 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem3.dart';
 
 class GroceryWishlistTabView extends StatelessWidget {
+  const GroceryWishlistTabView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
         Expanded(
           child: ListView(
-            padding: EdgeInsets.all(10.0),
-            children: <Widget>[
+            padding: const EdgeInsets.all(10.0),
+            children: const <Widget>[
               GroceryListItemThree(
                 image: pineapple,
                 subtitle: "4 in a pack",
@@ -29,7 +31,7 @@ class GroceryWishlistTabView extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         _buildTotals()
@@ -39,7 +41,7 @@ class GroceryWishlistTabView extends StatelessWidget {
 
   Widget _buildTotals() {
     return Container(
-        padding: EdgeInsets.only(left: 20.0, right: 20.0),
+        padding: const EdgeInsets.only(left: 20.0, right: 20.0),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.green,
@@ -47,7 +49,7 @@ class GroceryWishlistTabView extends StatelessWidget {
           onPressed: () {},
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
+            children: const <Widget>[
               Text("Add to Wishlist", style: TextStyle(color: Colors.white)),
             ],
           ),

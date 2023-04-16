@@ -7,11 +7,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IntroThreePage extends StatefulWidget {
-  static final String path = "lib/src/pages/onboarding/intro3.dart";
+  static const String path = "lib/src/pages/onboarding/intro3.dart";
+
+  const IntroThreePage({super.key});
   @override
   _IntroThreePageState createState() => _IntroThreePageState();
 }
@@ -42,7 +43,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
               height: 300,
               margin: const EdgeInsets.only(left: 8.0, right: 8.0),
               decoration: BoxDecoration(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                   borderRadius: BorderRadius.circular(5.0)),
             ),
           ),
@@ -68,11 +69,11 @@ class _IntroThreePageState extends State<IntroThreePage> {
                 },
                 pagination: SwiperPagination(
                     builder: CustomPaginationBuilder(
-                        activeSize: Size(10.0, 20.0),
-                        size: Size(10.0, 15.0),
+                        activeSize: const Size(10.0, 20.0),
+                        size: const Size(10.0, 15.0),
                         color: Colors.grey.shade600)),
               )),
-              SizedBox(height: 10.0),
+              const SizedBox(height: 10.0),
               _buildButtons(),
             ],
           ),
@@ -91,7 +92,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
             style: TextButton.styleFrom(
               foregroundColor: Colors.grey.shade600,
             ),
-            child: Text("Skip"),
+            child: const Text("Skip"),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('challenge_home');
             },
@@ -101,9 +102,9 @@ class _IntroThreePageState extends State<IntroThreePage> {
                 ? Icons.arrow_forward_ios
                 : FontAwesomeIcons.check),
             onPressed: () async {
-              if (_currentIndex < _pageCount - 1)
+              if (_currentIndex < _pageCount - 1) {
                 _swiperController.next();
-              else {
+              } else {
                 Navigator.of(context).pushReplacementNamed('challenge_home');
               }
             },
@@ -113,8 +114,9 @@ class _IntroThreePageState extends State<IntroThreePage> {
     );
   }
 
-  Widget _buildPage({required String title, required String icon, Color? pageBg}) {
-    final TextStyle titleStyle = TextStyle(
+  Widget _buildPage(
+      {required String title, required String icon, Color? pageBg}) {
+    const TextStyle titleStyle = TextStyle(
         fontWeight: FontWeight.w500, fontSize: 20.0, color: Colors.white);
     return Container(
       width: double.infinity,
@@ -125,13 +127,13 @@ class _IntroThreePageState extends State<IntroThreePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           Text(
             title,
             textAlign: TextAlign.center,
             style: titleStyle,
           ),
-          SizedBox(height: 30.0),
+          const SizedBox(height: 30.0),
           Expanded(
             child: ClipOval(
                 child: Container(
@@ -142,7 +144,7 @@ class _IntroThreePageState extends State<IntroThreePage> {
                       image: NetworkImage(icon), fit: BoxFit.cover)),
             )),
           ),
-          SizedBox(height: 50.0),
+          const SizedBox(height: 50.0),
         ],
       ),
     );

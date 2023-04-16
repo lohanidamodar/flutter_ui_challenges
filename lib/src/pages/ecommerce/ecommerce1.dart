@@ -4,7 +4,6 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
@@ -12,7 +11,7 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/ecommerce1.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce1.dart";
   final List<String> categories = [
     'DarazMall',
     'Flash Sales',
@@ -32,36 +31,39 @@ class EcommerceOnePage extends StatelessWidget {
     assets.backgroundImages[1]
   ];
 
+   EcommerceOnePage({super.key});
+
   Widget _buildListView(_, index) {
     if (index == 0) return _buildSlider();
     if (index == 1) return _buildCategoriesGrid();
     if (index == 2) return _buildFlashSales();
     if (index == 3) return _buildPopular();
-    if (index == 4)
-      return Center(
+    if (index == 4) {
+      return const Center(
           child: Text(
         'Just for You',
         style: TextStyle(fontWeight: FontWeight.w700, fontSize: 20.0),
       ));
+    }
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
       child: Row(
         children: <Widget>[
           Expanded(
             child: Column(
               children: <Widget>[
                 PNetworkImage(images[index % images.length]),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                Text(
+                const Text(
                   'Top Quality fashion item',
                   softWrap: true,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                Text(
+                const Text(
                   'Rs.1,254',
                   style: TextStyle(
                       fontSize: 18.0,
@@ -71,24 +73,24 @@ class EcommerceOnePage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10.0,
           ),
           Expanded(
             child: Column(
               children: <Widget>[
                 PNetworkImage(images[(index - 1) % images.length]),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                Text(
+                const Text(
                   'Top Quality fashion item',
                   softWrap: true,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                Text(
+                const Text(
                   'Rs.1,254',
                   style: TextStyle(
                       fontSize: 18.0,
@@ -104,16 +106,16 @@ class EcommerceOnePage extends StatelessWidget {
   }
 
   Widget _buildPopular() {
-    return Container(
+    return SizedBox(
       height: 180,
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               children: <Widget>[
                 _buildPopularItem(),
-                SizedBox(
+                const SizedBox(
                   width: 10.0,
                 ),
                 _buildPopularItem(),
@@ -121,11 +123,11 @@ class EcommerceOnePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               children: <Widget>[
                 _buildPopularItem(),
-                SizedBox(
+                const SizedBox(
                   width: 10.0,
                 ),
                 _buildPopularItem(),
@@ -149,9 +151,9 @@ class EcommerceOnePage extends StatelessWidget {
                     width: 5))),
         child: ListTile(
           onTap: () {},
-          title: Text("Vehicles"),
-          subtitle: Text('120 people want this'),
-          trailing: Container(
+          title: const Text("Vehicles"),
+          subtitle: const Text('120 people want this'),
+          trailing: SizedBox(
               width: 50,
               child: PNetworkImage(
                 assets.backgroundImages[1],
@@ -165,7 +167,7 @@ class EcommerceOnePage extends StatelessWidget {
   Widget _buildFlashSales() {
     return Container(
       height: 200,
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Column(
         children: <Widget>[
           Row(
@@ -173,52 +175,52 @@ class EcommerceOnePage extends StatelessWidget {
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Text(
+                  const Text(
                     'Flash Sales',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   Container(
                       color: Colors.black,
                       padding:
-                          EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
-                      child: Text(
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
+                      child: const Text(
                         '02',
                         style: TextStyle(color: Colors.white),
                       )),
-                  SizedBox(
+                  const SizedBox(
                     width: 5.0,
                   ),
                   Container(
                       color: Colors.black,
                       padding:
-                          EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
-                      child: Text(
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
+                      child: const Text(
                         '20',
                         style: TextStyle(color: Colors.white),
                       )),
-                  SizedBox(
+                  const SizedBox(
                     width: 5.0,
                   ),
                   Container(
                       color: Colors.black,
                       padding:
-                          EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
-                      child: Text(
+                          const EdgeInsets.symmetric(vertical: 2.0, horizontal: 5.0),
+                      child: const Text(
                         '30',
                         style: TextStyle(color: Colors.white),
                       )),
                 ],
               ),
-              Text(
+              const Text(
                 'SHOP MORE >>',
                 style: TextStyle(color: Colors.red),
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -236,7 +238,7 @@ class EcommerceOnePage extends StatelessWidget {
   Expanded _buildFlashSaleItem(int index) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.all(5.0),
+        padding: const EdgeInsets.all(5.0),
         child: Column(
           children: <Widget>[
             Container(
@@ -247,13 +249,13 @@ class EcommerceOnePage extends StatelessWidget {
                       image: NetworkImage(flashSaleImages[index]),
                       fit: BoxFit.cover)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
             Stack(
               children: <Widget>[
                 ClipPath(
-                  clipper: ShapeBorderClipper(
+                  clipper: const ShapeBorderClipper(
                       shape: StadiumBorder(
                           side: BorderSide(
                               width: 1,
@@ -265,18 +267,18 @@ class EcommerceOnePage extends StatelessWidget {
                   ),
                 ),
                 ClipPath(
-                  clipper: ShapeBorderClipper(
+                  clipper: const ShapeBorderClipper(
                       shape: StadiumBorder(
                           side: BorderSide(
                               width: 1,
                               style: BorderStyle.solid,
                               color: Colors.red))),
                   child: Container(
-                    padding: EdgeInsets.only(left: 10.0),
+                    padding: const EdgeInsets.only(left: 10.0),
                     height: 20,
                     width: 70,
                     color: Colors.red,
-                    child: Text(
+                    child: const Text(
                       '12 Sold',
                       style: TextStyle(color: Colors.white),
                     ),
@@ -284,10 +286,10 @@ class EcommerceOnePage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
-            Text('Rs.275')
+            const Text('Rs.275')
           ],
         ),
       ),
@@ -295,7 +297,7 @@ class EcommerceOnePage extends StatelessWidget {
   }
 
   Widget _buildSlider() {
-    return Container(
+    return SizedBox(
       height: 120.0,
       child: Stack(
         children: <Widget>[
@@ -307,17 +309,17 @@ class EcommerceOnePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Swiper(
               autoplay: true,
               itemBuilder: (BuildContext context, int index) {
-                return new PNetworkImage(
+                return PNetworkImage(
                   images[index],
                   fit: BoxFit.cover,
                 );
               },
               itemCount: 4,
-              pagination: new SwiperPagination(),
+              pagination: const SwiperPagination(),
             ),
           ),
         ],
@@ -326,12 +328,12 @@ class EcommerceOnePage extends StatelessWidget {
   }
 
   Widget _buildCategoriesGrid() {
-    return Container(
+    return SizedBox(
       height: 110.0,
       child: GridView.builder(
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         scrollDirection: Axis.horizontal,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
           mainAxisSpacing: 10.0,
         ),
@@ -340,7 +342,7 @@ class EcommerceOnePage extends StatelessWidget {
             onTap: () => print(categories[index]),
             child: Column(
               children: <Widget>[
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundColor: Colors.blue,
                   maxRadius: 30.0,
                   child: Icon(
@@ -348,7 +350,7 @@ class EcommerceOnePage extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8.0,
                 ),
                 Text(categories[index % categories.length])
@@ -366,7 +368,7 @@ class EcommerceOnePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text('Flutter UIs'),
+        title: const Text('Flutter UIs'),
         elevation: 0,
       ),
       body: SafeArea(
@@ -375,7 +377,7 @@ class EcommerceOnePage extends StatelessWidget {
         itemCount: 10,
       )),
       bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.message), label: 'Messages'),
           BottomNavigationBarItem(

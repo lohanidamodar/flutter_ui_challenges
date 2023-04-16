@@ -5,12 +5,13 @@
 
 import 'package:flutter/material.dart';
 import 'dart:ui';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class AuthTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/auth2.dart";
+  static const String path = "lib/src/pages/login/auth2.dart";
   final String backImg = meal;
+
+  const AuthTwoPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +52,7 @@ class AuthTwoPage extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 20.0),
-                      Text(
+                      const Text(
                           "Nutritionally balanced, easy to cook recipes. Quality fresh local ingredients.",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 18.0)),
@@ -65,19 +66,19 @@ class AuthTwoPage extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20.0)),
                           ),
-                          child: Text("Create Account"),
+                          child: const Text("Create Account"),
                           onPressed: () {},
                         ),
                       ),
                       const SizedBox(height: 30.0),
                       Text.rich(TextSpan(children: [
-                        TextSpan(text: "Already have account? "),
+                        const TextSpan(text: "Already have account? "),
                         WidgetSpan(
                             child: InkWell(
                           onTap: () {
                             print("Login tapped");
                           },
-                          child: Text("Log in",
+                          child: const Text("Log in",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                               )),

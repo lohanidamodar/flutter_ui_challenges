@@ -4,26 +4,27 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
+import 'package:flutter_ui_challenges/src/utils/oval_right_clipper.dart';
 
 class LightDrawerPage extends StatelessWidget {
-  static final String path = "lib/src/pages/navigation/drawer2.dart";
+  static const String path = "lib/src/pages/navigation/drawer2.dart";
   final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
   final Color primary = Colors.white;
   final Color active = Colors.grey.shade800;
   final Color divider = Colors.grey.shade600;
+
+  LightDrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _key,
       appBar: AppBar(
-        title: Text('Ligh Drawer Navigation'),
+        title: const Text('Ligh Drawer Navigation'),
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {
             _key.currentState!.openDrawer();
           },
@@ -41,7 +42,7 @@ class LightDrawerPage extends StatelessWidget {
                   color: Colors.deepOrange,
                   borderRadius: BorderRadius.circular(10.0)),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Container(
               width: double.infinity,
               height: 200,
@@ -49,7 +50,7 @@ class LightDrawerPage extends StatelessWidget {
                   color: Colors.lightGreen,
                   borderRadius: BorderRadius.circular(10.0)),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Container(
               width: double.infinity,
               height: 200,
@@ -71,7 +72,7 @@ class LightDrawerPage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(left: 16.0, right: 40),
           decoration: BoxDecoration(
-              color: primary, boxShadow: [BoxShadow(color: Colors.black45)]),
+              color: primary, boxShadow: const [BoxShadow(color: Colors.black45)]),
           width: 300,
           child: SafeArea(
             child: SingleChildScrollView(
@@ -90,7 +91,7 @@ class LightDrawerPage extends StatelessWidget {
                   Container(
                     height: 90,
                     alignment: Alignment.center,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
                             colors: [Colors.orange, Colors.deepOrange])),
@@ -99,8 +100,8 @@ class LightDrawerPage extends StatelessWidget {
                       backgroundImage: NetworkImage(image),
                     ),
                   ),
-                  SizedBox(height: 5.0),
-                  Text(
+                  const SizedBox(height: 5.0),
+                  const Text(
                     "erika costell",
                     style: TextStyle(
                         color: Colors.black,
@@ -111,7 +112,7 @@ class LightDrawerPage extends StatelessWidget {
                     "@erika07",
                     style: TextStyle(color: active, fontSize: 16.0),
                   ),
-                  SizedBox(height: 30.0),
+                  const SizedBox(height: 30.0),
                   _buildRow(Icons.home, "Home"),
                   _buildDivider(),
                   _buildRow(Icons.person_pin, "My profile"),
@@ -151,12 +152,12 @@ class LightDrawerPage extends StatelessWidget {
           icon,
           color: active,
         ),
-        SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),
         Text(
           title,
           style: tStyle,
         ),
-        Spacer(),
+        const Spacer(),
         if (showBadge)
           Material(
             color: Colors.deepOrange,
@@ -171,7 +172,7 @@ class LightDrawerPage extends StatelessWidget {
                 color: Colors.deepOrange,
                 borderRadius: BorderRadius.circular(5.0),
               ),
-              child: Text(
+              child: const Text(
                 "10+",
                 style: TextStyle(
                     color: Colors.white,

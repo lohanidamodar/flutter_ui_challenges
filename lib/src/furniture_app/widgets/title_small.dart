@@ -7,7 +7,7 @@ import 'package:flutter_ui_challenges/src/furniture_app/utils/constant.dart';
 
 class TitleSmall extends StatelessWidget {
   final String title, subTitle;
-  TitleSmall({required this.title, required this.subTitle});
+  const TitleSmall({super.key, required this.title, required this.subTitle});
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -15,18 +15,18 @@ class TitleSmall extends StatelessWidget {
       children: <Widget>[
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10.0,
         ),
         Text(
           '. $subTitle',
-          style: TextStyle(
+          style: const TextStyle(
             color: furnitureCateDisableColor,
             fontSize: 12.0,
             letterSpacing: 0.2,

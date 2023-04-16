@@ -8,6 +8,8 @@ import '../../../res/constants.dart';
 import '../../../res/typography.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,9 +31,9 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Icon(Icons.perm_contact_calendar),
-                        const SizedBox(width: 10.0),
+                        SizedBox(width: 10.0),
                         Expanded(
                           child: TextField(
                             decoration:
@@ -43,7 +45,7 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(height: 20.0),
                     Row(
                       children: <Widget>[
-                        Icon(Icons.lock),
+                        const Icon(Icons.lock),
                         const SizedBox(width: 10.0),
                         Expanded(
                           child: TextField(
@@ -51,7 +53,7 @@ class LoginPage extends StatelessWidget {
                             decoration: InputDecoration(
                                 hintText: "Password",
                                 suffixIcon: GestureDetector(
-                                  child: Icon(Icons.remove_red_eye),
+                                  child: const Icon(Icons.remove_red_eye),
                                   onTap: () {},
                                 )),
                           ),
@@ -91,7 +93,7 @@ class LoginPage extends StatelessWidget {
                           color: Colors.grey.shade600,
                         )),
                         const SizedBox(width: 10.0),
-                        Text(
+                        const Text(
                           "Not a member?",
                           style: smallText,
                         ),

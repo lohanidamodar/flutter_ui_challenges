@@ -3,10 +3,11 @@
  * profile: https://github.com/Ambikadulal
   */
 import 'package:flutter/material.dart';
-import 'package:simple_animations/simple_animations.dart';
 
 class LoginTwelvePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login12.dart";
+  static const String path = "lib/src/pages/login/login12.dart";
+
+  const LoginTwelvePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +23,14 @@ class LoginTwelvePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 80,
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     "Login",
                     style: TextStyle(color: Colors.white, fontSize: 40),
@@ -44,27 +45,27 @@ class LoginTwelvePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(60),
                         topRight: Radius.circular(60))),
                 child: SingleChildScrollView(
                   child: Padding(
-                    padding: EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(30),
                     child: Column(
                       children: <Widget>[
-                        SizedBox(
+                        const SizedBox(
                           height: 60,
                         ),
                         Container(
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                     color: Color.fromRGBO(225, 95, 27, .3),
                                     blurRadius: 20,
@@ -73,12 +74,12 @@ class LoginTwelvePage extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Container(
-                                padding: EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                     border: Border(
                                         bottom: BorderSide(
                                             color: Colors.grey[200]!))),
-                                child: TextField(
+                                child: const TextField(
                                   decoration: InputDecoration(
                                       hintText: "Email or Phone number",
                                       hintStyle: TextStyle(color: Colors.grey),
@@ -86,12 +87,12 @@ class LoginTwelvePage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                     border: Border(
                                         bottom: BorderSide(
                                             color: Colors.grey[200]!))),
-                                child: TextField(
+                                child: const TextField(
                                   decoration: InputDecoration(
                                       hintText: "Password",
                                       hintStyle: TextStyle(color: Colors.grey),
@@ -101,23 +102,23 @@ class LoginTwelvePage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
-                        Text(
+                        const Text(
                           "Forgot Password?",
                           style: TextStyle(color: Colors.grey),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Container(
                           height: 50,
-                          margin: EdgeInsets.symmetric(horizontal: 50),
+                          margin: const EdgeInsets.symmetric(horizontal: 50),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.orange[900]),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Login",
                               style: TextStyle(
@@ -126,14 +127,14 @@ class LoginTwelvePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 50,
                         ),
-                        Text(
+                        const Text(
                           "Continue with social media",
                           style: TextStyle(color: Colors.grey),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
                         Row(
@@ -144,7 +145,7 @@ class LoginTwelvePage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50),
                                     color: Colors.blue),
-                                child: Center(
+                                child: const Center(
                                   child: Text(
                                     "Facebook",
                                     style: TextStyle(
@@ -154,7 +155,7 @@ class LoginTwelvePage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 30,
                             ),
                             Expanded(
@@ -163,7 +164,7 @@ class LoginTwelvePage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50),
                                     color: Colors.black),
-                                child: Center(
+                                child: const Center(
                                   child: Text(
                                     "Github",
                                     style: TextStyle(
@@ -183,40 +184,6 @@ class LoginTwelvePage extends StatelessWidget {
             )
           ],
         ),
-      ),
-    );
-  }
-}
-
-class FadeAnimation extends StatelessWidget {
-  final double delay;
-  final Widget child;
-
-  FadeAnimation(this.delay, this.child);
-
-  @override
-  Widget build(BuildContext context) {
-    final tween = MovieTween()
-      ..tween(
-        "opacity",
-        Tween(begin: 0.0, end: 1.0),
-        duration: Duration(milliseconds: 500),
-      ).thenTween(
-        "translateY",
-        Tween(begin: -30.0, end: 0.0),
-        duration: Duration(milliseconds: 500),
-        curve: Curves.easeOut,
-      );
-
-    return PlayAnimationBuilder<Movie>(
-      delay: Duration(milliseconds: (500 * delay).round()),
-      duration: tween.duration,
-      tween: tween,
-      child: child,
-      builder: (context, value, child) => Opacity(
-        opacity: value.get('opacity'),
-        child: Transform.translate(
-            offset: Offset(0, value.get("translateY")), child: child),
       ),
     );
   }

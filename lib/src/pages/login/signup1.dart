@@ -9,21 +9,23 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SignupOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/signup1.dart";
+  static const String path = "lib/src/pages/login/signup1.dart";
+
+  const SignupOnePage({super.key});
   Widget _buildPageContent(BuildContext context) {
     return Container(
       color: Colors.blue.shade100,
       child: ListView(
         children: <Widget>[
-          SizedBox(
+          const SizedBox(
             height: 30.0,
           ),
-          CircleAvatar(
-            child: PNetworkImage(origami),
+          const CircleAvatar(
             maxRadius: 50,
             backgroundColor: Colors.transparent,
+            child: PNetworkImage(origami),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           _buildLoginForm(),
@@ -36,7 +38,7 @@ class SignupOnePage extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 backgroundColor: Colors.blue,
-                child: Icon(Icons.arrow_back),
+                child: const Icon(Icons.arrow_back),
               )
             ],
           )
@@ -47,85 +49,85 @@ class SignupOnePage extends StatelessWidget {
 
   Container _buildLoginForm() {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       child: Stack(
         children: <Widget>[
           ClipPath(
             clipper: RoundedDiagonalPathClipper(),
             child: Container(
               height: 400,
-              padding: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(10.0),
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(40.0)),
                 color: Colors.white,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     height: 90.0,
                   ),
                   Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextField(
-                        style: TextStyle(color: Colors.blue),
+                        style: const TextStyle(color: Colors.blue),
                         decoration: InputDecoration(
                             hintText: "Email address",
                             hintStyle: TextStyle(color: Colors.blue.shade200),
                             border: InputBorder.none,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.email,
                               color: Colors.blue,
                             )),
                       )),
                   Container(
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
-                    padding:
-                        EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                   ),
                   Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextField(
-                        style: TextStyle(color: Colors.blue),
+                        style: const TextStyle(color: Colors.blue),
                         decoration: InputDecoration(
                             hintText: "Password",
                             hintStyle: TextStyle(color: Colors.blue.shade200),
                             border: InputBorder.none,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.lock,
                               color: Colors.blue,
                             )),
                       )),
                   Container(
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
-                    padding:
-                        EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                   ),
                   Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: TextField(
-                        style: TextStyle(color: Colors.blue),
+                        style: const TextStyle(color: Colors.blue),
                         decoration: InputDecoration(
                             hintText: "Confirm password",
                             hintStyle: TextStyle(color: Colors.blue.shade200),
                             border: InputBorder.none,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.lock,
                               color: Colors.blue,
                             )),
                       )),
                   Container(
+                    padding:
+                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
-                    padding:
-                        EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                 ],
@@ -138,11 +140,11 @@ class SignupOnePage extends StatelessWidget {
               CircleAvatar(
                 radius: 40.0,
                 backgroundColor: Colors.blue.shade600,
-                child: Icon(Icons.person),
+                child: const Icon(Icons.person),
               ),
             ],
           ),
-          Container(
+          SizedBox(
             height: 420,
             child: Align(
               alignment: Alignment.bottomCenter,
@@ -153,7 +155,7 @@ class SignupOnePage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {},
-                child: Text("Sign Up", style: TextStyle(color: Colors.white70)),
+                child: const Text("Sign Up", style: TextStyle(color: Colors.white70)),
               ),
             ),
           )

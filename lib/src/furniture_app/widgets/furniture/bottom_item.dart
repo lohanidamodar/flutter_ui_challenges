@@ -1,10 +1,13 @@
+import 'package:flutter/material.dart';
+
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 import '../../utils/constant.dart';
 import '../../widgets/furniture/custom_side_button.dart';
-import 'package:flutter/material.dart';
 
 class BottomItem extends StatelessWidget {
+  const BottomItem({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -26,12 +29,12 @@ class BottomItem extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(30.0),
                 ),
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   vertical: 10.0,
                 ),
                 child: Row(
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       width: 15.0,
                     ),
                     Container(
@@ -49,11 +52,11 @@ class BottomItem extends StatelessWidget {
                     ),
                     Container(
                       //color: Colors.red,
-                      margin: EdgeInsets.only(left: 20.0),
+                      margin: const EdgeInsets.only(left: 20.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
+                          const Text(
                             'Aerial Pendant',
                             style: TextStyle(
                               color: Colors.black,
@@ -61,10 +64,10 @@ class BottomItem extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8.0,
                           ),
-                          Container(
+                          const SizedBox(
                             width: 200.0,
                             child: Text(
                               'Our Lighting colle tion is sure to add the desired style to',
@@ -86,11 +89,11 @@ class BottomItem extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 5.0,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
+                              const Padding(
+                                padding: EdgeInsets.only(top: 5.0),
                                 child: Text(
                                   'USD',
                                   style: TextStyle(

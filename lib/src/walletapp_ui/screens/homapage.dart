@@ -1,50 +1,50 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
       child: Stack(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "\$2589.90",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 36,
                           fontWeight: FontWeight.w700),
                     ),
-                    Container(
-                      child: Row(
-                        children: <Widget>[
-                          Icon(
-                            Icons.notifications,
-                            color: Colors.lightBlue[100],
-                          ),
-                          SizedBox(
-                            width: 16,
-                          ),
-                          CircleAvatar(
-                            radius: 25,
-                            backgroundColor: Colors.white,
-                            child: ClipOval(
-                              child: Image.network(
-                                'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F6.jpg?alt=media',
-                                fit: BoxFit.contain,
-                              ),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.notifications,
+                          color: Colors.lightBlue[100],
+                        ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.white,
+                          child: ClipOval(
+                            child: Image.network(
+                              'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F6.jpg?alt=media',
+                              fit: BoxFit.contain,
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
@@ -55,123 +55,115 @@ class HomePage extends StatelessWidget {
                       fontSize: 16,
                       color: Colors.blue[100]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 24,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            child: Icon(
-                              Icons.date_range,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
-                            padding: EdgeInsets.all(12),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.date_range,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Send",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Send",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            child: Icon(
-                              Icons.public,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
-                            padding: EdgeInsets.all(12),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.public,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Request",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Request",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            child: Icon(
-                              Icons.attach_money,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
-                            padding: EdgeInsets.all(12),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.attach_money,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Loan",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Loan",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Color.fromRGBO(243, 245, 248, 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(18))),
-                            child: Icon(
-                              Icons.trending_down,
-                              color: Colors.blue[900],
-                              size: 30,
-                            ),
-                            padding: EdgeInsets.all(12),
+                    Column(
+                      children: <Widget>[
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(243, 245, 248, 1),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(18))),
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(
+                            Icons.trending_down,
+                            color: Colors.blue[900],
+                            size: 30,
                           ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            "Topup",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue[100]),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Topup",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14,
+                              color: Colors.blue[100]),
+                        ),
+                      ],
                     )
                   ],
                 )
@@ -181,23 +173,25 @@ class HomePage extends StatelessWidget {
           DraggableScrollableSheet(
             builder: (context, scrollController) {
               return Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Color.fromRGBO(243, 245, 248, 1),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
                         topRight: Radius.circular(40))),
                 child: SingleChildScrollView(
+                  controller: scrollController,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                       Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 32),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text(
+                            const Text(
                               "Recent Transactions",
                               style: TextStyle(
                                   fontWeight: FontWeight.w900,
@@ -213,113 +207,113 @@ class HomePage extends StatelessWidget {
                             )
                           ],
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 32),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
-                          child: Row(
-                            children: <Widget>[
-                              Container(
-                                child: Text(
-                                  "All",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 14,
-                                      color: Colors.blue),
-                                ),
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey[500]!,
-                                          blurRadius: 10.0,
-                                          spreadRadius: 4.5)
-                                    ]),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 10, vertical: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey[500]!,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 4.5)
+                                  ]),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 10),
+                              child: const Text(
+                                "All",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 14,
+                                    color: Colors.blue),
                               ),
-                              SizedBox(
-                                width: 16,
+                            ),
+                            const SizedBox(
+                              width: 16,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey[200]!,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 4.5)
+                                  ]),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 10),
+                              child: Row(
+                                children: const <Widget>[
+                                  CircleAvatar(
+                                    radius: 8,
+                                    backgroundColor: Colors.green,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "Income",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 14,
+                                        color: Colors.blue),
+                                  ),
+                                ],
                               ),
-                              Container(
-                                child: Row(
-                                  children: <Widget>[
-                                    CircleAvatar(
-                                      radius: 8,
-                                      backgroundColor: Colors.green,
-                                    ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "Income",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 14,
-                                          color: Colors.blue),
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey[200]!,
-                                          blurRadius: 10.0,
-                                          spreadRadius: 4.5)
-                                    ]),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 10),
+                            ),
+                            const SizedBox(
+                              width: 16,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(20)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey[200]!,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 4.5)
+                                  ]),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 10),
+                              child: Row(
+                                children: const <Widget>[
+                                  CircleAvatar(
+                                    radius: 8,
+                                    backgroundColor: Colors.orange,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "Expenses",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 14,
+                                        color: Colors.blue),
+                                  ),
+                                ],
                               ),
-                              SizedBox(
-                                width: 16,
-                              ),
-                              Container(
-                                child: Row(
-                                  children: <Widget>[
-                                    CircleAvatar(
-                                      radius: 8,
-                                      backgroundColor: Colors.orange,
-                                    ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "Expenses",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 14,
-                                          color: Colors.blue),
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey[200]!,
-                                          blurRadius: 10.0,
-                                          spreadRadius: 4.5)
-                                    ]),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 10),
-                              )
-                            ],
-                          ),
+                            )
+                          ],
                         ),
-                      SizedBox(
+                      ),
+                      const SizedBox(
                         height: 16,
                       ),
                       Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 32),
                         child: Text(
                           "TODAY",
                           style: TextStyle(
@@ -327,17 +321,16 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w700,
                               color: Colors.grey[500]),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 32),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.symmetric(horizontal: 32),
-                            padding: EdgeInsets.all(16),
-                            decoration: BoxDecoration(
+                            margin: const EdgeInsets.symmetric(horizontal: 32),
+                            padding: const EdgeInsets.all(16),
+                            decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
@@ -346,15 +339,15 @@ class HomePage extends StatelessWidget {
                                 Container(
                                   decoration: BoxDecoration(
                                       color: Colors.grey[100],
-                                      borderRadius: BorderRadius.all(
+                                      borderRadius: const BorderRadius.all(
                                           Radius.circular(18))),
+                                  padding: const EdgeInsets.all(12),
                                   child: Icon(
                                     Icons.date_range,
                                     color: Colors.lightBlue[900],
                                   ),
-                                  padding: EdgeInsets.all(12),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
@@ -382,7 +375,7 @@ class HomePage extends StatelessWidget {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: <Widget>[
-                                    Text(
+                                    const Text(
                                       "+\$50.5",
                                       style: TextStyle(
                                           fontSize: 18,
@@ -404,13 +397,14 @@ class HomePage extends StatelessWidget {
                         },
                         shrinkWrap: true,
                         itemCount: 2,
-                        padding: EdgeInsets.all(0),
+                        padding: const EdgeInsets.all(0),
                         controller: ScrollController(keepScrollOffset: false),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 32),
                         child: Text(
                           "YESTERDAY",
                           style: TextStyle(
@@ -418,17 +412,16 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w700,
                               color: Colors.grey[500]),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 32),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.symmetric(horizontal: 32),
-                            padding: EdgeInsets.all(16),
-                            decoration: BoxDecoration(
+                            margin: const EdgeInsets.symmetric(horizontal: 32),
+                            padding: const EdgeInsets.all(16),
+                            decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
@@ -437,15 +430,15 @@ class HomePage extends StatelessWidget {
                                 Container(
                                   decoration: BoxDecoration(
                                       color: Colors.grey[100],
-                                      borderRadius: BorderRadius.all(
+                                      borderRadius: const BorderRadius.all(
                                           Radius.circular(18))),
+                                  padding: const EdgeInsets.all(12),
                                   child: Icon(
                                     Icons.directions_car,
                                     color: Colors.lightBlue[900],
                                   ),
-                                  padding: EdgeInsets.all(12),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
@@ -473,7 +466,7 @@ class HomePage extends StatelessWidget {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: <Widget>[
-                                    Text(
+                                    const Text(
                                       "-\$500.5",
                                       style: TextStyle(
                                           fontSize: 18,
@@ -495,12 +488,11 @@ class HomePage extends StatelessWidget {
                         },
                         shrinkWrap: true,
                         itemCount: 2,
-                        padding: EdgeInsets.all(0),
+                        padding: const EdgeInsets.all(0),
                         controller: ScrollController(keepScrollOffset: false),
                       ),
                     ],
                   ),
-                  controller: scrollController,
                 ),
               );
             },

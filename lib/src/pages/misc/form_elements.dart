@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/forms/checkbox.dart';
 
 class FormElementPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/form_elements.dart";
+  static const String path = "lib/src/pages/misc/form_elements.dart";
+
+  const FormElementPage({super.key});
   @override
   _FormElementPageState createState() => _FormElementPageState();
 }
@@ -18,7 +20,7 @@ class _FormElementPageState extends State<FormElementPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Form Elements'),
+        title: const Text('Form Elements'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -32,19 +34,19 @@ class _FormElementPageState extends State<FormElementPage> {
                 });
               },
             ),
-            Divider(),
+            const Divider(),
             PCheckboxListTile(
               title: "Download over wifi",
               value: false,
               onChanged: (value) {},
             ),
-            Divider(),
+            const Divider(),
             PCheckboxListTile(
               title: "Download over wifi",
               value: true,
               onChanged: (value) {},
             ),
-            Divider(),
+            const Divider(),
           ],
         ),
       ),

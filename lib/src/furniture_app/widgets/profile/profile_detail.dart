@@ -3,19 +3,21 @@ import '../../widgets/profile_image.dart';
 import 'package:flutter/material.dart';
 
 class ProfileDetail extends StatelessWidget {
+  const ProfileDetail({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Material(
-      borderRadius: BorderRadius.all(
+      borderRadius: const BorderRadius.all(
         Radius.circular(20.0),
       ),
       elevation: 10.0,
       child: Container(
         height: deviceSize.height * 0.2,
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
-        decoration: BoxDecoration(
-          color: profile_info_background,
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        decoration: const BoxDecoration(
+          color: profileInfoBackground,
           borderRadius: BorderRadius.all(
             Radius.circular(20.0),
           ),
@@ -26,11 +28,11 @@ class ProfileDetail extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                ProfileImage(
+                const ProfileImage(
                   height: 60.0,
                   width: 60.0,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15.0,
                 ),
                 Column(
@@ -38,7 +40,7 @@ class ProfileDetail extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text(
                           'Mausam Rayamajhi',
                           style: TextStyle(
@@ -57,7 +59,7 @@ class ProfileDetail extends StatelessWidget {
                         )
                       ],
                     ),
-                    Text(
+                    const Text(
                       'A trendsetter',
                       style: TextStyle(
                         color: Colors.white70,
@@ -69,7 +71,7 @@ class ProfileDetail extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             Row(
@@ -81,18 +83,18 @@ class ProfileDetail extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         item['count'],
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
                       Text(
                         item['name'],
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 13.0,
                           fontWeight: FontWeight.bold,

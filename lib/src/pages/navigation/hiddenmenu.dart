@@ -6,7 +6,10 @@
 import 'package:flutter/material.dart';
 
 class HiddenMenuPage extends StatefulWidget {
-  static final String path = "lib/src/pages/navigation/hiddenmenu.dart";
+  static const String path = "lib/src/pages/navigation/hiddenmenu.dart";
+
+  const HiddenMenuPage({super.key});
+  @override
   _HiddenMenuPageState createState() => _HiddenMenuPageState();
 }
 
@@ -18,6 +21,7 @@ class _HiddenMenuPageState extends State<HiddenMenuPage>
   late Animation<double> openAnimation, closeAnimation;
   late AnimationController openController, closeController;
 
+  @override
   void initState() {
     super.initState();
     openController = AnimationController(
@@ -67,7 +71,7 @@ class _HiddenMenuPageState extends State<HiddenMenuPage>
               height: menuHeight,
               child: Column(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Row(
@@ -78,49 +82,49 @@ class _HiddenMenuPageState extends State<HiddenMenuPage>
                         onPressed: _handleMenuPress,
                       ),
                       Text(menuShown ? "Menu" : "Home",
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w400,
                               fontSize: 18.0))
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40.0,
                   ),
                   Expanded(
                     child: ListView(
                       children: <Widget>[
                         Container(
-                            padding: EdgeInsets.only(bottom: 10.0),
+                            padding: const EdgeInsets.only(bottom: 10.0),
                             alignment: Alignment.center,
-                            child: Text("Home",
+                            child: const Text("Home",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 18.0,
                                 ))),
                         Container(
-                            padding: EdgeInsets.only(bottom: 10.0),
+                            padding: const EdgeInsets.only(bottom: 10.0),
                             alignment: Alignment.center,
-                            child: Text("Cart",
+                            child: const Text("Cart",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 18.0,
                                 ))),
                         Container(
-                            padding: EdgeInsets.only(bottom: 10.0),
+                            padding: const EdgeInsets.only(bottom: 10.0),
                             alignment: Alignment.center,
-                            child: Text("Wishlist",
+                            child: const Text("Wishlist",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontSize: 18.0,
                                 ))),
                         Container(
-                            padding: EdgeInsets.only(bottom: 10.0),
+                            padding: const EdgeInsets.only(bottom: 10.0),
                             alignment: Alignment.center,
-                            child: Text("Profile",
+                            child: const Text("Profile",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
@@ -140,12 +144,12 @@ class _HiddenMenuPageState extends State<HiddenMenuPage>
                   color: Colors.transparent,
                   child: Material(
                     elevation: 16.0,
-                    shape: BeveledRectangleBorder(
+                    shape: const BeveledRectangleBorder(
                       borderRadius:
                           BorderRadius.only(topLeft: Radius.circular(46.0)),
                     ),
                     child: ListView.builder(
-                      padding: EdgeInsets.only(top: 60.0),
+                      padding: const EdgeInsets.only(top: 60.0),
                       itemBuilder: (_, int index) {
                         return ListTile(
                           leading: CircleAvatar(

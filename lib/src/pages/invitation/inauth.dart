@@ -8,7 +8,9 @@ const TextStyle boldText = TextStyle(
 );
 
 class InvitationAuthPage extends StatefulWidget {
-  static final String path = "lib/src/pages/invitation/inauth.dart";
+  static const String path = "lib/src/pages/invitation/inauth.dart";
+
+  const InvitationAuthPage({Key? key}) : super(key: key);
   @override
   _InvitationAuthPageState createState() => _InvitationAuthPageState();
 }
@@ -39,8 +41,8 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                 Container(
                   alignment: Alignment.topCenter,
                   height: (MediaQuery.of(context).size.height / 2) - 150,
-                  child: PNetworkImage(
-                    INVITE_ILLUSTRATION,
+                  child: const PNetworkImage(
+                    inviteIllustration,
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -49,7 +51,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10.0),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.pink,
                           offset: Offset(5, 5),
@@ -63,7 +65,7 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.grey.shade100,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(10.0),
                             topRight: Radius.circular(10.0),
                           ),
@@ -72,41 +74,41 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                           renderBorder: false,
                           selectedColor: Colors.pink,
                           fillColor: Colors.transparent,
-                          children: <Widget>[
+                          isSelected: [signupForm, !signupForm],
+                          onPressed: (index) {
+                            setState(() {
+                              signupForm = index == 0;
+                            });
+                          },
+                          children: const <Widget>[
                             Padding(
-                              padding: const EdgeInsets.all(16.0),
+                              padding: EdgeInsets.all(16.0),
                               child: Text(
                                 "Sign Up",
                                 style: boldText,
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Text(
                                 "Sign In",
                                 style: boldText,
                               ),
                             ),
                           ],
-                          isSelected: [signupForm!, !signupForm!],
-                          onPressed: (index) {
-                            setState(() {
-                              signupForm = index == 0;
-                            });
-                          },
                         ),
                       ),
                       AnimatedSwitcher(
-                        duration: Duration(
+                        duration: const Duration(
                           milliseconds: 200,
                         ),
-                        child: signupForm ? SignUp() : SignIn(),
+                        child: signupForm ? const SignUp() : const SignIn(),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 20.0),
-                Text("Or connect with"),
+                const Text("Or connect with"),
                 const SizedBox(height: 10.0),
                 Container(
                   width: double.infinity,
@@ -117,11 +119,11 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.all(16.0),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       FontAwesomeIcons.google,
                       color: Colors.red,
                     ),
-                    label: Text("Google"),
+                    label: const Text("Google"),
                     onPressed: () {},
                   ),
                 )
@@ -135,16 +137,18 @@ class _InvitationAuthPageState extends State<InvitationAuthPage> {
 }
 
 class SignUp extends StatelessWidget {
+  const SignUp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: <Widget>[
-          TextField(
+          const TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              contentPadding: const EdgeInsets.all(
+              contentPadding: EdgeInsets.all(
                 16.0,
               ),
               hintText: "enter your email",
@@ -153,7 +157,7 @@ class SignUp extends StatelessWidget {
           const SizedBox(height: 16.0),
           TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
+              border: const OutlineInputBorder(),
               hintText: "phone",
               contentPadding: const EdgeInsets.all(
                 16.0,
@@ -175,7 +179,7 @@ class SignUp extends StatelessWidget {
                 backgroundColor: Colors.pink,
               ),
               onPressed: () {},
-              child: Text("Sign up"),
+              child: const Text("Sign up"),
             ),
           ),
           const SizedBox(height: 10.0),
@@ -186,16 +190,18 @@ class SignUp extends StatelessWidget {
 }
 
 class SignIn extends StatelessWidget {
+  const SignIn({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: <Widget>[
-          TextField(
+          const TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              contentPadding: const EdgeInsets.all(
+              contentPadding: EdgeInsets.all(
                 16.0,
               ),
               hintText: "enter your email or phone",
@@ -205,7 +211,7 @@ class SignIn extends StatelessWidget {
           TextField(
             obscureText: true,
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
+              border: const OutlineInputBorder(),
               hintText: "password",
               contentPadding: const EdgeInsets.all(
                 16.0,
@@ -225,7 +231,7 @@ class SignIn extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () => Navigator.pushNamed(context, 'home'),
-              child: Text("Sign In"),
+              child: const Text("Sign In"),
             ),
           ),
           const SizedBox(height: 10.0),

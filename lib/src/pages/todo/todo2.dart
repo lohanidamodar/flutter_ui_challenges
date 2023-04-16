@@ -4,14 +4,15 @@
   */
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 final List<String> weekDays = ["S", "M", "T", "W", "T", "F", "S"];
 final List<int> dates = [5, 6, 7, 8, 9, 10, 11];
 
 class TodoTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/todo/todo2.dart";
+  static const String path = "lib/src/pages/todo/todo2.dart";
   final int selected = 5;
-  final TextStyle selectedText = TextStyle(
+  final TextStyle selectedText = const TextStyle(
     color: Colors.deepOrange,
     fontWeight: FontWeight.bold,
   );
@@ -20,15 +21,16 @@ class TodoTwoPage extends StatelessWidget {
     color: Colors.grey.shade800,
   );
 
+  TodoTwoPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.light,
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Text('My Week'),
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text('My Week'),
         backgroundColor: Colors.white,
-        elevation: 0,
+        elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: HeaderWidget(
         header: Container(
@@ -56,7 +58,7 @@ class TodoTwoPage extends StatelessWidget {
                           color: weekDays.indexOf(w) == selected
                               ? Colors.orange.shade100
                               : Colors.transparent,
-                          borderRadius: BorderRadius.vertical(
+                          borderRadius: const BorderRadius.vertical(
                               top: Radius.circular(30.0))),
                       padding: const EdgeInsets.only(top: 20, bottom: 8.0),
                       child: Text(
@@ -78,7 +80,7 @@ class TodoTwoPage extends StatelessWidget {
                           color: dates.indexOf(d) == selected
                               ? Colors.orange.shade100
                               : Colors.transparent,
-                          borderRadius: BorderRadius.vertical(
+                          borderRadius: const BorderRadius.vertical(
                               bottom: Radius.circular(30.0))),
                       padding: const EdgeInsets.only(top: 8.0, bottom: 20.0),
                       child: Text("$d",
@@ -120,7 +122,7 @@ class TodoTwoPage extends StatelessWidget {
   Row _buildTaskWithDate() {
     return Row(
       children: <Widget>[
-        Text(
+        const Text(
           "JAN\n10",
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -131,7 +133,7 @@ class TodoTwoPage extends StatelessWidget {
         const SizedBox(width: 20.0),
         Expanded(
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.0),
                 bottomRight: Radius.circular(20.0),
@@ -144,13 +146,13 @@ class TodoTwoPage extends StatelessWidget {
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
+              children: const <Widget>[
                 Text(
                   "10:30 - 11:30AM",
                   style:
                       TextStyle(letterSpacing: 2.5, color: Colors.deepPurple),
                 ),
-                const SizedBox(height: 5.0),
+                SizedBox(height: 5.0),
                 Text(
                   "Meeting With",
                   style: TextStyle(
@@ -172,12 +174,12 @@ class TodoTwoPage extends StatelessWidget {
       padding: const EdgeInsets.only(left: 70.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: const <Widget>[
           Text(
             "10:30 - 11:30AM",
             style: TextStyle(letterSpacing: 2.5, color: Colors.white),
           ),
-          const SizedBox(height: 5.0),
+          SizedBox(height: 5.0),
           Text(
             "Meeting With",
             style: TextStyle(
@@ -223,7 +225,7 @@ class HeaderWidget extends StatelessWidget {
             decoration: BoxDecoration(
                 color: backColor,
                 borderRadius:
-                    BorderRadius.only(topLeft: Radius.circular(20.0))),
+                    const BorderRadius.only(topLeft: Radius.circular(20.0))),
           ),
         ),
         Positioned(
@@ -244,14 +246,14 @@ class HeaderWidget extends StatelessWidget {
                   margin: const EdgeInsets.only(right: 10.0),
                   decoration: BoxDecoration(
                     borderRadius:
-                        BorderRadius.only(bottomRight: Radius.circular(20.0)),
+                        const BorderRadius.only(bottomRight: Radius.circular(20.0)),
                     color: headerColor,
                   ),
                   child: header),
             if (body != null)
               Expanded(
                 child: Material(
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                         borderRadius:
                             BorderRadius.only(topLeft: Radius.circular(30.0))),
                     elevation: 0,

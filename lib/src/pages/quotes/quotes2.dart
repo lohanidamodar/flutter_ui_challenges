@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 
 class QuotesPageTwo extends StatelessWidget {
-  static final String path = "lib/src/pages/quotes/quotes2.dart";
+  static const String path = "lib/src/pages/quotes/quotes2.dart";
 
   final List<Map> quotesList = [
     {
@@ -26,17 +26,19 @@ class QuotesPageTwo extends StatelessWidget {
     },
   ];
 
+   QuotesPageTwo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff0f0f0),
+      backgroundColor: const Color(0xfff0f0f0),
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
-        title: Text(
+        title: const Text(
           'Motivational',
           style: TextStyle(
             color: Colors.black,
@@ -44,7 +46,7 @@ class QuotesPageTwo extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Padding(
@@ -52,7 +54,7 @@ class QuotesPageTwo extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.only(top: 5),
+                    padding: const EdgeInsets.only(top: 5),
                     height: MediaQuery.of(context).size.height,
                     width: double.infinity,
                     child: ListView.builder(
@@ -76,8 +78,8 @@ class QuotesPageTwo extends StatelessWidget {
       ),
       width: double.infinity,
       height: 160,
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -87,59 +89,57 @@ class QuotesPageTwo extends StatelessWidget {
               children: <Widget>[
                 Text(
                   quotesList[index]['title'],
-                  style: TextStyle(
+                  style: const TextStyle(
                       //color: primary,
                       fontSize: 13),
                 ),
-                Container(
-                  child: InkWell(
-                    child: Row(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.share,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                InkWell(
+                  child: Row(
+                    children: const <Widget>[
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.share,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.send,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.send,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.copy,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.copy,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.emoji_emotions,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.emoji_emotions,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Icon(
-                            Icons.emoji_events,
-                            color: Colors.blue,
-                            size: 18,
-                          ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child: Icon(
+                          Icons.emoji_events,
+                          color: Colors.blue,
+                          size: 18,
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                      ],
-                    ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
                 ),
               ],

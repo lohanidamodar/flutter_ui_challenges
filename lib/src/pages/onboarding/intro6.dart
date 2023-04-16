@@ -9,13 +9,15 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class IntroSixPage extends StatefulWidget {
-  static final String path = "lib/src/pages/onboarding/intro6.dart";
+  static const String path = "lib/src/pages/onboarding/intro6.dart";
+
+  const IntroSixPage({super.key});
   @override
   _IntroSixPageState createState() => _IntroSixPageState();
 }
 
 class _IntroSixPageState extends State<IntroSixPage> {
-  SwiperController _controller = SwiperController();
+  final SwiperController _controller = SwiperController();
   int _currentIndex = 0;
   final List<String> titles = [
     "Welcome",
@@ -46,7 +48,7 @@ class _IntroSixPageState extends State<IntroSixPage> {
               });
             },
             controller: _controller,
-            pagination: SwiperPagination(
+            pagination: const SwiperPagination(
               builder: DotSwiperPaginationBuilder(
                 activeColor: Colors.red,
                 activeSize: 20.0,
@@ -65,7 +67,7 @@ class _IntroSixPageState extends State<IntroSixPage> {
           Align(
             alignment: Alignment.bottomLeft,
             child: TextButton(
-              child: Text("Skip"),
+              child: const Text("Skip"),
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -77,10 +79,11 @@ class _IntroSixPageState extends State<IntroSixPage> {
               icon:
                   Icon(_currentIndex == 2 ? Icons.check : Icons.arrow_forward),
               onPressed: () {
-                if (_currentIndex != 2)
+                if (_currentIndex != 2) {
                   _controller.next();
-                else
+                } else {
                   Navigator.pop(context);
+                }
               },
             ),
           )
@@ -112,7 +115,7 @@ class IntroItem extends StatelessWidget {
               const SizedBox(height: 40),
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 35.0,
                     color: Colors.white),
@@ -121,7 +124,7 @@ class IntroItem extends StatelessWidget {
                 const SizedBox(height: 20.0),
                 Text(
                   subtitle!,
-                  style: TextStyle(color: Colors.white, fontSize: 24.0),
+                  style: const TextStyle(color: Colors.white, fontSize: 24.0),
                   textAlign: TextAlign.center,
                 ),
               ],

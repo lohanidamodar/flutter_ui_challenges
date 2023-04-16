@@ -5,6 +5,8 @@
 import 'package:flutter/material.dart';
 
 class Payment extends StatefulWidget {
+  const Payment({super.key});
+
   @override
   _PaymentState createState() => _PaymentState();
 }
@@ -15,41 +17,39 @@ class _PaymentState extends State<Payment> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Payment'),
+        title: const Text('Payment'),
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            SizedBox(height: 20),
-            Container(
-              margin: EdgeInsets.all(20),
-              child: TextField(
-                onChanged: (val) {
-                  setState(() {
-                    amount = double.parse(val);
-                  });
-                },
-                decoration: InputDecoration(hintText: 'Amount'),
-                keyboardType: TextInputType.number,
-              ),
+      body: Column(
+        children: <Widget>[
+          const SizedBox(height: 20),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: TextField(
+              onChanged: (val) {
+                setState(() {
+                  amount = double.parse(val);
+                });
+              },
+              decoration: const InputDecoration(hintText: 'Amount'),
+              keyboardType: TextInputType.number,
             ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Pay',
-                  style: TextStyle(
-                    color: Colors.white,
-                  )),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).primaryColor,
-              ),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).primaryColor,
             ),
-            Text(
-              'Note: Make sure your device have khalti app',
-              style: TextStyle(color: Colors.grey),
-            )
-          ],
-        ),
+            child: const Text('Pay',
+                style: TextStyle(
+                  color: Colors.white,
+                )),
+          ),
+          const Text(
+            'Note: Make sure your device have khalti app',
+            style: TextStyle(color: Colors.grey),
+          )
+        ],
       ),
     );
   }

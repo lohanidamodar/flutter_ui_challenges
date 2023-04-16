@@ -25,8 +25,10 @@ const List<Map> dummy = [
 ];
 
 class AnimationOnePage extends StatefulWidget {
-  static final String path =
+  static const String path =
       "lib/src/pages/animations/animation1/animation1.dart";
+
+  const AnimationOnePage({super.key});
 
   @override
   _AnimationOnePageState createState() => _AnimationOnePageState();
@@ -59,7 +61,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
     return Scaffold(
       body: Column(
         children: <Widget>[
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Align(
             alignment: Alignment.topLeft,
             child: IconButton(
@@ -68,7 +70,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
               onPressed: () => Navigator.pop(context),
             ),
           ),
-          Text.rich(TextSpan(children: [
+          const Text.rich(TextSpan(children: [
             TextSpan(
                 text: "Best items",
                 style: TextStyle(fontWeight: FontWeight.bold)),
@@ -77,7 +79,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
           Expanded(
             flex: 2,
             child: Swiper(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               viewportFraction: 0.8,
               itemCount: 3,
               loop: false,
@@ -100,7 +102,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                         onTap: () => Navigator.push(
                             context,
                             PageRouteBuilder(
-                                transitionDuration: Duration(seconds: 1),
+                                transitionDuration: const Duration(seconds: 1),
                                 pageBuilder: (_, __, ___) =>
                                     AnimationOneDetails(
                                       index: index,
@@ -126,18 +128,18 @@ class _AnimationOnePageState extends State<AnimationOnePage>
             children: <Widget>[
               AnimatedOpacity(
                 opacity: currentIndex == 0 ? 1 : 0,
+                duration: const Duration(seconds: 1),
                 child: _buildDesc(0),
-                duration: Duration(seconds: 1),
               ),
               AnimatedOpacity(
                 opacity: currentIndex == 1 ? 1 : 0,
+                duration: const Duration(seconds: 1),
                 child: _buildDesc(1),
-                duration: Duration(seconds: 1),
               ),
               AnimatedOpacity(
                 opacity: currentIndex == 2 ? 1 : 0,
+                duration: const Duration(seconds: 1),
                 child: _buildDesc(2),
-                duration: Duration(seconds: 1),
               ),
             ],
           )
@@ -147,12 +149,12 @@ class _AnimationOnePageState extends State<AnimationOnePage>
   }
 
   Widget _buildDesc(int index) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           Hero(
             tag: "title$index",
             child: Material(
@@ -170,7 +172,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
               ),
             ),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           Hero(
             tag: "price$index",
             child: Material(
@@ -180,12 +182,12 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                 child: Text(
                   dummy[index]["price"],
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
           ),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
         ],
       ),
     );

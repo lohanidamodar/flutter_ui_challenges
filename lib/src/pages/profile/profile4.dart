@@ -1,17 +1,12 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:flutter/cupertino.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProfileFourPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile4.dart";
+  static const String path = "lib/src/pages/profile/profile4.dart";
+
+  const ProfileFourPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,14 +16,14 @@ class ProfileFourPage extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               FontAwesomeIcons.commentDots,
               color: Colors.black54,
             ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.more_vert,
               color: Colors.black54,
             ),
@@ -45,19 +40,19 @@ class ProfileFourPage extends StatelessWidget {
               margin: const EdgeInsets.all(16.0),
               padding: const EdgeInsets.all(16.0),
               decoration: BoxDecoration(color: Colors.grey.shade200),
-              child: Text(
+              child: const Text(
                   "Over 8+ years of experience and web development and 5+ years of experience in mobile applications development "),
             ),
             _buildTitle("Skills"),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             _buildSkillRow("Wordpress", 0.75),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             _buildSkillRow("Laravel", 0.6),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             _buildSkillRow("React JS", 0.65),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             _buildSkillRow("Flutter", 0.5),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             _buildTitle("Experience"),
             _buildExperienceRow(
                 company: "GID Nepal",
@@ -75,9 +70,9 @@ class ProfileFourPage extends StatelessWidget {
                 company: "Popup Bits Pvt. Ltd.",
                 position: "Flutter Developer",
                 duration: "2018 - Current"),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             _buildTitle("Education"),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             _buildExperienceRow(
                 company: "Tribhuvan University, Nepal",
                 position: "B.Sc. Computer Science and Information Technology",
@@ -88,11 +83,11 @@ class ProfileFourPage extends StatelessWidget {
                 duration: "2008 - 2010"),
             _buildExperienceRow(
                 company: "Nepal Board", position: "SLC", duration: "2008"),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             _buildTitle("Contact"),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             Row(
-              children: <Widget>[
+              children: const <Widget>[
                 SizedBox(width: 30.0),
                 Icon(
                   Icons.mail,
@@ -105,9 +100,9 @@ class ProfileFourPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Row(
-              children: <Widget>[
+              children: const <Widget>[
                 SizedBox(width: 30.0),
                 Icon(
                   Icons.phone,
@@ -121,7 +116,7 @@ class ProfileFourPage extends StatelessWidget {
               ],
             ),
             _buildSocialsRow(),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
           ],
         ),
       ),
@@ -131,38 +126,38 @@ class ProfileFourPage extends StatelessWidget {
   Row _buildSocialsRow() {
     return Row(
       children: <Widget>[
-        SizedBox(width: 20.0),
+        const SizedBox(width: 20.0),
         IconButton(
           color: Colors.indigo,
-          icon: Icon(FontAwesomeIcons.facebookF),
+          icon: const Icon(FontAwesomeIcons.facebookF),
           onPressed: () {
             _launchURL("https://facebook.com/lohanidamodar");
           },
         ),
-        SizedBox(width: 5.0),
+        const SizedBox(width: 5.0),
         IconButton(
           color: Colors.indigo,
-          icon: Icon(FontAwesomeIcons.github),
+          icon: const Icon(FontAwesomeIcons.github),
           onPressed: () {
             _launchURL("https://github.com/lohanidamodar");
           },
         ),
-        SizedBox(width: 5.0),
+        const SizedBox(width: 5.0),
         IconButton(
           color: Colors.red,
-          icon: Icon(FontAwesomeIcons.youtube),
+          icon: const Icon(FontAwesomeIcons.youtube),
           onPressed: () {
             _launchURL("https://youtube.com/c/reactbits");
           },
         ),
-        SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),
       ],
     );
   }
 
   _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -171,8 +166,8 @@ class ProfileFourPage extends StatelessWidget {
   ListTile _buildExperienceRow(
       {required String company, String? position, String? duration}) {
     return ListTile(
-      leading: Padding(
-        padding: const EdgeInsets.only(top: 8.0, left: 20.0),
+      leading: const Padding(
+        padding: EdgeInsets.only(top: 8.0, left: 20.0),
         child: Icon(
           FontAwesomeIcons.solidCircle,
           size: 12.0,
@@ -181,7 +176,7 @@ class ProfileFourPage extends StatelessWidget {
       ),
       title: Text(
         company,
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
       ),
       subtitle: Text("$position ($duration)"),
     );
@@ -190,21 +185,21 @@ class ProfileFourPage extends StatelessWidget {
   Row _buildSkillRow(String skill, double level) {
     return Row(
       children: <Widget>[
-        SizedBox(width: 16.0),
+        const SizedBox(width: 16.0),
         Expanded(
             flex: 2,
             child: Text(
               skill.toUpperCase(),
               textAlign: TextAlign.right,
             )),
-        SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),
         Expanded(
           flex: 5,
           child: LinearProgressIndicator(
             value: level,
           ),
         ),
-        SizedBox(width: 16.0),
+        const SizedBox(width: 16.0),
       ],
     );
   }
@@ -217,9 +212,9 @@ class ProfileFourPage extends StatelessWidget {
         children: <Widget>[
           Text(
             title.toUpperCase(),
-            style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
           ),
-          Divider(
+          const Divider(
             color: Colors.black54,
           ),
         ],
@@ -230,8 +225,8 @@ class ProfileFourPage extends StatelessWidget {
   Row _buildHeader() {
     return Row(
       children: <Widget>[
-        SizedBox(width: 20.0),
-        Container(
+        const SizedBox(width: 20.0),
+        SizedBox(
             width: 80.0,
             height: 80.0,
             child: CircleAvatar(
@@ -239,19 +234,19 @@ class ProfileFourPage extends StatelessWidget {
                 backgroundColor: Colors.grey,
                 child: CircleAvatar(
                     radius: 35.0, backgroundImage: NetworkImage(avatars[4])))),
-        SizedBox(width: 20.0),
+        const SizedBox(width: 20.0),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
+            const Text(
               "Damodar Lohani",
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10.0),
-            Text("Full Stack Developer"),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 10.0),
+            const Text("Full Stack Developer"),
+            const SizedBox(height: 5.0),
             Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Icon(
                   FontAwesomeIcons.map,
                   size: 12.0,

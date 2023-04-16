@@ -6,7 +6,9 @@
 import 'package:flutter/material.dart';
 
 class MusicPlayer extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/musicplayer.dart";
+  static const String path = "lib/src/pages/misc/musicplayer.dart";
+
+  const MusicPlayer({super.key});
 
   @override
   _PodcastPlayerState createState() => _PodcastPlayerState();
@@ -20,13 +22,13 @@ class _PodcastPlayerState extends State<MusicPlayer> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           child: Stack(children: <Widget>[
             Column(
               children: <Widget>[
                 Stack(
                   children: <Widget>[
-                    Container(
+                    SizedBox(
                       height: topHeight,
                       width: MediaQuery.of(context).size.width,
                       child: Image.asset(
@@ -38,7 +40,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back,
                         color: Colors.white,
                       ),
@@ -47,7 +49,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                 ),
                 Container(
                     height: height * 0.6,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -61,17 +63,17 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                     ),
                     child: Column(
                       children: <Widget>[
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           ' Buffering... ',
                           style: TextStyle(color: Colors.white, fontSize: 25),
                         ),
                         _progress(),
                         Expanded(
                           child: ListView.builder(
-                            physics: BouncingScrollPhysics(
+                            physics: const BouncingScrollPhysics(
                                 parent: AlwaysScrollableScrollPhysics()),
                             itemCount: 6,
                             itemBuilder: (BuildContext context, int index) {
@@ -81,15 +83,15 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                                     onTap: () {},
                                     leading: Text(
                                       '${index + 1}.',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           color: Colors.white, fontSize: 20),
                                     ),
                                     title: Text(
                                       ' Episode ${index + 1}',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           color: Colors.white, fontSize: 20),
                                     ),
-                                    subtitle: Text(
+                                    subtitle: const Text(
                                       ' sid',
                                       style: TextStyle(
                                           color: Colors.white,
@@ -98,13 +100,13 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                                     ),
                                     trailing: IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.play_arrow,
                                         color: Colors.white,
                                       ),
                                     ),
                                   ),
-                                  Divider(
+                                  const Divider(
                                     height: 1,
                                     color: Colors.white,
                                   ),
@@ -121,7 +123,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
               left: MediaQuery.of(context).size.width * 0.15,
               top: topHeight - 35,
               child: FractionalTranslation(
-                translation: Offset(0, 0.5),
+                translation: const Offset(0, 0.5),
                 child: playerWidget(),
               ),
             ),
@@ -137,39 +139,39 @@ class _PodcastPlayerState extends State<MusicPlayer> {
         alignment: Alignment.topCenter,
         height: 35,
         width: MediaQuery.of(context).size.width * 0.7,
-        margin: EdgeInsets.only(bottom: 6),
+        margin: const EdgeInsets.only(bottom: 6),
         decoration: BoxDecoration(
-            boxShadow: [BoxShadow(blurRadius: 5)],
+            boxShadow: const [BoxShadow(blurRadius: 5)],
             borderRadius: BorderRadius.circular(50),
             color: Colors.blue),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.skip_previous,
                 color: Colors.white,
               ),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.fast_rewind,
                 color: Colors.white,
               ),
               onPressed: () {},
             ),
-            SizedBox(
+            const SizedBox(
               width: 25,
             ),
             IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.fast_forward,
                   color: Colors.white,
                 ),
                 onPressed: () {}),
             IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.skip_next,
                 color: Colors.white,
               ),
@@ -183,7 +185,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
         right: 77,
         bottom: 2,
         child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.blue,
               boxShadow: [BoxShadow(blurRadius: 5)],
@@ -192,7 +194,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
               backgroundColor: Colors.blue,
               radius: 25,
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.play_arrow,
                   color: Colors.white,
                 ),
@@ -206,7 +208,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
   Widget _progress() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
+      children: const <Widget>[
         Text(
           '00:00',
           style: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -221,7 +223,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
         ),
         Text(
           '00:00',
-          style: new TextStyle(fontSize: 15.0, color: Colors.white),
+          style: TextStyle(fontSize: 15.0, color: Colors.white),
         ),
       ],
     );

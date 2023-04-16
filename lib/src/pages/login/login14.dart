@@ -5,11 +5,13 @@
 
 import 'package:flutter/material.dart';
 
-Color orangeColors = Color(0xffF5591F);
-Color orangeLightColors = Color(0xffF2861E);
+Color orangeColors = const Color(0xffF5591F);
+Color orangeLightColors = const Color(0xffF2861E);
 
 class LoginPageFourteen extends StatefulWidget {
-  static final String path = "lib/src/pages/login/login14.dart";
+  static const String path = "lib/src/pages/login/login14.dart";
+
+  const LoginPageFourteen({super.key});
   @override
   _LoginPageFourteenState createState() => _LoginPageFourteenState();
 }
@@ -19,30 +21,30 @@ class _LoginPageFourteenState extends State<LoginPageFourteen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(bottom: 30),
+        padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: <Widget>[
-            HeaderContainer("Login"),
+            const HeaderContainer(),
             Expanded(
               flex: 1,
               child: Container(
-                margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+                margin: const EdgeInsets.only(left: 20, right: 20, top: 30),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
                     _textInput(hint: "Enter your Email", icon: Icons.email),
                     _textInput(hint: "Password", icon: Icons.vpn_key),
                     Container(
-                      margin: EdgeInsets.only(top: 10),
+                      margin: const EdgeInsets.only(top: 10),
                       alignment: Alignment.centerRight,
-                      child: Text(
+                      child: const Text(
                         "Forgot Password?",
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     RichText(
                       text: TextSpan(children: [
-                        TextSpan(
+                        const TextSpan(
                             text: "Don't have an account ? ",
                             style: TextStyle(color: Colors.black)),
                         TextSpan(
@@ -62,12 +64,12 @@ class _LoginPageFourteenState extends State<LoginPageFourteen> {
 
   Widget _textInput({controller, hint, icon}) {
     return Container(
-      margin: EdgeInsets.only(top: 10),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.only(top: 10),
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         color: Colors.white,
       ),
-      padding: EdgeInsets.only(left: 10),
+      padding: const EdgeInsets.only(left: 10),
       child: TextFormField(
         controller: controller,
         decoration: InputDecoration(
@@ -81,9 +83,7 @@ class _LoginPageFourteenState extends State<LoginPageFourteen> {
 }
 
 class HeaderContainer extends StatelessWidget {
-  var text = "Login";
-
-  HeaderContainer(this.text);
+  const HeaderContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -94,14 +94,15 @@ class HeaderContainer extends StatelessWidget {
               colors: [orangeColors, orangeLightColors],
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter),
-          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(100))),
+          borderRadius:
+              const BorderRadius.only(bottomLeft: Radius.circular(100))),
       child: Stack(
         children: <Widget>[
-          Positioned(
+          const Positioned(
               bottom: 20,
               right: 20,
               child: Text(
-                text,
+                "Login",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               )),
           Center(

@@ -2,13 +2,13 @@ import '../icon/custome_icon.dart';
 import 'package:flutter/material.dart';
 
 //COLORS
-const Color profile_info_background = Color(0xFF3775FD);
-const Color profile_info_categories_background = Color(0xFFF6F5F8);
-const Color profile_info_address = Color(0xFF8D7AEE);
-const Color profile_info_privacy = Color(0xFFF369B7);
-const Color profile_info_general = Color(0xFFFFC85B);
-const Color profile_info_notification = Color(0xFF5DD1D3);
-const Color profile_item_color = Color(0xFFC4C5C9);
+const Color profileInfoBackground = Color(0xFF3775FD);
+const Color profileInfoCategoriesBackground = Color(0xFFF6F5F8);
+const Color profileInfoAddress = Color(0xFF8D7AEE);
+const Color profileInfoPrivacy = Color(0xFFF369B7);
+const Color profileInfoGeneral = Color(0xFFFFC85B);
+const Color profileInfoNotification = Color(0xFF5DD1D3);
+const Color profileItemColor = Color(0xFFC4C5C9);
 const String imagePath = 'assets/image';
 
 const String devMausam =
@@ -57,7 +57,7 @@ const List profileItems = [
 ];
 
 List<Catg> listProfileCategories = [
-  Catg(name: 'Wallet', icon: CustomIcon.account_balance_wallet, number: 0),
+  Catg(name: 'Wallet', icon: CustomIcon.accountBalanceWallet, number: 0),
   Catg(name: 'Delivery', icon: CustomIcon.truck, number: 0),
   Catg(name: 'Message', icon: CustomIcon.chat, number: 2),
   Catg(name: 'Service', icon: CustomIcon.money, number: 0),
@@ -65,7 +65,7 @@ List<Catg> listProfileCategories = [
 
 List<FurnitureCatg> furnitureCategoriesList = [
   FurnitureCatg(icon: Icons.desktop_windows, elivation: true),
-  FurnitureCatg(icon: CustomIcon.account_balance_wallet, elivation: false),
+  FurnitureCatg(icon: CustomIcon.accountBalanceWallet, elivation: false),
   FurnitureCatg(icon: Icons.security, elivation: false),
   FurnitureCatg(icon: CustomIcon.chat, elivation: false),
   FurnitureCatg(icon: CustomIcon.money, elivation: false),
@@ -75,25 +75,25 @@ List<ProfileMenu> profileMenuList = [
   ProfileMenu(
     title: 'Address',
     subTitle: 'Ensure your harvesting address',
-    iconColor: profile_info_address,
+    iconColor: profileInfoAddress,
     icon: Icons.location_on,
   ),
   ProfileMenu(
     title: 'Privacy',
     subTitle: 'System permission change',
-    iconColor: profile_info_privacy,
+    iconColor: profileInfoPrivacy,
     icon: Icons.lock,
   ),
   ProfileMenu(
     title: 'General',
     subTitle: 'Basic functional settings',
-    iconColor: profile_info_general,
+    iconColor: profileInfoGeneral,
     icon: Icons.layers,
   ),
   ProfileMenu(
     title: 'Notification',
     subTitle: 'Take over the news in time',
-    iconColor: profile_info_notification,
+    iconColor: profileInfoNotification,
     icon: Icons.notifications,
   ),
 ];

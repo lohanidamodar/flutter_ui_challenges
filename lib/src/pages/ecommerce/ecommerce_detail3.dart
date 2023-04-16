@@ -8,15 +8,17 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceDetailThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/ecommerce_detail3.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce_detail3.dart";
 
   final String image = images[1];
+
+   EcommerceDetailThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          Container(
+          SizedBox(
               height: double.infinity,
               child: PNetworkImage(
                 image,
@@ -32,16 +34,16 @@ class EcommerceDetailThreePage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
-                    child: Icon(Icons.arrow_back_ios),
                     color: Colors.white,
                     textColor: Colors.black,
                     minWidth: 0,
                     height: 40,
                     onPressed: () => Navigator.pop(context),
+                    child: const Icon(Icons.arrow_back_ios),
                   ),
                 ]),
               ),
-              Spacer(),
+              const Spacer(),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
@@ -52,12 +54,12 @@ class EcommerceDetailThreePage extends StatelessWidget {
                       const SizedBox(height: 30.0),
                       Expanded(
                         child: SingleChildScrollView(
-                          physics: BouncingScrollPhysics(),
+                          physics: const BouncingScrollPhysics(),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
                               ListTile(
-                                title: Text(
+                                title: const Text(
                                   "Docside",
                                   style: TextStyle(
                                       color: Colors.black,
@@ -65,7 +67,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                       fontSize: 28.0),
                                 ),
                                 trailing: IconButton(
-                                  icon: Icon(Icons.favorite_border),
+                                  icon: const Icon(Icons.favorite_border),
                                   onPressed: () {},
                                 ),
                               ),
@@ -78,7 +80,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                 ),
                               ),
                               ExpansionTile(
-                                title: Text(
+                                title: const Text(
                                   "Show Details",
                                   style: TextStyle(
                                       color: Colors.black,
@@ -88,7 +90,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                   Container(
                                     alignment: Alignment.topLeft,
                                     padding: const EdgeInsets.all(16.0),
-                                    child: Text(
+                                    child: const Text(
                                         "This is the details widget. Here you can see more details of the product"),
                                   )
                                 ],
@@ -100,14 +102,14 @@ class EcommerceDetailThreePage extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(32.0),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(20.0),
                               topRight: Radius.circular(20.0)),
                           color: Colors.grey.shade900,
                         ),
                         child: Row(
                           children: <Widget>[
-                            Text(
+                            const Text(
                               "\$35.99",
                               style: TextStyle(
                                   color: Colors.white,
@@ -115,7 +117,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                   fontSize: 18.0),
                             ),
                             const SizedBox(width: 20.0),
-                            Spacer(),
+                            const Spacer(),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 padding: const EdgeInsets.symmetric(
@@ -129,7 +131,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
-                                  Text(
+                                  const Text(
                                     "Add to Cart",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -138,15 +140,15 @@ class EcommerceDetailThreePage extends StatelessWidget {
                                   const SizedBox(width: 20.0),
                                   Container(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios,
-                                      color: Colors.orange,
-                                      size: 16.0,
-                                    ),
                                     decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius:
                                             BorderRadius.circular(10.0)),
+                                    child: const Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.orange,
+                                      size: 16.0,
+                                    ),
                                   )
                                 ],
                               ),

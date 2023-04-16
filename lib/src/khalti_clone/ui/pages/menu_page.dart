@@ -7,6 +7,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../res/constants.dart';
 
 class MenuPage extends StatelessWidget {
+  const MenuPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -29,7 +31,7 @@ class MenuPage extends StatelessWidget {
                         backgroundColor: Colors.white,
                         child: Image.asset(logo),
                       ),
-                      Positioned(
+                      const Positioned(
                           bottom: -5,
                           right: -5,
                           child: Icon(
@@ -38,24 +40,24 @@ class MenuPage extends StatelessWidget {
                           ))
                     ],
                   ),
-                  title: Text(
+                  title: const Text(
                     "Damodar Lohani",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0),
                   ),
-                  subtitle: Text(
+                  subtitle: const Text(
                     "981151121",
                     style: TextStyle(fontSize: 16.0, color: Colors.white),
                   ),
-                  trailing: Icon(
+                  trailing: const Icon(
                     Icons.keyboard_arrow_right,
                     color: Colors.white,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
+                const Padding(
+                  padding: EdgeInsets.symmetric(
                       vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
@@ -65,8 +67,8 @@ class MenuPage extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
+                const Padding(
+                  padding: EdgeInsets.symmetric(
                       vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
@@ -79,45 +81,45 @@ class MenuPage extends StatelessWidget {
               ],
             ),
           ),
-          ListTile(
+          const ListTile(
             title: Text("KYC Form"),
             leading: Icon(Icons.info),
           ),
-          ListTile(
+          const ListTile(
             title: Text("My Bookings"),
             leading: Icon(FontAwesomeIcons.calendarDay),
           ),
-          ListTile(
+          const ListTile(
             title: Text("My Purchases"),
             leading: Icon(FontAwesomeIcons.listOl),
           ),
-          ListTile(
+          const ListTile(
             title: Text("Transaction Limits"),
             leading: Icon(FontAwesomeIcons.chartLine),
           ),
-          ListTile(
+          const ListTile(
             title: Text("Coupan"),
             leading: Icon(Icons.card_giftcard),
           ),
-          Divider(),
-          ListTile(
+          const Divider(),
+          const ListTile(
             title: Text("Play Khalti Quiz"),
             leading: Icon(FontAwesomeIcons.brain),
           ),
-          ListTile(
+          const ListTile(
             title: Text("Khalti Points"),
             leading: Icon(FontAwesomeIcons.coins),
           ),
-          Divider(),
-          ListTile(
+          const Divider(),
+          const ListTile(
             title: Text("Settings"),
             leading: Icon(Icons.settings),
           ),
           ExpansionTile(
             backgroundColor: Colors.grey.shade100,
-            title: Text("Help & Support"),
-            leading: Icon(Icons.headset_mic),
-            children: <Widget>[
+            title: const Text("Help & Support"),
+            leading: const Icon(Icons.headset_mic),
+            children: const <Widget>[
               ListTile(
                 title: Text("FAQ"),
               ),
@@ -129,11 +131,11 @@ class MenuPage extends StatelessWidget {
               ),
             ],
           ),
-          ListTile(
+          const ListTile(
             title: Text("About"),
             leading: Icon(Icons.info),
           ),
-          ListTile(
+          const ListTile(
             title: Text("Logout"),
             leading: Icon(Icons.exit_to_app),
           ),
@@ -144,7 +146,7 @@ class MenuPage extends StatelessWidget {
               horizontal: 60.0,
             ),
             color: Colors.grey.shade200,
-            child: Text("2.20.00"),
+            child: const Text("2.20.00"),
           )
         ],
       ),

@@ -1,15 +1,8 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambikadulal
- * design Source: uiplace.com
-  */
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DiscoveryPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/discovery_page.dart";
-  DiscoveryPage();
+  static const String path = "lib/src/pages/misc/discovery_page.dart";
+  const DiscoveryPage({super.key});
 
   @override
   _DiscoveryPageState createState() => _DiscoveryPageState();
@@ -19,7 +12,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   BoxDecoration getBoxDecoration() {
     return BoxDecoration(
       color: Colors.white,
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(5),
           topRight: Radius.circular(5),
           bottomLeft: Radius.circular(5),
@@ -29,7 +22,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
           color: Colors.grey.withOpacity(0.5),
           spreadRadius: 1,
           blurRadius: 2,
-          offset: Offset(0, 1), // changes position of shadow
+          offset: const Offset(0, 1), // changes position of shadow
         ),
       ],
     );
@@ -39,9 +32,12 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
     return Expanded(
       child: TextButton(
         style: TextButton.styleFrom(
-          padding: EdgeInsets.all(0),
+          padding: const EdgeInsets.all(0),
         ),
         child: Container(
+          margin:
+              const EdgeInsets.only(left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
+          decoration: getBoxDecoration(),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -52,22 +48,22 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                     height: 80.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5.0,
                 ),
                 Text(
                   mainText,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 15.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5.0,
                 ),
                 Text(
                   subText,
-                  style: TextStyle(
+                  style: const TextStyle(
 //                              fontWeight: FontWeight.,
                     fontSize: 10.0,
                   ),
@@ -75,9 +71,6 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
               ],
             ),
           ),
-          margin:
-              EdgeInsets.only(left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
-          decoration: getBoxDecoration(),
         ),
         onPressed: () {},
       ),
@@ -85,10 +78,10 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   }
 
   BottomNavigationBarItem getBottomNavigationItem(
-      String title, IconData IconName) {
+      String title, IconData iconName) {
     return BottomNavigationBarItem(
       icon: Icon(
-        IconName,
+        iconName,
         size: 35.0,
       ),
       label: title,
@@ -101,13 +94,13 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Discovery",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
         ),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
+        padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
         height: MediaQuery.of(context).size.height,
         color: Colors.grey,
         child: Column(

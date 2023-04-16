@@ -9,19 +9,20 @@ import 'pages/login.dart';
 import 'util/constant.dart';
 
 class NicAsiaApp extends StatelessWidget {
-  static final String path = "lib/src/nic_asia_clone/nic_asia_app.dart";
+  static const String path = "lib/src/nic_asia_clone/nic_asia_app.dart";
+
+  const NicAsiaApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'NIC ASIA',
       theme: ThemeData(
-        primaryColor: primaryColor,
-        accentColor: primaryColorLight,
+        primaryColor: primaryColor, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: primaryColorLight),
       ),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (BuildContext context) => SafeArea(
+        '/': (BuildContext context) => const SafeArea(
               top: true,
               child: Login(),
             ),
@@ -31,9 +32,8 @@ class NicAsiaApp extends StatelessWidget {
             ),
       },
       onUnknownRoute: (RouteSettings settings) {
-        print('INSIDE Unknown routes');
         return MaterialPageRoute(
-          builder: (BuildContext context) => Login(),
+          builder: (BuildContext context) => const Login(),
         );
       },
     );

@@ -6,13 +6,15 @@
 import 'package:flutter/material.dart';
 
 class FancyAppbarAnimation extends StatefulWidget {
-  static final String path = "lib/src/pages/animations/anim3.dart";
+  static const String path = "lib/src/pages/animations/anim3.dart";
+
+  const FancyAppbarAnimation({super.key});
   @override
   _FancyAppbarAnimationState createState() => _FancyAppbarAnimationState();
 }
 
 class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
-  ScrollController _scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
   Color? appBarBackground;
   late double topPosition;
   @override
@@ -30,17 +32,19 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
 
   _onScroll() {
     if (_scrollController.offset > 50) {
-      if (topPosition < 0)
+      if (topPosition < 0) {
         setState(() {
           topPosition = -130 + _scrollController.offset;
           if (_scrollController.offset > 130) topPosition = 0;
         });
+      }
     } else {
-      if (topPosition > -80)
+      if (topPosition > -80) {
         setState(() {
           topPosition--;
           if (_scrollController.offset <= 0) topPosition = -80;
         });
+      }
     }
   }
 
@@ -57,7 +61,7 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                 Container(
                   padding: const EdgeInsets.only(left: 16.0, right: 50),
                   height: 190,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius:
                         BorderRadius.only(bottomRight: Radius.circular(30.0)),
                     color: Colors.white,
@@ -65,14 +69,14 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      const SizedBox(height: 70),
+                    children: const <Widget>[
+                      SizedBox(height: 70),
                       Text(
                         "Awesome and simple app bar hiding animation",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 24.0),
                       ),
-                      const SizedBox(height: 20.0),
+                      SizedBox(height: 20.0),
                       Text(
                         "AWESOME",
                         style: TextStyle(
@@ -118,29 +122,29 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   borderRadius:
-                      BorderRadius.only(bottomRight: Radius.circular(30.0)),
+                      const BorderRadius.only(bottomRight: Radius.circular(30.0)),
                   color: Colors.white.withOpacity(_getOpacity()),
                 ),
                 child: DefaultTextStyle(
-                  style: TextStyle(),
+                  style: const TextStyle(),
                   softWrap: false,
                   overflow: TextOverflow.ellipsis,
                   child: Semantics(
-                    child: Text(
+                    header: true,
+                    child: const Text(
                       'Awesome and simple app bar hiding animation',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold),
                     ),
-                    header: true,
                   ),
                 ),
               )),
           SizedBox(
             height: 80,
             child: AppBar(
-              iconTheme: IconThemeData(color: Colors.black),
+              iconTheme: const IconThemeData(color: Colors.black),
               elevation: 0,
               backgroundColor: Colors.transparent,
             ),

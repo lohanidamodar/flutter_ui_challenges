@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 
 class Intro5 extends StatefulWidget {
-  static final String path = "lib/src/pages/onboarding/intro5.dart";
+  static const String path = "lib/src/pages/onboarding/intro5.dart";
+
+  const Intro5({super.key});
   @override
   _Intro5State createState() => _Intro5State();
 }
@@ -21,7 +23,7 @@ class _Intro5State extends State<Intro5> {
       backgroundColor: brightYellow,
       body: Column(
         children: [
-          Flexible(
+          const Flexible(
             flex: 8,
             child: FlareActor(
               'assets/flare/bus.flr',
@@ -39,7 +41,7 @@ class _Intro5State extends State<Intro5> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50)),
               ),
-              child: Text(
+              child: const Text(
                 'Tap here to proceed',
                 style: TextStyle(color: Colors.black54),
               ),

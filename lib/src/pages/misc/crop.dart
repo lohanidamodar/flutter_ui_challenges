@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:crop/crop.dart';
 
 class CropPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/crop.dart";
+  static const String path = "lib/src/pages/misc/crop.dart";
+
+  const CropPage({super.key});
   @override
   _CropPageState createState() => _CropPageState();
 }
@@ -18,11 +20,12 @@ class _CropPageState extends State<CropPage> {
 
   void _cropImage() async {
     final cropped = await _controller.crop();
-    Navigator.of(context).push(
+    if(mounted) {
+      Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => Scaffold(
           appBar: AppBar(
-            title: Text('Crop Result'),
+            title: const Text('Crop Result'),
             centerTitle: true,
           ),
           body: Center(
@@ -34,6 +37,7 @@ class _CropPageState extends State<CropPage> {
         fullscreenDialog: true,
       ),
     );
+    }
   }
 
   @override
@@ -41,13 +45,13 @@ class _CropPageState extends State<CropPage> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Crop Demo'),
+        title: const Text('Crop Demo'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
             onPressed: _cropImage,
             tooltip: 'Crop',
-            icon: Icon(Icons.crop),
+            icon: const Icon(Icons.crop),
           )
         ],
       ),
@@ -62,7 +66,7 @@ class _CropPageState extends State<CropPage> {
           Row(
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.undo),
+                icon: const Icon(Icons.undo),
                 tooltip: 'Undo',
                 onPressed: () {
                   _controller.rotation = 0;
@@ -94,7 +98,7 @@ class _CropPageState extends State<CropPage> {
                 ),
               ),
               IconButton(
-                icon: Icon(Icons.aspect_ratio),
+                icon: const Icon(Icons.aspect_ratio),
                 tooltip: 'Aspect Ratio',
                 onPressed: () {},
               ),
@@ -108,14 +112,18 @@ class _CropPageState extends State<CropPage> {
 
 class CenteredRectangularSliderTrackShape extends RectangularSliderTrackShape {
   @override
-  void paint(PaintingContext context, ui.Offset offset,
-      {RenderBox? parentBox,
-      required SliderThemeData sliderTheme,
-      Animation<double>? enableAnimation,
-      ui.Offset? thumbCenter,
-      bool isEnabled: false,
-      bool isDiscrete: false,
-      ui.TextDirection? textDirection}) {
+  void paint(
+    PaintingContext context,
+    ui.Offset offset, {
+    required RenderBox parentBox,
+    required SliderThemeData sliderTheme,
+    required Animation<double> enableAnimation,
+    required ui.Offset thumbCenter,
+    required ui.TextDirection? textDirection,
+    ui.Offset? secondaryOffset,
+    bool isEnabled = false,
+    bool isDiscrete = false,
+  }) {
     // If the slider track height is less than or equal to 0, then it makes no
     // difference whether the track is painted or not, therefore the painting
     // can be a no-op.
@@ -132,12 +140,12 @@ class CenteredRectangularSliderTrackShape extends RectangularSliderTrackShape {
         begin: sliderTheme.disabledInactiveTrackColor,
         end: sliderTheme.inactiveTrackColor);
     final Paint activePaint = Paint()
-      ..color = activeTrackColorTween.evaluate(enableAnimation!)!;
+      ..color = activeTrackColorTween.evaluate(enableAnimation)!;
     final Paint inactivePaint = Paint()
       ..color = inactiveTrackColorTween.evaluate(enableAnimation)!;
 
     final Rect trackRect = getPreferredRect(
-      parentBox: parentBox!,
+      parentBox: parentBox,
       offset: offset,
       sliderTheme: sliderTheme,
       isEnabled: isEnabled,
@@ -161,14 +169,15 @@ class CenteredRectangularSliderTrackShape extends RectangularSliderTrackShape {
     // if (!rightTrackSegment.isEmpty)
     //   context.canvas.drawRect(rightTrackSegment, rightTrackPaint);
 
-    if (trackCenter.dx < thumbCenter!.dx) {
+    if (trackCenter.dx < thumbCenter.dx) {
       final Rect leftTrackSegment = Rect.fromLTRB(
           trackRect.left,
           trackRect.top,
           min(trackCenter.dx, thumbCenter.dx - thumbSize.width / 2),
           trackRect.bottom);
-      if (!leftTrackSegment.isEmpty)
+      if (!leftTrackSegment.isEmpty) {
         context.canvas.drawRect(leftTrackSegment, inactivePaint);
+      }
 
       final activeRect = Rect.fromLTRB(
           trackCenter.dx, trackRect.top, thumbCenter.dx, trackRect.bottom);

@@ -1,14 +1,10 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ProfileEightPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile8.dart";
+  static const String path = "lib/src/pages/profile/profile8.dart";
+
+  const ProfileEightPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,16 +27,16 @@ class ProfileEightPage extends StatelessWidget {
                 actions: <Widget>[
                   MaterialButton(
                     color: Colors.white,
-                    shape: CircleBorder(),
+                    shape: const CircleBorder(),
                     elevation: 0,
-                    child: Icon(Icons.edit),
+                    child: const Icon(Icons.edit),
                     onPressed: () {},
                   )
                 ],
               ),
               const SizedBox(height: 10.0),
-              UserInfo(),
-              UserInfo(),
+              const UserInfo(),
+              const UserInfo(),
             ],
           ),
         ));
@@ -48,16 +44,18 @@ class ProfileEightPage extends StatelessWidget {
 }
 
 class UserInfo extends StatelessWidget {
+  const UserInfo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Column(
         children: <Widget>[
           Container(
             padding: const EdgeInsets.only(left: 8.0, bottom: 4.0),
             alignment: Alignment.topLeft,
-            child: Text(
+            child: const Text(
               "User Information",
               style: TextStyle(
                 color: Colors.black87,
@@ -70,7 +68,7 @@ class UserInfo extends StatelessWidget {
           Card(
             child: Container(
               alignment: Alignment.topLeft,
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 children: <Widget>[
                   Column(
@@ -78,24 +76,24 @@ class UserInfo extends StatelessWidget {
                       ...ListTile.divideTiles(
                         color: Colors.grey,
                         tiles: [
-                          ListTile(
+                          const ListTile(
                             contentPadding: EdgeInsets.symmetric(
                                 horizontal: 12, vertical: 4),
                             leading: Icon(Icons.my_location),
                             title: Text("Location"),
                             subtitle: Text("Kathmandu"),
                           ),
-                          ListTile(
+                          const ListTile(
                             leading: Icon(Icons.email),
                             title: Text("Email"),
                             subtitle: Text("sudeptech@gmail.com"),
                           ),
-                          ListTile(
+                          const ListTile(
                             leading: Icon(Icons.phone),
                             title: Text("Phone"),
                             subtitle: Text("99--99876-56"),
                           ),
-                          ListTile(
+                          const ListTile(
                             leading: Icon(Icons.person),
                             title: Text("About Me"),
                             subtitle: Text(
@@ -137,12 +135,13 @@ class ProfileHeader extends StatelessWidget {
         Ink(
           height: 200,
           decoration: BoxDecoration(
-            image: DecorationImage(image: coverImage as ImageProvider<Object>, fit: BoxFit.cover),
+            image: DecorationImage(
+                image: coverImage as ImageProvider<Object>, fit: BoxFit.cover),
           ),
         ),
         Ink(
           height: 200,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.black38,
           ),
         ),
@@ -171,13 +170,13 @@ class ProfileHeader extends StatelessWidget {
               ),
               Text(
                 title,
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               if (subtitle != null) ...[
                 const SizedBox(height: 5.0),
                 Text(
                   subtitle!,
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               ]
             ],
@@ -211,9 +210,7 @@ class Avatar extends StatelessWidget {
       backgroundColor: borderColor,
       child: CircleAvatar(
         radius: radius,
-        backgroundColor: backgroundColor != null
-            ? backgroundColor
-            : Theme.of(context).primaryColor,
+        backgroundColor: backgroundColor ?? Theme.of(context).primaryColor,
         child: CircleAvatar(
           radius: radius - borderWidth,
           backgroundImage: image as ImageProvider<Object>?,

@@ -8,19 +8,21 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class CakePage extends StatelessWidget {
-  static final String path = "lib/src/pages/food/cake.dart";
+  static const String path = "lib/src/pages/food/cake.dart";
+
+  const CakePage({super.key});
   @override
   Widget build(BuildContext context) {
-    final Color primary = Color(0xff7b7517);
-    final Color background = Color(0xff2f2f4f);
-    final Color overlay = Color(0xff212129);
+    const Color primary = Color(0xff7b7517);
+    const Color background = Color(0xff2f2f4f);
+    const Color overlay = Color(0xff212129);
     return Scaffold(
       backgroundColor: background,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             color: Colors.white,
           ),
@@ -30,7 +32,7 @@ class CakePage extends StatelessWidget {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.favorite_border,
               color: Colors.white,
             ),
@@ -39,32 +41,32 @@ class CakePage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: Column(
             children: <Widget>[
               Text(
                 "Fruits Cake",
-                style: Theme.of(context).textTheme.headline6?.copyWith(
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     color: Colors.white,
                     fontSize: 24.0,
                     fontWeight: FontWeight.normal),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 "strawberry & kiwi special",
                 style: TextStyle(color: primary, fontSize: 16.0),
               ),
-              Container(
+              SizedBox(
                 height: 60.0,
                 child: ListView(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    SizedBox(width: 20.0),
+                    const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: EdgeInsets.symmetric(horizontal: 20.0),
-                      label: Text(
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      label: const Text(
                         "1 Kg",
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
@@ -74,10 +76,10 @@ class CakePage extends StatelessWidget {
                       onSelected: (val) {},
                       selectedColor: primary,
                     ),
-                    SizedBox(width: 20.0),
+                    const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: EdgeInsets.symmetric(horizontal: 20.0),
-                      label: Text(
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      label: const Text(
                         "2 Kg",
                         style: TextStyle(
                             color: primary, fontWeight: FontWeight.bold),
@@ -87,10 +89,10 @@ class CakePage extends StatelessWidget {
                       onSelected: (val) {},
                       selectedColor: primary,
                     ),
-                    SizedBox(width: 20.0),
+                    const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: EdgeInsets.symmetric(horizontal: 20.0),
-                      label: Text(
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      label: const Text(
                         "3 Kg",
                         style: TextStyle(
                             color: primary, fontWeight: FontWeight.bold),
@@ -100,10 +102,10 @@ class CakePage extends StatelessWidget {
                       onSelected: (val) {},
                       selectedColor: primary,
                     ),
-                    SizedBox(width: 20.0),
+                    const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: EdgeInsets.symmetric(horizontal: 20.0),
-                      label: Text(
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      label: const Text(
                         "4 Kg",
                         style: TextStyle(
                             color: primary, fontWeight: FontWeight.bold),
@@ -116,29 +118,29 @@ class CakePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20.0),
-              Container(
+              const SizedBox(height: 20.0),
+              SizedBox(
                 height: 180,
                 child: Row(
                   children: <Widget>[
-                    Expanded(
+                    const Expanded(
                       child: PNetworkImage(cake),
                     ),
                     Column(
                       children: <Widget>[
                         IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.add,
                             color: Colors.white,
                           ),
                           onPressed: () {},
                         ),
-                        CircleAvatar(
-                          child: Text("1"),
+                        const CircleAvatar(
                           backgroundColor: primary,
+                          child: Text("1"),
                         ),
                         IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.remove,
                             color: Colors.white,
                           ),
@@ -146,15 +148,15 @@ class CakePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                   ],
                 ),
               ),
               Container(
                   alignment: Alignment.centerRight,
-                  padding: EdgeInsets.only(right: 20.0),
+                  padding: const EdgeInsets.only(right: 20.0),
                   width: double.infinity,
-                  child: Text.rich(TextSpan(children: [
+                  child: const Text.rich(TextSpan(children: [
                     TextSpan(
                       text: "\$84.",
                       style: TextStyle(
@@ -167,9 +169,9 @@ class CakePage extends StatelessWidget {
                       style: TextStyle(color: Colors.white),
                     )
                   ]))),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 16.0),
+                margin: const EdgeInsets.symmetric(horizontal: 16.0),
                 decoration: BoxDecoration(
                   color: overlay,
                   borderRadius: BorderRadius.circular(10.0),
@@ -180,7 +182,7 @@ class CakePage extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           SizedBox(height: 20.0),
                           PNetworkImage(eggs),
                           SizedBox(height: 10.0),
@@ -191,12 +193,12 @@ class CakePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    VerticalDivider(
+                    const VerticalDivider(
                       color: Colors.grey,
                     ),
                     Expanded(
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           SizedBox(height: 10.0),
                           PNetworkImage(vanilla),
                           SizedBox(height: 10.0),
@@ -207,12 +209,12 @@ class CakePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    VerticalDivider(
+                    const VerticalDivider(
                       color: Colors.grey,
                     ),
                     Expanded(
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           SizedBox(height: 20.0),
                           PNetworkImage(sugar),
                           SizedBox(height: 10.0),
@@ -226,38 +228,36 @@ class CakePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20.0),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(width: 20.0),
-                    PNetworkImage(map),
-                    SizedBox(width: 20.0),
-                    Expanded(
-                      child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              "DELIVERY",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 16.0),
-                            ),
-                            Text(
-                              "45, Amarlands",
-                              style: TextStyle(color: Colors.grey.shade300),
-                            ),
-                            Text(
-                              "Nr. Hamer Road, London",
-                              style: TextStyle(color: Colors.grey.shade300),
-                            )
-                          ]),
-                    )
-                  ],
-                ),
-              ),
-              SizedBox(height: 10.0),
+              const SizedBox(height: 20.0),
               Row(
                 children: <Widget>[
+                  const SizedBox(width: 20.0),
+                  const PNetworkImage(map),
+                  const SizedBox(width: 20.0),
+                  Expanded(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const Text(
+                            "DELIVERY",
+                            style: TextStyle(
+                                color: Colors.white, fontSize: 16.0),
+                          ),
+                          Text(
+                            "45, Amarlands",
+                            style: TextStyle(color: Colors.grey.shade300),
+                          ),
+                          Text(
+                            "Nr. Hamer Road, London",
+                            style: TextStyle(color: Colors.grey.shade300),
+                          )
+                        ]),
+                  )
+                ],
+              ),
+              const SizedBox(height: 10.0),
+              Row(
+                children: const <Widget>[
                   SizedBox(width: 20.0),
                   Text(
                     "Ratings",
@@ -290,17 +290,17 @@ class CakePage extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(40.0)),
                   padding:
-                      EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
+                      const EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
                   backgroundColor: primary,
                 ),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "Make order now",
                   style: TextStyle(
                       color: Colors.white,
@@ -309,7 +309,7 @@ class CakePage extends StatelessWidget {
                       fontWeight: FontWeight.normal),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               )
             ],

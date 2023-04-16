@@ -6,6 +6,8 @@
 import 'package:flutter/material.dart';
 
 class BeautifulAlertDialog extends StatelessWidget {
+  const BeautifulAlertDialog({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -13,9 +15,9 @@ class BeautifulAlertDialog extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
         child: Container(
-          padding: EdgeInsets.only(right: 16.0),
+          padding: const EdgeInsets.only(right: 16.0),
           height: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(75),
@@ -24,7 +26,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   bottomRight: Radius.circular(10))),
           child: Row(
             children: <Widget>[
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
               CircleAvatar(
                 radius: 55,
                 backgroundColor: Colors.grey.shade200,
@@ -33,7 +35,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   width: 60,
                 ),
               ),
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -41,14 +43,14 @@ class BeautifulAlertDialog extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Alert!",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    SizedBox(height: 10.0),
-                    Flexible(
+                    const SizedBox(height: 10.0),
+                    const Flexible(
                       child: Text(
                           "Do you want to continue to turn off the services?"),
                     ),
-                    SizedBox(height: 10.0),
+                    const SizedBox(height: 10.0),
                     Row(
                       children: <Widget>[
                         Expanded(
@@ -58,13 +60,13 @@ class BeautifulAlertDialog extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0)),
                             ),
-                            child: Text("No"),
+                            child: const Text("No"),
                             onPressed: () {
                               Navigator.pop(context);
                             },
                           ),
                         ),
-                        SizedBox(width: 10.0),
+                        const SizedBox(width: 10.0),
                         Expanded(
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -73,7 +75,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0)),
                             ),
-                            child: Text("Yes"),
+                            child: const Text("Yes"),
                             onPressed: () {
                               Navigator.pop(context);
                             },

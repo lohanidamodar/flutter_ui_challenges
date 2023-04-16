@@ -7,6 +7,8 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NewHomePage extends StatefulWidget {
+  const NewHomePage({Key? key}) : super(key: key);
+
   @override
   _NewHomePageState createState() => _NewHomePageState();
 }
@@ -23,7 +25,7 @@ class _NewHomePageState extends State<NewHomePage>
   void initState() {
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 800),
+      duration: const Duration(milliseconds: 800),
     );
     dialogShowing = false;
     showNewUiDialog = false;
@@ -82,7 +84,7 @@ class _NewHomePageState extends State<NewHomePage>
                 children: <Widget>[
                   Expanded(
                     child: ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(10.0),
                         topRight: Radius.circular(10.0),
                       ),
@@ -116,41 +118,19 @@ class _NewHomePageState extends State<NewHomePage>
               ),
             ),
           ),
-          // if (announcements.length > 0) ...[
-          //   AnnouncementSlider(news: announcements),
-          //   const SizedBox(height: 16.0),
-          // ],
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                // CategoryItem(
-                //   icon: Icon(
-                //     FontAwesomeIcons.user,
-                //     color: Colors.indigo,
-                //   ),
-                //   title: "Profile",
-                //   onPressed: () {
-                //     (Provider.of<UserRepository>(context).user != null)
-                //         ? Navigator.pushNamed(context, "profile")
-                //         : Navigator.pushNamed(context, 'auth_home');
-                //   },
-                // ),
                 const SizedBox(height: 10.0),
                 CategoryItem(
                   title: "About",
-                  icon: Icon(
-                    FontAwesomeIcons.infoCircle,
+                  icon: const Icon(
+                    FontAwesomeIcons.circleInfo,
                     color: Colors.red,
                   ),
                   onPressed: () => Navigator.pushNamed(context, 'about'),
                 ),
-                // if (survey != null &&
-                //     user != null &&
-                //     !user.surveys.contains(survey?.id)) ...[
-                //   const SizedBox(height: 10.0),
-                //   SurveyWidget(survey: survey),
-                // ],
               ],
             ),
           ),
@@ -181,6 +161,9 @@ class CategoryItem extends StatelessWidget {
       highlightElevation: 0,
       elevation: 0,
       padding: const EdgeInsets.all(24.0),
+      color: Colors.white,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+      onPressed: onPressed as void Function()?,
       child: Row(
         children: <Widget>[
           if (icon != null) ...[
@@ -191,13 +174,10 @@ class CategoryItem extends StatelessWidget {
             title!,
             style: buttonText,
           ),
-          Spacer(),
-          Icon(Icons.keyboard_arrow_right),
+          const Spacer(),
+          const Icon(Icons.keyboard_arrow_right),
         ],
       ),
-      color: Colors.white,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      onPressed: onPressed as void Function()?,
     );
   }
 }
@@ -225,6 +205,9 @@ class FeaturedCategoryItem extends StatelessWidget {
       highlightElevation: 0,
       elevation: 0,
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 32.0),
+      color: Theme.of(context).primaryColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+      onPressed: onPressed as void Function()?,
       child: Row(
         children: <Widget>[
           if (icon != null) ...[
@@ -236,13 +219,10 @@ class FeaturedCategoryItem extends StatelessWidget {
             style: buttonText.copyWith(
                 fontSize: 24.0, fontWeight: FontWeight.w300),
           ),
-          Spacer(),
-          Icon(Icons.keyboard_arrow_right),
+          const Spacer(),
+          const Icon(Icons.keyboard_arrow_right),
         ],
       ),
-      color: Theme.of(context).primaryColor,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      onPressed: onPressed as void Function()?,
     );
   }
 }

@@ -8,10 +8,12 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ProfileElevenPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile11.dart";
+  static const String path = "lib/src/pages/profile/profile11.dart";
+
+  const ProfileElevenPage({super.key});
   @override
   Widget build(BuildContext context) {
-    var _itemHeader = TextStyle(
+    var itemHeader = TextStyle(
       color: Colors.grey.shade600,
       fontSize: 16.0,
     );
@@ -20,9 +22,9 @@ class ProfileElevenPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "my profile",
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         elevation: 0,
       ),
@@ -37,22 +39,22 @@ class ProfileElevenPage extends StatelessWidget {
                 children: [
                   //avatar
                   Ink(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
                           image: AssetImage(appLogo), fit: BoxFit.cover),
                     ),
                   ),
                   Align(
-                    alignment: Alignment(1.5, 1.5),
+                    alignment: const Alignment(1.5, 1.5),
                     child: MaterialButton(
                       minWidth: 0,
-                      child: Icon(Icons.camera_alt),
                       onPressed: () {},
                       textColor: Colors.white,
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).colorScheme.secondary,
                       elevation: 0,
-                      shape: CircleBorder(),
+                      shape: const CircleBorder(),
+                      child: const Icon(Icons.camera_alt),
                     ),
                   )
                 ],
@@ -62,23 +64,23 @@ class ProfileElevenPage extends StatelessWidget {
           ListTile(
             title: Text(
               "notifications",
-              style: _itemHeader,
+              style: itemHeader,
             ),
-            leading: Icon(Icons.notifications),
+            leading: const Icon(Icons.notifications),
           ),
           SwitchListTile(
             value: true,
-            title: Text("email notifications"),
+            title: const Text("email notifications"),
             onChanged: (value) {},
-            secondary: SizedBox(
+            secondary: const SizedBox(
               width: 10,
             ),
           ),
           SwitchListTile(
             value: false,
-            title: Text("push notifications"),
+            title: const Text("push notifications"),
             onChanged: (value) {},
-            secondary: SizedBox(
+            secondary: const SizedBox(
               width: 10,
             ),
           ),
@@ -86,16 +88,16 @@ class ProfileElevenPage extends StatelessWidget {
           ListTile(
             title: Text(
               "privacy",
-              style: _itemHeader,
+              style: itemHeader,
             ),
-            leading: Icon(Icons.person),
+            leading: const Icon(Icons.person),
           ),
           RadioListTile(
             value: true,
             groupValue: true,
-            title: Text("private"),
+            title: const Text("private"),
             onChanged: (dynamic value) {},
-            secondary: SizedBox(
+            secondary: const SizedBox(
               width: 10,
             ),
             controlAffinity: ListTileControlAffinity.trailing,
@@ -104,24 +106,24 @@ class ProfileElevenPage extends StatelessWidget {
             value: false,
             groupValue: true,
             controlAffinity: ListTileControlAffinity.trailing,
-            title: Text("public"),
+            title: const Text("public"),
             onChanged: (dynamic value) {},
-            secondary: SizedBox(
+            secondary: const SizedBox(
               width: 10,
             ),
           ),
           _buildDivider(),
-          ListTile(
+          const ListTile(
             title: Text("feedback"),
             subtitle: Text("we would love to hear your experience"),
             leading: Icon(Icons.feedback),
           ),
-          ListTile(
+          const ListTile(
             title: Text("terms and conditions"),
             subtitle: Text("legal, terms and conditions"),
             leading: Icon(FontAwesomeIcons.fileContract),
           ),
-          ListTile(
+          const ListTile(
             title: Text("logout"),
             subtitle: Text("you can logout from here"),
             leading: Icon(Icons.exit_to_app),
@@ -132,8 +134,8 @@ class ProfileElevenPage extends StatelessWidget {
   }
 
   Padding _buildDivider() {
-    return Padding(
-      padding: const EdgeInsets.only(left: 70),
+    return const Padding(
+      padding: EdgeInsets.only(left: 70),
       child: Divider(
         color: Colors.black,
       ),

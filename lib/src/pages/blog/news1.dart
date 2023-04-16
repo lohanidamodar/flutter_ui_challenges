@@ -13,7 +13,9 @@ import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class NewsHomeOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/blog/news1.dart";
+  static const String path = "lib/src/pages/blog/news1.dart";
+
+  const NewsHomeOnePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -132,12 +134,12 @@ class NewsHomeOnePage extends StatelessWidget {
             ),
             Expanded(
               child: Column(
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     "Lorem ipsum dolor sit amet, consecteutur adsd Ut adipisicing dolore incididunt minim",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 10.0),
+                  SizedBox(height: 10.0),
                   Text(
                       "Mollit aliquip fugiat veniam reprehenderit irure commodo eu aute ex commodo."),
                 ],
@@ -165,13 +167,13 @@ class NewsHomeOnePage extends StatelessWidget {
             textColor: Colors.white,
             color: Colors.teal.shade300,
             height: 0,
-            child: Icon(Icons.keyboard_arrow_right),
             minWidth: 0,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5.0),
             ),
             padding: const EdgeInsets.all(2.0),
             onPressed: () {},
+            child: const Icon(Icons.keyboard_arrow_right),
           ),
         ],
       ),
@@ -186,7 +188,7 @@ class NewsHomeOnePage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(
+          const Text(
             "Featured News",
             style: TextStyle(
                 fontSize: 28.0,
@@ -195,7 +197,7 @@ class NewsHomeOnePage extends StatelessWidget {
           ),
           Expanded(
             child: Swiper(
-              pagination: SwiperPagination(margin: const EdgeInsets.only()),
+              pagination: const SwiperPagination(margin: EdgeInsets.only()),
               viewportFraction: 0.9,
               itemCount: 4,
               loop: false,
@@ -211,7 +213,7 @@ class NewsHomeOnePage extends StatelessWidget {
                           flex: 3,
                           child: Text(
                             "A complete set of design elements, and their intitutive design.",
-                            style: Theme.of(context).textTheme.headline6,
+                            style: Theme.of(context).textTheme.titleLarge,
                           ),
                         ),
                         const SizedBox(width: 10.0),

@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ProfileTenPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile10.dart";
+  static const String path = "lib/src/pages/profile/profile10.dart";
+
+  const ProfileTenPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,11 +24,11 @@ class ProfileTenPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 250,
               child: Stack(
                 children: [
-                  Container(
+                  SizedBox(
                     height: double.infinity,
                     width: double.infinity,
                     child: Image.network(
@@ -35,19 +37,19 @@ class ProfileTenPage extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: Alignment(0, 0.8),
+                    alignment: const Alignment(0, 0.8),
                     child: MaterialButton(
                       minWidth: 0,
                       elevation: 0.5,
                       color: Colors.white,
-                      child: Icon(
-                        Icons.camera_alt_outlined,
-                        color: Colors.pink,
-                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       onPressed: () {},
+                      child: const Icon(
+                        Icons.camera_alt_outlined,
+                        color: Colors.pink,
+                      ),
                     ),
                   ),
                 ],
@@ -58,7 +60,7 @@ class ProfileTenPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  TextField(
+                  const TextField(
                     decoration: InputDecoration(
                       labelText: "Name",
                     ),
@@ -68,7 +70,7 @@ class ProfileTenPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10.0),
-                  TextField(
+                  const TextField(
                     decoration: InputDecoration(
                       labelText: "Profession",
                     ),
@@ -83,7 +85,7 @@ class ProfileTenPage extends StatelessWidget {
                   const SizedBox(height: 10.0),
                   Text(
                     "Interests",
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 5.0),
                   Wrap(
@@ -91,27 +93,27 @@ class ProfileTenPage extends StatelessWidget {
                     runSpacing: 10.0,
                     children: [
                       ChoiceChip(
-                        label: Text("Technology"),
+                        label: const Text("Technology"),
                         onSelected: (val) {},
                         selected: true,
                       ),
                       ChoiceChip(
-                        label: Text("Coding"),
+                        label: const Text("Coding"),
                         onSelected: (val) {},
                         selected: true,
                       ),
                       ChoiceChip(
-                        label: Text("Tutoring"),
+                        label: const Text("Tutoring"),
                         onSelected: (val) {},
                         selected: false,
                       ),
                       ChoiceChip(
-                        label: Text("Video making"),
+                        label: const Text("Video making"),
                         onSelected: (val) {},
                         selected: false,
                       ),
                       ChoiceChip(
-                        label: Text("Gaming"),
+                        label: const Text("Gaming"),
                         onSelected: (val) {},
                         selected: true,
                       ),
@@ -119,7 +121,6 @@ class ProfileTenPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 20.0),
                   MaterialButton(
-                    child: Text("Continue"),
                     color: Colors.pink,
                     onPressed: () {},
                     textColor: Colors.white,
@@ -127,6 +128,7 @@ class ProfileTenPage extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
                     ),
+                    child: const Text("Continue"),
                   ),
                 ],
               ),

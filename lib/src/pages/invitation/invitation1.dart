@@ -4,30 +4,33 @@ import 'package:flutter_ui_challenges/core/presentation/res/colors.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class InvitationPageOne extends StatelessWidget {
-  static final String path = "lib/src/pages/invitation/invitation1.dart";
-  final Color primary = Color(0xffE20056);
-  final Color border = Color(0xffE1DDDE);
-  final Color bg = Color(0xfffefefe);
+  static const String path = "lib/src/pages/invitation/invitation1.dart";
+  final Color primary = const Color(0xffE20056);
+  final Color border = const Color(0xffE1DDDE);
+  final Color bg = const Color(0xfffefefe);
   final List<bool> toggleIsSelected = [true, false, false];
+
+  InvitationPageOne({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(90.0),
         child: Container(
           height: 90,
           padding: const EdgeInsets.only(top: 20.0),
           alignment: Alignment.center,
           decoration: BoxDecoration(
               color: primary,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(20.0),
                 bottomRight: Radius.circular(20.0),
               )),
           child: ListTile(
             leading: IconButton(
               color: Colors.white,
-              icon: Icon(Icons.arrow_back_ios),
+              icon: const Icon(Icons.arrow_back_ios),
               onPressed: () {},
             ),
             trailing: TextButton(
@@ -35,9 +38,9 @@ class InvitationPageOne extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-              child: Text("Skip"),
+              child: const Text("Skip"),
             ),
-            title: Text(
+            title: const Text(
               "Birthday Party",
               style: TextStyle(
                   color: Colors.white,
@@ -46,7 +49,6 @@ class InvitationPageOne extends StatelessWidget {
             ),
           ),
         ),
-        preferredSize: Size.fromHeight(90.0),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -102,9 +104,9 @@ class InvitationPageOne extends StatelessWidget {
                             vertical: 4.0,
                             horizontal: 10.0,
                           ),
-                          child: Icon(Icons.keyboard_arrow_right),
                           color: primary,
                           onPressed: () {},
+                          child: const Icon(Icons.keyboard_arrow_right),
                         ),
                       ),
                       Positioned(
@@ -118,9 +120,9 @@ class InvitationPageOne extends StatelessWidget {
                             vertical: 4.0,
                             horizontal: 10.0,
                           ),
-                          child: Icon(Icons.keyboard_arrow_left),
                           color: primary,
                           onPressed: () {},
+                          child: const Icon(Icons.keyboard_arrow_left),
                         ),
                       ),
                     ],
@@ -136,33 +138,33 @@ class InvitationPageOne extends StatelessWidget {
                           color: primary,
                         ),
                         const SizedBox(width: 5.0),
-                        Text("75631"),
-                        Spacer(),
+                        const Text("75631"),
+                        const Spacer(),
                         Container(
                           height: 20.0,
                           width: 1.0,
                           color: Colors.grey,
                         ),
-                        Spacer(),
-                        Icon(FontAwesomeIcons.comment),
+                        const Spacer(),
+                        const Icon(FontAwesomeIcons.comment),
                         const SizedBox(width: 5.0),
-                        Text("213"),
-                        Spacer(),
+                        const Text("213"),
+                        const Spacer(),
                         Container(
                           height: 20.0,
                           width: 1.0,
                           color: Colors.grey,
                         ),
-                        Spacer(),
-                        Icon(FontAwesomeIcons.calendarTimes),
-                        Spacer(),
+                        const Spacer(),
+                        const Icon(FontAwesomeIcons.calendarXmark),
+                        const Spacer(),
                         Container(
                           height: 20.0,
                           width: 1.0,
                           color: Colors.grey,
                         ),
-                        Spacer(),
-                        Icon(Icons.location_on),
+                        const Spacer(),
+                        const Icon(Icons.location_on),
                       ],
                     ),
                   ),
@@ -176,16 +178,16 @@ class InvitationPageOne extends StatelessWidget {
                       child: Row(children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Text("Birthday Party"),
                             Text("Event Name"),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Text("2019/3/4"),
                             Text("Event Date")
                           ],
@@ -202,16 +204,16 @@ class InvitationPageOne extends StatelessWidget {
                       child: Row(children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Text("New Delhi"),
                             Text("Venue"),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[Text("14:33:00"), Text("Time")],
+                          children: const <Widget>[Text("14:33:00"), Text("Time")],
                         ),
                       ]),
                     ),
@@ -224,15 +226,15 @@ class InvitationPageOne extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
+      bottomNavigationBar: SizedBox(
         height: 50,
         child: Row(
           children: <Widget>[
             const SizedBox(width: 10.0),
             _buildButton("Accept", true),
-            Spacer(),
+            const Spacer(),
             _buildButton("Reject", false),
-            Spacer(),
+            const Spacer(),
             _buildButton("Maybe", false),
             const SizedBox(width: 10.0),
           ],

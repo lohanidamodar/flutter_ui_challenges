@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TodoHomeOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/todo/todo_home1.dart";
-  final Color color1 = Color(0xffFA696C);
-  final Color color2 = Color(0xffFA8165);
-  final Color color3 = Color(0xffFB8964);
+  static const String path = "lib/src/pages/todo/todo_home1.dart";
+  final Color color1 = const Color(0xffFA696C);
+  final Color color2 = const Color(0xffFA8165);
+  final Color color3 = const Color(0xffFB8964);
   final List tasks = [
     {
       "title": "Buy computer science book from Agarwal book store",
@@ -21,6 +21,8 @@ class TodoHomeOnePage extends StatelessWidget {
     {"title": "Pay telephone bill", "completed": false},
   ];
 
+  TodoHomeOnePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +31,7 @@ class TodoHomeOnePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             _buildHeader(),
-            SizedBox(height: 40.0),
+            const SizedBox(height: 40.0),
             Container(
               height: 50,
               padding: const EdgeInsets.only(left: 20.0),
@@ -38,14 +40,14 @@ class TodoHomeOnePage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Row(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Today",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 45.0,
                           fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(width: 100),
+                    const SizedBox(width: 100),
                     Text(
                       "Tomorrow",
                       style: TextStyle(
@@ -57,7 +59,7 @@ class TodoHomeOnePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             ...tasks.map((task) => Padding(
                 padding: const EdgeInsets.only(left: 10.0),
                 child: ListTile(
@@ -76,29 +78,29 @@ class TodoHomeOnePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
-        child: Container(
+        child: SizedBox(
           height: 50,
           child: Row(
             children: <Widget>[
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
               IconButton(
                 color: Colors.grey.shade700,
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
                   size: 30,
                 ),
                 onPressed: () {},
               ),
-              Spacer(),
+              const Spacer(),
               IconButton(
                 color: Colors.grey.shade700,
-                icon: Icon(
-                  FontAwesomeIcons.calendarAlt,
+                icon: const Icon(
+                  FontAwesomeIcons.calendarDays,
                   size: 30,
                 ),
                 onPressed: () {},
               ),
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
             ],
           ),
         ),
@@ -106,14 +108,14 @@ class TodoHomeOnePage extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         backgroundColor: color2,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: () {},
       ),
     );
   }
 
-  Container _buildHeader() {
-    return Container(
+  Widget _buildHeader() {
+    return SizedBox(
       height: 250,
       width: double.infinity,
       child: Stack(
@@ -130,7 +132,7 @@ class TodoHomeOnePage extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                         color: color2,
-                        offset: Offset(4.0, 4.0),
+                        offset: const Offset(4.0, 4.0),
                         blurRadius: 10.0)
                   ]),
             ),
@@ -143,7 +145,7 @@ class TodoHomeOnePage extends StatelessWidget {
                 gradient: LinearGradient(colors: [color3, color2]),
                 boxShadow: [
                   BoxShadow(
-                      color: color3, offset: Offset(1.0, 1.0), blurRadius: 4.0)
+                      color: color3, offset: const Offset(1.0, 1.0), blurRadius: 4.0)
                 ]),
           ),
           Positioned(
@@ -158,7 +160,7 @@ class TodoHomeOnePage extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                         color: color3,
-                        offset: Offset(1.0, 1.0),
+                        offset: const Offset(1.0, 1.0),
                         blurRadius: 4.0)
                   ]),
             ),
@@ -167,7 +169,7 @@ class TodoHomeOnePage extends StatelessWidget {
             margin: const EdgeInsets.only(top: 60, left: 30),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
+              children: const <Widget>[
                 Text(
                   "Himanshu",
                   style: TextStyle(

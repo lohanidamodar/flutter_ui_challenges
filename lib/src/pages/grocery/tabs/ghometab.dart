@@ -11,36 +11,38 @@ import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem1.dart
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/glistitem2.dart';
 
 class GroceryHomeTabView extends StatelessWidget {
+  const GroceryHomeTabView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
         _buildCategories(),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         _buildListHeader("NEW ARRIVALS", "SEE ALL"),
         _buildNewArrivalsRow(context),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         _buildListHeader("DAILY NEEDS", "SEE ALL"),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         InkWell(
             onTap: () => _openDetailPage(context),
-            child: GroceryListItemTwo(
+            child: const GroceryListItemTwo(
                 title: "Cabbage", image: cabbage, subtitle: "1 kg")),
         InkWell(
             onTap: () => _openDetailPage(context),
-            child: GroceryListItemTwo(
+            child: const GroceryListItemTwo(
                 title: "Red/yellow Capsicum",
                 image: capsicum,
                 subtitle: "1 kg")),
         InkWell(
             onTap: () => _openDetailPage(context),
-            child: GroceryListItemTwo(
+            child: const GroceryListItemTwo(
                 title: "Pineapple", image: pineapple, subtitle: "4 in a pack")),
       ],
     );
@@ -48,14 +50,14 @@ class GroceryHomeTabView extends StatelessWidget {
 
   Widget _buildNewArrivalsRow(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       height: 290.0,
       child: Row(
         children: <Widget>[
           Expanded(
             child: InkWell(
               onTap: () => _openDetailPage(context),
-              child: GroceryListItemOne(
+              child: const GroceryListItemOne(
                 image: mango,
                 subtitle: "1 kg",
                 title: "Local Mango",
@@ -65,7 +67,7 @@ class GroceryHomeTabView extends StatelessWidget {
           Expanded(
             child: InkWell(
               onTap: () => _openDetailPage(context),
-              child: GroceryListItemOne(
+              child: const GroceryListItemOne(
                 image: brocoli,
                 subtitle: "6 in a pack",
                 title: "Broccoli",
@@ -81,47 +83,46 @@ class GroceryHomeTabView extends StatelessWidget {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (BuildContext context) => GroceryDetailsPage()));
+            builder: (BuildContext context) => const GroceryDetailsPage()));
   }
 
   Widget _buildListHeader(String left, String right) {
-    return Container(
-        child: Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(left: 10),
-          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-          color: Colors.red,
-          child: Text(
-            left,
-            style: TextStyle(
-              color: Colors.white,
-            ),
+    Container(
+      margin: const EdgeInsets.only(left: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      color: Colors.red,
+      child: Text(
+        left,
+        style: const TextStyle(
+          color: Colors.white,
+        ),
+      ),
+    ),
+    Container(
+      margin: const EdgeInsets.only(right: 10.0),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+      child: InkWell(
+        onTap: () {},
+        child: Text(
+          right,
+          style: const TextStyle(
+            color: Colors.red,
           ),
         ),
-        Container(
-          margin: EdgeInsets.only(right: 10.0),
-          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-          child: InkWell(
-            onTap: () {},
-            child: Text(
-              right,
-              style: TextStyle(
-                color: Colors.red,
-              ),
-            ),
-          ),
-        ),
+      ),
+    ),
       ],
-    ));
+    );
   }
 
   Widget _buildCategories() {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
-        children: <Widget>[
+        children: const <Widget>[
           SizedBox(
             width: 10.0,
           ),

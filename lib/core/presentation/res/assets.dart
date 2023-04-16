@@ -133,7 +133,7 @@ const String pineapple =
 const String vegetables =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/grocery%2Fvegetables.png?alt=mediroom4ia';
 
-const INVITE_ILLUSTRATION =
+const inviteIllustration =
     "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Finvite.png?alt=media";
 
 const String bike =

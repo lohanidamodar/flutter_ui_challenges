@@ -10,7 +10,7 @@ class CustomInputField extends StatelessWidget {
   final String? textHint;
   final TextInputType keyboardType;
   final bool showInputText;
-  CustomInputField({
+  const CustomInputField({super.key, 
     this.textHint,
     this.showInputText = false,
     this.keyboardType = TextInputType.text,
@@ -18,7 +18,7 @@ class CustomInputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: TextStyle(
+      style: const TextStyle(
         color: Colors.black,
         fontWeight: FontWeight.bold,
       ),
@@ -26,9 +26,9 @@ class CustomInputField extends StatelessWidget {
       keyboardType: keyboardType,
       textAlign: TextAlign.center,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(vertical: 15.0),
-        border: OutlineInputBorder(
-          borderSide: new BorderSide(color: primaryColor),
+        contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+        border: const OutlineInputBorder(
+          borderSide: BorderSide(color: primaryColor),
         ),
         hintText: textHint,
       ),

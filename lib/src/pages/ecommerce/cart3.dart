@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 /// profile: https://github.com/ambikadulal
 
 class CartThreePage extends StatefulWidget {
-  static final String path = "lib/src/pages/ecommerece/cart3.dart";
+  static const String path = "lib/src/pages/ecommerece/cart3.dart";
+
+  const CartThreePage({super.key});
 
   @override
   _CartThreePageState createState() => _CartThreePageState();
@@ -14,31 +16,31 @@ class _CartThreePageState extends State<CartThreePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF21BFBD),
+      backgroundColor: const Color(0xFF21BFBD),
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 15.0, left: 10.0),
+            padding: const EdgeInsets.only(top: 15.0, left: 10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.arrow_back_ios),
+                  icon: const Icon(Icons.arrow_back_ios),
                   color: Colors.white,
                   onPressed: () {},
                 ),
-                Container(
+                SizedBox(
                     width: 125.0,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         IconButton(
-                          icon: Icon(Icons.filter_list),
+                          icon: const Icon(Icons.filter_list),
                           color: Colors.white,
                           onPressed: () {},
                         ),
                         IconButton(
-                          icon: Icon(Icons.menu),
+                          icon: const Icon(Icons.menu),
                           color: Colors.white,
                           onPressed: () {},
                         )
@@ -47,11 +49,11 @@ class _CartThreePageState extends State<CartThreePage> {
               ],
             ),
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Padding(
-            padding: EdgeInsets.only(left: 40.0),
+            padding: const EdgeInsets.only(left: 40.0),
             child: Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Text('Delicious',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -67,20 +69,20 @@ class _CartThreePageState extends State<CartThreePage> {
               ],
             ),
           ),
-          SizedBox(height: 40.0),
+          const SizedBox(height: 40.0),
           Container(
             height: MediaQuery.of(context).size.height - 185.0,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(75.0)),
             ),
             child: ListView(
               primary: false,
-              padding: EdgeInsets.only(left: 25.0, right: 20.0),
+              padding: const EdgeInsets.only(left: 25.0, right: 20.0),
               children: <Widget>[
                 Padding(
-                    padding: EdgeInsets.only(top: 45.0),
-                    child: Container(
+                    padding: const EdgeInsets.only(top: 45.0),
+                    child: SizedBox(
                         height: MediaQuery.of(context).size.height - 300.0,
                         child: ListView(children: [
                           _buildFoodItem('assets/fooditem/plate1.jpg',
@@ -105,7 +107,7 @@ class _CartThreePageState extends State<CartThreePage> {
                             width: 1.0),
                         borderRadius: BorderRadius.circular(10.0),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Icon(Icons.search, color: Colors.black),
                       ),
                     ),
@@ -119,7 +121,7 @@ class _CartThreePageState extends State<CartThreePage> {
                             width: 1.0),
                         borderRadius: BorderRadius.circular(10.0),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Icon(Icons.shopping_basket, color: Colors.black),
                       ),
                     ),
@@ -132,8 +134,8 @@ class _CartThreePageState extends State<CartThreePage> {
                               style: BorderStyle.solid,
                               width: 1.0),
                           borderRadius: BorderRadius.circular(10.0),
-                          color: Color(0xFF1C1428)),
-                      child: Center(
+                          color: const Color(0xFF1C1428)),
+                      child: const Center(
                           child: Text('Checkout',
                               style: TextStyle(
                                   fontFamily: 'Montserrat',
@@ -152,39 +154,38 @@ class _CartThreePageState extends State<CartThreePage> {
 
   Widget _buildFoodItem(String imgPath, String foodName, String price) {
     return Padding(
-        padding: EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+        padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
         child: InkWell(
             onTap: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
-                    child: Row(children: [
+                Row(children: [
                   Hero(
-                      tag: imgPath,
-                      child: Image(
-                          image: AssetImage(imgPath),
-                          fit: BoxFit.cover,
-                          height: 75.0,
-                          width: 75.0)),
-                  SizedBox(width: 10.0),
+                  tag: imgPath,
+                  child: Image(
+                      image: AssetImage(imgPath),
+                      fit: BoxFit.cover,
+                      height: 75.0,
+                      width: 75.0)),
+                  const SizedBox(width: 10.0),
                   Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(foodName,
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 17.0,
-                                fontWeight: FontWeight.bold)),
-                        Text(price,
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 15.0,
-                                color: Colors.grey))
-                      ])
-                ])),
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(foodName,
+                        style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.bold)),
+                    Text(price,
+                        style: const TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 15.0,
+                            color: Colors.grey))
+                  ])
+                ]),
                 IconButton(
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                     color: Colors.black,
                     onPressed: () {})
               ],

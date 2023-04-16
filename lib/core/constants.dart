@@ -6,7 +6,7 @@ const String githubRepo =
     "https://github.com/lohanidamodar/flutter_ui_challenges";
 const String youtubeChannel = "https://youtube.com/c/reactbits";
 
-const List<Developer> DEVELOPERS = [
+const List<Developer> developers = [
   Developer(
     name: "Damodar Lohani",
     profession: "Full Stack Developer",

@@ -24,9 +24,9 @@ class GroceryCategory extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             color: backgroundColor,
-            borderRadius: BorderRadius.all(Radius.circular(5.0))),
-        margin: EdgeInsets.symmetric(vertical: 10.0),
-        padding: EdgeInsets.all(10.0),
+            borderRadius: const BorderRadius.all(Radius.circular(5.0))),
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.all(10.0),
         width: 100,
         child: Column(
           children: <Widget>[PNetworkImage(image), Text(title)],

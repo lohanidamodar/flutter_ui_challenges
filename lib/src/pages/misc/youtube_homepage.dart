@@ -5,7 +5,9 @@
 import 'package:flutter/material.dart';
 
 class YoutubeHomePage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/youtube_homepage.dart";
+  static const String path = "lib/src/pages/misc/youtube_homepage.dart";
+
+  const YoutubeHomePage({super.key});
   @override
   _YoutubeHomePageState createState() => _YoutubeHomePageState();
 }
@@ -24,8 +26,8 @@ class _YoutubeHomePageState extends State<YoutubeHomePage> {
                 alignment: Alignment.bottomRight,
                 child: Container(
                   color: Colors.white,
-                  padding: EdgeInsets.all(4.0),
-                  child: Text(
+                  padding: const EdgeInsets.all(4.0),
+                  child: const Text(
                     "20:10",
                   ),
                 ),
@@ -33,30 +35,30 @@ class _YoutubeHomePageState extends State<YoutubeHomePage> {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 5.0,
         ),
         Container(
           color: Colors.black,
           child: ListTile(
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundImage: NetworkImage(
                   'https://cdn.logo.com/hotlink-ok/logo-social.png'),
             ),
             title: Text(
-              "$title",
+              title,
               textAlign: TextAlign.start,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white70,
               ),
             ),
-            subtitle: Text(
+            subtitle: const Text(
               "News Khabar- 2000 Views - 10 Hour",
               style: TextStyle(
                 color: Colors.white70,
               ),
             ),
-            trailing: Icon(Icons.more_vert, color: Colors.white),
+            trailing: const Icon(Icons.more_vert, color: Colors.white),
           ),
         ),
         SizedBox(
@@ -99,7 +101,7 @@ AppBar topbar = AppBar(
     fit: BoxFit.cover,
     width: 30.0,
   ),
-  actions: <Widget>[
+  actions: const <Widget>[
     Padding(
       padding: EdgeInsets.only(right: 20.0),
       child: Icon(

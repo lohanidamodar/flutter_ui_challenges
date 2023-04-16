@@ -1,14 +1,10 @@
-/**
- * Author: Siddhartha Joshi
- * profile: https://github.com/cimplesid
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ChatUi extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/chatui.dart";
+  static const String path = "lib/src/pages/misc/chatui.dart";
+
+  const ChatUi({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,24 +40,24 @@ class ChatUi extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             friend.name,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18.0,
                             ),
                           ),
-                          SizedBox(width: 6.0),
+                          const SizedBox(width: 6.0),
                           Text(
                             friend.msgTime,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white30,
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(height: 10.0),
+                      const SizedBox(height: 10.0),
                       Text(
                         friend.message,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 16.0,
                         ),
@@ -75,26 +71,26 @@ class ChatUi extends StatelessWidget {
                       width: 42.0,
                       height: 42.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF414350),
+                        color: const Color(0xFF414350),
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       child: IconButton(
-                        color: Color(0xFF5791FB),
-                        icon: Icon(Icons.call),
+                        color: const Color(0xFF5791FB),
+                        icon: const Icon(Icons.call),
                         onPressed: () {},
                       ),
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                     Container(
                       width: 42.0,
                       height: 42.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF414350),
+                        color: const Color(0xFF414350),
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       child: IconButton(
-                        color: Color(0xFF5791FB),
-                        icon: Icon(Icons.videocam),
+                        color: const Color(0xFF5791FB),
+                        icon: const Icon(Icons.videocam),
                         onPressed: () {},
                       ),
                     ),
@@ -118,11 +114,11 @@ class ChatUi extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: Color(0xFF363846),
+      backgroundColor: const Color(0xFF363846),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 20.0),
             child: Text(
               'Chats',
@@ -137,9 +133,9 @@ class ChatUi extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Container(
               decoration: BoxDecoration(
-                color: Color(0xFF414350),
+                color: const Color(0xFF414350),
                 borderRadius: BorderRadius.circular(5.0),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black54,
                     offset: Offset(0.0, 1.5),
@@ -189,8 +185,8 @@ class ChatUi extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
             child: Text(
               'Newsfeed',
               style: TextStyle(
@@ -199,8 +195,8 @@ class ChatUi extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
             child: TextField(
               decoration: InputDecoration(
                   hintText: 'Search your friends...',

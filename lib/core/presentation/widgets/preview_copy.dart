@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -11,7 +9,7 @@ import '../../constants.dart';
 import 'code_view.dart';
 import 'keep_alive.dart';
 
-const _TABS = <Widget>[
+const _tabs = <Widget>[
   Tab(
     child: ListTile(
       leading: Icon(
@@ -50,21 +48,21 @@ class DesignPreviewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: _TABS.length,
+      length: _tabs.length,
       child: Scaffold(
         appBar: AppBar(
           title: Text(title),
           actions: <Widget>[
             IconButton(
-              icon: Icon(FontAwesomeIcons.shareSquare),
+              icon: const Icon(FontAwesomeIcons.shareFromSquare),
               tooltip: "Open full preview",
               onPressed: () {
                 Share.share('$githubRepo/blob/master/$path');
               },
             )
           ],
-          bottom: TabBar(
-            tabs: _TABS,
+          bottom: const TabBar(
+            tabs: _tabs,
           ),
         ),
         body: TabBarView(

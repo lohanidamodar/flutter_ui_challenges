@@ -5,6 +5,8 @@ import '../widgets/title_large.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
+  const Profile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -18,7 +20,7 @@ class Profile extends StatelessWidget {
         child: Column(
           //mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: const <Widget>[
             TitleLarge(
               title: 'Center',
             ),

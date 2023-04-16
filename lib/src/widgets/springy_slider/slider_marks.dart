@@ -14,7 +14,7 @@ class SliderMarks extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  SliderMarks({
+  const SliderMarks({super.key, 
     this.markCount,
     this.markColor,
     this.backgroundColor,
@@ -25,7 +25,7 @@ class SliderMarks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter: new SliderMarksPainter(
+      painter: SliderMarksPainter(
         markCount: markCount,
         markColor: markColor!,
         backgroundColor: backgroundColor!,
@@ -61,12 +61,12 @@ class SliderMarksPainter extends CustomPainter {
     this.paddingTop,
     this.paddingBottom,
     this.paddingRight,
-  })  : markPaint = new Paint()
+  })  : markPaint = Paint()
           ..color = markColor
           ..strokeWidth = markThickness
           ..style = PaintingStyle.stroke
           ..strokeCap = StrokeCap.round,
-        backgroundPaint = new Paint()
+        backgroundPaint = Paint()
           ..color = backgroundColor
           ..style = PaintingStyle.fill;
 
@@ -96,8 +96,8 @@ class SliderMarksPainter extends CustomPainter {
       final markY = i * gap + paddingTop!;
 
       canvas.drawLine(
-        new Offset(size.width - paddingRight! - markWidth!, markY),
-        new Offset(size.width - paddingRight!, markY),
+        Offset(size.width - paddingRight! - markWidth!, markY),
+        Offset(size.width - paddingRight!, markY),
         markPaint,
       );
     }

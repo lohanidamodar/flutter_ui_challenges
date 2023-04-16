@@ -5,12 +5,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class DashboardThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/dashboard/dash3.dart";
+  static const String path = "lib/src/pages/dashboard/dash3.dart";
   final String avatar = avatars[0];
-  final TextStyle whiteText = TextStyle(color: Colors.white);
+  final TextStyle whiteText = const TextStyle(color: Colors.white);
+
+  DashboardThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +27,7 @@ class DashboardThreePage extends StatelessWidget {
       unselectedItemColor: Colors.grey,
       currentIndex: 0,
       onTap: (i) {},
-      items: [
+      items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
           label: "Home",
@@ -54,8 +55,8 @@ class DashboardThreePage extends StatelessWidget {
         children: <Widget>[
           _buildHeader(),
           const SizedBox(height: 20.0),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Text(
               "Appointments",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
@@ -101,11 +102,11 @@ class DashboardThreePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    title: Text("Today"),
-                    subtitle: Text("18 patients"),
+                    title: const Text("Today"),
+                    subtitle: const Text("18 patients"),
                   ),
                 ),
-                VerticalDivider(),
+                const VerticalDivider(),
                 Expanded(
                   child: ListTile(
                     leading: Container(
@@ -140,8 +141,8 @@ class DashboardThreePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    title: Text("Canceled"),
-                    subtitle: Text("7 patients"),
+                    title: const Text("Canceled"),
+                    subtitle: const Text("7 patients"),
                   ),
                 ),
               ],
@@ -215,7 +216,7 @@ class DashboardThreePage extends StatelessWidget {
   Container _buildHeader() {
     return Container(
       padding: const EdgeInsets.fromLTRB(0, 50.0, 0, 32.0),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(20.0),
           bottomRight: Radius.circular(20.0),
@@ -261,7 +262,10 @@ class DashboardThreePage extends StatelessWidget {
   }
 
   Container _buildTile(
-      {Color? color, IconData? icon, required String title, required String data}) {
+      {Color? color,
+      IconData? icon,
+      required String title,
+      required String data}) {
     return Container(
       padding: const EdgeInsets.all(8.0),
       height: 150.0,

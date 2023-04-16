@@ -9,6 +9,8 @@ import 'screens/homapage.dart';
 
 class WalletAppClone extends StatelessWidget {
   static const String path = 'lib/src/walletapp_ui/main.dart';
+
+  const WalletAppClone({super.key});
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -16,21 +18,23 @@ class WalletAppClone extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WalletApp(),
+      home: const WalletApp(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class WalletApp extends StatefulWidget {
+  const WalletApp({super.key});
+
   @override
   _WalletAppState createState() => _WalletAppState();
 }
 
 class _WalletAppState extends State<WalletApp> {
   var screens = [
-    HomePage(),
-    CardPage(),
+    const HomePage(),
+    const CardPage(),
   ];
 
   int selectedTab = 0;
@@ -42,8 +46,7 @@ class _WalletAppState extends State<WalletApp> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.credit_card), label: "Card"),
+          BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: "Card"),
         ],
         onTap: (index) {
           setState(() {

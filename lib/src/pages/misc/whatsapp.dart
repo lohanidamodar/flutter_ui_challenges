@@ -6,15 +6,17 @@
 import 'package:flutter/material.dart';
 
 class WhatsAppClone extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/whatsapp.dart";
+  static const String path = "lib/src/pages/misc/whatsapp.dart";
+
+  const WhatsAppClone({super.key});
 
   @override
   _WhatsAppCloneState createState() => _WhatsAppCloneState();
 }
 
 class _WhatsAppCloneState extends State<WhatsAppClone> {
-  Color mainColor = Color(0xFF177767);
-  var containerRadius = Radius.circular(30.0);
+  Color mainColor = const Color(0xFF177767);
+  var containerRadius = const Radius.circular(30.0);
   List<String> imageUrl = [
     "https://cdn.pixabay.com/photo/2019/08/06/08/26/man-4387721__340.jpg",
     "https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113__340.png",
@@ -33,22 +35,22 @@ class _WhatsAppCloneState extends State<WhatsAppClone> {
       backgroundColor: mainColor,
       appBar: AppBar(
         elevation: 0.0,
-        title: Text("WhatsApp Clone"),
+        title: const Text("WhatsApp Clone"),
         backgroundColor: mainColor,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_horiz),
+            icon: const Icon(Icons.more_horiz),
           ),
         ],
       ),
       body: Column(
         children: [
-          Container(
+          SizedBox(
             height: 100.0,
             child: Padding(
               padding:
@@ -109,12 +111,12 @@ Widget storyButton(String imgUrl, String userName) {
           backgroundImage: NetworkImage(imgUrl),
           radius: 26.0,
         ),
-        SizedBox(
+        const SizedBox(
           height: 5.0,
         ),
         Text(
           userName,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ],
     ),
@@ -135,7 +137,7 @@ Widget chatTile(
             backgroundImage: NetworkImage(imgUrl),
             radius: 28.0,
           ),
-          SizedBox(
+          const SizedBox(
             width: 8.0,
           ),
           Expanded(
@@ -148,7 +150,7 @@ Widget chatTile(
                     Expanded(
                       child: Text(
                         userName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.w500,
                         ),
@@ -157,20 +159,20 @@ Widget chatTile(
                     Text(date),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5.0,
                 ),
                 Row(
                   children: [
                     Expanded(child: Text(userName)),
                     if (seen)
-                      Icon(
+                      const Icon(
                         Icons.check_circle,
                         size: 18.0,
                         color: Colors.green,
                       ),
                     if (!seen)
-                      Icon(
+                      const Icon(
                         Icons.check_circle_outline,
                         color: Colors.grey,
                         size: 18.0,

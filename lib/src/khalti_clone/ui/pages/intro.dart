@@ -8,6 +8,8 @@ import '../../res/colors.dart';
 import '../../res/constants.dart';
 
 class IntroPage extends StatefulWidget {
+  const IntroPage({super.key});
+
   @override
   _IntroPageState createState() => _IntroPageState();
 }
@@ -41,7 +43,7 @@ class _IntroPageState extends State<IntroPage> {
                 });
               },
               itemBuilder: (context, index) => _buildPage(context, index),
-              pagination: SwiperPagination(
+              pagination: const SwiperPagination(
                   builder: DotSwiperPaginationBuilder(
                       activeColor: Colors.white,
                       color: Colors.white,
@@ -80,7 +82,7 @@ class _IntroPageState extends State<IntroPage> {
               if (!_isFirstPage())
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back,
                     size: 20.0,
                   ),
@@ -88,7 +90,7 @@ class _IntroPageState extends State<IntroPage> {
                     _controller.previous();
                   },
                 ),
-              if (!_isFirstPage()) Spacer(),
+              if (!_isFirstPage()) const Spacer(),
               IconButton(
                 color: Colors.white,
                 icon: Icon(
@@ -98,11 +100,11 @@ class _IntroPageState extends State<IntroPage> {
                 onPressed: () =>
                     Navigator.pushReplacementNamed(context, 'register'),
               ),
-              if (!_isLastPage()) Spacer(),
+              if (!_isLastPage()) const Spacer(),
               if (!_isLastPage())
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_forward,
                     size: 20.0,
                   ),
@@ -128,7 +130,7 @@ class _IntroPageState extends State<IntroPage> {
           const SizedBox(height: 60.0),
           Text(
             introItems[index].title!,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.white,
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold),
@@ -137,15 +139,14 @@ class _IntroPageState extends State<IntroPage> {
           Text(
             introItems[index].subtitle!,
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 18.0),
+            style: const TextStyle(color: Colors.white, fontSize: 18.0),
           ),
           const SizedBox(height: 20.0),
           Expanded(
-            child: Container(
-                child: Image.asset(
+            child: Image.asset(
               introItems[index].image!,
               fit: BoxFit.contain,
-            )),
+            ),
           ),
           const SizedBox(height: 20.0),
           //image

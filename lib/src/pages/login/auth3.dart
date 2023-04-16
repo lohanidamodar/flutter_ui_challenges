@@ -8,7 +8,9 @@ import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AuthThreePage extends StatefulWidget {
-  static final String path = "lib/src/pages/login/auth3.dart";
+  static const String path = "lib/src/pages/login/auth3.dart";
+
+  const AuthThreePage({super.key});
 
   @override
   _AuthThreePageState createState() => _AuthThreePageState();
@@ -30,7 +32,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(room4),
           fit: BoxFit.cover,
@@ -45,7 +47,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                 const SizedBox(height: kToolbarHeight + 40),
                 Expanded(
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text(
                         "Welcome",
                         style: TextStyle(
@@ -54,7 +56,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                           fontSize: 30.0,
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      SizedBox(height: 10.0),
                       Text(
                         "Welcome to this awesome login app. \n You are awesome",
                         style: TextStyle(
@@ -80,7 +82,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                         ),
-                        child: Text("Login"),
+                        child: const Text("Login"),
                         onPressed: () {
                           setState(() {
                             formVisible = true;
@@ -100,7 +102,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                         ),
-                        child: Text("Signup"),
+                        child: const Text("Signup"),
                         onPressed: () {
                           setState(() {
                             formVisible = true;
@@ -115,15 +117,15 @@ class _AuthThreePageState extends State<AuthThreePage> {
                 const SizedBox(height: 40.0),
                 OutlinedButton.icon(
                   style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.red),
+                    side: const BorderSide(color: Colors.red),
                     backgroundColor: Colors.red,
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                   ),
-                  icon: Icon(FontAwesomeIcons.google),
-                  label: Text("Continue with Google"),
+                  icon: const Icon(FontAwesomeIcons.google),
+                  label: const Text("Continue with Google"),
                   onPressed: () {},
                 ),
                 const SizedBox(height: 20.0),
@@ -131,7 +133,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
             ),
           ),
           AnimatedSwitcher(
-            duration: Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 200),
             child: (!formVisible)
                 ? null
                 : Container(
@@ -154,7 +156,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0)),
                               ),
-                              child: Text("Login"),
+                              child: const Text("Login"),
                               onPressed: () {
                                 setState(() {
                                   _formsIndex = 1;
@@ -173,7 +175,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0)),
                               ),
-                              child: Text("Signup"),
+                              child: const Text("Signup"),
                               onPressed: () {
                                 setState(() {
                                   _formsIndex = 2;
@@ -183,7 +185,7 @@ class _AuthThreePageState extends State<AuthThreePage> {
                             const SizedBox(width: 10.0),
                             IconButton(
                               color: Colors.white,
-                              icon: Icon(Icons.clear),
+                              icon: const Icon(Icons.clear),
                               onPressed: () {
                                 setState(() {
                                   formVisible = false;
@@ -192,12 +194,10 @@ class _AuthThreePageState extends State<AuthThreePage> {
                             )
                           ],
                         ),
-                        Container(
-                          child: AnimatedSwitcher(
-                            duration: Duration(milliseconds: 300),
-                            child:
-                                _formsIndex == 1 ? LoginForm() : SignupForm(),
-                          ),
+                        AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 300),
+                          child:
+                              _formsIndex == 1 ? const LoginForm() : const SignupForm(),
                         )
                       ],
                     ),
@@ -226,14 +226,14 @@ class LoginForm extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(16.0),
         children: <Widget>[
-          TextField(
+          const TextField(
             decoration: InputDecoration(
               hintText: "Enter email",
               border: OutlineInputBorder(),
             ),
           ),
           const SizedBox(height: 10.0),
-          TextField(
+          const TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Enter password",
@@ -250,7 +250,7 @@ class LoginForm extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
               ),
             ),
-            child: Text("Login"),
+            child: const Text("Login"),
             onPressed: () {},
           ),
         ],
@@ -276,14 +276,14 @@ class SignupForm extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(16.0),
         children: <Widget>[
-          TextField(
+          const TextField(
             decoration: InputDecoration(
               hintText: "Enter email",
               border: OutlineInputBorder(),
             ),
           ),
           const SizedBox(height: 10.0),
-          TextField(
+          const TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Enter password",
@@ -291,7 +291,7 @@ class SignupForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10.0),
-          TextField(
+          const TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Confirm password",
@@ -308,7 +308,7 @@ class SignupForm extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
               ),
             ),
-            child: Text("Signup"),
+            child: const Text("Signup"),
             onPressed: () {},
           ),
         ],

@@ -22,14 +22,15 @@ class SpringySlider extends StatefulWidget {
   final Color? positiveColor;
   final Color? negativeColor;
 
-  SpringySlider({
+  const SpringySlider({
+    super.key,
     this.markCount,
     this.positiveColor,
     this.negativeColor,
   });
 
   @override
-  _SpringySliderState createState() => new _SpringySliderState();
+  _SpringySliderState createState() => _SpringySliderState();
 }
 
 class _SpringySliderState extends State<SpringySlider>
@@ -42,7 +43,7 @@ class _SpringySliderState extends State<SpringySlider>
   @override
   void initState() {
     super.initState();
-    sliderController = new SpringySliderController(
+    sliderController = SpringySliderController(
       sliderPercent: 0.5,
       vsync: this,
     )..addListener(() {
@@ -52,10 +53,7 @@ class _SpringySliderState extends State<SpringySlider>
 
   @override
   Widget build(BuildContext context) {
-    double? sliderPercent = sliderController!.sliderValue;
-    if (sliderController!.state == SpringySliderState.springing) {
-      sliderPercent = sliderController!.springingPercent;
-    }
+    if (sliderController!.state == SpringySliderState.springing) {}
 
     return SliderDragger(
       sliderController: sliderController,
@@ -82,7 +80,7 @@ class _SpringySliderState extends State<SpringySlider>
               paddingBottom: paddingBottom,
             ),
           ),
-          new SliderPoints(
+          SliderPoints(
             sliderController: sliderController,
             paddingTop: paddingTop,
             paddingBottom: paddingBottom,

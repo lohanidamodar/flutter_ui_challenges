@@ -8,27 +8,29 @@ import '../../util/constant.dart';
 import '../../widget/login/custome_input.dart';
 
 class LoginInputSection extends StatelessWidget {
+  const LoginInputSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Material(
-      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      borderRadius: const BorderRadius.all(Radius.circular(10.0)),
       elevation: 3.0,
       child: Wrap(
         children: <Widget>[
           Container(
             //padding: EdgeInsets.symmetric(horizontal: 25.0),
             width: deviceSize.width * 0.9,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(5.0)),
             ),
             child: Column(
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       SizedBox(
                         height: 25.0,
                       ),
@@ -47,7 +49,7 @@ class LoginInputSection extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 3.0,
                 ),
                 Row(
@@ -61,7 +63,7 @@ class LoginInputSection extends StatelessWidget {
                         onChanged: (bool? value) {},
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Remember mobile number',
                       style: TextStyle(
                         color: primaryColorLight,
@@ -70,7 +72,7 @@ class LoginInputSection extends StatelessWidget {
                   ],
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 25.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Column(
                     children: <Widget>[
                       MaterialButton(
@@ -83,7 +85,7 @@ class LoginInputSection extends StatelessWidget {
                         child: Row(
                           children: <Widget>[
                             SizedBox(width: deviceSize.width * 0.25),
-                            Text(
+                            const Text(
                               'Log in',
                               style: TextStyle(
                                 fontSize: 20.0,
@@ -99,13 +101,13 @@ class LoginInputSection extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15.0,
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
+                        children: const <Widget>[
                           Text(
                             'Reset Device',
                             style: TextStyle(
@@ -120,7 +122,7 @@ class LoginInputSection extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25.0,
                       )
                     ],

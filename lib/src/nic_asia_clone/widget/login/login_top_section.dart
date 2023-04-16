@@ -4,15 +4,16 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../../util/constant.dart';
 
 class LoginTopSection extends StatelessWidget {
+  const LoginTopSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: const EdgeInsets.symmetric(
         horizontal: 20.0,
       ),
       decoration: BoxDecoration(
@@ -25,16 +26,14 @@ class LoginTopSection extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
-          Container(
-            child: Image.asset('assets/nicasiaassets/brand_alternate.png'),
-          ),
-          SizedBox(
+          Image.asset('assets/nicasiaassets/brand_alternate.png'),
+          const SizedBox(
             height: 15.0,
           ),
-          Container(
+          SizedBox(
             height: deviceSize.height < 700
                 ? deviceSize.height * 0.19
                 : deviceSize.height * 0.18,
@@ -47,12 +46,12 @@ class LoginTopSection extends StatelessWidget {
                             '$path${item['name']}.png',
                             height: 50.0,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10.0,
                           ),
                           Text(
                             item['title'],
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                         ],
                       ))

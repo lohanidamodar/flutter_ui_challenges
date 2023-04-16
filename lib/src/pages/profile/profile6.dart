@@ -10,8 +10,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class ProfileSixPage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile6.dart";
-  ProfileSixPage(this.dev);
+  static const String path = "lib/src/pages/profile/profile6.dart";
+  const ProfileSixPage(this.dev, {super.key});
 
   final DEV dev;
 
@@ -40,7 +40,7 @@ class ProfileSixPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(20.0),
             ),
           ),
-          child: Text(
+          child: const Text(
             'Back',
             style: TextStyle(color: Colors.white70),
           ),
@@ -76,13 +76,13 @@ class ProfileSixPage extends StatelessWidget {
         children: <Widget>[
           Text(
             dev.firstName + dev.lastName,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 30.0,
             ),
           ),
-          Text('\n'),
+          const Text('\n'),
           Text(
             dev.location,
             style: TextStyle(
@@ -112,7 +112,7 @@ class ProfileSixPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 16.0),
       child: SizedBox.fromSize(
-        size: Size.fromHeight(245.0),
+        size: const Size.fromHeight(245.0),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -134,7 +134,7 @@ class ProfileSixPage extends StatelessWidget {
         fit: StackFit.expand,
         children: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               size: 50.0,
             ),
@@ -155,7 +155,7 @@ class ProfileSixPage extends StatelessWidget {
 }
 
 class VideoCard extends StatelessWidget {
-  VideoCard(this.video);
+  const VideoCard(this.video, {super.key});
 
   final Video video;
 
@@ -163,7 +163,7 @@ class VideoCard extends StatelessWidget {
     return BoxDecoration(
       color: Colors.white.withOpacity(0.4),
       borderRadius: BorderRadius.circular(10.0),
-      boxShadow: <BoxShadow>[
+      boxShadow: const <BoxShadow>[
         BoxShadow(
           spreadRadius: 2.0,
           blurRadius: 10.0,
@@ -195,12 +195,12 @@ class VideoCard extends StatelessWidget {
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {
-          if (await canLaunch(video.url)) {
-            await launch(video.url);
+          if (await canLaunchUrl(Uri.parse(video.url))) {
+            await launchUrl(Uri.parse(video.url));
           }
         },
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
+        child: const Padding(
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.play_arrow,
             color: Colors.white,
