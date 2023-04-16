@@ -3,7 +3,14 @@
 My effort on replicating various apps UI on flutter.
 
 
-[View on Web](https://lohanidamodar.github.io/flutter_ui_challenges/#/)
+> Want to enhance your Dart & Flutter Knowledge?
+> Check out my latest endevour
+>
+> [Master Flutter](https://masterflutter.appwriters.dev)
+
+## Live
+
+[Flutter UI Challenges Web](https://lohanidamodar.github.io/flutter_ui_challenges/#/)
 
 [<img src="screenshots/play-store-logo.png" width="450" >](https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges) [<img src="screenshots/app-store-logo.png" width="400" >](https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882)
 
@@ -11,7 +18,7 @@ My effort on replicating various apps UI on flutter.
 
 ## Building and running the code [ **Updated** ]
 
-- Thank you all for your tremendous support. With latest update, I have removed all firebase dependency, and project now runs on web and desktop as well. Please use flutter master channel to run and build. If you want previous version with firebase please checkout [with-firebase](https://github.com/lohanidamodar/flutter_ui_challenges/tree/with-firebase) branch.
+- Should work on all platforms with Flutter Stable Release
 
 ### Table of contents
 - **[Animation Examples UI](#animations)**
