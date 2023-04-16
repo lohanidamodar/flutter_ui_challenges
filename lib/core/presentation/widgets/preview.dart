@@ -8,7 +8,6 @@ import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../constants.dart';
@@ -34,7 +33,7 @@ class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
   @override
   void initState() {
     super.initState();
-    offset = Offset(0, 0);
+    offset = const Offset(0, 0);
   }
 
   @override
@@ -43,7 +42,7 @@ class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
         title: Text(
@@ -52,25 +51,25 @@ class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.code),
+            icon: const Icon(Icons.code),
             onPressed: () {
               if (offset.dy == 0.9) {
                 setState(() {
-                  offset = Offset(0, 0);
+                  offset = const Offset(0, 0);
                 });
               } else {
                 setState(() {
-                  offset = Offset(0, 0.9);
+                  offset = const Offset(0, 0.9);
                 });
               }
             },
           ),
           IconButton(
             icon: kIsWeb
-                ? Icon(Icons.share)
+                ? const Icon(Icons.share)
                 : Platform.isIOS
-                    ? Icon(Icons.ios_share)
-                    : Icon(Icons.share),
+                    ? const Icon(Icons.ios_share)
+                    : const Icon(Icons.share),
             tooltip: "Share code",
             onPressed: () {
               Share.share('$githubRepo/blob/master/${widget.path}');
@@ -94,11 +93,11 @@ class _DesignPreviewsPageState extends State<DesignPreviewsPage> {
             child: GestureDetector(
               onTap: () {
                 setState(() {
-                  offset = Offset(0, 0);
+                  offset = const Offset(0, 0);
                 });
               },
               child: AnimatedContainer(
-                duration: Duration(milliseconds: 500),
+                duration: const Duration(milliseconds: 500),
                 color: Theme.of(context).scaffoldBackgroundColor,
                 padding: offset.dy == 0.9
                     ? null

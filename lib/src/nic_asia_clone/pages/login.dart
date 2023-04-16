@@ -1,25 +1,25 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../util/constant.dart';
 import '../widget/login/login_container.dart';
 
 class Login extends StatelessWidget {
+  const Login({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LoginContainer(),
+      body: const LoginContainer(),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
+        backgroundColor: primaryColor,
+        onPressed: () {},
         child: Image.asset(
           'assets/nicasiaassets/nicLogo.png',
           color: Colors.white,
         ),
-        backgroundColor: primaryColor,
-        onPressed: () {},
       ),
     );
   }

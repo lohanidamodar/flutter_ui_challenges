@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginNinePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login9.dart";
+  static const String path = "lib/src/pages/login/login9.dart";
+
+  const LoginNinePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +33,8 @@ class LoginNinePage extends StatelessWidget {
                   ),
                 ),
                 if (MediaQuery.of(context).viewInsets == EdgeInsets.zero)
-                  Padding(
-                    padding: const EdgeInsets.only(top: kToolbarHeight),
+                  const Padding(
+                    padding: EdgeInsets.only(top: kToolbarHeight),
                     child: Text(
                       "Beautiful App",
                       style: TextStyle(
@@ -58,7 +60,7 @@ class LoginNinePage extends StatelessWidget {
                     child: ListView(
                       physics:
                           MediaQuery.of(context).viewInsets == EdgeInsets.zero
-                              ? NeverScrollableScrollPhysics()
+                              ? const NeverScrollableScrollPhysics()
                               : null,
                       padding: const EdgeInsets.all(32.0),
                       shrinkWrap: true,
@@ -68,12 +70,12 @@ class LoginNinePage extends StatelessWidget {
                           "Namaste!",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4!
+                              .headlineMedium!
                               .copyWith(color: Colors.white),
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: 10.0),
-                        Text(
+                        const Text(
                           "Welcome to this awesome app. We are so happy that you are using our app.",
                           style: TextStyle(
                             color: Colors.blueGrey,
@@ -86,17 +88,18 @@ class LoginNinePage extends StatelessWidget {
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.symmetric(
                                 vertical: 16.0, horizontal: 32.0),
-                            suffixIcon: Icon(
+                            suffixIcon: const Icon(
                               Icons.person,
                               color: Colors.blueGrey,
                             ),
                             hintText: "Username",
-                            hintStyle: TextStyle(color: Colors.blueGrey),
+                            hintStyle: const TextStyle(color: Colors.blueGrey),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.blueGrey),
+                              borderSide:
+                                  const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),
@@ -106,17 +109,18 @@ class LoginNinePage extends StatelessWidget {
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.symmetric(
                                 vertical: 16.0, horizontal: 32.0),
-                            suffixIcon: Icon(
+                            suffixIcon: const Icon(
                               Icons.lock,
                               color: Colors.blueGrey,
                             ),
                             hintText: "Password",
-                            hintStyle: TextStyle(color: Colors.blueGrey),
+                            hintStyle: const TextStyle(color: Colors.blueGrey),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.blueGrey),
+                              borderSide:
+                                  const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),
@@ -126,7 +130,7 @@ class LoginNinePage extends StatelessWidget {
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.white,
                           ),
-                          child: Text("Create new account"),
+                          child: const Text("Create new account"),
                           onPressed: () {},
                         ),
                       ],

@@ -1,16 +1,12 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AvocadoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/food/avocado.dart";
+  static const String path = "lib/src/pages/food/avocado.dart";
   final String image = avocadoF;
+
+  const AvocadoPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +24,7 @@ class AvocadoPage extends StatelessWidget {
             backgroundColor: Colors.transparent,
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.more_vert),
+                icon: const Icon(Icons.more_vert),
                 onPressed: () {},
               )
             ],
@@ -40,7 +36,7 @@ class AvocadoPage extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(30.0),
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(60.0),
@@ -48,13 +44,13 @@ class AvocadoPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
+                  const Text(
                     "Avocado",
                     style:
                         TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10.0),
-                  Text(
+                  const SizedBox(height: 10.0),
+                  const Text(
                     "\$1.80 / Kg",
                     style: TextStyle(fontSize: 16.0),
                   ),
@@ -64,16 +60,16 @@ class AvocadoPage extends StatelessWidget {
                         "100 gms for 1-2 pieces",
                         style: TextStyle(color: Colors.grey.shade700),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Icon(
                         FontAwesomeIcons.fire,
                         size: 14.0,
                         color: Colors.pink.shade300,
                       ),
-                      Text("160"),
+                      const Text("160"),
                     ],
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   Slider(
                     onChanged: (value) {},
                     min: 1,
@@ -84,14 +80,14 @@ class AvocadoPage extends StatelessWidget {
                     children: <Widget>[
                       Text("1.5 kg (12-14 pieces approx.)",
                           style: TextStyle(color: Colors.grey.shade700)),
-                      Spacer(),
-                      Text(
+                      const Spacer(),
+                      const Text(
                         "\$ 2.70",
                         style: TextStyle(fontSize: 16.0),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -101,11 +97,11 @@ class AvocadoPage extends StatelessWidget {
                           backgroundColor: Colors.pink.shade200,
                           foregroundColor: Colors.white,
                         ),
-                        child: Text("Add to Cart"),
+                        child: const Text("Add to Cart"),
                         onPressed: () {},
                       )),
-                  SizedBox(height: 10.0),
-                  Center(child: Icon(Icons.keyboard_arrow_up)),
+                  const SizedBox(height: 10.0),
+                  const Center(child: Icon(Icons.keyboard_arrow_up)),
                   Center(
                     child: Text(
                       "Know More",
@@ -123,7 +119,7 @@ class AvocadoPage extends StatelessWidget {
                 radius: 20.0,
                 foregroundColor: Colors.grey,
                 backgroundColor: Colors.grey.shade200,
-                child: Icon(Icons.favorite_border)),
+                child: const Icon(Icons.favorite_border)),
           )
         ],
       ),

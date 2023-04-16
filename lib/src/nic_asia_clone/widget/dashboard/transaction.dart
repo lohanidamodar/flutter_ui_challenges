@@ -1,30 +1,28 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 
 class Transaction extends StatelessWidget {
   final Trx? transaction;
-  Transaction({this.transaction});
+  const Transaction({Key? key, this.transaction}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     print('${transaction!.amount}');
     Size deviceSize = MediaQuery.of(context).size;
     return Padding(
-      padding: EdgeInsets.only(bottom: 15.0),
+      padding: const EdgeInsets.only(bottom: 15.0),
       child: Material(
-        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+        borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         elevation: 3.0,
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
           child: Container(
             height: deviceSize.height * 0.10,
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            decoration: const BoxDecoration(
               border: Border(
                 left: BorderSide(
                   width: 10.0,
@@ -39,7 +37,7 @@ class Transaction extends StatelessWidget {
               children: <Widget>[
                 Text(
                   transaction!.type!.toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14.0,
                   ),
@@ -49,26 +47,26 @@ class Transaction extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       transaction!.number!.toUpperCase(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 14.0,
                       ),
                     ),
                     Text(
-                      'NPR. ' + transaction!.amount!.toUpperCase(),
-                      style: TextStyle(
+                      'NPR. ${transaction!.amount!.toUpperCase()}',
+                      style: const TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 14.0,
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5.0,
                 ),
                 Text(
                   transaction!.date!.toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 10.0,
                   ),

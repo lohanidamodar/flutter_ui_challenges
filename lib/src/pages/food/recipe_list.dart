@@ -1,21 +1,18 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
 
 class RecipeListPage extends StatelessWidget {
-  static final String path = "lib/src/pages/food/recipe_list.dart";
-  final Color color1 = Color(0xffB5192F);
-  final Color color2 = Color(0xffE21F3D);
-  final Color color3 = Color(0xffFE1949);
-  final Color color4 = Color(0xffF0631C);
+  static const String path = "lib/src/pages/food/recipe_list.dart";
+  final Color color1 = const Color(0xffB5192F);
+  final Color color2 = const Color(0xffE21F3D);
+  final Color color3 = const Color(0xffFE1949);
+  final Color color4 = const Color(0xffF0631C);
   final List<String> images = [
     breakfast,
     burger,
@@ -25,6 +22,8 @@ class RecipeListPage extends StatelessWidget {
     meal,
     pancake,
   ];
+
+  RecipeListPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,32 +40,34 @@ class RecipeListPage extends StatelessWidget {
           height: 450,
           width: 300,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30)),
+              borderRadius:
+                  const BorderRadius.only(bottomRight: Radius.circular(30)),
               color: color2),
         ),
         Container(
           height: 100,
           width: 80,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30)),
+              borderRadius:
+                  const BorderRadius.only(bottomRight: Radius.circular(30)),
               color: color1),
         ),
         SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: 30.0),
+              const SizedBox(height: 30.0),
               _buildHeader(context),
-              SizedBox(height: 40.0),
+              const SizedBox(height: 40.0),
               Padding(
                 padding: const EdgeInsets.only(left: 16.0),
                 child: Text(
                   "My Favorites".toUpperCase(),
-                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  style: const TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ),
-              SizedBox(height: 20.0),
-              Container(
+              const SizedBox(height: 20.0),
+              SizedBox(
                 height: 200,
                 child: ListView.builder(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -74,8 +75,8 @@ class RecipeListPage extends StatelessWidget {
                   itemBuilder: _buildItem,
                 ),
               ),
-              SizedBox(height: 40.0),
-              Container(
+              const SizedBox(height: 40.0),
+              SizedBox(
                 height: 230,
                 child: ListView.builder(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -84,8 +85,8 @@ class RecipeListPage extends StatelessWidget {
                       _buildItem(context, index, large: true),
                 ),
               ),
-              SizedBox(height: 20.0),
-              Container(
+              const SizedBox(height: 20.0),
+              SizedBox(
                 height: 230,
                 child: ListView.builder(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -94,11 +95,11 @@ class RecipeListPage extends StatelessWidget {
                       _buildItem(context, index, large: true),
                 ),
               ),
-              SizedBox(height: 40.0),
+              const SizedBox(height: 40.0),
             ],
           ),
         ),
-        Positioned(
+        const Positioned(
           bottom: 0,
           left: 0,
           right: 0,
@@ -121,11 +122,11 @@ class RecipeListPage extends StatelessWidget {
   Widget _buildItem(BuildContext context, index, {bool large = false}) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (_) => RecipeSinglePage()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (_) => const RecipeSinglePage()));
       },
       child: Container(
-        margin: EdgeInsets.only(right: 20),
+        margin: const EdgeInsets.only(right: 20),
         width: large ? 150 : 120,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,12 +142,12 @@ class RecipeListPage extends StatelessWidget {
                   )),
               height: large ? 180 : 150,
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
               child: Text(
                 "French\nToast".toUpperCase(),
-                style: TextStyle(color: Colors.white, fontSize: 14.0),
+                style: const TextStyle(color: Colors.white, fontSize: 14.0),
               ),
             )
           ],
@@ -166,18 +167,18 @@ class RecipeListPage extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        SizedBox(width: 40.0),
+        const SizedBox(width: 40.0),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(
+              const Text(
                 "Your customised",
                 style: TextStyle(color: Colors.white),
               ),
               Text(
                 "Breakfast".toUpperCase(),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white,
                     fontSize: 24.0,
                     fontWeight: FontWeight.bold),
@@ -189,12 +190,12 @@ class RecipeListPage extends StatelessWidget {
           style: OutlinedButton.styleFrom(
             backgroundColor: Colors.white,
             foregroundColor: Colors.white,
-            side: BorderSide(color: Colors.white),
+            side: const BorderSide(color: Colors.white),
           ),
           child: Text("Filter".toUpperCase()),
           onPressed: () {},
         ),
-        SizedBox(width: 16.0),
+        const SizedBox(width: 16.0),
       ],
     );
   }

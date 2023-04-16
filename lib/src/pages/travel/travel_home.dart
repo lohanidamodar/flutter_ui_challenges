@@ -1,34 +1,36 @@
-/**
- * Author: Sudip Thapa  
- * profile: https://github.com/sudeepthapa
-  */
+/// Author: Sudip Thapa
+/// profile: https://github.com/sudeepthapa
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelHome extends StatelessWidget {
-  static final String path = "lib/src/pages/travel/travel_home.dart";
+  static const String path = "lib/src/pages/travel/travel_home.dart";
+
+  const TravelHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: <Widget>[HomeScreenTop(), homeScreenBottom],
+        children: <Widget>[const HomeScreenTop(), homeScreenBottom],
       ),
     );
   }
 }
 
 class HomeScreenTop extends StatefulWidget {
+  const HomeScreenTop({Key? key}) : super(key: key);
+
   @override
   _HomeScreenTopState createState() => _HomeScreenTopState();
 }
 
 class _HomeScreenTopState extends State<HomeScreenTop> {
   final TextStyle dropdownMenuLabel =
-      TextStyle(color: Colors.white, fontSize: 16);
+      const TextStyle(color: Colors.white, fontSize: 16);
   final TextStyle dropdownMenuItem =
-      TextStyle(color: Colors.black, fontSize: 18);
+      const TextStyle(color: Colors.black, fontSize: 18);
   List<String> locations = ['Kathmandu', 'Bhaktapur'];
   var selectedLocationIndex = 0;
   bool isflightSelected = true;
@@ -41,23 +43,23 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
           clipper: WaveClipper(),
           child: Container(
             height: 350,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
                     colors: [Color(0xfffb53c6), Color(0xffb91d73)])),
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: <Widget>[
-                      Icon(
+                      const Icon(
                         Icons.location_on,
                         color: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       PopupMenuButton(
@@ -72,7 +74,7 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                               locations[selectedLocationIndex],
                               style: dropdownMenuLabel,
                             ),
-                            Icon(
+                            const Icon(
                               Icons.keyboard_arrow_down,
                               color: Colors.white,
                             )
@@ -81,33 +83,33 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                         itemBuilder: (BuildContext context) =>
                             <PopupMenuItem<int>>[
                           PopupMenuItem(
+                            value: 0,
                             child: Text(
                               locations[0],
                               style: dropdownMenuItem,
                             ),
-                            value: 0,
                           ),
                           PopupMenuItem(
+                            value: 1,
                             child: Text(
                               locations[1],
                               style: dropdownMenuItem,
                             ),
-                            value: 1,
                           ),
                         ],
                       ),
-                      Spacer(),
-                      Icon(
+                      const Spacer(),
+                      const Icon(
                         Icons.settings,
                         color: Colors.white,
                       )
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                Container(
+                const SizedBox(
                     width: 250,
                     child: Text(
                       "Where do you want to go ?",
@@ -118,19 +120,19 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                           fontWeight: FontWeight.normal),
                       textAlign: TextAlign.center,
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 32),
+                  padding: const EdgeInsets.symmetric(horizontal: 32),
                   child: Material(
                     elevation: 5.0,
-                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                    borderRadius: const BorderRadius.all(Radius.circular(30)),
                     child: TextField(
                       controller: TextEditingController(text: locations[0]),
                       cursorColor: Theme.of(context).primaryColor,
                       style: dropdownMenuItem,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                           suffixIcon: Material(
                             elevation: 2.0,
                             borderRadius: BorderRadius.all(Radius.circular(30)),
@@ -142,7 +144,7 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -157,7 +159,7 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
                         },
                         child: ChoiceChip(
                             Icons.flight_takeoff, "Flights", isflightSelected)),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     InkWell(
@@ -183,7 +185,8 @@ class ChoiceChip extends StatefulWidget {
   final IconData icon;
   final String text;
   final bool isflightSelected;
-  ChoiceChip(this.icon, this.text, this.isflightSelected);
+  const ChoiceChip(this.icon, this.text, this.isflightSelected, {Key? key})
+      : super(key: key);
   @override
   _ChoiceChipState createState() => _ChoiceChipState();
 }
@@ -193,11 +196,11 @@ class _ChoiceChipState extends State<ChoiceChip> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: widget.isflightSelected
           ? BoxDecoration(
               color: Colors.white.withOpacity(.15),
-              borderRadius: BorderRadius.all(Radius.circular(20)))
+              borderRadius: const BorderRadius.all(Radius.circular(20)))
           : null,
       child: Row(
         children: <Widget>[
@@ -206,10 +209,11 @@ class _ChoiceChipState extends State<ChoiceChip> {
             size: 20,
             color: Colors.white,
           ),
-          SizedBox(
+          const SizedBox(
             width: 8,
           ),
-          Text(widget.text, style: TextStyle(color: Colors.white, fontSize: 14))
+          Text(widget.text,
+              style: const TextStyle(color: Colors.white, fontSize: 14))
         ],
       ),
     );
@@ -249,12 +253,12 @@ final Widget homeScreenBottom = Column(
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          Text("Currently Watched Items",
+          const Text("Currently Watched Items",
               style: TextStyle(
                   color: Colors.black87,
                   fontSize: 15,
                   fontWeight: FontWeight.w700)),
-          Spacer(),
+          const Spacer(),
           Builder(
               builder: (BuildContext context) => Text(
                     "View All",
@@ -264,7 +268,7 @@ final Widget homeScreenBottom = Column(
         ],
       ),
     ),
-    Container(
+    SizedBox(
       height: 210,
       child: ListView(scrollDirection: Axis.horizontal, children: cityCards),
     )
@@ -272,21 +276,21 @@ final Widget homeScreenBottom = Column(
 );
 
 List<CityCard> cityCards = [
-  CityCard(
+  const CityCard(
       "https://cdn.pixabay.com/photo/2013/03/02/02/41/city-89197_960_720.jpg",
       "Kathmandu",
       "12 Feb",
       "10",
       "500",
       '440'),
-  CityCard(
+  const CityCard(
       "https://cdn.pixabay.com/photo/2017/12/10/17/40/prague-3010407_960_720.jpg",
       "Bhaktapur",
       "12 Feb",
       "10",
       "500",
       '440'),
-  CityCard(
+  const CityCard(
       "https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-cab-381233_960_720.jpg",
       "Morang",
       "12 Feb",
@@ -297,17 +301,19 @@ List<CityCard> cityCards = [
 
 class CityCard extends StatelessWidget {
   final String imagePath, cityName, monthYear, discount, oldPrice, newPrice;
-  CityCard(this.imagePath, this.cityName, this.monthYear, this.discount,
-      this.oldPrice, this.newPrice);
+  const CityCard(this.imagePath, this.cityName, this.monthYear, this.discount,
+      this.oldPrice, this.newPrice,
+      {Key? key})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
         child: Stack(
           children: <Widget>[
-            Container(
+            SizedBox(
               width: 160,
               height: 210,
               child: PNetworkImage(
@@ -321,7 +327,7 @@ class CityCard extends StatelessWidget {
               width: 160,
               height: 60,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     gradient: LinearGradient(
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter,
@@ -341,7 +347,7 @@ class CityCard extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         cityName,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
@@ -349,7 +355,7 @@ class CityCard extends StatelessWidget {
                       ),
                       Text(
                         monthYear,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 13,
                             fontWeight: FontWeight.normal),
@@ -357,14 +363,16 @@ class CityCard extends StatelessWidget {
                     ],
                   ),
                   Container(
-                      padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 2),
+                      decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: Text(
                         "$discount%",
-                        style: TextStyle(color: Colors.black, fontSize: 14),
+                        style:
+                            const TextStyle(color: Colors.black, fontSize: 14),
                       ))
                 ],
               ),

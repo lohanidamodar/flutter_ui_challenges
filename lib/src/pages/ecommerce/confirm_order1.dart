@@ -1,22 +1,22 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 
 class ConfirmOrderPage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/confirm_order1.dart";
+  static const String path = "lib/src/pages/ecommerce/confirm_order1.dart";
   final String address = "Chabahil, Kathmandu";
   final String phone = "9818522122";
   final double total = 500;
   final double delivery = 100;
 
+  const ConfirmOrderPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Confirm Order"),
+        title: const Text("Confirm Order"),
       ),
       body: _buildBody(context),
     );
@@ -24,28 +24,28 @@ class ConfirmOrderPage extends StatelessWidget {
 
   Widget _buildBody(BuildContext context) {
     return SingleChildScrollView(
-      padding:
-          EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
+      padding: const EdgeInsets.only(
+          left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
       child: Column(
         children: <Widget>[
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text("Subtotal"),
+              const Text("Subtotal"),
               Text("Rs. $total"),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text("Delivery fee"),
+              const Text("Delivery fee"),
               Text("Rs. $delivery"),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
           Row(
@@ -53,18 +53,18 @@ class ConfirmOrderPage extends StatelessWidget {
             children: <Widget>[
               Text(
                 "Total",
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               Text("Rs. ${total + delivery}",
-                  style: Theme.of(context).textTheme.headline6),
+                  style: Theme.of(context).textTheme.titleLarge),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Container(
               color: Colors.grey.shade200,
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               width: double.infinity,
               child: Text("Delivery Address".toUpperCase())),
           Column(
@@ -80,12 +80,12 @@ class ConfirmOrderPage extends StatelessWidget {
                 selected: false,
                 value: "New Address",
                 groupValue: address,
-                title: Text("Choose new delivery address"),
+                title: const Text("Choose new delivery address"),
                 onChanged: (value) {},
               ),
               Container(
                   color: Colors.grey.shade200,
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   width: double.infinity,
                   child: Text("Contact Number".toUpperCase())),
               RadioListTile(
@@ -99,33 +99,33 @@ class ConfirmOrderPage extends StatelessWidget {
                 selected: false,
                 value: "New Phone",
                 groupValue: phone,
-                title: Text("Choose new contact number"),
+                title: const Text("Choose new contact number"),
                 onChanged: (value) {},
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Container(
               color: Colors.grey.shade200,
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               width: double.infinity,
               child: Text("Payment Option".toUpperCase())),
           RadioListTile(
             groupValue: true,
             value: true,
-            title: Text("Cash on Delivery"),
+            title: const Text("Cash on Delivery"),
             onChanged: (value) {},
           ),
-          Container(
+          SizedBox(
             width: double.infinity,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
               ),
               onPressed: () => {},
-              child: Text(
+              child: const Text(
                 "Confirm Order",
                 style: TextStyle(color: Colors.white),
               ),

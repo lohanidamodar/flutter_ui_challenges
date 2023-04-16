@@ -8,7 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class QuotesOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/quotes/quotes1.dart";
+  static const String path = "lib/src/pages/quotes/quotes1.dart";
+
+  const QuotesOnePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class QuotesOnePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
       ),
@@ -27,7 +29,7 @@ class QuotesOnePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Align(
+            const Align(
                 alignment: Alignment.topLeft,
                 child: Icon(
                   FontAwesomeIcons.quoteLeft,
@@ -37,15 +39,16 @@ class QuotesOnePage extends StatelessWidget {
             Animator(
               triggerOnInit: true,
               curve: Curves.easeIn,
-              duration: Duration(milliseconds: 500),
+              duration: const Duration(milliseconds: 500),
               tween: Tween<double>(begin: -1, end: 0),
               builder: (context, state, child) {
                 return FractionalTranslation(
-                    translation: Offset(state.value as double, 0), child: child);
+                    translation: Offset(state.value as double, 0),
+                    child: child);
               },
               child: Text(
                 "Anyone who has never made a mistake has never tried anything new",
-                style: Theme.of(context).textTheme.headline3!.copyWith(
+                style: Theme.of(context).textTheme.displaySmall!.copyWith(
                       color: Colors.grey.shade800,
                     ),
               ),
@@ -62,7 +65,7 @@ class QuotesOnePage extends StatelessWidget {
               },
               child: Text(
                 "Albert einstein",
-                style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       color: Colors.grey.shade600,
                       fontSize: 20.0,
                     ),
@@ -77,7 +80,7 @@ class QuotesOnePage extends StatelessWidget {
             const SizedBox(width: 20.0),
             Expanded(
               child: GestureDetector(
-                child: Text(
+                child: const Text(
                   "tap for more",
                   textAlign: TextAlign.left,
                 ),
@@ -85,11 +88,11 @@ class QuotesOnePage extends StatelessWidget {
               ),
             ),
             IconButton(
-              icon: Icon(Icons.bookmark),
+              icon: const Icon(Icons.bookmark),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.ios_share),
+              icon: const Icon(Icons.ios_share),
               onPressed: () {},
             ),
             const SizedBox(width: 20.0),

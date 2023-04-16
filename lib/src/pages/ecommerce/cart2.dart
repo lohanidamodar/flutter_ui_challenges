@@ -1,15 +1,16 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 
 class CartTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/cart2.dart";
+  static const String path = "lib/src/pages/ecommerce/cart2.dart";
+
+  const CartTwoPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('My Cart'),
+          title: const Text('My Cart'),
         ),
         body: Column(
           children: <Widget>[
@@ -29,7 +30,7 @@ class CartTwoPage extends StatelessWidget {
   Widget cartItems(int index) {
     return RoundedContainer(
       padding: const EdgeInsets.all(0),
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       height: 130,
       child: Row(
         children: <Widget>[
@@ -50,28 +51,28 @@ class CartTwoPage extends StatelessWidget {
                     children: <Widget>[
                       Flexible(
                         child: Text(
-                          "Item 1" + index.toString(),
+                          "Item 1$index",
                           overflow: TextOverflow.fade,
                           softWrap: true,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 15),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: 50,
                         child: IconButton(
                           onPressed: () {
                             print("Button Pressed");
                           },
                           color: Colors.red,
-                          icon: Icon(Icons.delete),
+                          icon: const Icon(Icons.delete),
                           iconSize: 20,
                         ),
                       )
                     ],
                   ),
                   Row(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Price: "),
                       SizedBox(
                         width: 5,
@@ -84,7 +85,7 @@ class CartTwoPage extends StatelessWidget {
                     ],
                   ),
                   Row(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Sub Total: "),
                       SizedBox(
                         width: 5,
@@ -99,11 +100,11 @@ class CartTwoPage extends StatelessWidget {
                   ),
                   Row(
                     children: <Widget>[
-                      Text(
+                      const Text(
                         "Ships Free",
                         style: TextStyle(color: Colors.orange),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Row(
                         children: <Widget>[
                           InkWell(
@@ -113,8 +114,8 @@ class CartTwoPage extends StatelessWidget {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50)),
                               alignment: Alignment.center,
-                              child: Padding(
-                                padding: const EdgeInsets.all(6.0),
+                              child: const Padding(
+                                padding: EdgeInsets.all(6.0),
                                 child: Icon(
                                   Icons.remove,
                                   color: Colors.redAccent,
@@ -123,16 +124,16 @@ class CartTwoPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 4,
                           ),
-                          Card(
+                          const Card(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: EdgeInsets.all(8.0),
                               child: Text('2'),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 4,
                           ),
                           InkWell(
@@ -142,8 +143,8 @@ class CartTwoPage extends StatelessWidget {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50)),
                               alignment: Alignment.center,
-                              child: Padding(
-                                padding: const EdgeInsets.all(6.0),
+                              child: const Padding(
+                                padding: EdgeInsets.all(6.0),
                                 child: Icon(
                                   Icons.add,
                                   color: Colors.green,
@@ -174,7 +175,7 @@ class CartTwoPage extends StatelessWidget {
           Padding(
               padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
               child: Row(
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     "Checkout Price:",
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
@@ -194,10 +195,10 @@ class CartTwoPage extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.redAccent,
                 onTap: () {},
-                child: Container(
+                child: const SizedBox(
                   width: double.infinity,
                   child: Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: EdgeInsets.all(10.0),
                     child: Text(
                       "Checkout",
                       textAlign: TextAlign.center,

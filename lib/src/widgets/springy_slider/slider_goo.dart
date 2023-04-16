@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_clipper.dart';
@@ -13,12 +11,13 @@ class SliderGoo extends StatelessWidget {
   final double? paddingBottom;
   final Widget? child;
 
-  SliderGoo({
+  const SliderGoo({
+    Key? key,
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,
     this.child,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

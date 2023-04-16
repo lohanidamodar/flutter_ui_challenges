@@ -1,9 +1,3 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../util/constant.dart';
 import '../widget/dashboard/categories.dart';
@@ -12,6 +6,8 @@ import '../widget/dashboard/top_account_info.dart';
 import '../widget/profile_image.dart';
 
 class Dashboard extends StatelessWidget {
+  Dashboard({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -41,9 +37,9 @@ class Dashboard extends StatelessWidget {
                 Flexible(
                   fit: FlexFit.tight,
                   child: ListView(
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     shrinkWrap: true,
-                    children: <Widget>[
+                    children: const <Widget>[
                       Categories(),
                       LastTransactions(),
                     ],
@@ -60,7 +56,7 @@ class Dashboard extends StatelessWidget {
   final buildDrawerItem = Flexible(
     child: Container(
       color: drawerColoSecondary,
-      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+      padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -75,14 +71,14 @@ class Dashboard extends StatelessWidget {
                   ),
                   title: Text(
                     item.title!,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white70,
                     ),
                   ),
                 ),
             ],
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.lock,
               color: Colors.white,
@@ -102,7 +98,7 @@ class Dashboard extends StatelessWidget {
   buildUserInfo(context) => Container(
         color: drawerColoPrimary,
         //height: deviceSize.height * 0.3,
-        padding: EdgeInsets.only(bottom: 25.0),
+        padding: const EdgeInsets.only(bottom: 25.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
@@ -111,7 +107,7 @@ class Dashboard extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
               },
-              leading: Icon(
+              leading: const Icon(
                 Icons.arrow_back,
                 color: Colors.white,
               ),
@@ -119,7 +115,7 @@ class Dashboard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
+                const Text(
                   'Good Afternoon!',
                   style: TextStyle(
                     fontSize: 14.0,
@@ -127,12 +123,12 @@ class Dashboard extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
                 Text(
                   'MAUSAM'.toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 17.0,
                     fontWeight: FontWeight.w300,
                     color: Colors.white,
@@ -140,20 +136,20 @@ class Dashboard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
-            ProfileImage(
+            const ProfileImage(
               color: Colors.white,
               height: 70.0,
               width: 70.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             Text(
               'MAUSAM rayamajhi'.toUpperCase(),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w300,
                 color: Colors.white,
@@ -170,7 +166,7 @@ class Dashboard extends StatelessWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(
+          const Text(
             'Welcome!',
             style: TextStyle(
               fontSize: 17.0,
@@ -178,12 +174,12 @@ class Dashboard extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
           Text(
             'MAUSAM'.toUpperCase(),
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.w300,
               color: Colors.white,

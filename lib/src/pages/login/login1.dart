@@ -1,33 +1,33 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class LoginOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login1.dart";
+  static const String path = "lib/src/pages/login/login1.dart";
+
+  const LoginOnePage({Key? key}) : super(key: key);
   Widget _buildPageContent() {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       color: Colors.grey.shade800,
       child: ListView(
         children: <Widget>[
           Column(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              Container(
+              const SizedBox(
                 width: 200,
                 child: PNetworkImage(rocket),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              ListTile(
+              const ListTile(
                   title: TextField(
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
@@ -42,7 +42,7 @@ class LoginOnePage extends StatelessWidget {
               Divider(
                 color: Colors.grey.shade600,
               ),
-              ListTile(
+              const ListTile(
                   title: TextField(
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
@@ -57,7 +57,7 @@ class LoginOnePage extends StatelessWidget {
               Divider(
                 color: Colors.grey.shade600,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -68,7 +68,7 @@ class LoginOnePage extends StatelessWidget {
                         backgroundColor: Colors.cyan,
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'Login',
                         style: TextStyle(color: Colors.white70, fontSize: 16.0),
                       ),
@@ -76,7 +76,7 @@ class LoginOnePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Text(

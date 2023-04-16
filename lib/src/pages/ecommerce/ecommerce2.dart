@@ -1,15 +1,11 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class EcommerceTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/ecommerce2.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce2.dart";
   final List<Map> items = [
     {
       "title": "Kappa Velour",
@@ -33,6 +29,8 @@ class EcommerceTwoPage extends StatelessWidget {
       "image": images[2]
     },
   ];
+
+  const EcommerceTwoPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +60,7 @@ class EcommerceTwoPage extends StatelessWidget {
               Icons.menu,
               color: Colors.grey.shade700,
             )),
-        title: Text(
+        title: const Text(
           'Shopping',
           style: TextStyle(
             color: Colors.black87,
@@ -82,7 +80,7 @@ class EcommerceTwoPage extends StatelessWidget {
 
   Widget _buildBottomNavigationBar() {
     return BottomNavigationBar(
-      items: <BottomNavigationBarItem>[
+      items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.category), label: "Shop"),
         BottomNavigationBarItem(
             icon: Icon(Icons.favorite_border), label: "Favorites"),
@@ -100,32 +98,33 @@ class EcommerceTwoPage extends StatelessWidget {
 
   PreferredSize _buildBottomBar() {
     return PreferredSize(
+      preferredSize: const Size.fromHeight(80.0),
       child: Container(
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: Card(
           child: Container(
             child: TextField(
               decoration: InputDecoration(
                   border: InputBorder.none,
-                  icon: IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-                  suffixIcon:
-                      IconButton(onPressed: () {}, icon: Icon(Icons.mic))),
+                  icon: IconButton(
+                      onPressed: () {}, icon: const Icon(Icons.search)),
+                  suffixIcon: IconButton(
+                      onPressed: () {}, icon: const Icon(Icons.mic))),
             ),
           ),
         ),
       ),
-      preferredSize: Size.fromHeight(80.0),
     );
   }
 
   Widget _buildListView(BuildContext context, int index) {
-    if (index == 0)
+    if (index == 0) {
       return Container(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
+            const Text(
               "Branded Bucket",
               style: TextStyle(fontSize: 18.0),
             ),
@@ -133,14 +132,15 @@ class EcommerceTwoPage extends StatelessWidget {
           ],
         ),
       );
+    }
     Map item = items[index - 1];
     return _buildShopItem(item);
   }
 
   Widget _buildShopItem(Map item) {
     return Container(
-      padding: EdgeInsets.only(left: 10.0, right: 10.0),
-      margin: EdgeInsets.only(bottom: 20.0),
+      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+      margin: const EdgeInsets.only(bottom: 20.0),
       height: 300,
       child: Row(
         children: <Widget>[
@@ -149,8 +149,8 @@ class EcommerceTwoPage extends StatelessWidget {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(item["image"]), fit: BoxFit.cover),
-                borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                boxShadow: [
+                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                boxShadow: const [
                   BoxShadow(
                       color: Colors.grey,
                       offset: Offset(5.0, 5.0),
@@ -159,38 +159,9 @@ class EcommerceTwoPage extends StatelessWidget {
           )),
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    item["title"],
-                    style:
-                        TextStyle(fontSize: 22.0, fontWeight: FontWeight.w700),
-                  ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Text(item["category"],
-                      style: TextStyle(color: Colors.grey, fontSize: 18.0)),
-                  SizedBox(
-                    height: 20.0,
-                  ),
-                  Text("\$${item["price"].toString()}",
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 30.0,
-                      )),
-                  SizedBox(
-                    height: 20.0,
-                  ),
-                  Text(item["tags"],
-                      style: TextStyle(
-                          fontSize: 18.0, color: Colors.grey, height: 1.5))
-                ],
-              ),
-              margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(20.0),
+              margin: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+              decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(10.0),
                       topRight: Radius.circular(10.0)),
@@ -201,6 +172,36 @@ class EcommerceTwoPage extends StatelessWidget {
                         offset: Offset(5.0, 5.0),
                         blurRadius: 10.0)
                   ]),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    item["title"],
+                    style: const TextStyle(
+                        fontSize: 22.0, fontWeight: FontWeight.w700),
+                  ),
+                  const SizedBox(
+                    height: 10.0,
+                  ),
+                  Text(item["category"],
+                      style:
+                          const TextStyle(color: Colors.grey, fontSize: 18.0)),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
+                  Text("\$${item["price"].toString()}",
+                      style: const TextStyle(
+                        color: Colors.red,
+                        fontSize: 30.0,
+                      )),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
+                  Text(item["tags"],
+                      style: const TextStyle(
+                          fontSize: 18.0, color: Colors.grey, height: 1.5))
+                ],
+              ),
             ),
           )
         ],

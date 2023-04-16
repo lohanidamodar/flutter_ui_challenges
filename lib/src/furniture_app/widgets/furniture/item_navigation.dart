@@ -2,6 +2,8 @@ import '../../utils/constant.dart';
 import 'package:flutter/material.dart';
 
 class ItemNavigation extends StatelessWidget {
+  const ItemNavigation({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -9,12 +11,12 @@ class ItemNavigation extends StatelessWidget {
         Container(
           height: 6.0,
           width: 6.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: furnitureCateDisableColor,
             shape: BoxShape.circle,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5.0,
         ),
         Container(
@@ -24,24 +26,24 @@ class ItemNavigation extends StatelessWidget {
               color: Colors.blue[700],
               borderRadius: BorderRadius.circular(10.0)),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5.0,
         ),
         Container(
           height: 6.0,
           width: 6.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: furnitureCateDisableColor,
             shape: BoxShape.circle,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5.0,
         ),
         Container(
           height: 6.0,
           width: 6.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: furnitureCateDisableColor,
             shape: BoxShape.circle,
           ),

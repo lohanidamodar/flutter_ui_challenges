@@ -1,25 +1,25 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class SettingsThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/settings/settings3.dart";
+  static const String path = "lib/src/pages/settings/settings3.dart";
   final TextStyle headerStyle = TextStyle(
     color: Colors.grey.shade800,
     fontWeight: FontWeight.bold,
     fontSize: 20.0,
   );
+
+  SettingsThreePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text(
+        title: const Text(
           'Settings',
         ),
       ),
@@ -45,14 +45,14 @@ class SettingsThreePage extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundImage: NetworkImage(avatars[4]),
                     ),
-                    title: Text("Damodar Lohani"),
+                    title: const Text("Damodar Lohani"),
                     onTap: () {},
                   ),
                   _buildDivider(),
                   SwitchListTile(
                     activeColor: Colors.purple,
                     value: true,
-                    title: Text("Private Account"),
+                    title: const Text("Private Account"),
                     onChanged: (val) {},
                   ),
                 ],
@@ -73,11 +73,11 @@ class SettingsThreePage extends StatelessWidget {
                   SwitchListTile(
                     activeColor: Colors.purple,
                     value: true,
-                    title: Text("Received notification"),
+                    title: const Text("Received notification"),
                     onChanged: (val) {},
                   ),
                   _buildDivider(),
-                  SwitchListTile(
+                  const SwitchListTile(
                     activeColor: Colors.purple,
                     value: false,
                     title: Text("Received newsletter"),
@@ -87,11 +87,11 @@ class SettingsThreePage extends StatelessWidget {
                   SwitchListTile(
                     activeColor: Colors.purple,
                     value: true,
-                    title: Text("Received Offer Notification"),
+                    title: const Text("Received Offer Notification"),
                     onChanged: (val) {},
                   ),
                   _buildDivider(),
-                  SwitchListTile(
+                  const SwitchListTile(
                     activeColor: Colors.purple,
                     value: true,
                     title: Text("Received App Updates"),
@@ -106,8 +106,8 @@ class SettingsThreePage extends StatelessWidget {
                 horizontal: 0,
               ),
               child: ListTile(
-                leading: Icon(Icons.exit_to_app),
-                title: Text("Logout"),
+                leading: const Icon(Icons.exit_to_app),
+                title: const Text("Logout"),
                 onTap: () {},
               ),
             ),

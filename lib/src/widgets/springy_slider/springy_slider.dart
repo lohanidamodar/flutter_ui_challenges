@@ -4,10 +4,8 @@
  * (https://github.com/matthew-carroll/flutter_ui_challenge_springy_slider)
  * Check out the repository and give it a start
  */
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
@@ -22,14 +20,15 @@ class SpringySlider extends StatefulWidget {
   final Color? positiveColor;
   final Color? negativeColor;
 
-  SpringySlider({
+  const SpringySlider({
+    Key? key,
     this.markCount,
     this.positiveColor,
     this.negativeColor,
-  });
+  }) : super(key: key);
 
   @override
-  _SpringySliderState createState() => new _SpringySliderState();
+  _SpringySliderState createState() => _SpringySliderState();
 }
 
 class _SpringySliderState extends State<SpringySlider>
@@ -42,7 +41,7 @@ class _SpringySliderState extends State<SpringySlider>
   @override
   void initState() {
     super.initState();
-    sliderController = new SpringySliderController(
+    sliderController = SpringySliderController(
       sliderPercent: 0.5,
       vsync: this,
     )..addListener(() {
@@ -82,7 +81,7 @@ class _SpringySliderState extends State<SpringySlider>
               paddingBottom: paddingBottom,
             ),
           ),
-          new SliderPoints(
+          SliderPoints(
             sliderController: sliderController,
             paddingTop: paddingTop,
             paddingBottom: paddingBottom,

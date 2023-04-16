@@ -1,13 +1,13 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
 import '../../widget/profile_image.dart';
 
 class TopAccountInfo extends StatelessWidget {
+  TopAccountInfo({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -27,14 +27,14 @@ class TopAccountInfo extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                ProfileImage(),
+                const ProfileImage(),
                 buildAcountDetail,
               ],
             ),
             Container(
               height: 8.0,
               width: 8.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: primaryColor,
               ),
@@ -46,7 +46,7 @@ class TopAccountInfo extends StatelessWidget {
   }
 
   final buildAcountDetail = Container(
-    padding: EdgeInsets.only(
+    padding: const EdgeInsets.only(
       left: 15.0,
     ),
     child: Column(
@@ -56,7 +56,7 @@ class TopAccountInfo extends StatelessWidget {
       children: <Widget>[
         Text(
           'sammunati bachat khata'.toUpperCase(),
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 15.0,
             color: Colors.black,
             fontWeight: FontWeight.w600,
@@ -65,7 +65,7 @@ class TopAccountInfo extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(
+            const Text(
               'NPR.',
               style: TextStyle(
                 fontSize: 17.0,
@@ -73,10 +73,10 @@ class TopAccountInfo extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 3.0,
             ),
-            Text(
+            const Text(
               '1,00,999.35',
               style: TextStyle(
                 fontSize: 20.0,
@@ -84,7 +84,7 @@ class TopAccountInfo extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10.0,
             ),
             Icon(
@@ -94,7 +94,7 @@ class TopAccountInfo extends StatelessWidget {
             )
           ],
         ),
-        Text(
+        const Text(
           '281656484161548651',
           style: TextStyle(
             fontSize: 15.0,

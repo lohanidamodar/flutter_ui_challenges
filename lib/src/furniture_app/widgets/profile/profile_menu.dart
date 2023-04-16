@@ -3,6 +3,8 @@ import '../../widgets/profile/menu_item.dart';
 import 'package:flutter/material.dart';
 
 class ProfileMenu extends StatelessWidget {
+  const ProfileMenu({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(

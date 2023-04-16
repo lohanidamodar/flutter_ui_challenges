@@ -1,14 +1,14 @@
-/**
- * Author: Damodar Lohani  
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:ui' as ui;
 
 class LoginTenPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login10.dart";
+  static const String path = "lib/src/pages/login/login10.dart";
+
+  const LoginTenPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,24 +42,27 @@ class LoginTenPage extends StatelessWidget {
                     children: [
                       Text(
                         "Hello",
-                        style: Theme.of(context).textTheme.headline4!.copyWith(
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
                               fontWeight: FontWeight.bold,
                               color: Colors.grey.shade800,
                             ),
                       ),
                       Text(
                         "Sign in your account",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                       const SizedBox(height: 20.0),
-                      TextField(
+                      const TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Email address",
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      TextField(
+                      const TextField(
                         obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
@@ -67,7 +70,7 @@ class LoginTenPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      Align(
+                      const Align(
                           alignment: Alignment.centerRight,
                           child: Text("Forgot your Password?")),
                       const SizedBox(height: 20.0),
@@ -80,23 +83,23 @@ class LoginTenPage extends StatelessWidget {
                           foregroundColor: Colors.white,
                         ),
                         onPressed: () {},
-                        child: Text("Login"),
+                        child: const Text("Login"),
                       ),
                       const SizedBox(height: 10.0),
                       Text(
                         "Or Login using social media",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           IconButton(
-                            icon: Icon(FontAwesomeIcons.facebookF),
+                            icon: const Icon(FontAwesomeIcons.facebookF),
                             color: Colors.indigo,
                             onPressed: () {},
                           ),
                           IconButton(
-                            icon: Icon(FontAwesomeIcons.twitter),
+                            icon: const Icon(FontAwesomeIcons.twitter),
                             color: Colors.blue,
                             onPressed: () {},
                           ),
@@ -108,9 +111,9 @@ class LoginTenPage extends StatelessWidget {
                 const SizedBox(height: 10.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text("Don't have an account?"),
-                    const SizedBox(width: 10.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "Register Now",
                       style: TextStyle(
@@ -138,7 +141,7 @@ class LoginTenPage extends StatelessWidget {
           Navigator.pop(context);
         },
         child: Row(
-          children: [
+          children: const [
             Icon(
               Icons.keyboard_arrow_left,
               color: Colors.black,
@@ -159,13 +162,13 @@ class LoginTenPage extends StatelessWidget {
 class RPSCustomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint_0 = new Paint()
+    Paint paint_0 = Paint()
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
     paint_0.shader = ui.Gradient.linear(
         Offset(size.width * 0.64, size.height * 0.11),
         Offset(size.width, size.height * 0.11),
-        [Color(0x55e17e51), Color(0x99cd5c0b)],
+        [const Color(0x55e17e51), const Color(0x99cd5c0b)],
         [0.00, 1.00]);
 
     Path path_0 = Path();
@@ -184,13 +187,13 @@ class RPSCustomPainter extends CustomPainter {
 
     canvas.drawPath(path_0, paint_0);
 
-    Paint paint_1 = new Paint()
+    Paint paint_1 = Paint()
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
     paint_1.shader = ui.Gradient.linear(
         Offset(size.width * 0.64, size.height * 0.12),
         Offset(size.width, size.height * 0.12),
-        [Color(0x6ade8146), Color(0x87b75b0a)],
+        [const Color(0x6ade8146), const Color(0x87b75b0a)],
         [0.00, 1.00]);
 
     Path path_1 = Path();

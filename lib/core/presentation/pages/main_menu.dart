@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/menu.dart' as menu;
@@ -11,6 +9,8 @@ import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import '../routes.dart';
 
 class MainMenu extends StatefulWidget {
+  const MainMenu({Key? key}) : super(key: key);
+
   @override
   _MainMenuState createState() => _MainMenuState();
 }
@@ -28,7 +28,7 @@ class _MainMenuState extends State<MainMenu> {
 
   ListView _buildMenuPage() {
     return ListView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       children: <Widget>[
         ...pages.map((page) => page is menu.MenuItem
             ? _buildExpandableMenu(page, context)
@@ -62,7 +62,8 @@ class _MainMenuState extends State<MainMenu> {
         leading: Icon(page.icon),
         title: Text(
           "${page.title} (${page.items!.length} layouts)",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black87),
+          style: const TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.black87),
         ),
         children: _buildSubMenus(page.items!, context),
       ),
@@ -72,7 +73,9 @@ class _MainMenuState extends State<MainMenu> {
   List<Widget> _buildSubMenus(
       List<menu.SubMenuItem> items, BuildContext context) {
     final List<Widget> subMenus = [];
-    items.forEach((item) => subMenus.add(_buildSubMenu(item, context)));
+    for (var item in items) {
+      subMenus.add(_buildSubMenu(item, context));
+    }
     return subMenus;
   }
 
@@ -80,15 +83,15 @@ class _MainMenuState extends State<MainMenu> {
     return Padding(
       padding: const EdgeInsets.only(left: 32.0),
       child: ListTile(
-        leading: Icon(Icons.arrow_right, color: Colors.deepOrange),
-        contentPadding: EdgeInsets.all(0),
+        leading: const Icon(Icons.arrow_right, color: Colors.deepOrange),
+        contentPadding: const EdgeInsets.all(0),
         dense: false,
         isThreeLine: false,
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.code),
+              icon: const Icon(Icons.code),
               onPressed: () => _openPage(context, item, menu.OpenMode.CODE),
             ),
           ],
@@ -97,7 +100,7 @@ class _MainMenuState extends State<MainMenu> {
           item.title,
           style: Theme.of(context)
               .textTheme
-              .subtitle1!
+              .titleMedium!
               .copyWith(color: Colors.black87),
         ),
         onTap: () => _openPage(context, item, menu.OpenMode.PREVIEW),

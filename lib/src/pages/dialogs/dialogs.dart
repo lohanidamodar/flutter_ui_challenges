@@ -1,19 +1,19 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class DialogsPage extends StatelessWidget {
-  static final String path = "lib/src/pages/dialogs/dialogs.dart";
+  static const String path = "lib/src/pages/dialogs/dialogs.dart";
+
+  const DialogsPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dialogs'),
+        title: const Text('Dialogs'),
       ),
       body: SizedBox(
         width: double.infinity,
@@ -24,21 +24,21 @@ class DialogsPage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Payment Success"),
+              child: const Text("Payment Success"),
               onPressed: () => _paymentSuccessDialog(context),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Alert Dialog"),
+              child: const Text("Alert Dialog"),
               onPressed: () => _alertDialog(context),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Success Dialog"),
+              child: const Text("Success Dialog"),
               onPressed: () =>
                   _customAlertDialog(context, AlertDialogType.SUCCESS),
             ),
@@ -46,7 +46,7 @@ class DialogsPage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Info Dialog"),
+              child: const Text("Info Dialog"),
               onPressed: () =>
                   _customAlertDialog(context, AlertDialogType.INFO),
             ),
@@ -54,7 +54,7 @@ class DialogsPage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Warning Dialog"),
+              child: const Text("Warning Dialog"),
               onPressed: () =>
                   _customAlertDialog(context, AlertDialogType.WARNING),
             ),
@@ -62,7 +62,7 @@ class DialogsPage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreen,
               ),
-              child: Text("Error Dialog"),
+              child: const Text("Error Dialog"),
               onPressed: () =>
                   _customAlertDialog(context, AlertDialogType.ERROR),
             ),
@@ -84,7 +84,7 @@ class DialogsPage extends StatelessWidget {
     showDialog(
       context: context,
       builder: (BuildContext context) {
-        return BeautifulAlertDialog();
+        return const BeautifulAlertDialog();
       },
     );
   }
@@ -104,6 +104,8 @@ class DialogsPage extends StatelessWidget {
 }
 
 class BeautifulAlertDialog extends StatelessWidget {
+  const BeautifulAlertDialog({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -111,9 +113,9 @@ class BeautifulAlertDialog extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
         child: Container(
-          padding: EdgeInsets.only(right: 16.0),
+          padding: const EdgeInsets.only(right: 16.0),
           height: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(75),
@@ -122,16 +124,16 @@ class BeautifulAlertDialog extends StatelessWidget {
                   bottomRight: Radius.circular(10))),
           child: Row(
             children: <Widget>[
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
               CircleAvatar(
                 radius: 55,
                 backgroundColor: Colors.grey.shade200,
-                child: PNetworkImage(
+                child: const PNetworkImage(
                   infoIcon,
                   width: 60,
                 ),
               ),
-              SizedBox(width: 20.0),
+              const SizedBox(width: 20.0),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -139,14 +141,14 @@ class BeautifulAlertDialog extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Alert!",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    SizedBox(height: 10.0),
-                    Flexible(
+                    const SizedBox(height: 10.0),
+                    const Flexible(
                       child: Text(
                           "Do you want to continue to turn off the services?"),
                     ),
-                    SizedBox(height: 10.0),
+                    const SizedBox(height: 10.0),
                     Row(
                       children: <Widget>[
                         Expanded(
@@ -156,13 +158,13 @@ class BeautifulAlertDialog extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0)),
                             ),
-                            child: Text("No"),
+                            child: const Text("No"),
                             onPressed: () {
                               Navigator.pop(context);
                             },
                           ),
                         ),
-                        SizedBox(width: 10.0),
+                        const SizedBox(width: 10.0),
                         Expanded(
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -170,7 +172,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0)),
                             ),
-                            child: Text("Yes"),
+                            child: const Text("Yes"),
                             onPressed: () {
                               Navigator.pop(context);
                             },
@@ -191,8 +193,11 @@ class BeautifulAlertDialog extends StatelessWidget {
 
 class PaymentSuccessDialog extends StatelessWidget {
   final image = images[2];
-  final TextStyle subtitle = TextStyle(fontSize: 12.0, color: Colors.grey);
-  final TextStyle label = TextStyle(fontSize: 14.0, color: Colors.grey);
+  final TextStyle subtitle =
+      const TextStyle(fontSize: 12.0, color: Colors.grey);
+  final TextStyle label = const TextStyle(fontSize: 14.0, color: Colors.grey);
+
+  PaymentSuccessDialog({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -203,7 +208,7 @@ class PaymentSuccessDialog extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                Text(
+                const Text(
                   "Thank You!",
                   style: TextStyle(color: Colors.green),
                 ),
@@ -211,7 +216,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                   "Your transaction was successful",
                   style: label,
                 ),
-                Divider(),
+                const Divider(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -224,9 +229,12 @@ class PaymentSuccessDialog extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[Text("2, April 2019"), Text("9:10 AM")],
+                  children: const <Widget>[
+                    Text("2, April 2019"),
+                    Text("9:10 AM")
+                  ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -237,7 +245,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                           "TO",
                           style: label,
                         ),
-                        Text("Manny Moto"),
+                        const Text("Manny Moto"),
                         Text(
                           "manny.moto@gmail.com",
                           style: subtitle,
@@ -250,7 +258,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -261,7 +269,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                           "AMOUNT",
                           style: label,
                         ),
-                        Text("\$ 15000"),
+                        const Text("\$ 15000"),
                       ],
                     ),
                     Text(
@@ -270,23 +278,23 @@ class PaymentSuccessDialog extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Container(
-                  padding: EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
                       color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(5.0)),
                   child: Row(
                     children: <Widget>[
-                      CircleAvatar(
+                      const CircleAvatar(
                         backgroundColor: Colors.green,
                         child: Icon(Icons.account_balance_wallet),
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Credit/Debit Card"),
+                          const Text("Credit/Debit Card"),
                           Text(
                             "Master Card ending ***5",
                             style: subtitle,
@@ -318,10 +326,10 @@ class CustomAlertDialog extends StatelessWidget {
   final String content;
   final Widget? icon;
   final String buttonLabel;
-  final TextStyle titleStyle = TextStyle(
+  final TextStyle titleStyle = const TextStyle(
       fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.bold);
 
-  CustomAlertDialog(
+  const CustomAlertDialog(
       {Key? key,
       this.title = "Successful",
       required this.content,
@@ -346,7 +354,7 @@ class CustomAlertDialog extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                SizedBox(height: 10.0),
+                const SizedBox(height: 10.0),
                 icon ??
                     Icon(
                       _getIconForType(type),
@@ -359,12 +367,12 @@ class CustomAlertDialog extends StatelessWidget {
                   style: titleStyle,
                   textAlign: TextAlign.center,
                 ),
-                Divider(),
+                const Divider(),
                 Text(
                   content,
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 40.0),
+                const SizedBox(height: 40.0),
                 SizedBox(
                   width: double.infinity,
                   child: TextButton(

@@ -1,10 +1,8 @@
-/**
- * Author: Sudip Thapa  
- * profile: https://github.com/sudeepthapa
- * 
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Sudip Thapa
+/// profile: https://github.com/sudeepthapa
+///
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -12,7 +10,7 @@ import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceFivePage extends StatelessWidget {
   const EcommerceFivePage({Key? key}) : super(key: key);
-  static final String path = "lib/src/pages/ecommerce/ecommerce5.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce5.dart";
 
   Widget cards(image, title, price) {
     return Container(
@@ -20,7 +18,7 @@ class EcommerceFivePage extends StatelessWidget {
       width: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.grey,
             blurRadius: 6.0,
@@ -36,17 +34,18 @@ class EcommerceFivePage extends StatelessWidget {
               image,
               height: 80,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
             Container(
-                padding: EdgeInsets.all(5),
-                margin: EdgeInsets.only(top: 4),
+                padding: const EdgeInsets.all(5),
+                margin: const EdgeInsets.only(top: 4),
                 color: Colors.deepOrange,
                 child: Text("\$ " + price,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 12))),
@@ -61,7 +60,7 @@ class EcommerceFivePage extends StatelessWidget {
     return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: 1,
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today),
               label: "Today's Special",
@@ -84,7 +83,7 @@ class EcommerceFivePage extends StatelessWidget {
               Container(
                 height: 300,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30)),
                   color: Colors.orangeAccent.shade700,
@@ -92,12 +91,12 @@ class EcommerceFivePage extends StatelessWidget {
                 width: double.infinity,
               ),
               Container(
-                margin: EdgeInsets.only(left: 90, bottom: 20),
+                margin: const EdgeInsets.only(left: 90, bottom: 20),
                 width: 299,
                 height: 279,
                 decoration: BoxDecoration(
                     color: Colors.orangeAccent.shade400,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(160),
                         bottomLeft: Radius.circular(290),
                         bottomRight: Radius.circular(160),
@@ -112,29 +111,30 @@ class EcommerceFivePage extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Good Morning",
+                          const Text("Good Morning",
                               style: TextStyle(
                                   fontSize: 32,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.white)),
-                          Text("Everyone",
+                          const Text("Everyone",
                               style: TextStyle(
                                   fontSize: 32,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.white)),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
                           Material(
                             elevation: 5.0,
-                            borderRadius: BorderRadius.all(Radius.circular(30)),
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(30)),
                             child: TextField(
                               controller:
                                   TextEditingController(text: 'Search...'),
                               cursorColor: Theme.of(context).primaryColor,
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 18),
-                              decoration: InputDecoration(
+                              style: const TextStyle(
+                                  color: Colors.black, fontSize: 18),
+                              decoration: const InputDecoration(
                                   suffixIcon: Material(
                                     elevation: 2.0,
                                     borderRadius:

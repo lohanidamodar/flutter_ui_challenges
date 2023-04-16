@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
@@ -12,11 +10,12 @@ class SliderPoints extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  SliderPoints({
+  const SliderPoints({
+    Key? key,
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +39,8 @@ class SliderPoints extends StatelessWidget {
               left: 30.0,
               top: sliderY - 10.0 - (40.0 * pointsYouNeedPercent),
               child: FractionalTranslation(
-                translation: Offset(0.0, -1.0),
-                child: new Points(
+                translation: const Offset(0.0, -1.0),
+                child: Points(
                   points: pointsYouNeed,
                   isAboveSlider: true,
                   isPointsYouNeed: true,
@@ -52,7 +51,7 @@ class SliderPoints extends StatelessWidget {
             Positioned(
               left: 30.0,
               top: sliderY + 10.0 + (40.0 * pointsYouHavePercent),
-              child: new Points(
+              child: Points(
                 points: pointsYouHave,
                 isAboveSlider: false,
                 isPointsYouNeed: false,
@@ -72,12 +71,13 @@ class Points extends StatelessWidget {
   final bool isPointsYouNeed;
   final Color? color;
 
-  Points({
+  const Points({
+    Key? key,
     this.points,
     this.isAboveSlider = true,
     this.isPointsYouNeed = true,
     this.color,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -99,13 +99,13 @@ class Points extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 8.0),
+          padding: const EdgeInsets.only(left: 8.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(bottom: 4.0),
+                padding: const EdgeInsets.only(bottom: 4.0),
                 child: Text(
                   'POINTS',
                   style: TextStyle(

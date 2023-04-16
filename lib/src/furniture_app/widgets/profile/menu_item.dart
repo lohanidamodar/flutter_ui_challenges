@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class ProfileMenuItem extends StatelessWidget {
   final ProfileMenu menu;
-  ProfileMenuItem({required this.menu});
+  const ProfileMenuItem({Key? key, required this.menu}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Container(
       height: deviceSize.height * 0.09,
       decoration: BoxDecoration(
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Color(0xFFD1DCFF),
             blurRadius: 20.0, // has the effect of softening the shadow
@@ -33,33 +33,33 @@ class ProfileMenuItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: menu!.iconColor,
+                    color: menu.iconColor,
                   ),
                   child: Icon(
-                    menu!.icon,
+                    menu.icon,
                     color: Colors.white,
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 15.0),
+                  margin: const EdgeInsets.only(left: 15.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        menu!.title!,
-                        style: TextStyle(
+                        menu.title!,
+                        style: const TextStyle(
                           fontSize: 18.0,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        menu!.subTitle!,
-                        style: TextStyle(
+                        menu.subTitle!,
+                        style: const TextStyle(
                           fontSize: 14.0,
                           color: profile_item_color,
                           fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class ProfileMenuItem extends StatelessWidget {
                 )
               ],
             ),
-            Icon(
+            const Icon(
               Icons.chevron_right,
               color: profile_item_color,
             )

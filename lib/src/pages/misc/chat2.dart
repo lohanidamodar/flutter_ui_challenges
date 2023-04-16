@@ -1,17 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
     as assets;
-import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:math';
 
-import 'chatui.dart';
-
 class ChatTwoPage extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/chat2.dart";
+  static const String path = "lib/src/pages/misc/chat2.dart";
+
+  const ChatTwoPage({Key? key}) : super(key: key);
   @override
   _ChatTwoPageState createState() => _ChatTwoPageState();
 }
@@ -46,13 +43,13 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chat"),
+        title: const Text("Chat"),
       ),
       body: Column(
         children: <Widget>[
           Expanded(
             child: ListView.separated(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               separatorBuilder: (context, index) {
                 return const SizedBox(height: 10.0);
               },
@@ -103,7 +100,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
             ),
           ),
           IconButton(
-            icon: Icon(Icons.send),
+            icon: const Icon(Icons.send),
             color: Theme.of(context).primaryColor,
             onPressed: _save,
           )
@@ -141,7 +138,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
 
         ///Chat bubbles
         Container(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             bottom: 5,
             right: 5,
           ),
@@ -159,12 +156,12 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
                 decoration: BoxDecoration(
                   color: current ? Colors.red : Colors.white,
                   borderRadius: current
-                      ? BorderRadius.only(
+                      ? const BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomLeft: Radius.circular(20),
                           topRight: Radius.circular(20),
                         )
-                      : BorderRadius.only(
+                      : const BorderRadius.only(
                           topLeft: Radius.circular(20),
                           bottomRight: Radius.circular(20),
                           topRight: Radius.circular(20),
@@ -188,7 +185,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
                           ),
                         ),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.done_all,
                         color: Colors.white,
                         size: 14,
@@ -197,7 +194,7 @@ class _ChatTwoPageState extends State<ChatTwoPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 2,
               ),
               Text(

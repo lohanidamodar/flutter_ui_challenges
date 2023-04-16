@@ -1,14 +1,15 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 
 class PaymentSuccessDialog extends StatelessWidget {
   final image = 'assets/img/3.jpg';
-  final TextStyle subtitle = TextStyle(fontSize: 12.0, color: Colors.grey);
-  final TextStyle label = TextStyle(fontSize: 14.0, color: Colors.grey);
+  final TextStyle subtitle =
+      const TextStyle(fontSize: 12.0, color: Colors.grey);
+  final TextStyle label = const TextStyle(fontSize: 14.0, color: Colors.grey);
+
+  const PaymentSuccessDialog({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -19,7 +20,7 @@ class PaymentSuccessDialog extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
-                Text(
+                const Text(
                   "Thank You!",
                   style: TextStyle(color: Colors.green),
                 ),
@@ -27,7 +28,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                   "Your transaction was successful",
                   style: label,
                 ),
-                Divider(),
+                const Divider(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -40,9 +41,12 @@ class PaymentSuccessDialog extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[Text("2, April 2019"), Text("9:10 AM")],
+                  children: const <Widget>[
+                    Text("2, April 2019"),
+                    Text("9:10 AM")
+                  ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -53,7 +57,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                           "TO",
                           style: label,
                         ),
-                        Text("Manny Moto"),
+                        const Text("Manny Moto"),
                         Text(
                           "manny.moto@gmail.com",
                           style: subtitle,
@@ -66,7 +70,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -77,7 +81,7 @@ class PaymentSuccessDialog extends StatelessWidget {
                           "AMOUNT",
                           style: label,
                         ),
-                        Text("\$ 15000"),
+                        const Text("\$ 15000"),
                       ],
                     ),
                     Text(
@@ -86,23 +90,23 @@ class PaymentSuccessDialog extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Container(
-                  padding: EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
                       color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(5.0)),
                   child: Row(
                     children: <Widget>[
-                      CircleAvatar(
+                      const CircleAvatar(
                         backgroundColor: Colors.green,
                         child: Icon(Icons.account_balance_wallet),
                       ),
-                      SizedBox(width: 10.0),
+                      const SizedBox(width: 10.0),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Credit/Debit Card"),
+                          const Text("Credit/Debit Card"),
                           Text(
                             "Master Card ending ***5",
                             style: subtitle,

@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -9,7 +7,7 @@ import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
 import 'question.dart';
 
 class CheckAnswersPage extends StatelessWidget {
-  static final String path = "lib/src/pages/quiz_app/check_answers.dart";
+  static const String path = "lib/src/pages/quiz_app/check_answers.dart";
   final List<Question> questions;
   final Map<int, dynamic> answers;
 
@@ -22,7 +20,7 @@ class CheckAnswersPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text('Check Answers'),
+        title: const Text('Check Answers'),
         elevation: 0,
       ),
       body: Stack(
@@ -30,7 +28,7 @@ class CheckAnswersPage extends StatelessWidget {
           ClipPath(
             clipper: WaveClipperTwo(),
             child: Container(
-              decoration: BoxDecoration(color: Colors.deepPurple),
+              decoration: const BoxDecoration(color: Colors.deepPurple),
               height: 200,
             ),
           ),
@@ -53,7 +51,7 @@ class CheckAnswersPage extends StatelessWidget {
           backgroundColor: Theme.of(context).primaryColor,
           foregroundColor: Colors.white,
         ),
-        child: Text("Done"),
+        child: const Text("Done"),
         onPressed: () {
           Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (_) => QuizHomePage()));
@@ -70,12 +68,12 @@ class CheckAnswersPage extends StatelessWidget {
           children: <Widget>[
             Text(
               question.question!,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 16.0),
             ),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             Text(
               "${answers[index]}",
               style: TextStyle(
@@ -83,17 +81,17 @@ class CheckAnswersPage extends StatelessWidget {
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 5.0),
+            const SizedBox(height: 5.0),
             correct
                 ? Container()
                 : Text.rich(
                     TextSpan(children: [
-                      TextSpan(text: "Answer: "),
+                      const TextSpan(text: "Answer: "),
                       TextSpan(
                           text: question.correctAnswer,
-                          style: TextStyle(fontWeight: FontWeight.w500))
+                          style: const TextStyle(fontWeight: FontWeight.w500))
                     ]),
-                    style: TextStyle(fontSize: 16.0),
+                    style: const TextStyle(fontSize: 16.0),
                   )
           ],
         ),

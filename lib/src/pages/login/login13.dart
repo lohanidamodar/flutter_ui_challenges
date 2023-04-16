@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/ambikadulal
- * images:pixabay.com
-  */
+/// Author: Ambika Dulal
+/// profile: https://github.com/ambikadulal
+/// images:pixabay.com
 
 class LoginPageThirdteen extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login13.dart";
+  static const String path = "lib/src/pages/login/login13.dart";
+
+  const LoginPageThirdteen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class LoginPageThirdteen extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 400,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                         //topLeft: Radius.circular(60),
                         // topRight: Radius.circular(60),
@@ -38,7 +38,7 @@ class LoginPageThirdteen extends StatelessWidget {
                         width: 80,
                         height: 200,
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: NetworkImage(
                                       'https://cdn.pixabay.com/photo/2019/12/24/08/54/flying-dandelions-4716287__340.png'))),
@@ -49,7 +49,7 @@ class LoginPageThirdteen extends StatelessWidget {
                         width: 80,
                         height: 150,
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: NetworkImage(
                                       'https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916__340.png'))),
@@ -61,7 +61,7 @@ class LoginPageThirdteen extends StatelessWidget {
                         width: 80,
                         height: 150,
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
                                   image: NetworkImage(
                                       'https://cdn.pixabay.com/photo/2019/10/22/07/52/dandelions-4567966__340.png'))),
@@ -69,8 +69,8 @@ class LoginPageThirdteen extends StatelessWidget {
                       ),
                       Positioned(
                         child: Container(
-                          margin: EdgeInsets.only(top: 50),
-                          child: Center(
+                          margin: const EdgeInsets.only(top: 50),
+                          child: const Center(
                             child: Text(
                               "Login",
                               style: TextStyle(
@@ -85,15 +85,15 @@ class LoginPageThirdteen extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(30.0),
+                  padding: const EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                   color: Color.fromRGBO(143, 148, 251, .2),
                                   blurRadius: 20.0,
@@ -102,11 +102,11 @@ class LoginPageThirdteen extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Container(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               decoration: BoxDecoration(
                                   border: Border(
-                                      bottom:
-                                          BorderSide(color: Colors.grey[100]!))),
+                                      bottom: BorderSide(
+                                          color: Colors.grey[100]!))),
                               child: TextField(
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
@@ -116,7 +116,7 @@ class LoginPageThirdteen extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: TextField(
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
@@ -128,18 +128,18 @@ class LoginPageThirdteen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Container(
                         height: 50,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            gradient: LinearGradient(colors: [
+                            gradient: const LinearGradient(colors: [
                               Color.fromRGBO(143, 148, 251, 1),
                               Color.fromRGBO(143, 148, 251, .6),
                             ])),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Login",
                             style: TextStyle(
@@ -148,10 +148,10 @@ class LoginPageThirdteen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 70,
                       ),
-                      Text(
+                      const Text(
                         "Forgot Password?",
                         style:
                             TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),
@@ -170,7 +170,7 @@ class FadeAnimation extends StatelessWidget {
   final double delay;
   final Widget child;
 
-  FadeAnimation(this.delay, this.child);
+  const FadeAnimation(this.delay, this.child, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -178,11 +178,11 @@ class FadeAnimation extends StatelessWidget {
       ..tween(
         "opacity",
         Tween(begin: 0.0, end: 1.0),
-        duration: Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
       ).thenTween(
         "translateY",
         Tween(begin: -30.0, end: 0.0),
-        duration: Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
         curve: Curves.easeOut,
       );
 

@@ -1,13 +1,13 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../../widget/login/login_input_sction.dart';
 import '../../widget/login/login_top_section.dart';
 
 class LoginContainer extends StatelessWidget {
+  const LoginContainer({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
@@ -19,7 +19,7 @@ class LoginContainer extends StatelessWidget {
           children: <Widget>[
             Container(
               height: deviceSize.height * 0.53,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
                     'assets/nicasiaassets/mountain.png',
@@ -30,16 +30,16 @@ class LoginContainer extends StatelessWidget {
             ),
             Column(
               children: <Widget>[
-                SizedBox(height: 25.0),
+                const SizedBox(height: 25.0),
                 buildLogo(deviceSize),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                LoginTopSection(),
-                SizedBox(
+                const LoginTopSection(),
+                const SizedBox(
                   height: 30.0,
                 ),
-                LoginInputSection()
+                const LoginInputSection()
               ],
             )
           ],

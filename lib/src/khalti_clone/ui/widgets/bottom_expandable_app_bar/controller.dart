@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 
 class BottomBarController extends ChangeNotifier {
@@ -10,7 +8,7 @@ class BottomBarController extends ChangeNotifier {
 
   BottomBarController({
     required TickerProvider vsync,
-    this.snap: true,
+    this.snap = true,
     double? dragLength,
   })  : _animationController = AnimationController(vsync: vsync),
         assert(dragLength == null || dragLength > 0),
@@ -18,10 +16,10 @@ class BottomBarController extends ChangeNotifier {
 
   @Deprecated("use state instead. Will be removed soon")
   Animation<double> get animation =>
-      _animationController?.view ?? kAlwaysCompleteAnimation;
+      _animationController.view ?? kAlwaysCompleteAnimation;
 
   Animation<double> get state =>
-      _animationController?.view ?? kAlwaysCompleteAnimation;
+      _animationController.view ?? kAlwaysCompleteAnimation;
 
   final AnimationController _animationController;
 
@@ -48,7 +46,7 @@ class BottomBarController extends ChangeNotifier {
         // actual scroll physics will be implemented in a future release
         _animationController.animateTo(
           _animationController.value + visualVelocity * 0.16,
-          duration: Duration(milliseconds: 410),
+          duration: const Duration(milliseconds: 410),
           curve: Curves.decelerate,
         );
       }
@@ -57,10 +55,11 @@ class BottomBarController extends ChangeNotifier {
 
     // check if the controller is already halfway there
     if (snap) {
-      if (_animationController.value > 0.5)
+      if (_animationController.value > 0.5) {
         open();
-      else
+      } else {
         close();
+      }
     }
   }
 
@@ -70,9 +69,11 @@ class BottomBarController extends ChangeNotifier {
   }
 
   void swap() {
-    if (_animationController.value == 1)
+    if (_animationController.value == 1) {
       close();
-    else if (_animationController.value == 0) open();
+    } else if (_animationController.value == 0) {
+      open();
+    }
   }
 
   //open the panel
@@ -88,14 +89,14 @@ class BottomBarController extends ChangeNotifier {
 class DefaultBottomBarController extends StatefulWidget {
   final Widget child;
 
-  DefaultBottomBarController({
+  const DefaultBottomBarController({
     Key? key,
     required this.child,
   }) : super(key: key);
 
   static BottomBarController? of(BuildContext context) {
-    final _BottomBarControllerScope? scope =
-        context.dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
+    final _BottomBarControllerScope? scope = context
+        .dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
     return scope?.controller;
   }
 

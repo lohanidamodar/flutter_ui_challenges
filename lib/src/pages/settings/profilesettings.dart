@@ -1,15 +1,15 @@
-/**
- * Author: Aparna Dulal
- * profile: https://github.com/ambikadulal
-  */
+/// Author: Aparna Dulal
+/// profile: https://github.com/ambikadulal
 import 'package:flutter/material.dart';
 
 class ProfileSettingsPage extends StatelessWidget {
-  static final String path = "lib/src/pages/settings/profilesettings.dart";
+  static const String path = "lib/src/pages/settings/profilesettings.dart";
+
+  const ProfileSettingsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: EditPage(),
     );
@@ -17,6 +17,8 @@ class ProfileSettingsPage extends StatelessWidget {
 }
 
 class EditPage extends StatefulWidget {
+  const EditPage({Key? key}) : super(key: key);
+
   @override
   _EditPageState createState() => _EditPageState();
 }
@@ -30,7 +32,7 @@ class _EditPageState extends State<EditPage> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         elevation: 1,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.green,
           ),
@@ -38,29 +40,27 @@ class _EditPageState extends State<EditPage> {
         ),
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.settings,
               color: Colors.green,
             ),
-            onPressed: () {
-              
-            },
+            onPressed: () {},
           ),
         ],
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 16, top: 25, right: 16),
+        padding: const EdgeInsets.only(left: 16, top: 25, right: 16),
         child: GestureDetector(
           onTap: () {
             FocusScope.of(context).unfocus();
           },
           child: ListView(
             children: [
-              Text(
+              const Text(
                 "Edit Profile",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Center(
@@ -78,10 +78,10 @@ class _EditPageState extends State<EditPage> {
                                 spreadRadius: 2,
                                 blurRadius: 10,
                                 color: Colors.black.withOpacity(0.1),
-                                offset: Offset(0, 10))
+                                offset: const Offset(0, 10))
                           ],
                           shape: BoxShape.circle,
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: NetworkImage(
                                 "https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F1.jpg?alt=media",
@@ -101,7 +101,7 @@ class _EditPageState extends State<EditPage> {
                             ),
                             color: Colors.green,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.edit,
                             color: Colors.white,
                           ),
@@ -109,14 +109,14 @@ class _EditPageState extends State<EditPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 35,
               ),
               buildTextField("Full Name", "Evan kutto", false),
               buildTextField("E-mail", "evan@gmail.com", false),
               buildTextField("Password", "********", true),
               buildTextField("Location", "New Joursey", false),
-              SizedBox(
+              const SizedBox(
                 height: 35,
               ),
               Row(
@@ -124,12 +124,12 @@ class _EditPageState extends State<EditPage> {
                 children: [
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(horizontal: 50),
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     onPressed: () {},
-                    child: Text("CANCEL",
+                    child: const Text("CANCEL",
                         style: TextStyle(
                             fontSize: 14,
                             letterSpacing: 2.2,
@@ -138,13 +138,13 @@ class _EditPageState extends State<EditPage> {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(horizontal: 50),
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
                       elevation: 2,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "SAVE",
                       style: TextStyle(
                           fontSize: 14,
@@ -175,17 +175,17 @@ class _EditPageState extends State<EditPage> {
                         showPassword = !showPassword;
                       });
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.remove_red_eye,
                       color: Colors.grey,
                     ),
                   )
                 : null,
-            contentPadding: EdgeInsets.only(bottom: 3),
+            contentPadding: const EdgeInsets.only(bottom: 3),
             labelText: labelText,
             floatingLabelBehavior: FloatingLabelBehavior.always,
             hintText: placeholder,
-            hintStyle: TextStyle(
+            hintStyle: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
               color: Colors.black,

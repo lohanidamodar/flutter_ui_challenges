@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
@@ -52,10 +50,12 @@ final List<Map> articles = [
 ];
 
 class BlogHomeOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/blog/bhome1.dart";
-  final Color primaryColor = Color(0xffFD6592);
-  final Color bgColor = Color(0xffF9E0E3);
-  final Color secondaryColor = Color(0xff324558);
+  static const String path = "lib/src/pages/blog/bhome1.dart";
+  final Color primaryColor = const Color(0xffFD6592);
+  final Color bgColor = const Color(0xffF9E0E3);
+  final Color secondaryColor = const Color(0xff324558);
+
+  const BlogHomeOnePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -67,28 +67,35 @@ class BlogHomeOnePage extends StatelessWidget {
           primaryColor: primaryColor,
           appBarTheme: AppBarTheme(
             color: Colors.white,
-            textTheme: TextTheme(
-              headline6: TextStyle(
-                color: secondaryColor,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
             iconTheme: IconThemeData(color: secondaryColor),
             actionsIconTheme: IconThemeData(
               color: secondaryColor,
             ),
+            toolbarTextStyle: TextTheme(
+              titleLarge: TextStyle(
+                color: secondaryColor,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ).bodyMedium,
+            titleTextStyle: TextTheme(
+              titleLarge: TextStyle(
+                color: secondaryColor,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ).titleLarge,
           ),
         ),
         child: Scaffold(
           backgroundColor: Theme.of(context).buttonColor,
           appBar: AppBar(
             centerTitle: true,
-            title: Text('Categories'),
-            leading: Icon(Icons.category),
+            title: const Text('Categories'),
+            leading: const Icon(Icons.category),
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
                 onPressed: () {},
               )
             ],
@@ -97,25 +104,25 @@ class BlogHomeOnePage extends StatelessWidget {
               labelColor: primaryColor,
               indicatorColor: primaryColor,
               unselectedLabelColor: secondaryColor,
-              tabs: <Widget>[
+              tabs: const <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text("For You"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text("Design"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text("Beauty"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text("Education"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text("Entertainment"),
                 ),
               ],
@@ -133,23 +140,23 @@ class BlogHomeOnePage extends StatelessWidget {
                     const SizedBox(height: 16.0),
               ),
               Container(
-                child: Text("Tab 2"),
+                child: const Text("Tab 2"),
               ),
               Container(
-                child: Text("Tab 3"),
+                child: const Text("Tab 3"),
               ),
               Container(
-                child: Text("Tab 4"),
+                child: const Text("Tab 4"),
               ),
               Container(
-                child: Text("Tab 5"),
+                child: const Text("Tab 5"),
               ),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: 1,
             type: BottomNavigationBarType.fixed,
-            items: [
+            items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
                 label: "",
@@ -226,24 +233,24 @@ class BlogHomeOnePage extends StatelessWidget {
                                 backgroundColor: primaryColor,
                               ),
                             ),
-                            WidgetSpan(
-                              child: const SizedBox(width: 5.0),
+                            const WidgetSpan(
+                              child: SizedBox(width: 5.0),
                             ),
                             TextSpan(
                                 text: article["author"],
-                                style: TextStyle(fontSize: 16.0)),
-                            WidgetSpan(
-                              child: const SizedBox(width: 20.0),
+                                style: const TextStyle(fontSize: 16.0)),
+                            const WidgetSpan(
+                              child: SizedBox(width: 20.0),
                             ),
-                            WidgetSpan(
-                              child: const SizedBox(width: 5.0),
+                            const WidgetSpan(
+                              child: SizedBox(width: 5.0),
                             ),
                             TextSpan(
                               text: article["time"],
                             ),
                           ],
                         ),
-                        style: TextStyle(height: 2.0),
+                        style: const TextStyle(height: 2.0),
                       ),
                     ],
                   ),

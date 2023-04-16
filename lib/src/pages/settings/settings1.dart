@@ -1,14 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SettingsOnePage extends StatefulWidget {
-  static final String path = "lib/src/pages/settings/settings1.dart";
+  static const String path = "lib/src/pages/settings/settings1.dart";
+
+  const SettingsOnePage({Key? key}) : super(key: key);
 
   @override
   _SettingsOnePageState createState() => _SettingsOnePageState();
@@ -46,7 +46,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
           ),
           actions: <Widget>[
             IconButton(
-              icon: Icon(FontAwesomeIcons.moon),
+              icon: const Icon(FontAwesomeIcons.moon),
               onPressed: () {
                 setState(() {
                   _dark = !_dark;
@@ -72,7 +72,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                       onTap: () {
                         //open edit profile
                       },
-                      title: Text(
+                      title: const Text(
                         "John Doe",
                         style: TextStyle(
                           color: Colors.white,
@@ -82,7 +82,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                       leading: CircleAvatar(
                         backgroundImage: NetworkImage(avatars[0]),
                       ),
-                      trailing: Icon(
+                      trailing: const Icon(
                         Icons.edit,
                         color: Colors.white,
                       ),
@@ -97,36 +97,36 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                     child: Column(
                       children: <Widget>[
                         ListTile(
-                          leading: Icon(
+                          leading: const Icon(
                             Icons.lock_outline,
                             color: Colors.purple,
                           ),
-                          title: Text("Change Password"),
-                          trailing: Icon(Icons.keyboard_arrow_right),
+                          title: const Text("Change Password"),
+                          trailing: const Icon(Icons.keyboard_arrow_right),
                           onTap: () {
                             //open change password
                           },
                         ),
                         _buildDivider(),
                         ListTile(
-                          leading: Icon(
+                          leading: const Icon(
                             FontAwesomeIcons.language,
                             color: Colors.purple,
                           ),
-                          title: Text("Change Language"),
-                          trailing: Icon(Icons.keyboard_arrow_right),
+                          title: const Text("Change Language"),
+                          trailing: const Icon(Icons.keyboard_arrow_right),
                           onTap: () {
                             //open change language
                           },
                         ),
                         _buildDivider(),
                         ListTile(
-                          leading: Icon(
+                          leading: const Icon(
                             Icons.location_on,
                             color: Colors.purple,
                           ),
-                          title: Text("Change Location"),
-                          trailing: Icon(Icons.keyboard_arrow_right),
+                          title: const Text("Change Location"),
+                          trailing: const Icon(Icons.keyboard_arrow_right),
                           onTap: () {
                             //open change location
                           },
@@ -135,7 +135,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                     ),
                   ),
                   const SizedBox(height: 20.0),
-                  Text(
+                  const Text(
                     "Notification Settings",
                     style: TextStyle(
                       fontSize: 20.0,
@@ -147,12 +147,12 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                     activeColor: Colors.purple,
                     contentPadding: const EdgeInsets.all(0),
                     value: true,
-                    title: Text("Received notification"),
+                    title: const Text("Received notification"),
                     onChanged: (val) {},
                   ),
-                  SwitchListTile(
+                  const SwitchListTile(
                     activeColor: Colors.purple,
-                    contentPadding: const EdgeInsets.all(0),
+                    contentPadding: EdgeInsets.all(0),
                     value: false,
                     title: Text("Received newsletter"),
                     onChanged: null,
@@ -161,12 +161,12 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                     activeColor: Colors.purple,
                     contentPadding: const EdgeInsets.all(0),
                     value: true,
-                    title: Text("Received Offer Notification"),
+                    title: const Text("Received Offer Notification"),
                     onChanged: (val) {},
                   ),
-                  SwitchListTile(
+                  const SwitchListTile(
                     activeColor: Colors.purple,
-                    contentPadding: const EdgeInsets.all(0),
+                    contentPadding: EdgeInsets.all(0),
                     value: true,
                     title: Text("Received App Updates"),
                     onChanged: null,
@@ -182,7 +182,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
                 width: 80,
                 height: 80,
                 alignment: Alignment.center,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.purple,
                   shape: BoxShape.circle,
                 ),
@@ -192,7 +192,7 @@ class _SettingsOnePageState extends State<SettingsOnePage> {
               bottom: 00,
               left: 00,
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   FontAwesomeIcons.powerOff,
                   color: Colors.white,
                 ),

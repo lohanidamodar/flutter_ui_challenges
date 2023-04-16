@@ -1,20 +1,19 @@
-import 'package:cached_network_image/cached_network_image.dart';
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class ProfileNinePage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile9.dart";
+  static const String path = "lib/src/pages/profile/profile9.dart";
+
+  const ProfileNinePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profile"),
+        title: const Text("Profile"),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -28,7 +27,7 @@ class ProfileNinePage extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.only(top: 30),
               height: 380,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.pink,
               ),
             ),
@@ -37,7 +36,7 @@ class ProfileNinePage extends StatelessWidget {
             clipper: OvalBottomBorderClipper(),
             child: Container(
               height: 380,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(pancake), fit: BoxFit.cover),
               ),
@@ -55,12 +54,12 @@ class ProfileNinePage extends StatelessWidget {
                 "Damodar Lohani",
                 style: Theme.of(context)
                     .textTheme
-                    .headline6!
+                    .titleLarge!
                     .copyWith(color: Colors.white),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 5.0),
-              Text(
+              const Text(
                 "Flutter & Full Stack Developer",
                 style: TextStyle(
                   color: Colors.white70,
@@ -87,12 +86,12 @@ class ProfileNinePage extends StatelessWidget {
                           children: [
                             Text(
                               "255K",
-                              style: Theme.of(context).textTheme.headline4,
+                              style: Theme.of(context).textTheme.headlineMedium,
                             ),
                             const SizedBox(height: 10.0),
                             Text(
                               "Followers",
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ],
                         ),
@@ -102,12 +101,12 @@ class ProfileNinePage extends StatelessWidget {
                           children: [
                             Text(
                               "105K",
-                              style: Theme.of(context).textTheme.headline4,
+                              style: Theme.of(context).textTheme.headlineMedium,
                             ),
                             const SizedBox(height: 10.0),
                             Text(
                               "Following",
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ],
                         ),
@@ -119,7 +118,7 @@ class ProfileNinePage extends StatelessWidget {
               const SizedBox(height: 20.0),
               Text(
                 "Favorite",
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 10.0),
               SizedBox(
@@ -139,9 +138,9 @@ class ProfileNinePage extends StatelessWidget {
               const SizedBox(height: 20.0),
               Text(
                 "Friends",
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
-              Container(
+              SizedBox(
                 height: 60,
                 width: double.infinity,
                 child: Stack(
@@ -170,9 +169,9 @@ class ProfileNinePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
         backgroundColor: Colors.red,
         onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }
@@ -189,7 +188,7 @@ class ProfileNinePage extends StatelessWidget {
   }
 
   Widget _buildFavoriteCard(BuildContext context, String title) {
-    return Container(
+    return SizedBox(
       width: 150,
       height: 150,
       child: Stack(
@@ -240,7 +239,7 @@ class ProfileNinePage extends StatelessWidget {
               title,
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .titleLarge!
                   .copyWith(color: Colors.white),
             ),
           ),

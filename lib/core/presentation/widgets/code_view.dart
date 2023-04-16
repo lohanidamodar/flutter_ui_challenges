@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'dart:math';
 
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
@@ -15,7 +13,7 @@ import '../../constants.dart';
 class MyCodeView extends StatefulWidget {
   final String? filePath;
 
-  MyCodeView({required this.filePath});
+  const MyCodeView({Key? key, required this.filePath}) : super(key: key);
 
   String get githubPath => '$githubRepo/blob/master/$filePath';
 
@@ -34,15 +32,15 @@ class MyCodeViewState extends State<MyCodeView> {
             ? SyntaxHighlighterStyle.darkThemeStyle()
             : SyntaxHighlighterStyle.lightThemeStyle();
     return Container(
-      constraints: BoxConstraints.expand(),
+      constraints: const BoxConstraints.expand(),
       child: Scrollbar(
         child: SingleChildScrollView(
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: RichText(
-              textScaleFactor: this._textScaleFactor,
+              textScaleFactor: _textScaleFactor,
               text: TextSpan(
-                style: TextStyle(fontFamily: 'monospace', fontSize: 12.0),
+                style: const TextStyle(fontFamily: 'monospace', fontSize: 12.0),
                 children: <TextSpan>[
                   DartSyntaxHighlighter(style).format(codeContent)
                 ],
@@ -58,31 +56,31 @@ class MyCodeViewState extends State<MyCodeView> {
     return <SpeedDialChild>[
       SpeedDialChild(
         label: "Copy",
-        child: Icon(Icons.content_copy),
+        child: const Icon(Icons.content_copy),
         onTap: () async {
           await Clipboard.setData(ClipboardData(text: widget.githubPath));
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
             content: Text('Code link copied to Clipboard!'),
           ));
         },
       ),
       SpeedDialChild(
         label: "Open",
-        child: Icon(Icons.open_in_new),
-        onTap: () => url_launcher.launch(this.widget.githubPath),
+        child: const Icon(Icons.open_in_new),
+        onTap: () => url_launcher.launch(widget.githubPath),
       ),
       SpeedDialChild(
-        child: Icon(Icons.zoom_out),
+        child: const Icon(Icons.zoom_out),
         label: 'Zoom out',
         onTap: () => setState(() {
-          this._textScaleFactor = max(0.8, this._textScaleFactor - 0.1);
+          _textScaleFactor = max(0.8, _textScaleFactor - 0.1);
         }),
       ),
       SpeedDialChild(
-        child: Icon(Icons.zoom_in),
+        child: const Icon(Icons.zoom_in),
         label: 'Zoom in',
         onTap: () => setState(() {
-          this._textScaleFactor += 0.1;
+          _textScaleFactor += 0.1;
         }),
       ),
     ];
@@ -96,7 +94,7 @@ class MyCodeViewState extends State<MyCodeView> {
         if (snapshot.hasData) {
           return Scaffold(
             body: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: _getCodeView(snapshot.data, context),
             ),
             floatingActionButton: Padding(
@@ -111,7 +109,7 @@ class MyCodeViewState extends State<MyCodeView> {
             ),
           );
         } else {
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         }
       },
     );

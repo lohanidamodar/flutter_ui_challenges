@@ -1,10 +1,10 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 
 class Payment extends StatefulWidget {
+  const Payment({Key? key}) : super(key: key);
+
   @override
   _PaymentState createState() => _PaymentState();
 }
@@ -15,36 +15,36 @@ class _PaymentState extends State<Payment> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Payment'),
+        title: const Text('Payment'),
       ),
       body: Container(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              margin: EdgeInsets.all(20),
+              margin: const EdgeInsets.all(20),
               child: TextField(
                 onChanged: (val) {
                   setState(() {
                     amount = double.parse(val);
                   });
                 },
-                decoration: InputDecoration(hintText: 'Amount'),
+                decoration: const InputDecoration(hintText: 'Amount'),
                 keyboardType: TextInputType.number,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Pay',
-                  style: TextStyle(
-                    color: Colors.white,
-                  )),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
               ),
+              child: const Text('Pay',
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
             ),
-            Text(
+            const Text(
               'Note: Make sure your device have khalti app',
               style: TextStyle(color: Colors.grey),
             )

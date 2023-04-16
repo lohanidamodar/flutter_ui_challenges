@@ -1,11 +1,11 @@
-/**
- * Author: Sudip Thapa  
- * profile: https://github.com/sudeepthapa
-  */
+/// Author: Sudip Thapa
+/// profile: https://github.com/sudeepthapa
 import 'package:flutter/material.dart';
 
 class LoginSevenPage extends StatefulWidget {
-  static final String path = "lib/src/pages/login/login7.dart";
+  static const String path = "lib/src/pages/login/login7.dart";
+
+  const LoginSevenPage({Key? key}) : super(key: key);
   @override
   _LoginSevenPageState createState() => _LoginSevenPageState();
 }
@@ -22,30 +22,35 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               ClipPath(
                 clipper: WaveClipper2(),
                 child: Container(
-                  child: Column(),
                   width: double.infinity,
                   height: 300,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0x22ff3a5a), Color(0x22fe494d)])),
+                  child: Column(),
                 ),
               ),
               ClipPath(
                 clipper: WaveClipper3(),
                 child: Container(
-                  child: Column(),
                   width: double.infinity,
                   height: 300,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0x44ff3a5a), Color(0x44fe494d)])),
+                  child: Column(),
                 ),
               ),
               ClipPath(
                 clipper: WaveClipper1(),
                 child: Container(
+                  width: double.infinity,
+                  height: 300,
+                  decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                          colors: [Color(0xffff3a5a), Color(0xfffe494d)])),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       SizedBox(
                         height: 40,
                       ),
@@ -66,27 +71,22 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                       ),
                     ],
                   ),
-                  width: double.infinity,
-                  height: 300,
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                          colors: [Color(0xffff3a5a), Color(0xfffe494d)])),
                 ),
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 32),
             child: Material(
               elevation: 2.0,
-              borderRadius: BorderRadius.all(Radius.circular(30)),
+              borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: TextField(
                 onChanged: (String value) {},
                 cursorColor: Colors.deepOrange,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     hintText: "Email",
                     prefixIcon: Material(
                       elevation: 0,
@@ -102,18 +102,18 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 32),
             child: Material(
               elevation: 2.0,
-              borderRadius: BorderRadius.all(Radius.circular(30)),
+              borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: TextField(
                 onChanged: (String value) {},
                 cursorColor: Colors.deepOrange,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     hintText: "Password",
                     prefixIcon: Material(
                       elevation: 0,
@@ -129,17 +129,17 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32),
+              padding: const EdgeInsets.symmetric(horizontal: 32),
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(100)),
                     color: Color(0xffff3a5a)),
                 child: TextButton(
-                  child: Text(
+                  child: const Text(
                     "Login",
                     style: TextStyle(
                         color: Colors.white,
@@ -149,22 +149,22 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                   onPressed: () {},
                 ),
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Center(
+          const Center(
             child: Text(
               "FORGOT PASSWORD ?",
               style: TextStyle(
                   color: Colors.red, fontSize: 12, fontWeight: FontWeight.w700),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: const <Widget>[
               Text(
                 "Don't have an Account ? ",
                 style: TextStyle(

@@ -1,15 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginFourPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login4.dart";
+  static const String path = "lib/src/pages/login/login4.dart";
   final String background = loginBack;
+
+  const LoginFourPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,18 +16,18 @@ class LoginFourPage extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: NetworkImage(background), fit: BoxFit.cover)),
             ),
             Container(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               color: Colors.black.withOpacity(0.7),
             ),
             SingleChildScrollView(
-              padding: EdgeInsets.all(20.0),
-              physics: BouncingScrollPhysics(),
+              padding: const EdgeInsets.all(20.0),
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
               child: Container(
                 child: Column(
@@ -36,21 +35,21 @@ class LoginFourPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       height: 100.0,
                     ),
-                    Text(
+                    const Text(
                       "Welcome Back",
                       style: TextStyle(color: Colors.white, fontSize: 28.0),
                     ),
-                    Text(
+                    const Text(
                       "Sign in to continue",
                       style: TextStyle(color: Colors.white, fontSize: 16.0),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                     ),
-                    TextField(
+                    const TextField(
                       style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                           hintText: "Username",
@@ -58,10 +57,10 @@ class LoginFourPage extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white54))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
-                    TextField(
+                    const TextField(
                       obscureText: true,
                       style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
@@ -70,12 +69,12 @@ class LoginFourPage extends StatelessWidget {
                           enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white54))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     GestureDetector(
                       onTap: () {},
-                      child: Text(
+                      child: const Text(
                         "Forgot your password?",
                         style: TextStyle(color: Colors.white),
                       ),
@@ -91,16 +90,16 @@ class LoginFourPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text(
+                        const Text(
                           "Dont have an account?",
                           style: TextStyle(color: Colors.white, fontSize: 16.0),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         GestureDetector(
                           onTap: () {},
-                          child: Text(
+                          child: const Text(
                             "SIGN UP",
                             style:
                                 TextStyle(color: Colors.white, fontSize: 16.0),

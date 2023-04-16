@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -19,9 +17,9 @@ class CustomPaginationBuilder extends SwiperPlugin {
       {this.activeColor,
       this.color,
       this.key,
-      this.size: const Size(10.0, 2.0),
-      this.activeSize: const Size(10.0, 2.0),
-      this.space: 3.0});
+      this.size = const Size(10.0, 2.0),
+      this.activeSize = const Size(10.0, 2.0),
+      this.space = 3.0});
 
   @override
   Widget build(BuildContext context, SwiperPluginConfig config) {
@@ -41,7 +39,7 @@ class CustomPaginationBuilder extends SwiperPlugin {
 
     for (int i = 0; i < itemCount; ++i) {
       bool active = i == activeIndex;
-      Size size = active ? this.activeSize : this.size;
+      Size size = active ? activeSize : this.size;
       list.add(SizedBox(
         width: size.width,
         height: size.height,
@@ -56,13 +54,13 @@ class CustomPaginationBuilder extends SwiperPlugin {
     }
 
     if (config.scrollDirection == Axis.vertical) {
-      return new Column(
+      return Column(
         key: key,
         mainAxisSize: MainAxisSize.min,
         children: list,
       );
     } else {
-      return new Row(
+      return Row(
         key: key,
         mainAxisSize: MainAxisSize.min,
         children: list,

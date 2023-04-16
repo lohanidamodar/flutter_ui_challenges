@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -56,14 +54,14 @@ class DesignPreviewsPage extends StatelessWidget {
           title: Text(title),
           actions: <Widget>[
             IconButton(
-              icon: Icon(FontAwesomeIcons.shareSquare),
+              icon: const Icon(FontAwesomeIcons.shareSquare),
               tooltip: "Open full preview",
               onPressed: () {
                 Share.share('$githubRepo/blob/master/$path');
               },
             )
           ],
-          bottom: TabBar(
+          bottom: const TabBar(
             tabs: _TABS,
           ),
         ),

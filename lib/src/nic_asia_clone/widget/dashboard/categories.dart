@@ -1,7 +1,5 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../../util/constant.dart';
@@ -10,18 +8,20 @@ import '../../widget/dashboard/category.dart';
 import '../heading.dart';
 
 class Categories extends StatelessWidget {
+  const Categories({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
-        Heading(
+        const Heading(
           title: 'would you like to?',
         ),
-        SizedBox(
+        const SizedBox(
           height: 25.0,
         ),
         Flexible(
@@ -29,7 +29,7 @@ class Categories extends StatelessWidget {
           child: GridView.count(
             crossAxisCount: 3,
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             // primary: true,
             children: categories
                 .map((item) => Category(

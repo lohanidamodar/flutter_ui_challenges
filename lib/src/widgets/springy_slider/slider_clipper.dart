@@ -4,7 +4,7 @@ import 'dart:math';
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-  
+
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_controller.dart';
 import 'package:flutter_ui_challenges/src/widgets/springy_slider/slider_state.dart';
@@ -33,7 +33,7 @@ class SliderClipper extends CustomClipper<Path> {
   }
 
   Path _clipIdle(Size size) {
-    Path rect = new Path();
+    Path rect = Path();
 
     final top = paddingTop!;
     final bottom = size.height;
@@ -41,7 +41,7 @@ class SliderClipper extends CustomClipper<Path> {
     final percentFromBottom = 1.0 - sliderController!.sliderValue!;
 
     rect.addRect(
-      new Rect.fromLTRB(
+      Rect.fromLTRB(
         0.0,
         top + (percentFromBottom * height),
         size.width,
@@ -53,7 +53,7 @@ class SliderClipper extends CustomClipper<Path> {
   }
 
   Path _clipDragging(Size size) {
-    Path compositePath = new Path();
+    Path compositePath = Path();
 
     final top = paddingTop!;
     final bottom = size.height - paddingBottom!;
@@ -77,11 +77,12 @@ class SliderClipper extends CustomClipper<Path> {
     } else if (sliderController!.draggingPercent! > 1.0) {
       excessDrag = sliderController!.draggingPercent! - 1.0;
     }
-    final baseControlPointWidth = 150.0;
+    const baseControlPointWidth = 150.0;
     final thickeningFactor = excessDrag! * height * 0.05;
-    final controlPointWidth = (200.0 * thickeningFactor).abs() + baseControlPointWidth;
+    final controlPointWidth =
+        (200.0 * thickeningFactor).abs() + baseControlPointWidth;
 
-    final rect = new Path();
+    final rect = Path();
     rect.moveTo(leftPoint.x, leftPoint.y);
     rect.lineTo(rightPoint.x, rightPoint.y);
     rect.lineTo(rightPoint.x, size.height);
@@ -91,19 +92,19 @@ class SliderClipper extends CustomClipper<Path> {
 
     compositePath.addPath(rect, const Offset(0.0, 0.0));
 
-    final curve = new Path();
-    curve.moveTo(crestPoint.x as double, crestPoint.y as double);
+    final curve = Path();
+    curve.moveTo(crestPoint.x, crestPoint.y);
     curve.quadraticBezierTo(
       crestPoint.x - controlPointWidth,
-      crestPoint.y as double,
+      crestPoint.y,
       leftPoint.x,
       leftPoint.y,
     );
 
-    curve.moveTo(crestPoint.x as double, crestPoint.y as double);
+    curve.moveTo(crestPoint.x, crestPoint.y);
     curve.quadraticBezierTo(
       crestPoint.x + controlPointWidth,
-      crestPoint.y as double,
+      crestPoint.y,
       rightPoint.x,
       rightPoint.y,
     );
@@ -121,13 +122,14 @@ class SliderClipper extends CustomClipper<Path> {
   }
 
   Path _clipSpringing(Size size) {
-    Path compositePath = new Path();
+    Path compositePath = Path();
 
     final top = paddingTop!;
     final bottom = size.height - paddingBottom!;
     final height = bottom - top;
     final basePercentFromBottom = 1.0 - sliderController!.springingPercent!;
-    final crestSpringPercentFromBottom = 1.0 - sliderController!.crestSpringingPercent!;
+    final crestSpringPercentFromBottom =
+        1.0 - sliderController!.crestSpringingPercent!;
 
     final baseY = top + (basePercentFromBottom * height);
     final leftX = -0.85 * size.width;
@@ -145,9 +147,9 @@ class SliderClipper extends CustomClipper<Path> {
     final troughY = baseY + (baseY - crestY);
     final troughPoint = Point((centerX - leftX) / 2 + leftX, troughY);
 
-    final controlPointWidth = 100.0;
+    const controlPointWidth = 100.0;
 
-    final rect = new Path();
+    final rect = Path();
     rect.moveTo(leftPoint.x, leftPoint.y);
     rect.lineTo(rightPoint.x, rightPoint.y);
     rect.lineTo(rightPoint.x, size.height);
@@ -157,7 +159,7 @@ class SliderClipper extends CustomClipper<Path> {
 
     compositePath.addPath(rect, const Offset(0.0, 0.0));
 
-    final leftCurve = new Path();
+    final leftCurve = Path();
     leftCurve.moveTo(troughPoint.x, troughPoint.y);
     leftCurve.quadraticBezierTo(
       troughPoint.x - controlPointWidth,
@@ -183,7 +185,7 @@ class SliderClipper extends CustomClipper<Path> {
 
     compositePath.addPath(leftCurve, const Offset(0.0, 0.0));
 
-    final rightCurve = new Path();
+    final rightCurve = Path();
     rightCurve.moveTo(crestPoint.x, crestPoint.y);
     rightCurve.quadraticBezierTo(
       crestPoint.x - controlPointWidth,

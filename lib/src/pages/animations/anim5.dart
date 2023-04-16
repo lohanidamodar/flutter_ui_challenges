@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
@@ -15,14 +13,16 @@ List<String> places = [
 ];
 
 class AnimatedListOnePage extends StatefulWidget {
-  static final String path = "lib/src/pages/animations/anim5.dart";
+  static const String path = "lib/src/pages/animations/anim5.dart";
+
+  const AnimatedListOnePage({Key? key}) : super(key: key);
   @override
   _AnimatedListOnePageState createState() => _AnimatedListOnePageState();
 }
 
 class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
   late List<String> items;
-  GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
+  final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
 
   @override
   void initState() {
@@ -34,7 +34,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated List One"),
+        title: const Text("Animated List One"),
       ),
       backgroundColor: Colors.grey.shade300,
       body: AnimatedList(
@@ -42,7 +42,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
         initialItemCount: items.length,
         itemBuilder: (context, index, anim) {
           return SlideTransition(
-            position: Tween<Offset>(begin: Offset(1, 0), end: Offset.zero)
+            position: Tween<Offset>(begin: const Offset(1, 0), end: Offset.zero)
                 .animate(anim),
             child: BorderedContainer(
               margin: const EdgeInsets.symmetric(
@@ -53,7 +53,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
               child: ListTile(
                 title: Text(items[index]),
                 trailing: IconButton(
-                  icon: Icon(Icons.clear),
+                  icon: const Icon(Icons.clear),
                   onPressed: () {
                     _listKey.currentState!.removeItem(index,
                         (context, animation) {
@@ -81,7 +81,7 @@ class _AnimatedListOnePageState extends State<AnimatedListOnePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: () {
           places.shuffle();
           items.insert(items.length, places[0]);

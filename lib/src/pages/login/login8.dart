@@ -1,12 +1,12 @@
-/**
- * Author: Damodar Lohani  
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class LoginEightPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login8.dart";
+  static const String path = "lib/src/pages/login/login8.dart";
+
+  const LoginEightPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class LoginEightPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Ink(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(room4),
                 fit: BoxFit.cover,
@@ -30,7 +30,7 @@ class LoginEightPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 50.0),
-                  Text(
+                  const Text(
                     "Awesome App",
                     style: TextStyle(
                       color: Colors.white,
@@ -40,7 +40,7 @@ class LoginEightPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 50.0),
-                  Text(
+                  const Text(
                     "LOGIN",
                     style: TextStyle(
                       color: Colors.white,
@@ -56,14 +56,14 @@ class LoginEightPage extends StatelessWidget {
                       fillColor: Colors.white,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5.0),
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                       ),
                       border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                       hintText: "email",
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w300,
                         fontSize: 16.0,
@@ -77,14 +77,14 @@ class LoginEightPage extends StatelessWidget {
                       fillColor: Colors.white,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5.0),
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                       ),
                       border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                       hintText: "password",
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w300,
                         fontSize: 16.0,
@@ -102,7 +102,7 @@ class LoginEightPage extends StatelessWidget {
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.all(16.0),
                     ),
-                    child: Text(
+                    child: const Text(
                       "login",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
@@ -122,7 +122,7 @@ class LoginEightPage extends StatelessWidget {
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
               ),
-              child: Text(
+              child: const Text(
                 "SIGN UP",
                 style: TextStyle(
                   fontSize: 18.0,

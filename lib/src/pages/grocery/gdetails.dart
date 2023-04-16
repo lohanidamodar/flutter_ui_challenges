@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -10,7 +8,9 @@ import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dar
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class GroceryDetailsPage extends StatelessWidget {
-  static final String path = "lib/src/pages/grocery/gdetails.dart";
+  static const String path = "lib/src/pages/grocery/gdetails.dart";
+
+  const GroceryDetailsPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class GroceryDetailsPage extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.green,
-        title: Text("Details"),
+        title: const Text("Details"),
       ),
       body: _buildPageContent(context),
     );
@@ -32,16 +32,16 @@ class GroceryDetailsPage extends StatelessWidget {
             children: <Widget>[
               _buildItemCard(context),
               Container(
-                  padding: EdgeInsets.all(30.0),
-                  child: GrocerySubtitle(
+                  padding: const EdgeInsets.all(30.0),
+                  child: const GrocerySubtitle(
                       text:
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque nibh ut eros suscipit, vel cursus dolor imperdiet. Proin volutpat ligula eget purus maximus tristique. Pellentesque ullamcorper libero vitae metus feugiat fringilla. Ut luctus neque sed tortor placerat, faucibus mollis risus ullamcorper. Cras at nunc et odio ultrices tempor et.")),
               Container(
-                  padding: EdgeInsets.only(left: 20.0, bottom: 10.0),
-                  child: GroceryTitle(text: "Related Items")),
-              GroceryListItemTwo(
+                  padding: const EdgeInsets.only(left: 20.0, bottom: 10.0),
+                  child: const GroceryTitle(text: "Related Items")),
+              const GroceryListItemTwo(
                   title: "Broccoli", image: brocoli, subtitle: "1 kg"),
-              GroceryListItemTwo(
+              const GroceryListItemTwo(
                   title: "Cabbage", image: cabbage, subtitle: "1 kg"),
             ],
           ),
@@ -56,7 +56,7 @@ class GroceryDetailsPage extends StatelessWidget {
                     foregroundColor: Colors.green,
                   ),
                   onPressed: () {},
-                  child: Text("Add to Cart"),
+                  child: const Text("Add to Cart"),
                 ),
               ),
             )
@@ -70,9 +70,9 @@ class GroceryDetailsPage extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Card(
-          margin: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+          margin: const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
           child: Container(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: <Widget>[
                 Row(
@@ -80,25 +80,25 @@ class GroceryDetailsPage extends StatelessWidget {
                   children: <Widget>[
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.favorite_border),
+                      icon: const Icon(Icons.favorite_border),
                     )
                   ],
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  child: PNetworkImage(
+                  child: const PNetworkImage(
                     cabbage,
                     height: 200,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                GroceryTitle(text: "Local Cabbage"),
-                SizedBox(
+                const GroceryTitle(text: "Local Cabbage"),
+                const SizedBox(
                   height: 5.0,
                 ),
-                GrocerySubtitle(text: "1 kg")
+                const GrocerySubtitle(text: "1 kg")
               ],
             ),
           ),

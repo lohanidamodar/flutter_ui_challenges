@@ -1,16 +1,13 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SlidersPage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/sliders.dart";
+  static const String path = "lib/src/pages/misc/sliders.dart";
   final List<String> images = [
     avatars[0],
     breakfast,
@@ -25,11 +22,13 @@ class SlidersPage extends StatelessWidget {
     burger,
     pashupatinath,
   ];
+
+  const SlidersPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sliders'),
+        title: const Text('Sliders'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -37,7 +36,7 @@ class SlidersPage extends StatelessWidget {
             Container(
               height: 300,
               color: Colors.grey.shade800,
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Swiper(
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
@@ -51,14 +50,14 @@ class SlidersPage extends StatelessWidget {
                 itemCount: 10,
                 viewportFraction: 0.8,
                 scale: 0.9,
-                pagination: SwiperPagination(),
+                pagination: const SwiperPagination(),
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               height: 300,
               color: Colors.grey.shade800,
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Swiper(
                 itemBuilder: (BuildContext context, int index) {
                   return ClipRRect(
@@ -74,11 +73,11 @@ class SlidersPage extends StatelessWidget {
                 layout: SwiperLayout.STACK,
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               height: 340,
               color: Colors.grey.shade800,
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Swiper(
                 fade: 0.0,
                 itemBuilder: (BuildContext context, int index) {
@@ -88,7 +87,7 @@ class SlidersPage extends StatelessWidget {
                         height: 200,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(10.0),
                                 topRight: Radius.circular(10.0)),
                             image: DecorationImage(
@@ -96,12 +95,12 @@ class SlidersPage extends StatelessWidget {
                                 fit: BoxFit.cover)),
                       ),
                       Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(10.0),
                                   bottomRight: Radius.circular(10.0))),
-                          child: ListTile(
+                          child: const ListTile(
                             subtitle: Text("awesome image caption"),
                             title: Text("Awesome image"),
                           ))
@@ -110,7 +109,7 @@ class SlidersPage extends StatelessWidget {
                 },
                 itemCount: 10,
                 scale: 0.9,
-                pagination: SwiperPagination(),
+                pagination: const SwiperPagination(),
               ),
             ),
           ],

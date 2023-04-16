@@ -1,10 +1,9 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 
 class GalleryPageOne extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/gallery1.dart";
+  static const String path = "lib/src/pages/misc/gallery1.dart";
   final List<QuiltedGridTile> _quiltedGridTiles = const <QuiltedGridTile>[
     QuiltedGridTile(2, 2),
     QuiltedGridTile(1, 1),
@@ -23,6 +22,8 @@ class GalleryPageOne extends StatelessWidget {
     QuiltedGridTile(1, 2),
     QuiltedGridTile(1, 1),
   ];
+
+  const GalleryPageOne({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,18 +31,18 @@ class GalleryPageOne extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Photos',
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.transparent,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         actions: <Widget>[
           TextButton(
             style: TextButton.styleFrom(
               foregroundColor: Colors.blue,
             ),
-            child: Text("Add New"),
+            child: const Text("Add New"),
             onPressed: () {},
           )
         ],

@@ -1,7 +1,5 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import '../util/constant.dart';
@@ -9,8 +7,12 @@ import '../util/constant.dart';
 class ProfileImage extends StatelessWidget {
   final double height, width;
   final Color color;
-  ProfileImage(
-      {this.height = 100.0, this.width = 100.0, this.color = primaryColor});
+  const ProfileImage(
+      {Key? key,
+      this.height = 100.0,
+      this.width = 100.0,
+      this.color = primaryColor})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +21,7 @@ class ProfileImage extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: Colors.red,
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage('assets/nicasiaassets/profile.jpg'),
           fit: BoxFit.contain,
         ),

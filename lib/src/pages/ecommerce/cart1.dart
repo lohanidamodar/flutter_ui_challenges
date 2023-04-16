@@ -1,18 +1,18 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class CartOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/cart1.dart";
+  static const String path = "lib/src/pages/ecommerce/cart1.dart";
   final List<Map> items = [
     {"image": breakfast, "title": "Breakfast Set", "price": 20},
     {"image": burger, "title": "Veg Burger", "price": 30},
   ];
+
+  const CartOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,8 @@ class CartOnePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
-                padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 30.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16.0, vertical: 30.0),
                 child: Text(
                   "CART",
                   style: TextStyle(
@@ -33,26 +34,27 @@ class CartOnePage extends StatelessWidget {
                 )),
             Expanded(
               child: ListView.builder(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 itemCount: items.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Stack(
                     children: <Widget>[
                       Container(
                         width: double.infinity,
-                        margin: EdgeInsets.only(right: 30.0, bottom: 10.0),
+                        margin:
+                            const EdgeInsets.only(right: 30.0, bottom: 10.0),
                         child: Material(
                           borderRadius: BorderRadius.circular(5.0),
                           elevation: 3.0,
                           child: Container(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               children: <Widget>[
-                                Container(
+                                SizedBox(
                                   height: 80,
                                   child: PNetworkImage(items[index]["image"]),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10.0,
                                 ),
                                 Expanded(
@@ -62,16 +64,16 @@ class CartOnePage extends StatelessWidget {
                                     children: <Widget>[
                                       Text(
                                         items[index]["title"],
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 20.0,
                                       ),
                                       Text(
                                         "\$${items[index]['price']}",
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18.0),
                                       ),
@@ -93,9 +95,9 @@ class CartOnePage extends StatelessWidget {
                           child: MaterialButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.0)),
-                            padding: EdgeInsets.all(0.0),
+                            padding: const EdgeInsets.all(0.0),
                             color: Colors.pinkAccent,
-                            child: Icon(
+                            child: const Icon(
                               Icons.clear,
                               color: Colors.white,
                             ),
@@ -110,7 +112,7 @@ class CartOnePage extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
@@ -119,7 +121,7 @@ class CartOnePage extends StatelessWidget {
                     style:
                         TextStyle(color: Colors.grey.shade700, fontSize: 16.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5.0,
                   ),
                   Text(
@@ -127,15 +129,15 @@ class CartOnePage extends StatelessWidget {
                     style:
                         TextStyle(color: Colors.grey.shade700, fontSize: 16.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
-                  Text(
+                  const Text(
                     "Cart Subtotal     \$55",
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   SizedBox(
@@ -145,7 +147,7 @@ class CartOnePage extends StatelessWidget {
                       color: Colors.pinkAccent,
                       child: Text(
                         "Secure Checkout".toUpperCase(),
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                       ),
                       onPressed: () {},
                     ),

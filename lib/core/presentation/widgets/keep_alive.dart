@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 
@@ -19,7 +17,7 @@ class _AlwaysAliveWidgetState extends State<AlwaysAliveWidget>
     with AutomaticKeepAliveClientMixin<AlwaysAliveWidget> {
   @override
   Widget build(BuildContext context) {
-    return this.widget.child;
+    return widget.child;
   }
 
   @override

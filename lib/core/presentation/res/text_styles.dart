@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-final TextStyle blackText = TextStyle(
+const TextStyle blackText = TextStyle(
   color: Colors.black,
 );
 
-final TextStyle buttonText = TextStyle(fontSize: 16.0);
-final TextStyle linkText = TextStyle(
+const TextStyle buttonText = TextStyle(fontSize: 16.0);
+const TextStyle linkText = TextStyle(
   fontSize: 16.0,
   fontWeight: FontWeight.bold,
   color: Colors.indigo,

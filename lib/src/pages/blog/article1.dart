@@ -1,27 +1,27 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ArticleOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/blog/article1.dart";
+  static const String path = "lib/src/pages/blog/article1.dart";
+
+  const ArticleOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     String image = images[1];
     return Scaffold(
       appBar: AppBar(
-        title: Text('Article One'),
+        title: const Text('Article One'),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Stack(
               children: <Widget>[
-                Container(
+                SizedBox(
                     height: 300,
                     width: double.infinity,
                     child: PNetworkImage(
@@ -33,7 +33,7 @@ class ArticleOnePage extends StatelessWidget {
                   left: 20.0,
                   right: 20.0,
                   child: Row(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Icon(
                         Icons.slideshow,
                         color: Colors.white,
@@ -56,25 +56,25 @@ class ArticleOnePage extends StatelessWidget {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(
+                      const Expanded(
                         child: Text("Oct 21, 2017"),
                       ),
                       IconButton(
-                        icon: Icon(Icons.share),
+                        icon: const Icon(Icons.share),
                         onPressed: () {},
                       )
                     ],
                   ),
                   Text(
                     "Lorem ipsum dolor sit amet",
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  Divider(),
-                  SizedBox(
+                  const Divider(),
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Row(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Icon(Icons.favorite_border),
                       SizedBox(
                         width: 5.0,
@@ -90,10 +90,10 @@ class ArticleOnePage extends StatelessWidget {
                       Text("2.2k"),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
-                  Text(
+                  const Text(
                     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ullam? Fuga doloremque repellendus aut sequi officiis dignissimos, enim assumenda tenetur reprehenderit quam error, accusamus ipsa? Officiis voluptatum sequi voluptas omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ullam? Fuga doloremque repellendus aut sequi officiis dignissimos, enim assumenda tenetur reprehenderit quam error, accusamus ipsa? Officiis voluptatum sequi voluptas omnis.",
                     textAlign: TextAlign.justify,
                   )

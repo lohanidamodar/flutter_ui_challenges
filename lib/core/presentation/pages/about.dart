@@ -1,17 +1,16 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/data/models/developer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 import '../../constants.dart';
 
 class AboutPage extends StatelessWidget {
+  const AboutPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -19,7 +18,7 @@ class AboutPage extends StatelessWidget {
       child: Builder(builder: (context) {
         return Scaffold(
           appBar: AppBar(
-            title: Text('About Flutter UI Challenges'),
+            title: const Text('About Flutter UI Challenges'),
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.all(16.0),
@@ -29,7 +28,7 @@ class AboutPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(color: Colors.grey.shade200),
-                  child: Text(
+                  child: const Text(
                       "Flutter UI Challenges is our effort to replicate various UIs in flutter and share it with you for free."),
                 ),
                 const SizedBox(height: 20.0),
@@ -45,7 +44,7 @@ class AboutPage extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Icon(
+                          const Icon(
                             FontAwesomeIcons.github,
                             color: Colors.red,
                           ),
@@ -60,12 +59,12 @@ class AboutPage extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 10.0),
-                      Text(
+                      const Text(
                           "Find codes to all the UIs in our github repository."),
                     ],
                   ),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 MaterialButton(
                   color: Colors.grey.shade200,
                   padding: const EdgeInsets.all(16.0),
@@ -78,7 +77,7 @@ class AboutPage extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Icon(
+                          const Icon(
                             FontAwesomeIcons.youtube,
                             color: Colors.red,
                           ),
@@ -93,12 +92,12 @@ class AboutPage extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 10.0),
-                      Text(
+                      const Text(
                           "Subscribe our youtube channel to see us build some of these UIs as well as other flutter tutorials and resources."),
                     ],
                   ),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Text(
                   "Contributors",
                   style: TextStyle(
@@ -106,7 +105,7 @@ class AboutPage extends StatelessWidget {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10.0),
+                const SizedBox(height: 10.0),
                 ...DEVELOPERS.map((dev) => _buildHeader(dev)).toList(),
                 const SizedBox(height: 10.0),
                 MaterialButton(
@@ -114,7 +113,7 @@ class AboutPage extends StatelessWidget {
                   onPressed: () {
                     launch(privacyUrl);
                   },
-                  child: Text("Privacy Policy"),
+                  child: const Text("Privacy Policy"),
                 )
               ],
             ),
@@ -136,7 +135,7 @@ class AboutPage extends StatelessWidget {
         onPressed: () => _open(developer.github!),
         child: Row(
           children: <Widget>[
-            Container(
+            SizedBox(
                 width: 80.0,
                 height: 80.0,
                 child: CircleAvatar(
@@ -145,28 +144,29 @@ class AboutPage extends StatelessWidget {
                     child: CircleAvatar(
                         radius: 35.0,
                         backgroundImage: NetworkImage(developer.imageUrl!)))),
-            SizedBox(width: 20.0),
+            const SizedBox(width: 20.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
                   developer.name!,
-                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 18.0, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10.0),
+                const SizedBox(height: 10.0),
                 Text(developer.profession!),
-                SizedBox(height: 5.0),
+                const SizedBox(height: 5.0),
                 Row(
                   children: <Widget>[
-                    Icon(
+                    const Icon(
                       FontAwesomeIcons.map,
                       size: 12.0,
                       color: Colors.black54,
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                     Text(
                       developer.address!,
-                      style: TextStyle(color: Colors.black54),
+                      style: const TextStyle(color: Colors.black54),
                     ),
                   ],
                 ),

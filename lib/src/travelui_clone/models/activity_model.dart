@@ -1,4 +1,3 @@
-
 class Activity {
   String? imageUrl;
   String? name;

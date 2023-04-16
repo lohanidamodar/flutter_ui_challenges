@@ -1,7 +1,5 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 
@@ -10,7 +8,7 @@ const Color primaryColorLight = Color(0xFFED1B2E);
 const Color drawerColoPrimary = Color(0xFF88070B);
 const Color drawerColoSecondary = Color(0xFFCF0A11);
 
-final String path = 'assets/nicasiaassets/';
+const String path = 'assets/nicasiaassets/';
 
 final List<Draw> drawerItems = [
   Draw(title: 'Quick Payment', icon: Icons.photo_camera),
@@ -31,12 +29,12 @@ final List imageList = [
 ];
 
 final List categories = [
-  {'image': path + 'ic_username.png', 'title': 'My Account'},
-  {'image': path + 'esewa.jpg', 'title': 'Load eSewa'},
-  {'image': path + 'ic_payments_64_4.png', 'title': 'Payment'},
-  {'image': path + 'ic_transfer_32_4.png', 'title': 'Fund Transfer'},
-  {'image': path + 'ic_sch_payment_64_4.png', 'title': 'Schedule Payment'},
-  {'image': path + 'ic_scan2pay_64_4.png', 'title': 'Scan To Pay'},
+  {'image': '${path}ic_username.png', 'title': 'My Account'},
+  {'image': '${path}esewa.jpg', 'title': 'Load eSewa'},
+  {'image': '${path}ic_payments_64_4.png', 'title': 'Payment'},
+  {'image': '${path}ic_transfer_32_4.png', 'title': 'Fund Transfer'},
+  {'image': '${path}ic_sch_payment_64_4.png', 'title': 'Schedule Payment'},
+  {'image': '${path}ic_scan2pay_64_4.png', 'title': 'Scan To Pay'},
 ];
 
 final List transactions = [

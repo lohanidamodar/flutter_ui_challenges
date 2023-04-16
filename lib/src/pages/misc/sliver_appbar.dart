@@ -1,17 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart'
     as assets;
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class SliverAppbarPage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/sliver_appbar.dart";
+  static const String path = "lib/src/pages/misc/sliver_appbar.dart";
   final List<String> images = [
     assets.images[0],
     assets.backgroundImages[0],
@@ -23,6 +20,8 @@ class SliverAppbarPage extends StatelessWidget {
     assets.images[5]
   ];
 
+  const SliverAppbarPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +31,7 @@ class SliverAppbarPage extends StatelessWidget {
               expandedHeight: 150.0,
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
-                title: Text('Welcome To Shop'),
+                title: const Text('Welcome To Shop'),
                 background: PNetworkImage(assets.images[1], fit: BoxFit.cover),
               ),
               actions: <Widget>[
@@ -46,20 +45,20 @@ class SliverAppbarPage extends StatelessWidget {
             child: Container(
                 color: Colors.deepOrange,
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       MaterialButton(
                           onPressed: () {},
                           child: Text("New Arrivals".toUpperCase(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold))),
                       MaterialButton(
                           onPressed: () {},
                           child: Text("See All".toUpperCase(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400))),
                     ],
@@ -67,9 +66,9 @@ class SliverAppbarPage extends StatelessWidget {
                 )),
           ),
           SliverPadding(
-            padding: EdgeInsets.only(left: 16.0, right: 16.0),
+            padding: const EdgeInsets.only(left: 16.0, right: 16.0),
             sliver: SliverGrid(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   mainAxisSpacing: 10.0,
                   crossAxisSpacing: 10.0,
                   childAspectRatio: 1.0,
@@ -84,23 +83,23 @@ class SliverAppbarPage extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: Container(
-                margin: EdgeInsets.only(top: 20.0),
+                margin: const EdgeInsets.only(top: 20.0),
                 color: Colors.pink,
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       MaterialButton(
                           onPressed: () {},
                           child: Text("Featured".toUpperCase(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold))),
                       MaterialButton(
                           onPressed: () {},
                           child: Text("See All".toUpperCase(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400))),
                     ],
@@ -112,10 +111,10 @@ class SliverAppbarPage extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: Container(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 color: Colors.pink,
                 child: Text("Recommended for you".toUpperCase(),
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold))),
           ),
           SliverList(
@@ -133,26 +132,26 @@ class SliverAppbarPage extends StatelessWidget {
 
   Widget _buildSlider() {
     return Container(
-      padding: EdgeInsets.only(bottom: 20.0),
+      padding: const EdgeInsets.only(bottom: 20.0),
       height: 200.0,
       child: Container(
         child: Swiper(
           autoplay: true,
           itemBuilder: (BuildContext context, int index) {
-            return new PNetworkImage(
+            return PNetworkImage(
               images[index],
               fit: BoxFit.cover,
             );
           },
           itemCount: 4,
-          pagination: new SwiperPagination(),
+          pagination: const SwiperPagination(),
         ),
       ),
     );
   }
 
   Widget _buildItems(int index, BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 200,
       child: GestureDetector(
         onTap: () => _onTapItem(context, index),
@@ -163,17 +162,17 @@ class SliverAppbarPage extends StatelessWidget {
                     tag: "item$index",
                     child: PNetworkImage(images[index % images.length],
                         fit: BoxFit.cover))),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            Text(
+            const Text(
               'Top Quality fashion item',
               softWrap: true,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            Text(
+            const Text(
               'Rs.1,254',
               style: TextStyle(
                   fontSize: 18.0,
@@ -187,7 +186,7 @@ class SliverAppbarPage extends StatelessWidget {
   }
 
   Widget _buildListItem(int index) {
-    return Container(
+    return SizedBox(
         height: 100,
         child: Card(
           child: Center(
@@ -196,11 +195,11 @@ class SliverAppbarPage extends StatelessWidget {
                 radius: 40,
                 backgroundImage: NetworkImage(images[index % images.length]),
               ),
-              title: Text(
+              title: const Text(
                 'Top Quality fashion item',
                 softWrap: true,
               ),
-              subtitle: Text(
+              subtitle: const Text(
                 'Rs.1,254',
                 style: TextStyle(
                     fontSize: 18.0,
@@ -234,17 +233,17 @@ class SliverAppbarPage extends StatelessWidget {
                           tag: "item$index",
                           child: PNetworkImage(images[index % images.length],
                               fit: BoxFit.cover))),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
-                  Text(
+                  const Text(
                     'Top Quality fashion item',
                     softWrap: true,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
-                  Text(
+                  const Text(
                     'Rs.1,254',
                     style: TextStyle(
                         fontSize: 18.0,

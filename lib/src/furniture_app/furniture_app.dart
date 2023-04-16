@@ -1,14 +1,14 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 import 'package:flutter/material.dart';
 
 import 'pages/furniture.dart';
 import 'pages/profile.dart';
 
 class FurnitureApp extends StatelessWidget {
-  static final String path = "lib/src/furniture_app/furniture_app.dart";
+  static const String path = "lib/src/furniture_app/furniture_app.dart";
+
+  const FurnitureApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +16,7 @@ class FurnitureApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (BuildContext context) => SafeArea(
+        '/': (BuildContext context) => const SafeArea(
               child: SafeArea(
                 child: Profile(),
               ),

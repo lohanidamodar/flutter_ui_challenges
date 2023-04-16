@@ -1,20 +1,18 @@
-import 'package:cached_network_image/cached_network_image.dart';
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
-import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TodoHomeThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/todo/todo_home3.dart";
+  static const String path = "lib/src/pages/todo/todo_home3.dart";
+
+  const TodoHomeThreePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var orangeTextStyle = TextStyle(
+    var orangeTextStyle = const TextStyle(
       color: Colors.deepOrange,
     );
     return Scaffold(
@@ -65,7 +63,7 @@ class TodoHomeThreePage extends StatelessWidget {
         children: <Widget>[
           Text(
             "Wiki Lists",
-            style: Theme.of(context).textTheme.headline4?.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
@@ -117,7 +115,7 @@ class TodoHomeThreePage extends StatelessWidget {
                 style: orangeTextStyle,
               ),
               IconButton(
-                icon: Icon(Icons.add_circle_outline),
+                icon: const Icon(Icons.add_circle_outline),
                 color: Colors.greenAccent,
                 onPressed: () {},
               ),
@@ -134,13 +132,13 @@ class TodoHomeThreePage extends StatelessWidget {
           children: <Widget>[
             const SizedBox(width: 16.0),
             IconButton(
-              icon: Icon(Icons.home),
+              icon: const Icon(Icons.home),
               onPressed: () {},
               color: Colors.deepOrange,
             ),
-            Spacer(),
+            const Spacer(),
             IconButton(
-              icon: Icon(Icons.message),
+              icon: const Icon(Icons.message),
               onPressed: () {},
             ),
             const SizedBox(width: 16.0),
@@ -150,7 +148,6 @@ class TodoHomeThreePage extends StatelessWidget {
       floatingActionButton: MaterialButton(
         onPressed: () {},
         color: Colors.green,
-        child: Icon(Icons.add),
         textColor: Colors.white,
         minWidth: 0,
         elevation: 4.0,
@@ -158,6 +155,7 @@ class TodoHomeThreePage extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
@@ -168,15 +166,15 @@ class TodoHomeThreePage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        Icon(
+        const Icon(
           FontAwesomeIcons.circle,
           size: 16.0,
         ),
         const SizedBox(width: 10.0),
         Text(title),
-        Spacer(),
+        const Spacer(),
         IconButton(
-          icon: Icon(Icons.more_vert),
+          icon: const Icon(Icons.more_vert),
           onPressed: () {},
         ),
       ],
@@ -208,6 +206,10 @@ class TodoHomeThreePage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(26.0),
           alignment: Alignment.centerRight,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(20.0),
+          ),
           child: Opacity(
               opacity: 0.3,
               child: Icon(
@@ -215,10 +217,6 @@ class TodoHomeThreePage extends StatelessWidget {
                 size: 40,
                 color: Colors.white,
               )),
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(20.0),
-          ),
         ),
         Padding(
           padding: const EdgeInsets.all(16.0),
@@ -233,7 +231,7 @@ class TodoHomeThreePage extends StatelessWidget {
               const SizedBox(height: 16.0),
               Text(
                 label,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),

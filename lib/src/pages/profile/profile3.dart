@@ -1,16 +1,12 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ProfileThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/profile/profile3.dart";
+  static const String path = "lib/src/pages/profile/profile3.dart";
   final image = avatars[1];
+
+  const ProfileThreePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,14 +23,14 @@ class ProfileThreePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(16.0, 200.0, 16.0, 16.0),
+              margin: const EdgeInsets.fromLTRB(16.0, 200.0, 16.0, 16.0),
               child: Column(
                 children: <Widget>[
                   Stack(
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.all(16.0),
-                        margin: EdgeInsets.only(top: 16.0),
+                        padding: const EdgeInsets.all(16.0),
+                        margin: const EdgeInsets.only(top: 16.0),
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(5.0)),
@@ -42,16 +38,16 @@ class ProfileThreePage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Container(
-                              margin: EdgeInsets.only(left: 96.0),
+                              margin: const EdgeInsets.only(left: 96.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text(
                                     "Little Butterfly",
                                     style:
-                                        Theme.of(context).textTheme.headline6,
+                                        Theme.of(context).textTheme.titleLarge,
                                   ),
-                                  ListTile(
+                                  const ListTile(
                                     contentPadding: EdgeInsets.all(0),
                                     title: Text("Product Designer"),
                                     subtitle: Text("Kathmandu"),
@@ -59,12 +55,12 @@ class ProfileThreePage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(height: 10.0),
+                            const SizedBox(height: 10.0),
                             Row(
                               children: <Widget>[
                                 Expanded(
                                   child: Column(
-                                    children: <Widget>[
+                                    children: const <Widget>[
                                       Text("285"),
                                       Text("Likes")
                                     ],
@@ -72,7 +68,7 @@ class ProfileThreePage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    children: <Widget>[
+                                    children: const <Widget>[
                                       Text("3025"),
                                       Text("Comments")
                                     ],
@@ -80,7 +76,7 @@ class ProfileThreePage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    children: <Widget>[
+                                    children: const <Widget>[
                                       Text("650"),
                                       Text("Favourites")
                                     ],
@@ -98,18 +94,18 @@ class ProfileThreePage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10.0),
                             image: DecorationImage(
                                 image: NetworkImage(image), fit: BoxFit.cover)),
-                        margin: EdgeInsets.only(left: 16.0),
+                        margin: const EdgeInsets.only(left: 16.0),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
                         ListTile(
                           title: Text("User information"),
                         ),

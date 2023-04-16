@@ -1,16 +1,15 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class TravelHomePage extends StatelessWidget {
-  static final String path = "lib/src/pages/travel/thome.dart";
+  static const String path = "lib/src/pages/travel/thome.dart";
+
+  const TravelHomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,14 +17,14 @@ class TravelHomePage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text("Hello Raj Kumar,",
+                      const Text("Hello Raj Kumar,",
                           style: TextStyle(
                               fontSize: 18.0, fontWeight: FontWeight.bold)),
                       Text(
@@ -42,8 +41,9 @@ class TravelHomePage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
-              child: Material(
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
+              child: const Material(
                 elevation: 5.0,
                 child: TextField(
                   decoration: InputDecoration(
@@ -74,7 +74,7 @@ class TravelHomePage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.red,
         currentIndex: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.location_searching), label: "Discover"),
           BottomNavigationBarItem(
@@ -88,14 +88,14 @@ class TravelHomePage extends StatelessWidget {
 
   Widget _buildItem({required String title}) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Material(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         elevation: 5.0,
         child: Container(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Text(title,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20.0,
               )),
         ),
@@ -103,9 +103,11 @@ class TravelHomePage extends StatelessWidget {
     );
   }
 
-  Container _buildFeaturedItem({String? image, required String title, required String subtitle}) {
+  Container _buildFeaturedItem(
+      {String? image, required String title, required String subtitle}) {
     return Container(
-      padding: EdgeInsets.only(left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
+      padding: const EdgeInsets.only(
+          left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
       child: Material(
         elevation: 5.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -122,24 +124,25 @@ class TravelHomePage extends StatelessWidget {
               top: 10.0,
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.favorite_border, color: Colors.white),
+                icon: const Icon(Icons.favorite_border, color: Colors.white),
               ),
             ),
             Positioned(
               bottom: 20.0,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 color: Colors.black.withOpacity(0.7),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Text(title,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold)),
-                    Text(subtitle, style: TextStyle(color: Colors.white))
+                    Text(subtitle, style: const TextStyle(color: Colors.white))
                   ],
                 ),
               ),
@@ -152,6 +155,6 @@ class TravelHomePage extends StatelessWidget {
 
   _openDestinationPage(BuildContext context) {
     Navigator.push(
-        context, MaterialPageRoute(builder: (_) => DestinationPage()));
+        context, MaterialPageRoute(builder: (_) => const DestinationPage()));
   }
 }

@@ -8,14 +8,14 @@ ThemeData buildDefaultTheme() {
   return ThemeData(
       primarySwatch: Colors.green,
       primaryColor: Colors.green,
-      colorScheme: ColorScheme.light(
+      colorScheme: const ColorScheme.light(
         secondary: Colors.orange,
         primary: Colors.green,
       ),
       scaffoldBackgroundColor: bgColor,
-      appBarTheme: AppBarTheme(),
-      textTheme: TextTheme(
-        button: buttonText,
+      appBarTheme: const AppBarTheme(),
+      textTheme: const TextTheme(
+        labelLarge: buttonText,
       ),
       buttonTheme: ButtonThemeData(
         minWidth: 150,

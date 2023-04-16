@@ -1,9 +1,3 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -11,12 +5,14 @@ import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BikeHomePage extends StatelessWidget {
-  static final String path = "lib/src/pages/bike/home_page.dart";
+  static const String path = "lib/src/pages/bike/home_page.dart";
+
+  const BikeHomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bikes'),
+        title: const Text('Bikes'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -26,7 +22,7 @@ class BikeHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, top: 16.0),
               child: Text(
                 "Categories",
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
             CategoryChooser(
@@ -54,7 +50,7 @@ class BikeHomePage extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
+                              children: const <Widget>[
                                 Text(
                                   "Buy, Sell, Exchange",
                                   style: TextStyle(
@@ -78,7 +74,7 @@ class BikeHomePage extends StatelessWidget {
                           CircleAvatar(
                             backgroundColor: Colors.indigo.shade800,
                             radius: 50,
-                            child: Icon(
+                            child: const Icon(
                               FontAwesomeIcons.moneyBill,
                               size: 30,
                             ),
@@ -98,11 +94,11 @@ class BikeHomePage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent Posts",
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   TextButton(
-                    child: Text("View all"),
+                    child: const Text("View all"),
                     onPressed: () {},
                   ),
                 ],
@@ -116,28 +112,28 @@ class BikeHomePage extends StatelessWidget {
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => BikeDetailsPage(),
+                          builder: (_) => const BikeDetailsPage(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => BikeDetailsPage(),
+                          builder: (_) => const BikeDetailsPage(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => BikeDetailsPage(),
+                          builder: (_) => const BikeDetailsPage(),
                         )),
                   ),
                   BikeListItem(
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => BikeDetailsPage(),
+                          builder: (_) => const BikeDetailsPage(),
                         )),
                   ),
                 ],
@@ -167,7 +163,7 @@ class CategoryChooser extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: ListView.separated(
         padding: const EdgeInsets.symmetric(
@@ -185,7 +181,7 @@ class CategoryChooser extends StatelessWidget {
                 Container(
                   width: 60.0,
                   height: 60.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: NetworkImage(bike), fit: BoxFit.cover),
                     color: Colors.white,
@@ -195,7 +191,7 @@ class CategoryChooser extends StatelessWidget {
                 const SizedBox(height: 5.0),
                 Text(
                   type,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -203,7 +199,7 @@ class CategoryChooser extends StatelessWidget {
             ),
           );
         },
-        separatorBuilder: (context, index) => SizedBox(
+        separatorBuilder: (context, index) => const SizedBox(
           width: 10.0,
         ),
       ),
@@ -227,7 +223,7 @@ class BikeListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String title = "Bajaj Pulsar 220F";
+    const String title = "Bajaj Pulsar 220F";
     return Card(
       elevation: elevation,
       child: InkWell(
@@ -247,7 +243,7 @@ class BikeListItem extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Expanded(
+                        const Expanded(
                           child: Text(
                             title,
                             style: TextStyle(
@@ -260,7 +256,7 @@ class BikeListItem extends StatelessWidget {
                     ),
                     const SizedBox(height: 5.0),
                     Text.rich(
-                      TextSpan(
+                      const TextSpan(
                         children: [
                           TextSpan(
                             text: "Year 2019",
@@ -271,9 +267,9 @@ class BikeListItem extends StatelessWidget {
                     ),
                     const SizedBox(height: 5.0),
                     Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text("Condition"),
-                        const SizedBox(width: 10.0),
+                        SizedBox(width: 10.0),
                         Icon(
                           Icons.star,
                           color: Colors.yellow,
@@ -312,15 +308,15 @@ class BikeListItem extends StatelessWidget {
       width: 100,
       decoration: BoxDecoration(
         borderRadius: imageRight
-            ? BorderRadius.only(
+            ? const BorderRadius.only(
                 topRight: Radius.circular(4.0),
                 bottomRight: Radius.circular(4.0),
               )
-            : BorderRadius.only(
+            : const BorderRadius.only(
                 topLeft: Radius.circular(4.0),
                 bottomLeft: Radius.circular(4.0),
               ),
-        image: DecorationImage(
+        image: const DecorationImage(
           image: NetworkImage(bike),
           fit: BoxFit.cover,
         ),
@@ -337,7 +333,7 @@ class BikeListItem extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
           color: Theme.of(context).primaryColor),
-      child: Text(
+      child: const Text(
         "Rs. 1,80,000",
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
       ),

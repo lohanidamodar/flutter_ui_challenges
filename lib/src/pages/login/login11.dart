@@ -1,12 +1,11 @@
-import 'package:flutter/foundation.dart';
-/**
- * Author: Damodar Lohani  
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 
 class LoginElevenPage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login11.dart";
+  static const String path = "lib/src/pages/login/login11.dart";
+
+  const LoginElevenPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class LoginElevenPage extends StatelessWidget {
                     elevation: 10,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ),
@@ -39,11 +38,11 @@ class LoginElevenPage extends StatelessWidget {
                 Text(
                   "Welcome",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headline3!.copyWith(
+                  style: Theme.of(context).textTheme.displaySmall!.copyWith(
                         color: Colors.white,
                       ),
                 ),
-                Text(
+                const Text(
                   "Awesome login Form",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -60,24 +59,25 @@ class LoginElevenPage extends StatelessWidget {
                   child: ListView(
                     shrinkWrap: true,
                     primary: false,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     padding: const EdgeInsets.all(16.0),
                     children: [
                       const SizedBox(height: 20.0),
                       Text(
                         "Log In",
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.headline5!.copyWith(
-                              color: Colors.red,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.headlineSmall!.copyWith(
+                                  color: Colors.red,
+                                ),
                       ),
                       const SizedBox(height: 40.0),
-                      TextField(
+                      const TextField(
                         decoration: InputDecoration(
                           labelText: "Enter username",
                         ),
                       ),
-                      TextField(
+                      const TextField(
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: "Enter password",
@@ -85,15 +85,15 @@ class LoginElevenPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 30.0),
                       ElevatedButton(
-                        child: Text("SUBMIT"),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.all(16.0),
                         ),
+                        child: const Text("SUBMIT"),
                       ),
                       const SizedBox(height: 10.0),
                       TextButton(
-                        child: Text(
+                        child: const Text(
                           "Forgot Password?",
                           style: TextStyle(
                             fontSize: 20.0,

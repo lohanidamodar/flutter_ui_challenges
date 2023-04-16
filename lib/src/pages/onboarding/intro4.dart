@@ -1,8 +1,5 @@
-import 'package:cached_network_image/cached_network_image.dart';
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -12,7 +9,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ui_challenges/src/widgets/swiper_pagination.dart';
 
 class IntroFourPage extends StatefulWidget {
-  static final String path = "lib/src/pages/onboarding/intro4.dart";
+  static const String path = "lib/src/pages/onboarding/intro4.dart";
+
+  const IntroFourPage({Key? key}) : super(key: key);
   @override
   _IntroFourPageState createState() => _IntroFourPageState();
 }
@@ -34,7 +33,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
         children: <Widget>[
           Container(
             alignment: Alignment.center,
-            child: PNetworkImage(
+            child: const PNetworkImage(
               photographer,
               fit: BoxFit.contain,
             ),
@@ -57,11 +56,11 @@ class _IntroFourPageState extends State<IntroFourPage> {
                 },
                 pagination: SwiperPagination(
                     builder: CustomPaginationBuilder(
-                        activeSize: Size(10.0, 20.0),
-                        size: Size(10.0, 15.0),
+                        activeSize: const Size(10.0, 20.0),
+                        size: const Size(10.0, 15.0),
                         color: Colors.grey.shade600)),
               )),
-              SizedBox(height: 10.0),
+              const SizedBox(height: 10.0),
               _buildButtons(),
             ],
           ),
@@ -80,7 +79,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
             style: TextButton.styleFrom(
               foregroundColor: Colors.grey.shade700,
             ),
-            child: Text("Skip"),
+            child: const Text("Skip"),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('challenge_home');
             },
@@ -93,9 +92,9 @@ class _IntroFourPageState extends State<IntroFourPage> {
               size: 40,
             ),
             onPressed: () async {
-              if (_currentIndex < _pageCount - 1)
+              if (_currentIndex < _pageCount - 1) {
                 _swiperController.next();
-              else {
+              } else {
                 Navigator.of(context).pushReplacementNamed('challenge_home');
               }
             },
@@ -106,7 +105,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
   }
 
   Widget _buildPage({required String title, required String icon}) {
-    final TextStyle titleStyle =
+    const TextStyle titleStyle =
         TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0);
     return Container(
       width: double.infinity,
@@ -118,8 +117,8 @@ class _IntroFourPageState extends State<IntroFourPage> {
               image: NetworkImage(icon),
               fit: BoxFit.cover,
               colorFilter:
-                  ColorFilter.mode(Colors.black38, BlendMode.multiply)),
-          boxShadow: [
+                  const ColorFilter.mode(Colors.black38, BlendMode.multiply)),
+          boxShadow: const [
             BoxShadow(
                 blurRadius: 10.0,
                 spreadRadius: 5.0,
@@ -134,7 +133,7 @@ class _IntroFourPageState extends State<IntroFourPage> {
             textAlign: TextAlign.center,
             style: titleStyle.copyWith(color: Colors.white),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
         ],
       ),
     );

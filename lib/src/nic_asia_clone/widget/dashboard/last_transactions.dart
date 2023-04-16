@@ -1,7 +1,5 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,29 +8,31 @@ import '../../widget/dashboard/transaction.dart';
 import '../../widget/heading.dart';
 
 class LastTransactions extends StatelessWidget {
+  const LastTransactions({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
-        Heading(
+        const Heading(
           title: 'Last transactions',
         ),
-        SizedBox(
+        const SizedBox(
           height: 25.0,
         ),
         Flexible(
-          child: Container(
+          child: SizedBox(
             // color: Colors.red,
             height: deviceSize.height * 0.3,
             child: ListView.builder(
               shrinkWrap: true,
               // physics: NeverScrollableScrollPhysics(),
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               itemCount: transactions.length,
               itemBuilder: (context, int index) => Transaction(
                 transaction: transactions[index],

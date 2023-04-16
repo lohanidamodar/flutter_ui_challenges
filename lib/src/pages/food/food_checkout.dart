@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/colors.dart';
 
 final priceTextStyle = TextStyle(
   color: Colors.grey.shade600,
@@ -9,7 +8,9 @@ final priceTextStyle = TextStyle(
 );
 
 class FoodCheckoutOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/food/food_checkout.dart";
+  static const String path = "lib/src/pages/food/food_checkout.dart";
+
+  const FoodCheckoutOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,7 @@ class FoodCheckoutOnePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
       ),
@@ -42,7 +43,7 @@ class FoodCheckoutOnePage extends StatelessWidget {
               16.0,
             ),
             children: [
-              Text(
+              const Text(
                 "My Order",
                 style: TextStyle(
                   color: Colors.black,
@@ -88,7 +89,7 @@ class FoodCheckoutOnePage extends StatelessWidget {
                     "VAT (10%)",
                     style: priceTextStyle,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     "\$2",
                     style: priceTextStyle,
@@ -106,7 +107,7 @@ class FoodCheckoutOnePage extends StatelessWidget {
                     "Total",
                     style: priceTextStyle.copyWith(color: Colors.black),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     "\$49",
                     style: priceTextStyle.copyWith(color: Colors.indigo),
@@ -126,7 +127,7 @@ class FoodCheckoutOnePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15.0)),
                     backgroundColor: Colors.yellow.shade700,
                   ),
-                  child: Text(
+                  child: const Text(
                     "Next",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -197,7 +198,7 @@ class OrderListItem extends StatelessWidget {
               children: [
                 Text(
                   item!.title!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
@@ -219,12 +220,12 @@ class OrderListItem extends StatelessWidget {
                       IconButton(
                         iconSize: 18.0,
                         padding: const EdgeInsets.all(2.0),
-                        icon: Icon(Icons.remove),
+                        icon: const Icon(Icons.remove),
                         onPressed: () {},
                       ),
                       Text(
                         "${item!.qty}",
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,
@@ -233,7 +234,7 @@ class OrderListItem extends StatelessWidget {
                       IconButton(
                         iconSize: 18.0,
                         padding: const EdgeInsets.all(2.0),
-                        icon: Icon(Icons.add),
+                        icon: const Icon(Icons.add),
                         onPressed: () {},
                       ),
                     ],

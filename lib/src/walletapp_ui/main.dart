@@ -1,14 +1,14 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambikadulal
- * design:dribble.com
-  */
+/// Author: Ambika Dulal
+/// profile: https://github.com/Ambikadulal
+/// design:dribble.com
 import 'package:flutter/material.dart';
 import 'screens/cards_page.dart';
 import 'screens/homapage.dart';
 
 class WalletAppClone extends StatelessWidget {
   static const String path = 'lib/src/walletapp_ui/main.dart';
+
+  const WalletAppClone({Key? key}) : super(key: key);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -16,21 +16,23 @@ class WalletAppClone extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WalletApp(),
+      home: const WalletApp(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class WalletApp extends StatefulWidget {
+  const WalletApp({Key? key}) : super(key: key);
+
   @override
   _WalletAppState createState() => _WalletAppState();
 }
 
 class _WalletAppState extends State<WalletApp> {
   var screens = [
-    HomePage(),
-    CardPage(),
+    const HomePage(),
+    const CardPage(),
   ];
 
   int selectedTab = 0;
@@ -42,8 +44,7 @@ class _WalletAppState extends State<WalletApp> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.credit_card), label: "Card"),
+          BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: "Card"),
         ],
         onTap: (index) {
           setState(() {

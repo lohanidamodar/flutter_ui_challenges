@@ -1,15 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AuthOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/auth1.dart";
+  static const String path = "lib/src/pages/login/auth1.dart";
+
+  const AuthOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,17 +34,17 @@ class AuthOnePage extends StatelessWidget {
                     width: double.infinity,
                     child: Column(
                       children: <Widget>[
-                        Spacer(
+                        const Spacer(
                           flex: 2,
                         ),
-                        Text(
+                        const Text(
                           "existing members",
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 16.0,
                               color: Colors.white),
                         ),
-                        SizedBox(height: 10.0),
+                        const SizedBox(height: 10.0),
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
@@ -55,14 +54,14 @@ class AuthOnePage extends StatelessWidget {
                               padding: const EdgeInsets.all(16.0),
                               backgroundColor: Colors.white,
                             ),
-                            child: Text(
+                            child: const Text(
                               "Login",
                               style: TextStyle(color: Colors.pink),
                             ),
                             onPressed: () {},
                           ),
                         ),
-                        Spacer()
+                        const Spacer()
                       ],
                     ),
                   ),
@@ -73,12 +72,12 @@ class AuthOnePage extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(16.0),
                 width: double.infinity,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   children: <Widget>[
-                    Spacer(),
-                    Text("or if you are new here"),
-                    SizedBox(height: 10.0),
+                    const Spacer(),
+                    const Text("or if you are new here"),
+                    const SizedBox(height: 10.0),
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -88,15 +87,15 @@ class AuthOnePage extends StatelessWidget {
                           padding: const EdgeInsets.all(16.0),
                           backgroundColor: Colors.pink,
                         ),
-                        child: Text(
+                        child: const Text(
                           "Sign up",
                           style: TextStyle(color: Colors.white),
                         ),
                         onPressed: () {},
                       ),
                     ),
-                    SizedBox(height: 20.0),
-                    Text("or continue with"),
+                    const SizedBox(height: 20.0),
+                    const Text("or continue with"),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -106,28 +105,28 @@ class AuthOnePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(2.0)),
                             backgroundColor: Colors.red,
                           ),
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.google,
                             color: Colors.white,
                           ),
-                          label: Text(
+                          label: const Text(
                             "Google",
                             style: TextStyle(color: Colors.white),
                           ),
                           onPressed: () {},
                         ),
-                        SizedBox(width: 10.0),
+                        const SizedBox(width: 10.0),
                         ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(2.0)),
                             backgroundColor: Colors.indigo,
                           ),
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.facebook,
                             color: Colors.white,
                           ),
-                          label: Text(
+                          label: const Text(
                             "Facebook",
                             style: TextStyle(color: Colors.white),
                           ),
@@ -135,7 +134,7 @@ class AuthOnePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Spacer(
+                    const Spacer(
                       flex: 2,
                     )
                   ],

@@ -1,28 +1,28 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class ImagePopupPage extends StatelessWidget {
-  static final String path = "lib/src/pages/misc/image_popup.dart";
+  static const String path = "lib/src/pages/misc/image_popup.dart";
+
+  const ImagePopupPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Image popup'),
+        title: const Text('Image popup'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: <Widget>[
-          Text("Tap on the image to view the preview"),
+          const Text("Tap on the image to view the preview"),
           const SizedBox(height: 10.0),
           GestureDetector(
             onTap: () => _showImageDialog(context, mountEverest),
-            child: Container(
+            child: const SizedBox(
               height: 100,
               child: PNetworkImage(
                 mountEverest,
@@ -33,7 +33,7 @@ class ImagePopupPage extends StatelessWidget {
           const SizedBox(height: 10.0),
           GestureDetector(
             onTap: () => _showImageDialog(context, devDamodar),
-            child: Container(
+            child: const SizedBox(
               height: 100,
               child: PNetworkImage(
                 devDamodar,
@@ -44,7 +44,7 @@ class ImagePopupPage extends StatelessWidget {
           const SizedBox(height: 10.0),
           GestureDetector(
             onTap: () => _showImageDialog(context, avatars[1]),
-            child: Container(
+            child: SizedBox(
               height: 100,
               child: PNetworkImage(
                 avatars[1],
@@ -66,7 +66,7 @@ class ImagePopupPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: double.infinity,
                 child: PNetworkImage(
                   image,
@@ -79,13 +79,13 @@ class ImagePopupPage extends StatelessWidget {
               children: <Widget>[
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(Icons.close),
+                  icon: const Icon(Icons.close),
                   onPressed: () => Navigator.pop(context),
                 ),
                 const SizedBox(width: 10.0),
                 IconButton(
                   color: Colors.white,
-                  icon: Icon(Icons.share),
+                  icon: const Icon(Icons.share),
                   onPressed: () {},
                 ),
               ],

@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 
@@ -15,7 +13,7 @@ class GrocerySubtitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: TextStyle(color: Colors.grey));
+    return Text(text, style: const TextStyle(color: Colors.grey));
   }
 }
 
@@ -31,7 +29,7 @@ class GroceryTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
+      style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0),
     );
   }
 }

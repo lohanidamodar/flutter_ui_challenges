@@ -1,17 +1,16 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambikadulal
- * design concept:uikit
- * image:pixabay
-  */
+/// Author: Ambika Dulal
+/// profile: https://github.com/Ambikadulal
+/// design concept:uikit
+/// image:pixabay
 
 import 'package:flutter/material.dart';
 import 'dart:math';
+
 List<String> images = [
-'https://cdn.pixabay.com/photo/2017/03/10/00/19/nepal-2131320__340.jpg',
-'https://cdn.pixabay.com/photo/2020/06/27/10/32/travel-5345468__340.jpg',
-'https://cdn.pixabay.com/photo/2020/07/10/16/25/nepal-5391217__340.jpg',
-'https://cdn.pixabay.com/photo/2016/05/12/20/28/nepal-1388600__340.jpg',
+  'https://cdn.pixabay.com/photo/2017/03/10/00/19/nepal-2131320__340.jpg',
+  'https://cdn.pixabay.com/photo/2020/06/27/10/32/travel-5345468__340.jpg',
+  'https://cdn.pixabay.com/photo/2020/07/10/16/25/nepal-5391217__340.jpg',
+  'https://cdn.pixabay.com/photo/2016/05/12/20/28/nepal-1388600__340.jpg',
 ];
 List<String> title = [
   "We love Nepal",
@@ -19,11 +18,15 @@ List<String> title = [
   "The dreaming moon",
   "Bhaktapur and patan darbar Temple",
 ];
+
 class TravelStoryPage extends StatefulWidget {
-    static final String path = "lib/src/pages/travel/tstory.dart";
+  static const String path = "lib/src/pages/travel/tstory.dart";
+
+  const TravelStoryPage({Key? key}) : super(key: key);
   @override
-  _TravelStoryPageState createState() => new _TravelStoryPageState();
+  _TravelStoryPageState createState() => _TravelStoryPageState();
 }
+
 var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
 
@@ -39,7 +42,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
       });
     });
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           gradient: LinearGradient(
               colors: [
             Color(0xFF1b1e44),
@@ -60,7 +63,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu,
                         color: Colors.white,
                         size: 30.0,
@@ -68,7 +71,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                       onPressed: () {},
                     ),
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.search,
                         color: Colors.white,
                         size: 30.0,
@@ -79,11 +82,11 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Trending",
+                    const Text("Trending",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 46.0,
@@ -91,7 +94,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                           letterSpacing: 1.0,
                         )),
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.more_horiz,
                         size: 20.0,
                         color: Colors.white,
@@ -107,10 +110,10 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                   children: <Widget>[
                     Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFFff6e6e),
+                        color: const Color(0xFFff6e6e),
                         borderRadius: BorderRadius.circular(20.0),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Padding(
                           padding: EdgeInsets.symmetric(
                               horizontal: 22.0, vertical: 6.0),
@@ -119,10 +122,10 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15.0,
                     ),
-                    Text("25+ Stories",
+                    const Text("25+ Stories",
                         style: TextStyle(color: Colors.blueAccent))
                   ],
                 ),
@@ -143,18 +146,18 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Favourite",
+                    const Text("Favourite",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 46.0,
                           letterSpacing: 1.0,
                         )),
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.favorite,
                         size: 16.0,
                         color: Colors.white,
@@ -173,7 +176,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                         color: Colors.blueAccent,
                         borderRadius: BorderRadius.circular(20.0),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Padding(
                           padding: EdgeInsets.symmetric(
                               horizontal: 22.0, vertical: 6.0),
@@ -182,25 +185,27 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15.0,
                     ),
-                    Text("9+ Stories",
+                    const Text("9+ Stories",
                         style: TextStyle(color: Colors.blueAccent))
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Row(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.only(left: 18.0),
+                    padding: const EdgeInsets.only(left: 18.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.network("https://cdn.pixabay.com/photo/2020/04/14/19/41/nepal-5044097__340.jpg",
-                          width: 296.0, height: 222.0),
+                      child: Image.network(
+                          "https://cdn.pixabay.com/photo/2020/04/14/19/41/nepal-5044097__340.jpg",
+                          width: 296.0,
+                          height: 222.0),
                     ),
                   )
                 ],
@@ -218,10 +223,10 @@ class CardScrollWidget extends StatelessWidget {
   final padding = 20.0;
   final verticalInset = 20.0;
 
-  CardScrollWidget(this.currentPage);
+  const CardScrollWidget(this.currentPage, {Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return new AspectRatio(
+    return AspectRatio(
       aspectRatio: widgetAspectRatio,
       child: LayoutBuilder(builder: (context, contraints) {
         var width = contraints.maxWidth;
@@ -256,12 +261,14 @@ class CardScrollWidget extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
-                decoration: BoxDecoration(color: Colors.white, boxShadow: [
-                  BoxShadow(
-                      color: Colors.black12,
-                      offset: Offset(3.0, 6.0),
-                      blurRadius: 10.0)
-                ]),
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black12,
+                          offset: Offset(3.0, 6.0),
+                          blurRadius: 10.0)
+                    ]),
                 child: AspectRatio(
                   aspectRatio: cardAspectRatio,
                   child: Stack(
@@ -275,27 +282,27 @@ class CardScrollWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Padding(
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                   horizontal: 16.0, vertical: 8.0),
                               child: Text(title[i],
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 25.0,
-                                      )),
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25.0,
+                                  )),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10.0,
                             ),
                             Padding(
                               padding: const EdgeInsets.only(
                                   left: 12.0, bottom: 12.0),
                               child: Container(
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                     horizontal: 22.0, vertical: 6.0),
                                 decoration: BoxDecoration(
                                     color: Colors.blueAccent,
                                     borderRadius: BorderRadius.circular(20.0)),
-                                child: Text("Read Later",
+                                child: const Text("Read Later",
                                     style: TextStyle(color: Colors.white)),
                               ),
                             )

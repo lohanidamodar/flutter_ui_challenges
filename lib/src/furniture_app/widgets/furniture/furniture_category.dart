@@ -5,21 +5,21 @@ import 'package:flutter/material.dart';
 
 class FurnitureCategory extends StatelessWidget {
   final FurnitureCatg item;
-  FurnitureCategory({required this.item});
+  const FurnitureCategory({Key? key, required this.item}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.center,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 25.0),
+        margin: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Transform.rotate(
           angle: pi / 4,
           child: Container(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               boxShadow: [
                 if (item.elivation!)
-                  BoxShadow(
+                  const BoxShadow(
                     color: Color(0xFFD1DCFF),
                     blurRadius: 5.0, // has the effect of softening the shadow
                     spreadRadius:
@@ -30,7 +30,7 @@ class FurnitureCategory extends StatelessWidget {
               color: item.elivation!
                   ? profile_info_background
                   : profile_info_categories_background,
-              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             ),
             child: Transform.rotate(
               angle: -pi / 4,

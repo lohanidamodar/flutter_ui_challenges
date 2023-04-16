@@ -1,13 +1,13 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import '../../../res/colors.dart';
 import '../../../res/constants.dart';
 import '../../../res/typography.dart';
 
 class RecoverPasswordPage extends StatelessWidget {
+  const RecoverPasswordPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,15 +28,15 @@ class RecoverPasswordPage extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Recover Password",
                       style: TextStyle(fontSize: 20.0),
                     ),
                     const SizedBox(height: 10.0),
-                    Text(
+                    const Text(
                         "We will send the Confirmation Code through SMS\nPlease type your Mobile number below."),
                     const SizedBox(height: 20.0),
-                    TextField(
+                    const TextField(
                       decoration: InputDecoration(hintText: "Mobile Number"),
                     ),
                     const SizedBox(height: 20.0),
@@ -58,7 +58,7 @@ class RecoverPasswordPage extends StatelessWidget {
                           color: Colors.grey.shade600,
                         )),
                         const SizedBox(width: 10.0),
-                        Text(
+                        const Text(
                           "Having problems?",
                           style: smallText,
                         ),

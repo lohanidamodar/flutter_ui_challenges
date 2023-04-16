@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../model/home_menu_item.dart';
@@ -12,6 +10,8 @@ import '../widgets/bottom_expandable_app_bar/bottom_expandable_app_bar.dart';
 import '../widgets/bottom_expandable_app_bar/controller.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -33,14 +33,14 @@ class _HomePageState extends State<HomePage>
         slivers: <Widget>[
           SliverAppBar(
             floating: true,
-            title: Text("Khalti"),
+            title: const Text("Khalti"),
             bottom: PreferredSize(
-              child: _buildHeader(),
               preferredSize: const Size.fromHeight(90),
+              child: _buildHeader(),
             ),
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.notifications),
+                icon: const Icon(Icons.notifications),
                 onPressed: () {},
               )
             ],
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage>
     return SliverPadding(
       padding: const EdgeInsets.all(16.0),
       sliver: SliverGrid(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4, crossAxisSpacing: 16.0, mainAxisSpacing: 16.0),
         delegate: SliverChildBuilderDelegate((_, index) {
           HomeMenuItem item = homeBookingsItems[index];
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage>
     return SliverPadding(
       padding: const EdgeInsets.all(16.0),
       sliver: SliverGrid(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4, crossAxisSpacing: 16.0, mainAxisSpacing: 16.0),
         delegate: SliverChildBuilderDelegate((_, index) {
           HomeMenuItem item = homeMenuItems[index];
@@ -100,26 +100,30 @@ class _HomePageState extends State<HomePage>
       appBarHeight: 50,
       bottomOffset: 0,
       expandedBackColor: Colors.white,
-      expandedBody: MenuPage(),
+      expandedBody: const MenuPage(),
       bottomAppBarColor: Colors.grey.shade200,
       bottomAppBarBody: Row(
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
           Expanded(
             child: _buildBottomMenuItem(
-                icon: Icon(Icons.home), label: "Home", onTap: () {}),
+                icon: const Icon(Icons.home), label: "Home", onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: Icon(Icons.card_giftcard), label: "Bazaar", onTap: () {}),
+                icon: const Icon(Icons.card_giftcard),
+                label: "Bazaar",
+                onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: Icon(Icons.list), label: "Transactions", onTap: () {}),
+                icon: const Icon(Icons.list),
+                label: "Transactions",
+                onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: Icon(Icons.more_horiz),
+                icon: const Icon(Icons.more_horiz),
                 label: "More",
                 onTap: () => controller!.open()),
           ),
@@ -132,17 +136,17 @@ class _HomePageState extends State<HomePage>
       {Widget? icon, required String label, Function? onTap}) {
     return MaterialButton(
       height: 30,
+      onPressed: onTap as void Function()?,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           if (icon != null) icon,
           Text(
             label,
-            style: TextStyle(fontSize: 9),
+            style: const TextStyle(fontSize: 9),
           )
         ],
       ),
-      onPressed: onTap as void Function()?,
     );
   }
 
@@ -153,7 +157,8 @@ class _HomePageState extends State<HomePage>
         child: Container(
           child: Text(
             title,
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+            style: const TextStyle(
+                color: Colors.black, fontWeight: FontWeight.w600),
           ),
         ),
       ),
@@ -161,7 +166,7 @@ class _HomePageState extends State<HomePage>
   }
 
   Widget _buildDivider({Color? color, double height = 4.0}) {
-    if (color == null) color = Colors.deepPurple.shade100;
+    color ??= Colors.deepPurple.shade100;
     return SliverToBoxAdapter(
       child: Container(
         height: height,
@@ -178,17 +183,17 @@ class _HomePageState extends State<HomePage>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Spacer(),
+          const Spacer(),
           _buildHeaderItem(icon: FontAwesomeIcons.wallet, label: "Load Fund"),
-          Spacer(),
+          const Spacer(),
           _buildHeaderItem(
               icon: FontAwesomeIcons.mobileAlt, label: "Send/Request"),
-          Spacer(),
+          const Spacer(),
           _buildHeaderItem(icon: FontAwesomeIcons.qrcode, label: "Scan & Pay"),
-          Spacer(),
+          const Spacer(),
           _buildHeaderItem(
               icon: FontAwesomeIcons.coins, label: "Bank Transfer"),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );
@@ -201,7 +206,7 @@ class _HomePageState extends State<HomePage>
         Container(
           padding: const EdgeInsets.all(10.0),
           decoration:
-              BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+              const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
           child: Icon(
             icon,
             size: 30,

@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'category.dart';
@@ -10,7 +8,7 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'quiz_finished.dart';
 
 class QuizPage extends StatefulWidget {
-  static final String path = "lib/src/pages/quiz_app/quiz_page.dart";
+  static const String path = "lib/src/pages/quiz_app/quiz_page.dart";
   final List<Question> questions;
   final Category? category;
 
@@ -22,7 +20,7 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
-  final TextStyle _questionStyle = TextStyle(
+  final TextStyle _questionStyle = const TextStyle(
       fontSize: 18.0, fontWeight: FontWeight.w500, color: Colors.white);
 
   int _currentIndex = 0;
@@ -52,7 +50,7 @@ class _QuizPageState extends State<QuizPage> {
             ClipPath(
               clipper: WaveClipperTwo(),
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.deepPurple,
                 ),
                 height: 200,
@@ -68,7 +66,7 @@ class _QuizPageState extends State<QuizPage> {
                         backgroundColor: Colors.white70,
                         child: Text("${_currentIndex + 1}"),
                       ),
-                      SizedBox(width: 16.0),
+                      const SizedBox(width: 16.0),
                       Expanded(
                         child: Text(
                           widget.questions[_currentIndex].question!,
@@ -78,7 +76,7 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20.0),
+                  const SizedBox(height: 20.0),
                   Card(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -106,11 +104,11 @@ class _QuizPageState extends State<QuizPage> {
                           backgroundColor: Theme.of(context).primaryColor,
                           foregroundColor: Colors.white,
                         ),
+                        onPressed: _nextSubmit,
                         child: Text(
                             _currentIndex == (widget.questions.length - 1)
                                 ? "Submit"
                                 : "Next"),
-                        onPressed: _nextSubmit,
                       ),
                     ),
                   )
@@ -125,7 +123,7 @@ class _QuizPageState extends State<QuizPage> {
 
   void _nextSubmit() {
     if (_answers[_currentIndex] == null) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text("You must select an answer to continue."),
       ));
       return;
@@ -146,18 +144,18 @@ class _QuizPageState extends State<QuizPage> {
         context: context,
         builder: (_) {
           return AlertDialog(
-            content: Text(
+            content: const Text(
                 "Are you sure you want to quit the quiz? All your progress will be lost."),
-            title: Text("Warning!"),
+            title: const Text("Warning!"),
             actions: <Widget>[
               TextButton(
-                child: Text("Yes"),
+                child: const Text("Yes"),
                 onPressed: () {
                   Navigator.pop(context, true);
                 },
               ),
               TextButton(
-                child: Text("No"),
+                child: const Text("No"),
                 onPressed: () {
                   Navigator.pop(context, false);
                 },

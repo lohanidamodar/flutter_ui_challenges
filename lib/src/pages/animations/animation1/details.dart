@@ -10,7 +10,7 @@ import './animation1.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class AnimationOneDetails extends StatelessWidget {
-  static final String path = "lib/src/pages/animations/animation1/details.dart";
+  static const String path = "lib/src/pages/animations/animation1/details.dart";
   final int index;
 
   const AnimationOneDetails({Key? key, required this.index}) : super(key: key);
@@ -31,29 +31,29 @@ class AnimationOneDetails extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 IconButton(
                   color: Colors.white,
                   icon: Icon(
                       Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back),
                   onPressed: () => Navigator.pop(context),
                 ),
-                Spacer(),
-                SizedBox(height: 10.0),
+                const Spacer(),
+                const SizedBox(height: 10.0),
                 Hero(
                   tag: "title$index",
                   child: Material(
                     type: MaterialType.transparency,
                     child: Text(
                       dummy[index]["title"],
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Hero(
                   tag: "price$index",
                   child: Material(
@@ -61,14 +61,14 @@ class AnimationOneDetails extends StatelessWidget {
                     child: Text(
                       dummy[index]['price'],
                       textAlign: TextAlign.start,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
                   ),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
               ],
             ),
           )

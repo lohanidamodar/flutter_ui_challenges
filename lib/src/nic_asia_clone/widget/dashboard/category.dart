@@ -1,18 +1,16 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
   final String? image, title;
-  Category({this.title, this.image});
+  const Category({Key? key, this.title, this.image}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(right: 10.0, bottom: 10.0),
-      child: Container(
+      margin: const EdgeInsets.only(right: 10.0, bottom: 10.0),
+      child: SizedBox(
         height: 140.0,
         width: 130.0,
         child: Column(
@@ -30,13 +28,13 @@ class Category extends StatelessWidget {
                     image!,
                     height: 40.0,
                   ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             Text(
               title!,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.bold,
               ),

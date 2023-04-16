@@ -1,18 +1,17 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class DashboardOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/dashboard/dash1.dart";
+  static const String path = "lib/src/pages/dashboard/dash1.dart";
 
   final String image = images[0];
+
+  const DashboardOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +29,7 @@ class DashboardOnePage extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: _buildTitledContainer("Sales",
-                child: Container(
+                child: SizedBox(
                     height: 200, child: DonutPieChart.withSampleData())),
           ),
         ),
@@ -40,7 +39,7 @@ class DashboardOnePage extends StatelessWidget {
   }
 
   SliverPadding _buildStats() {
-    final TextStyle stats = TextStyle(
+    const TextStyle stats = TextStyle(
         fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.white);
     return SliverPadding(
       padding: const EdgeInsets.all(16.0),
@@ -59,7 +58,7 @@ class DashboardOnePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
+                const Text(
                   "+500",
                   style: stats,
                 ),
@@ -77,7 +76,7 @@ class DashboardOnePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
+                const Text(
                   "+300",
                   style: stats,
                 ),
@@ -95,7 +94,7 @@ class DashboardOnePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
+                const Text(
                   "+1200",
                   style: stats,
                 ),
@@ -116,7 +115,7 @@ class DashboardOnePage extends StatelessWidget {
               children: <Widget>[
                 Column(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "+500",
                       style: stats,
                     ),
@@ -128,7 +127,7 @@ class DashboardOnePage extends StatelessWidget {
                 const SizedBox(width: 20.0),
                 Column(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "+600",
                       style: stats,
                     ),
@@ -139,7 +138,7 @@ class DashboardOnePage extends StatelessWidget {
                 const SizedBox(width: 20.0),
                 Column(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "+100",
                       style: stats,
                     ),
@@ -162,7 +161,7 @@ class DashboardOnePage extends StatelessWidget {
           height: 280,
           child: Expanded(
             child: GridView.count(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 3,
               children: activities
                   .map(
@@ -182,7 +181,7 @@ class DashboardOnePage extends StatelessWidget {
                         Text(
                           activity.title,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 14.0),
                         ),
                       ],
@@ -221,14 +220,14 @@ class DashboardOnePage extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Good Afternoon".toUpperCase(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 24.0,
                       ),
                     ),
                     const SizedBox(height: 20.0),
-                    Text(
+                    const Text(
                       "Take a glimpses at your dashboard",
                       style: TextStyle(color: Colors.white, fontSize: 18.0),
                     ),
@@ -248,7 +247,7 @@ class DashboardOnePage extends StatelessWidget {
       titleSpacing: 0.0,
       elevation: 0.5,
       backgroundColor: Colors.white,
-      title: Text(
+      title: const Text(
         "Dashboard",
         style: TextStyle(
             color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20.0),
@@ -261,7 +260,7 @@ class DashboardOnePage extends StatelessWidget {
   Widget _buildAvatar(BuildContext context) {
     return IconButton(
       iconSize: 40,
-      padding: EdgeInsets.all(0),
+      padding: const EdgeInsets.all(0),
       icon: CircleAvatar(
         backgroundColor: Colors.grey.shade300,
         child: CircleAvatar(radius: 16, backgroundImage: NetworkImage(image)),
@@ -270,7 +269,8 @@ class DashboardOnePage extends StatelessWidget {
     );
   }
 
-  Container _buildTitledContainer(String title, {required Widget child, double? height}) {
+  Container _buildTitledContainer(String title,
+      {required Widget child, double? height}) {
     return Container(
       padding: const EdgeInsets.all(16.0),
       width: double.infinity,
@@ -284,7 +284,7 @@ class DashboardOnePage extends StatelessWidget {
         children: <Widget>[
           Text(
             title,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
           ),
           if (child != null) ...[const SizedBox(height: 10.0), child]
         ],
@@ -297,11 +297,12 @@ class DonutPieChart extends StatelessWidget {
   final List<charts.Series> seriesList;
   final bool animate;
 
-  DonutPieChart(this.seriesList, {required this.animate});
+  const DonutPieChart(this.seriesList, {Key? key, required this.animate})
+      : super(key: key);
 
   /// Creates a [PieChart] with sample data and no transition.
   factory DonutPieChart.withSampleData() {
-    return new DonutPieChart(
+    return DonutPieChart(
       _createSampleData(),
       // Disable animations for image tests.
       animate: false,
@@ -310,26 +311,25 @@ class DonutPieChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new charts.PieChart(seriesList,
+    return charts.PieChart(seriesList,
         animate: animate,
         // Configure the width of the pie slices to 60px. The remaining space in
         // the chart will be left as a hole in the center.
-        defaultRenderer: new charts.ArcRendererConfig(
-            arcWidth: 60,
-            arcRendererDecorators: [new charts.ArcLabelDecorator()]));
+        defaultRenderer: charts.ArcRendererConfig(
+            arcWidth: 60, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.
   static List<charts.Series<LinearSales, String>> _createSampleData() {
     final data = [
-      new LinearSales("July", 100),
-      new LinearSales("August", 75),
-      new LinearSales("September", 25),
-      new LinearSales("October", 5),
+      LinearSales("July", 100),
+      LinearSales("August", 75),
+      LinearSales("September", 25),
+      LinearSales("October", 5),
     ];
 
     return [
-      new charts.Series<LinearSales, String>(
+      charts.Series<LinearSales, String>(
         id: 'Sales',
         domainFn: (LinearSales sales, _) => sales.month,
         measureFn: (LinearSales sales, _) => sales.sales,

@@ -1,7 +1,5 @@
-/**
- * Author: Mausam Rayamajhi
- * profile: https://github.com/mausamRayamajhi
-  */
+/// Author: Mausam Rayamajhi
+/// profile: https://github.com/mausamRayamajhi
 
 import 'package:flutter/material.dart';
 import 'pages/dashboard.dart';
@@ -9,7 +7,9 @@ import 'pages/login.dart';
 import 'util/constant.dart';
 
 class NicAsiaApp extends StatelessWidget {
-  static final String path = "lib/src/nic_asia_clone/nic_asia_app.dart";
+  static const String path = "lib/src/nic_asia_clone/nic_asia_app.dart";
+
+  const NicAsiaApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,11 +17,12 @@ class NicAsiaApp extends StatelessWidget {
       title: 'NIC ASIA',
       theme: ThemeData(
         primaryColor: primaryColor,
-        accentColor: primaryColorLight,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: primaryColorLight),
       ),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (BuildContext context) => SafeArea(
+        '/': (BuildContext context) => const SafeArea(
               top: true,
               child: Login(),
             ),
@@ -33,7 +34,7 @@ class NicAsiaApp extends StatelessWidget {
       onUnknownRoute: (RouteSettings settings) {
         print('INSIDE Unknown routes');
         return MaterialPageRoute(
-          builder: (BuildContext context) => Login(),
+          builder: (BuildContext context) => const Login(),
         );
       },
     );

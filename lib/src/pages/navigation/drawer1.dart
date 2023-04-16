@@ -1,28 +1,27 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class DarkDrawerPage extends StatelessWidget {
-  static final String path = "lib/src/pages/navigation/drawer1.dart";
+  static const String path = "lib/src/pages/navigation/drawer1.dart";
   final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
-  final Color primary = Color(0xff291747);
-  final Color active = Color(0xff6C48AB);
+  final Color primary = const Color(0xff291747);
+  final Color active = const Color(0xff6C48AB);
+
+  DarkDrawerPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _key,
       appBar: AppBar(
-        title: Text('Dark Drawer Navigation'),
+        title: const Text('Dark Drawer Navigation'),
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {
             _key.currentState!.openDrawer();
           },
@@ -40,7 +39,7 @@ class DarkDrawerPage extends StatelessWidget {
                   color: Colors.deepOrange,
                   borderRadius: BorderRadius.circular(10.0)),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Container(
               width: double.infinity,
               height: 200,
@@ -48,7 +47,7 @@ class DarkDrawerPage extends StatelessWidget {
                   color: Colors.lightGreen,
                   borderRadius: BorderRadius.circular(10.0)),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Container(
               width: double.infinity,
               height: 200,
@@ -70,7 +69,8 @@ class DarkDrawerPage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(left: 16.0, right: 40),
           decoration: BoxDecoration(
-              color: primary, boxShadow: [BoxShadow(color: Colors.black45)]),
+              color: primary,
+              boxShadow: const [BoxShadow(color: Colors.black45)]),
           width: 300,
           child: SafeArea(
             child: SingleChildScrollView(
@@ -89,7 +89,7 @@ class DarkDrawerPage extends StatelessWidget {
                   Container(
                     height: 90,
                     alignment: Alignment.center,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
                             colors: [Colors.pink, Colors.deepPurple])),
@@ -98,8 +98,8 @@ class DarkDrawerPage extends StatelessWidget {
                       backgroundImage: NetworkImage(image),
                     ),
                   ),
-                  SizedBox(height: 5.0),
-                  Text(
+                  const SizedBox(height: 5.0),
+                  const Text(
                     "erika costell",
                     style: TextStyle(color: Colors.white, fontSize: 18.0),
                   ),
@@ -107,7 +107,7 @@ class DarkDrawerPage extends StatelessWidget {
                     "@erika07",
                     style: TextStyle(color: active, fontSize: 16.0),
                   ),
-                  SizedBox(height: 30.0),
+                  const SizedBox(height: 30.0),
                   _buildRow(Icons.home, "Home"),
                   _buildDivider(),
                   _buildRow(Icons.person_pin, "Your profile"),
@@ -142,7 +142,7 @@ class DarkDrawerPage extends StatelessWidget {
           icon,
           color: active,
         ),
-        SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),
         Text(
           title,
           style: tStyle,

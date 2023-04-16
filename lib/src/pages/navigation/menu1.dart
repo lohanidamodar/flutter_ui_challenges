@@ -1,19 +1,19 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
 class MenuOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/navigation/menu1.dart";
-  final Color primary = Color(0xff4BBEC0);
-  final TextStyle style = TextStyle(
+  static const String path = "lib/src/pages/navigation/menu1.dart";
+  final Color primary = const Color(0xff4BBEC0);
+  final TextStyle style = const TextStyle(
     color: Colors.black,
     fontSize: 18.0,
     fontWeight: FontWeight.bold,
   );
+
+  const MenuOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -152,7 +152,7 @@ class MenuOnePage extends StatelessWidget {
                           radius: 15.0,
                           backgroundColor: Colors.white,
                           foregroundColor: primary,
-                          child: Text("5"),
+                          child: const Text("5"),
                         ),
                       ],
                     ),
@@ -192,7 +192,7 @@ class MenuOnePage extends StatelessWidget {
               child: MaterialButton(
                 elevation: 0,
                 padding: const EdgeInsets.all(16.0),
-                shape: CircleBorder(),
+                shape: const CircleBorder(),
                 onPressed: () {
                   Navigator.pop(context);
                 },

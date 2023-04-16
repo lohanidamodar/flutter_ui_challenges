@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/grocery/gwidgets/gtypography.dart';
@@ -27,7 +25,7 @@ class GroceryListItemThree extends StatelessWidget {
       child: Row(
         children: <Widget>[
           const SizedBox(width: 10.0),
-          Container(
+          SizedBox(
               height: 80.0,
               child: PNetworkImage(
                 image,
@@ -35,14 +33,14 @@ class GroceryListItemThree extends StatelessWidget {
               )),
           const SizedBox(width: 10.0),
           Expanded(
-            child: Container(
+            child: SizedBox(
               height: 120.0,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  new GroceryTitle(text: title),
-                  new GrocerySubtitle(text: subtitle)
+                  GroceryTitle(text: title),
+                  GrocerySubtitle(text: subtitle)
                 ],
               ),
             ),
@@ -51,17 +49,17 @@ class GroceryListItemThree extends StatelessWidget {
           Column(
             children: <Widget>[
               IconButton(
-                icon: Icon(Icons.add_circle),
+                icon: const Icon(Icons.add_circle),
                 color: Colors.green,
                 onPressed: () {},
               ),
-              Text(
+              const Text(
                 "1",
                 textAlign: TextAlign.right,
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.remove_circle,
                 ),
                 color: Colors.green,

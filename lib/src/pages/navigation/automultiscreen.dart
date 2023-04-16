@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 /// profile: https://github.com/ambikadulal
 
 class HiddenDrawerNav extends StatefulWidget {
-  static final String path = "lib/src/pages/navigation/automultiscreen.dart";
+  static const String path = "lib/src/pages/navigation/automultiscreen.dart";
+
+  const HiddenDrawerNav({Key? key}) : super(key: key);
   @override
   _HiddenDrawerNavState createState() => _HiddenDrawerNavState();
 }
@@ -26,8 +28,9 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
     _scaleAnimation = Tween<double>(begin: 1, end: 0.8).animate(_controller);
     _menuScaleAnimation =
         Tween<double>(begin: 0.5, end: 1).animate(_controller);
-    _slideAnimation = Tween<Offset>(begin: Offset(-1, 0), end: Offset(0, 0))
-        .animate(_controller);
+    _slideAnimation =
+        Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
+            .animate(_controller);
   }
 
   @override
@@ -66,7 +69,7 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
+              children: const <Widget>[
                 Text("Dashboard",
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),
@@ -100,12 +103,12 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
         scale: _scaleAnimation,
         child: Material(
           animationDuration: duration,
-          borderRadius: BorderRadius.all(Radius.circular(40)),
+          borderRadius: const BorderRadius.all(Radius.circular(40)),
           elevation: 8,
           color: Colors.black,
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
-            physics: ClampingScrollPhysics(),
+            physics: const ClampingScrollPhysics(),
             child: Container(
               padding: const EdgeInsets.only(left: 16, right: 16, top: 48),
               child: Column(
@@ -116,25 +119,26 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       InkWell(
-                        child: Icon(Icons.menu, color: Colors.white),
+                        child: const Icon(Icons.menu, color: Colors.white),
                         onTap: () {
                           setState(() {
-                            if (isCollapsed)
+                            if (isCollapsed) {
                               _controller.forward();
-                            else
+                            } else {
                               _controller.reverse();
+                            }
 
                             isCollapsed = !isCollapsed;
                           });
                         },
                       ),
-                      Text("My Cards",
+                      const Text("My Cards",
                           style: TextStyle(fontSize: 24, color: Colors.white)),
-                      Icon(Icons.settings, color: Colors.white),
+                      const Icon(Icons.settings, color: Colors.white),
                     ],
                   ),
-                  SizedBox(height: 50),
-                  Container(
+                  const SizedBox(height: 50),
+                  SizedBox(
                     height: 200,
                     child: PageView(
                       controller: PageController(viewportFraction: 0.8),
@@ -159,15 +163,15 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
-                  Text(
+                  const SizedBox(height: 20),
+                  const Text(
                     "Transactions",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                   ListView.separated(
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
-                        return ListTile(
+                        return const ListTile(
                           title: Text(
                             "Macbook",
                             style: TextStyle(color: Colors.white, fontSize: 16),
@@ -183,7 +187,7 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
                         );
                       },
                       separatorBuilder: (context, index) {
-                        return Divider(height: 16);
+                        return const Divider(height: 16);
                       },
                       itemCount: 5)
                 ],

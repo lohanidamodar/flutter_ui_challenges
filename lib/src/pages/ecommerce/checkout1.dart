@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
@@ -9,7 +7,9 @@ import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CheckoutOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/cart1.dart";
+  static const String path = "lib/src/pages/ecommerce/cart1.dart";
+
+  const CheckoutOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,14 +17,14 @@ class CheckoutOnePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Text(
+            const Text(
               "Choose your plan",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -41,12 +41,12 @@ class CheckoutOnePage extends StatelessWidget {
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text(
                           "Free",
                           style: boldText,
                         ),
-                        const SizedBox(height: 5.0),
+                        SizedBox(height: 5.0),
                         Text(
                           "7 days",
                           style: TextStyle(
@@ -65,12 +65,12 @@ class CheckoutOnePage extends StatelessWidget {
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text(
                           "\$450",
                           style: boldText,
                         ),
-                        const SizedBox(height: 5.0),
+                        SizedBox(height: 5.0),
                         Text(
                           "Per week",
                           style: TextStyle(
@@ -102,7 +102,7 @@ class CheckoutOnePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 5.0),
-                        Text(
+                        const Text(
                           "Per month",
                           style: TextStyle(
                             color: Colors.white60,
@@ -120,12 +120,12 @@ class CheckoutOnePage extends StatelessWidget {
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text(
                           "\$2000",
                           style: boldText,
                         ),
-                        const SizedBox(height: 5.0),
+                        SizedBox(height: 5.0),
                         Text(
                           "Lifetime",
                           style: TextStyle(
@@ -140,9 +140,9 @@ class CheckoutOnePage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30.0),
-            RoundedContainer(
-              margin: const EdgeInsets.all(8.0),
-              padding: const EdgeInsets.all(8.0),
+            const RoundedContainer(
+              margin: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: ListTile(
                 leading: Icon(
                   FontAwesomeIcons.paypal,
@@ -152,9 +152,9 @@ class CheckoutOnePage extends StatelessWidget {
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
             ),
-            RoundedContainer(
-              margin: const EdgeInsets.all(8.0),
-              padding: const EdgeInsets.all(8.0),
+            const RoundedContainer(
+              margin: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: ListTile(
                 leading: Icon(
                   FontAwesomeIcons.googleWallet,
@@ -164,9 +164,9 @@ class CheckoutOnePage extends StatelessWidget {
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
             ),
-            RoundedContainer(
-              margin: const EdgeInsets.all(8.0),
-              padding: const EdgeInsets.all(8.0),
+            const RoundedContainer(
+              margin: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: ListTile(
                 leading: Icon(
                   FontAwesomeIcons.applePay,
@@ -192,7 +192,7 @@ class CheckoutOnePage extends StatelessWidget {
                   backgroundColor: Colors.indigo,
                   foregroundColor: Colors.white,
                 ),
-                child: Text("Continue"),
+                child: const Text("Continue"),
                 onPressed: () {},
               ),
             )

@@ -1,9 +1,6 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambikadulal
-  */
+/// Author: Ambika Dulal
+/// profile: https://github.com/Ambikadulal
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class Hotel {
   String? imageUrl;
@@ -47,7 +44,9 @@ final List<Hotel> hotels = [
 ];
 
 class HotelBookingPage extends StatefulWidget {
-  static final String path = "lib/src/pages/hotel/hotelbooking.dart";
+  static const String path = "lib/src/pages/hotel/hotelbooking.dart";
+
+  const HotelBookingPage({Key? key}) : super(key: key);
 
   @override
   _HotelBookingPageState createState() => _HotelBookingPageState();
@@ -58,7 +57,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -82,7 +81,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       'Hello @rjun',
                       style: TextStyle(
@@ -103,12 +102,12 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                   width: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: NetworkImage(
                           'https://cdn.pixabay.com/photo/2015/05/18/23/53/norway-772991__340.jpg'),
                       fit: BoxFit.cover,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                           color: Colors.black54,
                           offset: Offset(0.0, 4),
@@ -119,7 +118,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               ],
             ),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           //window for search
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -127,9 +126,9 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               height: 50.0,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xFFEFEDEE),
+                color: const Color(0xFFEFEDEE),
                 borderRadius: BorderRadius.circular(10.0),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                       color: Colors.black12,
                       offset: Offset(0.0, 10.0),
@@ -138,15 +137,15 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               ),
               child: Row(
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10.0),
                     child: Icon(
                       Icons.search,
                       size: 30.0,
                       color: Colors.grey,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: 60.0,
                     width: MediaQuery.of(context).size.width * 0.50,
                     child: TextField(
@@ -166,35 +165,35 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
             ),
           ),
           //popular hotel
-          SizedBox(
+          const SizedBox(
             height: 30.0,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 20.0),
             child: Text(
               'Popular Hotel',
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
             height: 250,
             width: double.infinity,
             child: ListView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               scrollDirection: Axis.horizontal,
               itemCount: hotels.length,
               itemBuilder: (BuildContext context, index) {
                 return Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  margin: const EdgeInsets.symmetric(horizontal: 10.0),
                   height: 200,
                   width: 170,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black12,
                         offset: Offset(0.0, 4.0),
@@ -209,7 +208,7 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                         height: 140.0,
                         width: 170.0,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(10.0),
                             topRight: Radius.circular(10.0),
                           ),
@@ -223,14 +222,15 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                         padding: const EdgeInsets.only(left: 10, top: 10),
                         child: Text(
                           hotels[index].title!,
-                          style: TextStyle(fontSize: 14.0),
+                          style: const TextStyle(fontSize: 14.0),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
                         child: Text(
                           hotels[index].description!,
-                          style: TextStyle(fontSize: 13.0, color: Colors.grey),
+                          style: const TextStyle(
+                              fontSize: 13.0, color: Colors.grey),
                         ),
                       ),
                       Padding(
@@ -241,15 +241,15 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                           children: <Widget>[
                             Text(
                               '\$${hotels[index].price} / night',
-                              style: TextStyle(color: Colors.blue),
+                              style: const TextStyle(color: Colors.blue),
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   '${hotels[index].rating}',
-                                  style: TextStyle(color: Colors.blue),
+                                  style: const TextStyle(color: Colors.blue),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.star,
                                   color: Colors.blue,
                                   size: 16.0,
@@ -265,14 +265,14 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
+              children: const <Widget>[
                 Text(
                   'Hotel Packages',
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),
@@ -284,17 +284,17 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Column(
             children: <Widget>[
               _hotelPackage(0),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               _hotelPackage(1),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               _hotelPackage(2),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               _hotelPackage(3),
             ],
           )
@@ -313,7 +313,7 @@ _hotelPackage(int index) {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
         color: Colors.white,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black12,
             offset: Offset(0.0, 4.0),
@@ -328,7 +328,7 @@ _hotelPackage(int index) {
               height: 130,
               width: 110,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(10.0),
                   bottomLeft: Radius.circular(10.0),
                 ),
@@ -347,30 +347,30 @@ _hotelPackage(int index) {
               children: <Widget>[
                 Text(
                   hotels[index].title!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   hotels[index].description!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 14.0,
                     color: Colors.grey,
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   '\$${hotels[index].price} / night',
-                  style: TextStyle(fontSize: 16, color: Colors.blue),
+                  style: const TextStyle(fontSize: 16, color: Colors.blue),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: Row(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Icon(
                         Icons.directions_car,
                         color: Colors.blue,
@@ -414,7 +414,7 @@ _hotelPackage(int index) {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   color: Colors.blue,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black26,
                       blurRadius: 15.0,
@@ -422,7 +422,7 @@ _hotelPackage(int index) {
                     ),
                   ],
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Book Now',
                     style: TextStyle(

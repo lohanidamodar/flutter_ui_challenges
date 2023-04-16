@@ -1,21 +1,21 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class BikeDetailsPage extends StatelessWidget {
-  static final String path = "lib/src/pages/bike/bike_details.dart";
-  final TextStyle bold = TextStyle(fontWeight: FontWeight.bold);
+  static const String path = "lib/src/pages/bike/bike_details.dart";
+  final TextStyle bold = const TextStyle(fontWeight: FontWeight.bold);
+
+  const BikeDetailsPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final String title = "Bajaj Pulsar 220F";
+    const String title = "Bajaj Pulsar 220F";
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text(title),
         elevation: 0,
       ),
       body: Stack(
@@ -26,7 +26,7 @@ class BikeDetailsPage extends StatelessWidget {
               children: <Widget>[
                 Stack(
                   children: <Widget>[
-                    Container(
+                    const SizedBox(
                         height: 250,
                         width: double.infinity,
                         child: PNetworkImage(
@@ -37,7 +37,7 @@ class BikeDetailsPage extends StatelessWidget {
                       left: 20.0,
                       bottom: 10.0,
                       child: Row(
-                        children: <Widget>[
+                        children: const <Widget>[
                           Icon(
                             Icons.star,
                             color: Colors.amber,
@@ -66,10 +66,10 @@ class BikeDetailsPage extends StatelessWidget {
                       bottom: 0,
                       child: Chip(
                         elevation: 0,
-                        labelStyle: TextStyle(
+                        labelStyle: const TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                         backgroundColor: Theme.of(context).primaryColor,
-                        label: Text("Rs. 1,80,000"),
+                        label: const Text("Rs. 1,80,000"),
                       ),
                     )
                   ],
@@ -83,13 +83,13 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Key Specs",
-                          style: Theme.of(context).textTheme.headline6,
+                          style: Theme.of(context).textTheme.titleLarge,
                         ),
                       ),
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: <Widget>[
+                          children: const <Widget>[
                             SpecsBlock(
                               label: "Engine",
                               value: "220 cc",
@@ -126,12 +126,12 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Free Gifts",
-                          style: Theme.of(context).textTheme.subtitle1,
+                          style: Theme.of(context).textTheme.titleMedium,
                         ),
                       ),
                       const SizedBox(height: 5.0),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text("helmet, Gloves, Rain Coat, Bike Cover,"),
                       ),
                       const SizedBox(height: 10.0),
@@ -139,14 +139,14 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6.0, bottom: 4.0),
                         child: Text(
                           "Specification",
-                          style: Theme.of(context).textTheme.headline6,
+                          style: Theme.of(context).textTheme.titleLarge,
                         ),
                       ),
                       BorderedContainer(
                         padding: const EdgeInsets.all(0),
                         margin: const EdgeInsets.symmetric(vertical: 4.0),
                         child: ListTile(
-                          title: Text("Manufactured Year"),
+                          title: const Text("Manufactured Year"),
                           trailing: Text(
                             "2019",
                             style: bold,
@@ -157,7 +157,7 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.all(0),
                         margin: const EdgeInsets.symmetric(vertical: 4.0),
                         child: ListTile(
-                          title: Text("Number (Lot)"),
+                          title: const Text("Number (Lot)"),
                           trailing: Text(
                             "Bagmati 80",
                             style: bold,
@@ -168,7 +168,7 @@ class BikeDetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.all(0),
                         margin: const EdgeInsets.symmetric(vertical: 4.0),
                         child: ListTile(
-                          title: Text("Category"),
+                          title: const Text("Category"),
                           trailing: Text(
                             "Standard",
                             style: bold,
@@ -179,7 +179,7 @@ class BikeDetailsPage extends StatelessWidget {
                         margin: const EdgeInsets.symmetric(vertical: 4.0),
                         padding: const EdgeInsets.all(0),
                         child: ListTile(
-                          title: Text("Engine Serviced?"),
+                          title: const Text("Engine Serviced?"),
                           trailing: Text(
                             "Half",
                             style: bold,
@@ -192,7 +192,7 @@ class BikeDetailsPage extends StatelessWidget {
                         ),
                         padding: const EdgeInsets.all(0),
                         child: ListTile(
-                          title: Text("Ground Clearance"),
+                          title: const Text("Ground Clearance"),
                           trailing: Text(
                             "150 mm",
                             style: bold,
@@ -205,7 +205,7 @@ class BikeDetailsPage extends StatelessWidget {
                         ),
                         padding: const EdgeInsets.all(0),
                         child: ListTile(
-                          title: Text("Seat height"),
+                          title: const Text("Seat height"),
                           trailing: Text(
                             "700 mm",
                             style: bold,
@@ -226,8 +226,8 @@ class BikeDetailsPage extends StatelessWidget {
                 backgroundColor: Theme.of(context).colorScheme.secondary,
                 foregroundColor: Colors.white,
               ),
-              icon: Icon(Icons.message),
-              label: Text("Message Seller"),
+              icon: const Icon(Icons.message),
+              label: const Text("Message Seller"),
               onPressed: () {},
             ),
           )
@@ -277,8 +277,8 @@ class BorderedContainer extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title!,
-                    style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 28.0),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 28.0),
                   ),
                   if (child != null) ...[
                     const SizedBox(height: 10.0),
@@ -321,7 +321,7 @@ class SpecsBlock extends StatelessWidget {
             const SizedBox(height: 5.0),
             Text(
               value!,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),

@@ -1,29 +1,37 @@
 import 'package:flutter/material.dart';
 
 class CardPage extends StatelessWidget {
+  const CardPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
       child: DraggableScrollableSheet(
         builder: (context, scrollController) {
           return Container(
+            decoration: const BoxDecoration(
+                color: Color.fromRGBO(243, 245, 248, 1),
+                borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(40),
+                    topLeft: Radius.circular(40))),
             child: SingleChildScrollView(
               controller: scrollController,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
+                          children: const <Widget>[
                             Text(
                               "Your Cards",
                               style: TextStyle(
@@ -46,44 +54,55 @@ class CardPage extends StatelessWidget {
                             color: Colors.lightBlue[900],
                             size: 20,
                           ),
-                          onPressed: (){},
+                          onPressed: () {},
                         )
                       ],
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 20),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 32),
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       children: <Widget>[
                         Container(
-                          child: Text(
-                            "Physical Card",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 14,
-                                color: Colors.blue),
-                          ),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                               boxShadow: [
                                 BoxShadow(
                                     color: Colors.grey[200]!,
                                     blurRadius: 10.0,
                                     spreadRadius: 4.5)
                               ]),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               horizontal: 20, vertical: 10),
+                          child: const Text(
+                            "Physical Card",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 14,
+                                color: Colors.blue),
+                          ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(20)),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.grey[200]!,
+                                    blurRadius: 10.0,
+                                    spreadRadius: 4.5)
+                              ]),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 10),
                           child: Text(
                             "Virtual Card",
                             style: TextStyle(
@@ -91,38 +110,26 @@ class CardPage extends StatelessWidget {
                                 fontSize: 14,
                                 color: Colors.grey[500]),
                           ),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Colors.grey[200]!,
-                                    blurRadius: 10.0,
-                                    spreadRadius: 4.5)
-                              ]),
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 10),
                         ),
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
-                      margin: EdgeInsets.symmetric(horizontal: 32),
-                      decoration: BoxDecoration(
+                      margin: const EdgeInsets.symmetric(horizontal: 32),
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         color: Color.fromRGBO(35, 60, 103, 1),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
+                            children: const <Widget>[
                               CircleAvatar(
                                 radius: 16,
                                 backgroundColor:
@@ -143,10 +150,10 @@ class CardPage extends StatelessWidget {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 32,
                           ),
-                          Text(
+                          const Text(
                             "**** **** **** 4567",
                             style: TextStyle(
                                 fontSize: 20,
@@ -154,7 +161,7 @@ class CardPage extends StatelessWidget {
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 2.0),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 32,
                           ),
                           Row(
@@ -227,47 +234,50 @@ class CardPage extends StatelessWidget {
                           )
                         ],
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
-                    child: Text(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: const Text(
                       "Card Settings",
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 20,
                           color: Colors.black),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 32),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                    margin: EdgeInsets.symmetric(horizontal: 32),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Row(
                           children: <Widget>[
                             Icon(
-                              Icons.wifi_tethering,size: 20,
+                              Icons.wifi_tethering,
+                              size: 20,
                               color: Colors.lightBlue[900],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               "Contactless Payment",
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
@@ -278,27 +288,29 @@ class CardPage extends StatelessWidget {
                         ),
                         Switch(
                           value: true,
-                          activeColor: Color.fromRGBO(50, 172, 121, 1),
+                          activeColor: const Color.fromRGBO(50, 172, 121, 1),
                           onChanged: (_) {},
                         )
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                    margin: EdgeInsets.symmetric(horizontal: 32),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -308,10 +320,10 @@ class CardPage extends StatelessWidget {
                               Icons.credit_card,
                               color: Colors.lightBlue[900],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
-                            Text(
+                            const Text(
                               "Online Payment",
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
@@ -322,27 +334,29 @@ class CardPage extends StatelessWidget {
                         ),
                         Switch(
                           value: false,
-                          activeColor: Color.fromRGBO(50, 172, 121, 1),
+                          activeColor: const Color.fromRGBO(50, 172, 121, 1),
                           onChanged: (_) {},
                         )
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey[100]!,
                               spreadRadius: 10.0,
                               blurRadius: 4.5)
                         ]),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                    margin: EdgeInsets.symmetric(horizontal: 32),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    margin: const EdgeInsets.symmetric(horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -352,10 +366,10 @@ class CardPage extends StatelessWidget {
                               Icons.mobile_screen_share,
                               color: Colors.lightBlue[900],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
-                            Text(
+                            const Text(
                               "ATM Withdraws",
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
@@ -366,7 +380,7 @@ class CardPage extends StatelessWidget {
                         ),
                         Switch(
                           value: true,
-                          activeColor: Color.fromRGBO(50, 172, 121, 1),
+                          activeColor: const Color.fromRGBO(50, 172, 121, 1),
                           onChanged: (_) {},
                         )
                       ],
@@ -375,11 +389,6 @@ class CardPage extends StatelessWidget {
                 ],
               ),
             ),
-            decoration: BoxDecoration(
-                color: Color.fromRGBO(243, 245, 248, 1),
-                borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(40),
-                    topLeft: Radius.circular(40))),
           );
         },
         initialChildSize: 0.95,

@@ -1,12 +1,12 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import '../../../res/colors.dart';
 import '../../../res/typography.dart';
 
 class RegisterPage extends StatelessWidget {
+  const RegisterPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,25 +20,25 @@ class RegisterPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(
+              const Text(
                 "Full Name",
                 style: smallText,
               ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "Mobile Number",
                 style: smallText,
               ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "Email (Optional)",
                 style: smallText,
               ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "Date Type",
                 style: smallText,
               ),
@@ -49,25 +49,25 @@ class RegisterPage extends StatelessWidget {
                     value: "AD",
                     onChanged: (value) {},
                   ),
-                  Text("AD"),
-                  Spacer(),
+                  const Text("AD"),
+                  const Spacer(),
                   Radio(
                     groupValue: "AD",
                     value: "BS",
                     onChanged: (value) {},
                   ),
-                  Text("BS"),
-                  Spacer(),
+                  const Text("BS"),
+                  const Spacer(),
                 ],
               ),
               const SizedBox(height: 10.0),
-              Text(
+              const Text(
                 "Date of Birth (YYYY-MM-DD)",
                 style: smallText,
               ),
               _buildTextField(),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "Date Type",
                 style: smallText,
               ),
@@ -78,38 +78,38 @@ class RegisterPage extends StatelessWidget {
                     value: "Male",
                     onChanged: (value) {},
                   ),
-                  Text("Male"),
-                  Spacer(),
+                  const Text("Male"),
+                  const Spacer(),
                   Radio(
                     groupValue: "Male",
                     value: "Female",
                     onChanged: (value) {},
                   ),
-                  Text("Female"),
-                  Spacer(),
+                  const Text("Female"),
+                  const Spacer(),
                   Radio(
                     groupValue: "Male",
                     value: "Other",
                     onChanged: (value) {},
                   ),
-                  Text("Other"),
-                  Spacer(),
+                  const Text("Other"),
+                  const Spacer(),
                 ],
               ),
               const SizedBox(height: 10.0),
-              Text(
+              const Text(
                 "Password",
                 style: smallText,
               ),
               _buildTextField(obscureText: true),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "Confirm Password",
                 style: smallText,
               ),
               _buildTextField(obscureText: true),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "By signing up you agree to the Terms & Conditions",
                 style: smallText,
               ),
@@ -132,7 +132,7 @@ class RegisterPage extends StatelessWidget {
                     color: Colors.grey.shade600,
                   )),
                   const SizedBox(width: 10.0),
-                  Text(
+                  const Text(
                     "Already have an account?",
                     style: smallText,
                   ),

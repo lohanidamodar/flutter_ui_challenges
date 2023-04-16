@@ -1,7 +1,5 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 import 'package:flutter/material.dart';
 import 'res/colors.dart';
 import 'ui/pages/auth/login.dart';
@@ -14,6 +12,8 @@ import 'ui/widgets/slide_right_route.dart';
 
 class KhaltiApp extends StatelessWidget {
   static const String path = 'lib/src/khalti_clone/main.dart';
+
+  const KhaltiApp({Key? key}) : super(key: key);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,22 +21,24 @@ class KhaltiApp extends StatelessWidget {
       title: 'Khalti',
       debugShowCheckedModeBanner: false,
       color: primary,
-      theme: ThemeData(primaryColor: primary, accentColor: accent),
+      theme: ThemeData(
+          primaryColor: primary,
+          colorScheme: ColorScheme.fromSwatch().copyWith(secondary: accent)),
       routes: {
-        "/": (_) => IntroPage(),
-        "home": (_) => HomePage(),
-        "payment": (_) => Payment(),
+        "/": (_) => const IntroPage(),
+        "home": (_) => const HomePage(),
+        "payment": (_) => const Payment(),
       },
       onGenerateRoute: (RouteSettings settings) {
         switch (settings.name) {
           case "login":
-            return SlideRightRoute(widget: LoginPage());
+            return SlideRightRoute(widget: const LoginPage());
             break;
           case "recover":
-            return SlideRightRoute(widget: RecoverPasswordPage());
+            return SlideRightRoute(widget: const RecoverPasswordPage());
             break;
           case "register":
-            return SlideRightRoute(widget: RegisterPage());
+            return SlideRightRoute(widget: const RegisterPage());
             break;
           default:
             return null;

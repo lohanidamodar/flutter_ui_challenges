@@ -1,14 +1,14 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DashboardTwoPage extends StatelessWidget {
-  static final String path = "lib/src/pages/dashboard/dash2.dart";
-  final TextStyle whiteText = TextStyle(color: Colors.white);
+  static const String path = "lib/src/pages/dashboard/dash2.dart";
+  final TextStyle whiteText = const TextStyle(color: Colors.white);
+
+  const DashboardTwoPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class DashboardTwoPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text("Dashboard"),
+        title: const Text("Dashboard"),
         centerTitle: true,
       ),
       body: _buildBody(context),
@@ -46,13 +46,13 @@ class DashboardTwoPage extends StatelessWidget {
                               "9,850",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline4
+                                  .headlineMedium
                                   ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               FontAwesomeIcons.walking,
                               color: Colors.white,
                             ),
@@ -79,13 +79,13 @@ class DashboardTwoPage extends StatelessWidget {
                               "70 bpm",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline4
+                                  .headlineMedium
                                   ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               FontAwesomeIcons.heartbeat,
                               color: Colors.white,
                             ),
@@ -118,13 +118,13 @@ class DashboardTwoPage extends StatelessWidget {
                               "2,430",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline4
+                                  .headlineMedium
                                   ?.copyWith(
                                     color: Colors.white,
                                     fontSize: 24.0,
                                   ),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               FontAwesomeIcons.fire,
                               color: Colors.white,
                             ),
@@ -151,19 +151,19 @@ class DashboardTwoPage extends StatelessWidget {
                               "15 kms",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline4
+                                  .headlineMedium
                                   ?.copyWith(
                                     fontSize: 24.0,
                                     color: Colors.black,
                                   ),
                             ),
-                            trailing: Icon(
+                            trailing: const Icon(
                               FontAwesomeIcons.road,
                               color: Colors.black,
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 16.0),
                             child: Text(
                               'Distance',
                             ),
@@ -190,7 +190,7 @@ class DashboardTwoPage extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: CircularProgressIndicator(
             value: 0.5,
-            valueColor: AlwaysStoppedAnimation(Colors.blue),
+            valueColor: const AlwaysStoppedAnimation(Colors.blue),
             backgroundColor: Colors.grey.shade700,
           ),
         ),
@@ -204,7 +204,7 @@ class DashboardTwoPage extends StatelessWidget {
                 style: whiteText.copyWith(fontSize: 20.0),
               ),
               const SizedBox(height: 20.0),
-              Text(
+              const Text(
                 "45% to go",
                 style: TextStyle(color: Colors.grey, fontSize: 16.0),
               ),

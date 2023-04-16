@@ -3,30 +3,33 @@ import 'package:flutter_ui_challenges/src/plant_app/model/data_model.dart';
 import 'detail_page.dart';
 
 class GreenPlantPage extends StatelessWidget {
+  const GreenPlantPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 35),
+          const SizedBox(height: 35),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               IconButton(
-                icon: Icon(Icons.search,size: 30),
+                icon: const Icon(Icons.search, size: 30),
                 onPressed: () {},
               )
             ],
           ),
-          Text('Green', style: TextStyle(color: Colors.grey, fontSize: 17)),
-          SizedBox(height: 7),
-          Text(
+          const Text('Green',
+              style: TextStyle(color: Colors.grey, fontSize: 17)),
+          const SizedBox(height: 7),
+          const Text(
             'Plants',
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Expanded(
             child: Container(
               child: ListView.builder(
@@ -51,34 +54,34 @@ class GreenPlantPage extends StatelessWidget {
                             tag: plants[index].title!,
                             child: Image.network(plants[index].image!),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Text(
                             plants[index].title!,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Text(
                             plants[index].discription!,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.grey,
                               fontSize: 16,
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Row(
                             children: [
                               Text(
                                 "\$${plants[index].price}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               TextButton(
-                                child: Text(
+                                child: const Text(
                                   "+",
                                   style: TextStyle(fontSize: 22),
                                 ),
@@ -86,8 +89,8 @@ class GreenPlantPage extends StatelessWidget {
                               )
                             ],
                           ),
-                          SizedBox(height: 30),
-                          Divider(),
+                          const SizedBox(height: 30),
+                          const Divider(),
                         ],
                       ),
                     ),

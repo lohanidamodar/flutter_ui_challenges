@@ -1,19 +1,19 @@
-/**
- * Author: Siddhartha Joshi
- * profile: https://github.com/cimplesid
-  */
+/// Author: Siddhartha Joshi
+/// profile: https://github.com/cimplesid
 
 import 'package:flutter/material.dart';
 
 class BottomSheetAwesome extends StatefulWidget {
-  static final String path = "lib/src/pages/misc/bottomsheet.dart";
+  static const String path = "lib/src/pages/misc/bottomsheet.dart";
+
+  const BottomSheetAwesome({Key? key}) : super(key: key);
   @override
   _BottomSheetAwesomeState createState() => _BottomSheetAwesomeState();
 }
 
 class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  PageController _pageController = PageController();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final PageController _pageController = PageController();
   int currentIndex = 0;
   Map<dynamic, dynamic> progress = {};
 
@@ -28,7 +28,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
               child: Container(
                 alignment: Alignment.center,
                 height: 10,
-                margin: EdgeInsets.all(8.0),
+                margin: const EdgeInsets.all(8.0),
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 decoration: BoxDecoration(
                   border: Border.all(width: 1, color: Colors.white),
@@ -36,15 +36,15 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                 ),
                 child: Text(
                   progress.length == null ? "0/100" : "${progress.length}/100 ",
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
             ),
           ],
-          title: Text('Awesome bottom sheet'),
+          title: const Text('Awesome bottom sheet'),
         ),
         body: PageView.builder(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           controller: _pageController,
           onPageChanged: (index) {
             setState(() {
@@ -55,8 +55,8 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
+                const Padding(
+                  padding: EdgeInsets.all(16.0),
                   child: Text(
                     'This layout can be used in many cases a good example is quiz app. The button on action of appbar shows the bottom sheet which contains the list of index of pages in the page and change color upon selecting the page by using select button in the page itself and clicking again disselect the page. ',
                     textAlign: TextAlign.justify,
@@ -72,20 +72,21 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                         : Colors.grey.shade800,
                   ),
                   onPressed: () {
-                    if (progress.containsKey(progress[index]))
+                    if (progress.containsKey(progress[index])) {
                       setState(() {
                         progress.remove(progress[index]);
                       });
-                    else
+                    } else {
                       setState(() {
                         progress[index] = index;
                       });
+                    }
                   },
                   child: Text(
                     progress.containsKey(progress[index])
                         ? 'Unselect Page ${currentIndex + 1}'
                         : 'Select Page ${currentIndex + 1}',
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                 ),
                 Container(
@@ -97,23 +98,23 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Theme.of(context).primaryColor,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.chevron_left,
                             color: Colors.white,
                           ),
                           onPressed: () {
                             _pageController.animateToPage(
                                 _pageController.page!.ceil() - 1,
-                                duration: Duration(seconds: 1),
+                                duration: const Duration(seconds: 1),
                                 curve: Curves.easeInBack);
                             // .jumpToPage(_pageController.page.ceil() - 1);
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         Container(
-                          padding: EdgeInsets.fromLTRB(15, 0, 10, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 0, 10, 0),
                           decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1,
@@ -122,7 +123,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           ),
                           child: Text(
                             'Page ${currentIndex + 1}',
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.w700, fontSize: 35),
                           ),
                         ),
@@ -130,14 +131,14 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Theme.of(context).primaryColor,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.chevron_right,
                             color: Colors.white,
                           ),
                           onPressed: () {
                             _pageController.animateToPage(
                                 _pageController.page!.ceil() + 1,
-                                duration: Duration(seconds: 1),
+                                duration: const Duration(seconds: 1),
                                 curve: Curves.easeIn);
                             // .jumpToPage(_pageController.page.ceil() + 1);
                           },
@@ -164,21 +165,22 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.all(10),
-                  child: Text(
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
                     " Sheet",
                     style: TextStyle(
                       fontSize: 20,
                     ),
                   ),
                 ),
-                Divider(height: 0),
+                const Divider(height: 0),
                 Expanded(
                   child: GridView.builder(
                     itemBuilder: (context, index) {
                       return getTile(index);
                     },
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 8,
                     ),
                     itemCount: 100,
@@ -203,8 +205,8 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
         });
       },
       child: Container(
-        margin: EdgeInsets.all(5),
-        padding: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),

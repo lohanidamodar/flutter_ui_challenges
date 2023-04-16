@@ -1,12 +1,12 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
+/// Author: Damodar Lohani
+/// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
 
 class LoginThreePage extends StatelessWidget {
-  static final String path = "lib/src/pages/login/login3.dart";
+  static const String path = "lib/src/pages/login/login3.dart";
+
+  const LoginThreePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,18 +18,18 @@ class LoginThreePage extends StatelessWidget {
           ),
           ListView(
             children: <Widget>[
-              Container(
+              SizedBox(
                 height: 400,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Login",
+                    const Text("Login",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white70,
                             fontWeight: FontWeight.bold,
                             fontSize: 28.0)),
-                    Card(
+                    const Card(
                       margin: EdgeInsets.only(left: 30, right: 30, top: 30),
                       elevation: 11,
                       shape: RoundedRectangleBorder(
@@ -57,7 +57,7 @@ class LoginThreePage extends StatelessWidget {
                                 horizontal: 20.0, vertical: 16.0)),
                       ),
                     ),
-                    Card(
+                    const Card(
                       margin: EdgeInsets.only(left: 30, right: 30, top: 20),
                       elevation: 11,
                       shape: RoundedRectangleBorder(
@@ -85,27 +85,27 @@ class LoginThreePage extends StatelessWidget {
                     ),
                     Container(
                       width: double.infinity,
-                      padding: EdgeInsets.all(30.0),
+                      padding: const EdgeInsets.all(30.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          padding: EdgeInsets.symmetric(vertical: 16.0),
+                          padding: const EdgeInsets.symmetric(vertical: 16.0),
                           backgroundColor: Colors.pink,
                           elevation: 11,
-                          shape: RoundedRectangleBorder(
+                          shape: const RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(40.0))),
                         ),
                         onPressed: () {},
-                        child: Text("Login",
+                        child: const Text("Login",
                             style: TextStyle(color: Colors.white70)),
                       ),
                     ),
-                    Text("Forgot your password?",
+                    const Text("Forgot your password?",
                         style: TextStyle(color: Colors.white))
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
               Align(
@@ -113,13 +113,13 @@ class LoginThreePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text("or, connect with"),
-                    SizedBox(
+                    const Text("or, connect with"),
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Row(
                       children: <Widget>[
-                        SizedBox(
+                        const SizedBox(
                           width: 20.0,
                         ),
                         Expanded(
@@ -127,16 +127,16 @@ class LoginThreePage extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               foregroundColor: Colors.white,
                               backgroundColor: Colors.blue,
-                              shape: RoundedRectangleBorder(
+                              shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(40)),
                               ),
                             ),
-                            child: Text("Facebook"),
+                            child: const Text("Facebook"),
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         Expanded(
@@ -144,16 +144,16 @@ class LoginThreePage extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               foregroundColor: Colors.white,
                               backgroundColor: Colors.indigo,
-                              shape: RoundedRectangleBorder(
+                              shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(40)),
                               ),
                             ),
-                            child: Text("Twitter"),
+                            child: const Text("Twitter"),
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20.0,
                         ),
                       ],
@@ -161,12 +161,12 @@ class LoginThreePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text("Dont have an account?"),
+                        const Text("Dont have an account?"),
                         TextButton(
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.indigo,
                           ),
-                          child: Text("Sign up"),
+                          child: const Text("Sign up"),
                           onPressed: () {},
                         )
                       ],

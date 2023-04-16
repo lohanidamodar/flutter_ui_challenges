@@ -1,12 +1,15 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/furniture_app/utils/constant.dart';
 
 class ProfileImage extends StatelessWidget {
   final double height, width;
   final Color color;
-  ProfileImage(
-      {this.height = 100.0, this.width = 100.0, this.color = Colors.white});
+  const ProfileImage(
+      {Key? key,
+      this.height = 100.0,
+      this.width = 100.0,
+      this.color = Colors.white})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +18,7 @@ class ProfileImage extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: Colors.red,
-        image: DecorationImage(
+        image: const DecorationImage(
           image: NetworkImage(devMausam),
           fit: BoxFit.contain,
         ),

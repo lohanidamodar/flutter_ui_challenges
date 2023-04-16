@@ -1,29 +1,25 @@
-/**
- * Author: Damodar Lohani
- * profile: https://github.com/lohanidamodar
-  */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 
 class EcommerceDetailOnePage extends StatelessWidget {
-  static final String path = "lib/src/pages/ecommerce/ecommerce_detail1.dart";
+  static const String path = "lib/src/pages/ecommerce/ecommerce_detail1.dart";
+
+  const EcommerceDetailOnePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         actions: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
               color: Colors.grey,
             ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.shopping_basket,
               color: Colors.grey,
             ),
@@ -31,7 +27,7 @@ class EcommerceDetailOnePage extends StatelessWidget {
           ),
         ],
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             color: Colors.grey,
           ),
@@ -54,10 +50,10 @@ class EcommerceDetailOnePage extends StatelessWidget {
     return Container(
       child: Stack(
         children: <Widget>[
-          Container(
+          SizedBox(
             height: double.infinity,
             child: ListView(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               children: <Widget>[
                 Container(
                   height: 320,
@@ -65,12 +61,12 @@ class EcommerceDetailOnePage extends StatelessWidget {
                       image: DecorationImage(
                           image: NetworkImage(images[1]), fit: BoxFit.cover)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       "\$500",
                       style: TextStyle(
@@ -80,17 +76,17 @@ class EcommerceDetailOnePage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                Text(
+                const Text(
                   "Womens Casual Purse",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 28.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
                 Text(
@@ -115,8 +111,8 @@ class EcommerceDetailOnePage extends StatelessWidget {
 
   Widget _buildImagesGrid() {
     return Container(
-      margin: EdgeInsets.only(top: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.only(top: 10.0),
+      padding: const EdgeInsets.all(10.0),
       height: 150,
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -125,14 +121,14 @@ class EcommerceDetailOnePage extends StatelessWidget {
             images[0],
             height: 80,
           ),
-          SizedBox(
+          const SizedBox(
             width: 20.0,
           ),
           PNetworkImage(
             images[1],
             height: 80,
           ),
-          SizedBox(
+          const SizedBox(
             width: 20.0,
           ),
           PNetworkImage(
@@ -150,7 +146,8 @@ class EcommerceDetailOnePage extends StatelessWidget {
         Expanded(
           child: Container(
             color: Colors.transparent,
-            padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
@@ -159,7 +156,7 @@ class EcommerceDetailOnePage extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-              child: Text("Add to Cart"),
+              child: const Text("Add to Cart"),
             ),
           ),
         ),

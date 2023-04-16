@@ -1,21 +1,21 @@
-/**
- * Author: Ambika Dulal
- * profile: https://github.com/Ambikadulal
- * images: pixabay.com
- * design:dribble.com
-  */
+/// Author: Ambika Dulal
+/// profile: https://github.com/Ambikadulal
+/// images: pixabay.com
+/// design:dribble.com
 
 import 'package:flutter/material.dart';
 
 class UserProfilePage extends StatefulWidget {
-  static final String path = "lib/src/pages/profile/profile12.dart";
+  static const String path = "lib/src/pages/profile/profile12.dart";
+
+  const UserProfilePage({Key? key}) : super(key: key);
 
   @override
   _UserProfilePageState createState() => _UserProfilePageState();
 }
 
 class _UserProfilePageState extends State<UserProfilePage> {
-  bool _isOpen = false;
+  final bool _isOpen = false;
   var imageList = [
     'https://cdn.pixabay.com/photo/2016/11/19/15/32/business-1839876__340.jpg',
     'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010__340.jpg',
@@ -34,7 +34,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             alignment: Alignment.topCenter,
             heightFactor: 0.7,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
                       'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2F1.jpg?alt=media'),
@@ -47,7 +47,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             alignment: Alignment.bottomCenter,
             heightFactor: 0.5,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(50))),
               child: panelBody(),
@@ -62,7 +62,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
     double hPadding = 40;
     return SingleChildScrollView(
       //controller: controller,
-      physics: ClampingScrollPhysics(),
+      physics: const ClampingScrollPhysics(),
       child: Column(
         children: <Widget>[
           Container(
@@ -83,7 +83,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             shrinkWrap: true,
             padding: EdgeInsets.zero,
             itemCount: imageList.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               mainAxisSpacing: 16,
             ),
@@ -110,13 +110,12 @@ class _UserProfilePageState extends State<UserProfilePage> {
           child: Expanded(
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
-
-              side: BorderSide(color: Colors.blue),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30)),
+                side: const BorderSide(color: Colors.blue),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30)),
               ),
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 'VIEW PROFILE',
                 style: TextStyle(
                   fontFamily: 'NimbusSanL',
@@ -129,7 +128,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
         ),
         Visibility(
           visible: !_isOpen,
-          child: SizedBox(
+          child: const SizedBox(
             width: 16,
           ),
         ),
@@ -142,14 +141,13 @@ class _UserProfilePageState extends State<UserProfilePage> {
                   : double.infinity,
               child: TextButton(
                 style: TextButton.styleFrom(
-                backgroundColor: Colors.blue,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)),
-
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)),
                 ),
                 onPressed: () => print('Message tapped'),
-                child: Text(
+                child: const Text(
                   'MESSAGE',
                   style: TextStyle(
                     fontFamily: 'NimbusSanL',
@@ -191,18 +189,18 @@ class _UserProfilePageState extends State<UserProfilePage> {
       children: <Widget>[
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w300,
             fontSize: 14,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 8,
         ),
         Text(
           value,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w700,
             fontSize: 14,
@@ -214,7 +212,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
 
   Column _titleSection() {
     return Column(
-      children: <Widget>[
+      children: const <Widget>[
         Text(
           'Aanika Johnson',
           style: TextStyle(
