@@ -3,7 +3,7 @@ name: WEB-CI
 on:
   push:
     branches: 
-      - isomorphic
+      - master
 
 jobs:
   build:
