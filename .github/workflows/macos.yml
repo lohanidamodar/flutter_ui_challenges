@@ -3,7 +3,7 @@ name: MacOS-CI
 on:
   push:
     branches:
-      - isomorphic
+      - master
     tags:
       - "*"
 
