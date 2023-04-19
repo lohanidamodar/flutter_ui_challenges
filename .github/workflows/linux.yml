@@ -3,7 +3,7 @@ name: Linux-CI
 on:
   push:
     branches: 
-      - isomorphic
+      - master
     tags:
       - '*'
 
