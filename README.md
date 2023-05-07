@@ -2,11 +2,11 @@
 
 My effort on replicating various apps UI on flutter.
 
-
-> Want to enhance your Dart & Flutter Knowledge?
-> Check out my latest endevour
+> 🎉 Exciting News! 🎉
+> 
+> Level up your Flutter skills in just 30 days with 🚀 [30DaysMasterFlutter](https://appwriters.dev/30days/flutter) 🚀
 >
-> [Master Flutter](https://masterflutter.appwriters.dev)
+> 👨‍💻 [Join the fun and become a Flutter pro!](https://appwriters.dev/30days/flutter) 💪👩‍💻
 
 ## Live
 
