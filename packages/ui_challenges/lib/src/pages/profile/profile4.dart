@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../res/assets.dart';
 
@@ -157,11 +156,7 @@ class ProfileFourPage extends StatelessWidget {
   }
 
   _launchURL(String url) async {
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url));
-    } else {
-      throw 'Could not launch $url';
-    }
+    print('code to launch url');
   }
 
   ListTile _buildExperienceRow(
@@ -177,7 +172,8 @@ class ProfileFourPage extends StatelessWidget {
       ),
       title: Text(
         company,
-        style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        style:
+            const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
       ),
       subtitle: Text("$position ($duration)"),
     );

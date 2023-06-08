@@ -1,9 +1,9 @@
-import 'package:animator/animator.dart';
 /**
  * Author: Damodar Lohani  
  * profile: https://github.com/lohanidamodar
   */
 import 'package:flutter/material.dart';
+import 'package:animator/animator.dart';
 
 import '../../res/assets.dart';
 

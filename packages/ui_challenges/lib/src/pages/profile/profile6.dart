@@ -4,7 +4,6 @@
   */
 import 'dart:ui' as ui;
 import 'package:ui_challenges/src/widgets/network_image.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/material.dart';
 
@@ -196,9 +195,7 @@ class VideoCard extends StatelessWidget {
       type: MaterialType.circle,
       child: InkWell(
         onTap: () async {
-          if (await canLaunchUrl(Uri.parse(video.url))) {
-            await launchUrl(Uri.parse(video.url));
-          }
+          print('tapped');
         },
         child: const Padding(
           padding: EdgeInsets.all(8.0),

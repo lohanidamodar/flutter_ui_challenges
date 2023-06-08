@@ -6,20 +6,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animator: ^3.2.0
+  animator: ^3.3.0
   bottomreveal: ^2.0.0
   cached_network_image: ^3.2.3
   charts_flutter: ^0.12.0
-  crop: ^0.5.3
+  crop: ^0.5.5
   flare_flutter: ^3.0.2
-  flutter_custom_clippers: ^2.0.0
+  flutter_custom_clippers: ^2.1.0
   flutter_staggered_grid_view: ^0.6.2
   flutter_swiper_null_safety: ^1.0.2
-  font_awesome_flutter: ^10.2.1
-  intl: ^0.18.0
-  simple_animations: ^5.0.0+3
-  url_launcher: ^6.1.7
-  string_scanner: ^1.2.0
+  font_awesome_flutter: ^10.4.0
+
 dev_dependencies:
   flutter_lints: ^2.0.1
 

@@ -9,7 +9,6 @@ import 'package:flutter_ui_challenges/core/presentation/res/code_highlighter.dar
 import 'package:ui_challenges/ui_challenges.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
-
 class MyCodeView extends StatefulWidget {
   final String? filePath;
 
@@ -91,7 +90,8 @@ class MyCodeViewState extends State<MyCodeView> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: rootBundle.loadString(widget.filePath!),
+      future: DefaultAssetBundle.of(context)
+          .loadString('packages/ui_challenges/${widget.filePath!}'),
       builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
         if (snapshot.hasData) {
           return Scaffold(
