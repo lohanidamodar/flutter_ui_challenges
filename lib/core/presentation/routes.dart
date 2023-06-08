@@ -1,134 +1,134 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/data/models/menu.dart' as menu;
-import 'package:flutter_ui_challenges/src/furniture_app/furniture_app.dart';
-import 'package:flutter_ui_challenges/src/khalti_clone/main.dart';
-import 'package:flutter_ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim4.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim5.dart';
-import 'package:flutter_ui_challenges/src/pages/lists/grid_view.dart';
-import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
-import 'package:flutter_ui_challenges/src/pages/bike/bikeshop_ui.dart';
-import 'package:flutter_ui_challenges/src/pages/bike/home_page.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/news1.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
-import 'package:flutter_ui_challenges/src/pages/food/food_checkout.dart';
-import 'package:flutter_ui_challenges/src/pages/hotel/hotelbooking.dart';
-import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
-import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
-import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
-import 'package:flutter_ui_challenges/src/pages/login/signup3.dart';
-import 'package:flutter_ui_challenges/src/pages/login/auth3.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login10.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login11.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login12.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login14.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login13.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login8.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login9.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/discovery_page.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/bottomsheet.dart';
-import 'package:flutter_ui_challenges/src/pages/food/cake.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/crop.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/gallery1.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/otp.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/whatsapp.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/youtube_homepage.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile10.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile11.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
-import 'package:flutter_ui_challenges/src/pages/quotes/quotes1.dart';
-import 'package:flutter_ui_challenges/src/pages/quotes/quotes2.dart';
-import 'package:flutter_ui_challenges/src/pages/settings/profilesettings.dart';
-import 'package:flutter_ui_challenges/src/pages/settings/settings1.dart';
-import 'package:flutter_ui_challenges/src/pages/settings/settings2.dart';
-import 'package:flutter_ui_challenges/src/pages/settings/settings3.dart';
-import 'package:flutter_ui_challenges/src/pages/settings/settings4.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo_home3.dart';
+import '../../models/menu.dart' as menu;
+import 'package:ui_challenges/src/furniture_app/furniture_app.dart';
+import 'package:ui_challenges/src/khalti_clone/main.dart';
+import 'package:ui_challenges/src/nic_asia_clone/nic_asia_app.dart';
+import 'package:ui_challenges/src/pages/animations/anim4.dart';
+import 'package:ui_challenges/src/pages/animations/anim5.dart';
+import 'package:ui_challenges/src/pages/lists/grid_view.dart';
+import 'package:ui_challenges/src/pages/bike/bike_details.dart';
+import 'package:ui_challenges/src/pages/bike/bikeshop_ui.dart';
+import 'package:ui_challenges/src/pages/bike/home_page.dart';
+import 'package:ui_challenges/src/pages/blog/news1.dart';
+import 'package:ui_challenges/src/pages/blog/sports_news1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/cart2.dart';
+import 'package:ui_challenges/src/pages/ecommerce/checkout1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce4.dart';
+import 'package:ui_challenges/src/pages/food/food_checkout.dart';
+import 'package:ui_challenges/src/pages/hotel/hotelbooking.dart';
+import 'package:ui_challenges/src/pages/invitation/inauth.dart';
+import 'package:ui_challenges/src/pages/invitation/inlanding.dart';
+import 'package:ui_challenges/src/pages/invitation/invitation1.dart';
+import 'package:ui_challenges/src/pages/login/signup3.dart';
+import 'package:ui_challenges/src/pages/login/auth3.dart';
+import 'package:ui_challenges/src/pages/login/login10.dart';
+import 'package:ui_challenges/src/pages/login/login11.dart';
+import 'package:ui_challenges/src/pages/login/login12.dart';
+import 'package:ui_challenges/src/pages/login/login14.dart';
+import 'package:ui_challenges/src/pages/login/login13.dart';
+import 'package:ui_challenges/src/pages/login/login8.dart';
+import 'package:ui_challenges/src/pages/login/login9.dart';
+import 'package:ui_challenges/src/pages/misc/discovery_page.dart';
+import 'package:ui_challenges/src/pages/misc/bottomsheet.dart';
+import 'package:ui_challenges/src/pages/food/cake.dart';
+import 'package:ui_challenges/src/pages/misc/crop.dart';
+import 'package:ui_challenges/src/pages/misc/gallery1.dart';
+import 'package:ui_challenges/src/pages/misc/image_popup.dart';
+import 'package:ui_challenges/src/pages/misc/musicplayer.dart';
+import 'package:ui_challenges/src/pages/misc/musicplayer2.dart';
+import 'package:ui_challenges/src/pages/misc/otp.dart';
+import 'package:ui_challenges/src/pages/misc/whatsapp.dart';
+import 'package:ui_challenges/src/pages/misc/youtube_homepage.dart';
+import 'package:ui_challenges/src/pages/navigation/menu1.dart';
+import 'package:ui_challenges/src/pages/onboarding/intro6.dart';
+import 'package:ui_challenges/src/pages/profile/profile10.dart';
+import 'package:ui_challenges/src/pages/profile/profile11.dart';
+import 'package:ui_challenges/src/pages/profile/profile8.dart';
+import 'package:ui_challenges/src/pages/profile/profile9.dart';
+import 'package:ui_challenges/src/pages/quotes/quotes1.dart';
+import 'package:ui_challenges/src/pages/quotes/quotes2.dart';
+import 'package:ui_challenges/src/pages/settings/profilesettings.dart';
+import 'package:ui_challenges/src/pages/settings/settings1.dart';
+import 'package:ui_challenges/src/pages/settings/settings2.dart';
+import 'package:ui_challenges/src/pages/settings/settings3.dart';
+import 'package:ui_challenges/src/pages/settings/settings4.dart';
+import 'package:ui_challenges/src/pages/todo/todo_home3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo2.dart';
-import 'package:flutter_ui_challenges/src/pages/dashboard/dash3.dart';
-import 'package:flutter_ui_challenges/src/pages/dashboard/dash2.dart';
-import 'package:flutter_ui_challenges/src/pages/dashboard/dash1.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/chat2.dart';
-import 'package:flutter_ui_challenges/src/pages/login/auth1.dart';
-import 'package:flutter_ui_challenges/src/pages/lists/list2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/chatui.dart';
-import 'package:flutter_ui_challenges/src/pages/lists/list1.dart';
-import 'package:flutter_ui_challenges/src/pages/hotel/hhome.dart';
-import 'package:flutter_ui_challenges/src/pages/food/fdhome.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/bhome1.dart';
-import 'package:flutter_ui_challenges/src/pages/login/auth2.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/sliders.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/navybar.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login5.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login4.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login3.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login2.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login1.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/thome.dart';
-import 'package:flutter_ui_challenges/src/pages/food/avocado.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login7.dart';
-import 'package:flutter_ui_challenges/src/pages/login/login6.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/loaders.dart';
-import 'package:flutter_ui_challenges/src/pages/grocery/ghome.dart';
-import 'package:flutter_ui_challenges/src/pages/login/signup2.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/article2.dart';
-import 'package:flutter_ui_challenges/src/pages/blog/article1.dart';
-import 'package:flutter_ui_challenges/src/pages/hotel/details.dart';
-import 'package:flutter_ui_challenges/src/pages/login/signup1.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/home.dart';
-import 'package:flutter_ui_challenges/src/pages/dialogs/dialogs.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo_home2.dart';
-import 'package:flutter_ui_challenges/src/pages/todo/todo_home1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/cart1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/cart3.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile3.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile2.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile1.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile7.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile6.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile5.dart';
-import 'package:flutter_ui_challenges/src/pages/profile/profile4.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_list.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim2.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/anim3.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro2.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro3.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro5.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/intro4.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/drawer2.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_page.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/sliver_appbar.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_single.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/travel_home.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/form_elements.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/drawer1.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/travel_nepal.dart';
-import 'package:flutter_ui_challenges/src/pages/food/recipe_details.dart';
-import 'package:flutter_ui_challenges/src/pages/travel/tdestination.dart';
-import 'package:flutter_ui_challenges/src/pages/onboarding/landing1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce5.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce1.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/demo_values.dart';
-import 'package:flutter_ui_challenges/src/pages/navigation/hiddenmenu.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/check_answers.dart';
-import 'package:flutter_ui_challenges/src/pages/quiz_app/quiz_finished.dart';
-import 'package:flutter_ui_challenges/src/pages/misc/springy_slider_page.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/confirm_order1.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
-import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
-import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:ui_challenges/src/pages/todo/todo2.dart';
+import 'package:ui_challenges/src/pages/dashboard/dash3.dart';
+import 'package:ui_challenges/src/pages/dashboard/dash2.dart';
+import 'package:ui_challenges/src/pages/dashboard/dash1.dart';
+import 'package:ui_challenges/src/pages/misc/chat2.dart';
+import 'package:ui_challenges/src/pages/login/auth1.dart';
+import 'package:ui_challenges/src/pages/lists/list2.dart';
+import 'package:ui_challenges/src/pages/misc/chatui.dart';
+import 'package:ui_challenges/src/pages/lists/list1.dart';
+import 'package:ui_challenges/src/pages/hotel/hhome.dart';
+import 'package:ui_challenges/src/pages/food/fdhome.dart';
+import 'package:ui_challenges/src/pages/blog/bhome1.dart';
+import 'package:ui_challenges/src/pages/login/auth2.dart';
+import 'package:ui_challenges/src/pages/misc/sliders.dart';
+import 'package:ui_challenges/src/pages/misc/navybar.dart';
+import 'package:ui_challenges/src/pages/login/login5.dart';
+import 'package:ui_challenges/src/pages/login/login4.dart';
+import 'package:ui_challenges/src/pages/login/login3.dart';
+import 'package:ui_challenges/src/pages/login/login2.dart';
+import 'package:ui_challenges/src/pages/login/login1.dart';
+import 'package:ui_challenges/src/pages/travel/thome.dart';
+import 'package:ui_challenges/src/pages/food/avocado.dart';
+import 'package:ui_challenges/src/pages/login/login7.dart';
+import 'package:ui_challenges/src/pages/login/login6.dart';
+import 'package:ui_challenges/src/pages/misc/loaders.dart';
+import 'package:ui_challenges/src/pages/grocery/ghome.dart';
+import 'package:ui_challenges/src/pages/login/signup2.dart';
+import 'package:ui_challenges/src/pages/blog/article2.dart';
+import 'package:ui_challenges/src/pages/blog/article1.dart';
+import 'package:ui_challenges/src/pages/hotel/details.dart';
+import 'package:ui_challenges/src/pages/login/signup1.dart';
+import 'package:ui_challenges/src/pages/quiz_app/home.dart';
+import 'package:ui_challenges/src/pages/dialogs/dialogs.dart';
+import 'package:ui_challenges/src/pages/todo/todo_home2.dart';
+import 'package:ui_challenges/src/pages/todo/todo_home1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/cart1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/cart3.dart';
+import 'package:ui_challenges/src/pages/profile/profile3.dart';
+import 'package:ui_challenges/src/pages/profile/profile2.dart';
+import 'package:ui_challenges/src/pages/profile/profile1.dart';
+import 'package:ui_challenges/src/pages/profile/profile7.dart';
+import 'package:ui_challenges/src/pages/profile/profile6.dart';
+import 'package:ui_challenges/src/pages/profile/profile5.dart';
+import 'package:ui_challenges/src/pages/profile/profile4.dart';
+import 'package:ui_challenges/src/pages/food/recipe_list.dart';
+import 'package:ui_challenges/src/pages/animations/anim2.dart';
+import 'package:ui_challenges/src/pages/animations/anim3.dart';
+import 'package:ui_challenges/src/pages/onboarding/intro2.dart';
+import 'package:ui_challenges/src/pages/onboarding/intro3.dart';
+import 'package:ui_challenges/src/pages/onboarding/intro5.dart';
+import 'package:ui_challenges/src/pages/onboarding/intro4.dart';
+import 'package:ui_challenges/src/pages/navigation/drawer2.dart';
+import 'package:ui_challenges/src/pages/quiz_app/quiz_page.dart';
+import 'package:ui_challenges/src/pages/misc/sliver_appbar.dart';
+import 'package:ui_challenges/src/pages/food/recipe_single.dart';
+import 'package:ui_challenges/src/pages/travel/travel_home.dart';
+import 'package:ui_challenges/src/pages/misc/form_elements.dart';
+import 'package:ui_challenges/src/pages/navigation/drawer1.dart';
+import 'package:ui_challenges/src/pages/travel/travel_nepal.dart';
+import 'package:ui_challenges/src/pages/food/recipe_details.dart';
+import 'package:ui_challenges/src/pages/travel/tdestination.dart';
+import 'package:ui_challenges/src/pages/onboarding/landing1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce2.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce5.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce1.dart';
+import 'package:ui_challenges/src/pages/quiz_app/demo_values.dart';
+import 'package:ui_challenges/src/pages/navigation/hiddenmenu.dart';
+import 'package:ui_challenges/src/pages/quiz_app/check_answers.dart';
+import 'package:ui_challenges/src/pages/quiz_app/quiz_finished.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider_page.dart';
+import 'package:ui_challenges/src/pages/ecommerce/confirm_order1.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce_detail3.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce_detail2.dart';
+import 'package:ui_challenges/src/pages/ecommerce/ecommerce_detail1.dart';
+import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
 
 final List<dynamic> pages = [
   menu.MenuItem(
@@ -158,9 +158,9 @@ final List<dynamic> pages = [
         path: ProfileNinePage.path),
     menu.SubMenuItem("Profile One", const ProfileOnePage(),
         path: ProfileOnePage.path),
-    menu.SubMenuItem("Profile Two",  ProfileTwoPage(),
+    menu.SubMenuItem("Profile Two", ProfileTwoPage(),
         path: ProfileTwoPage.path),
-    menu.SubMenuItem("Profile Three",  ProfileThreePage(),
+    menu.SubMenuItem("Profile Three", ProfileThreePage(),
         path: ProfileThreePage.path),
     menu.SubMenuItem("Profile Four", const ProfileFourPage(),
         path: ProfileFourPage.path),
@@ -265,23 +265,23 @@ final List<dynamic> pages = [
         path: EcommerceFourPage.path),
     menu.SubMenuItem("Checkout One", const CheckoutOnePage(),
         path: CheckoutOnePage.path),
-    menu.SubMenuItem("Ecommerce One",   EcommerceOnePage(),
+    menu.SubMenuItem("Ecommerce One", EcommerceOnePage(),
         path: EcommerceOnePage.path),
-    menu.SubMenuItem("Ecommerce Two",  EcommerceTwoPage(),
+    menu.SubMenuItem("Ecommerce Two", EcommerceTwoPage(),
         path: EcommerceTwoPage.path),
-    menu.SubMenuItem("Ecommerce Three",  SliverAppbarPage(),
+    menu.SubMenuItem("Ecommerce Three", SliverAppbarPage(),
         path: SliverAppbarPage.path),
     menu.SubMenuItem("Ecommerce Grocery", const EcommerceFivePage(),
         path: EcommerceFivePage.path),
     menu.SubMenuItem("Confirm Order", const ConfirmOrderPage(),
         path: ConfirmOrderPage.path),
-    menu.SubMenuItem("Ecommerce Cart One",   CartOnePage(),
+    menu.SubMenuItem("Ecommerce Cart One", CartOnePage(),
         path: CartOnePage.path),
     menu.SubMenuItem("Ecommerce Details One", const EcommerceDetailOnePage(),
         path: EcommerceDetailOnePage.path),
     menu.SubMenuItem("Ecommerce Details Two", const EcommerceDetailTwoPage(),
         path: EcommerceDetailTwoPage.path),
-    menu.SubMenuItem("Rounded Details Page",  EcommerceDetailThreePage(),
+    menu.SubMenuItem("Rounded Details Page", EcommerceDetailThreePage(),
         path: EcommerceDetailThreePage.path),
   ]),
   menu.MenuItem(title: "Blog", icon: Icons.pages, items: [
@@ -297,7 +297,7 @@ final List<dynamic> pages = [
         path: ArticleTwoPage.path),
   ]),
   menu.MenuItem(title: "Dashboard", icon: Icons.dashboard, items: [
-    menu.SubMenuItem("Dashboard One",  DashboardOnePage(),
+    menu.SubMenuItem("Dashboard One", DashboardOnePage(),
         path: DashboardOnePage.path),
     menu.SubMenuItem("Dashboard Two", const DashboardTwoPage(),
         path: DashboardTwoPage.path),
@@ -316,7 +316,7 @@ final List<dynamic> pages = [
         path: RecipeSinglePage.path),
     menu.SubMenuItem("Recipe Details", const RecipeDetailsPage(),
         path: RecipeDetailsPage.path),
-    menu.SubMenuItem("Food Delivery",  FoodDeliveryHomePage(),
+    menu.SubMenuItem("Food Delivery", FoodDeliveryHomePage(),
         path: FoodDeliveryHomePage.path),
   ]),
   menu.MenuItem(title: "Quiz app", icon: FontAwesomeIcons.question, items: [
@@ -421,12 +421,12 @@ final List<dynamic> pages = [
         path: ChatTwoPage.path),
     menu.SubMenuItem("Form Elements", const FormElementPage(),
         path: FormElementPage.path),
-    menu.SubMenuItem("Sliders",  SlidersPage(), path: SlidersPage.path),
+    menu.SubMenuItem("Sliders", SlidersPage(), path: SlidersPage.path),
     menu.SubMenuItem("Alert Dialogs", const DialogsPage(),
         path: DialogsPage.path),
     menu.SubMenuItem("Springy Slider", const SpringySliderPage(),
         path: SpringySliderPage.path),
-    menu.SubMenuItem("Sliver App Bar",  SliverAppbarPage(),
+    menu.SubMenuItem("Sliver App Bar", SliverAppbarPage(),
         path: SliverAppbarPage.path),
     menu.SubMenuItem("Loaders", const LoadersPage(), path: LoadersPage.path),
     menu.SubMenuItem("ChatUi", const ChatUi(), path: ChatUi.path),

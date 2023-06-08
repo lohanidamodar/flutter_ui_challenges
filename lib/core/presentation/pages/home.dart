@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/text_styles.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 
 import 'main_menu.dart';
 

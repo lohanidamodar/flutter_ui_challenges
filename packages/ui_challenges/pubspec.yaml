@@ -1,0 +1,70 @@
+name: ui_challenges
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animator: ^3.2.0
+  bottomreveal: ^2.0.0
+  cached_network_image: ^3.2.3
+  charts_flutter: ^0.12.0
+  crop: ^0.5.3
+  flare_flutter: ^3.0.2
+  flutter_custom_clippers: ^2.0.0
+  flutter_staggered_grid_view: ^0.6.2
+  flutter_swiper_null_safety: ^1.0.2
+  font_awesome_flutter: ^10.2.1
+  intl: ^0.18.0
+  simple_animations: ^5.0.0+3
+  url_launcher: ^6.1.7
+  string_scanner: ^1.2.0
+dev_dependencies:
+  flutter_lints: ^2.0.1
+
+dependency_overrides: 
+  xml: 6.0.1
+  intl: 0.18.0
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/smwallet/
+    - assets/discoveryimages/
+    - assets/hotel/
+    - assets/icon/
+    - assets/fooditem/
+    - assets/flare/
+    - assets/nicasiaassets/
+    - lib/src/pages/animations/
+    - lib/src/pages/animations/animation1/
+    - lib/src/pages/bike/
+    - lib/src/pages/blog/
+    - lib/src/pages/dialogs/
+    - lib/src/pages/dashboard/
+    - lib/src/pages/ecommerce/
+    - lib/src/pages/food/
+    - lib/src/pages/grocery/
+    - lib/src/pages/hotel/
+    - lib/src/pages/login/
+    - lib/src/pages/lists/
+    - lib/src/pages/misc/
+    - lib/src/pages/navigation/
+    - lib/src/pages/onboarding/
+    - lib/src/pages/profile/
+    - lib/src/pages/quotes/
+    - lib/src/pages/quiz_app/
+    - lib/src/pages/todo/
+    - lib/src/pages/settings/
+    - lib/src/pages/travel/
+    - lib/src/pages/invitation/
+    - lib/src/nic_asia_clone/
+    - lib/src/furniture_app/
+    - lib/src/khalti_clone/

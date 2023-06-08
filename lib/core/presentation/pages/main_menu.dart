@@ -2,10 +2,9 @@
 /// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/data/models/menu.dart' as menu;
+import 'package:ui_challenges/ui_challenges.dart';
+import '../../../models/menu.dart' as menu;
 import 'package:flutter_ui_challenges/core/presentation/widgets/preview_copy.dart';
-import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
-import 'package:flutter_ui_challenges/src/pages/bike/bike_details.dart';
 import '../routes.dart';
 
 class MainMenu extends StatefulWidget {
@@ -32,7 +31,7 @@ class _MainMenuState extends State<MainMenu> {
       children: <Widget>[
         ...pages.map((page) => page is menu.MenuItem
             ? _buildExpandableMenu(page, context)
-            : BorderedContainer(
+            : RoundedContainer(
                 margin: const EdgeInsets.symmetric(
                   vertical: 4.0,
                   horizontal: 8.0,

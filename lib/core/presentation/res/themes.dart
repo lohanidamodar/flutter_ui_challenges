@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './colors.dart';
-import './text_styles.dart';
+import 'package:ui_challenges/ui_challenges.dart';
+import 'colors.dart';
 
 final ThemeData defaultTheme = buildDefaultTheme();
 

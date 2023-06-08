@@ -4,12 +4,11 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/data/models/developer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-import '../../constants.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});

@@ -6,9 +6,9 @@ import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/code_highlighter.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
-import '../../constants.dart';
 
 class MyCodeView extends StatefulWidget {
   final String? filePath;

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/functions.dart';
-import 'package:flutter_ui_challenges/core/presentation/res/text_styles.dart';
-import 'package:flutter_ui_challenges/core/presentation/widgets/rounded_bordered_container.dart';
-import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
+import 'package:ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 
 class NewHomePage extends StatefulWidget {
   const NewHomePage({Key? key}) : super(key: key);

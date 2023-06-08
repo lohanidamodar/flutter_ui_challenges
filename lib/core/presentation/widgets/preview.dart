@@ -7,10 +7,10 @@ import 'package:flutter/foundation.dart';
   */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
+import 'package:ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 
-import '../../constants.dart';
 import 'code_view.dart';
 import 'keep_alive.dart';
 
