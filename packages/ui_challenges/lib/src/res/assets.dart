@@ -108,6 +108,8 @@ const String devArpana =
     'https://avatars.githubusercontent.com/u/55906788?s=400&u=755774d7c380cd7bbaf7e158bef74fc275853f17&v=4';
 const String devSid =
     'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/img%2Fdev_sid.png?alt=media';
+const String devMausam =
+    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/mausam%2Fprofile.jpg?alt=media&token=83fa8b83-f53b-489c-a799-ca5d5aceae7b';
 
 //grocery app
 const String brocoli =

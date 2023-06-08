@@ -11,9 +11,6 @@ const Color profileInfoNotification = Color(0xFF5DD1D3);
 const Color profileItemColor = Color(0xFFC4C5C9);
 const String imagePath = 'assets/image';
 
-const String devMausam =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/mausam%2Fprofile.jpg?alt=media&token=83fa8b83-f53b-489c-a799-ca5d5aceae7b';
-
 const Color furnitureCateDisableColor = Color(0xFF939BA9);
 const List lampsImage = [
   {
