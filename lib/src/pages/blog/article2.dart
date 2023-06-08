@@ -54,8 +54,8 @@ class ArticleTwoPage extends StatelessWidget {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  Row(
-                    children: const <Widget>[
+                  const Row(
+                    children: <Widget>[
                       Icon(Icons.favorite_border),
                       SizedBox(
                         width: 5.0,

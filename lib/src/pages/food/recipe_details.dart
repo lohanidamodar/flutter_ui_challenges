@@ -51,14 +51,14 @@ class RecipeDetailsPage extends StatelessWidget {
                 const SizedBox(
                   height: 20.0,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                   child: Row(
                     children: <Widget>[
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Icon(Icons.memory),
                             SizedBox(
                               width: 5.0,
@@ -67,18 +67,18 @@ class RecipeDetailsPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const VerticalDivider(),
-                      const Expanded(
+                      VerticalDivider(),
+                      Expanded(
                         child: Text(
                           "Vegetarian",
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      const VerticalDivider(),
+                      VerticalDivider(),
                       Expanded(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Icon(Icons.timer),
                             SizedBox(
                               width: 5.0,

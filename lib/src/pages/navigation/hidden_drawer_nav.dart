@@ -60,15 +60,15 @@ class _HiddenDrawerNavState extends State<HiddenDrawerNav>
       position: _slideAnimation,
       child: ScaleTransition(
         scale: _menuScaleAnimation,
-        child: Padding(
-          padding: const EdgeInsets.only(left: 16.0),
+        child: const Padding(
+          padding: EdgeInsets.only(left: 16.0),
           child: Align(
             alignment: Alignment.centerLeft,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
+              children: <Widget>[
                 Text("Dashboard",
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),

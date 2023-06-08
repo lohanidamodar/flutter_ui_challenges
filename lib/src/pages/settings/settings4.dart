@@ -42,8 +42,8 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
             const SizedBox(
               height: 40,
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Icon(
                   Icons.person,
                   color: Colors.green,
@@ -72,8 +72,8 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
             const SizedBox(
               height: 40,
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Icon(
                   Icons.volume_up_outlined,
                   color: Colors.green,
@@ -147,9 +147,9 @@ class _SettingsFourPageState extends State<SettingsFourPage> {
             builder: (BuildContext context) {
               return AlertDialog(
                 title: Text(title),
-                content: Column(
+                content: const Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const [
+                  children: [
                     Text("Option A"),
                     Text("Option B"),
                     Text("Option C"),

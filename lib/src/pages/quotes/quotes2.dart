@@ -93,9 +93,9 @@ class QuotesPageTwo extends StatelessWidget {
                       //color: primary,
                       fontSize: 13),
                 ),
-                InkWell(
+                const InkWell(
                   child: Row(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Padding(
                         padding: EdgeInsets.all(15.0),
                         child: Icon(

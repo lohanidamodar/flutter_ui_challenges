@@ -71,8 +71,8 @@ class CartTwoPage extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    children: const <Widget>[
+                  const Row(
+                    children: <Widget>[
                       Text("Price: "),
                       SizedBox(
                         width: 5,
@@ -84,8 +84,8 @@ class CartTwoPage extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    children: const <Widget>[
+                  const Row(
+                    children: <Widget>[
                       Text("Sub Total: "),
                       SizedBox(
                         width: 5,
@@ -172,10 +172,10 @@ class CartTwoPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
-              padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
+          const Padding(
+              padding: EdgeInsets.only(top: 10, left: 10, right: 10),
               child: Row(
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
                     "Checkout Price:",
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),

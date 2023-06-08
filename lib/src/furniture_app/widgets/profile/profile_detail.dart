@@ -26,13 +26,13 @@ class ProfileDetail extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
+            const Row(
               children: <Widget>[
-                const ProfileImage(
+                ProfileImage(
                   height: 60.0,
                   width: 60.0,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 15.0,
                 ),
                 Column(
@@ -40,7 +40,7 @@ class ProfileDetail extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Row(
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           'Mausam Rayamajhi',
                           style: TextStyle(
@@ -59,7 +59,7 @@ class ProfileDetail extends StatelessWidget {
                         )
                       ],
                     ),
-                    const Text(
+                    Text(
                       'A trendsetter',
                       style: TextStyle(
                         color: Colors.white70,

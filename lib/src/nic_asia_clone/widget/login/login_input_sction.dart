@@ -29,8 +29,8 @@ class LoginInputSection extends StatelessWidget {
               children: <Widget>[
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Column(
-                    children: const <Widget>[
+                  child: const Column(
+                    children: <Widget>[
                       SizedBox(
                         height: 25.0,
                       ),
@@ -104,10 +104,10 @@ class LoginInputSection extends StatelessWidget {
                       const SizedBox(
                         height: 15.0,
                       ),
-                      Row(
+                      const Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const <Widget>[
+                        children: <Widget>[
                           Text(
                             'Reset Device',
                             style: TextStyle(

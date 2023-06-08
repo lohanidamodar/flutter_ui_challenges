@@ -41,12 +41,12 @@ class EcommerceDetailTwoPage extends StatelessWidget {
                   style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w500),
                 ),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Expanded(
                       child: Row(
-                    children: const <Widget>[
+                    children: <Widget>[
                       SizedBox(
                         width: 20.0,
                       ),
@@ -62,12 +62,12 @@ class EcommerceDetailTwoPage extends StatelessWidget {
                           style: TextStyle(color: Colors.grey, fontSize: 14.0))
                     ],
                   )),
-                  const Text("\$5500",
+                  Text("\$5500",
                       style: TextStyle(
                         color: Colors.red,
                         fontSize: 30.0,
                       )),
-                  const SizedBox(
+                  SizedBox(
                     width: 20.0,
                   ),
                 ],

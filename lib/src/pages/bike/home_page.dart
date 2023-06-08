@@ -46,11 +46,11 @@ class BikeHomePage extends StatelessWidget {
                       return Row(
                         children: <Widget>[
                           const SizedBox(width: 20.0),
-                          Expanded(
+                          const Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const <Widget>[
+                              children: <Widget>[
                                 Text(
                                   "Buy, Sell, Exchange",
                                   style: TextStyle(
@@ -266,8 +266,8 @@ class BikeListItem extends StatelessWidget {
                       style: TextStyle(color: Colors.grey.shade700),
                     ),
                     const SizedBox(height: 5.0),
-                    Row(
-                      children: const <Widget>[
+                    const Row(
+                      children: <Widget>[
                         Text("Condition"),
                         SizedBox(width: 10.0),
                         Icon(

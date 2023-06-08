@@ -252,8 +252,8 @@ class HomePage extends StatelessWidget {
                                   ]),
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
-                              child: Row(
-                                children: const <Widget>[
+                              child: const Row(
+                                children: <Widget>[
                                   CircleAvatar(
                                     radius: 8,
                                     backgroundColor: Colors.green,
@@ -287,8 +287,8 @@ class HomePage extends StatelessWidget {
                                   ]),
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
-                              child: Row(
-                                children: const <Widget>[
+                              child: const Row(
+                                children: <Widget>[
                                   CircleAvatar(
                                     radius: 8,
                                     backgroundColor: Colors.orange,

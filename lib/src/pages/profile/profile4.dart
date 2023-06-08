@@ -86,8 +86,8 @@ class ProfileFourPage extends StatelessWidget {
             const SizedBox(height: 20.0),
             _buildTitle("Contact"),
             const SizedBox(height: 5.0),
-            Row(
-              children: const <Widget>[
+            const Row(
+              children: <Widget>[
                 SizedBox(width: 30.0),
                 Icon(
                   Icons.mail,
@@ -101,8 +101,8 @@ class ProfileFourPage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10.0),
-            Row(
-              children: const <Widget>[
+            const Row(
+              children: <Widget>[
                 SizedBox(width: 30.0),
                 Icon(
                   Icons.phone,
@@ -235,18 +235,18 @@ class ProfileFourPage extends StatelessWidget {
                 child: CircleAvatar(
                     radius: 35.0, backgroundImage: NetworkImage(avatars[4])))),
         const SizedBox(width: 20.0),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const Text(
+            Text(
               "Damodar Lohani",
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 10.0),
-            const Text("Full Stack Developer"),
-            const SizedBox(height: 5.0),
+            SizedBox(height: 10.0),
+            Text("Full Stack Developer"),
+            SizedBox(height: 5.0),
             Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Icon(
                   FontAwesomeIcons.map,
                   size: 12.0,

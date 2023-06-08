@@ -47,9 +47,9 @@ class GroceryWishlistTabView extends StatelessWidget {
             backgroundColor: Colors.green,
           ),
           onPressed: () {},
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const <Widget>[
+            children: <Widget>[
               Text("Add to Wishlist", style: TextStyle(color: Colors.white)),
             ],
           ),

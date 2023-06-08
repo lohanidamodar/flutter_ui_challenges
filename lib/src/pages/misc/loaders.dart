@@ -17,10 +17,10 @@ class LoadersPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Loaders"),
       ),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const <Widget>[
+        children: <Widget>[
           LoaderOne(color: Colors.red),
           SizedBox(
             height: 10.0,

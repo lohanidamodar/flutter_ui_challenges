@@ -158,8 +158,8 @@ class Lists extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Row(
-                      children: const <Widget>[
+                    const Row(
+                      children: <Widget>[
                         Icon(
                           Icons.star,
                           color: Colors.pink,

@@ -108,9 +108,9 @@ class LoginTenPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10.0),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text("Don't have an account?"),
                     SizedBox(width: 10.0),
                     Text(
@@ -139,8 +139,8 @@ class LoginTenPage extends StatelessWidget {
         onTap: () {
           Navigator.pop(context);
         },
-        child: Row(
-          children: const [
+        child: const Row(
+          children: [
             Icon(
               Icons.keyboard_arrow_left,
               color: Colors.black,

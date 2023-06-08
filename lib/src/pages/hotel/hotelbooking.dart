@@ -81,9 +81,9 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Text(
                       'Hello @rjun',
                       style: TextStyle(
@@ -269,11 +269,11 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
           const SizedBox(
             height: 20.0,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const <Widget>[
+              children: <Widget>[
                 Text(
                   'Hotel Packages',
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),
@@ -368,10 +368,10 @@ _hotelPackage(int index) {
                   '\$${hotels[index].price} / night',
                   style: const TextStyle(fontSize: 16, color: Colors.blue),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(top: 10),
                   child: Row(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(
                         Icons.directions_car,
                         color: Colors.blue,

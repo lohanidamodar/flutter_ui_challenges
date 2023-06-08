@@ -173,8 +173,8 @@ class UserInfo extends StatelessWidget {
                   const Divider(
                     color: Colors.black38,
                   ),
-                  Column(
-                    children: const <Widget>[
+                  const Column(
+                    children: <Widget>[
                   ListTile(
                     contentPadding:
                         EdgeInsets.symmetric(horizontal: 12, vertical: 4),

@@ -56,11 +56,11 @@ class ProfileThreePage extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 10.0),
-                            Row(
+                            const Row(
                               children: <Widget>[
                                 Expanded(
                                   child: Column(
-                                    children: const <Widget>[
+                                    children: <Widget>[
                                       Text("285"),
                                       Text("Likes")
                                     ],
@@ -68,7 +68,7 @@ class ProfileThreePage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    children: const <Widget>[
+                                    children: <Widget>[
                                       Text("3025"),
                                       Text("Comments")
                                     ],
@@ -76,7 +76,7 @@ class ProfileThreePage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    children: const <Widget>[
+                                    children: <Widget>[
                                       Text("650"),
                                       Text("Favourites")
                                     ],
@@ -104,8 +104,8 @@ class ProfileThreePage extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5.0),
                     ),
-                    child: Column(
-                      children: const <Widget>[
+                    child: const Column(
+                      children: <Widget>[
                         ListTile(
                           title: Text("User information"),
                         ),

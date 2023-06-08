@@ -65,9 +65,9 @@ class SportsNewsOnePage extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Icon(FontAwesomeIcons.football),
                     SizedBox(height: 16.0),
                     Text(
@@ -80,10 +80,10 @@ class SportsNewsOnePage extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Icon(FontAwesomeIcons.basketball),
                     SizedBox(height: 16.0),
                     Text("Basketball"),
@@ -92,10 +92,10 @@ class SportsNewsOnePage extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 32.0, 16.0),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Icon(FontAwesomeIcons.basketball),
                     SizedBox(height: 16.0),
                     Text("Hockey"),
@@ -200,10 +200,10 @@ class SportsNewsOnePage extends StatelessWidget {
                         style: titleTextStyle,
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: Row(
-                        children: const <Widget>[
+                        children: <Widget>[
                           Text(
                             "Yesterday, 9:24 PM",
                             style: TextStyle(

@@ -50,10 +50,10 @@ class _CartThreePageState extends State<CartThreePage> {
             ),
           ),
           const SizedBox(height: 25.0),
-          Padding(
-            padding: const EdgeInsets.only(left: 40.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 40.0),
             child: Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Text('Delicious',
                     style: TextStyle(
                         fontFamily: 'Montserrat',

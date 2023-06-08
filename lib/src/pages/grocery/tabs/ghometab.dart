@@ -119,10 +119,10 @@ class GroceryHomeTabView extends StatelessWidget {
   }
 
   Widget _buildCategories() {
-    return SizedBox(
+    return const SizedBox(
       height: 100,
       child: Row(
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
             width: 10.0,
           ),

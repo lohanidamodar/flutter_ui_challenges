@@ -35,11 +35,11 @@ class BikeDetailsPage extends StatelessWidget {
                           bike,
                           fit: BoxFit.cover,
                         )),
-                    Positioned(
+                    const Positioned(
                       left: 20.0,
                       bottom: 10.0,
                       child: Row(
-                        children: const <Widget>[
+                        children: <Widget>[
                           Icon(
                             Icons.star,
                             color: Colors.amber,
@@ -88,10 +88,10 @@ class BikeDetailsPage extends StatelessWidget {
                           style: Theme.of(context).textTheme.titleLarge,
                         ),
                       ),
-                      SingleChildScrollView(
+                      const SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                          children: const <Widget>[
+                          children: <Widget>[
                             SpecsBlock(
                               label: "Engine",
                               value: "220 cc",

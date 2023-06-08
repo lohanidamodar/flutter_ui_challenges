@@ -228,9 +228,9 @@ class PaymentSuccessDialog extends StatelessWidget {
                     Text("TIME", style: label)
                   ],
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const <Widget>[Text("2, April 2019"), Text("9:10 AM")],
+                  children: <Widget>[Text("2, April 2019"), Text("9:10 AM")],
                 ),
                 const SizedBox(height: 20.0),
                 Row(

@@ -29,9 +29,9 @@ class CardPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Text(
                               "Your Cards",
                               style: TextStyle(
@@ -127,9 +127,9 @@ class CardPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const <Widget>[
+                            children: <Widget>[
                               CircleAvatar(
                                 radius: 16,
                                 backgroundColor:

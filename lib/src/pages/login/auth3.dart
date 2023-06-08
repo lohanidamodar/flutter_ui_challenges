@@ -45,9 +45,9 @@ class _AuthThreePageState extends State<AuthThreePage> {
             child: Column(
               children: <Widget>[
                 const SizedBox(height: kToolbarHeight + 40),
-                Expanded(
+                const Expanded(
                   child: Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Text(
                         "Welcome",
                         style: TextStyle(

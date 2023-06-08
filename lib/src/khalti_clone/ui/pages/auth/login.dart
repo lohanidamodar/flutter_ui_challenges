@@ -30,8 +30,8 @@ class LoginPage extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
-                    Row(
-                      children: const <Widget>[
+                    const Row(
+                      children: <Widget>[
                         Icon(Icons.perm_contact_calendar),
                         SizedBox(width: 10.0),
                         Expanded(

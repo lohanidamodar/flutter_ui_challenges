@@ -132,9 +132,9 @@ class NewsHomeOnePage extends StatelessWidget {
                 color: color,
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Column(
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
                     "Lorem ipsum dolor sit amet, consecteutur adsd Ut adipisicing dolore incididunt minim",
                     style: TextStyle(fontWeight: FontWeight.bold),

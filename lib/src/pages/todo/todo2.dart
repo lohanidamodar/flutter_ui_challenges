@@ -144,9 +144,9 @@ class TodoTwoPage extends StatelessWidget {
             padding:
                 const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
             width: double.infinity,
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
+              children: <Widget>[
                 Text(
                   "10:30 - 11:30AM",
                   style:
@@ -172,9 +172,9 @@ class TodoTwoPage extends StatelessWidget {
   Container _buildTask() {
     return Container(
       padding: const EdgeInsets.only(left: 70.0),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const <Widget>[
+        children: <Widget>[
           Text(
             "10:30 - 11:30AM",
             style: TextStyle(letterSpacing: 2.5, color: Colors.white),

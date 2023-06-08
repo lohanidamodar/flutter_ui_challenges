@@ -58,9 +58,9 @@ class GroceryCartTabView extends StatelessWidget {
             const EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
         child: Column(
           children: <Widget>[
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const <Widget>[
+              children: <Widget>[
                 Text("Subtotal"),
                 Text("Rs. 1500"),
               ],
@@ -68,9 +68,9 @@ class GroceryCartTabView extends StatelessWidget {
             const SizedBox(
               height: 10.0,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const <Widget>[
+              children: <Widget>[
                 Text("Delivery fee"),
                 Text("Rs. 100"),
               ],
@@ -78,9 +78,9 @@ class GroceryCartTabView extends StatelessWidget {
             const SizedBox(
               height: 10.0,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const <Widget>[
+              children: <Widget>[
                 Text("Total"),
                 Text("Rs. 1600"),
               ],
@@ -93,9 +93,9 @@ class GroceryCartTabView extends StatelessWidget {
                 backgroundColor: Colors.green,
               ),
               onPressed: () {},
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const <Widget>[
+                children: <Widget>[
                   Text("Continue to Checkout",
                       style: TextStyle(color: Colors.white)),
                   Text("Rs. 1600", style: TextStyle(color: Colors.white)),

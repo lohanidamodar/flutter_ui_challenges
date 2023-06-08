@@ -177,12 +177,12 @@ class CakePage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 height: 100,
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Expanded(
                       child: Column(
-                        children: const <Widget>[
+                        children: <Widget>[
                           SizedBox(height: 20.0),
                           PNetworkImage(eggs),
                           SizedBox(height: 10.0),
@@ -193,12 +193,12 @@ class CakePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const VerticalDivider(
+                    VerticalDivider(
                       color: Colors.grey,
                     ),
                     Expanded(
                       child: Column(
-                        children: const <Widget>[
+                        children: <Widget>[
                           SizedBox(height: 10.0),
                           PNetworkImage(vanilla),
                           SizedBox(height: 10.0),
@@ -209,12 +209,12 @@ class CakePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const VerticalDivider(
+                    VerticalDivider(
                       color: Colors.grey,
                     ),
                     Expanded(
                       child: Column(
-                        children: const <Widget>[
+                        children: <Widget>[
                           SizedBox(height: 20.0),
                           PNetworkImage(sugar),
                           SizedBox(height: 10.0),
@@ -256,8 +256,8 @@ class CakePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10.0),
-              Row(
-                children: const <Widget>[
+              const Row(
+                children: <Widget>[
                   SizedBox(width: 20.0),
                   Text(
                     "Ratings",

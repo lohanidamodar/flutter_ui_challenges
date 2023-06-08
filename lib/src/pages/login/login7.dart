@@ -29,7 +29,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                   decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0x22ff3a5a), Color(0x22fe494d)])),
-                  child: Column(),
+                  child: const Column(),
                 ),
               ),
               ClipPath(
@@ -40,7 +40,7 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                   decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0x44ff3a5a), Color(0x44fe494d)])),
-                  child: Column(),
+                  child: const Column(),
                 ),
               ),
               ClipPath(
@@ -51,8 +51,8 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
                   decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0xffff3a5a), Color(0xfffe494d)])),
-                  child: Column(
-                    children: const <Widget>[
+                  child: const Column(
+                    children: <Widget>[
                       SizedBox(
                         height: 40,
                       ),
@@ -164,9 +164,9 @@ class _LoginSevenPageState extends State<LoginSevenPage> {
           const SizedBox(
             height: 40,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
+            children: <Widget>[
               Text(
                 "Don't have an Account ? ",
                 style: TextStyle(

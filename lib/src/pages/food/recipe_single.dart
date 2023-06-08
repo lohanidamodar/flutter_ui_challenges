@@ -72,11 +72,11 @@ class RecipeSinglePage extends StatelessWidget {
                       style: TextStyle(color: Colors.white70),
                     ),
                     const SizedBox(height: 50.0),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                       width: double.infinity,
                       child: Row(
-                        children: const <Widget>[
+                        children: <Widget>[
                           Icon(FontAwesomeIcons.fire, color: Colors.white),
                           SizedBox(width: 5.0),
                           Text(

@@ -66,14 +66,14 @@ class HotelDetailsPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
-                      Row(
+                      const Row(
                         children: <Widget>[
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Row(
-                                  children: const <Widget>[
+                                  children: <Widget>[
                                     Icon(
                                       Icons.star,
                                       color: Colors.purple,
@@ -96,7 +96,7 @@ class HotelDetailsPage extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                const Text.rich(
+                                Text.rich(
                                   TextSpan(children: [
                                     WidgetSpan(
                                         child: Icon(
@@ -113,7 +113,7 @@ class HotelDetailsPage extends StatelessWidget {
                             ),
                           ),
                           Column(
-                            children: const <Widget>[
+                            children: <Widget>[
                               Text(
                                 "\$ 200",
                                 style: TextStyle(

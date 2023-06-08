@@ -30,12 +30,12 @@ class ArticleOnePage extends StatelessWidget {
                       image,
                       fit: BoxFit.cover,
                     )),
-                Positioned(
+                const Positioned(
                   bottom: 20.0,
                   left: 20.0,
                   right: 20.0,
                   child: Row(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(
                         Icons.slideshow,
                         color: Colors.white,
@@ -75,8 +75,8 @@ class ArticleOnePage extends StatelessWidget {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  Row(
-                    children: const <Widget>[
+                  const Row(
+                    children: <Widget>[
                       Icon(Icons.favorite_border),
                       SizedBox(
                         width: 5.0,

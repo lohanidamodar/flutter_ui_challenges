@@ -167,9 +167,9 @@ class TodoHomeOnePage extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.only(top: 60, left: 30),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
+              children: <Widget>[
                 Text(
                   "Himanshu",
                   style: TextStyle(

@@ -206,9 +206,9 @@ class _PodcastPlayerState extends State<MusicPlayer> {
   }
 
   Widget _progress() {
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const <Widget>[
+      children: <Widget>[
         Text(
           '00:00',
           style: TextStyle(fontSize: 15.0, color: Colors.white),

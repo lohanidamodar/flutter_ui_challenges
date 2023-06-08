@@ -9,10 +9,10 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return const Material(
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.only(
+        padding: EdgeInsets.only(
           left: 20.0,
           right: 20.0,
           top: 30.0,
@@ -20,7 +20,7 @@ class Profile extends StatelessWidget {
         child: Column(
           //mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const <Widget>[
+          children: <Widget>[
             TitleLarge(
               title: 'Center',
             ),

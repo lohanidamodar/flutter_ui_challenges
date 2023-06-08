@@ -169,25 +169,25 @@ class InvitationPageOne extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20.0),
-                  Card(
+                  const Card(
                     elevation: 5.0,
-                    margin: const EdgeInsets.symmetric(
+                    margin: EdgeInsets.symmetric(
                         horizontal: 16.0, vertical: 8.0),
                     child: Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Row(children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Text("Birthday Party"),
                             Text("Event Name"),
                           ],
                         ),
-                        const Spacer(),
+                        Spacer(),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Text("2019/3/4"),
                             Text("Event Date")
                           ],
@@ -195,25 +195,25 @@ class InvitationPageOne extends StatelessWidget {
                       ]),
                     ),
                   ),
-                  Card(
+                  const Card(
                     elevation: 5.0,
-                    margin: const EdgeInsets.symmetric(
+                    margin: EdgeInsets.symmetric(
                         vertical: 8.0, horizontal: 16.0),
                     child: Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Row(children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             Text("New Delhi"),
                             Text("Venue"),
                           ],
                         ),
-                        const Spacer(),
+                        Spacer(),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
-                          children: const <Widget>[Text("14:33:00"), Text("Time")],
+                          children: <Widget>[Text("14:33:00"), Text("Time")],
                         ),
                       ]),
                     ),

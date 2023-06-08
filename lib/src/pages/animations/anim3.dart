@@ -66,10 +66,10 @@ class _FancyAppbarAnimationState extends State<FancyAppbarAnimation> {
                         BorderRadius.only(bottomRight: Radius.circular(30.0)),
                     color: Colors.white,
                   ),
-                  child: Column(
+                  child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
+                    children: <Widget>[
                       SizedBox(height: 70),
                       Text(
                         "Awesome and simple app bar hiding animation",

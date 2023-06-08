@@ -154,9 +154,9 @@ class HotelHomePage extends StatelessWidget {
                     const SizedBox(
                       height: 10.0,
                     ),
-                    Row(
+                    const Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const <Widget>[
+                      children: <Widget>[
                         Icon(
                           Icons.star,
                           color: Colors.green,
@@ -197,11 +197,11 @@ class HotelHomePage extends StatelessWidget {
   }
 
   Widget _buildCategories() {
-    return SizedBox(
+    return const SizedBox(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
             width: 15.0,
           ),

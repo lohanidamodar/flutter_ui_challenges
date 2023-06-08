@@ -63,9 +63,9 @@ class EcommerceDetailOnePage extends StatelessWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
                     "\$500",
                     style: TextStyle(

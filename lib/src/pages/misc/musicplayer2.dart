@@ -80,17 +80,17 @@ class MusicPlayerTwoPage extends StatelessWidget {
                 style: whiteText,
               ),
             ),
-            ListTile(
-              leading: const Icon(Icons.pause),
-              title: const Text("Ariana Grande"),
+            const ListTile(
+              leading: Icon(Icons.pause),
+              title: Text("Ariana Grande"),
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const <Widget>[
+                children: <Widget>[
                   Text("Daydreaming"),
                   SizedBox(height: 10.0),
                 ],
               ),
-              trailing: const Text("3:45"),
+              trailing: Text("3:45"),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 70.0, right: 20),

@@ -34,16 +34,16 @@ class CheckoutOnePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20.0),
-            Row(
+            const Row(
               children: <Widget>[
                 Expanded(
                   child: RoundedContainer(
-                    margin: const EdgeInsets.symmetric(
+                    margin: EdgeInsets.symmetric(
                       vertical: 8.0,
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           "Free",
                           style: boldText,
@@ -62,12 +62,12 @@ class CheckoutOnePage extends StatelessWidget {
                 ),
                 Expanded(
                   child: RoundedContainer(
-                    margin: const EdgeInsets.symmetric(
+                    margin: EdgeInsets.symmetric(
                       vertical: 8.0,
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           "\$450",
                           style: boldText,
@@ -115,14 +115,14 @@ class CheckoutOnePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: RoundedContainer(
-                    margin: const EdgeInsets.symmetric(
+                    margin: EdgeInsets.symmetric(
                       vertical: 8.0,
                       horizontal: 8.0,
                     ),
                     child: Column(
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           "\$2000",
                           style: boldText,

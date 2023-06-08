@@ -213,8 +213,8 @@ class _UserProfilePageState extends State<UserProfilePage> {
   }
 
   Column _titleSection() {
-    return Column(
-      children: const <Widget>[
+    return const Column(
+      children: <Widget>[
         Text(
           'Aanika Johnson',
           style: TextStyle(
