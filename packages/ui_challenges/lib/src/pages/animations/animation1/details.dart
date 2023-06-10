@@ -6,7 +6,7 @@ import 'dart:io';
   */
 
 import 'package:flutter/material.dart';
-import './animation1.dart';
+import 'package:ui_challenges/ui_challenges.dart';
 
 class AnimationOneDetails extends StatelessWidget {
   static const String path = "lib/src/pages/animations/animation1/details.dart";

@@ -5,8 +5,8 @@
 
 import 'package:flutter/material.dart';
 
-Color orangeColors = const Color(0xffF5591F);
-Color orangeLightColors = const Color(0xffF2861E);
+Color _orangeColors = const Color(0xffF5591F);
+Color _orangeLightColors = const Color(0xffF2861E);
 
 class SignupThreePage extends StatefulWidget {
   static const String path = "lib/src/pages/login/signup3.dart";
@@ -25,7 +25,7 @@ class _SignupThreePageState extends State<SignupThreePage> {
         padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: <Widget>[
-            const HeaderContainer("Signup For Free"),
+            const _HeaderContainer("Signup For Free"),
             Expanded(
               flex: 1,
               child: Container(
@@ -54,7 +54,7 @@ class _SignupThreePageState extends State<SignupThreePage> {
                             style: TextStyle(color: Colors.black)),
                         TextSpan(
                             text: "SIGNIN",
-                            style: TextStyle(color: orangeColors)),
+                            style: TextStyle(color: _orangeColors)),
                       ]),
                     )
                   ],
@@ -87,10 +87,10 @@ class _SignupThreePageState extends State<SignupThreePage> {
   }
 }
 
-class HeaderContainer extends StatelessWidget {
+class _HeaderContainer extends StatelessWidget {
   final String text;
 
-  const HeaderContainer(this.text, {super.key});
+  const _HeaderContainer(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +98,7 @@ class HeaderContainer extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.4,
       decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [orangeColors, orangeLightColors],
+              colors: [_orangeColors, _orangeLightColors],
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter),
           borderRadius:
@@ -140,7 +140,7 @@ class ButtonWidget extends StatelessWidget {
         height: 40,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [orangeColors, orangeLightColors],
+              colors: [_orangeColors, _orangeLightColors],
               end: Alignment.centerLeft,
               begin: Alignment.centerRight),
           borderRadius: const BorderRadius.all(

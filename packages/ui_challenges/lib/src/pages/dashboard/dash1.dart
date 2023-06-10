@@ -4,9 +4,9 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:ui_challenges/src/res/assets.dart';
 
 class DashboardOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/dashboard/dash1.dart";

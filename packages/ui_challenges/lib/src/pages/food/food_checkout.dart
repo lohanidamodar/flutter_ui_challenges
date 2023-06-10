@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../res/assets.dart';
 
-final priceTextStyle = TextStyle(
+final _priceTextStyle = TextStyle(
   color: Colors.grey.shade600,
   fontSize: 20.0,
   fontWeight: FontWeight.bold,
@@ -88,12 +88,12 @@ class FoodCheckoutOnePage extends StatelessWidget {
                   const SizedBox(width: 40.0),
                   Text(
                     "VAT (10%)",
-                    style: priceTextStyle,
+                    style: _priceTextStyle,
                   ),
                   const Spacer(),
                   Text(
                     "\$2",
-                    style: priceTextStyle,
+                    style: _priceTextStyle,
                   ),
                   const SizedBox(width: 20.0),
                 ],
@@ -106,12 +106,12 @@ class FoodCheckoutOnePage extends StatelessWidget {
                   const SizedBox(width: 40.0),
                   Text(
                     "Total",
-                    style: priceTextStyle.copyWith(color: Colors.black),
+                    style: _priceTextStyle.copyWith(color: Colors.black),
                   ),
                   const Spacer(),
                   Text(
                     "\$49",
-                    style: priceTextStyle.copyWith(color: Colors.indigo),
+                    style: _priceTextStyle.copyWith(color: Colors.indigo),
                   ),
                   const SizedBox(width: 20.0),
                 ],
@@ -247,7 +247,7 @@ class OrderListItem extends StatelessWidget {
           const SizedBox(width: 10.0),
           Text(
             "\$${item!.price! * item!.qty!}",
-            style: priceTextStyle,
+            style: _priceTextStyle,
           ),
         ],
       ),

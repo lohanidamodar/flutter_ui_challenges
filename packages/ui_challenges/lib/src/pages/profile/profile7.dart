@@ -133,7 +133,7 @@ class ProfileSevenPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const UserInfo()
+                      const ProfileInfo()
                     ],
                   )
                 ],
@@ -144,8 +144,8 @@ class ProfileSevenPage extends StatelessWidget {
   }
 }
 
-class UserInfo extends StatelessWidget {
-  const UserInfo({super.key});
+class ProfileInfo extends StatelessWidget {
+  const ProfileInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

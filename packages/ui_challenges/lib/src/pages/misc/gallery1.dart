@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:ui_challenges/src/res/assets.dart';
 
 class GalleryPageOne extends StatelessWidget {
   static const String path = "lib/src/pages/misc/gallery1.dart";

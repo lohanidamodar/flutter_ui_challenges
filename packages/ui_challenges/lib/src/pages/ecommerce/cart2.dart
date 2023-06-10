@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:ui_challenges/src/res/assets.dart';
 
 import '../../widgets/rounded_bordered_container.dart';
 

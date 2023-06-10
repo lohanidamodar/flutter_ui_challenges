@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
+import 'package:ui_challenges/src/res/assets.dart';
 
 class DarkDrawerPage extends StatelessWidget {
   static const String path = "lib/src/pages/navigation/drawer1.dart";
@@ -71,7 +71,8 @@ class DarkDrawerPage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.only(left: 16.0, right: 40),
           decoration: BoxDecoration(
-              color: primary, boxShadow: const [BoxShadow(color: Colors.black45)]),
+              color: primary,
+              boxShadow: const [BoxShadow(color: Colors.black45)]),
           width: 300,
           child: SafeArea(
             child: SingleChildScrollView(

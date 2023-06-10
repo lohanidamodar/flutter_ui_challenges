@@ -4,8 +4,8 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ui_challenges/src/res/assets.dart';
 
 import '../../widgets/network_image.dart';
 
@@ -73,13 +73,15 @@ class BlogHomeOnePage extends StatelessWidget {
             iconTheme: IconThemeData(color: secondaryColor),
             actionsIconTheme: IconThemeData(
               color: secondaryColor,
-            ), toolbarTextStyle: TextTheme(
+            ),
+            toolbarTextStyle: TextTheme(
               titleLarge: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),
-            ).bodyMedium, titleTextStyle: TextTheme(
+            ).bodyMedium,
+            titleTextStyle: TextTheme(
               titleLarge: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,

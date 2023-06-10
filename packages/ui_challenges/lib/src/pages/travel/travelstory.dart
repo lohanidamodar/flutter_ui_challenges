@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-List<String> images = [
+List<String> _images = [
   'https://cdn.pixabay.com/photo/2017/03/10/00/19/nepal-2131320__340.jpg',
   'https://cdn.pixabay.com/photo/2020/06/27/10/32/travel-5345468__340.jpg',
   'https://cdn.pixabay.com/photo/2020/07/10/16/25/nepal-5391217__340.jpg',
@@ -33,11 +33,11 @@ var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
 
 class _TravelStoryPageState extends State<TravelStoryPage> {
-  double? currentPage = images.length - 1.0;
+  double? currentPage = _images.length - 1.0;
 
   @override
   Widget build(BuildContext context) {
-    PageController controller = PageController(initialPage: images.length - 1);
+    PageController controller = PageController(initialPage: _images.length - 1);
     controller.addListener(() {
       setState(() {
         currentPage = controller.page;
@@ -137,7 +137,7 @@ class _TravelStoryPageState extends State<TravelStoryPage> {
                   CardScrollWidget(currentPage!),
                   Positioned.fill(
                     child: PageView.builder(
-                      itemCount: images.length,
+                      itemCount: _images.length,
                       controller: controller,
                       reverse: true,
                       itemBuilder: (context, index) {
@@ -245,7 +245,7 @@ class CardScrollWidget extends StatelessWidget {
 
         List<Widget> cardList = [];
 
-        for (var i = 0; i < images.length; i++) {
+        for (var i = 0; i < _images.length; i++) {
           var delta = i - currentPage;
           bool isOnRight = delta > 0;
 
@@ -274,7 +274,7 @@ class CardScrollWidget extends StatelessWidget {
                   child: Stack(
                     fit: StackFit.expand,
                     children: <Widget>[
-                      Image.network(images[i], fit: BoxFit.cover),
+                      Image.network(_images[i], fit: BoxFit.cover),
                       Align(
                         alignment: Alignment.bottomLeft,
                         child: Column(
