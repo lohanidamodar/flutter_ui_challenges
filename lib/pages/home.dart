@@ -35,6 +35,14 @@ class _HomePageState extends State<HomePage> {
           title: const Text('Ui Challenges', style: blackText),
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.dark,
+          actions: [
+            IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'about');
+              },
+              icon: const Icon(Icons.info_outlined),
+            )
+          ],
         ),
         body: const MainMenu(),
         bottomNavigationBar: null,

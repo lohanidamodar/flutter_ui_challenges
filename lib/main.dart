@@ -2,9 +2,8 @@
 /// profile: https://github.com/lohanidamodar
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges/features/home/presentation/pages/new_home.dart';
-import 'core/presentation/pages/about.dart';
-import 'core/presentation/pages/home.dart';
+import 'pages/about.dart';
+import 'pages/home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,13 +27,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red)
             .copyWith(secondary: Colors.indigo),
       ),
-      home: const NewHomePage(),
+      home: const HomePage(),
       routes: {
-        // "auth_home": (_) => AuthHomePage(),
-        "challenge_home": (_) => const HomePage(),
         "about": (_) => const AboutPage(),
-        // "signup": (_) => SignupPage(),
-        // "profile": (_) => ProfilePage(),
       },
     );
   }
