@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MenuItem {
+class UIMenuItem {
   final String title;
   final List<SubMenuItem>? items;
   final IconData icon;
 
-  MenuItem(
+  UIMenuItem(
       {Key? key,
       required this.title,
       this.items,

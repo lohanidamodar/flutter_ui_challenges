@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/functions.dart';
-import 'package:ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ui_challenges/ui_challenges.dart';
+
+import '../../../../core/presentation/res/text_styles.dart';
 
 class NewHomePage extends StatefulWidget {
   const NewHomePage({Key? key}) : super(key: key);

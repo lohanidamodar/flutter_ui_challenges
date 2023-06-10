@@ -10,7 +10,7 @@ import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import './details.dart';
 import '../../../res/assets.dart' as assets;
 
-List<String> _images = [
+List<String> images = [
   assets.images[0],
   assets.images[1],
   assets.images[2],
@@ -110,7 +110,7 @@ class _AnimationOnePageState extends State<AnimationOnePage>
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: Image.network(
-                              _images[index],
+                              images[index],
                               fit: BoxFit.cover,
                             ),
                           ),

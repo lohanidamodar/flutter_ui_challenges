@@ -90,7 +90,7 @@ class _SignupThreePageState extends State<SignupThreePage> {
 class _HeaderContainer extends StatelessWidget {
   final String text;
 
-  const _HeaderContainer(this.text, {super.key});
+  const _HeaderContainer(this.text);
 
   @override
   Widget build(BuildContext context) {

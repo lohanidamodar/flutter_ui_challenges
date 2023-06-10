@@ -20,6 +20,7 @@ dependencies:
   flutter_speed_dial: ^3.0.5
   font_awesome_flutter: ^10.4.0
   share_plus: ^6.3.4
+  string_scanner: ^1.2.0
   ui_challenges:
     path: packages/ui_challenges
   url_launcher: ^6.1.11
