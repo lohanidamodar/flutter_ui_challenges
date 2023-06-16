@@ -4,8 +4,8 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_clipper.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_controller.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_clipper.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_controller.dart';
 
 class SliderGoo extends StatelessWidget {
   final SpringySliderController? sliderController;

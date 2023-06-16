@@ -6,8 +6,8 @@ import 'dart:math';
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_controller.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_state.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_controller.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_state.dart';
 
 class SliderClipper extends CustomClipper<Path> {
   final SpringySliderController? sliderController;

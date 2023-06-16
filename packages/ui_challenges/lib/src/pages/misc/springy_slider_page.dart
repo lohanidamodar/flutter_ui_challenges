@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/springy_slider.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/springy_slider.dart';
 
 class SpringySliderPage extends StatelessWidget {
   static const String path = "lib/src/pages/misc/springy_slider_page.dart";

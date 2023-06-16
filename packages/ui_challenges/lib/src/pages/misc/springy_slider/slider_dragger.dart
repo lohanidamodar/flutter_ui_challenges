@@ -4,7 +4,7 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_controller.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_controller.dart';
 
 class SliderDragger extends StatefulWidget {
   final SpringySliderController? sliderController;

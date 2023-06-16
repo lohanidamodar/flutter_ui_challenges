@@ -6,7 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_state.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_state.dart';
 
 class SpringySliderController extends ChangeNotifier {
   final SpringDescription sliderSpring = const SpringDescription(

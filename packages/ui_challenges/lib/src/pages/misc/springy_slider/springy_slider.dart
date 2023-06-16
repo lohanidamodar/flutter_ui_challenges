@@ -10,12 +10,12 @@
   */
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_controller.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_dragger.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_goo.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_marks.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_points.dart';
-import 'package:ui_challenges/src/widgets/springy_slider/slider_state.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_controller.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_dragger.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_goo.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_marks.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_points.dart';
+import 'package:ui_challenges/src/pages/misc/springy_slider/slider_state.dart';
 
 class SpringySlider extends StatefulWidget {
   final int? markCount;
