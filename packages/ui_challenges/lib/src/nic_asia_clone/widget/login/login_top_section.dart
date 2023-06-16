@@ -29,7 +29,10 @@ class LoginTopSection extends StatelessWidget {
           const SizedBox(
             height: 10.0,
           ),
-          Image.asset('assets/nicasiaassets/brand_alternate.png'),
+          Image.asset(
+            'assets/nicasiaassets/brand_alternate.png',
+            package: 'ui_challenges',
+          ),
           const SizedBox(
             height: 15.0,
           ),
@@ -44,6 +47,7 @@ class LoginTopSection extends StatelessWidget {
                         children: <Widget>[
                           Image.asset(
                             '$path${item['name']}.png',
+                            package: 'ui_challenges',
                             height: 50.0,
                           ),
                           const SizedBox(

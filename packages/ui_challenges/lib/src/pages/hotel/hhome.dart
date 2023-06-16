@@ -56,7 +56,8 @@ class HotelHomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontSize: 20.0)),
                 Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                   padding: const EdgeInsets.all(5.0),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -107,7 +108,10 @@ class HotelHomePage extends StatelessWidget {
             children: <Widget>[
               Stack(
                 children: <Widget>[
-                  Image.asset(room['image']),
+                  Image.asset(
+                    room['image'],
+                    package: 'ui_challenges',
+                  ),
                   Positioned(
                     right: 10,
                     top: 10,

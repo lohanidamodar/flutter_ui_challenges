@@ -43,14 +43,11 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar> {
   getPage(int? page) {
     switch (page) {
       case 0:
-        return const Center(
-            child: Text("Home Page"));
+        return const Center(child: Text("Home Page"));
       case 1:
-        return const Center(
-            child: Text("Profile Page"));
+        return const Center(child: Text("Profile Page"));
       case 2:
-        return const Center(
-            child: Text("Menu Page"));
+        return const Center(child: Text("Menu Page"));
     }
   }
 }

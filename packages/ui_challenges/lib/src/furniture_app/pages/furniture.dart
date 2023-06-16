@@ -45,8 +45,7 @@ class Furniture extends StatelessWidget {
             ),
             buildLampsWithSlider(),
             const Padding(
-              padding:
-                  EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
               child: TitleSmall(
                 subTitle: 'In recent month',
                 title: 'Popular',

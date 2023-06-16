@@ -10,7 +10,8 @@ class SliderDebug extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderDebug({super.key, 
+  const SliderDebug({
+    super.key,
     this.sliderPercent,
     this.paddingTop,
     this.paddingBottom,

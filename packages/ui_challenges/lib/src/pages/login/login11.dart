@@ -66,9 +66,10 @@ class LoginElevenPage extends StatelessWidget {
                       Text(
                         "Log In",
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                              color: Colors.red,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.headlineSmall!.copyWith(
+                                  color: Colors.red,
+                                ),
                       ),
                       const SizedBox(height: 40.0),
                       const TextField(

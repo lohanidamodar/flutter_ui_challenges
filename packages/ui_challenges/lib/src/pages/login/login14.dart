@@ -108,6 +108,7 @@ class HeaderContainer extends StatelessWidget {
           Center(
             child: Image.asset(
               "assets/icon/app-store-logo.jpg",
+              package: 'ui_challenges',
               height: 100,
               width: 100,
             ),

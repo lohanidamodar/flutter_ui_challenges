@@ -215,7 +215,10 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                             topRight: Radius.circular(10.0),
                           ),
                           image: DecorationImage(
-                            image: AssetImage(hotels[index].imageUrl!),
+                            image: AssetImage(
+                              hotels[index].imageUrl!,
+                              package: 'ui_challenges',
+                            ),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -231,7 +234,8 @@ class _HotelBookingPageState extends State<HotelBookingPage> {
                         padding: const EdgeInsets.only(left: 10),
                         child: Text(
                           hotels[index].description!,
-                          style: const TextStyle(fontSize: 13.0, color: Colors.grey),
+                          style: const TextStyle(
+                              fontSize: 13.0, color: Colors.grey),
                         ),
                       ),
                       Padding(
@@ -334,7 +338,10 @@ _hotelPackage(int index) {
                   bottomLeft: Radius.circular(10.0),
                 ),
                 image: DecorationImage(
-                  image: AssetImage(hotels[index].imageUrl!),
+                  image: AssetImage(
+                    hotels[index].imageUrl!,
+                    package: 'ui_challenges',
+                  ),
                   fit: BoxFit.cover,
                 ),
               ),

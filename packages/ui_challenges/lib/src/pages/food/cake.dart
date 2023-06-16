@@ -66,7 +66,8 @@ class CakePage extends StatelessWidget {
                   children: <Widget>[
                     const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      labelPadding:
+                          const EdgeInsets.symmetric(horizontal: 20.0),
                       label: const Text(
                         "1 Kg",
                         style: TextStyle(
@@ -79,7 +80,8 @@ class CakePage extends StatelessWidget {
                     ),
                     const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      labelPadding:
+                          const EdgeInsets.symmetric(horizontal: 20.0),
                       label: const Text(
                         "2 Kg",
                         style: TextStyle(
@@ -92,7 +94,8 @@ class CakePage extends StatelessWidget {
                     ),
                     const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      labelPadding:
+                          const EdgeInsets.symmetric(horizontal: 20.0),
                       label: const Text(
                         "3 Kg",
                         style: TextStyle(
@@ -105,7 +108,8 @@ class CakePage extends StatelessWidget {
                     ),
                     const SizedBox(width: 20.0),
                     ChoiceChip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      labelPadding:
+                          const EdgeInsets.symmetric(horizontal: 20.0),
                       label: const Text(
                         "4 Kg",
                         style: TextStyle(
@@ -241,8 +245,8 @@ class CakePage extends StatelessWidget {
                         children: <Widget>[
                           const Text(
                             "DELIVERY",
-                            style: TextStyle(
-                                color: Colors.white, fontSize: 16.0),
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16.0),
                           ),
                           Text(
                             "45, Amarlands",
@@ -296,8 +300,8 @@ class CakePage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(40.0)),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30.0, vertical: 8.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 8.0),
                   backgroundColor: primary,
                 ),
                 onPressed: () {},

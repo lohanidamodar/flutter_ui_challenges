@@ -31,7 +31,10 @@ class LoginTenPage extends StatelessWidget {
                 SizedBox(
                   width: 100,
                   height: 60,
-                  child: Image.asset(appLogo),
+                  child: Image.asset(
+                    appLogo,
+                    package: 'ui_challenges',
+                  ),
                 ),
                 const SizedBox(height: 30.0),
                 Container(
@@ -45,7 +48,10 @@ class LoginTenPage extends StatelessWidget {
                     children: [
                       Text(
                         "Hello",
-                        style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
                               fontWeight: FontWeight.bold,
                               color: Colors.grey.shade800,
                             ),

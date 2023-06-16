@@ -14,7 +14,8 @@ class SliderMarks extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderMarks({super.key, 
+  const SliderMarks({
+    super.key,
     this.markCount,
     this.markColor,
     this.backgroundColor,

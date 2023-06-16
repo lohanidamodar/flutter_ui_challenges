@@ -43,7 +43,11 @@ class ProfileElevenPage extends StatelessWidget {
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                          image: AssetImage(appLogo), fit: BoxFit.cover),
+                          image: AssetImage(
+                            appLogo,
+                            package: 'ui_challenges',
+                          ),
+                          fit: BoxFit.cover),
                     ),
                   ),
                   Align(

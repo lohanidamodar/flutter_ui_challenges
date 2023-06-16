@@ -7,7 +7,7 @@ class ProfileThreePage extends StatelessWidget {
   static const String path = "lib/src/pages/profile/profile3.dart";
   final image = avatars[1];
 
-   ProfileThreePage({super.key});
+  ProfileThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

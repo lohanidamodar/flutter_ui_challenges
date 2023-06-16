@@ -47,8 +47,7 @@ class DestinationPage extends StatelessWidget {
                           ),
                           const Text("Kathmandu",
                               style: TextStyle(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold)),
+                                  fontSize: 20.0, fontWeight: FontWeight.bold)),
                           IconButton(
                             icon: const Icon(Icons.star_border),
                             onPressed: () {},
@@ -56,7 +55,8 @@ class DestinationPage extends StatelessWidget {
                         ],
                       ),
                       Container(
-                          padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 16.0),
+                          padding:
+                              const EdgeInsets.fromLTRB(20.0, 0, 20.0, 16.0),
                           child: const Text(
                             "Kathmandu, worlds spiritual capital mixes the traditional cultures of Nepal as well as the modern technology.",
                             textAlign: TextAlign.justify,
@@ -121,18 +121,15 @@ class DestinationPage extends StatelessWidget {
                     Expanded(
                       child: GridView(
                         shrinkWrap: true,
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 10.0,
-                            mainAxisSpacing: 10.0),
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 2,
+                                crossAxisSpacing: 10.0,
+                                mainAxisSpacing: 10.0),
                         children: <Widget>[
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
-                              child:
-                                  const PNetworkImage(kathmandu1, fit: BoxFit.cover)),
-                          ClipRRect(
-                              borderRadius: BorderRadius.circular(5.0),
-                              child: const PNetworkImage(pashupatinath,
+                              child: const PNetworkImage(kathmandu1,
                                   fit: BoxFit.cover)),
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
@@ -140,8 +137,12 @@ class DestinationPage extends StatelessWidget {
                                   fit: BoxFit.cover)),
                           ClipRRect(
                               borderRadius: BorderRadius.circular(5.0),
-                              child:
-                                  const PNetworkImage(kathmandu1, fit: BoxFit.cover)),
+                              child: const PNetworkImage(pashupatinath,
+                                  fit: BoxFit.cover)),
+                          ClipRRect(
+                              borderRadius: BorderRadius.circular(5.0),
+                              child: const PNetworkImage(kathmandu1,
+                                  fit: BoxFit.cover)),
                         ],
                       ),
                     ),

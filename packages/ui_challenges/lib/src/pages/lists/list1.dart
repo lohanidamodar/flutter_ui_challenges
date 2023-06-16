@@ -24,7 +24,7 @@ class PlaceList1 extends StatelessWidget {
           )
         ],
       ),
-      body:  Lists(),
+      body: Lists(),
     );
   }
 }
@@ -90,7 +90,7 @@ class Lists extends StatelessWidget {
             "https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
   ];
 
-   Lists({super.key});
+  Lists({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -106,8 +106,8 @@ class Lists extends StatelessWidget {
               Container(
                 height: 125,
                 width: 110,
-                padding:
-                    const EdgeInsets.only(left: 0, top: 10, bottom: 70, right: 20),
+                padding: const EdgeInsets.only(
+                    left: 0, top: 10, bottom: 70, right: 20),
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         image: NetworkImage(item.image!), fit: BoxFit.cover)),
@@ -149,11 +149,13 @@ class Lists extends StatelessWidget {
                     ),
                     Text(
                       item.catagory!,
-                      style: const TextStyle(fontSize: 14, color: Colors.black87),
+                      style:
+                          const TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                     Text(
                       item.place!,
-                      style: const TextStyle(fontSize: 14, color: Colors.black87),
+                      style:
+                          const TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                     const SizedBox(
                       height: 10,

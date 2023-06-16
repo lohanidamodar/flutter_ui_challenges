@@ -26,7 +26,7 @@ class QuotesPageTwo extends StatelessWidget {
     },
   ];
 
-   QuotesPageTwo({super.key});
+  QuotesPageTwo({super.key});
 
   @override
   Widget build(BuildContext context) {

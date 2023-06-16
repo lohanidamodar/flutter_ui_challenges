@@ -22,7 +22,8 @@ class GreenPlantPage extends StatelessWidget {
               )
             ],
           ),
-          const Text('Green', style: TextStyle(color: Colors.grey, fontSize: 17)),
+          const Text('Green',
+              style: TextStyle(color: Colors.grey, fontSize: 17)),
           const SizedBox(height: 7),
           const Text(
             'Plants',

@@ -12,7 +12,8 @@ class QuizFinishedPage extends StatelessWidget {
   final List<Question> questions;
   final Map<int, dynamic> answers;
 
-  const QuizFinishedPage({Key? key, required this.questions, required this.answers})
+  const QuizFinishedPage(
+      {Key? key, required this.questions, required this.answers})
       : super(key: key);
 
   @override

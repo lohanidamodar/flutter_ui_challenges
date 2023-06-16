@@ -13,7 +13,7 @@ class EcommerceDetailThreePage extends StatelessWidget {
 
   final String image = images[1];
 
-   EcommerceDetailThreePage({super.key});
+  EcommerceDetailThreePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

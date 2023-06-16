@@ -33,7 +33,7 @@ class EcommerceTwoPage extends StatelessWidget {
     },
   ];
 
-   EcommerceTwoPage({super.key});
+  EcommerceTwoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +108,8 @@ class EcommerceTwoPage extends StatelessWidget {
           child: TextField(
             decoration: InputDecoration(
                 border: InputBorder.none,
-                icon: IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+                icon: IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.search)),
                 suffixIcon:
                     IconButton(onPressed: () {}, icon: const Icon(Icons.mic))),
           ),
@@ -177,14 +178,15 @@ class EcommerceTwoPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     item["title"],
-                    style:
-                        const TextStyle(fontSize: 22.0, fontWeight: FontWeight.w700),
+                    style: const TextStyle(
+                        fontSize: 22.0, fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(
                     height: 10.0,
                   ),
                   Text(item["category"],
-                      style: const TextStyle(color: Colors.grey, fontSize: 18.0)),
+                      style:
+                          const TextStyle(color: Colors.grey, fontSize: 18.0)),
                   const SizedBox(
                     height: 20.0,
                   ),

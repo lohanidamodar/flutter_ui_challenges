@@ -18,7 +18,9 @@ class NicAsiaApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'NIC ASIA',
       theme: ThemeData(
-        primaryColor: primaryColor, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: primaryColorLight),
+        primaryColor: primaryColor,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: primaryColorLight),
       ),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{

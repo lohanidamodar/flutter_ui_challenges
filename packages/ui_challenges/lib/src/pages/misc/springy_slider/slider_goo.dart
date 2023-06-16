@@ -13,7 +13,8 @@ class SliderGoo extends StatelessWidget {
   final double? paddingBottom;
   final Widget? child;
 
-  const SliderGoo({super.key, 
+  const SliderGoo({
+    super.key,
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,

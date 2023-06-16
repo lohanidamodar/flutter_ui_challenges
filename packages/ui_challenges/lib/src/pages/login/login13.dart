@@ -105,8 +105,8 @@ class LoginPageThirdteen extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                                 border: Border(
-                                    bottom: BorderSide(
-                                        color: Colors.grey[100]!))),
+                                    bottom:
+                                        BorderSide(color: Colors.grey[100]!))),
                             child: TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none,
@@ -143,8 +143,7 @@ class LoginPageThirdteen extends StatelessWidget {
                         child: Text(
                           "Login",
                           style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold),
+                              color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -153,8 +152,7 @@ class LoginPageThirdteen extends StatelessWidget {
                     ),
                     const Text(
                       "Forgot Password?",
-                      style:
-                          TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),
+                      style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),
                     ),
                   ],
                 ),

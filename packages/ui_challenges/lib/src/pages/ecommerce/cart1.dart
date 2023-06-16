@@ -15,7 +15,7 @@ class CartOnePage extends StatelessWidget {
     {"image": burger, "title": "Veg Burger", "price": 30},
   ];
 
-   CartOnePage({super.key});
+  CartOnePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,8 @@ class CartOnePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 30.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16.0, vertical: 30.0),
                 child: Text(
                   "CART",
                   style: TextStyle(
@@ -43,7 +44,8 @@ class CartOnePage extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         width: double.infinity,
-                        margin: const EdgeInsets.only(right: 30.0, bottom: 10.0),
+                        margin:
+                            const EdgeInsets.only(right: 30.0, bottom: 10.0),
                         child: Material(
                           borderRadius: BorderRadius.circular(5.0),
                           elevation: 3.0,

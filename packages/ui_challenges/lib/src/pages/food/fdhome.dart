@@ -29,7 +29,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
     {"image": frenchFries, "name": "Hungry Kids", "specials": "French Fries"},
   ];
 
-   FoodDeliveryHomePage({super.key});
+  FoodDeliveryHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -113,15 +113,19 @@ class FoodDeliveryHomePage extends StatelessWidget {
             ],
           ),
         ),
-      ), toolbarTextStyle: TextTheme(
-          titleLarge: Theme.of(context)
-              .textTheme
-              .titleLarge
-              ?.merge(const TextStyle(color: Colors.black))).bodyMedium, titleTextStyle: TextTheme(
-          titleLarge: Theme.of(context)
-              .textTheme
-              .titleLarge
-              ?.merge(const TextStyle(color: Colors.black))).titleLarge,
+      ),
+      toolbarTextStyle: TextTheme(
+              titleLarge: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.merge(const TextStyle(color: Colors.black)))
+          .bodyMedium,
+      titleTextStyle: TextTheme(
+              titleLarge: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.merge(const TextStyle(color: Colors.black)))
+          .titleLarge,
     );
   }
 

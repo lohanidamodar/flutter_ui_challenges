@@ -10,6 +10,7 @@ class Heading extends StatelessWidget {
       children: <Widget>[
         Image.asset(
           'assets/nicasiaassets/fill_1_copy.png',
+          package: 'ui_challenges',
           height: 20.0,
         ),
         const SizedBox(

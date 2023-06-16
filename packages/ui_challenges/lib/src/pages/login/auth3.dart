@@ -35,7 +35,10 @@ class _AuthThreePageState extends State<AuthThreePage> {
         body: Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(room4),
+          image: AssetImage(
+            room4,
+            package: 'ui_challenges',
+          ),
           fit: BoxFit.cover,
         ),
       ),
@@ -197,8 +200,9 @@ class _AuthThreePageState extends State<AuthThreePage> {
                         ),
                         AnimatedSwitcher(
                           duration: const Duration(milliseconds: 300),
-                          child:
-                              _formsIndex == 1 ? const LoginForm() : const SignupForm(),
+                          child: _formsIndex == 1
+                              ? const LoginForm()
+                              : const SignupForm(),
                         )
                       ],
                     ),

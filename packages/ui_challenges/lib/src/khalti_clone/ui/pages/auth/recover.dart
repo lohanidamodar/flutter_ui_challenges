@@ -93,6 +93,7 @@ class RecoverPasswordPage extends StatelessWidget {
                 child: Image.asset(
                   logo,
                   fit: BoxFit.contain,
+                  package: 'ui_challenges',
                 )),
           ],
         ),

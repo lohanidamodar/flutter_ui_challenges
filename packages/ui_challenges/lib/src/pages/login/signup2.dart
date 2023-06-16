@@ -43,8 +43,7 @@ class SignupTwoPage extends StatelessWidget {
             ),
             const SizedBox(height: 30.0),
             const Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 decoration: InputDecoration(
                     labelText: "Email",
@@ -52,8 +51,7 @@ class SignupTwoPage extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -62,8 +60,7 @@ class SignupTwoPage extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(

@@ -82,8 +82,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -102,8 +102,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -122,8 +122,8 @@ class SignupOnePage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -156,7 +156,8 @@ class SignupOnePage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {},
-                child: const Text("Sign Up", style: TextStyle(color: Colors.white70)),
+                child: const Text("Sign Up",
+                    style: TextStyle(color: Colors.white70)),
               ),
             ),
           )

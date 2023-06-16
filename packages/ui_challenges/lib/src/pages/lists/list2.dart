@@ -150,8 +150,8 @@ class _SchoolListState extends State<SchoolList> {
                         style: dropdownMenuItem,
                         decoration: const InputDecoration(
                             hintText: "Search School",
-                            hintStyle: TextStyle(
-                                color: Colors.black38, fontSize: 16),
+                            hintStyle:
+                                TextStyle(color: Colors.black38, fontSize: 16),
                             prefixIcon: Material(
                               elevation: 0.0,
                               borderRadius:

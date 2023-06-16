@@ -12,7 +12,8 @@ class SliderPoints extends StatelessWidget {
   final double? paddingTop;
   final double? paddingBottom;
 
-  const SliderPoints({super.key, 
+  const SliderPoints({
+    super.key,
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,
@@ -72,7 +73,8 @@ class Points extends StatelessWidget {
   final bool isPointsYouNeed;
   final Color? color;
 
-  const Points({super.key, 
+  const Points({
+    super.key,
     this.points,
     this.isAboveSlider = true,
     this.isPointsYouNeed = true,

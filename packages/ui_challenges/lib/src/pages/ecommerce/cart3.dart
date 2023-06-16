@@ -162,27 +162,30 @@ class _CartThreePageState extends State<CartThreePage> {
               children: <Widget>[
                 Row(children: [
                   Hero(
-                  tag: imgPath,
-                  child: Image(
-                      image: AssetImage(imgPath),
-                      fit: BoxFit.cover,
-                      height: 75.0,
-                      width: 75.0)),
+                      tag: imgPath,
+                      child: Image(
+                          image: AssetImage(
+                            imgPath,
+                            package: 'ui_challenges',
+                          ),
+                          fit: BoxFit.cover,
+                          height: 75.0,
+                          width: 75.0)),
                   const SizedBox(width: 10.0),
                   Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(foodName,
-                        style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 17.0,
-                            fontWeight: FontWeight.bold)),
-                    Text(price,
-                        style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 15.0,
-                            color: Colors.grey))
-                  ])
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(foodName,
+                            style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 17.0,
+                                fontWeight: FontWeight.bold)),
+                        Text(price,
+                            style: const TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 15.0,
+                                color: Colors.grey))
+                      ])
                 ]),
                 IconButton(
                     icon: const Icon(Icons.add),

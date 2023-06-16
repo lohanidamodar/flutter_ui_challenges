@@ -259,7 +259,8 @@ class _DetailsPageState extends State<DetailsPage> {
             ),
             Text(
               companyName,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+              style:
+                  const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
             ),
             const SizedBox(
               height: 10,

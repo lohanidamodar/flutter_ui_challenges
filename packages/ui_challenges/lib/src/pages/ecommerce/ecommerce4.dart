@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 import '../../res/assets.dart';
 
-TextStyle priceTextStyle =
-    const TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
+TextStyle priceTextStyle = const TextStyle(
+    color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold);
 
 class EcommerceFourPage extends StatelessWidget {
   static const String path = "lib/src/pages/ecommerce/ecommerce4.dart";

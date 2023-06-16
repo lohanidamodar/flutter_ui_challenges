@@ -12,7 +12,8 @@ class SliderDragger extends StatefulWidget {
   final double? paddingBottom;
   final Widget? child;
 
-  const SliderDragger({super.key, 
+  const SliderDragger({
+    super.key,
     this.sliderController,
     this.paddingTop,
     this.paddingBottom,

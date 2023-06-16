@@ -20,6 +20,7 @@ class Login extends StatelessWidget {
         onPressed: () {},
         child: Image.asset(
           'assets/nicasiaassets/nicLogo.png',
+          package: 'ui_challenges',
           color: Colors.white,
         ),
       ),

@@ -102,8 +102,7 @@ class LoginFourPage extends StatelessWidget {
                       onTap: () {},
                       child: const Text(
                         "SIGN UP",
-                        style:
-                            TextStyle(color: Colors.white, fontSize: 16.0),
+                        style: TextStyle(color: Colors.white, fontSize: 16.0),
                       ),
                     ),
                   ],

@@ -113,11 +113,15 @@ class _HomePageState extends State<HomePage>
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: const Icon(Icons.card_giftcard), label: "Bazaar", onTap: () {}),
+                icon: const Icon(Icons.card_giftcard),
+                label: "Bazaar",
+                onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
-                icon: const Icon(Icons.list), label: "Transactions", onTap: () {}),
+                icon: const Icon(Icons.list),
+                label: "Transactions",
+                onTap: () {}),
           ),
           Expanded(
             child: _buildBottomMenuItem(
@@ -154,7 +158,8 @@ class _HomePageState extends State<HomePage>
       sliver: SliverToBoxAdapter(
         child: Text(
           title,
-          style: const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+          style:
+              const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
         ),
       ),
     );

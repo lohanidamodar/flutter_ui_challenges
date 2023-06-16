@@ -118,8 +118,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                         padding: const EdgeInsets.fromLTRB(15, 0, 10, 0),
                         decoration: BoxDecoration(
                           border: Border.all(
-                              width: 1,
-                              color: Theme.of(context).primaryColor),
+                              width: 1, color: Theme.of(context).primaryColor),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(

@@ -42,7 +42,8 @@ class RecipeDetailsPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "French\nToast".toUpperCase(),
-                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600),
+                  style: const TextStyle(
+                      fontSize: 24.0, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(
                   height: 16.0,
@@ -191,8 +192,8 @@ class RecipeDetailsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(title,
-                  style:
-                      const TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0)),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18.0)),
               const SizedBox(
                 height: 10.0,
               ),

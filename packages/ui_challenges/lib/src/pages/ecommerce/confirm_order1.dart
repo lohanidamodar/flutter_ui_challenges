@@ -26,8 +26,8 @@ class ConfirmOrderPage extends StatelessWidget {
 
   Widget _buildBody(BuildContext context) {
     return SingleChildScrollView(
-      padding:
-          const EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
+      padding: const EdgeInsets.only(
+          left: 20.0, right: 20.0, top: 40.0, bottom: 10.0),
       child: Column(
         children: <Widget>[
           Row(

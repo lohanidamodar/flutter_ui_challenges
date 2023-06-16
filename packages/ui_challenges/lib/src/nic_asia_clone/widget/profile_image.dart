@@ -10,7 +10,10 @@ class ProfileImage extends StatelessWidget {
   final double height, width;
   final Color color;
   const ProfileImage(
-      {super.key, this.height = 100.0, this.width = 100.0, this.color = primaryColor});
+      {super.key,
+      this.height = 100.0,
+      this.width = 100.0,
+      this.color = primaryColor});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +23,10 @@ class ProfileImage extends StatelessWidget {
         shape: BoxShape.circle,
         color: Colors.red,
         image: const DecorationImage(
-          image: AssetImage('assets/nicasiaassets/profile.jpg'),
+          image: AssetImage(
+            'assets/nicasiaassets/profile.jpg',
+            package: 'ui_challenges',
+          ),
           fit: BoxFit.contain,
         ),
         border: Border.all(

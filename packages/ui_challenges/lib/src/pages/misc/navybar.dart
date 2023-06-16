@@ -64,9 +64,11 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
                 FancyBottomNavigationItem(
                     icon: const Icon(Icons.person), title: const Text('User')),
                 FancyBottomNavigationItem(
-                    icon: const Icon(Icons.security), title: const Text('Security')),
+                    icon: const Icon(Icons.security),
+                    title: const Text('Security')),
                 FancyBottomNavigationItem(
-                    icon: const Icon(Icons.message), title: const Text('Message')),
+                    icon: const Icon(Icons.message),
+                    title: const Text('Message')),
               ],
               onItemSelected: (int value) {
                 indexcontroller.add(value);
@@ -88,7 +90,7 @@ class FancyBottomNavigation extends StatefulWidget {
   final ValueChanged<int> onItemSelected;
 
   const FancyBottomNavigation(
-      {super.key, 
+      {super.key,
       this.currentIndex = 0,
       this.iconSize = 24,
       this.activeColor,
@@ -177,8 +179,9 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    activeColor =
-        (activeColor == null) ? Theme.of(context).colorScheme.secondary : activeColor;
+    activeColor = (activeColor == null)
+        ? Theme.of(context).colorScheme.secondary
+        : activeColor;
 
     backgroundColor = (backgroundColor == null)
         ? Theme.of(context).bottomAppBarTheme.color

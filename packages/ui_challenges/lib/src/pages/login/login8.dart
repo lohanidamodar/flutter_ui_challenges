@@ -21,7 +21,10 @@ class LoginEightPage extends StatelessWidget {
           Ink(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(room4),
+                image: AssetImage(
+                  room4,
+                  package: 'ui_challenges',
+                ),
                 fit: BoxFit.cover,
               ),
             ),

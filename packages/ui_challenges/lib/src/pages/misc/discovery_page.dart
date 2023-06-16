@@ -35,8 +35,8 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
           padding: const EdgeInsets.all(0),
         ),
         child: Container(
-          margin:
-              const EdgeInsets.only(left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
+          margin: const EdgeInsets.only(
+              left: 10.0, top: 10.0, right: 10.0, bottom: 10.0),
           decoration: getBoxDecoration(),
           child: Center(
             child: Column(
@@ -45,6 +45,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                 Center(
                   child: Image.asset(
                     'assets/discoveryimages/$imageName.png',
+                    package: 'ui_challenges',
                     height: 80.0,
                   ),
                 ),

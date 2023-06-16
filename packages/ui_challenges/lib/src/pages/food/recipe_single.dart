@@ -149,8 +149,10 @@ class RecipeSinglePage extends StatelessWidget {
                 ),
                 child: Text("Read More".toUpperCase()),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const RecipeDetailsPage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const RecipeDetailsPage()));
                 },
               ),
             ),

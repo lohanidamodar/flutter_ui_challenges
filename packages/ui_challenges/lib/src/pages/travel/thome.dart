@@ -44,7 +44,8 @@ class TravelHomePage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8.0),
               child: const Material(
                 elevation: 5.0,
                 child: TextField(
@@ -108,7 +109,8 @@ class TravelHomePage extends StatelessWidget {
   Container _buildFeaturedItem(
       {String? image, required String title, required String subtitle}) {
     return Container(
-      padding: const EdgeInsets.only(left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
+      padding: const EdgeInsets.only(
+          left: 16.0, top: 8.0, right: 16.0, bottom: 16.0),
       child: Material(
         elevation: 5.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -131,7 +133,8 @@ class TravelHomePage extends StatelessWidget {
             Positioned(
               bottom: 20.0,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 color: Colors.black.withOpacity(0.7),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

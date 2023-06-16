@@ -12,7 +12,7 @@ class Transaction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     Size deviceSize = MediaQuery.of(context).size;
+    Size deviceSize = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 15.0),
       child: Material(

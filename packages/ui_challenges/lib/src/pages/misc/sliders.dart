@@ -26,7 +26,7 @@ class SlidersPage extends StatelessWidget {
     pashupatinath,
   ];
 
-   SlidersPage({super.key});
+  SlidersPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

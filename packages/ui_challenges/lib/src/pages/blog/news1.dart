@@ -243,7 +243,6 @@ class NewsHomeOnePage extends StatelessWidget {
   }
 }
 
-
 class RoundedContainer extends StatelessWidget {
   const RoundedContainer({
     Key? key,

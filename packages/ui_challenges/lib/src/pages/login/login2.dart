@@ -39,7 +39,8 @@ class LoginTwoPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => const SignupOnePage()));
+                          builder: (BuildContext context) =>
+                              const SignupOnePage()));
                 },
                 child: const Text("Sign Up",
                     style: TextStyle(color: Colors.blue, fontSize: 18.0)),
@@ -85,8 +86,8 @@ class LoginTwoPage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -105,8 +106,8 @@ class LoginTwoPage extends StatelessWidget {
                             )),
                       )),
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                    padding: const EdgeInsets.only(
+                        left: 20.0, right: 20.0, bottom: 10.0),
                     child: Divider(
                       color: Colors.blue.shade400,
                     ),
@@ -150,7 +151,8 @@ class LoginTwoPage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {},
-                child: const Text("Login", style: TextStyle(color: Colors.white70)),
+                child: const Text("Login",
+                    style: TextStyle(color: Colors.white70)),
               ),
             ),
           )

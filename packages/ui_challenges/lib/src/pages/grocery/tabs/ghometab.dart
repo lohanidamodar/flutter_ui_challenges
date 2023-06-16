@@ -91,30 +91,30 @@ class GroceryHomeTabView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-    Container(
-      margin: const EdgeInsets.only(left: 10),
-      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-      color: Colors.red,
-      child: Text(
-        left,
-        style: const TextStyle(
-          color: Colors.white,
-        ),
-      ),
-    ),
-    Container(
-      margin: const EdgeInsets.only(right: 10.0),
-      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-      child: InkWell(
-        onTap: () {},
-        child: Text(
-          right,
-          style: const TextStyle(
-            color: Colors.red,
+        Container(
+          margin: const EdgeInsets.only(left: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+          color: Colors.red,
+          child: Text(
+            left,
+            style: const TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
-      ),
-    ),
+        Container(
+          margin: const EdgeInsets.only(right: 10.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+          child: InkWell(
+            onTap: () {},
+            child: Text(
+              right,
+              style: const TextStyle(
+                color: Colors.red,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

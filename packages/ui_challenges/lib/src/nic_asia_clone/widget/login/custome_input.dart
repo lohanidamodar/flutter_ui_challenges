@@ -10,7 +10,8 @@ class CustomInputField extends StatelessWidget {
   final String? textHint;
   final TextInputType keyboardType;
   final bool showInputText;
-  const CustomInputField({super.key, 
+  const CustomInputField({
+    super.key,
     this.textHint,
     this.showInputText = false,
     this.keyboardType = TextInputType.text,

@@ -218,8 +218,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius:
-                                      const BorderRadius.all(Radius.circular(20)),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[500]!,
@@ -242,8 +242,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius:
-                                      const BorderRadius.all(Radius.circular(20)),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[200]!,
@@ -277,8 +277,8 @@ class HomePage extends StatelessWidget {
                             Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius:
-                                      const BorderRadius.all(Radius.circular(20)),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(20)),
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.grey[200]!,

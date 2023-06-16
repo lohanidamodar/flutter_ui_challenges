@@ -96,6 +96,7 @@ class LoginInputSection extends StatelessWidget {
                             SizedBox(width: deviceSize.width * 0.2),
                             Image.asset(
                               'assets/nicasiaassets/ic_fingerprint.png',
+                              package: 'ui_challenges',
                               width: 40.0,
                             )
                           ],

@@ -9,7 +9,6 @@ import 'package:ui_challenges/ui_challenges.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 

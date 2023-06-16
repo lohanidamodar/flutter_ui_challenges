@@ -84,13 +84,14 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(top: 15, bottom: 5),
+                                      padding: const EdgeInsets.only(
+                                          top: 15, bottom: 5),
                                       child: const Text("Photos",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding: const EdgeInsets.only(bottom: 15),
+                                      padding:
+                                          const EdgeInsets.only(bottom: 15),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -100,13 +101,14 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(top: 15, bottom: 5),
+                                      padding: const EdgeInsets.only(
+                                          top: 15, bottom: 5),
                                       child: const Text("Followers",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding: const EdgeInsets.only(bottom: 15),
+                                      padding:
+                                          const EdgeInsets.only(bottom: 15),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -116,13 +118,14 @@ class ProfileSevenPage extends StatelessWidget {
                               Column(
                                 children: <Widget>[
                                   Container(
-                                      padding:
-                                          const EdgeInsets.only(top: 10, bottom: 5),
+                                      padding: const EdgeInsets.only(
+                                          top: 10, bottom: 5),
                                       child: const Text("Followings",
                                           style: TextStyle(
                                               color: Colors.black54))),
                                   Container(
-                                      padding: const EdgeInsets.only(bottom: 10),
+                                      padding:
+                                          const EdgeInsets.only(bottom: 10),
                                       child: const Text("5,000",
                                           style: TextStyle(
                                               color: Colors.black87,
@@ -176,29 +179,29 @@ class ProfileInfo extends StatelessWidget {
                   ),
                   const Column(
                     children: <Widget>[
-                  ListTile(
-                    contentPadding:
-                        EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                    leading: Icon(Icons.my_location),
-                    title: Text("Location"),
-                    subtitle: Text("Kathmandu"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.email),
-                    title: Text("Email"),
-                    subtitle: Text("sudeptech@gmail.com"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.phone),
-                    title: Text("Phone"),
-                    subtitle: Text("99--99876-56"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("About Me"),
-                    subtitle: Text(
-                        "This is a about me link and you can khow about me in this section."),
-                  ),
+                      ListTile(
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                        leading: Icon(Icons.my_location),
+                        title: Text("Location"),
+                        subtitle: Text("Kathmandu"),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.email),
+                        title: Text("Email"),
+                        subtitle: Text("sudeptech@gmail.com"),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.phone),
+                        title: Text("Phone"),
+                        subtitle: Text("99--99876-56"),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.person),
+                        title: Text("About Me"),
+                        subtitle: Text(
+                            "This is a about me link and you can khow about me in this section."),
+                      ),
                     ],
                   )
                 ],

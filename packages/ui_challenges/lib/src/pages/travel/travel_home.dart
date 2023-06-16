@@ -212,7 +212,8 @@ class _ChoiceChipState extends State<ChoiceChip> {
           const SizedBox(
             width: 8,
           ),
-          Text(widget.text, style: const TextStyle(color: Colors.white, fontSize: 14))
+          Text(widget.text,
+              style: const TextStyle(color: Colors.white, fontSize: 14))
         ],
       ),
     );
@@ -301,7 +302,8 @@ List<CityCard> cityCards = [
 class CityCard extends StatelessWidget {
   final String imagePath, cityName, monthYear, discount, oldPrice, newPrice;
   const CityCard(this.imagePath, this.cityName, this.monthYear, this.discount,
-      this.oldPrice, this.newPrice, {super.key});
+      this.oldPrice, this.newPrice,
+      {super.key});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -360,14 +362,16 @@ class CityCard extends StatelessWidget {
                     ],
                   ),
                   Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 2),
                       decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: Text(
                         "$discount%",
-                        style: const TextStyle(color: Colors.black, fontSize: 14),
+                        style:
+                            const TextStyle(color: Colors.black, fontSize: 14),
                       ))
                 ],
               ),

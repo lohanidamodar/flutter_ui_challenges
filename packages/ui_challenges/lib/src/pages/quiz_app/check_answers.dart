@@ -56,7 +56,7 @@ class CheckAnswersPage extends StatelessWidget {
         child: const Text("Done"),
         onPressed: () {
           Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (_) =>  QuizHomePage()));
+              MaterialPageRoute(builder: (_) => QuizHomePage()));
         },
       );
     }

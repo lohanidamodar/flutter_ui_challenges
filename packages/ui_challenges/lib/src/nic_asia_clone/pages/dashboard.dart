@@ -189,7 +189,10 @@ class Dashboard extends StatelessWidget {
       ),
       actions: <Widget>[
         IconButton(
-          icon: Image.asset('assets/nicasiaassets/ic_scan2pay_64_4.png'),
+          icon: Image.asset(
+            'assets/nicasiaassets/ic_scan2pay_64_4.png',
+            package: 'ui_challenges',
+          ),
           tooltip: 'QR Scan',
           onPressed: () {},
         ),

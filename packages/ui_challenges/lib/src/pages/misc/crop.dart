@@ -20,23 +20,23 @@ class _CropPageState extends State<CropPage> {
 
   void _cropImage() async {
     final cropped = await _controller.crop();
-    if(mounted) {
+    if (mounted) {
       Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => Scaffold(
-          appBar: AppBar(
-            title: const Text('Crop Result'),
-            centerTitle: true,
-          ),
-          body: Center(
-            child: RawImage(
-              image: cropped,
+        MaterialPageRoute(
+          builder: (context) => Scaffold(
+            appBar: AppBar(
+              title: const Text('Crop Result'),
+              centerTitle: true,
+            ),
+            body: Center(
+              child: RawImage(
+                image: cropped,
+              ),
             ),
           ),
+          fullscreenDialog: true,
         ),
-        fullscreenDialog: true,
-      ),
-    );
+      );
     }
   }
 
@@ -60,7 +60,10 @@ class _CropPageState extends State<CropPage> {
           Expanded(
             child: Crop(
               controller: _controller,
-              child: Image.asset('assets/placeholder.jpg'),
+              child: Image.asset(
+                'assets/placeholder.jpg',
+                package: 'ui_challenges',
+              ),
             ),
           ),
           Row(

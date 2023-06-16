@@ -53,7 +53,8 @@ class _DestinationScreenState extends State<DestinationScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 40.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0, vertical: 40.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -145,7 +146,8 @@ class _DestinationScreenState extends State<DestinationScreen> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(100.0, 20.0, 20.0, 20.0),
+                        padding:
+                            const EdgeInsets.fromLTRB(100.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -200,7 +202,9 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                     padding: const EdgeInsets.all(5.0),
                                     width: 70.0,
                                     decoration: BoxDecoration(
-                                      color: Theme.of(context).colorScheme.secondary,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .secondary,
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     alignment: Alignment.center,
@@ -213,7 +217,9 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                     padding: const EdgeInsets.all(5.0),
                                     width: 70.0,
                                     decoration: BoxDecoration(
-                                      color: Theme.of(context).colorScheme.secondary,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .secondary,
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     alignment: Alignment.center,

@@ -25,6 +25,7 @@ class LoginContainer extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage(
                     'assets/nicasiaassets/mountain.png',
+                    package: 'ui_challenges',
                   ),
                   fit: BoxFit.fill,
                 ),
@@ -59,6 +60,7 @@ class LoginContainer extends StatelessWidget {
           alignment: Alignment.center,
           child: Image.asset(
             'assets/nicasiaassets/logo.png',
+            package: 'ui_challenges',
             color: Colors.white,
             fit: BoxFit.cover,
           ),
@@ -68,6 +70,7 @@ class LoginContainer extends StatelessWidget {
           alignment: Alignment.topRight,
           child: Image.asset(
             'assets/nicasiaassets/ic_sms_32.png',
+            package: 'ui_challenges',
             height: 30.0,
             color: Colors.white,
             fit: BoxFit.cover,

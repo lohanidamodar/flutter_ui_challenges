@@ -145,7 +145,9 @@ class TodoHomeOnePage extends StatelessWidget {
                 gradient: LinearGradient(colors: [color3, color2]),
                 boxShadow: [
                   BoxShadow(
-                      color: color3, offset: const Offset(1.0, 1.0), blurRadius: 4.0)
+                      color: color3,
+                      offset: const Offset(1.0, 1.0),
+                      blurRadius: 4.0)
                 ]),
           ),
           Positioned(

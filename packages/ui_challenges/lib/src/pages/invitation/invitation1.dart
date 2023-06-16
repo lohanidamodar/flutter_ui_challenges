@@ -171,8 +171,8 @@ class InvitationPageOne extends StatelessWidget {
                   const SizedBox(height: 20.0),
                   const Card(
                     elevation: 5.0,
-                    margin: EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 8.0),
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                     child: Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Row(children: [
@@ -197,8 +197,8 @@ class InvitationPageOne extends StatelessWidget {
                   ),
                   const Card(
                     elevation: 5.0,
-                    margin: EdgeInsets.symmetric(
-                        vertical: 8.0, horizontal: 16.0),
+                    margin:
+                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                     child: Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Row(children: [

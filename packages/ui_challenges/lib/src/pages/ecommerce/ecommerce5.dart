@@ -41,7 +41,8 @@ class EcommerceFivePage extends StatelessWidget {
               height: 5,
             ),
             Text(title,
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
             Container(
                 padding: const EdgeInsets.all(5),
                 margin: const EdgeInsets.only(top: 4),
@@ -128,13 +129,14 @@ class EcommerceFivePage extends StatelessWidget {
                           ),
                           Material(
                             elevation: 5.0,
-                            borderRadius: const BorderRadius.all(Radius.circular(30)),
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(30)),
                             child: TextField(
                               controller:
                                   TextEditingController(text: 'Search...'),
                               cursorColor: Theme.of(context).primaryColor,
-                              style:
-                                  const TextStyle(color: Colors.black, fontSize: 18),
+                              style: const TextStyle(
+                                  color: Colors.black, fontSize: 18),
                               decoration: const InputDecoration(
                                   suffixIcon: Material(
                                     elevation: 2.0,

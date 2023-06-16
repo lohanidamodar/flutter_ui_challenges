@@ -30,7 +30,8 @@ class TodoTwoPage extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         title: const Text('My Week'),
         backgroundColor: Colors.white,
-        elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.dark,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: HeaderWidget(
         header: Container(
@@ -245,8 +246,8 @@ class HeaderWidget extends StatelessWidget {
               Container(
                   margin: const EdgeInsets.only(right: 10.0),
                   decoration: BoxDecoration(
-                    borderRadius:
-                        const BorderRadius.only(bottomRight: Radius.circular(20.0)),
+                    borderRadius: const BorderRadius.only(
+                        bottomRight: Radius.circular(20.0)),
                     color: headerColor,
                   ),
                   child: header),

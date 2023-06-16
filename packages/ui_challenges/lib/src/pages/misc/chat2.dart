@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import '../../res/assets.dart' as assets;
 import 'dart:math';
 
-
 class ChatTwoPage extends StatefulWidget {
   static const String path = "lib/src/pages/misc/chat2.dart";
 

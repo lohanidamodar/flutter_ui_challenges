@@ -57,8 +57,8 @@ class MenuPage extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(
-                      vertical: 8.0, horizontal: 75.0),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
                       TextSpan(text: "Rs "),
@@ -68,8 +68,8 @@ class MenuPage extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(
-                      vertical: 8.0, horizontal: 75.0),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 8.0, horizontal: 75.0),
                   child: Text.rich(
                     TextSpan(children: [
                       TextSpan(text: "KP "),

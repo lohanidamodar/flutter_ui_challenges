@@ -99,7 +99,8 @@ class LoginNinePage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.blueGrey),
+                              borderSide:
+                                  const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),
@@ -119,7 +120,8 @@ class LoginNinePage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.blueGrey),
+                              borderSide:
+                                  const BorderSide(color: Colors.blueGrey),
                               borderRadius: BorderRadius.circular(40.0),
                             ),
                           ),

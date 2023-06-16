@@ -25,10 +25,12 @@ class Category extends StatelessWidget {
                     image!,
                     height: 50.0,
                     color: Colors.red[900],
+                    package: 'ui_challenges',
                   )
                 : Image.asset(
                     image!,
                     height: 40.0,
+                    package: 'ui_challenges',
                   ),
             const SizedBox(
               height: 15.0,

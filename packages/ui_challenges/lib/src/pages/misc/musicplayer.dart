@@ -33,6 +33,7 @@ class _PodcastPlayerState extends State<MusicPlayer> {
                       width: MediaQuery.of(context).size.width,
                       child: Image.asset(
                         'assets/hotel/room2.jpg',
+                        package: 'ui_challenges',
                         fit: BoxFit.cover,
                       ),
                     ),

@@ -196,7 +196,8 @@ class BeautifulAlertDialog extends StatelessWidget {
 
 class PaymentSuccessDialog extends StatelessWidget {
   final image = images[2];
-  final TextStyle subtitle = const TextStyle(fontSize: 12.0, color: Colors.grey);
+  final TextStyle subtitle =
+      const TextStyle(fontSize: 12.0, color: Colors.grey);
   final TextStyle label = const TextStyle(fontSize: 14.0, color: Colors.grey);
 
   PaymentSuccessDialog({super.key});
@@ -253,7 +254,10 @@ class PaymentSuccessDialog extends StatelessWidget {
                     ),
                     CircleAvatar(
                       backgroundColor: Colors.green,
-                      backgroundImage: AssetImage(image),
+                      backgroundImage: AssetImage(
+                        image,
+                        package: 'ui_challenges',
+                      ),
                     )
                   ],
                 ),
