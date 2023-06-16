@@ -29,7 +29,7 @@ class MenuPage extends StatelessWidget {
                     children: <Widget>[
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                        child: Image.asset(logo),
+                        child: Image.asset(logo, package: 'ui_challenges',),
                       ),
                       const Positioned(
                           bottom: -5,

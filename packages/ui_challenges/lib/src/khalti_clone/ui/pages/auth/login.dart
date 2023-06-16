@@ -127,6 +127,7 @@ class LoginPage extends StatelessWidget {
                 height: 100,
                 child: Image.asset(
                   logo,
+                  package: 'ui_challenges',
                   fit: BoxFit.contain,
                 )),
           ],

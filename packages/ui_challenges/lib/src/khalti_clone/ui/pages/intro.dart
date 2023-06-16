@@ -145,6 +145,7 @@ class _IntroPageState extends State<IntroPage> {
           Expanded(
             child: Image.asset(
               introItems[index].image!,
+              package: 'ui_challenges',
               fit: BoxFit.contain,
             ),
           ),
