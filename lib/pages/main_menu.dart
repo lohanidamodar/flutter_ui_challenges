@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenges/ui_challenges.dart';
 import 'package:flutter_ui_challenges/widgets/preview_copy.dart';
 
+import '../widgets/rounded_bordered_container.dart';
+
 class MainMenu extends StatefulWidget {
   const MainMenu({Key? key}) : super(key: key);
 

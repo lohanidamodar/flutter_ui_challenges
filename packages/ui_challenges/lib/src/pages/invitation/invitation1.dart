@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../res/assets.dart';
-import '../../res/colors.dart';
 
 class InvitationPageOne extends StatelessWidget {
   static const String path = "lib/src/pages/invitation/invitation1.dart";
@@ -79,7 +78,7 @@ class InvitationPageOne extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5.0),
-                border: Border.all(color: borderColor),
+                border: Border.all(color: Color(0xffd6d6d6)),
               ),
               child: Column(
                 children: <Widget>[

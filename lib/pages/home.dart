@@ -3,8 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ui_challenges/ui_challenges.dart';
 
+import '../res/text_styles.dart';
 import 'main_menu.dart';
 
 class HomePage extends StatefulWidget {

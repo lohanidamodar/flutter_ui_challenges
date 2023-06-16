@@ -11,7 +11,6 @@ import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import '../../res/assets.dart';
 import '../../widgets/network_image.dart';
 import '../../widgets/rounded_bordered_container.dart';
-import '../../res/text_styles.dart';
 
 class NewsHomeOnePage extends StatelessWidget {
   static const String path = "lib/src/pages/blog/news1.dart";
@@ -160,7 +159,10 @@ class NewsHomeOnePage extends StatelessWidget {
           Expanded(
             child: Text(
               title,
-              style: shadedTitle,
+              style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey.shade600),
             ),
           ),
           MaterialButton(

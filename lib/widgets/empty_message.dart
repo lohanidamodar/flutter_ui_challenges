@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenges/ui_challenges.dart';
+import '../res/text_styles.dart';
 
 class EmptyMessage extends StatelessWidget {
   final String message;
