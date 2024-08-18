@@ -5,7 +5,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:ui_challenges/src/res/assets.dart';
 
 class DashboardOnePage extends StatelessWidget {
@@ -29,9 +28,10 @@ class DashboardOnePage extends StatelessWidget {
         SliverToBoxAdapter(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: _buildTitledContainer("Sales",
-                child: SizedBox(
-                    height: 200, child: DonutPieChart.withSampleData())),
+            child: _buildTitledContainer(
+              "Sales",
+              child: const SizedBox(height: 200),
+            ),
           ),
         ),
         _buildActivities(context),
@@ -198,51 +198,6 @@ class DashboardOnePage extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class DonutPieChart extends StatelessWidget {
-  final List<charts.Series> seriesList;
-  final bool animate;
-
-  const DonutPieChart(this.seriesList, {super.key, required this.animate});
-
-  /// Creates a [PieChart] with sample data and no transition.
-  factory DonutPieChart.withSampleData() {
-    return DonutPieChart(
-      _createSampleData(),
-      // Disable animations for image tests.
-      animate: false,
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return charts.PieChart(seriesList,
-        animate: animate,
-        // Configure the width of the pie slices to 60px. The remaining space in
-        // the chart will be left as a hole in the center.
-        defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 60, arcRendererDecorators: [charts.ArcLabelDecorator()]));
-  }
-
-  /// Create one series with sample hard coded data.
-  static List<charts.Series<LinearSales, String>> _createSampleData() {
-    final data = [
-      LinearSales("July", 100),
-      LinearSales("August", 75),
-      LinearSales("September", 25),
-      LinearSales("October", 5),
-    ];
-
-    return [
-      charts.Series<LinearSales, String>(
-        id: 'Sales',
-        domainFn: (LinearSales sales, _) => sales.month,
-        measureFn: (LinearSales sales, _) => sales.sales,
-        data: data,
-      )
-    ];
   }
 }
 
